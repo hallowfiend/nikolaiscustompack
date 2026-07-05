@@ -1,4 +1,4 @@
-addVein("copper_vein", GTWorldGenLayers.DEEPSLATE, 25, 80, -40, -10, GTMaterials.Copper, "surface", (pattern) => {
+/* addVein("copper_vein", GTWorldGenLayers.DEEPSLATE, 25, 80, -40, -10, GTMaterials.Copper, "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(5)
       .mat(GTMaterials.Chalcopyrite)
@@ -221,4 +221,4 @@ addVein("mithril_vein", GTWorldGenLayers.DEEPSLATE, 20, 20, -30, -10, 'mithril',
     .layer((l) => l.weight(1)
       .mat('nickel')
       .size(1, 1));
-});
+}); */

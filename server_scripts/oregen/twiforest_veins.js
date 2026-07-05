@@ -1,4 +1,4 @@
-addVein("twilight_certus_quartz_vein", 'twiforest', 20, 40, -20, 40, 'certus_quartz', "surface", (pattern) => {
+/* addVein("twilight_certus_quartz_vein", 'twiforest', 20, 40, -20, 40, 'certus_quartz', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('certus_quartz')
@@ -131,4 +131,4 @@ addVein("petrified_twilight", 'twiforest', 10, 60, -20, 10, 'vinteum', "above", 
     .layer((l) => l.weight(1)
       .mat('brilliance')
       .size(1, 1));
-});
+}); */

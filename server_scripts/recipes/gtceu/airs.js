@@ -26,10 +26,10 @@ ServerEvents.recipes(event => {
         .duration(200);
     event.recipes.gtceu.gas_collector("twilight_air")
         .circuit(4)
+        .duration(200)
         .dimension("twilightforest:twilight_forest")
         .outputFluids(Fluid.of("gtceu:twilight_air", 10000))
-        .EUt(Lv)
-        .duration(200);
+        .EUt(Lv);
     //Cooling
     event.recipes.gtceu.vacuum_freezer('aether_air_to_liquid')
         .inputFluids(Fluid.of('gtceu:aether_air', 4000))

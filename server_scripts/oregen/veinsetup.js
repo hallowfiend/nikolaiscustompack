@@ -1,5 +1,5 @@
 //priority: 100
-GTCEuServerEvents.oreVeins((event) => {
+/* GTCEuServerEvents.oreVeins((event) => {
   event.removeAll();
 });
 
@@ -20,4 +20,4 @@ function addVein(name, worldGenLayer, size, weight, minHeightRange, maxHeightRan
         .placement(indicatorPlacement));
     });
   });
-}
+} */

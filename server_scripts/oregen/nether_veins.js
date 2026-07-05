@@ -1,4 +1,4 @@
-addVein("nether_certus_vein", 'nether_stones', 20, 30, 80, 120, 'certus_quartz', "surface", (pattern) => {
+/* addVein("nether_certus_vein", 'nether_stones', 20, 30, 80, 120, 'certus_quartz', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('certus_quartz')
@@ -190,4 +190,4 @@ addVein("loose_brimstone", 'nether_sediment', 20, 60, 40, 120, 'gold', "surface"
     .layer((l) => l.weight(1)
       .mat('tricalcium_phosphate')
       .size(1, 1));
-});
+}); */
