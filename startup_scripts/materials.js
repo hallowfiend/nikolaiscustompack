@@ -98,56 +98,64 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
       .color(0xae44e2)
       .gem()
       .dust()
-      .iconSet(OPAL);
+      .iconSet(OPAL)
+      .flags(no_decomp);
 
     event.create('solid_aerialis')
         .components('aerialis', 'spirit', 'mundus')
         .color(0xfeffed)
         .gem()
         .dust()
-        .iconSet(OPAL);
+        .iconSet(OPAL)
+        .flags(no_decomp);
 
     event.create('solid_infernalis')
         .components('infernalis', 'spirit', 'mundus')
         .color(0xffad99)
         .gem()
         .dust()
-        .iconSet(OPAL);
+        .iconSet(OPAL)
+        .flags(no_decomp);
 
     event.create('solid_terrae')
         .components('terrae', 'spirit', 'mundus')
         .color(0x7ae070)
         .gem()
         .dust()
-        .iconSet(OPAL);
+        .iconSet(OPAL)
+        .flags(no_decomp);
 
     event.create('solid_aqua')
         .color(0x8798fa)
         .components('aqua', 'spirit', 'mundus')
         .gem()
         .dust()
-        .iconSet(OPAL);
+        .iconSet(OPAL)
+        .flags(no_decomp);
 
     event.create('solid_sacrum')
         .color(0xff5493)
         .components('sacrum', 'spirit', 'mundus')
         .gem()
         .dust()
-        .iconSet(OPAL);
+        .iconSet(OPAL)
+        .flags(no_decomp);
 
     event.create('solid_profanum')
         .color(0xa454ff)
         .components('profanum', 'spirit', 'mundus')
         .gem()
         .dust()
-        .iconSet(OPAL);
+        .iconSet(OPAL)
+        .flags(no_decomp);
 
     event.create('solid_xenorhast')
         .color(0x8e00a1)
         .components('xenorhast', 'spirit', 'mundus')
         .gem()
         .dust()
-        .iconSet(OPAL);
+        .iconSet(OPAL)
+        .flags(no_decomp);
 
 // Pneumaticcraft
 

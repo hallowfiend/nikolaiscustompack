@@ -274,7 +274,8 @@ ServerEvents.tags("item", (event) => {
     "caverns_and_chasms:tether_potion",
     "caverns_and_chasms:trail_potion",
     "#tconstruct:parts",
-    "elementalcraft:pure_ore"]);
+    "elementalcraft:pure_ore",
+    /reliquary:.*mob_charm.*/]);
 
   event.add("chipped:stripped_bamboo_log", ["minecraft:stripped_bamboo_block"]);
   event.add("chipped:stripped_crimson_log", ["#chipped:stripped_crimson_stem"]);
@@ -308,7 +309,7 @@ ServerEvents.tags("item", (event) => {
     "deep_aether:stripped_conberry_wood",
     "deep_aether:stripped_sunroot_wood"
   ]);
-  
+
   event.add("forge:flour/wheat", ["gtceu:wheat_dust"]);
 
   event.add("gbth:certus_quartz_blocks", ["ae2:smooth_quartz_block", "ae2:quartz_bricks", "ae2:quartz_pillar", "ae2:chiseled_quartz_block", "ae2:cut_quartz_block"]);

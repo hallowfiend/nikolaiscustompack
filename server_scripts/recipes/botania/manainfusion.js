@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
     event.remove({ id: 'botania:mana_infusion/manasteel' })
     event.remove({ id: 'botania:mana_infusion/manasteel_block' })
     event.recipes.botania.mana_infusion('botania:manasteel_ingot', '#forge:ingots/black_steel', 2000)
-    event.recipes.botania.mana_infusion('botania:manasteel_block', '#forge:blocks/black_steel', 16000)
+    event.recipes.botania.mana_infusion('botania:manasteel_block', '#forge:storage_blocks/black_steel', 16000)
 
     // mana sapphires
     event.remove({ id: 'botania:mana_infusion/mana_diamond' })

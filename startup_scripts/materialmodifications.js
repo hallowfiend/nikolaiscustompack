@@ -135,6 +135,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('vehement_coal', 'scguns:vehement_coal_block')
     block('anthralite', 'scguns:anthralite_block')
     block('regalium', 'undergarden:regalium_block')
+    block('citrine', 'unusualend:citrine_block')
 
 //Nuggets
     nugget('desh', 'ad_astra:desh_nugget')
@@ -204,6 +205,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('jade', 'goety:jade')
     gem('vehement_coal', 'scguns:vehement_coal')
     gem('regalium', 'undergarden:regalium_crystal')
+    gem('citrine', 'unusualend:citrine_chunk')
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')

@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
     //Distillation
     event.recipes.gtceu.distillation_tower('condensed_twilight_distillation')
         .inputFluids('gtceu:condensed_twilight 100000')
-        .itemOutputs("gtceu:mundus")
+        .itemOutputs("gtceu:mundus_dust")
         .outputFluids(Fluid.of("gtceu:nitrogen", 12500))
         .outputFluids(Fluid.of("gtceu:oxygen", 10000))
         .outputFluids(Fluid.of("gtceu:carbon_dioxide", 2000))
