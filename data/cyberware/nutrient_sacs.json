@@ -1,0 +1,21 @@
+{
+  "item": "kubejs:nutrient_sacs",
+  "slot": "STOMACH",
+  "essence": 0,
+  "max_install": 1,
+  "quality": 3,
+  "body_part": "NONE",
+  "attributes": [
+    {
+      "attribute": "ars_nouveau:ars_nouveau.perk.saturation",
+      "amount": 0.1,
+      "operation": "MULTIPLY_TOTAL"
+    }
+  ],
+  "energy": {
+    "consumption": 0,
+    "generation": 0,
+    "storage": 0,
+    "stacking": "LINEAR"
+  }
+}

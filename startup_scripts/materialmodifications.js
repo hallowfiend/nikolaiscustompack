@@ -87,6 +87,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('bendalloy', 'cosmere:bendalloy_ingot')
     ingot('nicrosil', 'cosmere:nicrosil_ingot')
     ingot('duralumin', 'cosmere:duralumin_ingot')
+    ingot('anthralite', 'scguns:anthralite_ingot')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
@@ -131,6 +132,9 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('jade', 'goety:jade_block')
     block('turquoise', 'caverns_and_chasms:turquoise_block')
     block('spinel', 'caverns_and_chasms:spinel_block')
+    block('vehement_coal', 'scguns:vehement_coal_block')
+    block('anthralite', 'scguns:anthralite_block')
+    block('regalium', 'undergarden:regalium_block')
 
 //Nuggets
     nugget('desh', 'ad_astra:desh_nugget')
@@ -149,6 +153,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('bendalloy', 'cosmere:bendalloy_nugget')
     nugget('nicrosil', 'cosmere:nicrosil_nugget')
     nugget('duralumin', 'cosmere:duralumin_nugget')
+    nugget('anthralite', 'scguns:anthralite_nugget')
 
 //Plates
     plate('desh', 'ad_astra:desh_plate')
@@ -164,6 +169,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     dust('demonite', 'bloodmagic:sand_hellforged')
     dust('dark', 'evilcraft:dark_gem_crushed')
     dust('hex_ash', 'malum:hex_ash')
+    dust('anthralite', 'scguns:anthralite_dust')
+    dust('endstone', 'occultism:crushed_end_stone')
 
 //Small dusts
     dustSmall('ember', 'embers:ember_grit')
@@ -195,6 +202,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('soulstone', 'malum:processed_soulstone')
     gem('brilliance', 'malum:chunk_of_brilliance')
     gem('jade', 'goety:jade')
+    gem('vehement_coal', 'scguns:vehement_coal')
+    gem('regalium', 'undergarden:regalium_crystal')
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')
@@ -215,6 +224,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOre('bismuth', 'enlightened_end:raw_bismuth')
     rawOre('vinteum', 'mna:raw_vinteum')
     rawOre('demonite', 'bloodmagic:raw_demonite')
+    rawOre('anthralite', 'scguns:raw_anthralite')
 
 //Raw ore blocks
     rawOreBlock('desh', 'ad_astra:raw_desh_block')
@@ -225,13 +235,23 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOreBlock('cloggrum', 'undergarden:raw_cloggrum_block')
     rawOreBlock('soulstone', 'malum:block_of_raw_soulstone')
     rawOreBlock('brilliance', 'malum:block_of_brilliance')
+    rawOreBlock('anthralite', 'scguns:raw_anthralite_block')
 
 //Crushed ores
     crushed('brilliance', 'malum:crushed_brilliance')
     crushed('soulstone', 'malum:crushed_soulstone')
     crushed('mithril', 'create_wizardry:crushed_mithril')
     crushed('bismuth', 'create_enlightend:crushed_raw_bismuth')
-
+    crushed('anthralite', 'scguns:crushed_raw_anthralite')
+    crushed('iron', 'create:crushed_raw_iron')
+    crushed('gold', 'create:crushed_raw_gold')
+    crushed('copper', 'create:crushed_raw_copper')
+    crushed('silver', 'create:crushed_raw_silver')
+    crushed('nickel', 'create:crushed_raw_nickel')
+    crushed('tin', 'create:crushed_raw_tin')
+    crushed('platinum', 'create:crushed_raw_platinum')
+    crushed('aluminium', 'create:crushed_raw_aluminum')
+    crushed('lead', 'create:crushed_raw_lead')
 
 //Byproducts
 

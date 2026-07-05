@@ -19,17 +19,20 @@ ServerEvents.tags("item", (event) => {
         'deeperdarker:heart_of_the_deep'
     ]);
   add('forge:zombie_heart', [
-        'eidolon:zombie_heart'
+        'eidolon:zombie_heart',
+        'reliquary:zombie_heart'
     ]);
   add('forge:frigid_heart', [
         'eidolon:wraith_heart',
-        'sons_of_sins:ice_heart'
+        'sons_of_sins:ice_heart',
+        'reliquary:frozen_core'
     ]);
   add('forge:wither_heart', [
         'eidolon:withered_heart',
         'sosorgans:wither_skeleton_heart',
         'deeperdarker:heart_of_the_deep',
-        'alexsmobs:soul_heart'
+        'alexsmobs:soul_heart',
+        'reliquary:nebulous_heart'
     ]);
   add('neapolitan:ice_cream', [
         'exquisito:warzipan_ice_cream',
@@ -49,32 +52,165 @@ ServerEvents.tags("item", (event) => {
         'vampiresdelight:pure_sorbet',
         /.*popsicle.*/,
         /.*snow_cone.*/,
-        'goetydelight:sundae_of_the_philosophers_potion',
-        'goetydelight:blue_ectoplasmic_sundae',
-        'goetydelight:grape_slush'
+        'goetydelight:grape_slush',
+        /.*parfait.*/,
+        /.*sundae.*/
     ]);
-  add('coldsweat:large_cooling_items',[
+  add('coldsweat:large_cooling_foods',[
       'hexalia:chillberry_pie',
       'twilightdelight:glacier_ice_tea',
       'twilightdelight:glacier_cake',
-      'twilightdelight:glacier_cake_slice'
+      'twilightdelight:glacier_cake_slice',
+      'arsdelight:frostaya_jelly',
+      'arsdelight:frostaya_mutton',
+      '#neapolitan:ice_cream',
+      /jadensnetherexpansiondelight:.*wisp.*/,
+      'goetydelight:ectoplasm_jelly',
+      'goetydelight:ectoplasmic_melon',
+      'goetydelight:polarice'
   ]);
-  add('coldsweat:small_cooling_items', [
+  add('coldsweat:small_cooling_foods', [
         'hexalia:chillberries',
         'twilightdelight:twilight_spring',
         'sob:builder_smoothie',
         'delightful:strawberry_banana_smoothie',
         'exquisito:halo_halo',
-        'delightful:berry_matcha_latte',
-        'peculiars:aloe_berry_smoothie',
-        /.*milkshake.*/
+        'arsdelight:frostaya_pie_slice',
+        'arsdelight:neutralized_frostaya_jam',
+        'jadensnetherexpansiondelight:nightspores_cheesecake',
+        'jadensnetherexpansiondelight:nightspores_cheesecake_slice',
+        'jadensnetherexpansiondelight:nether_hamburger',
+        'ecologics:tropical_stew',
+        /twilightdelight:aurora_pie.*/,
+        /abnormalsdelight:mint_cake.*/,
+        'sob:mint_jelly',
+        'neapolitan:mint_candies',
+        'neapolitan:mint_chocolate',
+        'cookielicious:mint_cookie'
     ]);
-  add('coldsweat:large_warming_items',[
-    'mynethersdelight:fried_hoglin_chop'
+  add('coldsweat:large_warming_foods',[
+    'mynethersdelight:fried_hoglin_chop',
+    'mynethersdelight:spicy_noodle_soup',
+    'mynethersdelight:plate_of_ghasta_with_cream',
+    'mynethersdelight:chilidog',
+    'mynethersdelight:spicy_hoglin_stew',
+    'mynethersdelight:hot_wings_bucket',
+    'mynethersdelight:spicy_curry',
+    'mynethersdelight:rock_soup',
+    'mynethersdelight:magma_cake_block',
+    'mynethersdelight:magma_cake_slice',
+    'mynethersdelight:hot_cream',
+    'delightful:balkava',
+    'delightful:baklava_slice',
+    'delightful:sinigang',
+    'embersdelight:spicy_meatballs',
+    'culturaldelights:spicy_curry',
+    'dungeonsdelight:hydra_fricassee',
+    'goetydelight:boiling_blood_brew',
+    'farmersrespite:blazing_chili',
+    'arsdelight:bombegranate_steak',
+    'arsdelight:bombegranate_pie',
+    'arsdelight:bombegranate_pie_slice',
+    'arsdelight:bombegranate_jelly',
+    'twilightdelight:plate_of_fiery_snakes',
+    'brewinandchewin:fiery_fondue',
+    'twilightdelight:grilled_ghast',
+    'dungeonsdelight:blazing_blood_sausage'
   ]);
-  add('coldsweat:small_warming_items', [
-    'mynethersdelight:deviled_egg'
+  add('coldsweat:small_warming_foods', [
+    'mynethersdelight:deviled_egg',
+    'mynethersdelight:spicy_cotton',
+    'mynethersdelight:sizzling_pudding',
+    'mynethersdelight:stuffed_pepper',
+    'mynethersdelight:spicy_skewer',
+    'delightful:cactus_chili',
+    'mynethersdelight:hot_wings',
+    'mynethersdelight:burnt_roll',
+    'mynethersdelight:hot_cream_cone',
+    'sob:honey_barbecue_stick',
+    'minersdelight:spicy_hoglin_stew_cup',
+    'minersdelight:spicy_noodle_soup_cup',
+    'minersdelight:rock_soup_cup',
+    'delightful:sinigang_cup',
+    'arsdelight:neutralized_bombegranate_jam',
+    'jadensnetherexpansiondelight:lightspores_cheesecake',
+    'jadensnetherexpansiondelight:lightspores_cheesecake_slice',
+    'twilightdelight:torchberry_cookie',
+    'twilightdelight:torchberry_venison_sandwich',
+    'twilightdelight:glowstew',
+    /twilightdelight:torchberry_pie.*/,
+    /twilightdelight:torchberry_cake.*/,
+    'twilightdelight:berry_stick'
     ]);
+  add('coldsweat:small_warming_drinks', [
+      /farmersrespite:.*coffee/,
+      'farmersdelight:apple_cider',
+    'respiteful:mocha_coffee',
+    'respiteful:vanilla_milk_tea',
+    'respiteful:adzuki_milk_tea',
+    'brewincompatdelight:white_russian',
+    /rusticdelight:.*coffee/,
+    'brewinandchewin:red_rum',
+    'arsdelight:source_berry_tea',
+    'arsdelight:flashpine_tea',
+    'arsdelight:bastion_tea',
+    'arsdelight:mendosteen_tea',
+    'jadensnetherexpansiondelight:lightspores_juice',
+    'twilightdelight:torchberry_juice',
+    'undergardendelight:blisterberry_juice'
+    ])
+  add('coldsweat:large_warming_drinks', [
+    /farmersrespite:.*tea/,
+    'vampiresdelight:daisy_tea',
+    'vampiresdelight:orchid_tea',
+    'delightful:matcha_latte',
+    'delightful:azalea_tea',
+    'create:builders_tea',
+    /ends_delight:.*tea/,
+    'goetydelight:boiling_blood_brew',
+    /windswept:.*tea/,
+    'arsdelight:bombegranate_tea',
+    /farmersrespite:.*cocoa/,
+    'sob:bitter_tea',
+    'twilightdelight:thorn_rose_tea',
+    'twilightdelight:tear_drink',
+    'unusualend:chorus_tea',
+    'undergardendelight:depthflower_tea',
+    /farm_and_charm:.*tea/,
+    'brewincompatdelight:black_russian',
+    'brewincompatdelight:mulled_wine',
+    'sob:tequila',
+    'arsdelight:bombegranate_hornbeer'
+  ])
+  add('coldsweat:small_cooling_drinks', [
+    'respiteful:mint_green_tea',
+    /farmersrespite:.*melon_juice/,
+    /delightful:.*prickly_pear_juice/,
+    'sob:aloe_tea',
+    /dungeonsdelight:.*tea/,
+    'goetydelight:spider_egg_bubble_tea',
+    'sob:sunrise_seltzer',
+    'brewinandchewin:saccharine_rum',
+    'sob:hard_cider',
+    'brewincompatdelight:kraken_rum',
+    'brewincompatdelight:brass_monkey',
+    'abnormals_delight:pickerelweed_juice',
+    'jadensnetherexpansiondelight:nightspores_juice',
+    'sob:prickly_melomel',
+    'sob:orange_juice',
+    'oceanic_delight:sea_grape_juice',
+    'oceanic_delight:nautilus_juice',
+    'sob:cactus_juice'
+  ])
+  add('coldsweat:large_cooling_drinks', [
+    'goetydelight:liquid_void_tea_drink',
+    'arsdelight:frostaya_tea',
+    /respiteful:snow_top.*/,
+    'delightful:berry_matcha_latte',
+    'peculiars:aloe_berry_smoothie',
+    /.*milkshake.*/,
+    'arsdelight:frostaya_hornbeer'
+  ])
   event.add("ad_astra:aeronos_logs", ["ad_astra:aeronos_cap", "ad_astra:aeronos_stem"]);
   event.add("ad_astra:strophar_logs", ["ad_astra:strophar_cap", "ad_astra:strophar_stem"]);
 
@@ -177,8 +313,6 @@ ServerEvents.tags("item", (event) => {
   event.add("gbth:certus_quartz_blocks", ["ae2:smooth_quartz_block", "ae2:quartz_bricks", "ae2:quartz_pillar", "ae2:chiseled_quartz_block", "ae2:cut_quartz_block"]);
 
   event.add('forge:coconut','beachparty:coconut_open');
-
-  event.add('forge:fruits/cherry','vinery:cherry');
 
   event.add('farmersdelight:ropes', 'supplementaries:rope');
 

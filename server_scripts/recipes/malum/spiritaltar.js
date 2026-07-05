@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {
-      "item": "gtceu:amethyst_bronze_ingot",
+      "item": "tconstruct:amethyst_bronze_ingot",
       "count": 4
     },
     "output": {

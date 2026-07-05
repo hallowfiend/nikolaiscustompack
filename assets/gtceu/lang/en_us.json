@@ -20,16 +20,32 @@
     "tagprefix.asurine": "Asurine %s Ore",
     "tagprefix.shiverstone": "Shiverstone %s Ore",
     "tagprefix.scoria": "Scoria %s Ore",
+    "tagprefix.soul_sand": "Soul Sand %s Ore",
+    "tagprefix.soul_soil": "Soul Soil %s Ore",
 
-    "gtceu.jei.ore_vein.pyrite_vein": "Pyrite Vein",
-    "gtceu.jei.ore_vein.nether_saltpeter_vein": "Saltpeter Vein",
-    "gtceu.jei.ore_vein.nether_certus_vein": "Certus Quartz Vein",
+    "gtceu.jei.ore_vein.overworld_lubricant_vein": "Lubricant Vein",
+    "gtceu.jei.ore_vein.overworld_apatite_vein": "Apatite Vein",
+    "gtceu.jei.ore_vein.malignant_vein": "Malignant Vein",
+    "gtceu.jei.ore_vein.loose_crystals": "Loose Crystals",
+    "gtceu.jei.ore_vein.spinel_vein": "Spinel Vein",
+    "gtceu.jei.ore_vein.veridic_brass_vein": "Veridic Brass Vein",
+    "gtceu.jei.ore_vein.fossilized_mind": "Fossilized Mind",
+    "gtceu.jei.ore_vein.stone_jade_vein": "High Jade Vein",
+    "gtceu.jei.ore_vein.deepslate_jade_vein": "Deep Jade Vein",
+    "gtceu.jei.ore_vein.mithril_vein": "Mithril Vein",
+    "gtceu.jei.ore_vein.deposited_mana": "Deposited Mana",
+    "gtceu.jei.ore_vein.cthonic_gold_vein": "Cthonic Gold Vein",
+    "gtceu.jei.ore_vein:overworld_oilsands_vein": "Oilsands Vein",
+    "gtceu.jei.ore_vein:overworld_magnetite_vein": "Magnetite Vein",
+    "gtceu.jei.ore_vein:overworld_salts_vein": "Salts Vein",
+    "gtceu.jei.ore_vein:overworld_manganese_vein": "Manganese Vein",
 
     "material.gtceu.jade": "Jade",
     "material.gtceu.skyjade": "Skyjade",
     "material.gtceu.zanite": "Zanite",
     "material.gtceu.gravitite": "Gravitite",
     "material.gtceu.ambrosium": "Ambrosium",
+    "material.gtceu.sal_ammoniac": "Sal Ammoniac",
 
     "material.gtceu.cloggrum": "Cloggrum",
     "material.gtceu.forgotten": "Forgotten Metal",
@@ -66,13 +82,15 @@
     "material.gtceu.aqua": "Aqua",
     "material.gtceu.xenorhast": "Xenorhast",
 
-    "material.gtceu.aura": "Aura",
+    "material.gtceu.aura": "Natural Aura",
     "material.gtceu.antiaura": "Hellish Aura",
     "material.gtceu.spirit": "Pure Spirit",
     "material.gtceu.demonite": "Hellforged Demonite",
 
     "material.gtceu.life_essence": "Life Essence",
     "material.gtceu.refined_blood": "Spiritually Refined Blood",
+    "material.gtceu.etheric_coldblood": "Etheric Coldblood",
+    "material.gtceu.occult_darkblood": "Occult Darkblood",
     "material.gtceu.blood": "Blood",
 
     "material.gtceu.infused_iron": "Infused Iron",
@@ -114,5 +132,17 @@
     
     "material.gtceu.bendalloy": "Bendalloy",
     "material.gtceu.nicrosil": "Nicrosil",
-    "material.gtceu.duralumin": "Duralumin"
+    "material.gtceu.duralumin": "Duralumin",
+
+    "material.gtceu.aether_air": "Aether Air",
+    "material.gtceu.liquid_aether_air": "Liquid Aether Air",
+    "material.gtceu.undergarden_smog": "Undergarden Smog",
+    "material.gtceu.undergarden_sludge": "Undergarden Sludge",
+    "material.gtceu.twilight_air": "Twilight Air",
+    "material.gtceu.condensed_twilight": "Condensed Twilight",
+
+    "material.gtceu.venus_atmosphere": "Venus Atmosphere",
+    "material.gtceu.liquid_venus_atmosphere": "Liquefacted Venus Atmosphere",
+    "material.gtceu.glacio_atmosphere": "Glacio Atmosphere",
+    "material.gtceu.liquid_glacio_atmosphere": "Liquefacted Glacio Atmosphere"
 }

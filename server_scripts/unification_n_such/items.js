@@ -2,6 +2,7 @@ const bulkReplace = [
 	{ target: 'enlightened_end:bismuth_ingot', replacement: '#forge:ingots/bismuth'},
     { target: 'eidolon:magic_ink', replacement: 'irons_spellbooks:common_ink'},
     { target: 'mna:bone_ash', replacement: 'eidolon:enchanted_ash'},
+    {target: 'hexalia:salt', replacement: '#forge:dusts/salt'},
     { target: 'eidolon:parchment', replacement: 'mna:vellum'},
     { target: 'hexalia:mandrake', replacement: 'hexerei:mandrake_root'},
     { target: 'hexalia:tree_resin', replacement: '#forge:resins'},
@@ -16,8 +17,8 @@ const bulkReplace = [
 ServerEvents.recipes((event) => {
 
   bulkReplace.forEach((group) => {
-      event.replaceOutput({}, group.target, group.replacement);
-      event.replaceInput({}, group.target, group.replacement);
+      event.replaceOutput({output: `${group.target}`}, `${group.target}`, `${group.replacement}`);
+      event.replaceInput({input: `${group.target}`}, `${group.target}`, `${group.replacement}`);
   });
 
   console.log('Items sorted')

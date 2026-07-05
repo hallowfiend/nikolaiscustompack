@@ -21,7 +21,11 @@ function forging(cost, inputs, counts, output, count, tab) {
     });
   }
 
-    /* 
+//Biological cyberware
+  forging(
+    30,
+    ["biomancy:elastic_fibers", "biomancy:storage_sac"]
+  )
 // Organics
     forging(
         1,
@@ -39,6 +43,7 @@ function forging(cost, inputs, counts, output, count, tab) {
         1,
         COMPONENTS
     );
+/*
 // """"""Gregified""""" machine recipes
     forging(
         1,

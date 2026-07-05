@@ -170,7 +170,6 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .iconSet(RUBY)
         .flags(
             GTMaterialFlags.GENERATE_LENS,
-            GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_PLATE,
             crystallizable,
             no_decomp
@@ -345,7 +344,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
 
     event.create('vinteum')
         .dust()
-        .ore(true)
+        .ore(5, 1, true)
         .color(0x9be3fa)
         .components('purified_vinteum', 'mundus', '4x oxygen', 'carbon', 'silicon')
         .addOreByproducts('vinteum','purified_vinteum')
@@ -451,24 +450,14 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .flags(
             electrolyze
         );
-    
-    event.create('anthralite')
-            .ingot()
-            .ore()
-            .color(0x625a51)
-            .secondaryColor(0x443c34)
-            .iconSet(ROUGH)
-            .components('iron', 'carbon', 'phosphorus', 'biotite', 'clay', '2x mundus', 'solid_infernalis', 'solid_terrae')
-            .flags(
-            no_decomp
-            );
+
     
     event.create('vehement_coal')
             .gem()
             .ore()
-            .color(0x625a51)
+            .color(0xE48615)
             .secondaryColor(0x443c34)
-            .iconSet(RADIOACTIVE)
+            .iconSet(SHINY)
             .components('carbon', '6x infernalis', '6x antiaura')
             .flags(
             no_decomp,
@@ -492,7 +481,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
 
     event.create('inert_crystal')
         .gem()
-        .ore()
+        .ore(4, 1)
         .color(0xf2f2f2)
         .flags(no_decomp)
         .components('nether_quartz', 'terrae', 'titanium_oxide', '2x mundus')
@@ -509,12 +498,13 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .color(0xb8dd86)
             .secondaryColor(0x698d8e)
             .components('4x experience', 'deepslate', 'solid_terrae', 'aura', 'ether')
+            .addOreByproducts('emerald', 'lapis')
             .flags(no_decomp)
             .iconSet(GLASS);
     
     event.create('blazing_quartz')
             .gem()
-            .ore(true)
+            .ore(8, 1, true)
             .color(0xe7b252)
             .components('nether_quartz', '4x infernalis', 'blaze', 'solid_infernalis')
             .flags(
@@ -532,7 +522,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
     
     event.create('soulstone')
             .gem()
-            .ore()
+            .ore(2, 1)
             .addOreByproducts('hex_ash', 'solid_arkanum', 'talc')
             .color(0xa339a8)
             .components('talc', 'gypsum', '4x spirit', 'solid_arkanum', 'solid_terrae', 'source')
@@ -568,6 +558,17 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .iconSet(SHINY);
 
 // Undergarden
+    
+    event.create('anthralite')
+            .ingot()
+            .ore()
+            .color(0x625a51)
+            .secondaryColor(0x443c34)
+            .iconSet(ROUGH)
+            .components('iron', 'carbon', 'phosphorus', 'biotite', 'clay', '2x mundus', 'solid_infernalis', 'solid_terrae')
+            .flags(
+            no_decomp
+            );
 
     event.create('cloggrum')
         .components('12x calcium_phosphide', 'ammonia', '4x calcium_carbonate', 'mundus', 'aura', 'bronze')
@@ -604,7 +605,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .gem()
             .ore()
             .color(0xc3434c)
-            .addOreByproducts('pyrope', 'ruby', 'rutile')
+            .addOreByproducts('pyrope', 'ruby', 'rutile', 'almandine')
             .iconSet(GTMaterialIconSet.CERTUS)
             .flags(
                 GTMaterialFlags.NO_SMELTING,
@@ -628,13 +629,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             GTMaterialFlags.GENERATE_GEAR,
             centrifuge
         );
-    
-    event.create("regalium")
-        .components('3x aluminium', 'quartzite', 'cthonic_gold')
-        .gem()
-        .color(0xffea03)
-        .iconSet(GTMaterialIconSet.LAPIS)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, centrifuge);
+
 
 //Cosmere
 
@@ -723,7 +718,7 @@ event.create('mithril')
         .color(0x850a04)
         .element('vitae');
 
-    // Evilcraft/Iron's Blood, the mystically pure
+    // Evilcraft, the mystically pure
     event.create('refined_blood')
         .fluid()
         .color(0x8c231d)
@@ -735,7 +730,7 @@ event.create('mithril')
         .color(0x86526E)
         .components('refined_blood', '3x ether');
     
-    // Hexerei Blood, the sanctified
+    // Hexerei/Iron's Blood, the sanctified
     event.create('occult_darkblood')
         .fluid()
         .color(0x8c231d)
@@ -882,6 +877,13 @@ event.create('spirit_gem')
             .components('gold', '4x solid_terrae', 'ember', 'deepslate')
             .iconSet(SHINY)
             .flags(no_decomp);
+    
+    event.create("regalium")
+        .components('3x aluminium', 'quartzite', 'cthonic_gold')
+        .gem()
+        .color(0xffea03)
+        .iconSet(GTMaterialIconSet.LAPIS)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, centrifuge);
 
     event.create('dawnstone')
         .color(0xfa9d32)

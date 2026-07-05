@@ -43,7 +43,7 @@ addVein("lapis_vein", GTWorldGenLayers.DEEPSLATE, 25, 40, -60, -10, GTMaterials.
       .size(1, 1));
 });
 
-addVein("manganese_vein", GTWorldGenLayers.DEEPSLATE, 30, 20, -30, -10, GTMaterials.Grossular, "surface", (pattern) => {
+addVein("overworld_manganese_vein", GTWorldGenLayers.DEEPSLATE, 30, 20, -30, -10, GTMaterials.Grossular, "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat(GTMaterials.Grossular)

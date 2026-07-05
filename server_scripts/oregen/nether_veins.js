@@ -53,7 +53,7 @@ addVein("beryllium_vein", 'nether_stones', 30, 20, 5, 30, 'beryllium', "surface"
       .size(1, 1));
 });
 
-addVein("manganese_vein", 'nether_stones', 20, 20, 20, 30, 'grossular', "surface", (pattern) => {
+addVein("nether_manganese_vein", 'nether_stones', 20, 20, 20, 30, 'grossular', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('grossular')

@@ -1,4 +1,4 @@
-const grapeJuices = [
+/* const grapeJuices = [
   "red",
   "red_savanna",
   "red_jungle",
@@ -92,4 +92,4 @@ ServerEvents.recipes((event) => {
       },
     ],
   });
-});
+}); */
