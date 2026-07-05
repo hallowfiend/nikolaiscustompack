@@ -14,7 +14,7 @@ const petalApothecary = [
 
     ]
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     //im turning this table into the central magic item crafting station and NOBODY CAN STOP ME
     //except for components that is im leaving those to be craftable normalstyle because i love ae2
 

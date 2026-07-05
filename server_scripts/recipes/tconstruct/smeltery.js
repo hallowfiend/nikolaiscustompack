@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // making the ammy bronze recipe accurate
     event.remove({ id: 'tconstruct:smeltery/alloys/molten_amethyst_bronze' })
     event.custom({

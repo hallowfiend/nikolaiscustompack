@@ -22,10 +22,10 @@ function forging(cost, inputs, counts, output, count, tab) {
   }
 
 //Biological cyberware
-  forging(
+  /*forging(
     30,
     ["biomancy:elastic_fibers", "biomancy:storage_sac"]
-  )
+  ) */
 // Organics
     forging(
         1,

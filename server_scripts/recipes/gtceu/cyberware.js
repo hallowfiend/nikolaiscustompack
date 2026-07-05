@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
 
     event.remove({ type: 'cyber_ware_port:assembly' })
 

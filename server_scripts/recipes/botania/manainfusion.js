@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // making cataclysm's black steel useful
     event.remove({ id: 'botania:mana_infusion/manasteel' })
     event.remove({ id: 'botania:mana_infusion/manasteel_block' })

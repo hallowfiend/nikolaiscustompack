@@ -1,31 +1,33 @@
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
 
   // arcane charcoal coking
   event.recipes.gtceu.coke_oven('arcane_charcoal_coking')
     .itemInputs('#malum:soulwood_logs')
     .itemOutputs('malum:arcane_charcoal')
-    .duration(900)
+    .outputFluids(Fluid.of('gtceu:creosote', 1000))
+    .duration(900);
 
   event.recipes.gtceu.coke_oven('arcane_charcoal_coking2')
     .itemInputs('#malum:runewood_logs')
     .itemOutputs('malum:arcane_charcoal')
-    .duration(900)
+    .outputFluids(Fluid.of('gtceu:creosote', 1000))
+    .duration(900);
   
   event.recipes.immersiveengineering.coke_oven(
     'malum:arcane_charcoal', '#malum:runewood_logs', 1000, 2000
-  )
+  );
 
   event.recipes.immersiveengineering.coke_oven(
     'malum:arcane_charcoal', '#malum:soulwood_logs', 1000, 2000
-  )
+  );
 
   //blast furnace fuel
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:arcane_charcoal', 600)
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:block_of_arcane_charcoal', 6000)
   
   // soulstained bronze
-  event.remove({ id: 'malum:spirit_infusion/soul_stained_steel_ingot' })
+  event.remove({ output: 'malum:soul_stained_steel_ingot' })
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {

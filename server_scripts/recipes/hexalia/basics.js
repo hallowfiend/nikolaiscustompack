@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     event.custom({
         "type": "eidolon:worktable",
         "pattern": [

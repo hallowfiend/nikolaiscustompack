@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // accurate arcane essence recipe
     event.remove({ id: 'irons_spellbooks:mixing/arcane_essence' })
     event.recipes.create.mixing(

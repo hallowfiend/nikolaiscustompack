@@ -308,11 +308,10 @@ ServerEvents.tags("item", (event) => {
     "deep_aether:stripped_conberry_wood",
     "deep_aether:stripped_sunroot_wood"
   ]);
+  
   event.add("forge:flour/wheat", ["gtceu:wheat_dust"]);
 
   event.add("gbth:certus_quartz_blocks", ["ae2:smooth_quartz_block", "ae2:quartz_bricks", "ae2:quartz_pillar", "ae2:chiseled_quartz_block", "ae2:cut_quartz_block"]);
-
-  event.add('forge:coconut','beachparty:coconut_open');
 
   event.add('farmersdelight:ropes', 'supplementaries:rope');
 

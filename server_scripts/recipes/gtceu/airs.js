@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     //Collecting
     event.recipes.gtceu.gas_collector('aether_air')
         .circuit(5)
