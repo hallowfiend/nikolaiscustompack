@@ -1,0 +1,968 @@
+// priority: 98
+
+const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty');
+const $FluidBuilder = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidBuilder');
+const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys');
+const $OreProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty");
+// const $GTFluids = Java.loadClass('com.gregtechceu.gtceu.common.data.GTFluids')
+
+let addFluid = (mat, key) => {
+    let prop = new $FluidProperty();
+    prop.getStorage().enqueueRegistration(key, new $FluidBuilder());
+    mat.setProperty(PropertyKey.FLUID, prop);
+}
+
+/* let assignFluid = (mat, fluid) => {
+    $GTFluids['handleNonMaterialFluids(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier)'](mat, fluid);
+} */
+
+GTCEuStartupEvents.registry("gtceu:material", (event) => {
+
+  addFluid(GTMaterials.Amethyst, $FluidStorageKeys.LIQUID);
+  GTMaterials.Electrum.setProperty(PropertyKey.ORE, new $OreProperty());
+  GTMaterials.CertusQuartz.addFlags(GTMaterialFlags.GENERATE_LENS);
+  GTMaterials.Netherite.addFlags(GTMaterialFlags.GENERATE_PLATE);
+
+  // dummy materials
+   event.create('mana')
+      .element('mana')
+      .color(0x22a8bd)
+      .plasma();
+
+   event.create('arkanum')
+      .element('arkanum')
+      .color(0xae44e2)
+      .gas();
+
+    event.create('spirit')
+        .element('spirit')
+        .color(0x91fff6)
+        .plasma();
+
+    event.create('aerialis')
+        .element('aerialis')
+        .color(0xfeffed)
+        .gas();
+
+    event.create('infernalis')
+        .element('infernalis')
+        .color(0xffad99)
+        .gas();
+
+    event.create('terrae')
+        .element('terrae')
+        .color(0x7ae070)
+        .gas();
+
+    event.create('aqua')
+        .color(0x8798fa)
+        .element('aqua')
+        .gas();
+
+    event.create('sacrum')
+        .color(0xff5493)
+        .element('sacrum')
+        .plasma();
+
+    event.create('profanum')
+        .color(0xa454ff)
+        .element('profanum')
+        .plasma();
+
+    event.create('xenorhast')
+        .color(0x8e00a1)
+        .element('xenorhast')
+        .plasma();
+
+    event.create('mundus')
+        .color(0xe6e6e6)
+        .element('mundus')
+        .iconSet(DULL)
+        .dust();
+
+    event.create('aura')
+        .color(0x6dd400)
+        .element('aura')
+        .gas();
+
+    event.create('antiaura')
+        .color(0xd45100)
+        .element('antiaura')
+        .gas();
+
+
+  // Solid spirits
+
+    event.create('solid_arkanum')
+      .components('arkanum', 'spirit', 'mundus')
+      .color(0xae44e2)
+      .gem()
+      .dust()
+      .iconSet(OPAL);
+
+    event.create('solid_aerialis')
+        .components('aerialis', 'spirit', 'mundus')
+        .color(0xfeffed)
+        .gem()
+        .dust()
+        .iconSet(OPAL);
+
+    event.create('solid_infernalis')
+        .components('infernalis', 'spirit', 'mundus')
+        .color(0xffad99)
+        .gem()
+        .dust()
+        .iconSet(OPAL);
+
+    event.create('solid_terrae')
+        .components('terrae', 'spirit', 'mundus')
+        .color(0x7ae070)
+        .gem()
+        .dust()
+        .iconSet(OPAL);
+
+    event.create('solid_aqua')
+        .color(0x8798fa)
+        .components('aqua', 'spirit', 'mundus')
+        .gem()
+        .dust()
+        .iconSet(OPAL);
+
+    event.create('solid_sacrum')
+        .color(0xff5493)
+        .components('sacrum', 'spirit', 'mundus')
+        .gem()
+        .dust()
+        .iconSet(OPAL);
+
+    event.create('solid_profanum')
+        .color(0xa454ff)
+        .components('profanum', 'spirit', 'mundus')
+        .gem()
+        .dust()
+        .iconSet(OPAL);
+
+    event.create('solid_xenorhast')
+        .color(0x8e00a1)
+        .components('xenorhast', 'spirit', 'mundus')
+        .gem()
+        .dust()
+        .iconSet(OPAL);
+
+// Pneumaticcraft
+
+    event.create('compressed_iron')
+        .ingot()
+        .iconSet(METALLIC)
+        .color(0x64615e)
+        .secondaryColor(0x373332)
+        .components('iron', '2x air', 'aerialis')
+        .flags(plates, gear, rod);
+
+// Ars Nouveau
+
+    event.create('source')
+        .gem()
+        .liquid(900)
+        .components('amethyst', 'aura', 'mana', 'mundus', '4x arkanum')
+        .color(0xAE44E2)
+        .secondaryColor(0xE244C8)
+        .iconSet(RUBY)
+        .flags(
+            GTMaterialFlags.GENERATE_LENS,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_PLATE,
+            crystallizable,
+            no_decomp
+        );
+
+// Aether
+
+    event.create('jade')
+        .gem(2)
+        .ore()
+        .color(0x256B32)
+        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .addOreByproducts('nether_quartz', 'chromium', 'solid_aerialis')
+        .washedIn('water')
+        .components('sodium', 'aluminium', '2x silicon', '6x oxygen')
+        .flags(
+            plates,
+            lens,
+            crystallizable,
+            electrolyze
+        );
+
+    event.create("skyjade")
+        .gem(3)
+        .ore()
+        .components('jade', '2x aerialis')
+        .addOreByproducts('jade', 'solid_aerialis')
+        .washedIn('water')
+        .color(0x99cc5e)
+        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+        .flags(
+            plates,
+            lens,
+            crystallizable,
+            no_decomp
+            );
+
+    event.create("ambrosium")
+        .gem(1)
+        .ore()
+        .fluid()
+        .element('ambrosium')
+        .addOreByproducts('gold', 'topaz')
+        .washedIn('glowstone')
+        .color(0xfefb64)
+        .iconSet(GTMaterialIconSet.RUBY)
+        .flags(
+            no_decomp
+        )
+        .burnTime(1600);
+
+    event.create("gravitite")
+        .gem(3)
+        .ore()
+        .fluid()
+        .element('gravitite')
+        .addOreByproducts('amethyst', 'lead', 'source')
+        .washedIn('mercury')
+        .color(0xba5eb3)
+        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .flags(
+            plates,
+            crystallizable,
+            no_decomp
+        );
+
+    event.create('zanite')
+        .gem(2)
+        .ore()
+        .color(0x8e51e9)
+        .element('zanite')
+        .addOreByproducts('solid_xenorhast', 'aluminium', 'vanadium', 'source')
+        .washedIn('amethyst')
+        .iconSet(GTMaterialIconSet.DIAMOND)
+        .flags(
+            plates,
+            lens,
+            crystallizable
+        );
+
+// Botania
+
+  event.create("manasteel")
+      .ingot()
+      .fluid()
+      .color(0x67b9ee)
+      .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
+      .components('black_steel', 'mana')
+      .flags(no_decomp)
+      .iconSet(GTMaterialIconSet.SHINY);
+
+  event.create("elementium")
+        .ingot()
+        .fluid()
+        .color(0xf472c6)
+        .components('ambrosium', 'cobalt_brass', '2x mana', 'mundus', '2x sacrum', 'aura', 'arkanum')
+        .flags(no_decomp)
+        .iconSet(GTMaterialIconSet.SHINY);
+
+    event.create('mana_pearl')
+        .gem()
+        .dust()
+        .color(0x007b9b)
+        .components('ender_pearl', 'mana')
+        .flags(no_decomp)
+        .iconSet(BRIGHT);
+
+    event.create('mana_diamond')
+        .gem()
+        .dust()
+        .color(0x39ecfc)
+        .components('sapphire', 'mana')
+        .flags(
+            no_decomp,
+            no_smashing,
+            plates,
+            lens
+        )
+        .iconSet(DIAMOND);
+
+    event.create('terrasteel')
+        .ingot()
+        .fluid()
+        .color(0x55f609)
+        .components('manasteel', 'mana_pearl', 'mana_diamond', '8x mana')
+        .flags(no_decomp)
+        .iconSet(GTMaterialIconSet.METALLIC);
+
+// Ad Astra
+
+  event.create('desh')
+          .ingot()
+          .fluid()
+          .ore()
+          .color(0xF2A057).secondaryColor(0x2E2F04)
+          .element('desh')
+          .addOreByproducts('ilmenite', 'olivine')
+          .washedIn('mercury')
+          .iconSet(GTMaterialIconSet.METALLIC)
+          .flags(GTMaterialFlags.GENERATE_PLATE);
+
+  event.create('ostrum')
+          .ingot()
+          .fluid()
+          .ore()
+          .color(0xE5939B).secondaryColor(0x2F0425)
+          .element('ostrum')
+          .addOreByproducts('gypsum', 'olivine', 'magnetite', 'hematite')
+          .washedIn('sulfuric_acid')
+          .iconSet(GTMaterialIconSet.METALLIC)
+          .flags(GTMaterialFlags.GENERATE_PLATE);
+
+  event.create('calorite')
+          .ingot()
+          .fluid()
+          .ore()
+          .color(0xE65757).secondaryColor(0x2F0506)
+          .element('calorite')
+          .addOreByproducts('pyrite', 'apatite', 'olivine', 'sulfur')
+          .washedIn('sodium_persulfate')
+          .iconSet(GTMaterialIconSet.METALLIC)
+          .flags(GTMaterialFlags.GENERATE_PLATE);
+
+// Mana and Artifice
+
+    event.create('purified_vinteum')
+        .dust()
+        .color(0xb273ff)
+        .element('vinteum')
+        .flags(block)
+        .iconSet(SHINY);
+
+    event.create('vinteum')
+        .dust()
+        .ore(true)
+        .color(0x9be3fa)
+        .components('purified_vinteum', 'mundus', '4x oxygen', 'carbon', 'silicon')
+        .addOreByproducts('vinteum','purified_vinteum')
+        .flags(
+            electrolyze,
+            no_smashing,
+            no_smelt,
+            mortar_grind
+        )
+        .iconSet(DULL);
+
+    event.create('vinteum_alloy')
+        .ingot()
+        .color(0x9be3fa)
+        .components('vinteum', 'iron')
+        .flags(centrifuge)
+        .iconSet(METALLIC);
+
+    event.create('purified_vinteum_alloy')
+        .ingot()
+        .color(0xb273ff)
+        .components('purified_vinteum', 'iron')
+        .flags(centrifuge)
+        .iconSet(METALLIC);
+
+// General
+
+    event.create('experience')
+          .ingot()
+          .fluid()
+          .color(0x3ED900)
+          .element('experience')
+          .iconSet(SHINY);
+
+    event.create('ether')
+        .gem()
+        .gas()
+        .color(0xdbf56e)
+        .components('ash', 'mundus', 'spirit', 'antiaura')
+        .flags(
+            no_decomp,
+            no_smashing
+        )
+        .iconSet(BRIGHT);
+
+    event.create('turquoise')
+        .gem()
+        .ore()
+        .color(0x2bffd8)
+        .components('copper', '6x aluminium', '6x phosphate', '8x oxygen', '8x hydrogen', '4x water')
+        .flags(electrolyze)
+        .iconSet(LAPIS);
+    
+    event.create('calcium_magnesium_carbonate')
+        .dust()
+        .color(0xf7f6f2)
+        .components('calcium',  'magnesium', '2x carbon', '6x oxygen')
+        .flags(electrolyze);
+    
+    event.create('limestone')
+        .dust()
+        .color(0xb8b1a0)
+        .components('calcium_carbonate', 'calcium_magnesium_carbonate')
+        .flags(
+            centrifuge
+        );
+
+    event.create('spinel')
+        .gem()
+        .ore()
+        .color(0xe36fc0)
+        .components('magnesium', '2x aluminium', '4x oxygen')
+        .addOreByproducts('limestone')
+        .iconSet(RUBY)
+        .flags(
+            crystallizable,
+            electrolyze,
+            no_smashing,
+            no_smelt
+        );
+
+    event.create('citrine')
+        .gem()
+        .ore()
+        .color(0xe2c777)
+        .secondaryColor(0xd7a963)
+        .components('quartzite', 'aluminium', 'mundus', 'ether')
+        .iconSet(FLINT)
+        .flags(
+            crystallizable,
+            electrolyze,
+            no_smashing,
+            no_smelt
+        );
+    
+    event.create('sal_ammoniac')
+        .gem()
+        .ore()
+        .color(0xb48cc1)
+        .secondaryColor(0xe4d9e9)
+        .components('ammonium_chloride', 'ether', 'solid_terrae', 'solid_aerialis', 'solid_aqua', 'solid_infernalis')
+        .iconSet(QUARTZ)
+        .flags(
+            electrolyze
+        );
+    
+    event.create('anthralite')
+            .ingot()
+            .ore()
+            .color(0x625a51)
+            .secondaryColor(0x443c34)
+            .iconSet(ROUGH)
+            .components('iron', 'carbon', 'phosphorus', 'biotite', 'clay', '2x mundus', 'solid_infernalis', 'solid_terrae')
+            .flags(
+            no_decomp
+            );
+    
+    event.create('vehement_coal')
+            .gem()
+            .ore()
+            .color(0x625a51)
+            .secondaryColor(0x443c34)
+            .iconSet(RADIOACTIVE)
+            .components('carbon', '6x infernalis', '6x antiaura')
+            .flags(
+            no_decomp,
+            explosive,
+            flammable
+            );
+    
+    
+    /*event.create('treated_brass')
+            .ingot()
+            .color()
+            .secondaryColor()
+            .components()
+    
+    event.create('soul_steel')
+            .ingot()
+            .color()
+            .components('')*/
+
+// ElementalCraft
+
+    event.create('inert_crystal')
+        .gem()
+        .ore()
+        .color(0xf2f2f2)
+        .flags(no_decomp)
+        .components('nether_quartz', 'terrae', 'titanium_oxide', '2x mundus')
+        .iconSet(QUARTZ);
+
+    
+
+// Malum & Eidolon
+    
+    
+    event.create('brilliance')
+            .gem()
+            .ore(true)
+            .color(0xb8dd86)
+            .secondaryColor(0x698d8e)
+            .components('4x experience', 'deepslate', 'solid_terrae', 'aura', 'ether')
+            .flags(no_decomp)
+            .iconSet(GLASS);
+    
+    event.create('blazing_quartz')
+            .gem()
+            .ore(true)
+            .color(0xe7b252)
+            .components('nether_quartz', '4x infernalis', 'blaze', 'solid_infernalis')
+            .flags(
+                no_decomp,
+                flammable
+            )
+            .iconSet(CERTUS);
+    
+    event.create('cthonic_gold')
+            .gem()
+            .ore(true)
+            .color(0xfcf49a)
+            .secondaryColor(0x777777)
+            .components('gold', '4x solid_terrae', 'ember', 'deepslate')
+            .iconSet(SHINY)
+            .flags(no_decomp);
+    
+    event.create('hex_ash')
+            .dust()
+            .color(0x65319f)
+            .components('2x saltpeter', 'solid_arkanum')
+            .flags(centrifuge)
+            .iconSet(LAPIS);
+    
+    event.create('soulstone')
+            .gem()
+            .ore()
+            .addOreByproducts('hex_ash', 'solid_arkanum', 'talc')
+            .color(0xa339a8)
+            .components('talc', 'gypsum', '4x spirit', 'solid_arkanum', 'solid_terrae', 'source')
+            .flags(
+                no_decomp
+            )
+            .iconSet(DULL);
+    
+    event.create('soul_stained_steel')
+        .color(0xdb3dff)
+        .secondaryColor(0xe683fc)
+        .ingot()
+        .components('amethyst_bronze', '4x soulstone', '3x profanum', 'arkanum', 'terrae')
+        .cableProperties(GTValues.V[GTValues.MV], 2, 2, true)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            no_decomp
+        );
+
+    event.create('hallowed_gold')
+            .ingot()
+            .color(0xe7d26d)
+            .cableProperties(GTValues.V[GTValues.LV], 8, 8, true)
+            .components('gold', '4x quartzite', '2x sacrum', 'arkanum')
+            .iconSet(SHINY);
+
+// Undergarden
+
+    event.create('cloggrum')
+        .components('12x calcium_phosphide', 'ammonia', '4x calcium_carbonate', 'mundus', 'aura', 'bronze')
+          .color(0x8a735a)
+          .ingot()
+          .ore()
+          .fluid()
+          .addOreByproducts('calcium_phosphide', 'calcium_carbonate', 'carbon', 'apatite')
+          .washedIn('gtceu:diluted_sulfuric_acid')
+          .separatedInto('anthralite', 'copper')
+          .iconSet(GTMaterialIconSet.ROUGH)
+          .flags(
+              GTMaterialFlags.GENERATE_PLATE,
+              GTMaterialFlags.GENERATE_BOLT_SCREW,
+              GTMaterialFlags.GENERATE_ROD,
+              GTMaterialFlags.GENERATE_SPRING,
+              GTMaterialFlags.GENERATE_SPRING_SMALL,
+              GTMaterialFlags.GENERATE_FOIL,
+              no_decomp
+          );
+
+    event.create('forgotten')
+            .color(0x2596be)
+            .ingot()
+            .formula('?')
+            .iconSet(METALLIC)
+            .flags(
+                GTMaterialFlags.GENERATE_PLATE,
+                GTMaterialFlags.GENERATE_FOIL,
+                no_decomp
+            );
+
+    event.create('utherium')
+            .gem()
+            .ore()
+            .color(0xc3434c)
+            .addOreByproducts('pyrope', 'ruby', 'rutile')
+            .iconSet(GTMaterialIconSet.CERTUS)
+            .flags(
+                GTMaterialFlags.NO_SMELTING,
+                GTMaterialFlags.NO_ORE_SMELTING
+            );
+    
+    event.create('froststeel')
+        .ingot()
+        .liquid()
+        .color(0x67b9ee)
+        .ore()
+        .components('blue_steel', 'vinteum', 'water', 'solid_aqua', 'solid_aerialis')
+        .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
+        .iconSet(SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_GEAR,
+            centrifuge
+        );
+    
+    event.create("regalium")
+        .components('3x aluminium', 'quartzite', 'cthonic_gold')
+        .gem()
+        .color(0xffea03)
+        .iconSet(GTMaterialIconSet.LAPIS)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, centrifuge);
+
+//Cosmere
+
+event.create('nicrosil')
+        .ingot()
+        .fluid()
+        .color(0xa9a9b0)
+        .components('2x nickel', 'chromium', 'nether_quartz')
+        .flags(centrifuge)
+        .iconSet(MAGNETIC);
+
+event.create('duralumin')
+        .ingot()
+        .fluid()
+        .color(0xbbc9c1)
+        .components('3x aluminium', 'copper')
+        .flags(centrifuge)
+        .iconSet(SHINY);
+
+event.create('bendalloy')
+        .ingot()
+        .fluid()
+        .color(0xbab6a2)
+        .components('2x tin', 'cadmium', 'lead')
+        .flags(centrifuge)
+        .iconSet(METALLIC);
+
+//Iron's Spells & Spellbooks
+
+event.create('arcane_essence')
+        .dust()
+        .color(0x5263ff)
+        .secondaryColor(0xb000cf)
+        .components('ether', 'source', 'vinteum', 'experience', 'water')
+        .flags(centrifuge)
+        .iconSet(LAPIS);
+
+event.create('mithril')
+        .ingot(4)
+        .fluid()
+        .ore(true)
+        .components('2x platinum', 'palladium', '3x silver','4x mana', '4x source', '12x mundus')
+        .color(0xc7ebec)
+        .secondaryColor(0x486b82)
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .addOreByproducts('silver', 'platinum', 'palladium', 'cadmium', 'arcane_essence')
+        .washedIn('gtceu:mercury')
+        .separatedInto('palladium', 'source')
+        .flags(no_decomp)
+        .separatedInto('silver', 'platinum');
+
+
+// Nature's Aura
+
+    event.create('infused_iron')
+        .ingot()
+        .color(0x36bf3f)
+        .components('iron', 'terrae', 'aura')
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD
+        );
+
+    event.create('tainted_gold')
+            .ingot()
+            .color(0xb6793e)
+            .components('gold', 'infernalis', 'antiaura')
+            .iconSet(GTMaterialIconSet.DULL)
+            .flags(GTMaterialFlags.GENERATE_PLATE,
+                GTMaterialFlags.GENERATE_ROD
+            );
+
+    event.create('sky_ingot')
+        .ingot()
+        .color(0x99e0ff)
+        .components('aluminium', 'helium', 'solid_sacrum', 'solid_aerialis')
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(GTMaterialFlags.GENERATE_PLATE,
+        );
+
+// Blood grades
+
+    // BM Life Essence, the purest
+    event.create('life_essence')
+        .fluid()
+        .color(0x850a04)
+        .element('vitae');
+
+    // Evilcraft/Iron's Blood, the mystically pure
+    event.create('refined_blood')
+        .fluid()
+        .color(0x8c231d)
+        .components('life_essence', 'mundus', 'ether');
+    
+    // Sons of Sins Blood, ether-infused
+    event.create('etheric_coldblood')
+        .fluid()
+        .color(0x86526E)
+        .components('refined_blood', '3x ether');
+    
+    // Hexerei Blood, the sanctified
+    event.create('occult_darkblood')
+        .fluid()
+        .color(0x8c231d)
+        .components('refined_blood', '3x solid_sacrum', '3x solid_arkanum');
+
+    // Vampirism Blood, the impure
+    event.create('blood')
+        .fluid()
+        .color(0x8a2f2b)
+        .components('refined_blood', '34x carbon', '32x hydrogen', '4x oxygen', '4x nitrogen', 'iron');
+    
+    /* event.create('meat_soup')
+        .fluid()
+        .color()
+        .secondaryColor()
+        .components('blood', '2x meat');*/
+
+// Adding liquids to the thingy
+
+    // assignFluid(GTMaterials.get('life_essence'), () => Fluid.of('bloodmagic:life_essence_fluid').fluid);
+
+
+// Blood Magic
+
+    event.create('raw_will')
+        .gem()
+        .color(0xb7f0e6)
+        .components('4x solid_profanum', 'solid_infernalis', 'antiaura', 'mundus')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
+    
+    event.create('corrosive_will')
+        .gem()
+        .color(0x60FF4F)
+        .components('raw_will', 'sulfuric_acid', 'terrae')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
+    /*
+    event.create('destructive_will')
+        .gem()
+        .color(0x60FF4F)
+        .components('raw_will', 'sulfuric_acid', 'terrae')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
+    event.create('vengeful_will')
+        .gem()
+        .color(0x60FF4F)
+        .components('raw_will', 'sulfuric_acid', 'terrae')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
+    event.create('steadfast_will')
+        .gem()
+        .color(0x60FF4F)
+        .components('raw_will', 'sulfuric_acid', 'terrae')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
+    */
+
+    event.create('demonite')
+            .ingot()
+            .ore()
+            .color(0xb7f0e6)
+            .addOreByproducts('lead', 'vinteum', 'sulfur', 'vehement_coal', 'raw_will')
+            .washedIn('life_essence')
+            .components('galena', '4x antiaura', '4x solid_infernalis')
+            .iconSet(GTMaterialIconSet.METALLIC)
+            .flags(
+                GTMaterialFlags.GENERATE_PLATE,
+                GTMaterialFlags.GENERATE_ROD,
+                GTMaterialFlags.GENERATE_FOIL,
+                GTMaterialFlags.GENERATE_GEAR,
+                no_decomp
+            );
+
+// Occultism
+event.create('iesnium')
+        .color(0x47adc4)
+        .secondaryColor(0x00a383)
+        .ore()
+        .addOreByproducts('arcane_essence', 'ether', 'demonite')
+        .element('iesnium')
+        .ingot()
+        .dust()
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        );
+
+event.create('spirit_gem')
+        .gem()
+        .color(0xbb78cc)
+        .components('ruby', 'spirit', 'arkanum')
+        .iconSet(DIAMOND)
+        .flags(
+            no_decomp,
+            no_smashing
+        );
+
+// Embers
+
+  event.create('ember')
+    .gem()
+    .ore()
+    .components('carbon', 'sulfur', 'spirit', 'solid_infernalis')
+    .addOreByproducts('sulfur', 'phosphorus', 'vehement_coal', 'iesnium')
+    .washedIn('gtceu:mercury')
+    .color(0xff7300)
+    .secondaryColor(0xffdba8)
+    .iconSet(CERTUS)
+    .flags(
+        no_decomp,
+        flammable,
+        crystallizable,
+        more_sifter
+    );
+
+// Evilcraft
+
+    event.create('dark')
+        .gem()
+        .ore()
+        .addOreByproducts('solid_xenorhast')
+        .color(0x141414)
+        .iconSet(EMERALD)
+        .components('nether_quartz', 'carbon', '4x profanum', 'antiaura')
+        .flags(no_decomp);
+
+    event.create('dark_power')
+        .gem()
+        .color(0x331716)
+        .iconSet(EMERALD)
+        .components('dark', 'refined_blood')
+        .flags(centrifuge);
+    
+
+// Airs
+
+    event.create('aether_air')
+        .gas()
+        .color(0x75bfff);
+    event.create('liquid_aether_air')
+        .liquid()
+        .color(0x75bfff);
+    event.create('twilight_air')
+        .gas()
+        .color(0x75bfff);
+    event.create('condensed_twilight')
+        .liquid()
+        .color(0x75bfff);
+    event.create('undergarden_smog')
+        .gas()
+        .color(0x614b09)
+        .iconSet(GTMaterialIconSet.DULL);
+    event.create('undergarden_sludge')
+        .liquid()
+        .color(0x3d2e02)
+        .iconSet(GTMaterialIconSet.DULL);
+    event.create('venus_atmosphere')
+        .fluid()
+        .color(0xE6E600);
+    event.create('liquid_venus_atmosphere')
+        .fluid()
+        .color(0x999900);
+    event.create('glacio_atmosphere')
+        .fluid()
+        .color(0x9EFAFA);
+    event.create('liquid_glacio_atmosphere')
+        .fluid()
+        .color(0x3DF5F5);
+
+// Misc stones
+    event.create("moon_stone")
+        .dust()
+        .color(0x304750)
+        .iconSet(GTMaterialIconSet.DULL);
+    event.create("mars_stone")
+        .dust()
+        .color(0xFFAA80)
+        .iconSet(GTMaterialIconSet.DULL);
+    event.create("venus_stone")
+        .dust()
+        .color(0xF9D286)
+        .iconSet(GTMaterialIconSet.DULL);
+    event.create("mercury_stone")
+        .dust()
+        .color(0x66004D)
+        .iconSet(GTMaterialIconSet.DULL);
+    event.create("glacio_stone")
+        .dust()
+        .color(0xB3B3FF)
+        .iconSet(GTMaterialIconSet.DULL);
+    
+    
+    
+    console.log('Materials ordered')
+
+});
+
+

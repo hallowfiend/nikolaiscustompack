@@ -1,0 +1,118 @@
+{
+
+    "tagprefix.sediment": "Sediment %s Ore",
+    "tagprefix.glacio_stone": "Glacio %s Ore",
+    "tagprefix.frosted_holystone": "Frosted Holystone %s Ore",
+    "tagprefix.icestone": "Icestone %s Ore",
+    "tagprefix.depthrock": "Depthrock %s Ore",
+    "tagprefix.crimsite": "Crimsite %s Ore",
+    "tagprefix.limestone": "Limestone %s Ore",
+    "tagprefix.veridium": "Veridium %s Ore",
+    "tagprefix.moon_stone": "Moon Stone %s Ore",
+    "tagprefix.mars_stone": "Mars Stone %s Ore",
+    "tagprefix.venus_stone": "Venus Stone %s Ore",
+    "tagprefix.mercury_stone": "Mercury Stone %s Ore",
+    "tagprefix.blightmoss_holystone": "Holystone %s Ore",
+    "tagprefix.mossy_holystone": "Mossy Holystone %s Ore",
+    "tagprefix.ochrum": "Ochrum %s Ore",
+    "tagprefix.scorchia": "Scorchia %s Ore",
+    "tagprefix.holystone": "Holystone %s Ore",
+    "tagprefix.asurine": "Asurine %s Ore",
+    "tagprefix.shiverstone": "Shiverstone %s Ore",
+    "tagprefix.scoria": "Scoria %s Ore",
+
+    "gtceu.jei.ore_vein.pyrite_vein": "Pyrite Vein",
+    "gtceu.jei.ore_vein.nether_saltpeter_vein": "Saltpeter Vein",
+    "gtceu.jei.ore_vein.nether_certus_vein": "Certus Quartz Vein",
+
+    "material.gtceu.jade": "Jade",
+    "material.gtceu.skyjade": "Skyjade",
+    "material.gtceu.zanite": "Zanite",
+    "material.gtceu.gravitite": "Gravitite",
+    "material.gtceu.ambrosium": "Ambrosium",
+
+    "material.gtceu.cloggrum": "Cloggrum",
+    "material.gtceu.forgotten": "Forgotten Metal",
+    "material.gtceu.utherium": "Utherium Crystal",
+
+    "material.gtceu.source": "Source Gem",
+    "material.gtceu.mithril": "Mithril",
+    "material.gtceu.experience": "Experience",
+
+    "material.gtceu.arcane_essence": "Arcane Essence",
+    "material.gtceu.iesnium": "Iesnium",
+
+    "material.gtceu.desh": "Desh",
+    "material.gtceu.calorite": "Calorite",
+    "material.gtceu.ostrum": "Ostrum",
+
+    "material.gtceu.mana": "Mana",
+    "material.gtceu.mana_diamond": "Mana Sapphire",
+    "material.gtceu.mana_pearl": "Mana Pearl",
+    "material.gtceu.manasteel": "Manasteel",
+    "material.gtceu.elementium": "Elementium",
+    "material.gtceu.terrasteel": "Terrasteel",
+
+    "material.gtceu.spinel": "Spinel",
+    "material.gtceu.ether": "Ether",
+
+    "material.gtceu.mundus": "Plain Mundus",
+    "material.gtceu.profanum": "Profanum",
+    "material.gtceu.sacrum": "Sacrum",
+    "material.gtceu.arkanum": "Arkanum",
+    "material.gtceu.aerialis": "Aerialis",
+    "material.gtceu.infernalis": "Infernalis",
+    "material.gtceu.terrae": "Terrae",
+    "material.gtceu.aqua": "Aqua",
+    "material.gtceu.xenorhast": "Xenorhast",
+
+    "material.gtceu.aura": "Aura",
+    "material.gtceu.antiaura": "Hellish Aura",
+    "material.gtceu.spirit": "Pure Spirit",
+    "material.gtceu.demonite": "Hellforged Demonite",
+
+    "material.gtceu.life_essence": "Life Essence",
+    "material.gtceu.refined_blood": "Spiritually Refined Blood",
+    "material.gtceu.blood": "Blood",
+
+    "material.gtceu.infused_iron": "Infused Iron",
+    "material.gtceu.tainted_gold": "Tainted Gold",
+    "material.gtceu.sky_ingot": "Heavenly Metal",
+
+    "material.gtceu.solid_profanum": "Malicious Profanum",
+    "material.gtceu.solid_sacrum": "Innocent Sacrum",
+    "material.gtceu.solid_arkanum": "Fundamental Arkanum",
+    "material.gtceu.solid_aerialis": "Swift Aerialis",
+    "material.gtceu.solid_infernalis": "Radiant Infernalis",
+    "material.gtceu.solid_terrae": "Steady Terrae",
+    "material.gtceu.solid_aqua": "Malleable Aqua",
+    "material.gtceu.solid_xenorhast": "Esoteric Xenorhast",
+
+    "material.gtceu.dark": "Dark Gem",
+    "material.gtceu.dark_power": "Dark Power Gem",
+
+    "material.gtceu.compressed_iron": "Compressed Iron",
+    "material.gtceu.ember": "Ember",
+    "material.gtceu.citrine": "Citrine",
+
+    "material.gtceu.vinteum": "Vinteum",
+    "material.gtceu.purified_vinteum": "Purified Vinteum",
+
+    "material.gtceu.inert_crystal": "Inert Crystal",
+    "material.gtceu.turquoise": "Turquoise",
+
+    "material.gtceu.soul_stained_steel": "Soul Stained Bronze",
+    "material.gtceu.brilliance": "Brilliance",
+    "material.gtceu.soulstone": "Soulstone",
+    "material.gtceu.blazing_quartz": "Blazing Quartz",
+    "material.gtceu.hallowed_gold": "Hallowed Gold",
+    "material.gtceu.hex_ash": "Hex Ash",
+    "material.gtceu.cthonic_gold": "Cthonic Gold",
+
+    "material.gtceu.calcium_magnesium_carbonate": "Calcium Magnesium Carbonate",
+    "material.gtceu.limestone": "Limestone",
+    
+    "material.gtceu.bendalloy": "Bendalloy",
+    "material.gtceu.nicrosil": "Nicrosil",
+    "material.gtceu.duralumin": "Duralumin"
+}
