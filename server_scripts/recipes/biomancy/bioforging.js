@@ -6,20 +6,6 @@ const COMPONENTS = 'biomancy:components'
 const MISC = 'biomancy:misc'
 
 ServerEvents.recipes((event) => {
-function forging(cost, inputs, counts, output, count, tab) {
-    let ing = [];
-    inputs.forEach((element, index) => {
-      ing.push(ItemOrTagAndCount(element, counts[index]));
-    });
-
-    event.custom({
-      type: "biomancy:bio_forging",
-      bio_forge_tab: tab,
-      ingredients: ing,
-      nutrientsCost: cost,
-      result: ItemAndCount(output, count),
-    });
-  }
 
 //Biological cyberware
   /*forging(
@@ -27,22 +13,31 @@ function forging(cost, inputs, counts, output, count, tab) {
     ["biomancy:elastic_fibers", "biomancy:storage_sac"]
   ) */
 // Organics
-    forging(
-        1,
-        ["minecraft:bone", "minecraft:porkchop"],
-        [1, 2],
-        "farmersdelight:ham",
-        1,
-        COMPONENTS
-    );
-    forging(
-        1,
-        ["biomancy:mob_claw", "biomancy:bone_fragments"],
-        [1, 16],
-        "biomancy:mob_fang",
-        1,
-        COMPONENTS
-    );
+event.custom({
+    type: "biomancy:bio_forging",
+    bio_forge_tab: COMPONENTS,
+    ingredients: [
+      { item: "biomancy:mob_claw" },
+      { count: 16, item: "biomancy:bone_fragments" }
+    ],
+    nutrientsCost: 1,
+    result: {
+      item: "biomancy:mob_fang"
+    }
+  })
+event.custom({
+    type: "biomancy:bio_forging",
+    bio_forge_tab: COMPONENTS,
+    ingredients: [
+      { item: "minecraft:bone" },
+      { count: 4, item: "biomancy:flesh_bits" },
+      { count: 2, item: "minecraft:raw_porkchop"}
+    ],
+    nutrientsCost: 1,
+    result: {
+      item: "farmersdelight:ham"
+    }
+  })
 /*
 // """"""Gregified""""" machine recipes
     forging(
