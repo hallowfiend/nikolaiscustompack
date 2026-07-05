@@ -1,4 +1,4 @@
-/* addVein("overworld_apatite_vein", GTWorldGenLayers.STONE, 25, 40, 10, 80, GTMaterials.Apatite, "above", (pattern) => {
+addVein("overworld_apatite_vein", GTWorldGenLayers.STONE, 25, 40, 10, 80, GTMaterials.Apatite, "above", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat(GTMaterials.Apatite)
@@ -194,4 +194,4 @@ addVein("stone_jade_vein", GTWorldGenLayers.STONE, 40, 60, 40, 120, 'jade', "sur
     .layer((l) => l.weight(1)
       .mat('chromite')
       .size(1, 1));
-}); */
+});

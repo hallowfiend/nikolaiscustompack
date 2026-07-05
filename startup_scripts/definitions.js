@@ -1,4 +1,4 @@
-// priority: 999
+// priority: 9999
 
 // Icon Sets
     const DULL = GTMaterialIconSet.DULL;

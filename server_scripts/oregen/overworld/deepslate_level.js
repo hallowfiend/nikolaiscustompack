@@ -1,4 +1,4 @@
-/* addVein("copper_vein", GTWorldGenLayers.DEEPSLATE, 25, 80, -40, -10, GTMaterials.Copper, "surface", (pattern) => {
+addVein("copper_vein", GTWorldGenLayers.DEEPSLATE, 25, 80, -40, -10, GTMaterials.Copper, "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(5)
       .mat(GTMaterials.Chalcopyrite)
@@ -104,7 +104,7 @@ addVein("redstone_vein", GTWorldGenLayers.DEEPSLATE, 25, 60, -65, -10, GTMateria
       .size(1, 1));
 });
 
-addVein("redchrome_vein", GTWorldGenLayers.DEEPSLATE, 10, 40, -65, -10, GTMaterials.Redstone, "surface", (pattern) => {
+/* addVein("redchrome_vein", GTWorldGenLayers.DEEPSLATE, 10, 40, -65, -10, GTMaterials.Redstone, "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat(GTMaterials.Redstone)
@@ -115,7 +115,7 @@ addVein("redchrome_vein", GTWorldGenLayers.DEEPSLATE, 10, 40, -65, -10, GTMateri
     .layer((l) => l.weight(1)
       .mat(GTMaterials.Cinnabar)
       .size(1, 1));
-});
+}); */
 
 addVein("sapphire_vein", GTWorldGenLayers.DEEPSLATE, 20, 60, -40, -10, GTMaterials.Sapphire, "above", (pattern) => {
   pattern
@@ -221,4 +221,4 @@ addVein("mithril_vein", GTWorldGenLayers.DEEPSLATE, 20, 20, -30, -10, 'mithril',
     .layer((l) => l.weight(1)
       .mat('nickel')
       .size(1, 1));
-}); */
+});

@@ -1,4 +1,4 @@
-/* addVein("loose_crystals", 'sand', 10, 20, 10, 50, 'inert_crystal', "above", (pattern) => {
+addVein("loose_crystals", 'sand', 10, 20, 10, 50, 'inert_crystal', "above", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('quartzite')
@@ -24,7 +24,7 @@ addVein("spinel", 'create_overworld_stones', 40, 20, -65, 50, 'spinel', "above",
       .size(1, 1))
 });
 
-addVein("natural_veridic_brass", 'create_overworld_stones', 20, 20, -65, 50, 'turquoise', "above", (pattern) => {
+addVein("veridic_brass", 'create_overworld_stones', 20, 20, -65, 50, 'turquoise', "above", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('tetrahedrite')
@@ -38,4 +38,4 @@ addVein("natural_veridic_brass", 'create_overworld_stones', 20, 20, -65, 50, 'tu
     .layer((l) => l.weight(1)
       .mat('turquoise')
       .size(1, 1))
-}); */
+});

@@ -523,15 +523,6 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             )
             .iconSet(CERTUS);
     
-    event.create('cthonic_gold')
-            .gem()
-            .ore(true)
-            .color(0xfcf49a)
-            .secondaryColor(0x777777)
-            .components('gold', '4x solid_terrae', 'ember', 'deepslate')
-            .iconSet(SHINY)
-            .flags(no_decomp);
-    
     event.create('hex_ash')
             .dust()
             .color(0x65319f)
@@ -882,6 +873,35 @@ event.create('spirit_gem')
         crystallizable,
         more_sifter
     );
+
+    event.create('cthonic_gold')
+            .gem()
+            .ore(true)
+            .color(0xfcf49a)
+            .secondaryColor(0x777777)
+            .components('gold', '4x solid_terrae', 'ember', 'deepslate')
+            .iconSet(SHINY)
+            .flags(no_decomp);
+
+    event.create('dawnstone')
+        .color(0xfa9d32)
+        .ingot()
+        .iconSet(GTMaterialIconSet.SHINY)
+        .components('2x copper', '2x cthonic_gold', 'ember')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR
+        );
+
 
 // Evilcraft
 

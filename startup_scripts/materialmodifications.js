@@ -119,6 +119,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('hallowed_gold', 'malum:block_of_hallowed_gold')
     block('vinteum', 'mna:vinteum_dust_block')
     block('soulstone', 'malum:block_of_soulstone')
+    block('cthonic_gold', 'malum:block_of_cthonic_gold')
     block('vinteum_alloy', 'mna:vinteum_block')
     block('bendalloy', 'cosmere:bendalloy_block')
     block('nicrosil', 'cosmere:nicrosil_block')
@@ -197,9 +198,11 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')
+    gemFlawless('cthonic_gold', 'malum:cthonic_gold')
 
 //Chipped gems
     gemChipped('ember', 'embers:ember_shard')
+    gemChipped('cthonic_gold', 'malum:cthonic_gold_fragment')
 
 //Raw ores
     rawOre('brilliance', 'malum:cluster_of_brilliance')

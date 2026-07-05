@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .dimension("twilightforest:twilight_forest")
         .outputFluids(Fluid.of("gtceu:twilight_air", 10000))
-        .EUt(Lv);
+        .EUt(GTValues.VA[GTValues.LV]);
     //Cooling
     event.recipes.gtceu.vacuum_freezer('aether_air_to_liquid')
         .inputFluids(Fluid.of('gtceu:aether_air', 4000))
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:twilight_air', 4000))
         .outputFluids(Fluid.of('gtceu:condensed_twilight', 4000))
         .duration(20*4)
-        .EUt(Lv);
+        .EUt(GTValues.VA[GTValues.LV]);
     event.recipes.gtceu.vacuum_freezer('undergarden_smog_to_sludge')
         .inputFluids('gtceu:undergarden_smog 4000')
         .outputFluids('gtceu:undergarden_sludge 4000')
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of("gtceu:carbon_dioxide", 2000))
         .outputFluids(Fluid.of("gtceu:helium", 500))
         .duration(40 * 10)
-        .EUt(Mv);
+        .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.distillation_tower('aether_air_distillation')
         .inputFluids('gtceu:liquid_aether_air 100000')
         .outputFluids('gtceu:fluorine 28000')
