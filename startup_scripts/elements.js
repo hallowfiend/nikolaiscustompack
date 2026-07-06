@@ -43,7 +43,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('arkanum') //arcane spirit
         .protons(222)
         .neutrons(222)
-        .symbol('⛤');
+        .symbol('☆');
 
     event.create('sacrum') //sacred spirit
         .protons(888)
@@ -58,22 +58,22 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('terrae') //earthen spirit
         .protons(444)
         .neutrons(444)
-        .symbol('🜃');
+        .symbol('▼');
 
     event.create('infernalis') //infernal spirit
         .protons(333)
         .neutrons(333)
-        .symbol('🜂');
+        .symbol('△');
 
     event.create('aerialis') //aerial spirit
         .protons(555)
         .neutrons(555)
-        .symbol('🜁');
+        .symbol('▲');
 
     event.create('aqua') //aqueous spirit
         .protons(777)
         .neutrons(777)
-        .symbol('🜄');
+        .symbol('▽');
 
     event.create('xenorhast') //eldritch spirit
         .protons(6666)
@@ -83,12 +83,12 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('exispiravit') // raw will
         .protons(666)
         .neutrons(111)
-        .symbol('🝓');
+        .symbol('☽');
     
     event.create('azoth') //corrosive will
         .protons(666)
         .neutrons(222)
-        .symbol('🜊');
+        .symbol('ζ');
 
     event.create('discidia') //vengeful will
         .protons(666)
@@ -98,12 +98,12 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('ragna') //destructive will
         .protons(666)
         .neutrons(444)
-        .symbol('☉');
+        .symbol('Θ');
 
     event.create('firmamentum') //steadfast will
         .protons(666)
         .neutrons(555)
-        .symbol('♃');
+        .symbol('Ђ');
 
     event.create('vitae')
         .protons(0)

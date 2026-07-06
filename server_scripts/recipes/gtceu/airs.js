@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:natural_gas 20000')
         .outputFluids('gtceu:sulfur_trioxide 30000')
         .outputFluids('gtceu:coal_tar 15000')
-        .outputFluids('gtceu:kerosene 15000')
+        .outputFluids('pneumaticcraft:kerosene 15000')
         .duration(80 * 10)
         .EUt(GTValues.VA[GTValues.EV]);
 });

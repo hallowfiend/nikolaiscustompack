@@ -64,6 +64,10 @@
     "material.gtceu.cloggrum": "Cloggrum",
     "material.gtceu.forgotten": "Forgotten Metal",
     "material.gtceu.utherium": "Utherium Crystal",
+    "material.gtceu.regalium": "Regalium Crystal",
+    "material.gtceu.froststeel": "Froststeel",
+
+    "material.gtceu.dawnstone": "Dawnstone",
 
     "material.gtceu.source": "Source Gem",
     "material.gtceu.mithril": "Mithril",
@@ -96,6 +100,12 @@
     "material.gtceu.aqua": "Aqua",
     "material.gtceu.xenorhast": "Xenorhast",
 
+    "material.gtceu.exispiravit": "Exispiravit",
+    "material.gtceu.azoth": "Azoth",
+    "material.gtceu.discidia": "Discidia",
+    "material.gtceu.ragna": "Ragna",
+    "material.gtceu.firmamentum": "Firmamentum",
+
     "material.gtceu.aura": "Natural Aura",
     "material.gtceu.antiaura": "Hellish Aura",
     "material.gtceu.spirit": "Pure Spirit",
@@ -120,12 +130,19 @@
     "material.gtceu.solid_aqua": "Malleable Aqua",
     "material.gtceu.solid_xenorhast": "Esoteric Xenorhast",
 
+    "material.gtceu.raw_will": "Raw Exispiravit",
+    "material.gtceu.corrosive_will": "Corrosive Azoth",
+    "material.gtceu.vengeful_will": "Vengeful Discidia",
+    "material.gtceu.destructive_will": "Destructive Ragna",
+    "material.gtceu.steadfast_will": "Steadfast Firmamentum",
+
     "material.gtceu.dark": "Dark Gem",
     "material.gtceu.dark_power": "Dark Power Gem",
 
     "material.gtceu.compressed_iron": "Compressed Iron",
     "material.gtceu.ember": "Ember",
     "material.gtceu.citrine": "Citrine",
+    "material.gtceu.vehement_coal": "Vehement Coal",
 
     "material.gtceu.vinteum": "Vinteum",
     "material.gtceu.purified_vinteum": "Purified Vinteum",

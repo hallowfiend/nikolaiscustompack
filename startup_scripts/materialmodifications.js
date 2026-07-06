@@ -65,6 +65,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 //Ingots
     ingot('desh', 'ad_astra:desh_ingot')
     ingot('cloggrum', 'undergarden:cloggrum_ingot')
+    ingot('froststeel', 'undergarden:froststeel_ingot')
     ingot('forgotten', 'undergarden:forgotten_ingot')
     ingot('ostrum', 'ad_astra:ostrum_ingot')
     ingot('calorite', 'ad_astra:calorite_ingot')
@@ -88,6 +89,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('nicrosil', 'cosmere:nicrosil_ingot')
     ingot('duralumin', 'cosmere:duralumin_ingot')
     ingot('anthralite', 'scguns:anthralite_ingot')
+    ingot('dawnstone', 'embers:dawnstone_ingot')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
@@ -108,6 +110,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('terrasteel', 'botania:terrasteel_block')
     block('cloggrum', 'undergarden:cloggrum_block')
     block('forgotten', 'undergarden:forgotten_block')
+    block('froststeel', 'undergarden:froststeel_block')
     block('utherium', 'undergarden:utherium_block')
     block('source', 'ars_nouveau:source_gem_block')
     block('mana_diamond', 'botania:mana_diamond_block')
@@ -136,6 +139,9 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('anthralite', 'scguns:anthralite_block')
     block('regalium', 'undergarden:regalium_block')
     block('citrine', 'unusualend:citrine_block')
+    block('dawnstone', 'embers:dawnstone_block')
+    block('dark', 'evilcraft:dark_block')
+    block('dark_power', 'evilcraft:dark_power_gem_block')
 
 //Nuggets
     nugget('desh', 'ad_astra:desh_nugget')
@@ -145,6 +151,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('elementium', 'botania:elementium_nugget')
     nugget('terrasteel', 'botania:terrasteel_nugget')
     nugget('cloggrum', 'undergarden:cloggrum_nugget')
+    nugget('froststeel', 'undergarden:froststeel_nugget')
     nugget('forgotten', 'undergarden:forgotten_nugget')
     nugget('mithril', 'constructs_casting:mithril_nugget')
     nugget('bismuth', 'enlightened_end:bismuth_nugget')
@@ -155,11 +162,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('nicrosil', 'cosmere:nicrosil_nugget')
     nugget('duralumin', 'cosmere:duralumin_nugget')
     nugget('anthralite', 'scguns:anthralite_nugget')
+    nugget('dawnstone', 'embers:dawnstone_nugget')
 
 //Plates
     plate('desh', 'ad_astra:desh_plate')
     plate('ostrum', 'ad_astra:ostrum_plate')
     plate('calorite', 'ad_astra:calorite_plate')
+    plate('dawnstone', 'embers:dawnstone_plate')
 
 //Dusts
     dust('certus_quartz', 'ae2:certus_quartz_dust')
@@ -206,6 +215,12 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('vehement_coal', 'scguns:vehement_coal')
     gem('regalium', 'undergarden:regalium_crystal')
     gem('citrine', 'unusualend:citrine_chunk')
+    gem('spirit_gem', 'occultism:spirit_attuned_gem')
+    gem('raw_will', 'bloodmagic:defaultcrystal')
+    gem('corrosive_will', 'bloodmagic:corrosivecrystal')
+    gem('vengeful_will', 'bloodmagic:vengefulcrystal')
+    gem('steadfast_will', 'bloodmagic:steadfastcrystal')
+    gem('destructive_will', 'bloodmagic:destructivecrystal')
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')
@@ -225,8 +240,12 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOre('cloggrum', 'undergarden:raw_cloggrum')
     rawOre('bismuth', 'enlightened_end:raw_bismuth')
     rawOre('vinteum', 'mna:raw_vinteum')
+    rawOre('palladium', 'galosphere:raw_palladium')
     rawOre('demonite', 'bloodmagic:raw_demonite')
     rawOre('anthralite', 'scguns:raw_anthralite')
+    rawOre('froststeel', 'undergarden:raw_froststeel')
+    rawOre('tin', 'caverns_and_chasms:raw_tin')
+    rawOre('iesnium', 'occultism:raw_iesnium')
 
 //Raw ore blocks
     rawOreBlock('desh', 'ad_astra:raw_desh_block')
@@ -235,9 +254,14 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOreBlock('bismuth', 'enlightened_end:raw_bismuth_block')
     rawOreBlock('demonite', 'bloodmagic:rawdemoniteblock')
     rawOreBlock('cloggrum', 'undergarden:raw_cloggrum_block')
+    rawOreBlock('froststeel', 'undergarden:raw_froststeel_block')
+    rawOreBlock('tin', 'caverns_and_chasms:raw_tin_block')
+    rawOreBlock('palladium', 'galosphere:raw_palladium_block')
     rawOreBlock('soulstone', 'malum:block_of_raw_soulstone')
     rawOreBlock('brilliance', 'malum:block_of_brilliance')
     rawOreBlock('anthralite', 'scguns:raw_anthralite_block')
+    rawOreBlock('bauxite', 'immersiveengineering:raw_block_aluminum')
+    rawOreBlock('iesnium', 'occultism:raw_iesnium_block')
 
 //Crushed ores
     crushed('brilliance', 'malum:crushed_brilliance')

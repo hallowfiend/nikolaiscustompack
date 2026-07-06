@@ -82,22 +82,22 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
     
     event.create('azoth') //corrosive will
         .element('azoth')
-        .color(0x60FF4F)
+        .color(0xB8D69D)
         .gas();
 
     event.create('discidia') //vengeful will
         .element('discidia')
-        .color(0xFF5367)
+        .color(0xDD9698)
         .gas();
     
     event.create('ragna') //destructive will
         .element('ragna')
-        .color(0xFFCF4F)
+        .color(0xDACD99)
         .gas();
 
     event.create('firmamentum') //steadfast will
         .element('firmamentum')
-        .color(0xBB4FFF)
+        .color(0x9FB8D4)
         .gas();
 
     event.create('mundus')
@@ -198,7 +198,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
     event.create('corrosive_will')
         .gem()
         .fluid()
-        .color(0x60FF4F)
+        .color(0xB8D69D)
         .components('azoth', 'spirit', 'mundus')
         .flags(
             no_decomp,
@@ -208,7 +208,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
     
     event.create('destructive_will')
         .gem()
-        .color(0xFFCF4F)
+        .color(0xDACD99)
         .components('ragna', 'spirit', 'mundus')
         .flags(
             no_decomp,
@@ -218,7 +218,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
     
     event.create('vengeful_will')
         .gem()
-        .color(0xFF5367)
+        .color(0xDD9698)
         .components('discidia', 'spirit', 'mundus')
         .flags(
             no_decomp,
@@ -228,7 +228,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
     
     event.create('steadfast_will')
         .gem()
-        .color(0xBB4FFF)
+        .color(0x9FB8D4)
         .components('firmamentum', 'spirit', 'mundus')
         .flags(
             no_decomp,
@@ -573,8 +573,35 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .flags(no_decomp)
         .components('nether_quartz', 'terrae', 'titanium_oxide', '2x mundus')
         .iconSet(QUARTZ);
-
     
+    event.create('water_crystal')
+        .gem()
+        .color(0x8CA0D6)
+        .flags(no_decomp)
+        .components('inert_crystal', '2x aqua')
+        .iconSet(QUARTZ);
+
+    event.create("drenched_iron")
+        .ingot()
+        .color(0x93b8de)
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .components('1x iron', '2x aqua')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            no_decomp
+        );
+    
+    event.create("springaline")
+        .gem()
+        .color(0x5d88b7)
+        .components('amethyst', 'water_crystal', '2x aqua')
+        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .flags(
+            GTMaterialFlags.GENERATE_LENS,
+            no_decomp
+        );
 
 // Malum & Eidolon
     
@@ -882,7 +909,7 @@ event.create('iesnium')
 event.create('spirit_gem')
         .gem()
         .color(0xbb78cc)
-        .components('ruby', 'spirit', 'arkanum')
+        .components('almandine', 'spirit', 'arkanum')
         .iconSet(DIAMOND)
         .flags(
             no_decomp,
@@ -968,7 +995,7 @@ event.create('spirit_gem')
     .gas()
     .color(0x9ad6d6)
     .components(
-        '3x oxygen',
+        '3x oxygen'
     )
     .iconSet(GTMaterialIconSet.FLUID);
 
