@@ -19,7 +19,8 @@ let addFluid = (mat, key) => {
 GTCEuStartupEvents.registry("gtceu:material", (event) => {
 
   addFluid(GTMaterials.Amethyst, $FluidStorageKeys.LIQUID);
-  GTMaterials.Electrum.setProperty(PropertyKey.ORE, new $OreProperty());
+  GTMaterials.Electrum.setProperty(PropertyKey.ORE, new $OreProperty()); //native electrum
+  GTMaterials.Brass.setProperty(PropertyKey.ORE, new $OreProperty()); //brass o' the devil
   GTMaterials.CertusQuartz.addFlags(GTMaterialFlags.GENERATE_LENS);
   GTMaterials.Netherite.addFlags(GTMaterialFlags.GENERATE_PLATE);
 

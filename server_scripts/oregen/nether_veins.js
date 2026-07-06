@@ -147,19 +147,19 @@ addVein("seething_brimstone", 'nether_stones', 10, 20, 40, 120, 'blazing_quartz'
       .size(1, 1));
 });
 
-addVein("condensed_brimstone", 'nether_stones', 10, 20, 40, 120, 'tricalcium_phosphate', "surface", (pattern) => {
+addVein("hellish_brass_vein", 'nether_stones', 10, 20, 40, 120, 'anthralite', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
-      .mat('tricalcium_phosphate')
+      .mat('brass')
       .size(4, 8))
     .layer((l) => l.weight(2)
       .mat('anthralite')
       .size(1, 2))
     .layer((l) => l.weight(2)
-      .mat('vehement_coal')
+      .mat('galena')
       .size(1, 1))
     .layer((l) => l.weight(1)
-      .mat('blazing_quartz')
+      .mat('sulfur')
       .size(1, 1));
 });
 
@@ -179,7 +179,7 @@ addVein("lost_obols", 'nether_sediment', 10, 20, 5, 120, 'gold', "surface", (pat
       .size(1, 1));
 });
 
-addVein("loose_brimstone", 'nether_sediment', 20, 60, 40, 120, 'gold', "surface", (pattern) => {
+addVein("loose_brimstone", 'nether_sediment', 20, 60, 40, 120, 'sulfur', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('sulfur')

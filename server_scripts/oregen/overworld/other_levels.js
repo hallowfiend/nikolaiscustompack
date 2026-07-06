@@ -30,7 +30,7 @@ addVein("veridic_brass_vein", 'create_overworld_stones', 20, 20, -65, 50, 'turqu
       .mat('tetrahedrite')
       .size(2, 2))
     .layer((l) => l.weight(2)
-      .mat('sphalerite')
+      .mat('brass')
       .size(1, 1))
     .layer((l) => l.weight(2)
       .mat('malachite')

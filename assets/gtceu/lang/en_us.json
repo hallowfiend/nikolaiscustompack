@@ -1,6 +1,5 @@
 {
 
-    "tagprefix.sediment": "Sediment %s Ore",
     "tagprefix.glacio_stone": "Glacio %s Ore",
     "tagprefix.frosted_holystone": "Frosted Holystone %s Ore",
     "tagprefix.icestone": "Icestone %s Ore",
@@ -20,8 +19,13 @@
     "tagprefix.asurine": "Asurine %s Ore",
     "tagprefix.shiverstone": "Shiverstone %s Ore",
     "tagprefix.scoria": "Scoria %s Ore",
-    "tagprefix.soul_sand": "Soul Sand %s Ore",
-    "tagprefix.soul_soil": "Soul Soil %s Ore",
+    "tagprefix.blackstone": "Blackstone %s Ore",
+
+    "tagprefix.soul_sand": "Soul Sand %s Deposit",
+    "tagprefix.soul_soil": "Soul Soil %s Deposit",
+    "tagprefix.gravel": "Gravel %s Deposit",
+    "tagprefix.sand": "Sand %s Deposit",
+    "tagprefix.sediment": "Sediment %s Deposit",
 
     "gtceu.jei.ore_vein.overworld_lubricant_vein": "Lubricant Vein",
     "gtceu.jei.ore_vein.overworld_apatite_vein": "Apatite Vein",
@@ -39,11 +43,16 @@
     "gtceu.jei.ore_vein.overworld_magnetite_vein": "Magnetite Vein",
     "gtceu.jei.ore_vein.overworld_salts_vein": "Salts Vein",
     "gtceu.jei.ore_vein.overworld_manganese_vein": "Manganese Vein",
-    "gtceu.jei.ore_vein.nether_nickel_vein": "Nickel Vein",
+    "gtceu.jei.ore_vein.nether_nickel_vein": "Hellish Nickel Vein",
     "gtceu.jei.ore_vein.pyrite_ore_vein": "Pyrite Vein",
     "gtceu.jei.ore_vein.condensed_brimstone": "Condensed Brimstone",
+    "gtceu.jei.ore_vein.hellish_brass_vein": "Hellish Brass Vein",
+    "gtceu.jei.ore_vein.loose_brimstone": "Loose Brimstone",
     "gtceu.jei.ore_vein.lost_obols": "Lost Obols",
     "gtceu.jei.ore_vein.nether_certus_vein": "Certus Quartz Vein",
+    "gtceu.jei.ore_vein.nether_saltpeter_vein": "Saltpeter Vein",
+    "gtceu.jei.ore_vein.nether_manganese_vein": "Hellish Manganese Vein",
+    "gtceu.jei.ore_vein.monazite_vein": "Monazite Vein",
 
     "material.gtceu.jade": "Jade",
     "material.gtceu.skyjade": "Skyjade",

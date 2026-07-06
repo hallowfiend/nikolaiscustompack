@@ -1,4 +1,4 @@
-/* addVein("banded_iron_vein", 'underrock', 50, 40, 20, 40, 'goethite', "surface", (pattern) => {
+addVein("banded_iron_vein", 'underrock', 50, 40, 20, 40, 'goethite', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('goethite')
@@ -153,5 +153,3 @@ addVein("undergarden_oilsands_vein", 'undersediment', 40, 60, 0, 70, GTMaterials
       .mat('coal')
       .size(1, 1));
 });
-
-*/

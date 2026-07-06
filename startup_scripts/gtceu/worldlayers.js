@@ -26,7 +26,7 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', (event) => {
     event
         .create('twiforest')
         .targets('minecraft:stone')
-        .dimensions('twilightforest:twilight_forest');
+        .dimensions('twilightforest:twilight_forest_type');
     
     event.create('aether_islands')
         .targets('aether:holystone','aether:mossy_holystone','aether:icestone')
