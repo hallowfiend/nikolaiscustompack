@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu.distillation_tower('condensed_twilight_distillation')
         .inputFluids('gtceu:condensed_twilight 100000')
         .itemOutputs("gtceu:mundus_dust")
-        .outputFluids(Fluid.of("gtceu:nitrogen", 42500))
+        .outputFluids(Fluid.of("gtceu:nitrogen", 42000))
         .outputFluids(Fluid.of("gtceu:oxygen", 25000))
         .outputFluids(Fluid.of("gtceu:carbon_dioxide", 15000))
         .outputFluids('gtceu:aura 5000')
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:oxygen 22000')
         .outputFluids('gtceu:ozone 16000')
         .outputFluids('gtceu:helium 16000')
-        .outputFluids('gtceu:aura 18000')
+        .outputFluids('gtceu:aerialis 18000')
         .duration(40 * 10)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.distillation_tower('undergarden_sludge_distillation')

@@ -54,7 +54,10 @@ ServerEvents.tags("item", (event) => {
         /.*snow_cone.*/,
         'goetydelight:grape_slush',
         /.*parfait.*/,
-        /.*sundae.*/
+        /.*sundae.*/,
+        'collectorsreap:tropical_shaved_ice',
+        'aethersdelight:aechor_ice_cream',
+        'dungeonsdelight:aurora_ice_cream'
     ]);
   add('coldsweat:large_cooling_foods',[
       'hexalia:chillberry_pie',
@@ -70,6 +73,9 @@ ServerEvents.tags("item", (event) => {
       'goetydelight:polarice'
   ]);
   add('coldsweat:small_cooling_foods', [
+        'atmospheric:aloe_gel_bottle',
+        'peculiars:tropical_salad',
+        'peculiars:aloe_cake',
         'hexalia:chillberries',
         'twilightdelight:twilight_spring',
         'sob:builder_smoothie',
@@ -86,7 +92,21 @@ ServerEvents.tags("item", (event) => {
         'sob:mint_jelly',
         'neapolitan:mint_candies',
         'neapolitan:mint_chocolate',
-        'cookielicious:mint_cookie'
+        'cookielicious:mint_cookie',
+        'collectorsreap:mint_cannoli',
+        'collectorsreap:mint_gummy',
+        'peculiars:aloe_jelly_slice',
+        'abnormalsdelight:dune_platter',
+        'abnormalsdelight:passion_aloe_nectar',
+        /collectorsreap:key_lime_pie.*/,
+        /collectorsreap:lime_cake.*/,
+        "collectorsreap:salmon_tartare",
+        "collectorsreap:cod_ceviche",
+        /neapolitan:mint_cake.*/,
+        /abnormalsdelight:mint_cake.*/,
+        'sob:mint_jelly',
+        'sob:spiky_salad',
+        'collectorsreap:lucuma_gazpacho'
     ]);
   add('coldsweat:large_warming_foods',[
     'mynethersdelight:fried_hoglin_chop',
@@ -115,7 +135,11 @@ ServerEvents.tags("item", (event) => {
     'twilightdelight:plate_of_fiery_snakes',
     'brewinandchewin:fiery_fondue',
     'twilightdelight:grilled_ghast',
-    'dungeonsdelight:blazing_blood_sausage'
+    'dungeonsdelight:blazing_blood_sausage',
+    /.*soup.*/,
+    'tinkersdelight:ichor_salad',
+    'tconstruct:magma_cake',
+    'tinkersdelight:magma_cake_slice'
   ]);
   add('coldsweat:small_warming_foods', [
     'mynethersdelight:deviled_egg',
@@ -140,7 +164,10 @@ ServerEvents.tags("item", (event) => {
     'twilightdelight:glowstew',
     /twilightdelight:torchberry_pie.*/,
     /twilightdelight:torchberry_cake.*/,
-    'twilightdelight:berry_stick'
+    'twilightdelight:berry_stick',
+    'collectorsreap:bullet_pepper_popper',
+    'collectorsreap:spicy_grenadine_jelly',
+    'sob:pepper_jelly'
     ]);
   add('coldsweat:small_warming_drinks', [
       /farmersrespite:.*coffee/,
@@ -177,10 +204,16 @@ ServerEvents.tags("item", (event) => {
     'unusualend:chorus_tea',
     'undergardendelight:depthflower_tea',
     /farm_and_charm:.*tea/,
+    /collectorsreap:lime_green_tea/,
+    /collectorsreap:pomegranate_black_tea/,
+    /collectorsreap:.*vernal_purge/,
+    /collectorsreap:.*limbo_brew/,
+    /collectorsreap:.*sweet_recovery/,
     'brewincompatdelight:black_russian',
     'brewincompatdelight:mulled_wine',
     'sob:tequila',
-    'arsdelight:bombegranate_hornbeer'
+    'arsdelight:bombegranate_hornbeer',
+    'collectorsreap:deific_blood'
   ])
   add('coldsweat:small_cooling_drinks', [
     'respiteful:mint_green_tea',
@@ -191,6 +224,8 @@ ServerEvents.tags("item", (event) => {
     'goetydelight:spider_egg_bubble_tea',
     'sob:sunrise_seltzer',
     'brewinandchewin:saccharine_rum',
+    'brewinandchewin:salty_folly',
+    'collectorsreap:rose_moon',
     'sob:hard_cider',
     'brewincompatdelight:kraken_rum',
     'brewincompatdelight:brass_monkey',
@@ -200,7 +235,12 @@ ServerEvents.tags("item", (event) => {
     'sob:orange_juice',
     'oceanic_delight:sea_grape_juice',
     'oceanic_delight:nautilus_juice',
-    'sob:cactus_juice'
+    'sob:cactus_juice',
+    'sob:birch_beer',
+    /collectorsreap:.*limeade/,
+    'collectorsreap:pomegranate_smoothie',
+    'collectorsreap:pomegranate_custard',
+    'brewincompatdelight:mojito'
   ])
   add('coldsweat:large_cooling_drinks', [
     'goetydelight:liquid_void_tea_drink',
@@ -209,7 +249,8 @@ ServerEvents.tags("item", (event) => {
     'delightful:berry_matcha_latte',
     'peculiars:aloe_berry_smoothie',
     /.*milkshake.*/,
-    'arsdelight:frostaya_hornbeer'
+    'arsdelight:frostaya_hornbeer',
+    'collectorsreap:hermits_sour'
   ])
   event.add("ad_astra:aeronos_logs", ["ad_astra:aeronos_cap", "ad_astra:aeronos_stem"]);
   event.add("ad_astra:strophar_logs", ["ad_astra:strophar_cap", "ad_astra:strophar_stem"]);
@@ -218,6 +259,18 @@ ServerEvents.tags("item", (event) => {
 
   event.add('farm_and_charm:cabbage', 'farmersdelight:cabbage');
   event.add('farm_and_charm:cabbage', 'farmersdelight:cabbage_leaf');
+
+  event.add('forge:mint', 'aethersdelight:peppermint_leaf');
+  event.add('neapolitan:mint_leaves', 'aethersdelight:peppermint_leaf');
+
+  event.add('forge:raw_crab_meat', 'lendersdelight:crab_legs');
+  event.add('forge:cooked_crab_meat', 'lendersdelight:cooked_crab_legs');
+
+  event.add('candlelight:white_effect', 'brewincompatdelight:white_wine');
+  event.add('candlelight:white_effect', 'brewinandchewin:rice_wine');
+  event.add('candlelight:red_effect', 'brewincompatdelight:red_wine');
+
+  event.add('bakery:jam', '#forge:jams');
 
   event.add("aether:book_of_lore_materials", ["gtceu:ambrosium_gem"]);
   event.add("aether:gems/zanite", ["#forge:gems/zanite"]);

@@ -933,22 +933,67 @@ event.create('spirit_gem')
         .flags(centrifuge);
     
 
-// Airs
+// Gases and airs
+    
+    event.create('ozone')
+    .gas()
+    .color(0x9ad6d6)
+    .components(
+        '3x oxygen',
+    )
+    .iconSet(GTMaterialIconSet.FLUID);
 
     event.create('aether_air')
         .gas()
+        .components(
+            '28x fluorine',
+            '24x oxygen',
+            '24x ozone',
+            '16x helium',
+            '8x aerialis'
+        )
+        .flags(no_decomp)
         .color(0x75bfff);
     event.create('liquid_aether_air')
         .liquid()
+        .components(
+            '28x fluorine',
+            '22x oxygen',
+            '16x ozone',
+            '16x helium',
+            '18x aerialis'
+        )
+        .flags(no_decomp)
         .color(0x75bfff);
     event.create('twilight_air')
         .gas()
+        .components(
+            '50x nitrogen',
+            '30x oxygen',
+            '15x carbon_dioxide',
+            'aura',
+            'mundus'
+        )
+        .flags(no_decomp)
         .color(0x75bfff);
     event.create('condensed_twilight')
         .liquid()
+        .flags(no_decomp)
+        .components(
+            '42x nitrogen',
+            '25x oxygen',
+            '15x carbon_dioxide',
+            '2x helium',
+            '5x aura',
+            'mundus'
+        )
         .color(0x75bfff);
     event.create('undergarden_smog')
         .gas()
+        .flags(no_decomp)
+        .components(
+            
+        )
         .color(0x614b09)
         .iconSet(GTMaterialIconSet.DULL);
     event.create('undergarden_sludge')
