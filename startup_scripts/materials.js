@@ -199,7 +199,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .fluid()
         .color(0x60FF4F)
-        .components('exispiravit', 'spirit', 'mundus')
+        .components('azoth', 'spirit', 'mundus')
         .flags(
             no_decomp,
             crystallizable
