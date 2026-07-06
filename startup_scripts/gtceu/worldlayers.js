@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', (event) => {
         .dimensions('minecraft:overworld');
     event
         .create('nether_stones')
-        .targets('minecraft:netherrack', 'create:scorchia', 'create:scoria')
+        .targets('minecraft:netherrack', 'minecraft:blackstone', 'create:scorchia', 'create:scoria')
         .dimensions('minecraft:the_nether');
     event
         .create('nether_sediment')

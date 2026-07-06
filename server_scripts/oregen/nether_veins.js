@@ -1,4 +1,4 @@
-/* addVein("nether_certus_vein", 'nether_stones', 20, 30, 80, 120, 'certus_quartz', "surface", (pattern) => {
+addVein("nether_certus_vein", 'nether_stones', 20, 30, 80, 120, 'certus_quartz', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('certus_quartz')
@@ -170,9 +170,12 @@ addVein("lost_obols", 'nether_sediment', 10, 20, 5, 120, 'gold', "surface", (pat
       .size(4, 8))
     .layer((l) => l.weight(2)
       .mat('silver')
-      .size(1, 2))
+      .size(2, 2))
     .layer((l) => l.weight(1)
       .mat('electrum')
+      .size(2, 2))
+    .layer((l) => l.weight(1)
+      .mat('iesnium')
       .size(1, 1));
 });
 
@@ -190,4 +193,4 @@ addVein("loose_brimstone", 'nether_sediment', 20, 60, 40, 120, 'gold', "surface"
     .layer((l) => l.weight(1)
       .mat('tricalcium_phosphate')
       .size(1, 1));
-}); */
+});

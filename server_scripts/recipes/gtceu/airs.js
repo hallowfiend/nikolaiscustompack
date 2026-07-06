@@ -71,8 +71,7 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:oxygen 22000')
         .outputFluids('gtceu:ozone 16000')
         .outputFluids('gtceu:helium 16000')
-        .outputFluids('gtceu:aura 9000')
-        .outputFluids('gtceu:source 9000')
+        .outputFluids('gtceu:aura 18000')
         .duration(40 * 10)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.distillation_tower('undergarden_sludge_distillation')

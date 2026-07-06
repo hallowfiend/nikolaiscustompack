@@ -26,6 +26,7 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
 
     createStoneTypeOre('minecraft:soul_sand')
     createStoneTypeOre('minecraft:soul_soil')
+    createStoneTypeOre('minecraft:blackstone')
 
     createStoneTypeOre('undergarden:depthrock')
     createStoneTypeOre('undergarden:shiverstone')
