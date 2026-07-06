@@ -74,6 +74,31 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color(0x8e00a1)
         .element('xenorhast')
         .plasma();
+    
+    event.create('exispiravit') // raw will
+        .element('exispiravit')
+        .color(0x4EF6FF)
+        .gas();
+    
+    event.create('azoth') //corrosive will
+        .element('azoth')
+        .color(0x60FF4F)
+        .gas();
+
+    event.create('discidia') //vengeful will
+        .element('discidia')
+        .color(0xFF5367)
+        .gas();
+    
+    event.create('ragna') //destructive will
+        .element('ragna')
+        .color(0xFFCF4F)
+        .gas();
+
+    event.create('firmamentum') //steadfast will
+        .element('firmamentum')
+        .color(0xBB4FFF)
+        .gas();
 
     event.create('mundus')
         .color(0xe6e6e6)
@@ -92,7 +117,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gas();
 
 
-  // Solid spirits
+  // Orthodox spirits
 
     event.create('solid_arkanum')
       .components('arkanum', 'spirit', 'mundus')
@@ -157,6 +182,59 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .dust()
         .iconSet(OPAL)
         .flags(no_decomp);
+    
+    // Demonic spirits
+
+    event.create('raw_will')
+        .gem()
+        .color(0x4EF6FF)
+        .components('exispiravit', 'spirit', 'mundus')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
+    
+    event.create('corrosive_will')
+        .gem()
+        .fluid()
+        .color(0x60FF4F)
+        .components('exispiravit', 'spirit', 'mundus')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
+    
+    event.create('destructive_will')
+        .gem()
+        .color(0xFFCF4F)
+        .components('ragna', 'spirit', 'mundus')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
+    
+    event.create('vengeful_will')
+        .gem()
+        .color(0xFF5367)
+        .components('discidia', 'spirit', 'mundus')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
+    
+    event.create('steadfast_will')
+        .gem()
+        .color(0xBB4FFF)
+        .components('firmamentum', 'spirit', 'mundus')
+        .flags(
+            no_decomp,
+            crystallizable
+        )
+        .iconSet(QUARTZ);
 
 // Pneumaticcraft
 
@@ -764,55 +842,6 @@ event.create('mithril')
 
 // Blood Magic
 
-    event.create('raw_will')
-        .gem()
-        .color(0xb7f0e6)
-        .components('4x solid_profanum', 'solid_infernalis', 'antiaura', 'mundus')
-        .flags(
-            no_decomp,
-            crystallizable
-        )
-        .iconSet(QUARTZ);
-    
-    event.create('corrosive_will')
-        .gem()
-        .color(0x60FF4F)
-        .components('raw_will', 'sulfuric_acid', 'terrae')
-        .flags(
-            no_decomp,
-            crystallizable
-        )
-        .iconSet(QUARTZ);
-    /*
-    event.create('destructive_will')
-        .gem()
-        .color(0x60FF4F)
-        .components('raw_will', 'sulfuric_acid', 'terrae')
-        .flags(
-            no_decomp,
-            crystallizable
-        )
-        .iconSet(QUARTZ);
-    event.create('vengeful_will')
-        .gem()
-        .color(0x60FF4F)
-        .components('raw_will', 'sulfuric_acid', 'terrae')
-        .flags(
-            no_decomp,
-            crystallizable
-        )
-        .iconSet(QUARTZ);
-    event.create('steadfast_will')
-        .gem()
-        .color(0x60FF4F)
-        .components('raw_will', 'sulfuric_acid', 'terrae')
-        .flags(
-            no_decomp,
-            crystallizable
-        )
-        .iconSet(QUARTZ);
-    */
-
     event.create('demonite')
             .ingot()
             .ore()
@@ -991,14 +1020,15 @@ event.create('spirit_gem')
     event.create('undergarden_smog')
         .gas()
         .flags(no_decomp)
-        .components(
-            
-        )
         .color(0x614b09)
         .iconSet(GTMaterialIconSet.DULL);
     event.create('undergarden_sludge')
         .liquid()
         .color(0x3d2e02)
+        .components(
+            '75x carbon'
+        )
+        .flags(no_decomp)
         .iconSet(GTMaterialIconSet.DULL);
     event.create('venus_atmosphere')
         .fluid()

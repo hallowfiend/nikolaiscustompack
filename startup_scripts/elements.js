@@ -40,50 +40,75 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(138)
         .symbol('Ot')
 
-    event.create('arkanum')
+    event.create('arkanum') //arcane spirit
         .protons(222)
         .neutrons(222)
-        .symbol('☆');
+        .symbol('⛤');
 
-    event.create('sacrum')
+    event.create('sacrum') //sacred spirit
         .protons(888)
         .neutrons(888)
         .symbol('♥');
 
-    event.create('profanum')
+    event.create('profanum') //wicked spirit
         .protons(999)
         .neutrons(999)
-        .symbol('♣');
+        .symbol('♠');
 
-    event.create('terrae')
+    event.create('terrae') //earthen spirit
         .protons(444)
         .neutrons(444)
-        .symbol('◁');
+        .symbol('🜃');
 
-    event.create('infernalis')
-        .protons(666)
-        .neutrons(666)
-        .symbol('△');
-
-    event.create('aerialis')
+    event.create('infernalis') //infernal spirit
         .protons(333)
         .neutrons(333)
-        .symbol('▷');
+        .symbol('🜂');
 
-    event.create('aqua')
+    event.create('aerialis') //aerial spirit
+        .protons(555)
+        .neutrons(555)
+        .symbol('🜁');
+
+    event.create('aqua') //aqueous spirit
         .protons(777)
         .neutrons(777)
-        .symbol('▽');
+        .symbol('🜄');
 
-    event.create('xenorhast')
+    event.create('xenorhast') //eldritch spirit
         .protons(6666)
         .neutrons(6666)
         .symbol('🌌');
+    
+    event.create('exispiravit') // raw will
+        .protons(666)
+        .neutrons(111)
+        .symbol('🝓');
+    
+    event.create('azoth') //corrosive will
+        .protons(666)
+        .neutrons(222)
+        .symbol('🜊');
+
+    event.create('discidia') //vengeful will
+        .protons(666)
+        .neutrons(333)
+        .symbol('♂');
+    
+    event.create('ragna') //destructive will
+        .protons(666)
+        .neutrons(444)
+        .symbol('☉');
+
+    event.create('firmamentum') //steadfast will
+        .protons(666)
+        .neutrons(555)
+        .symbol('♃');
 
     event.create('vitae')
         .protons(0)
         .neutrons(0)
-        .symbol('🩸')
+        .symbol('💧');
 
     event.create('spirit')
         .protons(202)
@@ -98,12 +123,12 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('aura')
         .protons(1)
         .neutrons(0)
-        .symbol('◇')
+        .symbol('♣')
 
     event.create('antiaura')
         .protons(1)
         .neutrons(1)
-        .symbol('◆')
+        .symbol('♦')
 
     event.create('experience')
         .protons(42)
