@@ -90,12 +90,14 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('duralumin', 'cosmere:duralumin_ingot')
     ingot('anthralite', 'scguns:anthralite_ingot')
     ingot('dawnstone', 'embers:dawnstone_ingot')
+    ingot('pewter', 'eidolon:pewter_ingot')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
     ingotHot('purified_vinteum_alloy', 'mna:superheated_purified_vinteum_ingot')
 
 //Blocks
+    block('pewter', 'eidolon:pewter_block')
     block('desh', 'ad_astra:desh_block')
     block('skyjade', 'deep_aether:skyjade_block')
     block('zanite', 'aether:zanite_block')
@@ -163,6 +165,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('duralumin', 'cosmere:duralumin_nugget')
     nugget('anthralite', 'scguns:anthralite_nugget')
     nugget('dawnstone', 'embers:dawnstone_nugget')
+    nugget('pewter', 'eidolon:pewter_nugget')
 
 //Plates
     plate('desh', 'ad_astra:desh_plate')

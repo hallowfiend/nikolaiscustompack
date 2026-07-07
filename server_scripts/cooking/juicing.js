@@ -1,22 +1,10 @@
 /* const grapeJuices = [
   "red",
-  "red_savanna",
-  "red_jungle",
-  "red_taiga",
-  "white",
-  "white_savanna",
-  "white_jungle",
-  "white_taiga"
+  "white"
 ];
 const grapes = [
   "red_grape",
-  "savanna_grapes_red",
-  "jungle_grapes_red",
-  "taiga_grapes_red",
-  "white_grape",
-  "savanna_grapes_white",
-  "jungle_grapes_white",
-  "taiga_grapes_white"
+  "white_grape"
 ];
 
 ServerEvents.recipes((event) => {
@@ -76,20 +64,5 @@ ServerEvents.recipes((event) => {
   grapeJuices.forEach((juice, index) => {
     juiceFromPress(juice, grapes[index]);
     spoutBottling(juice, grapes[index]);
-  });
-
-  event.custom({
-    type: "create:compacting",
-    ingredients: [
-      {
-        item: "vinery:apple_mash",
-      },
-    ],
-    results: [
-      {
-        amount: 250,
-        fluid: "immersivecooking:apple_juice",
-      },
-    ],
   });
 }); */

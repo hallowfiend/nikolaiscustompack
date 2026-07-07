@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
             { "name": "gtceu:molten_amethyst", "amount": 100 }
         ],
         "result": {
-            "fluid": "tconstruct:molten_amethyst_bronze",
+            "fluid": "tconstruct:amethyst_bronze",
             "amount": 144
         },
         "temperature": 820

@@ -345,7 +345,9 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
       .color(0x67b9ee)
       .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
       .components('black_steel', 'mana')
-      .flags(no_decomp)
+      .flags(no_decomp,
+        foil
+      )
       .iconSet(GTMaterialIconSet.SHINY);
 
   event.create("elementium")
@@ -466,11 +468,19 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
           .element('experience')
           .iconSet(SHINY);
 
+    event.create('pewter')
+          .ingot()
+          .fluid()
+          .color(0x46463D)
+          .components('iron', 'lead')
+          .iconSet(METALLIC)
+          .flags(bolt_and_screw);
+
     event.create('ether')
         .gem()
         .gas()
         .color(0xdbf56e)
-        .components('ash', 'mundus', 'spirit', 'antiaura')
+        .components('carbon', 'antiaura', 'corrosive_will')
         .flags(
             no_decomp,
             no_smashing
@@ -563,6 +573,14 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .ingot()
             .color()
             .components('')*/
+
+    event.create('bakelite')
+        .fluid()
+        .polymer()
+        .components('phenol', 'formaldehyde')
+        .color(0x79392F)
+        .secondaryColor(0xA16E7F)
+        .flags(plates, gear, small_gear, rod, frame)
 
 // ElementalCraft
 
@@ -1053,7 +1071,12 @@ event.create('spirit_gem')
         .liquid()
         .color(0x3d2e02)
         .components(
-            '75x carbon'
+            '100x carbon',
+            '15x methane',
+            '20x natural_gas',
+            '30x sulfur_trioxide',
+            '15x coal_tar',
+            '36x hydrogen'
         )
         .flags(no_decomp)
         .iconSet(GTMaterialIconSet.DULL);
@@ -1069,6 +1092,51 @@ event.create('spirit_gem')
     event.create('liquid_glacio_atmosphere')
         .fluid()
         .color(0x3DF5F5);
+
+// Create
+
+     event.create('andesite_alloy')
+        .ingot()
+        .fluid()
+        .components('8x andesite', 'zinc')
+        .color(0x839689)
+        .iconSet(DULL)
+        .flags(plates, gear, small_gear, bolt_and_screw, rotor, no_decomp);
+    
+    event.create('chromatic_compound')
+        .ingot()
+        .fluid()
+        .color(0x9c50b6)
+        .components('3x glowstone', '3x obsidian', 'rose_quartz')
+        .iconSet(SHINY)
+        .flags(no_decomp);
+    
+    event.create('refined_radiance')
+        .ingot()
+        .fluid()
+        .plasma()
+        .color(0xF5FAE1)
+        .components('chromatic_compound', '6x sacrum', '4x arkanum', '2x infernalis', 'terrae')
+        .flags(no_decomp)
+        .iconSet(NETHERSTAR);
+    
+    event.create('shadow_steel')
+        .ingot()
+        .fluid()
+        .color(0x575366)
+        .components('chromatic_compound', '6x profanum', '4x xenorhast', '2x aqua', 'aerialis')
+        .flags(no_decomp)
+        .iconSet(DULL);
+    
+    event.create('ecliptic_bimetal')
+        .ingot()
+        .fluid()
+        .color(0x575366)
+        .secondaryColor(0xF5FAE1)
+        .components('shadow_steel', '4x mundus', 'refined_radiance')
+        .iconSet(RADIOACTIVE)
+        .flags(plates);
+    
 
 // Misc stones
     event.create("moon_stone")

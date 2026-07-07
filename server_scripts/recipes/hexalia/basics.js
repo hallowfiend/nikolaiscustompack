@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
                 "item": "hexerei:yellow_dock_flowers"
             },
             "c":{
-                "item": "immersiveweathering:moss_clump"
+                "item": "immersive_weathering:moss_clump"
             },
             "d":{
                 "item": "minecraft:lily_pad"
@@ -51,7 +51,7 @@ ServerEvents.recipes((event) => {
         "pattern": [
             " ba",
             " db",
-            "c "
+            "c  "
         ],
         "reagents": [
             "jjjj"

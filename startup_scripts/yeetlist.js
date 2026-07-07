@@ -37,7 +37,7 @@ global.removedItems = [
   "scguns:powered_macerator",
   "scguns:mechanical_press",
   "scguns:powered_mechanical_press",
-  'minersdelight:moss'
+  'miners_delight:moss'
 ];
 
 global.removedRecipeIds = [

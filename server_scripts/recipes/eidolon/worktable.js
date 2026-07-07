@@ -17,7 +17,43 @@ const petalApothecary = [
 ServerEvents.recipes((event) => {
     //im turning this table into the central magic item crafting station and NOBODY CAN STOP ME
     //except for components that is im leaving those to be craftable normalstyle because i love ae2
-
+    //HEXEREI
+    //mixing cauldron
+    event.remove({ id: 'hexerei:mixing_cauldron' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "ihi",
+            "psp",
+            "ppp"
+        ],
+        "reagents": [
+            "gcgc"
+        ],
+        "key": {
+            "i": {
+                "item": "gtceu:pewter_plate"
+            },
+            "s": {
+                "tag": "forge:tools/screwdrivers"
+            },
+            "h": {
+                "tag": "forge:tools/hammers"
+            },
+            "i": {
+                "item": "gtceu:iron_screw"
+            },
+            "g": {
+                "item": "gtceu:fine_gold_wire"
+            },
+            "c": {
+                "item": "gtceu:coal_dust"
+            }
+        },
+        "result": {
+            "item": "hexerei:mixing_cauldron"
+        }
+    })
     //MALUM
     //spirit altar
     event.remove({ id: 'malum:spirit_altar' })

@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:block_of_arcane_charcoal', 6000)
   
   // soulstained bronze
-  event.remove({ output: 'malum:soul_stained_steel_ingot' })
+  event.remove({ id: "malum:spirit_infusion/soul_stained_steel_ingot" })
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
     "extra_items": [
       {
       "item": "malum:processed_soulstone",
-      "count": 2
+      "count": 4
       }
     ],
     "spirits": [

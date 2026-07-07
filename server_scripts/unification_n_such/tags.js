@@ -297,12 +297,6 @@ ServerEvents.tags("item", (event) => {
   event.add("forge:resins", ["eidolon:merammer_resin"]);
   event.add("forge:resins", ["gtceu:sticky_resin"]);
 
-  event.add("forge:ingots/cupronickel", ["immersiveengineering:ingot_constantan"]);
-  event.add("forge:nuggets/cupronickel", ["immersiveengineering:nugget_constantan"]);
-  event.add("forge:plates/cupronickel", ["immersiveengineering:plate_constantan"]);
-  event.add("forge:dusts/cupronickel", ["immersiveengineering:dust_constantan"]);
-  event.add("forge:storage_blocks/cupronickel", ["immersiveengineering:storage_constantan"]);
-
   event.add("c:black_dyes", ["#forge:dyes/black"]);
   event.add("c:blue_dyes", ["#forge:dyes/blue"]);
   event.add("c:brown_dyes", ["#forge:dyes/brown"]);
