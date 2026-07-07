@@ -474,7 +474,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
           .color(0x46463D)
           .components('iron', 'lead')
           .iconSet(METALLIC)
-          .flags(bolt_and_screw);
+          .flags(plates, 
+            bolt_and_screw);
 
     event.create('ether')
         .gem()
@@ -555,7 +556,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .color(0xE48615)
             .secondaryColor(0x443c34)
             .iconSet(SHINY)
-            .components('carbon', '6x infernalis', '6x antiaura')
+            .components('carbon', '6x ragna', '6x infernalis', '6x antiaura')
             .flags(
             no_decomp,
             explosive,
@@ -580,7 +581,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .components('phenol', 'formaldehyde')
         .color(0x79392F)
         .secondaryColor(0xA16E7F)
-        .flags(plates, gear, small_gear, rod, frame)
+        .flags(plates, gear, small_gear, rod, frame);
 
 // ElementalCraft
 
