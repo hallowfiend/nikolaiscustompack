@@ -12,24 +12,19 @@ WorldgenEvents.remove(event => {
   });
   event.removeOres(props => {
     props.blocks = [
-      /immersiveengineering:ore\w+/,
-      "undergarden:depthrock_diamond_ore",
-      "undergarden:depthrock_cloggrum_ore",
-      "undergarden:shiverstone_coal_ore",
-      "undergarden:shiverstone_cloggrum_ore",
-      "undergarden:depthrock_coal_ore",
-      "undergarden:depthrock_utherium_ore",
-      "undergarden:depthrock_regalium_ore",
-      "undergarden:depthrock_iron_ore",
-      "undergarden:depthrock_gold_ore",
+      "immersiveengineering:ore_lead",
+      "immersiveengineering:deepslate_ore_lead",
+      "immersiveengineering:ore_nickel",
+      "immersiveengineering:deepslate_ore_nickel",
+      "immersiveengineering:ore_silver",
+      "immersiveengineering:deepslate_ore_silver",
       /irons_spellbooks:.*mithril.*/,
-      /scguns:.*sulfur_ore/,
-      /scguns:.*anthralite_ore/,
-      /eidolon:.*lead_ore/,
+      /scguns:.*ore.*/,
+      /eidolon:.*ore.*/,
       /born_in_chaos_v1:.*diamond_ore.*/,
       /tinkers_advanced:.*/,
-      /.*theurgy.*/,
-      /.*cosmere.*/,
+      /theurgy:.*/,
+      /cosmere:.*/,
       /caverns_and_chasms:.*ore.*/,
       /galosphere:.*ore.*/,
       'mna:vinteum_ore',
@@ -44,6 +39,7 @@ WorldgenEvents.remove(event => {
       'embers:lead_ore',
       'embers:deepslate_lead_ore',
       'embers:silver_ore',
+      /enlightened_end:.*ore/,
       'embers:deepslate_silver_ore',
       'undergarden:depthrock_coal_ore',
       'undergarden:shiverstone_coal_ore',
@@ -121,6 +117,10 @@ WorldgenEvents.remove(event => {
     "malum:quartz_geode",
     "tconstruct:cobalt_ore_large",
     "tconstruct:cobalt_ore_small"
+  ]);
+  event.removeFeatureById('vegetal_decoration', [
+    'rusticdelight:wild_coffee_placed', // in favor of Farmer's Respite coffee
+    'culturaldelights:wild_corn' // in favor of Farm & Charm's corn
   ]);
   event.removeFeatureById('underground_ores', [
     //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      

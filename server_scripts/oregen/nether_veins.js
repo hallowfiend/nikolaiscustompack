@@ -63,7 +63,7 @@ addVein("nether_manganese_vein", 'nether_stones', 20, 20, 20, 30, 'grossular', "
       .size(2, 4))
     .layer((l) => l.weight(2)
       .mat('tantalite')
-      .size(2, 1));
+      .size(1, 2));
 });
 
 addVein("monazite_vein", 'nether_stones', 15, 18, 20, 30, 'monazite', "surface", (pattern) => {

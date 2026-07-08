@@ -105,7 +105,7 @@ addVein("ancient_riches", 'twiforest', 10, 20, -20, 10, 'gold', "surface", (patt
   pattern
     .layer((l) => l.weight(3)
       .mat('opal')
-      .size(5, 4))
+      .size(3, 5))
     .layer((l) => l.weight(2)
       .mat('gold')
       .size(3, 4))
@@ -121,12 +121,12 @@ addVein("petrified_twilight", 'twiforest', 10, 60, -20, 10, 'vinteum', "above", 
   pattern
     .layer((l) => l.weight(3)
       .mat('vinteum')
-      .size(2, 4))
+      .size(3, 5))
     .layer((l) => l.weight(2)
       .mat('electrotine')
       .size(1, 4))
     .layer((l) => l.weight(2)
-      .mat('dark_gem')
+      .mat('dark')
       .size(2, 2))
     .layer((l) => l.weight(1)
       .mat('brilliance')

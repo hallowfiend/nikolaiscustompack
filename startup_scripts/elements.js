@@ -123,22 +123,22 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('aura')
         .protons(1)
         .neutrons(0)
-        .symbol('♣')
+        .symbol('♣');
 
     event.create('antiaura')
         .protons(1)
         .neutrons(1)
-        .symbol('♦')
+        .symbol('♦');
 
     event.create('experience')
         .protons(42)
         .neutrons(0)
-        .symbol('Χየ')
+        .symbol('Χየ');
 
     event.create('vinteum')
         .protons(848)
         .neutrons(121)
-        .symbol('Vt')
+        .symbol('Vt');
     
     console.log('Elements synthesized')
 })

@@ -974,6 +974,7 @@ event.create('spirit_gem')
     event.create("regalium")
         .components('3x aluminium', 'quartzite', 'cthonic_gold')
         .gem()
+        .ore()
         .color(0xffea03)
         .iconSet(GTMaterialIconSet.LAPIS)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, centrifuge);
