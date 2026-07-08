@@ -474,8 +474,17 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
           .color(0x46463D)
           .components('iron', 'lead')
           .iconSet(METALLIC)
-          .flags(plates, 
-            bolt_and_screw);
+          .flags(GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR);
 
     event.create('ether')
         .gem()
@@ -972,6 +981,7 @@ event.create('spirit_gem')
     event.create('dawnstone')
         .color(0xfa9d32)
         .ingot()
+        .fluid()
         .iconSet(GTMaterialIconSet.SHINY)
         .components('2x copper', '2x cthonic_gold', 'ember')
         .flags(

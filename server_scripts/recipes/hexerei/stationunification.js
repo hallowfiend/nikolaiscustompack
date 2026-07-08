@@ -145,7 +145,7 @@ const recipes = [
     output_amount:1,
     liquid:"minecraft:lava",
     output_liquid:false,
-    liquid_consum:100,
+    liquid_consum:1000,
     heat:false
 },
 {

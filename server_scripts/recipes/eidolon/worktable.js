@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
     event.custom({
         "type": "eidolon:worktable",
         "pattern": [
-            "ihi",
+            "i i",
             "psp",
             "ppp"
         ],
@@ -35,10 +35,7 @@ ServerEvents.recipes((event) => {
                 "item": "gtceu:pewter_plate"
             },
             "s": {
-                "tag": "forge:tools/screwdrivers"
-            },
-            "h": {
-                "tag": "forge:tools/hammers"
+                "item": "minecraft:cauldron"
             },
             "i": {
                 "item": "gtceu:iron_screw"

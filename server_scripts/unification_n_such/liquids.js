@@ -2,53 +2,56 @@
 
 ServerEvents.recipes(event => {
 
-   [
-        ["embers:molten_iron", "gtceu:iron"],
-        ["embers:molten_gold", "gtceu:gold"],
-        ["embers:molten_copper", "gtceu:copper"],
-        ["embers:molten_lead", "gtceu:lead"],
-        ["embers:molten_silver", "gtceu:silver"],
-        ["embers:molten_nickel", "gtceu:nickel"],
-        ["embers:molten_tin", "gtceu:tin"],
-        ["embers:molten_aluminum", "gtceu:aluminium"],
-        ["embers:molten_zinc", "gtceu:zinc"],
-        ["embers:molten_platinum", "gtceu:platinum"],
-        ["embers:molten_uranium", "gtceu:uranium"],
-        ["embers:molten_bronze", "gtceu:bronze"],
-        ["embers:molten_electrum", "gtceu:electrum"],
-        ["embers:molten_brass", "gtceu:brass"],
-        ["embers:molten_constantan", "gtceu:cupronickel"],
-        ["embers:molten_invar", "gtceu:invar"]
-    ].forEach((replacementInfoEmbers) => {
-        const [fluid, replacement] = replacementInfoEmbers;
-        event.forEachRecipe({mod: "embers"}, recipe => {
-            let changedFlag = false;
+   function replaceFluidInput(fluid, unifiedFluid)
+    {
+        event.replaceInput(
+            { input: Fluid.of(fluid) },
+            Fluid.of(fluid),
+            Fluid.of(unifiedFluid)
+        )
+        event.replaceInput(
+            { inputs: Fluid.of(fluid) },
+            Fluid.of(fluid),
+            Fluid.of(unifiedFluid)
+        )
+    }
+    function replaceFluidOutput(fluid, unifiedFluid)
+    {
+        event.replaceOutput(
+            { output: Fluid.of(fluid) },
+            Fluid.of(fluid),
+            Fluid.of(unifiedFluid)
+        )
+        event.replaceOutput(
+            { result: Fluid.of(fluid) },
+            Fluid.of(fluid),
+            Fluid.of(unifiedFluid)
+        )
+    }
+    // Replace fluid input and output
+    function replaceFluidIO(fluid, unifiedFluid)
+    {
+        replaceFluidInput(fluid, unifiedFluid)
+        replaceFluidOutput(fluid, unifiedFluid)
+    }
 
-            // output
-            if (recipe.json 
-                && recipe.json.get("output")
-                && recipe.json.get("output").get("fluid")
-                && recipe.json.get("output").get("fluid").asString === fluid) {
-                recipe.json.get("output").addProperty("fluid", replacement);
-                //console.info(`match o: ${replacement}`);
-                changedFlag = true;
-            }
+    replaceFluidIO('embers:molten_copper', 'gtceu:copper')
+    replaceFluidIO('tconstruct:copper', 'gtceu:copper')
+    replaceFluidIO('embers:molten_invar', 'gtceu:invar')
+    replaceFluidIO('tconstruct:invar', 'gtceu:invar')
+    replaceFluidIO('embers:molten_iron', 'gtceu:iron')
+    replaceFluidIO('tconstruct:gold', 'gtceu:gold')
+    replaceFluidIO('embers:molten_gold', 'gtceu:gold')
+    replaceFluidIO('tconstruct:lead', 'gtceu:lead')
+    replaceFluidIO('embers:molten_lead', 'gtceu:lead')
+    replaceFluidIO('embers:molten_dawnstone', 'gtceu:dawnstone')
+    replaceFluidIO('embers:molten_mithril', 'gtceu:mithril')
+    replaceFluidIO('embers:molten_tin', 'gtceu:tin')
+    replaceFluidIO('embers:molten_aluminum', 'gtceu:aluminium')
+    replaceFluidIO('embers:molten_zinc', 'gtceu:zinc')
+    replaceFluidIO('embers:molten_constantan', 'gtceu:cupronickel')
+    replaceFluidIO('constructs_casting:molten_mithril', 'gtceu:mithril')
 
-            // bonus
-            if (recipe.json 
-                && recipe.json.get("bonus")
-                && recipe.json.get("bonus").get("fluid")
-                && recipe.json.get("bonus").get("fluid").asString === fluid) {
-                recipe.json.get("bonus").addProperty("fluid", replacement);
-                //console.info(`match b: ${replacement}`);
-                changedFlag = true;
-            }
-
-            if (changedFlag) {
-                recipe.save();
-            }
-        });
-    });
 
 })
 

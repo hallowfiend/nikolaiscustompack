@@ -110,28 +110,3 @@
     let AUXv = GTValues.VA[GTValues.UXV]
     let AOPv = GTValues.VA[GTValues.OpV]
     let AMAx = GTValues.VA[GTValues.MAX]
-
-// Colors
-const COLORS = [
-  'white',
-  'orange',
-  'magenta',
-  'light_blue',
-  'yellow',
-  'lime',
-  'pink',
-  'gray',
-  'light_gray',
-  'cyan',
-  'purple',
-  'blue',
-  'brown',
-  'green',
-  'red',
-  'black'
-];
-const DYENAMICS_COLORS = [
-    'wine',
-    'mint',
-    'peach'
-]

@@ -34,6 +34,7 @@ ServerEvents.recipes((event) => {
   });
 
   COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`));
+  DYENAMICS_COLORS.forEach((color) => replaceInput(`dyenamics:${color}_dye`, `#forge:dyes/${color}`));
 
   console.log('Items sorted')
 });

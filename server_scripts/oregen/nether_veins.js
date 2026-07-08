@@ -2,10 +2,10 @@ addVein("nether_certus_vein", 'nether_stones', 20, 30, 80, 120, 'certus_quartz',
   pattern
     .layer((l) => l.weight(3)
       .mat('certus_quartz')
-      .size(2, 2))
+      .size(2, 6))
     .layer((l) => l.weight(2)
       .mat('quartzite')
-      .size(1, 1))
+      .size(1, 3))
     .layer((l) => l.weight(1)
       .mat('barite')
       .size(1, 1));
@@ -18,10 +18,10 @@ addVein("nether_saltpeter_vein", 'nether_stones', 20, 30, 5, 45, 'saltpeter', "s
       .size(2, 4))
     .layer((l) => l.weight(2)
       .mat('diatomite')
-      .size(1, 1))
+      .size(2, 4))
     .layer((l) => l.weight(2)
       .mat('electrotine')
-      .size(1, 1))
+      .size(2, 3))
     .layer((l) => l.weight(1)
       .mat('alunite')
       .size(1, 1));
@@ -34,7 +34,7 @@ addVein("pyrite_vein", 'nether_stones', 100, 40, 80, 120, 'pyrite', "surface", (
       .size(2, 4))
     .layer((l) => l.weight(2)
       .mat('sphalerite')
-      .size(1, 1))
+      .size(2, 2))
     .layer((l) => l.weight(1)
       .mat('blazing_quartz')
       .size(1, 1));
@@ -44,7 +44,7 @@ addVein("beryllium_vein", 'nether_stones', 30, 20, 5, 30, 'beryllium', "surface"
   pattern
     .layer((l) => l.weight(3)
       .mat('beryllium')
-      .size(2, 2))
+      .size(2, 8))
     .layer((l) => l.weight(2)
       .mat('emerald')
       .size(1, 1))
@@ -57,13 +57,13 @@ addVein("nether_manganese_vein", 'nether_stones', 20, 20, 20, 30, 'grossular', "
   pattern
     .layer((l) => l.weight(3)
       .mat('grossular')
-      .size(2, 2))
+      .size(2, 4))
     .layer((l) => l.weight(2)
       .mat('pyrolusite')
-      .size(1, 1))
+      .size(2, 4))
     .layer((l) => l.weight(2)
       .mat('tantalite')
-      .size(1, 1));
+      .size(2, 1));
 });
 
 addVein("monazite_vein", 'nether_stones', 15, 18, 20, 30, 'monazite', "surface", (pattern) => {
@@ -73,20 +73,20 @@ addVein("monazite_vein", 'nether_stones', 15, 18, 20, 30, 'monazite', "surface",
       .size(2, 2))
     .layer((l) => l.weight(2)
       .mat('bastnasite')
-      .size(1, 1))
+      .size(1, 3))
     .layer((l) => l.weight(2)
       .mat('neodymium')
-      .size(1, 1));
+      .size(1, 2));
 });
 
 addVein("nether_quartz_vein", 'nether_stones', 60, 80, 20, 30, 'nether_quartz', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('nether_quartz')
-      .size(2, 2))
+      .size(2, 4))
     .layer((l) => l.weight(2)
       .mat('quartzite')
-      .size(1, 1));
+      .size(1, 2));
 });
 
 addVein("cobaltite_vein", 'nether_stones', 20, 40, 20, 30, 'cobaltite', "surface", (pattern) => {
@@ -96,10 +96,10 @@ addVein("cobaltite_vein", 'nether_stones', 20, 40, 20, 30, 'cobaltite', "surface
       .size(2, 4))
     .layer((l) => l.weight(2)
       .mat('electrotine')
-      .size(1, 1))
+      .size(1, 3))
     .layer((l) => l.weight(1)
       .mat('vinteum')
-      .size(1, 1));
+      .size(1, 2));
 });
 
 addVein("tetrahedrite_vein", 'nether_stones', 70, 20, 80, 120, 'tetrahedrite', "surface", (pattern) => {
@@ -109,42 +109,42 @@ addVein("tetrahedrite_vein", 'nether_stones', 70, 20, 80, 120, 'tetrahedrite', "
       .size(2, 4))
     .layer((l) => l.weight(2)
       .mat('copper')
-      .size(1, 1))
+      .size(1, 3))
     .layer((l) => l.weight(1)
       .mat('stibnite')
-      .size(1, 1));
+      .size(1, 2));
 });
 
 addVein("nether_nickel_vein", 'nether_stones', 20, 60, 20, 30, 'garnierite', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('garnierite')
-      .size(2, 4))
+      .size(3, 4))
     .layer((l) => l.weight(2)
       .mat('nickel')
-      .size(1, 1))
+      .size(2, 4))
     .layer((l) => l.weight(1)
       .mat('cobaltite')
-      .size(1, 1))
+      .size(1, 3))
     .layer((l) => l.weight(1)
       .mat('pentlandite')
-      .size(1, 1));
+      .size(1, 2));
 });
 
 addVein("seething_brimstone", 'nether_stones', 10, 20, 40, 120, 'blazing_quartz', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('sulfur')
-      .size(2, 2))
+      .size(2, 6))
     .layer((l) => l.weight(2)
       .mat('blazing_quartz')
-      .size(2, 4))
+      .size(2, 6))
     .layer((l) => l.weight(1)
       .mat('ember')
-      .size(1, 1))
+      .size(1, 3))
     .layer((l) => l.weight(1)
       .mat('vehement_coal')
-      .size(1, 1));
+      .size(1, 3));
 });
 
 addVein("hellish_brass_vein", 'nether_stones', 10, 20, 40, 120, 'anthralite', "surface", (pattern) => {
@@ -154,13 +154,13 @@ addVein("hellish_brass_vein", 'nether_stones', 10, 20, 40, 120, 'anthralite', "s
       .size(4, 8))
     .layer((l) => l.weight(2)
       .mat('anthralite')
-      .size(1, 2))
+      .size(2, 3))
     .layer((l) => l.weight(2)
       .mat('galena')
-      .size(1, 1))
+      .size(1, 3))
     .layer((l) => l.weight(1)
       .mat('sulfur')
-      .size(1, 1));
+      .size(1, 3));
 });
 
 addVein("lost_obols", 'nether_sediment', 10, 20, 5, 120, 'gold', "surface", (pattern) => {
@@ -189,8 +189,8 @@ addVein("loose_brimstone", 'nether_sediment', 20, 60, 40, 120, 'sulfur', "surfac
       .size(1, 2))
     .layer((l) => l.weight(1)
       .mat('vehement_coal')
-      .size(1, 1))
+      .size(1, 3))
     .layer((l) => l.weight(1)
       .mat('tricalcium_phosphate')
-      .size(1, 1));
+      .size(1, 2));
 });

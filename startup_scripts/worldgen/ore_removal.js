@@ -3,7 +3,7 @@
 WorldgenEvents.remove(event => {
   event.removeOres((props) => {
     props.worldgenLayer = "underground_ores";
-    props.blocks = [/aether:.*/, /deeperdarker:.*/, /immersiveengineering:.*/];
+    props.blocks = [/aether:.*ore.*/, /deeperdarker:.*ore.*/, /immersiveengineering:.*ore.*/];
   });
 
   event.removeOres((props) => {
@@ -12,6 +12,27 @@ WorldgenEvents.remove(event => {
   });
   event.removeOres(props => {
     props.blocks = [
+      /immersiveengineering:ore\w+/,
+      "undergarden:depthrock_diamond_ore",
+      "undergarden:depthrock_cloggrum_ore",
+      "undergarden:shiverstone_coal_ore",
+      "undergarden:shiverstone_cloggrum_ore",
+      "undergarden:depthrock_coal_ore",
+      "undergarden:depthrock_utherium_ore",
+      "undergarden:depthrock_regalium_ore",
+      "undergarden:depthrock_iron_ore",
+      "undergarden:depthrock_gold_ore",
+      /irons_spellbooks:.*mithril.*/,
+      /scguns:.*sulfur_ore/,
+      /scguns:.*anthralite_ore/,
+      /eidolon:.*lead_ore/,
+      /born_in_chaos_v1:.*diamond_ore.*/,
+      /tinkers_advanced:.*/,
+      /.*theurgy.*/,
+      /.*cosmere.*/,
+      /caverns_and_chasms:.*ore.*/,
+      /galosphere:.*ore.*/,
+      'mna:vinteum_ore',
       'elementalcraft:inert_crystal_ore',
       'create:zinc_ore',
       'create:deepslate_zinc_ore',

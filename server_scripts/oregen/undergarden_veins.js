@@ -1,4 +1,4 @@
-/* addVein("banded_iron_vein", 'underrock', 50, 40, 20, 40, 'goethite', "surface", (pattern) => {
+addVein("banded_iron_vein", 'underrock', 50, 40, 20, 40, 'goethite', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('goethite')
@@ -42,7 +42,7 @@ addVein("molybdenum_vein", 'underrock', 10, 20, 20, 50, 'wulfenite', "surface", 
       .mat('molybdenum')
       .size(1, 1))
     .layer((l) => l.weight(1)
-      .mat('tantalusite')
+      .mat('tantalite')
       .size(1, 1))
 });
 
@@ -152,4 +152,4 @@ addVein("undergarden_oilsands_vein", 'undersediment', 40, 60, 0, 70, GTMaterials
     .layer((l) => l.weight(1)
       .mat('coal')
       .size(1, 1));
-}); */
+});
