@@ -19,4 +19,16 @@ event.create('manaweave_processor_mainframe')
     .texture("kubejs:item/manaweave_processor_mainframe")
     .tag("gtceu:circuits/uev")
 
+event.create('glitterkelp_paste')
+    .displayName("Glitterkelp Paste")
+    .texture("kubejs:item/glitterkelp_paste")
+
+event.create('spiral_paste')
+    .displayName("Spiral Paste")
+    .texture("kubejs:item/spiral_paste")
+
+event.create('ground_yellow_tea')
+    .displayName("Ground Yellow Tea")
+    .texture("kubejs:item/ground_yellow_tea")
+
 })

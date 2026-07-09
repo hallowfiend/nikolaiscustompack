@@ -1,6 +1,5 @@
 ServerEvents.highPriorityData(e => {
     let ores =  [
-    "actuallyadditions:ore_black_quartz",
     "occultism:ore_silver",
     "occultism:ore_silver_deepslate",
     "evilcraft:ore_dark",
@@ -41,7 +40,7 @@ ServerEvents.highPriorityData(e => {
     "cosmere:ore_chromium_rare",
     "cosmere:ore_lead_abundant",
     "cosmere:ore_lead_deep",
-    "cosmere:ore_lead_normal",
+    "cosmere:ore_lead_normal"
 
   ]
 

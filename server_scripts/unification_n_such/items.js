@@ -6,6 +6,7 @@ const bulkReplace = [
     { target: 'irons_spellbooks:blood_vial', replacement: 'hexerei:blood_bottle'},
     { target: 'eidolon:parchment', replacement: 'mna:vellum'},
     { target: 'hexalia:mandrake', replacement: 'hexerei:mandrake_root'},
+    { target: 'hexalia:salt', replacement: 'forge:salt'},
     { target: 'eidolon:withered_heart', replacement: "#forge:wither_heart"},
     { target: 'eidolon:wraith_heart', replacement: "#forge:frigid_heart"},
     { target: 'eidolon:zombie_heart', replacement: "#forge:zombie_heart"},

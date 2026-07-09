@@ -14,6 +14,11 @@ global.removedItems.forEach((item) => {
 	});
 });
 
+ServerEvents.recipes((event) => {
+	event.remove({ input: `gtceu:tools/crafting_mortars`})
+	event.remove({ input: "hexalia:mortar_and_pestle"})
+})
+
 global.removedFluids.forEach((fluid) => {
 	// Remove all recipes that output the fluids in the list
 	ServerEvents.recipes((event) => {

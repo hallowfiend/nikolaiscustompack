@@ -585,6 +585,18 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             no_smelt
         );
 
+    event.create('luminite')
+        .color(0x85ffad)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .ingot()
+        .ore()
+        .dust()
+        .flags(
+            GTMaterialFlags.NO_ORE_SMELTING,
+            GTMaterialFlags.NO_SMELTING
+        )
+        .iconSet(NETHERSTAR);
+
     event.create('citrine')
         .gem()
         .ore()
@@ -785,6 +797,12 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             no_decomp,
             plates
         );
+    event.create('composite_stardust')
+        .dust()
+        .color(0xa187ff)
+        .iconSet(SHINY)
+        .components('deepsilver', 'starlit_diamond', 'luminite')
+        .flags(centrifuge);
     event.create('malarite')
         .gem()
         .ore()

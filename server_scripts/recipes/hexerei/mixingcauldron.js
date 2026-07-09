@@ -481,6 +481,35 @@ const recipes = [
     output_liquid:false,
     liquid_consum:250,
     heat:true
+},
+// Iron's Spells & Spellbooks stuff
+{
+    inputItem:[
+        {"item" : "minecraft:obsidian"},
+        {"item" : "minecraft:obsidian"},
+        {"item" : "minecraft:obsidian"},
+        {"item" : "minecraft:obsidian"}
+    ],
+    output:"minecraft:crying_obsidian",
+    output_amount:4,
+    liquid:"irons_spellbooks:evasion_elixir",
+    output_liquid:false,
+    liquid_consum:2000,
+    heat:false
+},
+{
+    inputItem:[
+        {"item" : "irons_spellbooks:hogskin"},
+        {"item" : "irons_spellbooks:hogskin"},
+        {"item" : "irons_spellbooks:hogskin"},
+        {"item" : "irons_spellbooks:hogskin"}
+    ],
+    output:"irons_spellbooks:bloody_vellum",
+    output_amount:4,
+    liquid:"hexerei:blood",
+    output_liquid:false,
+    liquid_consum:1000,
+    heat:false
 }
 ]
 
@@ -489,7 +518,7 @@ const recipes = [
         if(recipe.heat == false){
             event.custom({
                 "type": "hexerei:mixingcauldron",
-                "liquid": {"fluid": recipe.liquid},
+                "liquid": recipe.liquid,
                 "ingredients":recipe.inputItem,
                 "output": {"item": recipe.output,"count":recipe.output_amount},
                 "liquidOutput": {"fluid": recipe.output_liquid},
@@ -507,5 +536,199 @@ const recipes = [
                });
         }
     })
+//More Irons' garbage
+ event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "hexerei:potion",
+        "nbt": {
+          "Bottle": "REGULAR",
+          "Potion": "minecraft:mundane"
+        }
+    },
+    "ingredients": [
+      { "item": "minecraft:echo_shard" }
+    ],
+    "output": {
+      "fluid": "irons_spellbooks:timeless_slurry"
+    },
+    "heatRequirement": "heated"
+  });
+ event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "minecraft:water"
+    },
+    "ingredients": [
+      { "item": "irons_spellbooks:icy_fang" }
+    ],
+    "output": {
+      "fluid": "irons_spellbooks:ice_venom"
+    },
+    "heatRequirement": "none"
+  });
+event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "hexerei:potion",
+        "nbt": {
+          "Bottle": "REGULAR",
+          "Potion": "irons_spellbooks:instant_mana_three"
+        }
+    },
+    "ingredients": [
+      { "item": "malum:astral_weave" }
+    ],
+    "output": {
+      "fluid": "irons_spellbooks:evasion_elixir"
+    },
+    "heatRequirement": "heated"
+  });
+event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "irons_spellbooks:evasion_elixir"
+    },
+    "ingredients": [
+      { "item": "malum:warp_flux" }
+    ],
+    "output": {
+      "fluid": "irons_spellbooks:greater_evasion_elixir"
+    },
+    "heatRequirement": "heated"
+  });
+ event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "hexerei:potion",
+        "nbt": {
+          "Bottle": "REGULAR",
+          "Potion": "minecraft:strong_healing"
+        }
+    },
+    "ingredients": [
+      { "item": "gtceu:red_garnet_gem" }
+    ],
+    "output": {
+      "fluid": "irons_spellbooks:greater_healing_elixir"
+    },
+    "heatRequirement": "heated"
+  });
+ event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "hexerei:potion",
+        "nbt": {
+          "Bottle": "REGULAR",
+          "Potion": "minecraft:strong_healing"
+        }
+    },
+    "ingredients": [
+      { "tag": "minecraft:oak_logs" }
+    ],
+    "output": {
+      "fluid": "irons_spellbooks:oakskin_elixir"
+    },
+    "heatRequirement": "heated"
+  });
+event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "irons_spellbooks:oakskin_elixir"
+    },
+    "ingredients": [
+      { "item": "minecraft:amethyst_shard" }
+    ],
+    "output": {
+      "fluid": "irons_spellbooks:greater_oakskin_elixir"
+    },
+    "heatRequirement": "heated"
+  });
+event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "hexerei:potion",
+        "nbt": {
+          "Bottle": "REGULAR",
+          "Potion": "minecraft:long_invisibility"
+        }
+    },
+    "ingredients": [
+      { "item": "irons_spellbooks:shriving_stone" }
+    ],
+    "output": {
+      "fluid": "irons_spellbooks:invisibility_elixir"
+    },
+    "heatRequirement": "heated"
+  });
+event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "irons_spellbooks:invisibility_elixir"
+    },
+    "ingredients": [
+      { "item": "minecraft:amethyst_cluster" }
+    ],
+    "output": {
+      "fluid": "irons_spellbooks:greater_invisibility_elixir"
+    },
+    "heatRequirement": "heated"
+  });
+event.custom({
+    "type": "hexerei:cauldron_emptying",
+    "input": {
+      "item": "minecraft:glass_bottle"
+    },
+    "fluid": {
+      "fluid": "irons_spellbooks:oakskin_elixir",
+      "amount": 250
+    },
+    "output": {
+      "item": "irons_spellbooks:oakskin_elixir",
+      "count": 1
+    }
+  });
+event.custom({
+    "type": "hexerei:cauldron_emptying",
+    "input": {
+      "item": "minecraft:glass_bottle"
+    },
+    "fluid": {
+      "fluid": "irons_spellbooks:greater_oakskin_elixir",
+      "amount": 250
+    },
+    "output": {
+      "item": "irons_spellbooks:greater_oakskin_elixir",
+      "count": 1
+    }
+  });
+event.custom({
+    "type": "hexerei:cauldron_emptying",
+    "input": {
+      "item": "minecraft:glass_bottle"
+    },
+    "fluid": {
+      "fluid": "irons_spellbooks:invisibility_elixir",
+      "amount": 250
+    },
+    "output": {
+      "item": "irons_spellbooks:invisibility_elixir",
+      "count": 1
+    }
+  });
+event.custom({
+    "type": "hexerei:cauldron_emptying",
+    "input": {
+      "item": "minecraft:glass_bottle"
+    },
+    "fluid": {
+      "fluid": "irons_spellbooks:greater_invisibility_elixir",
+      "amount": 250
+    },
+    "output": {
+      "item": "irons_spellbooks:greater_invisibility_elixir",
+      "count": 1
+    }
+  });
 
 });

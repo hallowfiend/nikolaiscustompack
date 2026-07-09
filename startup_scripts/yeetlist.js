@@ -18,6 +18,7 @@ global.removedItems = [
   "create:brass_ingot",
   "create:brass_nugget",
   "create:brass_block",
+  'eidolon:pewter_blend',
   /ad_astra:.*etrium.*/,
   "ad_astra:compressor",
   "ad_astra:etrionic_blast_furnace",
@@ -26,6 +27,8 @@ global.removedItems = [
   /ad_astra:.*ice_shard_ore.*/,
   /quark:.*limestone.*/,
   /meadow:.*limestone.*/,
+  /gtceu:.*mortar.*/,
+  /tconstruct:.*mortar.*/,
   /tconstruct:.*gear_cast.*/,
   "aether:enchanted_gravitite",
   /cosmere:.*blend.*/,
@@ -37,7 +40,9 @@ global.removedItems = [
   "scguns:powered_macerator",
   "scguns:mechanical_press",
   "scguns:powered_mechanical_press",
-  'miners_delight:moss'
+  'miners_delight:moss',
+  "hexalia:mortar_and_pestle",
+  "irons_spellbooks:alchemist_cauldron"
 ];
 
 global.removedRecipeIds = [
@@ -52,7 +57,9 @@ global.removedRecipeTypes = [
     "scguns:macerating",
     "scguns:powered_macerating",
     "scguns:mechanical_pressing",
-    "scguns:powered_mechanical_pressing"
+    "scguns:powered_mechanical_pressing",
+    "hexalia:mortar_and_pestle",
+    "irons_spellbooks:alchemist_cauldron"
 ]
 
 global.removedFluids = [
