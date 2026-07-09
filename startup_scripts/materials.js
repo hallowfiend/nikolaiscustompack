@@ -494,12 +494,12 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             GTMaterialFlags.GENERATE_SMALL_GEAR,
             ring);
     
-    /* event.create('arcane_gold')
+    event.create('arcane_gold')
         .ingot()
-        .color()
+        .color(0xEDAE66)
         .components('9x gold', '9x redstone', '2x spirit', '2x arkanum')
         .iconSet(SHINY)
-        .flags(plates, rod, ring); */
+        .flags(plates, rod, ring);
     
     event.create('bismuth_telluride')
         .ingot()
@@ -569,7 +569,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .addDefaultEnchant('minecraft:unbreaking', '3')
         .addDefaultEnchant('minecraft:efficiency', '3')
         .addDefaultEnchant('minecraft:sharpness', '3')
-        .iconSet(MAGNETIC);
+        .iconSet(METALLIC);
 
     event.create('spinel')
         .gem()
@@ -756,6 +756,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
 
     event.create('starcore')
         .gem()
+        .ore()
         .color(0xFCC74D)
         .components('10x helium', '10x hydrogen', 'destructive_will')
         .iconSet(NETHERSTAR)
@@ -764,6 +765,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         );
     event.create('starlit_diamond')
         .gem()
+        .ore()
         .color(0xCCB7F8)
         .components('diamond', '4x firmamentum')
         .iconSet(DIAMOND)
@@ -774,6 +776,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         );
     event.create('deepsilver')
         .ingot()
+        .ore()
         .color(0x5B5D93)
         .components('sterling_silver', '4x firmamentum', 'terrae')
         .cableProperties(GTValues.V[GTValues.IV], 8, 8, true)
@@ -784,6 +787,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         );
     event.create('malarite')
         .gem()
+        .ore()
         .color(0x293C37)
         .secondaryColor(0xA8509C)
         .components('naquadah', 'xenorhast', 'firmamentum')
@@ -797,7 +801,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .ingot()
         .color(0x5C6079)
         .formula('?')
-        .iconSet(MAGNETIC)
+        .iconSet(METALLIC)
         .flags(
             no_decomp
         );
@@ -899,7 +903,7 @@ event.create('nicrosil')
         .color(0xa9a9b0)
         .components('2x nickel', 'chromium', 'nether_quartz')
         .flags(centrifuge)
-        .iconSet(MAGNETIC);
+        .iconSet(METALLIC);
 
 event.create('duralumin')
         .ingot()
@@ -1232,40 +1236,6 @@ event.create('spirit_gem')
         .color(0x839689)
         .iconSet(DULL)
         .flags(plates, gear, small_gear, bolt_and_screw, rotor, no_decomp);
-    
-    event.create('chromatic_compound')
-        .ingot()
-        .fluid()
-        .color(0x9c50b6)
-        .components('3x glowstone', '3x obsidian', 'rose_quartz')
-        .iconSet(SHINY)
-        .flags(no_decomp);
-    
-    event.create('refined_radiance')
-        .ingot()
-        .fluid()
-        .plasma()
-        .color(0xF5FAE1)
-        .components('chromatic_compound', '6x sacrum', '4x arkanum', '2x infernalis', 'terrae')
-        .flags(no_decomp)
-        .iconSet(NETHERSTAR);
-    
-    event.create('shadow_steel')
-        .ingot()
-        .fluid()
-        .color(0x575366)
-        .components('chromatic_compound', '6x profanum', '4x xenorhast', '2x aqua', 'aerialis')
-        .flags(no_decomp)
-        .iconSet(DULL);
-    
-    event.create('ecliptic_bimetal')
-        .ingot()
-        .fluid()
-        .color(0x575366)
-        .secondaryColor(0xF5FAE1)
-        .components('shadow_steel', '4x mundus', 'refined_radiance')
-        .iconSet(RADIOACTIVE)
-        .flags(plates);
     
 
 // Misc stones

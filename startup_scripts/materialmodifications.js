@@ -95,12 +95,15 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('oxidized_golem_steel', 'eternal_starlight:oxidized_golem_steel_ingot')
     ingot('golem_steel', 'eternal_starlight:golem_steel_ingot')
     ingot('unrealium', 'eternal_starlight:unrealium_ingot')
+    ingot('andesite_alloy', 'create:andesite_alloy')
+    ingot('arcane_gold', 'eidolon:arcane_gold_ingot')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
     ingotHot('purified_vinteum_alloy', 'mna:superheated_purified_vinteum_ingot')
 
 //Blocks
+    block('arcane_gold', 'eidolon:arcane_gold_block')
     block('pewter', 'eidolon:pewter_block')
     block('desh', 'ad_astra:desh_block')
     block('skyjade', 'deep_aether:skyjade_block')
@@ -155,8 +158,10 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('unrealium', 'eternal_starlight:unrealium_block')
     block('oxidized_golem_steel', 'eternal_starlight:oxidized_golem_steel_block')
     block('golem_steel', 'eternal_starlight:golem_steel_block')
+    block('andesite_alloy', 'create:andesite_alloy_block')
 
 //Nuggets
+    nugget('arcane_gold', 'eidolon:arcane_gold_nugget')
     nugget('desh', 'ad_astra:desh_nugget')
     nugget('ostrum', 'ad_astra:ostrum_nugget')
     nugget('calorite', 'ad_astra:calorite_nugget')
@@ -265,6 +270,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOre('froststeel', 'undergarden:raw_froststeel')
     rawOre('tin', 'caverns_and_chasms:raw_tin')
     rawOre('iesnium', 'occultism:raw_iesnium')
+    rawOre('deepsilver', 'eternal_starlight:raw_deepsilver')
 
 //Raw ore blocks
     rawOreBlock('desh', 'ad_astra:raw_desh_block')
