@@ -15,4 +15,27 @@ ItemEvents.tooltip(event => {
   event.add('hexalia:bloomwrap_robes', '§7Reflects a portion of incoming damage.')
   event.add('hexalia:bloomwrap_leggings', '§7Grants regeneration nearby flowers.')
   event.add('hexalia:bloomwrap_boots', '§7Increases speed when walking on leaves.')
+
+
+  //greg
+
+   event.addAdvanced('kubejs:manaweave_processor', (item, advanced, text) => {
+     text.add(1, Text.gray('Magus-on-Chip'))
+     text.add(2, Text.lightPurple('ZPM-Tier Circuit'))
+    })
+
+    event.addAdvanced('kubejs:manaweave_processor_assembly', (item, advanced, text) => {
+     text.add(1, Text.gray('Not the installation wizard you were expecting'))
+     text.add(2, Text.lightPurple('UV-Tier Circuit'))
+    })
+
+    event.addAdvanced('kubejs:manaweave_processor_computer', (item, advanced, text) => {
+     text.add(1, Text.gray('HEX would be proud'))
+     text.add(2, Text.lightPurple('UHV-Tier Circuit'))
+    })
+
+    event.addAdvanced('kubejs:manaweave_processor_mainframe', (item, advanced, text) => {
+     text.add(1, Text.gray('Magitech at its finest'))
+     text.add(2, Text.lightPurple('UEV-Tier Circuit'))
+    })
 })

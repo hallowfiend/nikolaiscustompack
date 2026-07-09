@@ -255,9 +255,10 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
 
     event.create('source')
         .gem()
-        .ore()
+        .ore(2, 1)
         .liquid(900)
         .components('amethyst', 'aura', 'mana', 'mundus', '4x arkanum')
+        .addOreByproducts('solid_arkanum', 'solid_xenorhast', 'amethyst', 'inert_crystal')
         .color(0xAE44E2)
         .secondaryColor(0xE244C8)
         .iconSet(RUBY)
@@ -442,7 +443,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .ore(5, 1, true)
         .color(0x9be3fa)
         .components('purified_vinteum', 'mundus', '4x oxygen', 'carbon', 'silicon')
-        .addOreByproducts('vinteum','purified_vinteum')
+        .addOreByproducts('purified_vinteum', 'source', 'lapis')
         .flags(
             electrolyze,
             no_smashing,
@@ -493,12 +494,23 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             GTMaterialFlags.GENERATE_SMALL_GEAR,
             ring);
     
-    event.create('arcane_gold')
+    /* event.create('arcane_gold')
         .ingot()
         .color()
         .components('9x gold', '9x redstone', '2x spirit', '2x arkanum')
         .iconSet(SHINY)
-        .flags(plates, rod, ring);
+        .flags(plates, rod, ring); */
+    
+    event.create('bismuth_telluride')
+        .ingot()
+        .iconSet(METALLIC)
+        .color(0x363636)
+        .components('2x bismuth', '3x tellurium')
+        .blastTemp(3700, "highest", GTValues.V[GTValues.ZPM], 1600)
+        .flags(
+            plates,
+            centrifuge
+        );
 
     event.create('ether')
         .gem()
@@ -538,6 +550,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .color(0x5d534f)
         .components('3x silver', '2x gold', 'tellurium')
+        .addOreByproducts('gold', 'lead')
         .flags(
             centrifuge
         );
@@ -547,7 +560,12 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .ingot()
         .color(0x70675f)
         .secondaryColor(0x8a7a6e)
+        .addOreByproducts('nickel', 'germanium', 'gallium')
         .formula('Fe?Ni?Ga?Ge?')
+         .toolStats(
+            ToolProperty.Builder.of(0.9, 5.5, 700, 3)
+            .build()
+        ) 
         .addDefaultEnchant('minecraft:unbreaking', '3')
         .addDefaultEnchant('minecraft:efficiency', '3')
         .addDefaultEnchant('minecraft:sharpness', '3')
@@ -788,6 +806,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color(0x62605F)
         .components('golem_steel', '4x oxygen')
         .iconSet(DULL);
+    
     event.create('unrealium')
         .ingot()
         .color(0x9A49B5)
