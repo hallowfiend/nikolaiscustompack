@@ -30,5 +30,13 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', (event) => {
     
     event.create('aether_islands')
         .targets('aether:holystone','aether:mossy_holystone','aether:icestone')
-        .dimensions('aether:the_aether') 
+        .dimensions('aether:the_aether');
+    
+    event.create('starlight_underground')
+        .targets('eternal_starlight:grimstone', 'eternal_starlight:eternal_ice')
+        .dimensions('eternal_starlight:starlight');
+    
+    event.create('starlight_depths')
+        .targets('eternal_starlight:voidstone', 'eternal_starlight:haze_ice')
+        .dimensions('eternal_starlight:starlight')
 });

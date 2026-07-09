@@ -16,6 +16,11 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
         .iconSupplier(() => Item.getItem('twilightforest:twilight_portal_miniature_structure'))
         .overrideName('The Twilight Forest')
 
+    event.create('eternal_starlight:starlight')
+        .tier(0)
+        .iconSupplier(() => Item.getItem('eternal_starlight:seeking_eye'))
+        .overrideName('The Starlight')
+
     // Planets
     event.create('ad_astra:earth_orbit')
         .iconSupplier(() => Item.of('ad_astra:earth_globe').getItem())

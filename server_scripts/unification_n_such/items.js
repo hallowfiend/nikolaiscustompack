@@ -35,30 +35,47 @@ ServerEvents.recipes((event) => {
       replaceInput(group.target, group.replacement)
   });
 
+  const COLORS = [
+  'white',
+  'orange',
+  'magenta',
+  'light_blue',
+  'yellow',
+  'lime',
+  'pink',
+  'gray',
+  'light_gray',
+  'cyan',
+  'purple',
+  'blue',
+  'brown',
+  'green',
+  'red',
+  'black'
+];
+const DYENAMICS_COLORS = [
+    'honey',
+    'lavender',
+    'navy',
+    'bubblegum',
+    'amber',
+    'conifer',
+    'icy_blue',
+    'ultramarine',
+    'maroon',
+    'rose',
+    'fluorescent',
+    'spring_green',
+    'cherenkov',
+    'aquamarine',
+    'persimmon',
+    'wine',
+    'mint',
+    'peach'
+]
+
   COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`));
   DYENAMICS_COLORS.forEach((color) => replaceInput(`dyenamics:${color}_dye`, `#forge:dyes/${color}`));
 
   console.log('Items sorted')
-});
-
-LootJS.modifiers((event) => {
-    event.addBlockLootModifier("farm_and_charm:wild_onions")
-    .removeLoot(Ingredient.all)
-    .addWeightedLoot([3,5], [
-        Item.of("farmersdelight:onion").withChance(50),
-    ]);
-
-    event.addBlockLootModifier("farm_and_charm:wild_tomatoes")
-    .removeLoot(Ingredient.all)
-    .addWeightedLoot([3,5], [
-        Item.of("farmersdelight:tomato").withChance(50),
-    ]);
-
-    event.addBlockLootModifier("farm_and_charm:wild_lettuce")
-    .removeLoot(Ingredient.all)
-    .addWeightedLoot([3,5], [
-        Item.of("farmersdelight:cabbage").withChance(10),
-        Item.of("farmersdelight:cabbage_seeds").withChance(50)
-        
-    ]);
 });

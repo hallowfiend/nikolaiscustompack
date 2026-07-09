@@ -1,5 +1,7 @@
 {
 
+
+
     "tagprefix.glacio_stone": "Glacio %s Ore",
     "tagprefix.frosted_holystone": "Frosted Holystone %s Ore",
     "tagprefix.icestone": "Icestone %s Ore",
@@ -98,6 +100,10 @@
     "material.gtceu.mithril": "Mithril",
     "material.gtceu.experience": "Experience",
 
+    "material.gtceu.ozone": "Ozone",
+    "material.gtceu.bakelite": "Bakelite",
+    "material.gtceu.pewter": "Pewter",
+
     "material.gtceu.arcane_essence": "Arcane Essence",
     "material.gtceu.iesnium": "Iesnium",
 
@@ -174,6 +180,7 @@
 
     "material.gtceu.inert_crystal": "Inert Crystal",
     "material.gtceu.drenched_iron": "Drenched Iron",
+    "material.gtceu.water_crystal": "Water Crystal",
     "material.gtceu.springaline": "Springaline",
     "material.gtceu.turquoise": "Turquoise",
 
@@ -203,5 +210,17 @@
     "material.gtceu.venus_atmosphere": "Venus Atmosphere",
     "material.gtceu.liquid_venus_atmosphere": "Liquefacted Venus Atmosphere",
     "material.gtceu.glacio_atmosphere": "Glacio Atmosphere",
-    "material.gtceu.liquid_glacio_atmosphere": "Liquefacted Glacio Atmosphere"
+    "material.gtceu.liquid_glacio_atmosphere": "Liquefacted Glacio Atmosphere",
+
+    "material.gtceu.glyceryl_trinitrate": "Propane-1,2,3-triyl Trinitrate",
+    "material.gtceu.vinyl_chloride": "Chloroethane",
+    "material.gtceu.tetrafluoroethylene": "Tetrafluoroethene",
+    "material.gtceu.dichlorobenzidine": "3,3′-Dichloro[1,1′-biphenyl]-4,4′-diamine",
+    "material.gtceu.phthtalic_acid": "Benzene-1,2-dicarboxylic Acid",
+    "material.gtceu.bisphenol_a": "4,4′-(Propane-2,2-diyl)diphenol",
+    "material.gtceu.aminophenol": "4-Aminophenol",
+    "material.gtceu.dienethylenetriamine_pentaacetonitrile": "2,2′,2′′,2′′′-{[(Carboxymethyl)azanediyl]bis(ethane-2,1-diylnitrilo)}tetraacetic Acid",
+    "material.gtceu.cumene": "(Propan-2-yl)benzene",
+    "material.gtceu.acetic_anhydride": "Ethanoic Anhydride",
+    "material.gtceu.acetone": "Propan-2-one"
 }

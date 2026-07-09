@@ -31,6 +31,11 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
     createStoneTypeOre('undergarden:depthrock')
     createStoneTypeOre('undergarden:shiverstone')
     createStoneTypeOre('undergarden:sediment')
+
+    createStoneTypeOre('eternal_starlight:voidstone')
+    createStoneTypeOre('eternal_starlight:grimstone')
+    createStoneTypeOre('eternal_starlight:eternal_ice')
+    createStoneTypeOre('eternal_starlight:haze_ice')
     // createStoneTypeOre('aether_redux:vitrium')
 
     createStoneTypeOre('aether:holystone', { blockState: () => UtilsJS.parseBlockState("aether:holystone[double_drops=true]")})

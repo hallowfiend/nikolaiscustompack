@@ -24,6 +24,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
   GTMaterials.Brass.setProperty(PropertyKey.ORE, new $OreProperty()); //brass o' the devil
   GTMaterials.Tellurium.setProperty(PropertyKey.INGOT, new $IngotProperty());
   addFluid(GTMaterials.Tellurium, $FluidStorageKeys.LIQUID);
+  GTMaterials.Germanium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+  addFluid(GTMaterials.Germanium, $FluidStorageKeys.LIQUID);
   GTMaterials.CertusQuartz.addFlags(GTMaterialFlags.GENERATE_LENS);
   GTMaterials.Netherite.addFlags(GTMaterialFlags.GENERATE_PLATE);
 
@@ -488,7 +490,15 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.GENERATE_SMALL_GEAR);
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            ring);
+    
+    event.create('arcane_gold')
+        .ingot()
+        .color()
+        .components('9x gold', '9x redstone', '2x spirit', '2x arkanum')
+        .iconSet(SHINY)
+        .flags(plates, rod, ring);
 
     event.create('ether')
         .gem()
@@ -531,6 +541,17 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .flags(
             centrifuge
         );
+    
+    event.create('meteoric_iron')
+        .ore()
+        .ingot()
+        .color(0x70675f)
+        .secondaryColor(0x8a7a6e)
+        .formula('Fe?Ni?Ga?Ge?')
+        .addDefaultEnchant('minecraft:unbreaking', '3')
+        .addDefaultEnchant('minecraft:efficiency', '3')
+        .addDefaultEnchant('minecraft:sharpness', '3')
+        .iconSet(MAGNETIC);
 
     event.create('spinel')
         .gem()
@@ -603,7 +624,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .components('phenol', 'formaldehyde')
         .color(0x79392F)
         .secondaryColor(0xA16E7F)
-        .flags(plates, gear, small_gear, rod, frame);
+        .flags(plates, gear, small_gear, rod, frame, explosive);
 
 // ElementalCraft
 
@@ -620,7 +641,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color(0x8CA0D6)
         .flags(no_decomp)
         .components('inert_crystal', '2x aqua')
-        .iconSet(QUARTZ);
+        .iconSet(QUARTZ)
+        .flags(plates, lens);
 
     event.create("drenched_iron")
         .ingot()
@@ -711,6 +733,70 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .cableProperties(GTValues.V[GTValues.LV], 8, 8, true)
             .components('gold', '4x quartzite', '2x sacrum', 'arkanum')
             .iconSet(SHINY);
+
+// Eternal Starlight
+
+    event.create('starcore')
+        .gem()
+        .color(0xFCC74D)
+        .components('10x helium', '10x hydrogen', 'destructive_will')
+        .iconSet(NETHERSTAR)
+        .flags(
+            centrifuge
+        );
+    event.create('starlit_diamond')
+        .gem()
+        .color(0xCCB7F8)
+        .components('diamond', '4x firmamentum')
+        .iconSet(DIAMOND)
+        .flags(
+            no_decomp,
+            plates,
+            lens
+        );
+    event.create('deepsilver')
+        .ingot()
+        .color(0x5B5D93)
+        .components('sterling_silver', '4x firmamentum', 'terrae')
+        .cableProperties(GTValues.V[GTValues.IV], 8, 8, true)
+        .iconSet(SHINY)
+        .flags(
+            no_decomp,
+            plates
+        );
+    event.create('malarite')
+        .gem()
+        .color(0x293C37)
+        .secondaryColor(0xA8509C)
+        .components('naquadah', 'xenorhast', 'firmamentum')
+        .iconSet(DULL)
+        .flags(
+            no_decomp,
+            plates,
+            lens
+        );
+    event.create('golem_steel')
+        .ingot()
+        .color(0x5C6079)
+        .formula('?')
+        .iconSet(MAGNETIC)
+        .flags(
+            no_decomp
+        );
+    event.create('oxidized_golem_steel')
+        .ingot()
+        .color(0x62605F)
+        .components('golem_steel', '4x oxygen')
+        .iconSet(DULL);
+    event.create('unrealium')
+        .ingot()
+        .color(0x9A49B5)
+        .secondaryColor(0x162027)
+        .iconSet(RADIOACTIVE)
+        .components('deepsilver', 'golem_steel', 'malarite', '4x spirit')
+        .flags(
+            no_decomp
+        );
 
 // Undergarden
     

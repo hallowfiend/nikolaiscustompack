@@ -91,6 +91,10 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('anthralite', 'scguns:anthralite_ingot')
     ingot('dawnstone', 'embers:dawnstone_ingot')
     ingot('pewter', 'eidolon:pewter_ingot')
+    ingot('deepsilver', 'eternal_starlight:deepsilver_ingot')
+    ingot('oxidized_golem_steel', 'eternal_starlight:oxidized_golem_steel_ingot')
+    ingot('golem_steel', 'eternal_starlight:golem_steel_ingot')
+    ingot('unrealium', 'eternal_starlight:unrealium_ingot')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
@@ -144,6 +148,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('dawnstone', 'embers:dawnstone_block')
     block('dark', 'evilcraft:dark_block')
     block('dark_power', 'evilcraft:dark_power_gem_block')
+    block('malarite', 'eternal_starlight:malarite_block')
+    block('starcore', 'eternal_starlight:starcore_block')
+    block('starlit_diamond', 'eternal_starlight:starlit_diamond_block')
+    block('deepsilver', 'eternal_starlight:deepsilver_block')
+    block('unrealium', 'eternal_starlight:unrealium_block')
+    block('oxidized_golem_steel', 'eternal_starlight:oxidized_golem_steel_block')
+    block('golem_steel', 'eternal_starlight:golem_steel_block')
 
 //Nuggets
     nugget('desh', 'ad_astra:desh_nugget')
@@ -166,6 +177,10 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('anthralite', 'scguns:anthralite_nugget')
     nugget('dawnstone', 'embers:dawnstone_nugget')
     nugget('pewter', 'eidolon:pewter_nugget')
+    nugget('deepsilver', 'eternal_starlight:deepsilver_nugget')
+    nugget('unrealium', 'eternal_stalight:unrealium_nugget')
+    nugget('golem_steel', 'eternal_starlight:golem_steel_nugget')
+    nugget('oxidized_golem_steel', 'eternal_starlight:oxidized_golem_steel_nugget')
 
 //Plates
     plate('desh', 'ad_astra:desh_plate')
@@ -224,6 +239,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('vengeful_will', 'bloodmagic:vengefulcrystal')
     gem('steadfast_will', 'bloodmagic:steadfastcrystal')
     gem('destructive_will', 'bloodmagic:destructivecrystal')
+    gem('malarite', 'eternal_starlight:malarite')
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')
@@ -265,6 +281,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOreBlock('anthralite', 'scguns:raw_anthralite_block')
     rawOreBlock('bauxite', 'immersiveengineering:raw_block_aluminum')
     rawOreBlock('iesnium', 'occultism:raw_iesnium_block')
+    rawOreBlock('deepsilver', 'eternal_starlight:raw_deepsilver_block')
 
 //Crushed ores
     crushed('brilliance', 'malum:crushed_brilliance')

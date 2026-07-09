@@ -314,6 +314,29 @@ ServerEvents.tags("item", (event) => {
   event.add("c:white_dyes", ["#forge:dyes/white"]);
   event.add("c:yellow_dyes", ["#forge:dyes/yellow"]);
 
+  /* event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/sand')
+  event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/gravel')
+  event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/soul_soil')
+  event.add('minecraft:mineable/shovel', '#forge:ores_in_ground/soul_soil')
+  event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/soul_sand')
+  event.add('minecraft:mineable/shovel', '#forge:ores_in_ground/soul_sand')
+  event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/moon_stone')
+  event.add('minecraft:needs_iron_tool', '#forge:ores_in_ground/moon_stone')
+    event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/moon_deepslate')
+    event.add('minecraft:needs_iron_tool', '#forge:ores_in_ground/moon_deepslate')
+    event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/mars_stone')
+    event.add('minecraft:needs_iron_tool', '#forge:ores_in_ground/mars_stone')
+    event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/venus_stone')
+    event.add('minecraft:needs_iron_tool', '#forge:ores_in_ground/venus_stone')
+    event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/venus_sandstone')
+    event.add('minecraft:needs_iron_tool', '#forge:ores_in_ground/venus_sandstone')
+    event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/mercury_stone')
+    event.add('minecraft:needs_iron_tool', '#forge:ores_in_ground/mercury_stone')
+    event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/glacio_stone')
+    event.add('minecraft:needs_iron_tool', '#forge:ores_in_ground/glacio_stone')
+    event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/permafrost')
+    event.add('minecraft:needs_iron_tool', '#forge:ores_in_ground/permafrost') */
+
   event.add("c:hidden_from_recipe_viewers", [
     "ae2:facade",
     "hexalia:mandrake",

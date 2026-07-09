@@ -104,19 +104,6 @@ addVein("redstone_vein", GTWorldGenLayers.DEEPSLATE, 25, 60, -65, -10, GTMateria
       .size(1, 1));
 });
 
-/* addVein("redchrome_vein", GTWorldGenLayers.DEEPSLATE, 10, 40, -65, -10, GTMaterials.Redstone, "surface", (pattern) => {
-  pattern
-    .layer((l) => l.weight(3)
-      .mat(GTMaterials.Redstone)
-      .size(2, 2))
-    .layer((l) => l.weight(2)
-      .mat(GTMaterials.Chromite)
-      .size(1, 1))
-    .layer((l) => l.weight(1)
-      .mat(GTMaterials.Cinnabar)
-      .size(1, 1));
-}); */
-
 addVein("sapphire_vein", GTWorldGenLayers.DEEPSLATE, 20, 60, -40, -10, GTMaterials.Sapphire, "above", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
