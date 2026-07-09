@@ -59,6 +59,19 @@ addVein("skyjade_vein", 'aether_islands', 30, 15, 80, 128, 'skyjade', "surface",
         .size(1, 3));
 })
 
+addVein("gravitite_vein", 'aether_islands', 40, 20, 80, 128, 'gravitite', "surface", (pattern) => {
+  pattern
+    .layer(l => l.weight(3)
+        .mat('gravitite')
+        .size(2, 4))
+    .layer(l => l.weight(2)
+        .mat('aluminium')
+        .size(1, 3))
+    .layer(l => l.weight(1)
+        .mat('source')
+        .size(1, 3));
+})
+
 addVein("aether_nickel_vein", 'aether_islands', 40, 60, 30, 70, 'garnierite', 'surface', (pattern) => {
     pattern
     .layer(l => l.weight(3)

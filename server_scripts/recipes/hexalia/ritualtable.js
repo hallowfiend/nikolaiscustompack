@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
             {"item": "hexalia:spirit_powder"},
             {"item": "goety:ectoplasm"},
             {"item": "hexerei:sage_seeds"},
-            {"item": "elementalcraft:inertcrystal"},
+            {"item": "elementalcraft:inert_crystal"},
             {"tag": "#forge:essences/death"}
         ],
         { "item": "occultism:datura_seeds"}

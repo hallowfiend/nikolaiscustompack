@@ -270,7 +270,7 @@ ServerEvents.tags("item", (event) => {
   event.add('candlelight:white_effect', 'brewinandchewin:rice_wine');
   event.add('candlelight:red_effect', 'brewincompatdelight:red_wine');
 
-  event.add('bakery:jam', '#forge:jams');
+  event.add('bakery:jam', ['#forge:jams']);
 
   event.add("aether:book_of_lore_materials", ["gtceu:ambrosium_gem"]);
   event.add("aether:gems/zanite", ["#forge:gems/zanite"]);

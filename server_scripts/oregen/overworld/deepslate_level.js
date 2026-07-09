@@ -194,19 +194,6 @@ addVein("cthonic_gold_vein", GTWorldGenLayers.DEEPSLATE, 30, 20, -65, -10, 'gold
       .size(1, 1));
 });
 
-addVein("native_gold", GTWorldGenLayers.DEEPSLATE, 40, 20, -65, -10, 'electrum', "surface", (pattern) => {
-  pattern
-    .layer((l) => l.weight(3)
-      .mat('electrum')
-      .size(2, 4))
-    .layer((l) => l.weight(2)
-      .mat('gold')
-      .size(1, 3))
-    .layer((l) => l.weight(2)
-      .mat('silver')
-      .size(1, 3));
-});
-
 addVein("malignant_vein", GTWorldGenLayers.DEEPSLATE, 40, 20, -65, -10, 'soulstone', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)

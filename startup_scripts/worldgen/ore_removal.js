@@ -3,7 +3,7 @@
 WorldgenEvents.remove(event => {
   event.removeOres((props) => {
     props.worldgenLayer = "underground_ores";
-    props.blocks = [/aether:.*ore.*/, /deeperdarker:.*ore.*/, /immersiveengineering:.*ore.*/];
+    props.blocks = [/aether:.*ore.*/, /deeperdarker:.*ore.*/, /cosmere:.*ore.*/, /tinkersadvanced:.*/, /immersiveengineering:.*ore.*/];
   });
 
   event.removeOres((props) => {
@@ -22,9 +22,7 @@ WorldgenEvents.remove(event => {
       /scguns:.*ore.*/,
       /eidolon:.*ore.*/,
       /born_in_chaos_v1:.*diamond_ore.*/,
-      /tinkers_advanced:.*/,
       /theurgy:.*/,
-      /cosmere:.*/,
       /caverns_and_chasms:.*ore.*/,
       /galosphere:.*ore.*/,
       'mna:vinteum_ore',
@@ -81,7 +79,9 @@ WorldgenEvents.remove(event => {
       'malum:natural_quartz_ore',
       'malum:cthonic_gold_ore',
       'malum:brilliant_stone',
-      'malum:brilliant_deepslate'
+      'malum:brilliant_deepslate',
+      /cosmere:.*ore.*/,
+    /immersiveengineering:.*/
     ]
   });
   event.removeFeatureById('raw_generation', [
@@ -123,7 +123,7 @@ WorldgenEvents.remove(event => {
     'culturaldelights:wild_corn' // in favor of Farm & Charm's corn
   ]);
   event.removeFeatureById('underground_ores', [
-    //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
+    //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP    
     'aether:gravitite_ore',
     'aether:gravitite_ore_buried',
     'aether:ambrosium_ore',

@@ -1,3 +1,5 @@
+//priority 900
+
 const bulkReplace = [
     { target: 'eidolon:magic_ink', replacement: 'irons_spellbooks:common_ink'},
     { target: 'mna:bone_ash', replacement: 'eidolon:enchanted_ash'},

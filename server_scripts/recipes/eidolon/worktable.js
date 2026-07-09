@@ -31,7 +31,7 @@ ServerEvents.recipes((event) => {
             "gcgc"
         ],
         "key": {
-            "i": {
+            "p": {
                 "item": "gtceu:pewter_plate"
             },
             "s": {

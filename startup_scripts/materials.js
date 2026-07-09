@@ -4,6 +4,7 @@ const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.m
 const $FluidBuilder = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidBuilder');
 const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys');
 const $OreProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty");
+const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty');
 // const $GTFluids = Java.loadClass('com.gregtechceu.gtceu.common.data.GTFluids')
 
 let addFluid = (mat, key) => {
@@ -21,6 +22,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
   addFluid(GTMaterials.Amethyst, $FluidStorageKeys.LIQUID);
   GTMaterials.Electrum.setProperty(PropertyKey.ORE, new $OreProperty()); //native electrum
   GTMaterials.Brass.setProperty(PropertyKey.ORE, new $OreProperty()); //brass o' the devil
+  GTMaterials.Tellurium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+  addFluid(GTMaterials.Tellurium, $FluidStorageKeys.LIQUID);
   GTMaterials.CertusQuartz.addFlags(GTMaterialFlags.GENERATE_LENS);
   GTMaterials.Netherite.addFlags(GTMaterialFlags.GENERATE_PLATE);
 
@@ -250,6 +253,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
 
     event.create('source')
         .gem()
+        .ore()
         .liquid(900)
         .components('amethyst', 'aura', 'mana', 'mundus', '4x arkanum')
         .color(0xAE44E2)
@@ -515,6 +519,15 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .dust()
         .color(0xb8b1a0)
         .components('calcium_carbonate', 'calcium_magnesium_carbonate')
+        .flags(
+            centrifuge
+        );
+    
+    event.create('petzite')
+        .ore()
+        .gem()
+        .color(0x5d534f)
+        .components('3x silver', '2x gold', 'tellurium')
         .flags(
             centrifuge
         );

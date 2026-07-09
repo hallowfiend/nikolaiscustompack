@@ -106,8 +106,21 @@ addVein("undergarden_cthonic_gold_vein", 'underrock', 60, 20, -65, -10, 'electru
       .mat('regalium')
       .size(1, 3))
     .layer((l) => l.weight(1)
-      .mat('tellurium')
+      .mat('petzite')
       .size(1, 2));
+});
+
+addVein("native_gold", 'undersediment', 40, 20, -65, -10, 'electrum', "surface", (pattern) => {
+  pattern
+    .layer((l) => l.weight(3)
+      .mat('electrum')
+      .size(2, 4))
+    .layer((l) => l.weight(2)
+      .mat('gold')
+      .size(1, 3))
+    .layer((l) => l.weight(2)
+      .mat('silver')
+      .size(1, 3));
 });
 
 addVein("undergarden_salts_vein", 'undersediment', 40, 80, 30, 70, GTMaterials.Salt, "surface", (pattern) => {
@@ -135,7 +148,7 @@ addVein("reactive_remnants", 'undersediment', 40, 80, 0, 70, 'sal_ammoniac', "su
       .mat('salt')
       .size(2, 3))
     .layer((l) => l.weight(2)
-      .mat('calcium_carbonate')
+      .mat('sodium_bicarbonate')
       .size(2, 4))
     .layer((l) => l.weight(1)
       .mat('sodalite')
