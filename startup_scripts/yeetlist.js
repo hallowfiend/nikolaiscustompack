@@ -45,7 +45,13 @@ global.removedItems = [
   "irons_spellbooks:alchemist_cauldron",
   /eternal_starlight:.*alloy_furnace/,
   'moreburners:electric_burner',
-  'betterend:end_stone_smelter'
+  'betterend:end_stone_smelter',
+  /toughasnails:.*juice/,
+  'sob:root_beer', //in favor of cosmopolitan's
+  /vampiresdelight:.*beer.*/,
+  /vampiresdelight:blood_wine.*/,
+  /vampiresdelight:mulled_wine.*/,
+  'largemeals:rice_pudding'
 ];
 
 global.removedRecipeIds = [

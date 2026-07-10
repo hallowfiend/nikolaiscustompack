@@ -46,18 +46,19 @@ ServerEvents.tags("item", (event) => {
         'vampiresdelight:orchid_ice_cream',
         'vampiresdelight:dark_ice_cream',
         'vampiresdelight:snow_white_ice_cream',
-        'atmospheric:orange_sorbet',
         'goetydelight:ominous_ice_cream',
         'jadensnetherexpansiondelight:banshee_powder_ice_cream',
-        'vampiresdelight:pure_sorbet',
         /.*popsicle.*/,
         /.*snow_cone.*/,
         'goetydelight:grape_slush',
         /.*parfait.*/,
         /.*sundae.*/,
-        'collectorsreap:tropical_shaved_ice',
+        /.*sorbet.*/,
+        /.*shaved_ice.*/,
         'aethersdelight:aechor_ice_cream',
-        'dungeonsdelight:aurora_ice_cream'
+        'dungeonsdelight:aurora_ice_cream',
+        'mapleful:maple_ice_cream',
+        'cosmopolitan:spaghettieis'
     ]);
   add('coldsweat:large_cooling_foods',[
       'hexalia:chillberry_pie',
@@ -171,6 +172,7 @@ ServerEvents.tags("item", (event) => {
     ]);
   add('coldsweat:small_warming_drinks', [
       /farmersrespite:.*coffee/,
+      'cosmopolitan:dandelion_coffee',
       'farmersdelight:apple_cider',
     'respiteful:mocha_coffee',
     'respiteful:vanilla_milk_tea',
@@ -184,7 +186,11 @@ ServerEvents.tags("item", (event) => {
     'arsdelight:mendosteen_tea',
     'jadensnetherexpansiondelight:lightspores_juice',
     'twilightdelight:torchberry_juice',
-    'undergardendelight:blisterberry_juice'
+    'undergardendelight:blisterberry_juice',
+    'cosmopolitan:autumn_tea',
+    'cosmpolitan:mate',
+    'cosmpolitan:charmed_infusion',
+    'cosmopolitan:tisane'
     ])
   add('coldsweat:large_warming_drinks', [
     /farmersrespite:.*tea/,
@@ -193,7 +199,9 @@ ServerEvents.tags("item", (event) => {
     'delightful:matcha_latte',
     'delightful:azalea_tea',
     'create:builders_tea',
-    /ends_delight:.*tea/,
+    'ends_delight:chorus_fruit_milk_tea',
+    'ends_delight:bubble_tea',
+    'ends_delight:chorus_flower_tea',
     'goetydelight:boiling_blood_brew',
     /windswept:.*tea/,
     'arsdelight:bombegranate_tea',
@@ -213,7 +221,9 @@ ServerEvents.tags("item", (event) => {
     'brewincompatdelight:mulled_wine',
     'sob:tequila',
     'arsdelight:bombegranate_hornbeer',
-    'collectorsreap:deific_blood'
+    'collectorsreap:deific_blood',
+    'cosmopolitan:winter_glogg',
+    'cosmopolitan:netheresso'
   ])
   add('coldsweat:small_cooling_drinks', [
     'respiteful:mint_green_tea',
@@ -240,9 +250,12 @@ ServerEvents.tags("item", (event) => {
     /collectorsreap:.*limeade/,
     'collectorsreap:pomegranate_smoothie',
     'collectorsreap:pomegranate_custard',
-    'brewincompatdelight:mojito'
+    'brewincompatdelight:mojito',
+    'cosmopolitan:spring_soda',
+    'cosmopolitan:greenday_juice'
   ])
   add('coldsweat:large_cooling_drinks', [
+    'cosmpolitan:summer_cordial',
     'goetydelight:liquid_void_tea_drink',
     'arsdelight:frostaya_tea',
     /respiteful:snow_top.*/,
@@ -250,7 +263,119 @@ ServerEvents.tags("item", (event) => {
     'peculiars:aloe_berry_smoothie',
     /.*milkshake.*/,
     'arsdelight:frostaya_hornbeer',
-    'collectorsreap:hermits_sour'
+    'collectorsreap:hermits_sour',
+    /cosmopolitan:.*americano/,
+    'cosmopolitan:cha_jau',
+    'cosmopolitan:mocha',
+    'cosmopolitan:ice_cream_float',
+    'cosmopolitan:black_cow'
+  ])
+  add('forge:logs/mahogany', [
+    /hexerei:.*mahogany_log/,
+    /hexerei:.*mahogany_wood/
+  ])
+  add('forge:logs/witch_hazel', [
+    /hexerei:.*witch_hazel_log/,
+    /hexerei:.*witch_hazel_wood/
+  ])
+  add('environmental:willow_logs', [
+    '#hexalia:willow_logs',
+    /hexerei:.*willow_wood/,
+    /hexerei:.*willow_log/
+  ])
+  add('toughasnails:thirst/2_thirst_drinks', [
+    /.*milkshake.*/,
+    /.*popsicle.*/,
+    'sob:bitter_tea',
+    'brewincompatdelight:vodka_tonic',
+    'brewincompatdelight:red_wine',
+    'culturaldelights:cucumber',
+    'culturaldelights:pickle',
+    'brewincompatdelight:blue_curacao'
+  ])
+  add('toughasnails:thirst/4_thirst_drinks', [
+    /rusticdelight:.*coffee/,
+    /respiteful:snow_top.*/,
+    /.*soup.*/,
+    'respiteful:mocha_coffee',
+    'brewincompatdelight:black_russian',
+    'brewincompatdelight:white_wine',
+    'brewincompatdelight:sweet_red_wine'
+  ])
+  add('toughasnails:thirst/5_thirst_drinks', [
+    /twilightdelight:.*juice/,
+    /unusualend:.*juice/,
+    /betterend:.*juice/,
+    /delightful.*juice/,
+    /abnormals_delight:.*juice/,
+    /undergardendelight:.*juice/,
+    /jadensnetherexpansiondelight:.*juice/,
+    /sob:.*juice/,
+    /.*smoothie.*/,
+    'sob:birch_beer',
+    'sob:hard_cider',
+    'sob:prickly_melomel',
+    'sob:sunrise_seltzer',
+    'sob:creeper_drink',
+    'sob:pale_daiquiri',
+    'sob:root_beer',
+    'sob:death_drink',
+    'brewincompatdelight:white_russian',
+    'brewincompatdelight:mojito',
+    'brewincompatdelight:kraken_rum',
+    'brewincompatdelight:brass_monkey',
+    'brewinandchewin:beer',
+    'brewinandchewin:rice_wine',
+    'brewinandchewin:mead', //vodka, tequila and withering dross give 0 thirst bc theyre too strong
+    'brewinandchewin:pale_jane',
+    'brewinandchewin:egg_grog',
+    'brewinandchewin:glittering_grenadine',
+    'brewinandchewin:saccharine_rum',
+    'brewinandchewin:salty_folly',
+    'brewinandchewin:bloody_mary',
+    'brewinandchewin:red_rum',
+    'brewinandchewin:strongroot_ale',
+    'brewinandchewin:steel_toe_stout',
+    'brewinandchewin:dread_nog',
+    'brewincompatdelight:nut_brown_ale',
+    'brewincompatdelight:boilermaker',
+    'brewincompatdelight:rum',
+    'ends_delight:chorus_fruit_wine',
+    /undergardendelight:.*juice/,
+    'dungeonsdelight:liveroot_beer',
+    'cosmopolitan:black_cow',
+    'abnormalsdelight:passion_aloe_nectar'
+  ])
+  add('toughasnails:thirst/8_thirst_drinks', [
+    /goetydelight:.*tea.*/,
+    /dungeonsdelight:.*tea.*/,
+    'brewinandchewin:kombucha',
+    'collectorsreap:lime_green_tea',
+    'collectorsreap:pomegranate_black_tea',
+    /windswept:.*tea/,
+    /arsdelight:.*tea/,
+    'respiteful:mint_green_tea',
+    'respiteful:vanilla_milk_tea',
+    'respiteful:adzuki_milk_tea',
+    'oceanicdelight:sea_grape_juice',
+    'oceanicdelight:nautilus_juice',
+    /.*limeade.*/,
+    /vampiresdelight:.*tea/,
+    'cosmopolitan:exotic_mirage',
+    'cosmopolitan:green_beer',
+    'cosmopolitan:generic_romance',
+    'collectorsreap:deific_blood',
+    'collectorsreap:hermits_sour',
+    'collectorsreap:rose_moon',
+    'collectorsreap:reanimators_garden',
+    'collectorsreap:heavens_cream',
+    'sob:bustling_brew',
+    'delightful:ender_nectar'
+  ])
+  add('toughasnails:thirst/12_thirst_drinks', [
+    /arsdelight:.*hornbeer/,
+    'sob:aloe_tea',
+    'twilightdelight:tear_drink'
   ])
   event.add("ad_astra:aeronos_logs", ["ad_astra:aeronos_cap", "ad_astra:aeronos_stem"]);
   event.add("ad_astra:strophar_logs", ["ad_astra:strophar_cap", "ad_astra:strophar_stem"]);

@@ -34,7 +34,6 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
     createStoneTypeOre('betterend:violecite')
     createStoneTypeOre('betterend:umbralith')
     createStoneTypeOre('betterend:sulphuric_rock')
-    createStoneTypeOre('betterend:brimstone')
 
     createStoneTypeOre('undergarden:depthrock')
     createStoneTypeOre('undergarden:shiverstone')

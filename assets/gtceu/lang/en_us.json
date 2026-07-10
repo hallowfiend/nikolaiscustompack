@@ -1,7 +1,5 @@
 {
 
-
-
     "tagprefix.glacio_stone": "Glacio %s Ore",
     "tagprefix.frosted_holystone": "Frosted Holystone %s Ore",
     "tagprefix.icestone": "Icestone %s Ore",
@@ -29,7 +27,6 @@
     "tagprefix.umbralith": "Umbralith %s Ore",
     "tagprefix.sulphuric_rock": "Sulphuric %s Ore",
 
-    "tagprefix.brimstone": "Brimstone %s Deposit",
     "tagprefix.soul_sand": "Soul Sand %s Deposit",
     "tagprefix.soul_soil": "Soul Soil %s Deposit",
     "tagprefix.gravel": "Gravel %s Deposit",
@@ -97,6 +94,18 @@
     "gtceu.jei.ore_vein.starlit_iron_vein": "Starlit Iron Vein",
     "gtceu.jei.ore_vein.twilight_turquoise_vein": "Twilit Turquoise Vein",
     "gtceu.jei.ore_vein.malarite_vein": "Malarite Vein",
+    "gtceu.jei.ore_vein.thallium_vein": "Thallium Vein",
+    "gtceu.jei.ore_vein.amber_vein": "Amber Vein",
+    "gtceu.jei.ore_vein.arsenic_vein": "Arsenic Vein",
+    "gtceu.jei.ore_vein.pitchblende_vein": "Pitchblende Vein",
+    "gtceu.jei.ore_vein.tungsten_vein": "Tungsten Vein",
+    "gtceu.jei.ore_vein.thorianite_vein": "Thorianite Vein",
+    "gtceu.jei.ore_vein.end_magnetite_vein": "Ender Magnetite Vein",
+    "gtceu.jei.ore_vein.end_emerald_vein": "Ender Emerald Vein",
+    "gtceu.jei.ore_vein.crystallized_void": "Crystallized Void",
+    "gtceu.jei.ore_vein.void_sediment": "Void Precipitate",
+    "gtceu.jei.ore_vein.end_fluorite_vein": "Fluorite Vein",
+    "gtceu.jei.ore_vein.end_bauxite_vein": "Ender Bauxite Vein",
 
     "material.gtceu.jade": "Jade",
     "material.gtceu.skyjade": "Skyjade",
@@ -120,6 +129,8 @@
     "material.gtceu.ozone": "Ozone",
     "material.gtceu.bakelite": "Bakelite",
     "material.gtceu.pewter": "Pewter",
+    "material.gtceu.wolframite": "Wolframite",
+    "material.gtceu.arcane_gold": "Arcane Gold",
     "material.gtceu.amber": "Amber",
 
     "material.gtceu.arcane_essence": "Arcane Essence",

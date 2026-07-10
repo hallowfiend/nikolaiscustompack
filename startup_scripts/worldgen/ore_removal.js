@@ -126,7 +126,13 @@ WorldgenEvents.remove(event => {
   ]);
   event.removeFeatureById('vegetal_decoration', [
     'rusticdelight:wild_coffee_placed', // in favor of Farmer's Respite coffee
-    'culturaldelights:wild_corn' // in favor of Farm & Charm's corn
+    'culturaldelights:wild_corn', // in favor of Farm & Charm's corn
+    'farm_and_charm:wild_beetroots_chance',
+    'farm_and_charm:wild_carrots_chance',
+    'farm_and_charm:wild_onions_chance',
+    'farm_and_charm:wild_potatoes_chance',
+    'farm_and_charm:wild_strawberry_chance',
+    'farm_and_charm:wild_tomatoes_chance'
   ]);
   event.removeFeatureById('underground_ores', [
     //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP    

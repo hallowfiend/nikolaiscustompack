@@ -1,4 +1,4 @@
-addVein("zanite_vein", 'aether_islands', 25, 25, 16, 128, 'zanite', "surface", (pattern) => {
+addVein("zanite_vein", 'aether_islands', 25, 25, 16, 128, 'zanite', "above", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('zanite')
@@ -11,7 +11,7 @@ addVein("zanite_vein", 'aether_islands', 25, 25, 16, 128, 'zanite', "surface", (
       .size(1, 3));
 });
 
-addVein("ambrosium_vein", 'aether_islands', 30, 25, 16, 128, 'ambrosium', "surface", (pattern) => {
+addVein("ambrosium_vein", 'aether_islands', 30, 25, 16, 128, 'ambrosium', "above", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('ambrosium')
@@ -27,7 +27,7 @@ addVein("ambrosium_vein", 'aether_islands', 30, 25, 16, 128, 'ambrosium', "surfa
       .size(1, 3));
 })
 
-addVein("bauxite_vein", 'aether_islands', 30, 15, 16, 128, 'bauxite', "surface", (pattern) => {
+addVein("bauxite_vein", 'aether_islands', 30, 15, 16, 128, 'bauxite', "above", (pattern) => {
   pattern
     .layer(l => l.weight(3)
         .mat(GTMaterials.Bauxite)
@@ -43,7 +43,7 @@ addVein("bauxite_vein", 'aether_islands', 30, 15, 16, 128, 'bauxite', "surface",
         .size(1, 3))
 })
 
-addVein("skyjade_vein", 'aether_islands', 30, 15, 80, 128, 'skyjade', "surface", (pattern) => {
+addVein("skyjade_vein", 'aether_islands', 30, 15, 80, 128, 'skyjade', "above", (pattern) => {
   pattern
     .layer(l => l.weight(3)
         .mat('skyjade')
@@ -59,7 +59,7 @@ addVein("skyjade_vein", 'aether_islands', 30, 15, 80, 128, 'skyjade', "surface",
         .size(1, 3));
 })
 
-addVein("gravitite_vein", 'aether_islands', 40, 20, 80, 128, 'gravitite', "surface", (pattern) => {
+addVein("gravitite_vein", 'aether_islands', 40, 20, 80, 128, 'gravitite', "above", (pattern) => {
   pattern
     .layer(l => l.weight(3)
         .mat('gravitite')
@@ -72,7 +72,7 @@ addVein("gravitite_vein", 'aether_islands', 40, 20, 80, 128, 'gravitite', "surfa
         .size(1, 3));
 })
 
-addVein("aether_nickel_vein", 'aether_islands', 40, 60, 30, 70, 'garnierite', 'surface', (pattern) => {
+addVein("aether_nickel_vein", 'aether_islands', 40, 60, 30, 70, 'garnierite', 'above', (pattern) => {
     pattern
     .layer(l => l.weight(3)
         .mat(GTMaterials.Garnierite)

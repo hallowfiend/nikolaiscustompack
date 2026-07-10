@@ -11,7 +11,7 @@ addVein("amber_vein", 'end_lushlands', 40, 30, 20, 55, 'amber', "above", (patter
       .size(1, 1));
 });
 
-addVein("thorianite_vein", 'end_lushlands', 20, 40, 20, 55, 'thorium', "above", (pattern) => {
+addVein("thorianite_vein", 'end_lushlands', 20, 40, 20, 55, 'thorianite', "above", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('thorianite')
@@ -144,6 +144,19 @@ addVein("tungsten_vein", 'end_barrens', 30, 35, 15, 80, 'wolframite', "above", (
     .layer((l) => l.weight(1)
       .mat('lithium')
       .size(1, 3));
+});
+
+addVein("thallium_vein", 'end_lushlands', 30, 35, 15, 80, 'thallasium', "above", (pattern) => {
+  pattern
+    .layer((l) => l.weight(3)
+      .mat('thallasium')
+      .size(3, 4))
+    .layer((l) => l.weight(2)
+      .mat('hutchinsonite')
+      .size(2, 3))
+    .layer((l) => l.weight(1)
+      .mat('galena')
+      .size(2, 3));
 });
 
 addVein("arsenic_vein", 'end_barrens', 20, 20, 20, 55, 'realgar', "above", (pattern) => {

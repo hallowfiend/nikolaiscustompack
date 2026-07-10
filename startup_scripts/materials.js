@@ -596,6 +596,13 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         )
         .addOreByproducts("calcite", "barite");
 
+    event.create('wolframite')
+        .ore()
+        .gem()
+        .color(0x231b2e)
+        .components('iron', 'manganese', 'tungsten', '4x oxygen')
+        .iconSet(GTMaterialIconSet.DULL);
+
     event.create('luminite')
         .color(0x85ffad)
         .element('luminite')

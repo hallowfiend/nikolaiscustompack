@@ -45,6 +45,6 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', (event) => {
         .dimensions('minecraft:the_end')
 
     event.create('end_lushlands')
-        .targets('minecraft:end_stone', 'betterend:flavolite', 'betterend:violecite', 'betterend:sulphuric_rock', 'betterend:brimstone')
+        .targets('minecraft:end_stone', 'betterend:flavolite', 'betterend:violecite', 'betterend:sulphuric_rock')
         .dimensions('minecraft:the_end')
 });
