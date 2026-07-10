@@ -608,6 +608,31 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             GTMaterialFlags.NO_SMELTING
         )
         .iconSet(NETHERSTAR);
+    
+    event.create('isogen')
+        .ingot()
+        .color(0x076EAF)
+        .iconSet(METALLIC)
+        .liquid(0)
+        .element('isogen')
+        .cableProperties(GTValues.V[GTValues.UV], 4, 0, true)
+        .flags(
+            GTMaterialFlags.NO_ORE_SMELTING,
+            GTMaterialFlags.NO_SMELTING
+        );
+
+    event.create('lemite') //after Stanisław Lem, the sci-fi writer
+        .dust()
+        .color(0x2a78a8)
+        .ore(true)
+        .iconSet(METALLIC)
+        .liquid(50)
+        .components('isogen', 'silicon_dioxide', 'fluorite', 'iron')
+        .flags(
+            GTMaterialFlags.NO_ORE_SMELTING,
+            GTMaterialFlags.NO_SMELTING,
+            no_decomp
+        );
 
     event.create('citrine')
         .gem()
@@ -755,7 +780,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .secondaryColor(0xe683fc)
         .ingot()
         .components('amethyst_bronze', '4x soulstone', '3x profanum', 'arkanum', 'terrae')
-        .cableProperties(GTValues.V[GTValues.MV], 2, 2, true)
+        .cableProperties(GTValues.V[GTValues.MV], 2, 1, false)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
