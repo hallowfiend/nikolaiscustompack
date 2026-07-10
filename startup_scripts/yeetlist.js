@@ -42,7 +42,9 @@ global.removedItems = [
   "scguns:powered_mechanical_press",
   'miners_delight:moss',
   "hexalia:mortar_and_pestle",
-  "irons_spellbooks:alchemist_cauldron"
+  "irons_spellbooks:alchemist_cauldron",
+  /eternal_starlight:.*alloy_furnace/,
+  'moreburners:electric_burner'
 ];
 
 global.removedRecipeIds = [
@@ -59,7 +61,9 @@ global.removedRecipeTypes = [
     "scguns:mechanical_pressing",
     "scguns:powered_mechanical_pressing",
     "hexalia:mortar_and_pestle",
-    "irons_spellbooks:alchemist_cauldron"
+    "irons_spellbooks:alchemist_cauldron",
+    'eternal_starlight:alloy',
+    'eternal_starlight:alloy_furnace_cooling'
 ]
 
 global.removedFluids = [

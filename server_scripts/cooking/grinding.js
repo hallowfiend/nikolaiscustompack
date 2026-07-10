@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         .duration(400);
 
     event.recipes.gtceu.macerator(`delightful:matcha`)
-        .itemInputs('#forge:tea_leaves')
+        .itemInputs('farmersrespite:green_tea_leaves')
         .itemOutputs('minecraft:green_dye')
         .chancedOutput('delightful:matcha', '2/5', 200)
         .duration(400)

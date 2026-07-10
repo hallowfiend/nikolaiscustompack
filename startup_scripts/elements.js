@@ -40,6 +40,16 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(138)
         .symbol('Ot')
 
+    event.create('luminite')
+        .protons(144)
+        .neutrons(248)
+        .symbol('Lx');
+
+    event.create('isogen')
+        .protons(150)
+        .neutrons(250)
+        .symbol('Ig');
+
     event.create('arkanum') //arcane spirit
         .protons(222)
         .neutrons(222)

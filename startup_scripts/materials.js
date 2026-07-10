@@ -584,10 +584,22 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             no_smashing,
             no_smelt
         );
+    
+    event.create("fluorite")
+        .gem()
+        .ore()
+        .color(0x0c9949)
+        .iconSet("diamond")
+        .components("1x calcium", "2x fluorine")
+        .flags(
+            electrolyze
+        )
+        .addOreByproducts("calcite", "barite");
 
     event.create('luminite')
         .color(0x85ffad)
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element('luminite')
+        .liquid()
         .ingot()
         .ore()
         .dust()
@@ -797,12 +809,6 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             no_decomp,
             plates
         );
-    event.create('composite_stardust')
-        .dust()
-        .color(0xa187ff)
-        .iconSet(SHINY)
-        .components('deepsilver', 'starlit_diamond', 'luminite')
-        .flags(centrifuge);
     event.create('malarite')
         .gem()
         .ore()
@@ -817,6 +823,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         );
     event.create('golem_steel')
         .ingot()
+        .fluid()
         .color(0x5C6079)
         .formula('?')
         .iconSet(METALLIC)
@@ -827,10 +834,14 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .ingot()
         .color(0x62605F)
         .components('golem_steel', '4x oxygen')
-        .iconSet(DULL);
+        .iconSet(DULL)
+        .flags(
+            centrifuge
+        );
     
     event.create('unrealium')
         .ingot()
+        .fluid()
         .color(0x9A49B5)
         .secondaryColor(0x162027)
         .iconSet(RADIOACTIVE)
@@ -1279,6 +1290,54 @@ event.create('spirit_gem')
         .iconSet(GTMaterialIconSet.DULL);
     
     
+// Manaline
+    event.create('composite_stardust')
+        .dust()
+        .color(0xa187ff)
+        .iconSet(SHINY)
+        .components('deepsilver', 'starlit_diamond', 'luminite', 'purified_vinteum')
+        .flags(centrifuge);
+    
+    event.create('gigantarubra')
+        .gem()
+        .fluid()
+        .color(0x1a1818)
+        .secondaryColor(0xba0000)
+        .iconSet(NETHERSTAR)
+        .flags(no_decomp,
+            no_smashing,
+            no_smelt
+        );
+    
+    event.create('regal_zanite')
+        .dust()
+        .fluid()
+        .components('regalium', 'zanite')
+        .color(0xffea03)
+        .secondaryColor(0x8e51e9)
+        .iconSet(SHINY);
+    
+    event.create('rezanite_pentachloride')
+        .fluid()
+        .components('regal_zanite', '5x chlorine')
+        .color(0xffea03)
+        .secondaryColor(0x8e51e9)
+        .iconSet(SHINY);
+    
+    event.create('fluororezanitic_acid')
+        .fluid()
+        .components('rezanite_pentachloride', 'hydrofluoric_acid')
+        .color(0x8e51e9)
+        .secondaryColor(0xffea03)
+        .iconSet(NETHERSTAR);
+    
+    event.create('spiritual_debris')
+        .dust()
+        .formula('👻')
+        .color(0x99499c)
+        .secondaryColor(0xffe587)
+        .iconSet(WOOD);
+
     
     console.log('Materials ordered')
 

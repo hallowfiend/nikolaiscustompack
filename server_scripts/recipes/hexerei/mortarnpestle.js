@@ -207,7 +207,7 @@ ServerEvents.recipes(event =>{
             baseGrindingTime: 60
         },
         {
-            input: {"tag": "c:ingots/steel"},
+            input: {"tag": "forge:ingots/steel"},
             output: 'immersiveengineering:dust_steel',
             baseGrindingTime: 60
         },

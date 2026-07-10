@@ -190,13 +190,19 @@
     "material.gtceu.malarite": "Malarite",
     "material.gtceu.spirit_gem": "Spirit Attuned Gem",
     "material.gtceu.starcore": "Starcore",
+
     "material.gtceu.composite_stardust": "Composite Stardust",
     "material.gtceu.luminite": "Luminite",
+    "material.gtceu.gigantarubra": "Gigantarubra",
+    "material.gtceu.rezanite_pentachloride": "Rezanite Pentachloride",
+    "material.gtceu.regal_zanite": "Regal Zanite",
+    "material.gtceu.fluororezanitic_acid": "Fluororezanitic Acid",
+    "material.gtceu.spiritual_debris": "Spiritual Debris",
+    "material.gtceu.fluorite": "Fluorite",
 
     "material.gtceu.andesite_alloy": "Andesite Alloy",
     "material.gtceu.bismuth_telluride": "Bismuth Telluride",
     "material.gtceu.vinteum_alloy": "Vinteum Alloy",
-
 
     "material.gtceu.soul_stained_steel": "Soul Stained Bronze",
     "material.gtceu.brilliance": "Brilliance",
