@@ -53,6 +53,7 @@ WorldgenEvents.remove(event => {
       'undergarden:shiverstone_utherium_ore',
       'undergarden:depthrock_regalium_ore',
       'undergarden:shiverstone_regalium_ore',
+      /betterend:.*ore/,
       "ad_astra:moon_iron_ore",
         "ad_astra:deepslate_desh_ore",
         "ad_astra:moon_desh_ore",

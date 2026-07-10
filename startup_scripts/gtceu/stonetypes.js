@@ -28,6 +28,14 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
     createStoneTypeOre('minecraft:soul_soil')
     createStoneTypeOre('minecraft:blackstone')
 
+    createStoneTypeOre('minecraft:basalt')
+    createStoneTypeOre('minecraft:smooth_basalt')
+    createStoneTypeOre('betterend:flavolite')
+    createStoneTypeOre('betterend:violecite')
+    createStoneTypeOre('betterend:umbralith')
+    createStoneTypeOre('betterend:sulphuric_rock')
+    createStoneTypeOre('betterend:brimstone')
+
     createStoneTypeOre('undergarden:depthrock')
     createStoneTypeOre('undergarden:shiverstone')
     createStoneTypeOre('undergarden:sediment')

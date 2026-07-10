@@ -74,7 +74,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('elementium', 'botania:elementium_ingot')
     ingot('terrasteel', 'botania:terrasteel_ingot')
     ingot('mithril', 'irons_spellbooks:mithril_ingot')
-    ingot('bismuth', 'enlightened_end:bismuth_ingot')
     ingot('infused_iron', 'naturesaura:infused_iron')
     ingot('tainted_gold', 'naturesaura:tainted_gold')
     ingot('sky_ingot', "naturesaura:sky_ingot")
@@ -97,6 +96,9 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('unrealium', 'eternal_starlight:unrealium_ingot')
     ingot('andesite_alloy', 'create:andesite_alloy')
     ingot('arcane_gold', 'eidolon:arcane_gold_ingot')
+    ingot('thallasium', 'betterend:thallasium_ingot')
+    ingot('terminite', 'betterend:terminite_ingot')
+    ingot('aeternium', 'betterend:aeternium_ingot')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
@@ -124,7 +126,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('source', 'ars_nouveau:source_gem_block')
     block('mana_diamond', 'botania:mana_diamond_block')
     block('mithril', 'constructs_casting:mithril_block')
-    block('bismuth', 'enlightened_end:bismuth_block')
     block('compressed_iron', 'pneumaticcraft:compressed_iron_block')
     block('black_steel', 'cataclysm:black_steel_block')
     block('demonite', 'bloodmagic:dungeon_metal')
@@ -159,6 +160,10 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('oxidized_golem_steel', 'eternal_starlight:oxidized_golem_steel_block')
     block('golem_steel', 'eternal_starlight:golem_steel_block')
     block('andesite_alloy', 'create:andesite_alloy_block')
+    block('thallasium', 'betterend:thallasium_block')
+    block('terminite', 'betterend:terminite_block')
+    block('aeternium', 'betterend:aeternium_block')
+    block('amber', 'betterend:amber_block')
 
 //Nuggets
     nugget('arcane_gold', 'eidolon:arcane_gold_nugget')
@@ -172,7 +177,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('froststeel', 'undergarden:froststeel_nugget')
     nugget('forgotten', 'undergarden:forgotten_nugget')
     nugget('mithril', 'constructs_casting:mithril_nugget')
-    nugget('bismuth', 'enlightened_end:bismuth_nugget')
     nugget('black_steel', 'cataclysm:black_steel_nugget')
     nugget('soul_stained_steel', 'malum:soul_stained_steel_nugget')
     nugget('hallowed_gold', 'malum:hallowed_gold_nugget')
@@ -186,12 +190,18 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('unrealium', 'eternal_stalight:unrealium_nugget')
     nugget('golem_steel', 'eternal_starlight:golem_steel_nugget')
     nugget('oxidized_golem_steel', 'eternal_starlight:oxidized_golem_steel_nugget')
+    nugget('thallasium', 'betterend:thallasium_nugget')
+    nugget('terminite', 'betterend:terminite_nugget')
+    nugget('aeternium', 'betterend:aeternium_nugget')
 
 //Plates
     plate('desh', 'ad_astra:desh_plate')
     plate('ostrum', 'ad_astra:ostrum_plate')
     plate('calorite', 'ad_astra:calorite_plate')
     plate('dawnstone', 'embers:dawnstone_plate')
+    plate('thallasium', 'betterend:thallasium_forged_plate')
+    plate('terminite', 'betterend:terminite_forged_plate')
+    plate('aeternium', 'betterend:aeternium_forged_plate')
 
 //Dusts
     dust('certus_quartz', 'ae2:certus_quartz_dust')
@@ -209,7 +219,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     dustSmall('ember', 'embers:ember_grit')
 
 //Gems
-    gem('malachite', 'enlightened_end:malachite')
     gem('turquoise', 'caverns_and_chasms:turquoise')
     gem('spinel', 'caverns_and_chasms:spinel')
     gem('skyjade', 'deep_aether:skyjade')
@@ -245,6 +254,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('steadfast_will', 'bloodmagic:steadfastcrystal')
     gem('destructive_will', 'bloodmagic:destructivecrystal')
     gem('malarite', 'eternal_starlight:malarite')
+    gem('amber', 'betterend:amber_gem')
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')
@@ -262,7 +272,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOre('calorite', 'ad_astra:raw_calorite')
     rawOre('mithril', 'irons_spellbooks:raw_mithril')
     rawOre('cloggrum', 'undergarden:raw_cloggrum')
-    rawOre('bismuth', 'enlightened_end:raw_bismuth')
     rawOre('vinteum', 'mna:raw_vinteum')
     rawOre('palladium', 'galosphere:raw_palladium')
     rawOre('demonite', 'bloodmagic:raw_demonite')
@@ -271,12 +280,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOre('tin', 'caverns_and_chasms:raw_tin')
     rawOre('iesnium', 'occultism:raw_iesnium')
     rawOre('deepsilver', 'eternal_starlight:raw_deepsilver')
+    rawOre('thallasium', 'betterend:thallasium_raw')
+    rawOre('amber', 'betterend:raw_amber')
 
 //Raw ore blocks
     rawOreBlock('desh', 'ad_astra:raw_desh_block')
     rawOreBlock('ostrum', 'ad_astra:raw_ostrum_block')
     rawOreBlock('calorite', 'ad_astra:raw_calorite_block')
-    rawOreBlock('bismuth', 'enlightened_end:raw_bismuth_block')
     rawOreBlock('demonite', 'bloodmagic:rawdemoniteblock')
     rawOreBlock('cloggrum', 'undergarden:raw_cloggrum_block')
     rawOreBlock('froststeel', 'undergarden:raw_froststeel_block')
@@ -293,7 +303,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     crushed('brilliance', 'malum:crushed_brilliance')
     crushed('soulstone', 'malum:crushed_soulstone')
     crushed('mithril', 'create_wizardry:crushed_mithril')
-    crushed('bismuth', 'create_enlightend:crushed_raw_bismuth')
     crushed('anthralite', 'scguns:crushed_raw_anthralite')
     crushed('iron', 'create:crushed_raw_iron')
     crushed('gold', 'create:crushed_raw_gold')

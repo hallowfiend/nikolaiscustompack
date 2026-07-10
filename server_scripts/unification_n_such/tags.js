@@ -263,6 +263,9 @@ ServerEvents.tags("item", (event) => {
   event.add('forge:mint', 'aethersdelight:peppermint_leaf');
   event.add('neapolitan:mint_leaves', 'aethersdelight:peppermint_leaf');
 
+  event.add('forge:gems/amber', 'aether:golden_amber')
+  event.add('forge:gems/amber', 'betterend:amber_gem')
+
   event.add('forge:raw_crab_meat', 'lendersdelight:crab_legs');
   event.add('forge:cooked_crab_meat', 'lendersdelight:cooked_crab_legs');
 

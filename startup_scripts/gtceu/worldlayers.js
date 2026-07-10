@@ -39,4 +39,12 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', (event) => {
     event.create('starlight_depths')
         .targets('eternal_starlight:voidstone', 'eternal_starlight:haze_ice')
         .dimensions('eternal_starlight:starlight')
+
+    event.create('end_barrens')
+        .targets('minecraft:end_stone', 'minecraft:blackstone', 'minecraft:basalt', 'minecraft:smooth_basalt', 'betterend:umbralith')
+        .dimensions('minecraft:the_end')
+
+    event.create('end_lushlands')
+        .targets('minecraft:end_stone', 'betterend:flavolite', 'betterend:violecite', 'betterend:sulphuric_rock', 'betterend:brimstone')
+        .dimensions('minecraft:the_end')
 });

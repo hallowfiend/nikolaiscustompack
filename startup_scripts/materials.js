@@ -1050,7 +1050,7 @@ event.create('mithril')
 
     event.create('demonite')
             .ingot()
-            .ore()
+            .ore(1, 6, true)
             .color(0xb7f0e6)
             .addOreByproducts('lead', 'vinteum', 'sulfur', 'vehement_coal', 'raw_will')
             .washedIn('life_essence')
@@ -1068,7 +1068,7 @@ event.create('mithril')
 event.create('iesnium')
         .color(0x47adc4)
         .secondaryColor(0x00a383)
-        .ore()
+        .ore(1, 3, true)
         .addOreByproducts('arcane_essence', 'ether', 'demonite')
         .element('iesnium')
         .ingot()
@@ -1099,7 +1099,7 @@ event.create('spirit_gem')
 
   event.create('ember')
     .gem()
-    .ore()
+    .ore(4, 4, true)
     .components('carbon', 'sulfur', 'spirit', 'solid_infernalis')
     .addOreByproducts('sulfur', 'phosphorus', 'vehement_coal', 'iesnium')
     .washedIn('gtceu:mercury')
@@ -1115,7 +1115,8 @@ event.create('spirit_gem')
 
     event.create('cthonic_gold')
             .gem()
-            .ore(true)
+            .ore(2, 1, true)
+            .addOreByproducts('zinc', 'copper', 'gold')
             .color(0xfcf49a)
             .secondaryColor(0x777777)
             .components('gold', '4x solid_terrae', 'ember', 'deepslate')
@@ -1126,6 +1127,7 @@ event.create('spirit_gem')
         .components('3x aluminium', 'quartzite', 'cthonic_gold')
         .gem()
         .ore()
+        .addOreByproducts('electrum', 'kyanite')
         .color(0xffea03)
         .iconSet(GTMaterialIconSet.LAPIS)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, centrifuge);
@@ -1150,6 +1152,55 @@ event.create('spirit_gem')
             GTMaterialFlags.GENERATE_SMALL_GEAR
         );
 
+// BetterEnd
+    
+    event.create('thallasium')
+        .ingot()
+        .ore()
+        .color(0x79CDD0)
+        .addOreByproducts('thallium', 'gallium', 'germanium', 'beryllium')
+        .components('thallium', 'aqua', 'xenorhast', 'firmamentum', 'exispiravit')
+        .iconSet(EMERALD)
+        .flags(no_decomp, plates);
+
+    event.create('terminite')
+        .ingot()
+        .fluid()
+        .color(0x70F0E5)
+        .components('thallasium', 'ender_pearl')
+        .iconSet(EMERALD)
+        .flags(centrifuge, plates);
+
+    event.create('aeternium')
+        .ingot()
+        .fluid()
+        .color(0x2E857D)
+        .components('terminite', 'netherite')
+        .iconSet(EMERALD)
+        .flags(centrifuge, plates);
+    
+    event.create('amber')
+        .gem()
+        .ore()
+        .color(0xF8B009)
+        .iconSet(OPAL)
+        .flags(plates, lens, no_smashing);
+    
+    event.create('hutchinsonite')
+        .gem()
+        .ore()
+        .color(0x67797B)
+        .components('2x thallium', '2x lead', '5x arsenic', '9x sulfur')
+        .iconSet(METALLIC)
+        .flags(centrifuge);
+    
+    event.create('thorianite')
+        .gem()
+        .ore()
+        .color(0x1B161B)
+        .components('thorium', '2x oxygen')
+        .iconSet(FLINT)
+        .flags(centrifuge);
 
 // Evilcraft
 
@@ -1182,48 +1233,19 @@ event.create('spirit_gem')
 
     event.create('aether_air')
         .gas()
-        .components(
-            '28x fluorine',
-            '24x oxygen',
-            '24x ozone',
-            '16x helium',
-            '8x aerialis'
-        )
         .flags(no_decomp)
         .color(0x75bfff);
     event.create('liquid_aether_air')
         .liquid()
-        .components(
-            '28x fluorine',
-            '22x oxygen',
-            '16x ozone',
-            '16x helium',
-            '18x aerialis'
-        )
         .flags(no_decomp)
         .color(0x75bfff);
     event.create('twilight_air')
         .gas()
-        .components(
-            '50x nitrogen',
-            '30x oxygen',
-            '15x carbon_dioxide',
-            'aura',
-            'mundus'
-        )
         .flags(no_decomp)
         .color(0x75bfff);
     event.create('condensed_twilight')
         .liquid()
         .flags(no_decomp)
-        .components(
-            '42x nitrogen',
-            '25x oxygen',
-            '15x carbon_dioxide',
-            '2x helium',
-            '5x aura',
-            'mundus'
-        )
         .color(0x75bfff);
     event.create('undergarden_smog')
         .gas()
@@ -1233,14 +1255,6 @@ event.create('spirit_gem')
     event.create('undergarden_sludge')
         .liquid()
         .color(0x3d2e02)
-        .components(
-            '100x carbon',
-            '15x methane',
-            '20x natural_gas',
-            '30x sulfur_trioxide',
-            '15x coal_tar',
-            '36x hydrogen'
-        )
         .flags(no_decomp)
         .iconSet(GTMaterialIconSet.DULL);
     event.create('venus_atmosphere')

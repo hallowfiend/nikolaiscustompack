@@ -44,7 +44,8 @@ global.removedItems = [
   "hexalia:mortar_and_pestle",
   "irons_spellbooks:alchemist_cauldron",
   /eternal_starlight:.*alloy_furnace/,
-  'moreburners:electric_burner'
+  'moreburners:electric_burner',
+  'betterend:end_stone_smelter'
 ];
 
 global.removedRecipeIds = [
@@ -63,7 +64,10 @@ global.removedRecipeTypes = [
     "hexalia:mortar_and_pestle",
     "irons_spellbooks:alchemist_cauldron",
     'eternal_starlight:alloy',
-    'eternal_starlight:alloy_furnace_cooling'
+    'eternal_starlight:alloy_furnace_cooling',
+    'betterend:anvil',
+    'betterend:alloying',
+    'betterend:infusion'
 ]
 
 global.removedFluids = [

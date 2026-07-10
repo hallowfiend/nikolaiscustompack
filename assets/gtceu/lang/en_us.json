@@ -80,6 +80,16 @@
     "gtceu.jei.ore_vein.reactive_remnants": "Reactive Remnants",
     "gtceu.jei.ore_vein.twilight_certus_quartz_vein": "Twilit Certus Quartz Vein",
     "gtceu.jei.ore_vein.gravitite_vein": "Gravitite Vein",
+    "gtceu.jei.ore_vein.redchrome_vein": "Redchrome Vein",
+    "gtceu.jei.ore_vein.starlit_diamond_vein": "Starlit Diamond Vein",
+    "gtceu.jei.ore_vein.starcore_vein": "Starcore Vein",
+    "gtceu.jei.ore_vein.starlight_saltpeter_vein": "Starlit Saltpeter Vein",
+    "gtceu.jei.ore_vein.twilight_lubricant_vein": "Twilit Lubricant Vein",
+    "gtceu.jei.ore_vein.deepsilver_vein": "Deepsilver Vein",
+    "gtceu.jei.ore_vein.starlight_aluminium_vein": "Starlit Aluminium Vein",
+    "gtceu.jei.ore_vein.starlit_iron_vein": "Starlit Iron Vein",
+    "gtceu.jei.ore_vein.twilight_turquoise_vein": "Twilit Turquoise Vein",
+    "gtceu.jei.ore_vein.malarite_vein": "Malarite Vein",
 
     "material.gtceu.jade": "Jade",
     "material.gtceu.skyjade": "Skyjade",
@@ -189,6 +199,8 @@
     "material.gtceu.starlit_diamond": "Starlit Diamond",
     "material.gtceu.malarite": "Malarite",
     "material.gtceu.spirit_gem": "Spirit Attuned Gem",
+    "material.gtceu.golem_steel": "Golem Steel", 
+    "material.gtceu.oxidized_golem_steel": "Oxidized Golem Steel",
     "material.gtceu.starcore": "Starcore",
 
     "material.gtceu.composite_stardust": "Composite Stardust",
@@ -203,6 +215,7 @@
     "material.gtceu.andesite_alloy": "Andesite Alloy",
     "material.gtceu.bismuth_telluride": "Bismuth Telluride",
     "material.gtceu.vinteum_alloy": "Vinteum Alloy",
+    "material.gtceu.purified_vinteum_alloy": "Purified Vinteum Alloy",
 
     "material.gtceu.soul_stained_steel": "Soul Stained Bronze",
     "material.gtceu.brilliance": "Brilliance",
@@ -215,10 +228,16 @@
     "material.gtceu.calcium_magnesium_carbonate": "Calcium Magnesium Carbonate",
     "material.gtceu.limestone": "Limestone",
     "material.gtceu.petzite": "Petzite",
+
+    "material.gtceu.thallasium": "Thallasium",
+    "material.gtceu.terminite": "Terminite",
+    "material.gtceu.aeternium": "Aeternium",
     
     "material.gtceu.bendalloy": "Bendalloy",
     "material.gtceu.nicrosil": "Nicrosil",
     "material.gtceu.duralumin": "Duralumin",
+
+    "material.gtceu.meteoric_iron": "Meteoric Iron",
 
     "material.gtceu.aether_air": "Aether Air",
     "material.gtceu.liquid_aether_air": "Liquid Aether Air",

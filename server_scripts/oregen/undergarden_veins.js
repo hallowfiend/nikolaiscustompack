@@ -148,7 +148,7 @@ addVein("reactive_remnants", 'undersediment', 40, 80, 0, 70, 'sal_ammoniac', "su
       .mat('salt')
       .size(2, 3))
     .layer((l) => l.weight(2)
-      .mat('sodium_bicarbonate')
+      .mat('trona')
       .size(2, 4))
     .layer((l) => l.weight(1)
       .mat('sodalite')
