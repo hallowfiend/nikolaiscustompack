@@ -717,7 +717,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .color(0xb8dd86)
             .secondaryColor(0x698d8e)
             .components('4x experience', 'deepslate', 'solid_terrae', 'aura', 'ether')
-            .addOreByproducts('emerald', 'lapis')
+            .addOreByproducts('emerald', 'lapis', 'experience')
             .flags(no_decomp)
             .iconSet(GLASS);
     
@@ -1101,7 +1101,7 @@ event.create('spirit_gem')
     .gem()
     .ore(4, 4, true)
     .components('carbon', 'sulfur', 'spirit', 'solid_infernalis')
-    .addOreByproducts('sulfur', 'phosphorus', 'vehement_coal', 'iesnium')
+    .addOreByproducts('sulfur', 'phosphorus', 'vehement_coal')
     .washedIn('gtceu:mercury')
     .color(0xff7300)
     .secondaryColor(0xffdba8)
@@ -1114,20 +1114,20 @@ event.create('spirit_gem')
     );
 
     event.create('cthonic_gold')
-            .gem()
-            .ore(2, 1, true)
-            .addOreByproducts('zinc', 'copper', 'gold')
-            .color(0xfcf49a)
-            .secondaryColor(0x777777)
-            .components('gold', '4x solid_terrae', 'ember', 'deepslate')
-            .iconSet(SHINY)
-            .flags(no_decomp);
+        .gem()
+        .ore(2, 1, true)
+        .addOreByproducts('zinc', 'copper', 'gold')
+        .color(0xfcf49a)
+        .secondaryColor(0x777777)
+        .components('gold', '4x solid_terrae', 'ember', 'deepslate')
+        .iconSet(SHINY)
+        .flags(no_decomp);
     
     event.create("regalium")
         .components('3x aluminium', 'quartzite', 'cthonic_gold')
         .gem()
         .ore()
-        .addOreByproducts('electrum', 'kyanite')
+        .addOreByproducts('electrum', 'kyanite', 'topaz')
         .color(0xffea03)
         .iconSet(GTMaterialIconSet.LAPIS)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, centrifuge);
@@ -1179,12 +1179,14 @@ event.create('spirit_gem')
         .iconSet(EMERALD)
         .flags(centrifuge, plates);
     
+// Some more irl materials
+    
     event.create('amber')
         .gem()
-        .ore()
+        .ore(3, 1)
         .color(0xF8B009)
         .iconSet(OPAL)
-        .flags(plates, lens, no_smashing);
+        .flags(plates, lens, no_smashing, flammable);
     
     event.create('hutchinsonite')
         .gem()
@@ -1275,7 +1277,7 @@ event.create('spirit_gem')
      event.create('andesite_alloy')
         .ingot()
         .fluid()
-        .components('8x andesite', 'zinc')
+        .components('9x andesite', 'zinc')
         .color(0x839689)
         .iconSet(DULL)
         .flags(plates, gear, small_gear, bolt_and_screw, rotor, no_decomp);
@@ -1356,5 +1358,3 @@ event.create('spirit_gem')
     console.log('Materials ordered')
 
 });
-
-

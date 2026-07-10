@@ -120,6 +120,7 @@
     "material.gtceu.ozone": "Ozone",
     "material.gtceu.bakelite": "Bakelite",
     "material.gtceu.pewter": "Pewter",
+    "material.gtceu.amber": "Amber",
 
     "material.gtceu.arcane_essence": "Arcane Essence",
     "material.gtceu.iesnium": "Iesnium",
@@ -235,6 +236,8 @@
     "material.gtceu.calcium_magnesium_carbonate": "Calcium Magnesium Carbonate",
     "material.gtceu.limestone": "Limestone",
     "material.gtceu.petzite": "Petzite",
+    "material.gtceu.hutchinsonite": "Hutchinsonite",
+    "material.gtceu.thorianite": "Thorianite",
 
     "material.gtceu.thallasium": "Thallasium",
     "material.gtceu.terminite": "Terminite",
