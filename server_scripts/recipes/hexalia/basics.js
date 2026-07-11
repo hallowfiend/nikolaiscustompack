@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
     event.custom({
+        //offering to nature
         "type": "eidolon:worktable",
         "pattern": [
             "abc",
@@ -29,7 +30,7 @@ ServerEvents.recipes((event) => {
                 "item": "botania:lime_petal"
             },
             "g":{
-                "item": "hibernalherbs:pounded_rosemary"
+                "item": "farmersrespite:green_tea_leaves"
             },
             "h":{
                 "item": "hexalia:spirit_bloom"
@@ -45,6 +46,7 @@ ServerEvents.recipes((event) => {
             "item": "kubejs:nature_offering"
         }
     });
+    //hex focus
     event.remove({ id: 'hexalia:hex_focus' })
     event.custom({
         "type": "eidolon:worktable",
@@ -77,6 +79,7 @@ ServerEvents.recipes((event) => {
             "item": "hexalia:hex_focus"
         }
     });
+    //ritual table
     event.remove({ id: 'hexalia:ritual_table' })
     event.custom({
         "type": "eidolon:worktable",

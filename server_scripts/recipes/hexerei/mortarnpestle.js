@@ -1,5 +1,4 @@
 ServerEvents.recipes(event =>{
-    const id_prefix = 'compact_world:recipes/hexerei/pestle_and_mortar/'
     /**
     {
      inputItem:[
@@ -226,6 +225,10 @@ ServerEvents.recipes(event =>{
             output: 'gtceu:antimony_dust',
             baseGrindingTime: 60
         }
+    ]
+
+    const hibernalHerbs = [
+
     ]
 
     typicalRecipes.forEach(recipe =>{

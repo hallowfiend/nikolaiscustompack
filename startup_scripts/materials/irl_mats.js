@@ -22,51 +22,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     addFluid(GTMaterials.Germanium, $FluidStorageKeys.LIQUID);
     GTMaterials.CertusQuartz.addFlags(GTMaterialFlags.GENERATE_LENS);
     GTMaterials.Netherite.addFlags(GTMaterialFlags.GENERATE_PLATE);
-
-    //Gems
-    event.create('jade')
-        .gem(2)
-        .ore()
-        .color(0x256B32)
-        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
-        .addOreByproducts('nether_quartz', 'chromium', 'solid_aerialis')
-        .washedIn('water')
-        .components('sodium', 'aluminium', '2x silicon', '6x oxygen')
-        .flags(
-            plates,
-            lens,
-            crystallizable,
-            electrolyze
-        );
-    
-    event.create('turquoise')
-        .gem()
-        .ore()
-        .color(0x2bffd8)
-        .components('copper', '6x aluminium', '6x phosphate', '8x oxygen', '8x hydrogen', '4x water')
-        .flags(electrolyze)
-        .iconSet(LAPIS);
-
-    event.create('spinel')
-        .gem()
-        .ore()
-        .color(0xe36fc0)
-        .components('magnesium', '2x aluminium', '4x oxygen')
-        .addOreByproducts('limestone')
-        .iconSet(RUBY)
-        .flags(
-            crystallizable,
-            electrolyze,
-            no_smashing,
-            no_smelt
-        );
-
-    event.create('amber')
-        .gem()
-        .ore(3, 1)
-        .color(0xF8B009)
-        .iconSet(OPAL)
-        .flags(plates, lens, no_smashing, flammable);
     
     //Metals
     event.create('nicrosil')
@@ -189,7 +144,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet(FLINT)
         .flags(centrifuge);
     
-    //Other compounds
+    //Other compounds and polymers
     event.create('bismuth_telluride')
         .ingot()
         .iconSet(METALLIC)
@@ -217,5 +172,49 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             '3x oxygen'
         )
         .iconSet(GTMaterialIconSet.FLUID);
+    
+    //Gems
+    event.create('jade')
+        .gem(2)
+        .ore()
+        .color(0x256B32)
+        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .addOreByproducts('nether_quartz', 'chromium')
+        .washedIn('water')
+        .components('sodium', 'aluminium', '2x silicon', '6x oxygen')
+        .flags(
+            plates,
+            lens,
+            crystallizable,
+            electrolyze
+        );
+    
+    event.create('turquoise')
+        .gem()
+        .ore()
+        .color(0x2bffd8)
+        .components('copper', '6x aluminium', '6x phosphate', '8x oxygen', '8x hydrogen', '4x water')
+        .flags(electrolyze)
+        .iconSet(LAPIS);
 
+    event.create('spinel')
+        .gem()
+        .ore()
+        .color(0xe36fc0)
+        .components('magnesium', '2x aluminium', '4x oxygen')
+        .addOreByproducts('limestone')
+        .iconSet(RUBY)
+        .flags(
+            crystallizable,
+            electrolyze,
+            no_smashing,
+            no_smelt
+        );
+
+    event.create('amber')
+        .gem()
+        .ore(3, 1)
+        .color(0xF8B009)
+        .iconSet(OPAL)
+        .flags(plates, lens, no_smashing, flammable);
 })

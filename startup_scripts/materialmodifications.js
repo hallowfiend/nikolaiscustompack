@@ -99,6 +99,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('thallasium', 'betterend:thallasium_ingot')
     ingot('terminite', 'betterend:terminite_ingot')
     ingot('aeternium', 'betterend:aeternium_ingot')
+    ingot('energetic_alloy', 'enderio:energetic_alloy_ingot')
+    ingot('vibrant_alloy', 'enderio:vibrant_alloy_ingot')
+    ingot('conductive_alloy', 'enderio:conductive_alloy_ingot')
+    ingot('pulsating_alloy', 'enderio:pulsating_alloy_ingot')
+    ingot('dark_steel', 'enderio:dark_steel_ingot')
+    ingot('soularium', 'enderio:soularium_ingot')
+    ingot('end_steel', 'enderio:end_steel_ingot')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
@@ -164,6 +171,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('terminite', 'betterend:terminite_block')
     block('aeternium', 'betterend:aeternium_block')
     block('amber', 'betterend:amber_block')
+    block('energetic_alloy', 'enderio:energetic_alloy_block')
+    block('vibrant_alloy', 'enderio:vibrant_alloy_block')
+    block('conductive_alloy', 'enderio:conductive_alloy_block')
+    block('pulsating_alloy', 'enderio:pulsating_alloy_block')
+    block('dark_steel', 'enderio:dark_steel_block')
+    block('soularium', 'enderio:soularium_block')
+    block('end_steel', 'enderio:end_steel_block')
 
 //Nuggets
     nugget('arcane_gold', 'eidolon:arcane_gold_nugget')
@@ -193,6 +207,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('thallasium', 'betterend:thallasium_nugget')
     nugget('terminite', 'betterend:terminite_nugget')
     nugget('aeternium', 'betterend:aeternium_nugget')
+    nugget('energetic_alloy', 'enderio:energetic_alloy_nugget')
+    nugget('vibrant_alloy', 'enderio:vibrant_alloy_nugget')
+    nugget('conductive_alloy', 'enderio:conductive_alloy_nugget')
+    nugget('pulsating_alloy', 'enderio:pulsating_alloy_nugget')
+    nugget('dark_steel', 'enderio:dark_steel_nugget')
+    nugget('soularium', 'enderio:soularium_nugget')
+    nugget('end_steel', 'enderio:end_steel_nugget')
 
 //Plates
     plate('desh', 'ad_astra:desh_plate')

@@ -411,6 +411,8 @@ ServerEvents.tags("item", (event) => {
 
   event.add("forge:tallow", ["immersiveweathering:tallow"]);
 
+  event.add("hibernalherbs:herbs/sage", ["hexerei:sage"]);
+
   event.add("forge:essences/death", ["eidolon:death_essence"]);
   event.add("forge:essences/death", ["malum:rotting_essence"]);
 

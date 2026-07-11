@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("kubejs:pressurized_conduit")
         .itemInputs("2x gtceu:compressed_iron_plate", "2x #enderio:fused_quartz", "6x enderio:conduit_binder", "2x gtceu:bakelite_plate")
-        .itemOutputs("8x enderio:presurrized_fluid_conduit")
+        .itemOutputs("8x enderio:pressurized_fluid_conduit")
         .duration(80)
         .EUt(16)
     
@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: ["enderio:iron_gear", "enderio:energized_gear", "enderio:vibrant_gear", "enderio:dark_bimetal_gear"] })
     event.remove({ output: ["enderio:pulsating_crystal", "enderio:vibrant_crystal"] })
+    event.replaceInput({ input: "enderio:redstone_alloy" }, "enderio:redstone_alloy", "gtceu:red_alloy")
 
     event.recipes.gtceu.autoclave("kubejs:vibrant_crystal")
         .itemInputs("minecraft:emerald")

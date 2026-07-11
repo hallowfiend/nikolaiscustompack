@@ -65,7 +65,8 @@ global.removedItems = [
   /enderio:.*powder.*/,
   'enderio:fluid_conduit',
   /enderio:.*grinding_ball/,
-  /enderio:copper_alloy.*/
+  /enderio:copper_alloy.*/,
+  /enderio:redstone_alloy.*/
 ];
 
 global.removedRecipeIds = [

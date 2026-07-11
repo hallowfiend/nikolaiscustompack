@@ -5,4 +5,6 @@ StartupEvents.registry('item', event => {
     // crafting components
     event.create('nature_offering')
     .displayName('Offering to Nature');
+    event.create('singed_leaves')
+    .displayName('Singed Leaves');
 })
