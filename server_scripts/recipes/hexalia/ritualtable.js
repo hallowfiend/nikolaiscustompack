@@ -5,7 +5,7 @@
         event.custom({
             "type": "hexalia:ritual_table",
             "ingredients": ingredients, //max 5
-            "output": { "item": output}
+            "output": { "item": output }
         })
     })
     }
@@ -23,10 +23,12 @@
     )
     // HIBERNAL HERBS - unifying herbal conjuration
     //singed leaves (replaces singed grimoire in ritual table recipes)
+    ServerEvents.recipes((event) => {
     event.shapeless(
         '3x kubejs:singed_leaves',
         ['hibernalherbs:singed_grimoire','#forge:dusts/ash','hexalia:ghost_powder','farmersrespite:yellow_tea_leaves','hexerei:yellow_dock_leaves','twigs:bamboo_leaves']
     ).keepIngredient({item:'hibernalherbs:singed_grimoire'})
+    })
     //herbs
     ritualtable(
         [
