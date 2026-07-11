@@ -11,5 +11,6 @@ LootJS.modifiers((event) => {
     .replaceLoot("born_in_chaos_v1:mint_ice_cream", "neapolitan:mint_ice_cream", true)
     .replaceLoot("born_in_chaos_v1:mint_candy", "neapolitan:mint_candies", true)
     .replaceLoot("born_in_chaos_v1:river_mint", "neapolitan:mint_leaves", true)
-    .replaceLoot("born_in_chaos_v1:coffee_candy", "collectorsreap:coffee_gummy", true);
+    .replaceLoot("born_in_chaos_v1:coffee_candy", "collectorsreap:coffee_gummy", true)
+    .removeLoot(/enderio:.*gear/);
 });

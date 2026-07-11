@@ -25,7 +25,13 @@ const bulkReplace = [
     { target: 'create:wheat_flour', replacement: '#forge:flour/wheat'},
     { target: "immersiveengineering:ingot_constantan", replacement: "#forge:ingots/cupronickel"},
     { target: "immersiveengineering:nugget_constantan", replacement: "#forge:nuggets/cupronickel"},
-    { target: "immersiveengineering:plate_constantan", replacement: "#forge:plates/cupronickel"}
+    { target: "immersiveengineering:plate_constantan", replacement: "#forge:plates/cupronickel"},
+    { target: "enderio:wood_gear", replacement: "gtceu:andesite_alloy_gear"},
+    { target: "enderio:stone_gear", replacement: "gtceu:bakelite_gear"},
+    { target: "enderio:iron_gear", replacement: "gtceu:soul_stained_steel_gear"},
+    { target: "enderio:energized_gear", replacement: "gtceu:energetic_alloy_gear"},
+    { target: "enderio:vibrant_gear", replacement: "gtceu:vibrant_alloy_gear"},
+    { target: "enderio:dark_bimetal_gear", replacement: "gtceu:dark_steel_gear"}
 	];
 
 ServerEvents.recipes((event) => {
@@ -87,6 +93,12 @@ const DYENAMICS_COLORS = [
 
   COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`));
   DYENAMICS_COLORS.forEach((color) => replaceInput(`dyenamics:${color}_dye`, `#forge:dyes/${color}`));
+
+    // EnderIO
+    event.remove({ output: ["enderio:conduit", "enderio:energy_conduit", "enderio:plant_matter_green", "enderio:plant_matter_brown", "enderio:clayed_glowstone", "enderio:flour", "enderio:organic_green_dye", "enderio:organic_brown_dye", "enderio:industrial_insulation_block"] })
+
+    // EnderIO (grinding balls)
+    event.remove({ output: ["enderio:soularium_grinding_ball", "enderio:conductive_alloy_grinding_ball", "enderio:pulsating_alloy_grinding_ball", "enderio:redstone_alloy_grinding_ball", "enderio:energetic_alloy_grinding_ball", "enderio:vibrant_alloy_grinding_ball", "enderio:copper_alloy_grinding_ball", "enderio:dark_steel_grinding_ball", "enderio:end_steel_grinding_ball"] })
 
   console.log('Items sorted')
 });

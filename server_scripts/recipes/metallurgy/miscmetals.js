@@ -26,6 +26,12 @@ ServerEvents.recipes(event => {
         .EUt(120)
         .blastFurnaceTemp(1400);
     //Blend hand-mixing
+    event.shapeless("2x gtceu:conductive_alloy_dust",
+        [
+            "#forge:dusts/iron",
+            "#forge:dusts/redstone"
+        ]
+    )
     event.shapeless(
         Item.of('gtceu:pewter_dust', 2),
             [

@@ -51,7 +51,21 @@ global.removedItems = [
   /vampiresdelight:.*beer.*/,
   /vampiresdelight:blood_wine.*/,
   /vampiresdelight:mulled_wine.*/,
-  'largemeals:rice_pudding'
+  'largemeals:rice_pudding', //in favor of cosmopolitan's
+  //ENDERIO YEET SECTION
+  'enderio:xp_obelisk',
+  'enderio:experience_rod',
+  'enderio:experience_vacuum',
+  'enderio:painting_machine',
+  'enderio:alloy_smelter',
+  'enderio:primitive_alloy_smelter',
+  'enderio:sag_mill',
+  'enderio:painting_machine',
+  'enderio:enchanter',
+  /enderio:.*powder.*/,
+  'enderio:fluid_conduit',
+  /enderio:.*grinding_ball/,
+  /enderio:copper_alloy.*/
 ];
 
 global.removedRecipeIds = [
@@ -61,19 +75,24 @@ global.removedRecipeIds = [
 ]
 
 global.removedRecipeTypes = [
-    "hexalia:small_cauldron",
-    "eidolon:crucible",
-    "scguns:macerating",
-    "scguns:powered_macerating",
-    "scguns:mechanical_pressing",
-    "scguns:powered_mechanical_pressing",
-    "hexalia:mortar_and_pestle",
-    "irons_spellbooks:alchemist_cauldron",
-    'eternal_starlight:alloy',
-    'eternal_starlight:alloy_furnace_cooling',
-    'betterend:anvil',
-    'betterend:alloying',
-    'betterend:infusion'
+    "hexalia:small_cauldron", //flattened into hexerei cauldron
+    "eidolon:crucible", //flattened into hexerei cauldron
+    "scguns:macerating", //not needed
+    "scguns:powered_macerating", //not needed
+    "scguns:mechanical_pressing", //not needed
+    "scguns:powered_mechanical_pressing", //not needed
+    "hexalia:mortar_and_pestle", //flattened into hexerei mortar and pestle
+    "irons_spellbooks:alchemist_cauldron", //flattened into hexerei cauldron
+    'eternal_starlight:alloy', //flattened into alloy blast smelter
+    'eternal_starlight:alloy_furnace_cooling', //idk what this even is tbh
+    'betterend:anvil', //not needed
+    'betterend:alloying', //flattened into alloy blast smelter
+    'betterend:infusion', //flattened into goety rituals
+    'enderio:alloy_smelting', //flattened into alloy smelter/abs
+    'enderio:grinding_ball', //not needed
+    'enderio:painting', //kinda useless
+    'enderio:sag_milling', //not needed
+    'enderio:enchanter' //we have a zillion magic mods to help us enchant stuff
 ]
 
 global.removedFluids = [
