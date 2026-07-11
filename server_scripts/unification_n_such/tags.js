@@ -475,7 +475,10 @@ ServerEvents.tags("item", (event) => {
     "caverns_and_chasms:trail_potion",
     "#tconstruct:parts",
     "elementalcraft:pure_ore",
-    /reliquary:.*mob_charm.*/]);
+    /reliquary:.*mob_charm.*/,
+    'enderio:broken_spawner',
+    'enderio:filled_soul_vial'
+  ]);
 
   event.add("chipped:stripped_bamboo_log", ["minecraft:stripped_bamboo_block"]);
   event.add("chipped:stripped_crimson_log", ["#chipped:stripped_crimson_stem"]);

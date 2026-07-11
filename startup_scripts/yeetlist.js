@@ -93,7 +93,8 @@ global.removedRecipeTypes = [
     'enderio:grinding_ball', //not needed
     'enderio:painting', //kinda useless
     'enderio:sag_milling', //not needed
-    'enderio:enchanter' //we have a zillion magic mods to help us enchant stuff
+    'enderio:enchanter', //we have a zillion magic mods to help us enchant stuff
+    'hibernalherbs:herbal_conjuration' //flattened into hexalia ritual table
 ]
 
 global.removedFluids = [

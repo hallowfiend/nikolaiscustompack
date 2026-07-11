@@ -12,42 +12,30 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:item_conduit")
         .itemInputs("3x gtceu:pulsating_alloy_single_wire", "6x enderio:conduit_binder", "2x gtceu:polyvinyl_chloride_foil")
         .itemOutputs("8x enderio:item_conduit")
-        .duration(80)
+        .duration(80*10)
         .EUt(16)
 
     event.recipes.gtceu.assembler("kubejs:pressurized_conduit")
         .itemInputs("2x gtceu:compressed_iron_plate", "2x #enderio:fused_quartz", "6x enderio:conduit_binder", "2x gtceu:bakelite_plate")
         .itemOutputs("8x enderio:pressurized_fluid_conduit")
-        .duration(80)
+        .duration(80*10)
         .EUt(16)
     
     event.recipes.gtceu.assembler("kubejs:ender_conduit")
         .itemInputs("2x gtceu:vibrant_alloy_single_wire", "enderio:pressurized_fluid_conduit", "6x enderio:conduit_binder", "2x gtceu:polyvinyl_chloride_foil")
         .itemOutputs("8x enderio:ender_fluid_conduit")
-        .duration(80)
+        .duration(80*10)
         .EUt(16)
 
     event.recipes.gtceu.assembler("kubejs:conductive_conduit")
         .itemInputs("3x gtceu:conductive_alloy_single_wire", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:conductive_conduit")
-        .duration(80)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler("kubejs:energetic_conduit")
-        .itemInputs("2x gtceu:energetic_alloy_single_wire", "enderio:conductive_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:energetic_conduit")
-        .duration(80)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler("kubejs:vibrant_conduit")
-        .itemInputs("2x gtceu:vibrant_alloy_single_wire", "enderio:energetic_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:vibrant_conduit")
-        .duration(80)
+        .itemOutputs("4x enderio:energy_conduit")
+        .duration(80*10)
         .EUt(16)
 
     event.remove({ output: ["enderio:iron_gear", "enderio:energized_gear", "enderio:vibrant_gear", "enderio:dark_bimetal_gear"] })
     event.remove({ output: ["enderio:pulsating_crystal", "enderio:vibrant_crystal"] })
-    event.replaceInput({ input: "enderio:redstone_alloy" }, "enderio:redstone_alloy", "gtceu:red_alloy")
+    event.replaceInput({ input: "#forge:ingots/redstone_alloy" }, "#forge:ingots/redstone_alloy", "gtceu:red_alloy_ingot")
 
     event.recipes.gtceu.autoclave("kubejs:vibrant_crystal")
         .itemInputs("minecraft:emerald")
@@ -300,7 +288,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
             .itemInputs("4x enderio:me_conduit", "5x enderio:conduit_binder")
             .itemOutputs("2x enderio:dense_me_conduit")
-            .duration(80)
+            .duration(80*10)
             .EUt(16)
     event.recipes.gtceu.assembler("kubejs:me_conduit")
             .itemInputs("3x ae2:fluix_covered_cable", "6x enderio:conduit_binder")
@@ -309,7 +297,6 @@ ServerEvents.recipes(event => {
             .EUt(16)
 
     event.replaceInput({ output: "enderio:extraction_speed_upgrade_3" }, "gtceu:soularium_ingot", "gtceu:aluminium_ingot")
-
-    event.replaceInput({ id: "enderio:conduit_probe" }, "enderio:conductive_alloy_ingot", "gtceu:conductive_alloy_ingot")
+    
     event.replaceInput({ id: "enderio:conduit_probe" }, "enderio:energy_conduit", "gtceu:conductive_alloy_single_wire")
 })

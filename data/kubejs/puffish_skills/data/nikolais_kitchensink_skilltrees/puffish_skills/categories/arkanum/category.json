@@ -1,0 +1,10 @@
+{
+	"title": "Arkanum",
+	"icon": {
+		"type": "item",
+		"data": {
+			"item": "malum:arcane_spirit"
+		}
+	},
+	"background": "malum:malum/textures/block/building/spirited_glass/arcane_spirited_glass.png"
+}

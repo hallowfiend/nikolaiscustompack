@@ -228,8 +228,83 @@ ServerEvents.recipes(event =>{
     ]
 
     const hibernalHerbs = [
-
+        "calendula",
+        "rosemary",
+        "thyme",
+        "tarragon",
+        "chamomile",
+        "chives",
+        "verbena",
+        "sorrel",
+        "marjoram",
+        "chervil",
+        "fennsel",
+        "ceillis",
+        "punuel",
+        "essitte",
+        "fennkystral",
+        "thyocielle",
+        "sage"
     ]
+    //Hibernal Herbs herb pounding and drying
+    hibernalHerbs.forEach(herb =>{
+        event.remove({ output: `hibernalherbs:pounded_${herb}`})
+        event.remove({ output: `hibernalherbs:dried_${herb}`})
+        event.custom({
+            "type": "hexerei:pestle_and_mortar",
+            "ingredients":[{"item": `hibernalherbs:${herb}`}],
+            "output": {"item": `hibernalherbs:pounded_${herb}`,"count": 1},
+            "grindingTime":10
+        })
+        event.custom({
+            "type": "hexerei:pestle_and_mortar",
+            "ingredients":[
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`}
+            ],
+            "output": {"item": `hibernalherbs:pounded_${herb}`,"count": 2},
+            "grindingTime":20
+        })
+        event.custom({
+            "type": "hexerei:pestle_and_mortar",
+            "ingredients":[
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`}
+            ],
+            "output": {"item": `hibernalherbs:pounded_${herb}`,"count": 3},
+            "grindingTime":30
+        })
+        event.custom({
+            "type": "hexerei:pestle_and_mortar",
+            "ingredients":[
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`}
+            ],
+            "output": {"item": `hibernalherbs:pounded_${herb}`,"count": 4},
+            "grindingTime":40
+        })
+        event.custom({
+            "type": "hexerei:pestle_and_mortar",
+            "ingredients":[
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`},
+                {"item": `hibernalherbs:${herb}`}
+            ],
+            "output": {"item": `hibernalherbs:pounded_${herb}`,"count": 5},
+            "grindingTime":50
+        })
+        event.custom({
+            "type": "hexerei:drying_rack",
+            "ingredients":[{"item": `hibernalherbs:pounded_${herb}`}],
+            "output": {"item": `hibernalherbs:dried_${herb}`, "count": 1},
+            "dryingTimeInTicks": 2000
+        })
+    })
 
     typicalRecipes.forEach(recipe =>{
         event.custom({

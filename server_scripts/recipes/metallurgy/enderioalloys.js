@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer("kubejs:dark_steel_dust")
-        .itemInputs("#forge:dusts/steel", "#forge:dusts/obsidian", "evilcraft:crushed_dark_gem")
+        .itemInputs("#forge:dusts/steel", "#forge:dusts/obsidian", "evilcraft:dark_gem_crushed")
         .itemOutputs("gtceu:dark_steel_dust")
         .duration(80)
         .EUt(15)
