@@ -1,4 +1,4 @@
-//priority 70
+//priority: 70
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("dark_steel")

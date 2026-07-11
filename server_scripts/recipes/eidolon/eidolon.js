@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+    //Inlays
     event.remove({ output: 'eidolon:pewter_inlay' })
     event.remove({ output: 'eidolon:gold_inlay' })
     event.shaped(
