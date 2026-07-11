@@ -66,7 +66,9 @@ global.removedItems = [
   'enderio:fluid_conduit',
   /enderio:.*grinding_ball/,
   /enderio:copper_alloy.*/,
-  /enderio:redstone_alloy.*/
+  /enderio:redstone_alloy.*/,
+  //end of enderio yeet section
+  'hibernalherbs:conjuration_altar'
 ];
 
 global.removedRecipeIds = [

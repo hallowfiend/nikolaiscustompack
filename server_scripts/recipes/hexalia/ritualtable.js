@@ -1,12 +1,15 @@
-ServerEvents.recipes((event) => {
-    //Ritual Table
+
     function ritualtable(ingredients, output) {
+        
+    ServerEvents.recipes((event) => {
         event.custom({
             "type": "hexalia:ritual_table",
             "ingredients": ingredients, //max 5
-            "output": output
+            "output": { "item": output}
         })
+    })
     }
+
     // OCCULTISM - demon's dream seeds
     ritualtable(
         [
@@ -437,4 +440,3 @@ ServerEvents.recipes((event) => {
         `hibernalherbs:blend_${effect}_smoked`
     )
     })
-})

@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     event.recipes.gtceu.mixer("kubejs:energetic_alloy_dust")
-        .itemInputs("#forge:dusts/gold", "#forge:dusts/redstone", "#forge:dusts/glowstone", "forge:dusts/electrotine")
+        .itemInputs("#forge:dusts/gold", "#forge:dusts/redstone", "#forge:dusts/glowstone", "#forge:dusts/electrotine")
         .itemOutputs("2x gtceu:energetic_alloy_dust")
         .duration(140)
         .EUt(30)
