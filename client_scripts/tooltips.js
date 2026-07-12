@@ -16,26 +16,39 @@ ItemEvents.tooltip(event => {
   event.add('hexalia:bloomwrap_leggings', '§7Grants regeneration nearby flowers.')
   event.add('hexalia:bloomwrap_boots', '§7Increases speed when walking on leaves.')
 
+  event.addAdvanced('malum:encyclopedia_arcana', (item, advanced, text) => {
+    text.add(1, Text.of('Recipes may be incorrect, check JEI!').red())
+  })
+  event.addAdvanced('malum:encyclopedia_esoterica', (item, advanced, text) => {
+    text.add(1, Text.of('Recipes may be incorrect, check JEI!').red())
+  })
 
   //greg
 
    event.addAdvanced('kubejs:manaweave_processor', (item, advanced, text) => {
      text.add(1, Text.gray('Magus-on-Chip'))
-     text.add(2, Text.lightPurple('ZPM-Tier Circuit'))
+     text.add(2, Text.lightPurple('ZPM-Tier Circuit').bold())
     })
 
     event.addAdvanced('kubejs:manaweave_processor_assembly', (item, advanced, text) => {
      text.add(1, Text.gray('Not the installation wizard you were expecting'))
-     text.add(2, Text.lightPurple('UV-Tier Circuit'))
+     text.add(2, Text.lightPurple('UV-Tier Circuit').bold())
     })
 
     event.addAdvanced('kubejs:manaweave_processor_computer', (item, advanced, text) => {
      text.add(1, Text.gray('HEX would be proud'))
-     text.add(2, Text.lightPurple('UHV-Tier Circuit'))
+     text.add(2, Text.lightPurple('UHV-Tier Circuit').bold())
     })
 
     event.addAdvanced('kubejs:manaweave_processor_mainframe', (item, advanced, text) => {
      text.add(1, Text.gray('Magitech at its finest'))
-     text.add(2, Text.lightPurple('UEV-Tier Circuit'))
+     text.add(2, Text.lightPurple('UEV-Tier Circuit').bold())
+    })
+
+    event.addAdvanced('gtceu:drunken_terraprismatic_fluxinator', (item, advanced, text) => {
+     text.add(1, Text.green("Don't order your DTPF from TEMU").italic().bold())
+     text.add(2, Text.green("Generates EU from alcoholic drinks."))
+     text.add(3, Text.green("More complex or expensive drinks produce more energy."))
+     text.add(4, Text.green("Check JEI for exact values."))
     })
 })

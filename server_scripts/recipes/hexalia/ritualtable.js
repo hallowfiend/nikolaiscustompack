@@ -1,11 +1,11 @@
 
-    function ritualtable(ingredients, output) {
+    function ritualtable(ingredients, output, count) {
         
     ServerEvents.recipes((event) => {
         event.custom({
             "type": "hexalia:ritual_table",
             "ingredients": ingredients, //max 5
-            "output": { "item": output }
+            "output": { "item": output, "count": count}
         })
     })
     }
@@ -28,6 +28,19 @@
         '3x kubejs:singed_leaves',
         ['hibernalherbs:singed_grimoire','#forge:dusts/ash','hexalia:ghost_powder','farmersrespite:yellow_tea_leaves','hexerei:yellow_dock_leaves','twigs:bamboo_leaves']
     ).keepIngredient({item:'hibernalherbs:singed_grimoire'})
+    //petal duping
+    event.shapeless(
+        '3x hibernalherbs:sin_petals',
+        ['hibernalherbs:sin_petals','#botania:petals','#botania:petals','hexalia:mutavis']
+    )
+    event.shapeless(
+        '3x hibernalherbs:lumbinetrik_petals',
+        ['hibernalherbs:lumbinetrik_petals','hibernalherbs:sin_petals','hibernalherbs:sin_petals','hexalia:mutavis']
+    )
+    event.shapeless(
+        '3x hibernalherbs:juliusium_petals',
+        ['hibernalherbs:juliusium_petals','hibernalherbs:lumbinetrik_petals','hibernalherbs:lumbinetrik_petals','hexalia:mutavis']
+    )
     })
     //herbs
     ritualtable(
@@ -38,7 +51,7 @@
             {"item": "minecraft:magma_cream"},
             {"item": "farmersrespite:green_tea_leaves"}
         ],
-        "3x hibernalherbs:sin_petals"
+        "hibernalherbs:sin_petals"
     )
     ritualtable(
         [
@@ -48,7 +61,7 @@
             {"item": "minecraft:gold_ingot"},
             {"item": "farmersrespite:yellow_tea_leaves"}
         ],
-        "3x hibernalherbs:lumbinetrik_petals"
+        "hibernalherbs:lumbinetrik_petals"
     )
     ritualtable(
         [
@@ -58,7 +71,7 @@
             {"item": "hibernalherbs:lumbinetrik_petals"},
             {"item": "farmersrespite:black_tea_leaves"}
         ],
-        "3x hibernalherbs:juilisium_petals"
+        "hibernalherbs:juilisium_petals"
     )
     ritualtable(
         [
@@ -280,8 +293,14 @@
             {"item": "hibernalherbs:lumbinetrik_petals"},
             {"item": "hibernalherbs:lumbinetrik_petals"}
         ],
-        `2x hibernalherbs:${sin}_herb`
+        `hibernalherbs:${sin}_herb`
     )
+    ServerEvents.recipes((event) => {
+    event.shapeless(
+        `2x hibernalherbs:${sin}_herb`,
+        [`hibernalherbs:${sin}_herb`,'hibernalherbs:herb_humus_myqueste', 'botania:fertilizer']
+    )
+    })
     })
     //herbal blends
     ritualtable(

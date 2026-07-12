@@ -1,7 +1,9 @@
 {
     "gtceu.cyberware_constructor": "Cyberware Constructor",
-    "gtceu.block.gtceu.human_augmentation_plant": "Human Augmentation Plant",
-
+    "block.gtceu.human_augmentation_plant": "Human Augmentation Plant",
+    
+    "block.gtceu.drunken_terraprismatic_fluxinator": "Drunken Terra-Prismatic Fluxinator",
+    "gtceu.dtpf": "Drunken Terra-Prismatic Fluxinator",
 
     "tagprefix.glacio_stone": "Glacio %s Ore",
     "tagprefix.frosted_holystone": "Frosted Holystone %s Ore",
