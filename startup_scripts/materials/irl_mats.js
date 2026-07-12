@@ -17,9 +17,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Electrum.setProperty(PropertyKey.ORE, new $OreProperty()); //native electrum
     GTMaterials.Brass.setProperty(PropertyKey.ORE, new $OreProperty()); //brass o' the devil
     GTMaterials.Rutile.setProperty(PropertyKey.ORE, new $OreProperty()); //bauxite cannot form on the moon
-    GTMaterials.Nickel.setProperty(PropertyKey.ORE, new $OreProperty()); //native form in meteors
     GTMaterials.Invar.setProperty(PropertyKey.ORE, new $OreProperty()); //native form in meteors
-    GTMaterials.Iron.setProperty(PropertyKey.ORE, new $OreProperty()); //native form in meteors
+    GTMaterials.Borax.setProperty(PropertyKey.ORE, new $OreProperty()); 
     GTMaterials.Tellurium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Tellurium, $FluidStorageKeys.LIQUID);
     GTMaterials.Germanium.setProperty(PropertyKey.INGOT, new $IngotProperty());

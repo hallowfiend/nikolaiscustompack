@@ -37,7 +37,7 @@ addVein("cheese_vein", 'moon_stone', 20, 50, 40, 90, 'moon_cheese', "surface", (
       .size(1, 3));
 });
 
-addVein("desh_vein", 'moon_stone', 30, 50, -20, 40, 'desh', "surface", (pattern) => {
+addVein("desh_vein", 'moon_stone', 30, 80, -20, 40, 'desh', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('desh')
