@@ -26,7 +26,7 @@ ItemEvents.tooltip(event => {
   //greg
 
    event.addAdvanced('kubejs:manaweave_processor', (item, advanced, text) => {
-     text.add(1, Text.gray('Magus-on-Chip'))
+     text.add(1, Text.gray('Archmagus-on-Chip'))
      text.add(2, Text.lightPurple('ZPM-Tier Circuit').bold())
     })
 
@@ -46,9 +46,9 @@ ItemEvents.tooltip(event => {
     })
 
     event.addAdvanced('gtceu:drunken_terraprismatic_fluxinator', (item, advanced, text) => {
-     text.add(1, Text.green("Don't order your DTPF from TEMU").italic().bold())
-     text.add(2, Text.green("Generates EU from alcoholic drinks."))
-     text.add(3, Text.green("More complex or expensive drinks produce more energy."))
-     text.add(4, Text.green("Check JEI for exact values."))
+     text.add(1, Text.green("Don't order your DTPF from Temu").italic().bold())
+     text.add(2, Text.gray("Generates EU from alcoholic drinks"))
+     text.add(3, Text.gray("More complex or expensive drinks produce more energy"))
+     text.add(4, Text.gray("(check JEI for exact values)"))
     })
 })

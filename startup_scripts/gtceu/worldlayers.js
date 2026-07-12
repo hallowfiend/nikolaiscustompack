@@ -47,4 +47,20 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', (event) => {
     event.create('end_lushlands')
         .targets('minecraft:end_stone', 'betterend:flavolite', 'betterend:violecite', 'betterend:sulphuric_rock')
         .dimensions('minecraft:the_end')
+    
+    event.create('moon_stone')
+        .targets('ad_astra:moon_stone')
+        .dimensions('ad_astra:moon')
+    
+    event.create('venus_stone')
+        .targets('ad_astra:venus_stone')
+        .dimensions('ad_astra:venus')
+
+    event.create('mars_stone')
+        .targets('ad_astra:mars_stone')
+        .dimensions('ad_astra:mars')
+    
+    event.create('glacio_stone')
+        .targets('ad_astra:glacio_stone')
+        .dimensions('ad_astra:glacio')
 });

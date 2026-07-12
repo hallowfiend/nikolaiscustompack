@@ -99,6 +99,15 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
 
 // Botania
 
+    event.create("livingwood")
+        .dust()
+        .color(0x4A190A)
+        .flags(
+            plates,
+            bolt_and_screw
+        )
+        .iconSet(WOOD);
+
   event.create("manasteel")
       .ingot()
       .fluid()
@@ -106,7 +115,10 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
       .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
       .components('black_steel', 'mana')
       .flags(no_decomp,
-        foil
+        foil,
+        plates,
+        rod,
+        bolt_and_screw
       )
       .iconSet(GTMaterialIconSet.SHINY);
 

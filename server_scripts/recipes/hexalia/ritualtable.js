@@ -38,8 +38,8 @@
         ['hibernalherbs:lumbinetrik_petals','hibernalherbs:sin_petals','hibernalherbs:sin_petals','hexalia:mutavis']
     )
     event.shapeless(
-        '3x hibernalherbs:juliusium_petals',
-        ['hibernalherbs:juliusium_petals','hibernalherbs:lumbinetrik_petals','hibernalherbs:lumbinetrik_petals','hexalia:mutavis']
+        '3x hibernalherbs:juilisium_petals',
+        ['hibernalherbs:juilisium_petals','hibernalherbs:lumbinetrik_petals','hibernalherbs:lumbinetrik_petals','hexalia:mutavis']
     )
     })
     //herbs

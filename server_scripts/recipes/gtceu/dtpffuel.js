@@ -1,4 +1,38 @@
 ServerEvents.recipes((event) => {
+        //DTPF components
+        event.recipes.gtceu.cutter(`kubejs:livingwood_cutting`)
+            .itemInputs('#botania:livingwood_logs')
+            .itemOutputs([`6x malum:soulwood_planks`, '2x gtceu:livingwood_dust'])
+            .duration(200)
+            .EUt(7);
+        event.recipes.gtceu.assembler('kubejs:mana_reinforced_livingwood_casing')
+            .itemInputs([
+                '12x gtceu:livingwood_plate',
+                '6x gtceu:demonite_plate',
+                '24x gtceu:manasteel_screw',
+                '6x gtceu:skyjade_plate'
+            ])
+            .inputFluids('constructs_casting:arcane_essence 2000')
+            .itemOutputs('2x kubejs:mana_reinforced_livingwood_casing')
+            .duration(40)
+            .EUt(GTValues.VA[GTValues.IV]);
+        event.recipes.gtceu.assembler('kubejs:dtpf')
+            .itemInputs([
+                'kubejs:mana_reinforced_livingwood_casing',
+                '16x magichem:admixture_delight',
+                '8x #gtceu:circuits/iv',
+                '16x biomancy:exotic_dust',
+                '8x bloodmagic:combinationalcatalyst',
+                '4x botania:rune_gluttony',
+                'gtceu:stainless_steel_rotor',
+                'biomancy:digester',
+                'botania:brewery'
+            ])
+            .inputFluids('brewinandchewin:beer 10000')
+            .itemOutputs('gtceu:drunken_terraprismatic_fluxinator')
+            .duration(120)
+            .EUt(GTValues.VA[GTValues.IV]);
+        //the DTPF proper
         const alcohols = [
             //piss
             {"drink": "brewincompatdelight:moonshine", "value": 0.25},
@@ -43,7 +77,7 @@ ServerEvents.recipes((event) => {
             {"drink": "sob:pale_daiquiri", "value": 4},
             {"drink": "brewinandchewin:red_rum", "value": 4},
             {"drink": "brewinandchewin:strongroot_ale", "value": 4},
-            {"drink": "brewinandchewin:dread_grog", "value": 4},
+            {"drink": "brewinandchewin:dread_nog", "value": 4},
             {"drink": "brewinandchewin:kombucha", "value": 4},
             //deific nectars
             {"drink": "collectorsreap:heavens_cream", "value": 8},
@@ -62,6 +96,6 @@ ServerEvents.recipes((event) => {
             event.recipes.gtceu.dtpf(`kubejs:dtpf/${identifier}`)
                 .inputFluids(`${alcohol.drink} 1000`)
                 .duration(alcohol.value*2000)
-                .EUt(-GTValues.V[GTValues.EV]*alcohol.value, 4)
+                .EUt(-GTValues.V[GTValues.IV]*alcohol.value, 4)
         })
 });

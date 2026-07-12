@@ -101,7 +101,7 @@ global.removedRecipeTypes = [
 ]
 
 global.removedFluids = [
-	
+	"create_wizardry:mana"
 ];
 
 global.removedFluids.forEach((fluid) => {
