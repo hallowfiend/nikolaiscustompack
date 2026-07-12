@@ -26,6 +26,10 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
         TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get(mat),
         () => Item.getItem(item))
     }
+    function plateDouble (mat, item){
+        TagPrefix.plateDouble['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get(mat),
+        () => Item.getItem(item))
+    }
     function dust (mat, item){
         TagPrefix.dust['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get(mat),
         () => Item.getItem(item))
@@ -106,6 +110,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('dark_steel', 'enderio:dark_steel_ingot')
     ingot('soularium', 'enderio:soularium_ingot')
     ingot('end_steel', 'enderio:end_steel_ingot')
+    ingot('moon_cheese', 'ad_astra:cheese')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
@@ -178,6 +183,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('dark_steel', 'enderio:dark_steel_block')
     block('soularium', 'enderio:soularium_block')
     block('end_steel', 'enderio:end_steel_block')
+    block('moon_cheese', 'ad_astra:cheese_block')
 
 //Nuggets
     nugget('arcane_gold', 'eidolon:arcane_gold_nugget')
@@ -223,6 +229,9 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     plate('thallasium', 'betterend:thallasium_forged_plate')
     plate('terminite', 'betterend:terminite_forged_plate')
     plate('aeternium', 'betterend:aeternium_forged_plate')
+
+//Double plates
+
 
 //Dusts
     dust('certus_quartz', 'ae2:certus_quartz_dust')

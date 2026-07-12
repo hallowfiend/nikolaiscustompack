@@ -1,11 +1,11 @@
 
-    function ritualtable(ingredients, output, count) {
+    function ritualtable(ingredients, output) {
         
     ServerEvents.recipes((event) => {
         event.custom({
             "type": "hexalia:ritual_table",
             "ingredients": ingredients, //max 5
-            "output": { "item": output, "count": count}
+            "output": { "item": output }
         })
     })
     }

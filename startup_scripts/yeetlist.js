@@ -69,7 +69,11 @@ global.removedItems = [
   /enderio:redstone_alloy.*/,
   //end of enderio yeet section
   'hibernalherbs:conjuration_altar',
-  'brewincompatdelight:hard_cider'
+  'brewincompatdelight:hard_cider',
+  'alexsmobsdelight:cheese',
+  'tidesdelight:cheese',
+  'tconstruct:cheese_ingot',
+  'tconstruct:cheese_block'
 ];
 
 global.removedRecipeIds = [
