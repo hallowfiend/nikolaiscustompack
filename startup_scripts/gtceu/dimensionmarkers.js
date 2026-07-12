@@ -49,6 +49,6 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
 
     event.create('ad_astra:glacio')
         .tier(3)
-        .iconSupplier(() => Item.getItem('ad_astra:glacio_stone'))
+        .iconSupplier(() => Item.getItem('ad_astra:glacio_globe'))
         .overrideName('Glacio')
 })

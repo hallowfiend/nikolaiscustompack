@@ -722,6 +722,34 @@ event.custom({
       "item": "minecraft:glass_bottle"
     },
     "fluid": {
+      "fluid": "irons_spellbooks:evasion_elixir",
+      "amount": 250
+    },
+    "output": {
+      "item": "irons_spellbooks:evasion_elixir",
+      "count": 1
+    }
+  });
+event.custom({
+    "type": "hexerei:cauldron_emptying",
+    "input": {
+      "item": "minecraft:glass_bottle"
+    },
+    "fluid": {
+      "fluid": "irons_spellbooks:greater_evasion_elixir",
+      "amount": 250
+    },
+    "output": {
+      "item": "irons_spellbooks:greater_evasion_elixir",
+      "count": 1
+    }
+  });
+event.custom({
+    "type": "hexerei:cauldron_emptying",
+    "input": {
+      "item": "minecraft:glass_bottle"
+    },
+    "fluid": {
       "fluid": "irons_spellbooks:greater_invisibility_elixir",
       "amount": 250
     },
