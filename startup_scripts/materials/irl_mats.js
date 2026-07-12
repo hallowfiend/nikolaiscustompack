@@ -16,6 +16,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     addFluid(GTMaterials.Amethyst, $FluidStorageKeys.LIQUID);
     GTMaterials.Electrum.setProperty(PropertyKey.ORE, new $OreProperty()); //native electrum
     GTMaterials.Brass.setProperty(PropertyKey.ORE, new $OreProperty()); //brass o' the devil
+    GTMaterials.Rutile.setProperty(PropertyKey.ORE, new $OreProperty()); //bauxite cannot form on the moon
+    GTMaterials.Nickel.setProperty(PropertyKey.ORE, new $OreProperty()); //native form in meteors
+    GTMaterials.Invar.setProperty(PropertyKey.ORE, new $OreProperty()); //native form in meteors
+    GTMaterials.Iron.setProperty(PropertyKey.ORE, new $OreProperty()); //native form in meteors
     GTMaterials.Tellurium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Tellurium, $FluidStorageKeys.LIQUID);
     GTMaterials.Germanium.setProperty(PropertyKey.INGOT, new $IngotProperty());
@@ -142,6 +146,49 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x1B161B)
         .components('thorium', '2x oxygen')
         .iconSet(FLINT)
+        .flags(centrifuge);
+
+    event.create('anorthite')
+        .gem()
+        .ore()
+        .color(0xB9AC8B)
+        .components('calcium', '2x aluminium', '2x silicon', '8x oxygen')
+        .iconSet(FLINT)
+        .flags(electrolyze);
+
+    event.create("naumannite")
+        .dust()
+        .ore()
+        .color(0x5f7013)
+        .iconSet(SHINY)
+        .components("2x silver", "selenium")
+        .addOreByproducts("sulfur", "obsidian")
+        .flags(centrifuge);
+
+    event.create("hadalite")
+        .dust()
+        .ore()
+        .color(0x300173)
+        .iconSet(DULL)
+        .components("2x thallium", "3x sulfur", "4x obsidian")
+        .addOreByproducts("sulfur", "obsidian")
+        .flags(centrifuge);
+
+    event.create('castorite')
+        .gem()
+        .ore()
+        .color(0xC6C6CB)
+        .iconSet(QUARTZ)
+        .components('lithium', 'aluminium', '4x silicon', '10x oxygen')
+        .flags(electrolyze);
+
+    event.create('bismuthinite')
+        .gem()
+        .ore()
+        .color(0xBFA897)
+        .components('2x bismuth', '3x sulfur')
+        .iconSet(QUARTZ)
+        .addOreByproducts("chalcopyrite", "silver")
         .flags(centrifuge);
     
     //Other compounds and polymers

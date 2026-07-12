@@ -49,7 +49,7 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', (event) => {
         .dimensions('minecraft:the_end')
     
     event.create('moon_stone')
-        .targets('ad_astra:moon_stone')
+        .targets('ad_astra:moon_stone', 'minecraft:soul_soil')
         .dimensions('ad_astra:moon')
     
     event.create('venus_stone')

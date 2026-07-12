@@ -161,6 +161,14 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
 
 // Ad Astra
 
+    event.create('moon_cheese')
+        .ingot()
+        .fluid()
+        .ore()
+        .color(0xFAD645)
+        .addOreByproducts('calcium')
+        .iconSet(FLINT);
+
   event.create('desh')
           .ingot()
           .fluid()

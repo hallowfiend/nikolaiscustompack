@@ -38,8 +38,8 @@
         ['hibernalherbs:lumbinetrik_petals','hibernalherbs:sin_petals','hibernalherbs:sin_petals','hexalia:mutavis']
     )
     event.shapeless(
-        '3x hibernalherbs:juilisium_petals',
-        ['hibernalherbs:juilisium_petals','hibernalherbs:lumbinetrik_petals','hibernalherbs:lumbinetrik_petals','hexalia:mutavis']
+        '3x hibernalherbs:julisium_petals',
+        ['hibernalherbs:julisium_petals','hibernalherbs:lumbinetrik_petals','hibernalherbs:lumbinetrik_petals','hexalia:mutavis']
     )
     })
     //herbs
@@ -71,7 +71,7 @@
             {"item": "hibernalherbs:lumbinetrik_petals"},
             {"item": "farmersrespite:black_tea_leaves"}
         ],
-        "hibernalherbs:juilisium_petals"
+        "hibernalherbs:julisium_petals"
     )
     ritualtable(
         [
