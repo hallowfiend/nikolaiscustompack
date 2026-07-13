@@ -795,7 +795,6 @@ event.create('spirit_gem')
     event.create('dawnstone')
         .color(0xfa9d32)
         .ingot()
-        .fluid()
         .iconSet(GTMaterialIconSet.SHINY)
         .components('2x copper', '2x cthonic_gold', 'ember')
         .flags(
@@ -809,7 +808,8 @@ event.create('spirit_gem')
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.GENERATE_SMALL_GEAR
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            no_decomp
         );
 
 // BetterEnd

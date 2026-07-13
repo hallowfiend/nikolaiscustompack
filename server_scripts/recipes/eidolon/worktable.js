@@ -17,6 +17,50 @@ const petalApothecary = [
 ServerEvents.recipes((event) => {
     //im turning this table into the central magic item crafting station and NOBODY CAN STOP ME
     //except for components that is im leaving those to be craftable normalstyle because i love ae2
+    //IRON'S
+    //inscription table
+    event.remove({ id: 'irons_spellbooks:sequenced_assembly/inscription_table' })
+    event.remove({ id: 'irons_spellbooks:inscription_table' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "ssq",
+            "www",
+            "f f"
+        ],
+        "reagents": [
+            "levb"
+        ],
+        "key" : {
+            "s": {
+                "item" : "irons_spellbooks:scroll"
+            },
+            "q": {
+                "item": "minecraft:writable_book"
+            },
+            "w": {
+                "item": "eidolon:illwood_planks_slab"
+            },
+            "f": {
+                "item": "eidolon:illwood_planks_fence"
+            },
+            "l" : {
+                "item" : "hexcasting:lens"
+            },
+            "e" : {
+                "item": "minecraft:enchanted_book"
+            },
+            "v" : {
+                "item" : "mna:vinteum_block"
+            },
+            "b" : {
+                "item": "minecraft:glass_bottle"
+            }
+        },
+        "result" : {
+            "item": "irons_spellbooks:inscription_table"
+        }
+    })
     //HEXEREI
     //mixing cauldron
     event.remove({ id: 'hexerei:mixing_cauldron' })

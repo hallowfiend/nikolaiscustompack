@@ -368,7 +368,7 @@ const recipes = [
         {"item":"minecraft:rotten_flesh"},
         {"tag": "forge:resins"},
         {"item":"hexalia:spirit_powder"},
-        {"item":"minecraft:glass_bottle"}
+        {"item":"hexalia:rustic_bottle"}
     ],
     output:"hexalia:brew_of_bloodlust",
     output_amount:1,
@@ -383,7 +383,7 @@ const recipes = [
         {"tag": "forge:ender_pearls"},
         {"tag": "forge:resins"},
         {"item":"hexalia:spirit_powder"},
-        {"item":"minecraft:glass_bottle"}
+        {"item":"hexalia:rustic_bottle"}
     ],
     output:"hexalia:brew_of_homestead",
     output_amount:1,
@@ -398,7 +398,7 @@ const recipes = [
         {"item":"minecraft:iron_nugget"},
         {"tag": "forge:resins"},
         {"item":"minecraft:sweet_berries"},
-        {"item":"minecraft:glass_bottle"}
+        {"item":"hexalia:rustic_bottle"}
     ],
     output:"hexalia:brew_of_spikeskin",
     output_amount:1,
@@ -413,7 +413,7 @@ const recipes = [
         {"item":"hexalia:siren_paste"},
         {"item":"minecraft:iron_ingot"},
         {"item":"minecraft:redstone"},
-        {"item":"minecraft:glass_bottle"}
+        {"item":"hexalia:rustic_bottle"}
     ],
     output:"hexalia:brew_of_siphon",
     output_amount:1,
@@ -428,7 +428,7 @@ const recipes = [
         {"item":"hexalia:spirit_powder"},
         {"item":"minecraft:glow_berries"},
         {"item":"hexalia:witchweed"},
-        {"item":"minecraft:glass_bottle"}
+        {"item":"hexalia:rustic_bottle"}
     ],
     output:"hexalia:brew_of_daybloom",
     output_amount:1,
@@ -443,7 +443,7 @@ const recipes = [
         {"item":"hexalia:chillberries"},
         {"tag": "c:feathers"},
         {"item":"minecraft:sculk"},
-        {"item":"minecraft:glass_bottle"}
+        {"item":"hexalia:rustic_bottle"}
     ],
     output:"hexalia:brew_of_hollow_silence",
     output_amount:1,
@@ -458,7 +458,7 @@ const recipes = [
         {"item":"minecraft:spider_eye"},
         {"tag": "forge:string"},
         {"tag": "c:dyes/black"},
-        {"item":"minecraft:glass_bottle"}
+        {"item":"hexalia:rustic_bottle"}
     ],
     output:"hexalia:brew_of_arachnid_grace",
     output_amount:1,
@@ -473,7 +473,7 @@ const recipes = [
         {"item":"hexalia:chillberries"},
         {"tag": "forge:resins"},
         {"tag": "c:feathers"},
-        {"item":"minecraft:glass_bottle"}
+        {"item":"hexalia:rustic_bottle"}
     ],
     output:"hexalia:brew_of_slimewalker",
     output_amount:1,

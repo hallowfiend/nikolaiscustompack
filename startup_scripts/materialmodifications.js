@@ -244,9 +244,10 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     dust('hex_ash', 'malum:hex_ash')
     dust('anthralite', 'scguns:anthralite_dust')
     dust('endstone', 'occultism:crushed_end_stone')
+    dust('ember', 'embers:ember_grit')
 
 //Small dusts
-    dustSmall('ember', 'embers:ember_grit')
+    
 
 //Gems
     gem('turquoise', 'caverns_and_chasms:turquoise')
@@ -285,10 +286,10 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('destructive_will', 'bloodmagic:destructivecrystal')
     gem('malarite', 'eternal_starlight:malarite')
     gem('amber', 'betterend:amber_gem')
+    gem('cthonic_gold', 'malum:cthonic_gold')
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')
-    gemFlawless('cthonic_gold', 'malum:cthonic_gold')
 
 //Chipped gems
     gemChipped('ember', 'embers:ember_shard')
