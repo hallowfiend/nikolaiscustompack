@@ -1,4 +1,4 @@
-ServerEvents.recipes(events => {
+ServerEvents.recipes(event => {
     [
         ["embers:molten_iron", "tconstruct:iron"],
         ["embers:molten_gold", "tconstruct:gold"],

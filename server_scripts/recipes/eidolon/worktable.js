@@ -61,6 +61,224 @@ ServerEvents.recipes((event) => {
             "item": "irons_spellbooks:inscription_table"
         }
     })
+    //scroll forge
+    event.remove({ id: 'irons_spellbooks:scroll_forge' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "ddd",
+            " o ",
+            "ooo"
+        ],
+        "reagents": [
+            "icic"
+        ],
+        "key" : {
+            "d": {
+                "item" : "minecraft:polished_deepslate"
+            },
+            "o": {
+                "item": "minecraft:crying_obsidian"
+            },
+            "i": {
+                "item": "irons_spellbooks:epic_ink"
+            },
+            "c": {
+                "item": "goety:cursed_metal_block"
+            }
+        },
+        "result" : {
+            "item": "irons_spellbooks:scroll_forge"
+        }
+    })
+    //arcane anvil
+    event.remove({ id: 'irons_spellbooks:arcane_anvil' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "pmp",
+            "mam",
+            "pmp"
+        ],
+        "reagents": [
+            "l v "
+        ],
+        "key" : {
+            "p": {
+                "item" : "gtceu:manasteel_plate"
+            },
+            "m": {
+                "item": "hexcasting:charged_amethyst"
+            },
+            "a": {
+                "item": "tconstruct:tinkers_anvil",
+                "nbt": '{texture:"tconstruct:amethyst_bronze_block"}'
+            },
+            "l" : {
+                "item" : "ars_nouveau:manipulation_essence"
+            },
+            "v" : {
+                "item" : "ars_nouveau:blank_parchment"
+            }
+        },
+        "result" : {
+            "item": "irons_spellbooks:arcane_anvil"
+        }
+    })
+    //BLOOD MAGIC
+    //blood altar
+    event.remove({ id: 'bloodmagic:blood_altar' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "sis",
+            "sbs",
+            "ptp"
+        ],
+        "reagents": [
+            "rrrr"
+        ],
+        "key" : {
+            "s": {
+                "item" : "goety:shade_stone"
+            },
+            "i": {
+                "item": "eidolon:bloodlust_incense"
+            },
+            "b": {
+                "item": "evilcraft:blood_infuser"
+            },
+            "t" : {
+                "item" : "evilcraft:dark_tank"
+            },
+            "p" : {
+                "item" : "eidolon:pewter_inlay"
+            },
+            "r": {
+                "item": "gtceu:ruby_gem"
+            }
+        },
+        "result" : {
+            "item": "bloodmagic:altar"
+        }
+    })
+    //alchemy table
+    event.remove({ id: 'bloodmagic:alchemy_table' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "v a",
+            "rrr",
+            "bbb"
+        ],
+        "reagents": [
+            "ctit"
+        ],
+        "key" : {
+            "v": {
+                "item" : "botania:vial"
+            },
+            "a": {
+                "item": "magichem:alembic"
+            },
+            "r": {
+                "item": "bloodmagic:blankrune"
+            },
+            "b" : {
+                "item" : "embers:ashen_stone"
+            },
+            "c" : {
+                "item" : "gtceu:calcite_dust"
+            },
+            "t": {
+                "item": "evilcraft:corrupted_tear"
+            },
+            "i": {
+                "item": "embers:iron_aspectus"
+            }
+        },
+        "result" : {
+            "item": "bloodmagic:alchemytable"
+        }
+    })
+    //hellfire forge
+    event.remove({ id: 'bloodmagic:soul_forge' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "ooo",
+            "sis",
+            "srs"
+        ],
+        "reagents": [
+            "cgag"
+        ],
+        "key" : {
+            "o": {
+                "item" : "gtceu:opal_gem"
+            },
+            "s": {
+                "item": "goety:shade_stone"
+            },
+            "i": {
+                "item": "malum:tin_impetus"
+            },
+            "r" : {
+                "item" : "bloodmagic:blankrune"
+            },
+            "c" : {
+                "item" : "hexerei:selenite_shard"
+            },
+            "g" : {
+                "item": "hexalia:spirit_powder"
+            },
+            "a": {
+                "item": "evilcraft:dark_power_gem_block"
+            }
+        },
+        "result" : {
+            "item": "bloodmagic:soulforge"
+        }
+    })
+    //incense altar
+    event.remove({ id: 'bloodmagic:incense_altar' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "pip",
+            "lpl",
+            "lrl"
+        ],
+        "reagents": [
+            "behe"
+        ],
+        "key" : {
+            "p": {
+                "item" : "embers:dawnstone_plate"
+            },
+            "i": {
+                "item": "eidolon:purity_incense"
+            },
+            "l": {
+                "item": "gtceu:long_dawnstone_rod"
+            },
+            "r" : {
+                "item" : "bloodmagic:blankrune"
+            },
+            "b" : {
+                "item" : "malum:blazing_diode"
+            },
+            "e" : {
+                "item": "embers:eldritch_insignia"
+            },
+            "h": {
+                "item": "malum:block_of_hallowed_gold"
+            }
+        },
+        "result" : {
+            "item": "bloodmagic:incensealtar"
+        }
+    })
     //HEXEREI
     //mixing cauldron
     event.remove({ id: 'hexerei:mixing_cauldron' })
