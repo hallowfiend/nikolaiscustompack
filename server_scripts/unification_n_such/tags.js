@@ -489,6 +489,10 @@ ServerEvents.tags("item", (event) => {
     "#forge:cooked_fishes/tuna"
   ]);
 
+  event.add("kubejs:spell_scrolls"), [
+    /irons_spellbooks:scroll/
+  ]
+
   event.add("forge:raw_fishes/tuna", [
     "tide:tuna",
     "spawn:tuna_chunk",

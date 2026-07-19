@@ -34,7 +34,8 @@ const bulkReplace = [
     { target: "enderio:dark_bimetal_gear", replacement: "gtceu:dark_steel_gear"},
     { target: "tidesdelight:tuna_slice", replacement: "spawn:tuna_slice"},
     { target: "tide:grilled_tuna", replacement: "spawn:cooked_tuna_chunk"},
-    { target: "#tidesdelight:cooked_tuna", replacement: "#forge:cooked_fishes/tuna"}
+    { target: "#tidesdelight:cooked_tuna", replacement: "#forge:cooked_fishes/tuna"},
+    { target: "sob:sculk_tendril", replacement: "dungeonsdelight:sculk_polyp"}
 	];
 
 ServerEvents.recipes((event) => {

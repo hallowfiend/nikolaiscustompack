@@ -103,8 +103,8 @@ const recipes = [
     ],
     output:"eidolon:elder_brick",
     output_amount:16,
-    liquid:"minecraft:lava",
     output_liquid:false,
+    liquid:"minecraft:lava",
     liquid_consum:100,
     heat:false
 },
@@ -162,8 +162,8 @@ const recipes = [
     output_amount:1,
     liquid:"minecraft:lava",
     output_liquid:false,
-    heat:false,
-    liquid_consum:1000
+    liquid_consum:1000,
+    heat:false
 },
 {
     inputItem:[
@@ -520,7 +520,7 @@ const recipes = [
                 "type": "hexerei:mixingcauldron",
                 "liquid": recipe.liquid,
                 "ingredients":recipe.inputItem,
-                "output": {"item": recipe.output,"count":recipe.output_amount},
+                "output": {"item": recipe.output, "count":recipe.output_amount},
                 "liquidOutput": {"fluid": recipe.output_liquid},
                 "fluidLevelsConsumed":recipe.liquid_consum
                });

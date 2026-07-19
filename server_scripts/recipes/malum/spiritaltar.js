@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
     event.custom({
     "type": "malum:spirit_infusion",
     "input": {
-      "item": `#forge:nuggets/${seed.nugget}`,
+      "tag": `#forge:nuggets/${seed.nugget}`,
       "count": 1
     },
     "output": {
@@ -73,11 +73,11 @@ ServerEvents.recipes((event) => {
     "spirits": [
       {
         "type": "arcane",
-        "count": 2
+        "count": 8
       },
       {
         "type": "earthen",
-        "count": 2
+        "count": 8
       }
     ]
   })

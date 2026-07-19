@@ -74,7 +74,7 @@ global.removedItems = [
   'tidesdelight:cheese',
   'tconstruct:cheese_ingot',
   'tconstruct:cheese_block',
-  //meat unification
+  //foodstuff unification
   /twilightforest:.*venison/,
   /twilightdelight:.*venison_rib/,
   /naturalist:.*venison/,
@@ -85,7 +85,8 @@ global.removedItems = [
   /crabbersdelight:.*squid_tentacles/,
   'tide:grilled_tuna',
   'tidesdelight:tuna_steak',
-  'tidesdelight:tuna_slice'
+  'tidesdelight:tuna_slice',
+  'sob:sculk_tendril'
 ];
 
 global.removedRecipeIds = [

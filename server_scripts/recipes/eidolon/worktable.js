@@ -33,7 +33,8 @@ ServerEvents.recipes((event) => {
         ],
         "key" : {
             "s": {
-                "item" : "irons_spellbooks:scroll"
+                "item" : "irons_spellbooks:scroll",
+                "nbt": /.*/
             },
             "q": {
                 "item": "minecraft:writable_book"
@@ -112,7 +113,7 @@ ServerEvents.recipes((event) => {
             },
             "a": {
                 "item": "tconstruct:tinkers_anvil",
-                "nbt": '{texture:"tconstruct:amethyst_bronze_block"}'
+                "nbt": /.*/
             },
             "l" : {
                 "item" : "ars_nouveau:manipulation_essence"
