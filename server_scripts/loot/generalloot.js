@@ -8,9 +8,14 @@ LootJS.modifiers((event) => {
     .replaceLoot('galosphere:silver_nugget', 'gtceu:silver_nugget', true)
     .replaceLoot('immersiveengineering:nugget_lead', 'gtceu:lead_nugget', true)
     .replaceLoot('immersiveengineering:nugget_silver', 'gtceu:silver_nugget', true)
-    .replaceLoot("born_in_chaos_v1:mint_ice_cream", "neapolitan:mint_ice_cream", true)
-    .replaceLoot("born_in_chaos_v1:mint_candy", "neapolitan:mint_candies", true)
-    .replaceLoot("born_in_chaos_v1:river_mint", "neapolitan:mint_leaves", true)
-    .replaceLoot("born_in_chaos_v1:coffee_candy", "collectorsreap:coffee_gummy", true)
-    .removeLoot(/enderio:.*gear/);
+    .removeLoot(/enderio:.*gear/)
+    //removing duplicate calamari
+    .removeLoot('rusticdelight:calamari')
+    .removeLoot('crabbersdelight:raw_squid_tentacles')
+    .removeLoot('crabbersdelight:cooked_squid_tentacles')
+    .removeLoot('oceanicdelight:squid_tentacles')
+    .removeLoot('culturaldelights:squid')
+    //replacing venison
+    .replaceLoot(/.*:raw_venison/, "environmental:venison", true)
+    .replaceLoot(/.*:cooked_venison/, "environmental:venison", true)
 });

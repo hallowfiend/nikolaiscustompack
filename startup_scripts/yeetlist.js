@@ -73,7 +73,15 @@ global.removedItems = [
   'alexsmobsdelight:cheese',
   'tidesdelight:cheese',
   'tconstruct:cheese_ingot',
-  'tconstruct:cheese_block'
+  'tconstruct:cheese_block',
+  /twilightforest:.*venison/,
+  /twilightdelight:.*venison_rib/,
+  /naturalist:.*venison/,
+  /culturaldelights:.*calamari/,
+  /rusticdelight:.*calamari.*/,
+  /oceanicdelight:.*squid_tentacles/,
+  /culturaldelights:.*squid/,
+  /crabbersdelight:.*squid_tentacles/
 ];
 
 global.removedRecipeIds = [

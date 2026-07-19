@@ -480,6 +480,17 @@ ServerEvents.tags("item", (event) => {
     'enderio:filled_soul_vial'
   ]);
 
+  event.add("forge:cooked_fishes/tuna", [
+    "spawn:cooked_tuna_chunk",
+    "spawn:cooked_tuna_slice"
+  ]);
+
+  event.add("forge:raw_fishes/tuna", [
+    "tide:tuna",
+    "spawn:tuna_chunk",
+    "spawn:tuna_slice"
+  ]);
+
   event.add("chipped:stripped_bamboo_log", ["minecraft:stripped_bamboo_block"]);
   event.add("chipped:stripped_crimson_log", ["#chipped:stripped_crimson_stem"]);
   event.add("chipped:stripped_snake_block_log", ["minecraft:prismarine"]);
@@ -489,6 +500,9 @@ ServerEvents.tags("item", (event) => {
 
   event.add("curios:head", ["gtceu:face_mask"]);
   event.add("curios:hands", ["gtceu:rubber_gloves"]);
+
+  event.add("twilightdelight:vension_raw", ["#forge:raw_venison"])
+  event.add("twilightdelight:vension_cooked", ["#forge:cooked_venison"])
 
   event.add("deep_aether:skyjade_repairing", ["#forge:gems/skyjade"]);
 
