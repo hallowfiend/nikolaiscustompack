@@ -6,7 +6,7 @@ const bulkReplace = [
     { target: 'irons_spellbooks:blood_vial', replacement: 'hexerei:blood_bottle'},
     { target: 'eidolon:parchment', replacement: 'mna:vellum'},
     { target: 'hexalia:mandrake', replacement: 'hexerei:mandrake_root'},
-    { target: 'hexalia:salt', replacement: 'forge:salt'},
+    { target: 'hexalia:salt', replacement: '#forge:salt'},
     { target: 'farm_and_charm:chicken_parts', replacement: 'farmersdelight:chicken_cuts'},
     { target: 'farm_and_charm:raw_pasta', replacement: 'farmersdelight:raw_pasta'},
     { target: 'farm_and_charm:minced_beef', replacement: 'farmersdelight:minced_beef'},
@@ -32,7 +32,7 @@ const bulkReplace = [
     { target: "enderio:energized_gear", replacement: "gtceu:energetic_alloy_gear"},
     { target: "enderio:vibrant_gear", replacement: "gtceu:vibrant_alloy_gear"},
     { target: "enderio:dark_bimetal_gear", replacement: "gtceu:dark_steel_gear"},
-    { target: "tidesdelight:raw_tuna_slice", replacement: "spawn:tuna_slice"},
+    { target: "tidesdelight:tuna_slice", replacement: "spawn:tuna_slice"},
     { target: "tide:grilled_tuna", replacement: "spawn:cooked_tuna_chunk"},
     { target: "#tidesdelight:cooked_tuna", replacement: "#forge:cooked_fishes/tuna"}
 	];

@@ -485,6 +485,10 @@ ServerEvents.tags("item", (event) => {
     "spawn:cooked_tuna_slice"
   ]);
 
+  event.add("tidesdelight:cooked_tuna", [
+    "#forge:cooked_fishes/tuna"
+  ]);
+
   event.add("forge:raw_fishes/tuna", [
     "tide:tuna",
     "spawn:tuna_chunk",

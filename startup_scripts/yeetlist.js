@@ -74,6 +74,7 @@ global.removedItems = [
   'tidesdelight:cheese',
   'tconstruct:cheese_ingot',
   'tconstruct:cheese_block',
+  //meat unification
   /twilightforest:.*venison/,
   /twilightdelight:.*venison_rib/,
   /naturalist:.*venison/,
@@ -81,7 +82,10 @@ global.removedItems = [
   /rusticdelight:.*calamari.*/,
   /oceanicdelight:.*squid_tentacles/,
   /culturaldelights:.*squid/,
-  /crabbersdelight:.*squid_tentacles/
+  /crabbersdelight:.*squid_tentacles/,
+  'tide:grilled_tuna',
+  'tidesdelight:tuna_steak',
+  'tidesdelight:tuna_slice'
 ];
 
 global.removedRecipeIds = [
@@ -101,6 +105,7 @@ global.removedRecipeTypes = [
     "irons_spellbooks:alchemist_cauldron", //flattened into hexerei cauldron
     'eternal_starlight:alloy', //flattened into alloy blast smelter
     'eternal_starlight:alloy_furnace_cooling', //idk what this even is tbh
+    'eternal_starlight:drying', //not needed
     'betterend:anvil', //not needed
     'betterend:alloying', //flattened into alloy blast smelter
     'betterend:infusion', //flattened into goety rituals

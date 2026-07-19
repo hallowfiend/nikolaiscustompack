@@ -20,8 +20,8 @@ ServerEvents.recipes((event) => {
 
     //Livingwood
     event.recipes.botania.pure_daisy("botania:livingwood_log", "#forge:logs/archwood")
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#tcompat:logs/runewood")
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#tcompat:logs/soulwood")
+    event.recipes.botania.pure_daisy("botania:livingwood_log", "#malum:runewood_logs")
+    event.recipes.botania.pure_daisy("botania:livingwood_log", "#malum:soulwood_logs")
     event.recipes.botania.pure_daisy("botania:livingwood_log", "#environmental:willow_logs")
     event.recipes.botania.pure_daisy("botania:livingwood_log", "#hexalia:cottonwood_logs")
     event.recipes.botania.pure_daisy("botania:livingwood_log", "#hibernalherbs:myqueste_logs")

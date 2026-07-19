@@ -25,7 +25,63 @@ ServerEvents.recipes((event) => {
   //blast furnace fuel
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:arcane_charcoal', 600)
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:block_of_arcane_charcoal', 6000)
-  
+
+  //chimerite
+  const chimeriteSeeds = [
+    {nugget: "palladium", mult: "1"}, //4
+    {nugget: "mithril", mult: "4"}, //16
+    {nugget: "sterling_silver", mult: "8"}, //32
+    {nugget: "iesnium", mult: "16"} //64
+  ]
+  chimeriteSeeds.forEach(seed => {
+    event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": `#forge:nuggets/${seed.nugget}`,
+      "count": 1
+    },
+    "output": {
+      "item": "mna:chimerite_gem",
+      "count": 4*seed.mult
+    },
+    "extra_items": [
+      {
+      "item": "experienceobelisk:cognitive_flux",
+      "count": 1
+      },
+      {
+      "item": "mna:purified_vinteum_dust",
+      "count": 1
+      },
+      {
+      "item": "cold_sweat:chameleon_molt",
+      "count": 1
+      },
+      {
+      "item": "cosmopolitan:aurora_kohakutou",
+      "count": 1
+      },
+      {
+      "tag": "#forge:gems/spinel",
+      "count": 1
+      },
+      {
+      "tag": "#forge:gems/opal",
+      "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "arcane",
+        "count": 2
+      },
+      {
+        "type": "earthen",
+        "count": 2
+      }
+    ]
+  })
+  })
   // soulstained bronze
   event.remove({ id: "malum:spirit_infusion/soul_stained_steel_ingot" })
   event.custom({

@@ -111,12 +111,14 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('soularium', 'enderio:soularium_ingot')
     ingot('end_steel', 'enderio:end_steel_ingot')
     ingot('moon_cheese', 'ad_astra:cheese')
+    ingot('iesnium', 'occultism:iesnium_ingot')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
     ingotHot('purified_vinteum_alloy', 'mna:superheated_purified_vinteum_ingot')
 
 //Blocks
+    block('iesnium', 'occultism:iesnium_block')
     block('arcane_gold', 'eidolon:arcane_gold_block')
     block('pewter', 'eidolon:pewter_block')
     block('desh', 'ad_astra:desh_block')
@@ -220,6 +222,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('dark_steel', 'enderio:dark_steel_nugget')
     nugget('soularium', 'enderio:soularium_nugget')
     nugget('end_steel', 'enderio:end_steel_nugget')
+    nugget('iesnium', 'occultism:iesnium_nugget')
 
 //Plates
     plate('desh', 'ad_astra:desh_plate')
@@ -245,6 +248,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     dust('anthralite', 'scguns:anthralite_dust')
     dust('endstone', 'occultism:crushed_end_stone')
     dust('ember', 'embers:ember_grit')
+    dust('iesnium', 'occultism:iesnium_dust')
 
 //Small dusts
     
