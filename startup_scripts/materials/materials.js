@@ -369,15 +369,19 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .color(0x8CA0D6)
         .flags(no_decomp)
-        .components('inert_crystal', '2x aqua')
+        .components('inert_crystal', '10x aqua')
         .iconSet(QUARTZ)
-        .flags(plates, lens);
+        .flags(
+            plates,
+            lens,
+            no_decomp
+        );
 
     event.create("drenched_iron")
         .ingot()
         .color(0x93b8de)
         .iconSet(GTMaterialIconSet.BRIGHT)
-        .components('1x iron', '2x aqua')
+        .components('1x iron', '5x aqua')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -388,7 +392,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
     event.create("springaline")
         .gem()
         .color(0x5d88b7)
-        .components('amethyst', 'water_crystal', '2x aqua')
+        .components('amethyst', 'water_crystal', '25x aqua')
         .iconSet(GTMaterialIconSet.GEM_VERTICAL)
         .flags(
             GTMaterialFlags.GENERATE_LENS,

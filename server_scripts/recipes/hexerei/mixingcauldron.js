@@ -518,7 +518,7 @@ const recipes = [
         if(recipe.heat == false){
             event.custom({
                 "type": "hexerei:mixingcauldron",
-                "liquid": recipe.liquid,
+                "liquid": {"fluid": recipe.liquid},
                 "ingredients":recipe.inputItem,
                 "output": {"item": recipe.output, "count":recipe.output_amount},
                 "liquidOutput": {"fluid": recipe.output_liquid},
