@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
     event.custom({
     "type": "malum:spirit_infusion",
     "input": {
-      "tag": `#forge:nuggets/${seed.nugget}`,
+      "tag": `forge:nuggets/${seed.nugget}`,
       "count": 1
     },
     "output": {

@@ -86,7 +86,7 @@ ServerEvents.recipes(event =>{
         },
         {
             input: {"item": "hexalia:silk_fiber"},
-            output: 'hexalia:minecraft:string',
+            output: 'minecraft:string',
             baseGrindingTime: 30
         },
         // GT mortar grindables

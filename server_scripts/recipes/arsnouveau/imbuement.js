@@ -16,9 +16,8 @@ ServerEvents.recipes(event => {
     spellTypes.forEach(type => {
         event.custom({
 				type: 'ars_nouveau:imbuement',
-				input: "mna:vinteum_dust",
-				output: `ars_nouveau:${type.spellType}_essence`,
-				count: 1,
+				input: {"item": "mna:vinteum_dust" },
+				output: { "item": `ars_nouveau:${type.spellType}_essence`, count: 1},
 				source: 1500,
 				pedestalItems: [
                     {"item": `malum:${type.apparatus}`},
@@ -32,9 +31,8 @@ ServerEvents.recipes(event => {
     elements.forEach(element => {
         event.custom({
 				type: 'ars_nouveau:imbuement',
-				input: "mna:vinteum_dust",
-				output: `ars_nouveau:${element.element}_essence`,
-				count: 1,
+				input:  {"item": "mna:vinteum_dust" },
+				output: { "item": `ars_nouveau:${element.element}_essence`, count: 1},
 				source: 1500,
 				pedestalItems: [
                     {"item": `mna:mote_${element.element}`},
@@ -47,9 +45,8 @@ ServerEvents.recipes(event => {
     //anima essence - the exception
     event.custom({
 				type: 'ars_nouveau:imbuement',
-				input: "mna:vinteum_dust",
-				output: "ars_elemental:anima_essence",
-				count: 1,
+				input:  {"item": "mna:vinteum_dust" },
+				output: {"item": "ars_elemental:anima_essence", count: 1},
 				source: 1500,
 				pedestalItems: [
                     {"tag": "extra_sins:living_flesh"},
