@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             no_decomp,
             plates
         )
-        .components('brass', 'spirit', 'firmamentum', 'xenorhast', 'antiaura')
+        .components('brass', 'spirit', 'exispiravit', 'xenorhast', 'antiaura')
 
     //Malum
 
@@ -106,7 +106,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xE9CBF3)
         .secondaryColor(0x37204C)
         .ingot()
-        .components('pewter', 'malignant_lead', '8x null_slate', '3x cursed_alloy')
+        .components('pewter', 'malignant_lead', '8x null_slate', '3x cursed_alloy', '16x terrae', '4x xenorhast')
         .cableProperties(GTValues.V[GTValues.IV], 2, 1, false)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -126,7 +126,21 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .color(0xe7d26d)
             .cableProperties(GTValues.V[GTValues.LV], 8, 8, true)
             .components('gold', '4x quartzite', '2x sacrum', 'arkanum')
+            .flags(
+                GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            no_decomp
+            )
             .iconSet(SHINY);
+
+    //Undergarden
 
     event.create("regalium")
         .components('3x aluminium', 'quartzite', 'cthonic_gold')

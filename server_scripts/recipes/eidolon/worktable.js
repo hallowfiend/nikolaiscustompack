@@ -499,7 +499,7 @@ ServerEvents.recipes((event) => {
         ],
         "key": {
             "h": {
-                "item": "gtceu:gold_rod"
+                "item": "gtceu:arcane_gold_rod"
             },
             "a": {
                 "item": "ars_nouveau:archwood_planks"
@@ -512,7 +512,72 @@ ServerEvents.recipes((event) => {
             "item": "ars_nouveau:imbuement_chamber"
         }
     })
-
+    //arcane core
+    event.remove({ id: 'ars_nouveau:arcane_core' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "sps",
+            "hbh",
+            "sps"
+        ],
+        "reagents": [
+            "mmmm"
+        ],
+        "key": {
+            "h": {
+                "item": "gtceu:arcane_gold_rod"
+            },
+            "s": {
+                "item": "ars_nouveau:sourcestone"
+            },
+            "p": {
+                "item": "malum:soul_stained_steel_plating"
+            },
+            "b": {
+                "item": "ars_nouveau:source_gem_block"
+            },
+            "m":{
+                "item": "hexerei:moon_dust"
+            }
+        },
+        "result": {
+            "item": "ars_nouveau:arcane_core"
+        }
+    })
+    //enchanting apparatus
+    event.remove({ id: 'ars_nouveau:enchanting_apparatus' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "hsh",
+            "aba",
+            "hsh"
+        ],
+        "reagents": [
+            "mmmm"
+        ],
+        "key": {
+            "h": {
+                "item": "gtceu:arcane_gold_rod"
+            },
+            "s": {
+                "item": "ars_nouveau:sourcestone"
+            },
+            "a": {
+                "item": "malum:hex_ash"
+            },
+            "b": {
+                "item": "botania:mana_pearl"
+            },
+            "m":{
+                "item": "irons_spellbooks:arcane_essence"
+            }
+        },
+        "result": {
+            "item": "ars_nouveau:enchanting_apparatus"
+        }
+    })
     //scribe's table
     event.remove({ id: 'ars_nouveau:scribes_table' })
     event.custom({

@@ -86,6 +86,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('black_steel', 'cataclysm:black_steel_ingot')
     ingot('soul_stained_steel', 'malum:soul_stained_steel_ingot')
     ingot('hallowed_gold', 'malum:hallowed_gold_ingot')
+    ingot('malum', 'malum:malignant_pewter_ingot')
     ingot('vinteum_alloy', 'mna:vinteum_ingot')
     ingot('purified_vinteum_alloy', 'mna:purified_vinteum_ingot')
     ingot('bendalloy', 'cosmere:bendalloy_ingot')
@@ -112,6 +113,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('end_steel', 'enderio:end_steel_ingot')
     ingot('moon_cheese', 'ad_astra:cheese')
     ingot('iesnium', 'occultism:iesnium_ingot')
+    ingot('cursed_alloy', 'goety:cursed_ingot')
 
 //Hot ingots
     ingotHot('vinteum_alloy', 'mna:superheated_vinteum_ingot')
@@ -148,6 +150,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('vinteum', 'mna:vinteum_dust_block')
     block('soulstone', 'malum:block_of_soulstone')
     block('cthonic_gold', 'malum:block_of_cthonic_gold')
+    block('malignant_lead', "malum:block_of_malignant_lead")
+    block('malignant_pewter', 'malum:block_of_malignant_pewter')
     block('vinteum_alloy', 'mna:vinteum_block')
     block('bendalloy', 'cosmere:bendalloy_block')
     block('nicrosil', 'cosmere:nicrosil_block')
@@ -186,6 +190,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('soularium', 'enderio:soularium_block')
     block('end_steel', 'enderio:end_steel_block')
     block('moon_cheese', 'ad_astra:cheese_block')
+    block('cursed_alloy', 'goety:cursed_metal_block')
+    block('null_slate', 'malum:block_of_null_slate')
 
 //Nuggets
     nugget('arcane_gold', 'eidolon:arcane_gold_nugget')
@@ -202,6 +208,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('black_steel', 'cataclysm:black_steel_nugget')
     nugget('soul_stained_steel', 'malum:soul_stained_steel_nugget')
     nugget('hallowed_gold', 'malum:hallowed_gold_nugget')
+    nugget('malignant_pewter', 'malum:malignant_pewter_nugget')
     nugget('bendalloy', 'cosmere:bendalloy_nugget')
     nugget('nicrosil', 'cosmere:nicrosil_nugget')
     nugget('duralumin', 'cosmere:duralumin_nugget')
@@ -291,7 +298,9 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('malarite', 'eternal_starlight:malarite')
     gem('amber', 'betterend:amber_gem')
     gem('cthonic_gold', 'malum:cthonic_gold')
+    gem('malignant_lead', 'malum:malignant_lead')
     gem('blazing_quartz', 'malum:blazing_quartz')
+    gem('null_slate', 'malum:null_slate')
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')
