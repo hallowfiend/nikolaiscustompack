@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gem()
         .color(0xB8D1DB)
         .secondaryColor(0x777777)
-        .components('lead', '4x solid_xenorhast', 'ether')
+        .components('lead', '2x corrosive_will', '2x destructive_will', 'ether')
         .iconSet(SHINY)
         .flags(no_decomp);
     
@@ -77,7 +77,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create('null_slate')
             .gem()
             .color(0xCF00C9)
-            .components('plutonium', 'neptunium', '4x solid_xenorhast', '4x corrosive_will', 'antiaura', 'source')
+            .components('plutonium', 'neptunium', 'antiaura', '2x mundus', 'source')
             .flags(
                 no_decomp
             )

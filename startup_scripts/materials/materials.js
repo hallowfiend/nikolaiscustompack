@@ -259,7 +259,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .gas()
         .color(0xdbf56e)
-        .components('carbon', 'antiaura', 'corrosive_will')
+        .components('carbon', 'antiaura', 'azoth', 'exispiravit')
         .flags(
             no_decomp,
             no_smashing
@@ -364,18 +364,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .flags(no_decomp)
         .components('nether_quartz', 'terrae', 'titanium_oxide', '2x mundus')
         .iconSet(QUARTZ);
-    
-    event.create('water_crystal')
-        .gem()
-        .color(0x8CA0D6)
-        .flags(no_decomp)
-        .components('inert_crystal', '10x aqua')
-        .iconSet(QUARTZ)
-        .flags(
-            plates,
-            lens,
-            no_decomp
-        );
+
 
     event.create("drenched_iron")
         .ingot()
@@ -651,7 +640,7 @@ event.create('mithril')
             .color(0xb7f0e6)
             .addOreByproducts('lead', 'vinteum', 'sulfur', 'vehement_coal', 'raw_will')
             .washedIn('life_essence')
-            .components('galena', '4x antiaura', '4x solid_infernalis')
+            .components('galena', '6x antiaura', '6x solid_infernalis', '6x exispiravit')
             .iconSet(GTMaterialIconSet.METALLIC)
             .flags(
                 GTMaterialFlags.GENERATE_PLATE,
