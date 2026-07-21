@@ -15,7 +15,7 @@
         [
             {"item": "hexalia:spirit_powder"},
             {"item": "goety:ectoplasm"},
-            {"item": "hexerei:sage_seeds"},
+            {"item": "hexerei:sage_seed"},
             {"item": "elementalcraft:inert_crystal"},
             {"tag": "#forge:essences/death"}
         ],

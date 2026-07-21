@@ -291,6 +291,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('malarite', 'eternal_starlight:malarite')
     gem('amber', 'betterend:amber_gem')
     gem('cthonic_gold', 'malum:cthonic_gold')
+    gem('blazing_quartz', 'malum:blazing_quartz')
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')

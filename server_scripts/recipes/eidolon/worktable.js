@@ -18,6 +18,145 @@ ServerEvents.recipes((event) => {
     //im turning this table into the central magic item crafting station and NOBODY CAN STOP ME
     //except for components that is im leaving those to be craftable normalstyle because i love ae2
     //IRON'S
+    //graybeard staff
+    event.remove({ id: 'irons_spellbooks:sequenced_assembly/graybeard_staff' })
+    event.remove({ id: 'irons_spellbooks:graybeard_staff' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            " rb",
+            " lr",
+            "r  "
+        ],
+        "reagents": [
+            "eeee"
+        ],
+        "key" : {
+            "r": {
+                "item" : "gtceu:pewter_ring"
+            },
+            "l": {
+                "item": "gtceu:long_wood_rod"
+            },
+            "b": {
+                "tag": "farmersdelight:barks"
+            },
+            "e": {
+                "item": "irons_spellbooks:arcane_essence"
+            }
+        },
+        "result" : {
+            "item": "irons_spellbooks:graybeard_staff"
+        }
+    })
+    //ice staff
+    event.remove({ id: 'irons_spellbooks:deploying/ice_staff' })
+    event.remove({ id: 'irons_spellbooks:ice_staff' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            " rb",
+            " lr",
+            "f  "
+        ],
+        "reagents": [
+            "egeg"
+        ],
+        "key" : {
+            "r": {
+                "item" : "gtceu:froststeel_bolt"
+            },
+            "l": {
+                "item": "irons_spellbooks:frosted_helve"
+            },
+            "b": {
+                "item": "irons_spellbooks:permafrost_shard"
+            },
+            "f":{
+                "item": "goety:frost_breath_focus"
+            },
+            "e": {
+                "item": "cosmopolitan:glacier_essence"
+            },
+            "g": {
+                "item": "goety:freezing_lamp"
+            }
+        },
+        "result" : {
+            "item": "irons_spellbooks:ice_staff"
+        }
+    })
+    //artificer's cane
+    event.remove({ id: 'irons_spellbooks:sequenced_assembly/artificer_cane' })
+    event.remove({ id: 'irons_spellbooks:artificer_cane' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            " rb",
+            " lr",
+            "t  "
+        ],
+        "reagents": [
+            "iiee"
+        ],
+        "key" : {
+            "r": {
+                "item" : "gtceu:gold_ring"
+            },
+            "b": {
+                "item": "hexcasting:charged_amethyst"
+            },
+            "l": {
+                "item": "quark:stripped_crimson_post"
+            },
+            "t": {
+                "item": "gtceu:topaz_gem"
+            },
+            "e": {
+                "item": "gtceu:double_arcane_gold_plate"
+            },
+            "i":{
+                "item": "eidolon:gold_inlay"
+            }
+        },
+        "result" : {
+            "item": "irons_spellbooks:artificer_cane"
+        }
+    })
+    //pyrium staff
+    event.remove({ id: 'irons_spellbooks:sequenced_assembly/pyrium_staff' })
+    event.remove({ id: 'irons_spellbooks:pyrium_staff' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            " rb",
+            " lr",
+            "t  "
+        ],
+        "reagents": [
+            "nnnn"
+        ],
+        "key" : {
+            "r": {
+                "item" : "irons_spellbooks:pyrium_ingot"
+            },
+            "b": {
+                "item": "malum:block_of_blazing_quartz"
+            },
+            "l": {
+                "item": "gtceu:long_tungsten_rod"
+            },
+            "t": {
+                "item": "malum:copper_impetus"
+            },
+            "n":{
+                "item": "gtceu:netherite_plate"
+            }
+        },
+        "result" : {
+            "item": "irons_spellbooks:pyrium_staff"
+        }
+    })
     //inscription table
     event.remove({ id: 'irons_spellbooks:sequenced_assembly/inscription_table' })
     event.remove({ id: 'irons_spellbooks:inscription_table' })

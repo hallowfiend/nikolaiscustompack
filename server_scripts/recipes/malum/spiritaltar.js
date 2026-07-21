@@ -62,11 +62,11 @@ ServerEvents.recipes((event) => {
       "count": 1
       },
       {
-      "tag": "#forge:gems/spinel",
+      "tag": "forge:gems/spinel",
       "count": 1
       },
       {
-      "tag": "#forge:gems/opal",
+      "tag": "forge:gems/opal",
       "count": 1
       }
     ],
@@ -112,6 +112,43 @@ ServerEvents.recipes((event) => {
       {
         "type": "arcane",
         "count": 1
+      }
+    ]
+  })
+  //malignant pewter
+  event.remove({ id: "malum:spirit_infusion/malignant_pewter_ingot" })
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": "eidolon:pewter_ingot",
+      "count": 4
+    },
+    "output": {
+      "item": "malum:malignant_pewter_ingot",
+      "count": 4
+    },
+    "extra_items": [
+      {
+      "item": "malum:null_slate",
+      "count": 8
+      },
+      {
+        "item": "malum:malignant_lead",
+        "count": 1
+      },
+      {
+        "item": "gtceu:cursed_alloy_plate",
+        "count": 3
+      }
+    ],
+    "spirits": [
+      {
+        "type": "earthen",
+        "count": 16
+      },
+      {
+        "type": "eldritch",
+        "count": 4
       }
     ]
   })

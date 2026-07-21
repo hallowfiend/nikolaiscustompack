@@ -18,9 +18,9 @@ ServerEvents.recipes(event => {
     event.custom(
     {
       "type": "embers:ember_activation",
-      "ember": 4400,
+      "ember": 1000,
       "input": {
-        "item": "gtceu:flawless_ember_gem"
+        "item": "gtceu:ember_gem"
       }
     })
 })
