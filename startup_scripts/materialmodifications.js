@@ -86,7 +86,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('black_steel', 'cataclysm:black_steel_ingot')
     ingot('soul_stained_steel', 'malum:soul_stained_steel_ingot')
     ingot('hallowed_gold', 'malum:hallowed_gold_ingot')
-    ingot('malum', 'malum:malignant_pewter_ingot')
+    ingot('malignant_pewter', 'malum:malignant_pewter_ingot')
     ingot('vinteum_alloy', 'mna:vinteum_ingot')
     ingot('purified_vinteum_alloy', 'mna:purified_vinteum_ingot')
     ingot('bendalloy', 'cosmere:bendalloy_ingot')
@@ -230,6 +230,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('soularium', 'enderio:soularium_nugget')
     nugget('end_steel', 'enderio:end_steel_nugget')
     nugget('iesnium', 'occultism:iesnium_nugget')
+    nugget('cursed_alloy', 'dungeonsdelight:stained_scrap')
 
 //Plates
     plate('desh', 'ad_astra:desh_plate')

@@ -35,7 +35,15 @@ const bulkReplace = [
     { target: "tidesdelight:tuna_slice", replacement: "spawn:tuna_slice"},
     { target: "tide:grilled_tuna", replacement: "spawn:cooked_tuna_chunk"},
     { target: "#tidesdelight:cooked_tuna", replacement: "#forge:cooked_fishes/tuna"},
-    { target: "sob:sculk_tendril", replacement: "dungeonsdelight:sculk_polyp"}
+    { target: "sob:sculk_tendril", replacement: "dungeonsdelight:sculk_polyp"},
+    //wire unification
+    { target: "immersiveengineering:wire_copper", replacement: "gtceu:copper_single_wire"},
+    { target: "immersiveengineering:wire_electrum", replacement: "gtceu:electrum_single_wire"},
+    { target: "immersiveengineering:wire_aluminum", replacement: "gtceu:aluminium_single_wire"},
+    { target: "immersiveengineering:wire_steel", replacement: "gtceu:steel_single_wire"},
+    { target: "immersiveengineering:wire_lead", replacement: "gtceu:lead_single_wire"},
+    { target: "createaddition:iron_wire", replacement: "gtceu:iron_single_wire"},
+    { target: "createaddition:gold_wire", replacement: "gtceu:gold_single_wire"}
 	];
 
 ServerEvents.recipes((event) => {

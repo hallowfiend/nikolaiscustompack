@@ -172,6 +172,9 @@
     "material.gtceu.pulsating_alloy": "Pulsating Alloy",
     "material.gtceu.vibrant_alloy": "Vibrant Alloy",
 
+    "material.gtceu.malignant_pewter": "Malignant Pewter",
+    "material.gtceu.cursed_alloy": "Cursed Metal",
+
     "material.gtceu.bismuthinite": "Bismuthinite",
     "material.gtceu.hadalite": "Hadalite",
     "material.gtceu.naumannite": "Naumannite",
@@ -265,7 +268,7 @@
     "material.gtceu.purified_vinteum": "Purified Vinteum",
 
     "material.gtceu.inert_crystal": "Inert Crystal",
-    "material.gtceu.drenched_iron": "Drenched Iron",
+    "material.gtceu.drenched_iron": "Drenched Invar",
     "material.gtceu.water_crystal": "Water Crystal",
     "material.gtceu.springaline": "Springaline",
     "material.gtceu.turquoise": "Turquoise",

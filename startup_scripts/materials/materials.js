@@ -371,6 +371,14 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color(0x93b8de)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .components('1x iron', '5x aqua')
+        .toolStats(
+            ToolProperty.Builder.of(1.3, 3.2, 200, 2,
+                [
+                    GTToolType.BUZZSAW
+                ]
+            )
+            .build()
+        ) 
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,

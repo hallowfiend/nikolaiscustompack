@@ -23,6 +23,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     addFluid(GTMaterials.Tellurium, $FluidStorageKeys.LIQUID);
     GTMaterials.Germanium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Germanium, $FluidStorageKeys.LIQUID);
+    GTMaterials.Brass.addFlags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR);
     GTMaterials.CertusQuartz.addFlags(GTMaterialFlags.GENERATE_LENS);
     GTMaterials.Netherite.addFlags(GTMaterialFlags.GENERATE_PLATE);
     
@@ -81,11 +82,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula('Fe?Ni?Ga?Ge?')
          .toolStats(
             ToolProperty.Builder.of(0.9, 5.5, 700, 3)
+            .enchantment(Enchantment.UNBREAKING, 3)
+            .enchantment(Enchantment.EFFICIENCY, 3)
+            .enchantment(Enchantment.SHARPNESS, 3)
             .build()
         ) 
-        .addDefaultEnchant('minecraft:unbreaking', '3')
-        .addDefaultEnchant('minecraft:efficiency', '3')
-        .addDefaultEnchant('minecraft:sharpness', '3')
         .iconSet(METALLIC);
     
     //Rocks and minerals

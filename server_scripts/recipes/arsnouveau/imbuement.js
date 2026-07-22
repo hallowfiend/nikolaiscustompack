@@ -59,5 +59,4 @@ ServerEvents.recipes(event => {
                     {"item": {"item": "malum:rune_of_culling"}}
                 ]
 			  })
-
 })

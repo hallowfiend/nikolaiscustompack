@@ -497,7 +497,7 @@ ServerEvents.tags("item", (event) => {
     "tide:tuna",
     "spawn:tuna_chunk",
     "spawn:tuna_slice"
-  ]);
+  ])
 
   event.add("chipped:stripped_bamboo_log", ["minecraft:stripped_bamboo_block"]);
   event.add("chipped:stripped_crimson_log", ["#chipped:stripped_crimson_stem"]);
