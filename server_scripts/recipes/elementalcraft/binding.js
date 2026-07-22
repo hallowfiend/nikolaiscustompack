@@ -5,11 +5,11 @@ ServerEvents.recipes(event => {
     elementalcraftRecipes.bind(
         "bloodmagic:activationcrystalweak",
         [
-            "bloodmagic:lava_crystal",
-            "goety:animation_core",
-            "deep_aether:skyjade",
-            "botania:mana_powder",
-            "ars_nouveau:conjuration_essence"
+            {"item": "bloodmagic:lavacrystal"},
+            {"item": "goety:animation_core"},
+            {"item": "deep_aether:skyjade"},
+            {"item": "botania:mana_powder"},
+            {"item": "ars_nouveau:conjuration_essence"}
         ],
         2000,
         "air"
@@ -17,11 +17,11 @@ ServerEvents.recipes(event => {
     elementalcraftRecipes.bind(
         "bloodmagic:activationcrystalawakened",
         [
-            "bloodmagic:activationcrystalweak",
-            "malum:mnemonic_fragment",
-            "magichem:thunderstone",
-            "eternal_starlight:unrealium_ingot",
-            "naturesaura:sky_ingot"
+            {"item": "bloodmagic:activationcrystalweak"},
+            {"item": "malum:mnemonic_fragment"},
+            {"item": "magichem:thunderstone"},
+            {"item": "eternal_starlight:unrealium_ingot"},
+            {"item": "naturesaura:sky_ingot"}
         ],
         4000,
         "water"

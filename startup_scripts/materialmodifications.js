@@ -131,7 +131,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('desh', 'ad_astra:desh_block')
     block('skyjade', 'deep_aether:skyjade_block')
     block('zanite', 'aether:zanite_block')
-    block('ambrosium', 'aether:ambrosium_block')
     block('ostrum', 'ad_astra:ostrum_block')
     block('calorite', 'ad_astra:calorite_block')
     block('experience', 'create:experience_block')
@@ -198,6 +197,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('moon_cheese', 'ad_astra:cheese_block')
     block('cursed_alloy', 'goety:cursed_metal_block')
     block('null_slate', 'malum:block_of_null_slate')
+    block('ambrosium', 'aether:ambrosium_block')
 
 //Nuggets
     nugget('drenched_iron', 'elementalcraft:drenched_iron_nugget')
@@ -270,6 +270,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     
 
 //Gems
+    gem('ambrosium', 'aether:ambrosium_shard')
     gem('turquoise', 'caverns_and_chasms:turquoise')
     gem('spinel', 'caverns_and_chasms:spinel')
     gem('skyjade', 'deep_aether:skyjade')

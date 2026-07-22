@@ -85,7 +85,7 @@ ServerEvents.recipes(event =>{
             baseGrindingTime: 30
         },
         {
-            input: {"item": "hexalia:silk_fiber"},
+            input: {"item": "betterend:silk_fiber"},
             output: 'minecraft:string',
             baseGrindingTime: 30
         },

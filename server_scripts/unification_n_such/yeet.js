@@ -17,6 +17,8 @@ global.removedItems.forEach((item) => {
 ServerEvents.recipes((event) => {
 	event.remove({ input: `gtceu:tools/crafting_mortars`})
 	event.remove({ input: "hexalia:mortar_and_pestle"})
+	event.remove({ id: "betterend:fiber_string" })
+	event.remove({ id: "hexalia:string_from_mortar_and_pestle" })
 })
 
 global.removedFluids.forEach((fluid) => {
