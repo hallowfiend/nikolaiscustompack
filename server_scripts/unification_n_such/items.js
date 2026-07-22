@@ -46,7 +46,9 @@ const bulkReplace = [
     { target: "createaddition:gold_wire", replacement: "gtceu:gold_single_wire"},
     //wire unification end
     {target: "iss_magicfromtheeast:red_string", replacement: "botania:red_string"},
-    { target: "immersiveengineering:electron_tube", replacement: "gtceu:vacuum_tube"}
+    { target: "immersiveengineering:electron_tube", replacement: "gtceu:vacuum_tube"},
+    { target: "collectorsreap:urchin", replacement: "#forge:raw_urchin"},
+    { target: "alexsmobs:fish_oil", replacement: "#rusticdelight:cooking_oil"}
 	];
 
 ServerEvents.recipes((event) => {

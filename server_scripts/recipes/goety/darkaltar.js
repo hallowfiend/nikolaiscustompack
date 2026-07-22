@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('hexalia:briar_sickle')
         .craftType('forge')
-        .soulCost(5)
+        .soulCost(50)
         .duration(5);
     //Botania special weapons
     //Starcaller
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('botania:terra_sword')
         .craftType('forge')
-        .soulCost(5)
+        .soulCost(50)
         .duration(5);
     //Thundercaller
     event.remove({ id: 'botania:thunder_sword' })
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('botania:terra_sword')
         .craftType('forge')
-        .soulCost(5)
+        .soulCost(50)
         .duration(5);
 
     //Iron's Spellbooks weaponry
@@ -57,13 +57,13 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('irons_spellbooks:weapon_parts')
         .craftType('forge')
-        .soulCost(5)
+        .soulCost(50)
         .duration(5);
     //Amethyst Rapier
     event.remove({ id: 'irons_spellbooks:amethyst_rapier' })
     event.remove({ id: 'irons_spellbooks:sequenced_assembly/amethyst_rapier' })
     event.recipes.goety.ritual('irons_spellbooks:amethyst_rapier', 'goety:craft', [
-            'hexcasting:directrix_redstone',
+            'hexcasting:directrix/redstone',
             'caverns_and_chasms:echo_block',
             'species:broken_links',
             'species:broken_links',
@@ -71,13 +71,13 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('irons_spellbooks:weapon_parts')
         .craftType('forge')
-        .soulCost(5)
+        .soulCost(50)
         .duration(5);
     //Boreal Blade
     event.remove({ id: 'irons_spellbooks:boreal_blade' })
     event.remove({ id: 'irons_spellbooks:sequenced_assembly/boreal_blade' })
     event.recipes.goety.ritual('irons_spellbooks:boreal_blade', 'goety:craft', [
-            'sons_of_sins:block_of_ice_hearts',
+            'undergarden:froststeel_block',
             'hexalia:celestial_crystal_block',
             'irons_spellbooks:ice_venom_vial',
             'irons_spellbooks:ice_venom_vial',
@@ -85,21 +85,21 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('irons_spellbooks:weapon_parts')
         .craftType('forge')
-        .soulCost(5)
+        .soulCost(50)
         .duration(5);
     //Twilight Gale
     event.remove({ id: 'irons_spellbooks:twilight_gale' })
     event.remove({ id: 'irons_spellbooks:sequenced_assembly/twilight_gale' })
     event.recipes.goety.ritual('irons_spellbooks:twilight_gale', 'goety:craft', [
             'twilightforest:knightmetal_block',
-            'eternal_starlight:deepsilver_block',
+            'eternal_starlight:starlit_diamond_block',
             'irons_spellbooks:lightning_bottle',
             'irons_spellbooks:lightning_bottle',
             'mna:rune_projection'
         ])
         .activationItem('irons_spellbooks:weapon_parts')
         .craftType('forge')
-        .soulCost(5)
+        .soulCost(50)
         .duration(5);
 
     //Embers stuff
@@ -114,16 +114,13 @@ ServerEvents.recipes(event => {
             'create:mechanical_drill',
             'gtceu:double_copper_plate',
             'gtceu:double_copper_plate',
-            'create:gearbox',
             'magichem:cog_components',
             'immersiveengineering:heavy_engineering',
-            'immersiveengineering:heavy_engineering',
             'malum:intricate_assembly',
-            'minecraft:iron_block'
         ])
         .activationItem('embers:mechanical_core')
         .craftType('forge')
-        .soulCost(4)
+        .soulCost(8)
         .duration(10);
 
     //END RITUALS

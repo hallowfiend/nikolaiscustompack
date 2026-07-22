@@ -80,13 +80,20 @@ global.removedItems = [
   /naturalist:.*venison/,
   /culturaldelights:.*calamari/,
   /rusticdelight:.*calamari.*/,
-  /oceanicdelight:.*squid_tentacles/,
+  /oceanic_delight:.*squid_tentacles/,
   /culturaldelights:.*squid/,
   /crabbersdelight:.*squid_tentacles/,
   'tide:grilled_tuna',
   'tidesdelight:tuna_steak',
   'tidesdelight:tuna_slice',
-  'sob:sculk_tendril'
+  'sob:sculk_tendril',
+  'oceanic_delight:takoyaki',
+  'alexsmobsdelight:takoyaki',
+  'spawn:clam_chowder',
+  'crabbersdelight:clam_chowder',
+  'farm_and_charm:onion_soup',
+  'aquaculture:turtle_soup',
+  'tidesdelight:seafood_paella'
 ];
 
 global.removedRecipeIds = [

@@ -375,7 +375,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .ingot()
         .color(0x93b8de)
         .iconSet(GTMaterialIconSet.BRIGHT)
-        .components('1x iron', '5x aqua')
+        .components('iron', 'nickel', '5x aqua')
         .toolStats(
             ToolProperty.Builder.of(1.3, 3.2, 200, 2,
                 [

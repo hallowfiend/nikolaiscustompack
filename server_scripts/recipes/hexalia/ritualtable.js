@@ -17,7 +17,7 @@
             {"item": "goety:ectoplasm"},
             {"item": "hexerei:sage_seed"},
             {"item": "elementalcraft:inert_crystal"},
-            {"tag": "#forge:essences/death"}
+            {"tag": "forge:essences/death"}
         ],
         "occultism:datura_seeds"
     )

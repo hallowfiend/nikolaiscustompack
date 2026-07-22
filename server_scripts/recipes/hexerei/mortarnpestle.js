@@ -141,7 +141,7 @@ ServerEvents.recipes(event =>{
             baseGrindingTime: 60
         },
         {
-            input: {"item": "gtceu:brass_ingot"},
+            input: {"item": "create:brass_ingot"},
             output: 'gtceu:brass_dust',
             baseGrindingTime: 60
         },

@@ -499,6 +499,21 @@ ServerEvents.tags("item", (event) => {
     "spawn:tuna_slice"
   ])
 
+  event.add("forge:raw_clam", [
+    "spawn:clam"
+  ])
+
+  event.add("forge:raw_urchin", [
+    "collectorsreap:urchin",
+    "lendersdelight:urchinkin",
+    "spawn:sea_urchin"
+  ])
+
+  event.add("rusticdelight:cooking_oil", [
+    "delightful:animal_oil_bottle",
+    "alexsmobs:fish_oil"
+  ])
+
   event.add("chipped:stripped_bamboo_log", ["minecraft:stripped_bamboo_block"]);
   event.add("chipped:stripped_crimson_log", ["#chipped:stripped_crimson_stem"]);
   event.add("chipped:stripped_snake_block_log", ["minecraft:prismarine"]);

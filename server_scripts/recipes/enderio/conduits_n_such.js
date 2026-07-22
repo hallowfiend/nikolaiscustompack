@@ -54,17 +54,17 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: ["enderio:iron_gear", "enderio:energized_gear", "enderio:vibrant_gear", "enderio:dark_bimetal_gear"] })
     event.remove({ output: ["enderio:pulsating_crystal", "enderio:vibrant_crystal"] })
-    event.replaceInput({ input: "#forge:ingots/redstone_alloy" }, "#forge:ingots/redstone_alloy", "gtceu:red_alloy_ingot")
+    event.replaceInput({ input: "#forge:ingots/redstone_alloy" }, "#forge:ingots/redstone_alloy", "#forge:ingots/red_alloy")
 
     event.recipes.gtceu.autoclave("kubejs:vibrant_crystal")
-        .itemInputs("minecraft:emerald")
+        .itemInputs("goety:magic_emerald")
         .inputFluids(Fluid.of("gtceu:vibrant_alloy", 144))
         .itemOutputs("enderio:vibrant_crystal")
         .duration(200)
         .EUt(30)
 
     event.recipes.gtceu.autoclave("kubejs:pulsating_crystal")
-        .itemInputs("minecraft:diamond")
+        .itemInputs("botania:mana_diamond")
         .inputFluids(Fluid.of("gtceu:pulsating_alloy", 144))
         .itemOutputs("enderio:pulsating_crystal")
         .duration(100)
@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
         G: "gtceu:iron_gear"
     }).id("kubejs:yeta_wrench")
 
-    event.replaceInput({ id: "enderio:redstone_conduit" }, "gtceu:red_alloy_ingot", "gtceu:red_alloy_single_wire")
+    event.replaceInput({ id: "enderio:redstone_conduit" }, "#forge:ingots/red_alloy", "gtceu:red_alloy_single_wire")
 
     event.remove({ id: "enderio:crafter" })
     event.shaped("enderio:crafter", [
@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
         "  C"
     ], {
         A: "gtceu:mv_emitter",
-        B: "#forge:storage_blocks/emerald",
+        B: "goety:awakened_emerald_block",
         C: "#forge:plates/electrical_steel",
         D: "enderio:vibrant_gear"
     }).id("kubejs:coordinate_selector")
@@ -315,7 +315,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(16)
 
-    event.replaceInput({ output: "enderio:extraction_speed_upgrade_3" }, "gtceu:soularium_ingot", "gtceu:aluminium_ingot")
+    event.replaceInput({ output: "enderio:extraction_speed_upgrade_3" }, "enderio:soularium_ingot", "gtceu:aluminium_ingot")
     
     event.replaceInput({ id: "enderio:conduit_probe" }, "enderio:energy_conduit", "gtceu:conductive_alloy_single_wire")
 })
