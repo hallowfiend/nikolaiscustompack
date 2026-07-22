@@ -1,4 +1,29 @@
 ServerEvents.recipes(event => {
+    //DIVINATION RITUALS
+    //Nature's Compass
+    /* event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [
+            'naturesaura:infused_iron',
+            'naturesaura:token_joy',
+            'botania:rune_sloth',
+            'magichem:admixture_travel'
+        ])
+        .activationItem('minecraft:compass')
+        .craftType('divination')
+        .soulCost(50)
+        .duration(5); */
+    //Explorer's Compass
+    /* event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [
+            'naturesaura:depth_ingot',
+            'eternal_starlight:deepsilver_block',
+            'aether:zanite_block',
+            'undergarden:cloggrum_block',
+            'goety:ruby_of_souls',
+            'magichem:admixture_travel'
+        ])
+        .activationItem('minecraft:recovery_compass')
+        .craftType('divination')
+        .soulCost(50)
+        .duration(5); */
     //FORGE RITUALS
     //Wicked Boline
     event.remove({ id: 'goety:wicked_boline' })

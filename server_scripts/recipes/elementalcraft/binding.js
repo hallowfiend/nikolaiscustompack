@@ -8,7 +8,8 @@ ServerEvents.recipes(event => {
             "bloodmagic:lava_crystal",
             "goety:animation_core",
             "deep_aether:skyjade",
-            "botania:mana_powder"
+            "botania:mana_powder",
+            "ars_nouveau:conjuration_essence"
         ],
         2000,
         "air"
@@ -19,7 +20,8 @@ ServerEvents.recipes(event => {
             "bloodmagic:activationcrystalweak",
             "malum:mnemonic_fragment",
             "magichem:thunderstone",
-            "eternal_starlight:unrealium_ingot"
+            "eternal_starlight:unrealium_ingot",
+            "naturesaura:sky_ingot"
         ],
         4000,
         "water"

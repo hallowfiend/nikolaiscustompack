@@ -1,3 +1,5 @@
+//priority 99
+
 const elementalcraftRecipes = {
     initialize(event) {
         this.event = event;
