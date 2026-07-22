@@ -678,6 +678,7 @@ event.create('mithril')
                 GTMaterialFlags.GENERATE_ROD,
                 GTMaterialFlags.GENERATE_FOIL,
                 GTMaterialFlags.GENERATE_GEAR,
+                ring,
                 no_decomp
             );
 

@@ -477,7 +477,8 @@ ServerEvents.tags("item", (event) => {
     "elementalcraft:pure_ore",
     /reliquary:.*mob_charm.*/,
     'enderio:broken_spawner',
-    'enderio:filled_soul_vial'
+    'enderio:filled_soul_vial',
+    'evilcraft:dark_tank'
   ]);
 
   event.add("forge:cooked_fishes/tuna", [
@@ -487,6 +488,10 @@ ServerEvents.tags("item", (event) => {
 
   event.add("tidesdelight:cooked_tuna", [
     "#forge:cooked_fishes/tuna"
+  ]);
+
+  event.add("forge:silicon", [
+    "gtceu:silicon_ingot"
   ]);
 
   event.add("kubejs:spell_scrolls"), [

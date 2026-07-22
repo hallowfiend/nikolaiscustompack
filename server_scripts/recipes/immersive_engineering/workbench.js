@@ -33,5 +33,22 @@ ServerEvents.recipes(event => {
         ],
         'components'
     )
-
+    //AE2 components
+    const circuittypes = [
+        "logic",
+        "calculation",
+        "engineering"
+    ]
+    circuittypes.forEach(type =>{
+        event.recipes.immersiveengineering.blueprint(
+        `ae2:${type}_processor`,
+        [
+            `ae2:printed_${type}_processor`,
+            'gtceu:conductive_alloy_single_wire',
+            'minecraft:redstone',
+            'ae2:printed_silicon'
+        ],
+        'components'
+    )
+    })
 });

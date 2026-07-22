@@ -53,8 +53,13 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     event.remove({ output: ["enderio:iron_gear", "enderio:energized_gear", "enderio:vibrant_gear", "enderio:dark_bimetal_gear"] })
-    event.remove({ output: ["enderio:pulsating_crystal", "enderio:vibrant_crystal"] })
-    event.replaceInput({ input: "#forge:ingots/redstone_alloy" }, "#forge:ingots/redstone_alloy", "#forge:ingots/red_alloy")
+    event.remove({ output: ["enderio:pulsating_crystal", "enderio:vibrant_crystal", "enderio:redstone_conduit"] })
+
+    event.recipes.gtceu.assembler('kubejs:redstone_conduit')
+        .itemInputs('2x gtceu:red_alloy_single_wire', '6x enderio:conduit_binder')
+        .itemOutputs('4x enderio:redstone_conduit')
+        .duration(80)
+        .EUt(16)
 
     event.recipes.gtceu.autoclave("kubejs:vibrant_crystal")
         .itemInputs("goety:magic_emerald")

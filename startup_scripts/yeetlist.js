@@ -93,7 +93,8 @@ global.removedItems = [
   'crabbersdelight:clam_chowder',
   'farm_and_charm:onion_soup',
   'aquaculture:turtle_soup',
-  'tidesdelight:seafood_paella'
+  'tidesdelight:seafood_paella',
+  'elementalcraft:elementpipe_impaired'
 ];
 
 global.removedRecipeIds = [
@@ -122,7 +123,8 @@ global.removedRecipeTypes = [
     'enderio:painting', //kinda useless
     'enderio:sag_milling', //not needed
     'enderio:enchanter', //we have a zillion magic mods to help us enchant stuff
-    'hibernalherbs:herbal_conjuration' //flattened into hexalia ritual table
+    'hibernalherbs:herbal_conjuration', //flattened into hexalia ritual table
+    'ae2:inscriber' //folded into other crafting mechanics
 ]
 
 global.removedFluids = [
