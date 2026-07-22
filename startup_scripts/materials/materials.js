@@ -166,7 +166,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .fluid()
         .ore()
         .color(0xFAD645)
-        .addOreByproducts('calcium')
+        .addOreByproducts('calcium', 'salt')
         .iconSet(FLINT);
 
   event.create('desh')
@@ -272,6 +272,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .liquid()
         .ingot()
         .ore()
+        .addOreByproducts('plutonium', 'raw_will', 'desh')
         .dust()
         .flags(
             GTMaterialFlags.NO_ORE_SMELTING,
@@ -310,6 +311,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color(0xb48cc1)
         .secondaryColor(0xe4d9e9)
         .components('ammonium_chloride', 'ether', 'solid_terrae', 'solid_aerialis', 'solid_aqua', 'solid_infernalis')
+        .addOreByproducts('ammonium_chloride', 'salt', 'sodium_hydroxide')
         .iconSet(QUARTZ)
         .flags(
             electrolyze
@@ -321,6 +323,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color(0xe2c777)
         .secondaryColor(0xd7a963)
         .components('quartzite', 'aluminium', 'mundus', 'ether') //fantasy components as a reference to how irl nobody's actually sure what gives citrine its color
+        .addOreByproducts('quartzite', 'yellow_garnet', 'mundus')
         .iconSet(FLINT)
         .flags(
             crystallizable,
@@ -336,6 +339,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .color(0xE48615)
             .secondaryColor(0x443c34)
             .iconSet(SHINY)
+            .addOreByproducts('gunpowder', 'ash', 'blaze')
             .components('carbon', '6x ragna', '6x infernalis', '6x antiaura')
             .flags(
             no_decomp,
@@ -362,6 +366,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .ore(4, 1)
         .color(0xf2f2f2)
         .flags(no_decomp)
+        .addOreByproducts('mundus', 'quartzite', 'iron')
         .components('nether_quartz', 'terrae', 'titanium_oxide', '2x mundus')
         .iconSet(QUARTZ);
 
@@ -403,6 +408,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .ore()
         .color(0xFCC74D)
+        .addOreByproducts('solid_infernalis', 'cadmium', 'electrum')
         .components('10x helium', '10x hydrogen', 'destructive_will')
         .iconSet(NETHERSTAR)
         .flags(
@@ -412,6 +418,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .ore()
         .color(0xCCB7F8)
+        .addOreByproducts('carbon', 'diamond', 'silver')
         .components('diamond', '4x firmamentum')
         .iconSet(DIAMOND)
         .flags(
@@ -424,6 +431,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .ore()
         .color(0x5B5D93)
         .components('sterling_silver', '4x firmamentum', 'terrae')
+        .addOreByproducts('silver', 'electrum', 'lead', 'biotite')
         .cableProperties(GTValues.V[GTValues.IV], 8, 8, true)
         .iconSet(SHINY)
         .flags(
@@ -435,6 +443,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .ore()
         .color(0x293C37)
         .secondaryColor(0xA8509C)
+        .addOreByproducts('carbon', 'graphite', 'starlit_diamond')
         .components('naquadah', 'xenorhast', 'firmamentum')
         .iconSet(DULL)
         .flags(
@@ -479,6 +488,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .color(0x625a51)
             .secondaryColor(0x443c34)
             .iconSet(ROUGH)
+            .addOreByproducts('zinc', 'copper', 'coal', 'sulfur')
             .components('iron', 'carbon', 'phosphorus', 'biotite', 'clay', '2x mundus', 'solid_infernalis', 'solid_terrae')
             .flags(
             no_decomp
@@ -531,6 +541,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .liquid()
         .color(0x67b9ee)
         .ore()
+        .addOreByproducts('ice', 'diamond', 'solid_aqua')
         .components('blue_steel', 'vinteum', 'water', 'solid_aqua', 'solid_aerialis')
         .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
         .iconSet(SHINY)
@@ -564,8 +575,20 @@ event.create('mithril')
         .iconSet(GTMaterialIconSet.METALLIC)
         .addOreByproducts('silver', 'platinum', 'palladium', 'cadmium', 'arcane_essence')
         .washedIn('gtceu:mercury')
+        .cableProperties(GTValues.V[GTValues.HV], 4, 3, false)
         .separatedInto('palladium', 'source')
-        .flags(no_decomp)
+        .flags(
+            no_decomp,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
         .separatedInto('silver', 'platinum');
 
 
@@ -740,7 +763,7 @@ event.create('spirit_gem')
     event.create('dark')
         .gem()
         .ore()
-        .addOreByproducts('solid_xenorhast')
+        .addOreByproducts('solid_xenorhast', 'ether', 'carbon')
         .color(0x141414)
         .iconSet(EMERALD)
         .components('nether_quartz', 'carbon', '4x profanum', 'antiaura')

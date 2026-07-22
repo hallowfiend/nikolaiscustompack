@@ -680,6 +680,34 @@ event.custom({
       "item": "minecraft:glass_bottle"
     },
     "fluid": {
+      "fluid": "irons_spellbooks:timeless_slurry",
+      "amount": 250
+    },
+    "output": {
+      "item": "irons_spellbooks:timeless_slurry",
+      "count": 1
+    }
+  });
+event.custom({
+    "type": "hexerei:cauldron_emptying",
+    "input": {
+      "item": "minecraft:glass_bottle"
+    },
+    "fluid": {
+      "fluid": "irons_spellbooks:ice_venom",
+      "amount": 250
+    },
+    "output": {
+      "item": "irons_spellbooks:ice_venom_vial",
+      "count": 1
+    }
+  });
+event.custom({
+    "type": "hexerei:cauldron_emptying",
+    "input": {
+      "item": "minecraft:glass_bottle"
+    },
+    "fluid": {
       "fluid": "irons_spellbooks:oakskin_elixir",
       "amount": 250
     },

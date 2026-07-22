@@ -43,7 +43,10 @@ const bulkReplace = [
     { target: "immersiveengineering:wire_steel", replacement: "gtceu:steel_single_wire"},
     { target: "immersiveengineering:wire_lead", replacement: "gtceu:lead_single_wire"},
     { target: "createaddition:iron_wire", replacement: "gtceu:iron_single_wire"},
-    { target: "createaddition:gold_wire", replacement: "gtceu:gold_single_wire"}
+    { target: "createaddition:gold_wire", replacement: "gtceu:gold_single_wire"},
+    //wire unification end
+    {target: "iss_magicfromtheeast:red_string", replacement: "botania:red_string"},
+    { target: "immersiveengineering:electron_tube", replacement: "gtceu:vacuum_tube"}
 	];
 
 ServerEvents.recipes((event) => {

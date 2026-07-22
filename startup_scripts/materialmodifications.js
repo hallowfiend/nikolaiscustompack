@@ -67,6 +67,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rock('limestone', 'create:limestone')
 
 //Ingots
+    ingot('drenched_iron', 'elementalcraft:drenched_iron_ingot')
+    ingot('brass', 'create:brass_ingot')
     ingot('desh', 'ad_astra:desh_ingot')
     ingot('cloggrum', 'undergarden:cloggrum_ingot')
     ingot('froststeel', 'undergarden:froststeel_ingot')
@@ -92,6 +94,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('bendalloy', 'cosmere:bendalloy_ingot')
     ingot('nicrosil', 'cosmere:nicrosil_ingot')
     ingot('duralumin', 'cosmere:duralumin_ingot')
+    ingot('cadmium', 'cosmere:cadmium_ingot')
     ingot('anthralite', 'scguns:anthralite_ingot')
     ingot('dawnstone', 'embers:dawnstone_ingot')
     ingot('pewter', 'eidolon:pewter_ingot')
@@ -104,6 +107,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingot('thallasium', 'betterend:thallasium_ingot')
     ingot('terminite', 'betterend:terminite_ingot')
     ingot('aeternium', 'betterend:aeternium_ingot')
+    ingot('electrical_steel', 'enderio:electrical_steel_ingot')
     ingot('energetic_alloy', 'enderio:energetic_alloy_ingot')
     ingot('vibrant_alloy', 'enderio:vibrant_alloy_ingot')
     ingot('conductive_alloy', 'enderio:conductive_alloy_ingot')
@@ -120,6 +124,8 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     ingotHot('purified_vinteum_alloy', 'mna:superheated_purified_vinteum_ingot')
 
 //Blocks
+    block('drenched_iron', 'elementalcraft:drenched_iron_block')
+    block('brass', 'create:brass_block')
     block('iesnium', 'occultism:iesnium_block')
     block('arcane_gold', 'eidolon:arcane_gold_block')
     block('pewter', 'eidolon:pewter_block')
@@ -156,6 +162,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('bendalloy', 'cosmere:bendalloy_block')
     block('nicrosil', 'cosmere:nicrosil_block')
     block('duralumin', 'cosmere:duralumin_block')
+    block('cadmium', 'cosmere:cadmium_block')
     block('infused_iron', 'naturesaura:infused_iron_block')
     block('tainted_gold', 'naturesaura:tainted_gold_block')
     block('sky_ingot', 'naturesaura:sky_ingot_block')
@@ -182,6 +189,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('terminite', 'betterend:terminite_block')
     block('aeternium', 'betterend:aeternium_block')
     block('amber', 'betterend:amber_block')
+    block('electrical_steel', 'enderio:electrical_steel_block')
     block('energetic_alloy', 'enderio:energetic_alloy_block')
     block('vibrant_alloy', 'enderio:vibrant_alloy_block')
     block('conductive_alloy', 'enderio:conductive_alloy_block')
@@ -194,6 +202,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('null_slate', 'malum:block_of_null_slate')
 
 //Nuggets
+    nugget('drenched_iron', 'elementalcraft:drenched_iron_nugget')
     nugget('arcane_gold', 'eidolon:arcane_gold_nugget')
     nugget('desh', 'ad_astra:desh_nugget')
     nugget('ostrum', 'ad_astra:ostrum_nugget')
@@ -212,6 +221,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('bendalloy', 'cosmere:bendalloy_nugget')
     nugget('nicrosil', 'cosmere:nicrosil_nugget')
     nugget('duralumin', 'cosmere:duralumin_nugget')
+    nugget('cadmium', 'cosmere:cadmium_nugget')
     nugget('anthralite', 'scguns:anthralite_nugget')
     nugget('dawnstone', 'embers:dawnstone_nugget')
     nugget('pewter', 'eidolon:pewter_nugget')
@@ -227,6 +237,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     nugget('conductive_alloy', 'enderio:conductive_alloy_nugget')
     nugget('pulsating_alloy', 'enderio:pulsating_alloy_nugget')
     nugget('dark_steel', 'enderio:dark_steel_nugget')
+    nugget('electrical_steel', 'enderio:electrical_steel_nugget')
     nugget('soularium', 'enderio:soularium_nugget')
     nugget('end_steel', 'enderio:end_steel_nugget')
     nugget('iesnium', 'occultism:iesnium_nugget')
