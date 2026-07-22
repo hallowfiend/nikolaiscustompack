@@ -1,4 +1,19 @@
 ServerEvents.recipes(event => {
+    //FORGE RITUALS
+    //Wicked Boline
+
+    //Botania special weapons
+
+    //Iron's Spellbooks weaponry
+    //Weapon parts
+    //Magebreaker
+    //Amethyst Rapier
+    //Twilight Gale
+
+    //Embers stuff
+    //Ember Bore
+
+    //END RITUALS
     //BetterEnd infusion altar
 event.recipes.goety.ritual('betterend:crystalite_helmet', 'goety:craft', [
     '#forge:gems/amber',

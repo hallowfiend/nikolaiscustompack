@@ -21,6 +21,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Borax.setProperty(PropertyKey.ORE, new $OreProperty()); 
     GTMaterials.Tellurium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Tellurium, $FluidStorageKeys.LIQUID);
+    GTMaterials.Cadmium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Cadmium, $FluidStorageKeys.LIQUID);
     GTMaterials.Germanium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Germanium, $FluidStorageKeys.LIQUID);
     GTMaterials.Brass.addFlags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR);
@@ -82,9 +84,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula('Fe?Ni?Ga?Ge?')
          .toolStats(
             ToolProperty.Builder.of(0.9, 5.5, 700, 3)
-            .enchantment(Enchantment.UNBREAKING, 3)
-            .enchantment(Enchantment.EFFICIENCY, 3)
-            .enchantment(Enchantment.SHARPNESS, 3)
             .build()
         ) 
         .iconSet(METALLIC);
