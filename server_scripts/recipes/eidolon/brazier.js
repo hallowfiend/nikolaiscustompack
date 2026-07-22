@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
             "item": "eidolon:ender_calx"
         },
         {
-            "item": "bloodmagic:reagent_void"
+            "item": "bloodmagic:reagentvoid"
         },
         {
             "tag": "forge:dusts/endstone"
@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
             "item": "dungeonsdelight:ghastly_spirits"
         },
         {
-            "item": "elementalcraft:earth_crystal"
+            "item": "elementalcraft:earthcrystal"
         },
         {
             "item": "malum:grim_talc"
@@ -328,7 +328,7 @@ ServerEvents.recipes(event => {
             "item": "gtceu:tainted_gold_dust"
         },
         {
-            "item": "oneumaticcraft:glycerol"
+            "item": "pneumaticcraft:glycerol"
         }
     ],
     "reagent": [

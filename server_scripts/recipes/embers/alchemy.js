@@ -17,10 +17,7 @@ ServerEvents.recipes(events => {
         "aspects": [dawnstone, copper],
         "inputs": [
             {
-                "item": "undergarden:utherium_crystal"
-            },
-            {
-                "item": "bloodmagic:reinforcedslate"
+                "item": "bloodmagic:reagent_lava"
             },
             {
                 "item": "ars_nouveau:fire_essence"
@@ -34,7 +31,7 @@ ServerEvents.recipes(events => {
             "item": "bloodmagic:lavacrystal"
         },
         "tablet": {
-            "item": "magichem:signalite"
+            "item": "undergarden:utherium_crystal"
         }
     })
     //Depth ingots
