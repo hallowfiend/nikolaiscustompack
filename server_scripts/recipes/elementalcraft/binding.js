@@ -6,9 +6,9 @@ ServerEvents.recipes(event => {
         "bloodmagic:activationcrystalweak",
         [
             {"item": "bloodmagic:lavacrystal"},
-            {"item": "goety:animation_core"},
+            {"item": "goety:hunger_core"},
             {"item": "deep_aether:skyjade"},
-            {"item": "botania:mana_powder"},
+            {"item": "kubejs:bloodied_dust"},
             {"item": "ars_nouveau:conjuration_essence"}
         ],
         2000,
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
             {"item": "bloodmagic:activationcrystalweak"},
             {"item": "malum:mnemonic_fragment"},
             {"item": "magichem:thunderstone"},
-            {"item": "eternal_starlight:unrealium_ingot"},
+            {"item": "botania:mana_powder"},
             {"item": "naturesaura:sky_ingot"}
         ],
         4000,

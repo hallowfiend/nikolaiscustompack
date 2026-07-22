@@ -1,10 +1,12 @@
+//priority 90
+
 ServerEvents.recipes(event => {
     //Scroll Paper
-    event.replaceInputID("elementalcraft:scroll_paper", "minecraft:paper", "ars_nouveau:blank_parchment");
-    event.replaceInputID("elementalcraft:scroll_paper", "minecraft:ink_sac", "irons_spellbooks:uncommon_ink");
+    event.replaceInput({output: "elementalcraft:scroll_paper"}, "minecraft:paper", "ars_nouveau:blank_parchment");
+    event.replaceInput({output: "elementalcraft:scroll_paper"}, "minecraft:ink_sac", "irons_spellbooks:uncommon_ink");
     //Contained Crystal
     //crafting table recipe
-    event.replaceInputID("elementalcraft:contained_crystal", "minecraft:gold_nugget", "#forge:plates/bronze");
+    event.replaceInput({output: "elementalcraft:contained_crystal"}, "minecraft:gold_nugget", "#forge:plates/bronze");
     //cheaper spouting/casting/autoclave recipe
     event.recipes.gtceu.autoclave("kubejs:contained_crystal")
         .itemInputs("elementalcraft:inert_crystal")

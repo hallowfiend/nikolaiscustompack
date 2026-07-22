@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
-    event.replaceInputID(/elementalcraft:element_holder_.*/, "elementalcraft:small_container", "ars_nouveau:mob_jar")
-    event.replaceInputID(/elementalcraft:element_holder_.*/, "minecraft:gold_ingot", "#forge:plates/gold")
-    event.replaceInputID(/elementalcraft:element_holder_.*/, "elementalcraft:drenched_iron_ingot", "#forge:plates/drenched_iron")
+    event.replaceInput({id: /elementalcraft:element_holder_.*/}, "elementalcraft:small_container", "ars_nouveau:mob_jar")
+    event.replaceInput({id:/elementalcraft:element_holder_.*/}, "minecraft:gold_ingot", "#forge:plates/gold")
+    event.replaceInput({id: /elementalcraft:element_holder_.*/}, "elementalcraft:drenched_iron_ingot", "#forge:plates/drenched_iron")
 
     event.remove({ output: "elementalcraft:small_container" });
 })
