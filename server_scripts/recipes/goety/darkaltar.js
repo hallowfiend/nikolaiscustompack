@@ -112,11 +112,14 @@ ServerEvents.recipes(event => {
             'embers:caminite_bricks',
             'embers:caminite_bricks',
             'create:mechanical_drill',
+            'gtceu:double_copper_plate',
+            'gtceu:double_copper_plate',
             'create:gearbox',
             'magichem:cog_components',
             'immersiveengineering:heavy_engineering',
             'immersiveengineering:heavy_engineering',
-            'malum:intricate_assembly'
+            'malum:intricate_assembly',
+            'minecraft:iron_block'
         ])
         .activationItem('embers:mechanical_core')
         .craftType('forge')

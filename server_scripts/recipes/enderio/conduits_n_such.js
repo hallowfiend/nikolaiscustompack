@@ -1,3 +1,4 @@
+//priority 98
 //based on the moni code but with more gating of eio behind gt
 ServerEvents.recipes(event => {
     event.remove({ id: "enderio:pressurized_fluid_conduit_upgrade" })
@@ -27,10 +28,28 @@ ServerEvents.recipes(event => {
         .duration(80*10)
         .EUt(16)
 
-    event.recipes.gtceu.assembler("kubejs:conductive_conduit")
-        .itemInputs("3x gtceu:conductive_alloy_single_wire", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:energy_conduit")
-        .duration(80*10)
+    event.recipes.gtceu.assembler('kubejs:conductive_conduit')
+        .itemInputs('3x gtceu:conductive_alloy_single_wire', '6x enderio:conduit_binder')
+        .itemOutputs('4x enderio:conductive_conduit')
+        .duration(80)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('kubejs:energetic_conduit')
+        .itemInputs('2x gtceu:energetic_alloy_single_wire', 'enderio:conductive_conduit', '6x enderio:conduit_binder')
+        .itemOutputs('4x enderio:energetic_conduit')
+        .duration(80)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('kubejs:vibrant_conduit')
+        .itemInputs('2x gtceu:vibrant_alloy_single_wire', 'enderio:energetic_conduit', '6x enderio:conduit_binder')
+        .itemOutputs('4x enderio:vibrant_conduit')
+        .duration(80)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('kubejs:endsteel_conduit')
+        .itemInputs('2x gtceu:end_steel_single_wire', 'enderio:vibrant_conduit', '6x enderio:conduit_binder')
+        .itemOutputs('4x enderio:endsteel_conduit')
+        .duration(80)
         .EUt(16)
 
     event.remove({ output: ["enderio:iron_gear", "enderio:energized_gear", "enderio:vibrant_gear", "enderio:dark_bimetal_gear"] })

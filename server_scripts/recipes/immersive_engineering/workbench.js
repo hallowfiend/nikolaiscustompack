@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
             '#forge:rods/copper',
             'gtceu:brass_gear'
         ],
-        components
+        'components'
     )
     event.recipes.immersiveengineering.blueprint(
         '2x immersiveengineering:component_steel',
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
             '#forge:rods/bronze',
             'gtceu:invar_gear'
         ],
-        components
+        'components'
     )
     //vacuum tube
     event.remove({ id: 'immersiveengineering:blueprint/electron_tube' })
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:steel_bolt',
             '2x gtceu:copper_single_wire'
         ],
-        components
+        'components'
     )
 
 });

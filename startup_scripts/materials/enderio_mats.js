@@ -1,4 +1,4 @@
-//priority: 70
+//priority: 60
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("dark_steel")
@@ -66,7 +66,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .cableProperties(8, 1, 0, true)
 
     event.create("electrical_steel")
-        .ingot().fluid()
+        .ingot()
+        .fluid()
         .color(0xb2c0c1)
         .iconSet(METALLIC)
         .flags(
