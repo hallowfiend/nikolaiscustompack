@@ -44,8 +44,7 @@ ServerEvents.recipes(event => {
         `ae2:${type}_processor`,
         [
             `ae2:printed_${type}_processor`,
-            'gtceu:conductive_alloy_single_wire',
-            'minecraft:redstone',
+            'gtceu:red_alloy_single_wire',
             'ae2:printed_silicon'
         ],
         'components'

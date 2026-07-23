@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
             'gtceu:double_copper_plate',
             'magichem:cog_components',
             'immersiveengineering:heavy_engineering',
-            'malum:intricate_assembly',
+            'malum:intricate_assembly'
         ])
         .activationItem('embers:mechanical_core')
         .craftType('forge')

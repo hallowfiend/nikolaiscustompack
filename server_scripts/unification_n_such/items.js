@@ -48,7 +48,8 @@ const bulkReplace = [
     { target: "immersiveengineering:electron_tube", replacement: "gtceu:vacuum_tube"},
     { target: "collectorsreap:urchin", replacement: "#forge:raw_urchin"},
     { target: "alexsmobs:fish_oil", replacement: "#rusticdelight:cooking_oil"},
-    { target: "hexalia:silk_fiber", replacement: "betterend:silk_fiber"}
+    { target: "hexalia:silk_fiber", replacement: "betterend:silk_fiber"},
+    { target: "goety:ice_cube", replacement: "neapolitan:ice_cubes"}
 	];
 
 ServerEvents.recipes((event) => {

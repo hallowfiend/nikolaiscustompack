@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("elementalcraft:contained_crystal")
         .duration(20)
         .EUt(7);
-    event.recipes.create.filling('elementalcraft:contained_crystal', ['288x gtceu:bronze', 'elementalcraft:inert_crystal']);
+    event.recipes.create.filling('elementalcraft:contained_crystal', [Fluid.of('gtceu:bronze').withAmount(288), 'elementalcraft:inert_crystal']);
     event.custom({
         "type": "tconstruct:casting_table",
         "cast": {

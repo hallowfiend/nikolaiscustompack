@@ -21,6 +21,9 @@ ServerEvents.recipes(event => {
             "item": "mna:bone_ash"
         },
         {
+            "item": "mna:bone_ash"
+        },
+        {
             "item": "mna:vinteum_dust"
         },
         {
