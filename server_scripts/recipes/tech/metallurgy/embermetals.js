@@ -1,21 +1,21 @@
 ServerEvents.recipes(event => {
     [
-        ["embers:molten_iron", "tconstruct:iron"],
-        ["embers:molten_gold", "tconstruct:gold"],
-        ["embers:molten_copper", "tconstruct:copper"],
-        ["embers:molten_lead", "tconstruct:lead"],
-        ["embers:molten_silver", "tconstruct:silver"],
-        ["embers:molten_nickel", "tconstruct:nickel"],
-        ["embers:molten_tin", "tconstruct:tin"],
-        ["embers:molten_aluminum", "tconstruct:aluminium"],
-        ["embers:molten_zinc", "tconstruct:zinc"],
-        ["embers:molten_platinum", "tconstruct:platinum"],
-        ["embers:molten_uranium", "tconstruct:uranium"],
-        ["embers:molten_bronze", "tconstruct:bronze"],
-        ["embers:molten_electrum", "tconstruct:electrum"],
-        ["embers:molten_brass", "tconstruct:brass"],
+        ["embers:molten_iron", "gtceu:iron"],
+        ["embers:molten_gold", "gtceu:gold"],
+        ["embers:molten_copper", "gtceu:copper"],
+        ["embers:molten_lead", "gtceu:lead"],
+        ["embers:molten_silver", "gtceu:silver"],
+        ["embers:molten_nickel", "gtceu:nickel"],
+        ["embers:molten_tin", "gtceu:tin"],
+        ["embers:molten_aluminum", "gtceu:aluminium"],
+        ["embers:molten_zinc", "gtceu:zinc"],
+        ["embers:molten_platinum", "gtceu:platinum"],
+        ["embers:molten_uranium", "gtceu:uranium"],
+        ["embers:molten_bronze", "gtceu:bronze"],
+        ["embers:molten_electrum", "gtceu:electrum"],
+        ["embers:molten_brass", "gtceu:brass"],
         ["embers:molten_constantan", "tconstruct:constantan"],
-        ["embers:molten_invar", "tconstruct:invar"]
+        ["embers:molten_invar", "gtceu:invar"]
     ].forEach((replacementInfo) => {
         const [fluid, replacement] = replacementInfo;
         event.forEachRecipe({mod: "embers"}, recipe => {
