@@ -49,7 +49,8 @@ const bulkReplace = [
     { target: "collectorsreap:urchin", replacement: "#forge:raw_urchin"},
     { target: "alexsmobs:fish_oil", replacement: "#rusticdelight:cooking_oil"},
     { target: "hexalia:silk_fiber", replacement: "betterend:silk_fiber"},
-    { target: "goety:ice_cube", replacement: "neapolitan:ice_cubes"}
+    { target: "goety:ice_cube", replacement: "neapolitan:ice_cubes"},
+    { target: "create:bar_of_chocolate", replacement: "neapolitan:chocolate_bar"}
 	];
 
 ServerEvents.recipes((event) => {

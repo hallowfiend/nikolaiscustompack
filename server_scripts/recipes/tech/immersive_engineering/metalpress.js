@@ -29,9 +29,9 @@ ServerEvents.recipes(event => {
     ]
     presses.forEach(press => {
         event.recipes.immersiveengineering.metal_press(
-        presses.press,
+        press,
         "#forge:storage_blocks/iron",
-        presses.press
+        press
     )
     })
 })

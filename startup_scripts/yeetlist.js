@@ -94,7 +94,9 @@ global.removedItems = [
   'farm_and_charm:onion_soup',
   'aquaculture:turtle_soup',
   'tidesdelight:seafood_paella',
-  'elementalcraft:elementpipe_impaired'
+  'elementalcraft:elementpipe_impaired',
+  'sons_of_sins:iron_and_ether',
+  'sosorgans:soulium_ingot'
 ];
 
 global.removedRecipeIds = [

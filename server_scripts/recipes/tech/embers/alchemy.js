@@ -4,7 +4,7 @@ const copper = { "tag": "embers:aspectus/copper" }
 const silver = { "tag": "embers:aspectus/silver" }
 const dawnstone = { "tag": "embers:aspectus/dawnstone" }
 
-ServerEvents.recipes(events => {
+ServerEvents.recipes(event => {
     event.remove({ output: "bloodmagic:lavacrystal" })
     event.remove({ output: "naturesaura:depth_ingot" })
     
