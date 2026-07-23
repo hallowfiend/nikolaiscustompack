@@ -75,4 +75,6 @@ ServerEvents.recipes(event => {
                 '#forge:dusts/silicon_dioxide'
             ]
     )
+    event.smelting('eidolon:pewter_ingot', 'gtceu:pewter_dust').xp(0.3).cookingTime(300)
+    event.blasting('eidolon:pewter_ingot', 'gtceu:pewter_dust').xp(0.3).cookingTime(150)
 });

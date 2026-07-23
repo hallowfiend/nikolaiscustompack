@@ -34,4 +34,44 @@ ServerEvents.recipes(event => {
         press
     )
     })
+    //G R E G
+    const dustsToCompact = [
+        "wood",
+        "livingwood"
+    ]
+    const platesToSmash = [
+        "soul_stained_steel",
+        "amethyst_bronze",
+        "bronze",
+        "invar",
+        "drenched_iron",
+        "manasteel",
+        "pewter",
+        "dawnstone",
+        "cloggrum",
+        "froststeel",
+        "deepsilver",
+        "netherite"
+    ]
+    const wiresToPull = [
+        "gold",
+        "iron",
+        "soul_stained_steel",
+        "manasteel"
+    ]
+    const fineWiresToRefine = [
+        "gold",
+        "copper"
+    ]
+    const rodsToRoll = [
+        "dawnstone",
+        "arcane_gold"
+    ]
+    const boltsToCut = [
+        "steel",
+        "froststeel",
+        "wood",
+        "livingwood",
+        "iron"
+    ]
 })

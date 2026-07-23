@@ -27,6 +27,22 @@ ServerEvents.recipes(event => {
   }
   //Vanilla
   brazier_summoning(
+    'minecraft:chicken',
+    3,
+    'minecraft:wheat_seeds',
+    'minecraft:string',
+    'minecraft:calcite',
+    'minecraft:apple'
+  )
+  brazier_summoning(
+    'minecraft:cow',
+    2,
+    'minecraft:hay_bale',
+    'minecraft:bone_meal',
+    'minecraft:bucket',
+    'minecraft:rotten_flesh'
+  )
+  brazier_summoning(
     'minecraft:witch',
     1,
     'minecraft:glass_bottle',
