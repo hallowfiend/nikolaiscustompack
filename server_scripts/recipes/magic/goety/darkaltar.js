@@ -145,8 +145,28 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('embers:mechanical_core')
         .craftType('forge')
-        .soulCost(8)
+        .soulCost(16)
         .duration(10);
+    //MnA stuff
+    //Runeforge
+    event.remove({ id: 'mna:runeforge' })
+    event.remove({ id: 'mna:runeforge_alt' })
+    event.recipes.goety.ritual('mna:runeforge', 'goety:craft', [
+            'mna:transmuted_silver',
+            'mna:transmuted_silver',
+            'mna:decoration/arcane_sandstone',
+            'mna:decoration/arcane_sandstone',
+            'mna:decoration/arcane_stone',
+            'mna:decoration/arcane_stone',
+            '#mna:stone_runes',
+            '#mna:stone_runes',
+            'minecraft:coal_block',
+            'mna:ritual_focus_minor'
+        ])
+        .activationItem('minecraft:blast_furnace')
+        .craftType('forge')
+        .soulCost(8)
+        .duration(8);
 
     //END RITUALS
     //BetterEnd infusion altar

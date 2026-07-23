@@ -17,6 +17,40 @@ const petalApothecary = [
 ServerEvents.recipes((event) => {
     //im turning this table into the central magic item crafting station and NOBODY CAN STOP ME
     //except for components that is im leaving those to be craftable normalstyle because i love ae2
+    //MANA AND ARTIFICE
+    //manaweaving altar
+    event.remove({ id: 'mna:manaweaving_altar' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "wdw",
+            "wnw",
+            "wsw"
+        ],
+        "reagents": [
+            "eeee"
+        ],
+        "key" : {
+            "w": {
+                "item" : "mna:decoration/arcane_sandstone_wall"
+            },
+            "d": {
+                "item": "mna:decoration/arcane_sandstone"
+            },
+            "s": {
+                "item": "mna:decoration/arcane_stone"
+            },
+            "n": {
+                "item": "hexalia:water_node"
+            },
+            "e": {
+                "item": "irons_spellbooks:arcane_ingot"
+            }
+        },
+        "result" : {
+            "item": "mna:manaweaving_altar"
+        }
+    })
     //IRON'S
     //graybeard staff
     event.remove({ id: 'irons_spellbooks:sequenced_assembly/graybeard_staff' })

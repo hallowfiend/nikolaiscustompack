@@ -15,9 +15,26 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(7);
     event.recipes.create.filling('elementalcraft:contained_crystal', ['288x gtceu:bronze', 'elementalcraft:inert_crystal']);
-    event.recipes.tconstruct.casting_table('elementalcraft:contained_crystal', 'gtceu:bronze', 288)
-        .cast("elementalcraft:inert_crystal")
-        .consumeCast();
+    event.custom({
+        "type": "tconstruct:casting_table",
+        "cast": {
+            "item": "elementalcraft:inert_crystal"
+        },
+        "cast_consumed": true,
+        "conditions": [
+        {
+            "type": "mantle:tag_filled",
+            "registry": "minecraft:fluid",
+            "tag": "forge:molten_bronze"
+        }
+        ],
+        "cooling_time": 20,
+        "fluid": {
+            "amount": 288,
+            "tag": "forge:molten_bronze"
+        },
+        "result": "elementalcraft:contained_crystal"
+    })
     //earlygame recipes
     //Drenched Invar
     event.custom({
