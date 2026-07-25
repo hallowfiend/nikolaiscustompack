@@ -1,25 +1,46 @@
+const createMillableIngots = [
+    'clay',
+    'brick',
+    'iron',
+    'gold',
+    'nickel',
+    'chromium',
+    'cadmium',
+    'brass',
+    'lead',
+    'tin',
+    'aluminium',
+    'duralumin',
+    'bendalloy',
+    'nicrosil',
+    'steel',
+    'electrum',
+    'silver',
+    'copper',
+    'pewter',
+    'constantan',
+    'invar'
+]
+
+const createMillableGems = [
+    'lapis',
+    'diamond',
+    'emerald',
+    'flint',
+    'quartzite',
+    'certus_quartz',
+    'dark',
+    'amethyst'
+]
+
 ServerEvents.recipes(event => {
-    event.forEachRecipe({ type: "gtceu:macerator" }, x => {
-        let recipe = JSON.parse(x.json)
-    
-        let simple = {
-            input: null,
-            outputs: [],
-            voltage: recipe.tickInputs.eu[0].content
-        }
-        if (simple.voltage <= 32) {
-        let inputIngredient = recipe.inputs.item[0].content.ingredient
-        if (!inputIngredient) {
-            return
-        }
-        simple.input = inputIngredient.tag ? Ingredient.of(`#${inputIngredient.tag}`) : Item.of(inputIngredient.item)
-        recipe.outputs.item.forEach(b => {
-            simple.outputs.push(Item.of(b.content.ingredient.item).withChance(b.chance / 10000))
-        })
-        e.recipes.create.crushing(simple.outputs, simple.input).processingTime(recipe.duration*2)
-        }
+    createMillableIngots.forEach(ingot => {
+    event.recipes.create.milling(`#forge:ingots/${ingot}`, `gtceu:${ingot}_dust`)
     })
-    event.forEachRecipe({ type: "gtceu:mixer" }, x => {
+    createMillableGems.forEach(ingot => {
+    event.recipes.create.milling(`#forge:gems/${ingot}`, `gtceu:${ingot}_dust`)
+    })
+    /* event.forEachRecipe({ type: "gtceu:mixer" }, x => {
         let recipe = JSON.parse(x.json)
         let simple = {
             inputs: [],
@@ -66,7 +87,7 @@ ServerEvents.recipes(event => {
                 })
             }
             if (fICount <= 2 && fOCount <= 2) {
-                e.recipes.create.mixing(simple.outputs, simple.inputs)
+                event.recipes.create.mixing(simple.outputs, simple.inputs)
             }
         }    
     })
@@ -80,7 +101,7 @@ ServerEvents.recipes(event => {
             recipe.outputs.item.forEach(b => {
                 simple.outputs.push(Item.of(`${b.content.ingredient.item}`).withChance(b.chance / 10000))
             })
-            e.recipes.create.splashing(simple.outputs, simple.input)
+            event.recipes.create.splashing(simple.outputs, simple.input)
         }
-    })
+    }) */
 })

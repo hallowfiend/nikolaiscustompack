@@ -293,6 +293,9 @@ ServerEvents.tags("item", (event) => {
     'culturaldelights:pickle',
     'brewincompatdelight:blue_curacao'
   ])
+  add('toughasnails:hydration/10_hydration_drinks', [
+    '#toughasnails:thirst/2_thirst_drinks'
+  ])
   add('toughasnails:thirst/4_thirst_drinks', [
     /rusticdelight:.*coffee/,
     /respiteful:snow_top.*/,
@@ -301,6 +304,9 @@ ServerEvents.tags("item", (event) => {
     'brewincompatdelight:black_russian',
     'brewincompatdelight:white_wine',
     'brewincompatdelight:sweet_red_wine'
+  ])
+  add('toughasnails:hydration/30_hydration_drinks', [
+    '#toughasnails:thirst/4_thirst_drinks'
   ])
   add('toughasnails:thirst/5_thirst_drinks', [
     /twilightdelight:.*juice/,
@@ -346,6 +352,9 @@ ServerEvents.tags("item", (event) => {
     'cosmopolitan:black_cow',
     'abnormalsdelight:passion_aloe_nectar'
   ])
+  add('toughasnails:hydration/50_hydration_drinks', [
+    '#toughasnails:thirst/5_thirst_drinks'
+  ])
   add('toughasnails:thirst/8_thirst_drinks', [
     /goetydelight:.*tea.*/,
     /dungeonsdelight:.*tea.*/,
@@ -353,7 +362,7 @@ ServerEvents.tags("item", (event) => {
     'collectorsreap:lime_green_tea',
     'collectorsreap:pomegranate_black_tea',
     /windswept:.*tea/,
-    /arsdelight:.*tea/,
+    /arsdelight:.*_tea/,
     'respiteful:mint_green_tea',
     'respiteful:vanilla_milk_tea',
     'respiteful:adzuki_milk_tea',
@@ -372,10 +381,16 @@ ServerEvents.tags("item", (event) => {
     'sob:bustling_brew',
     'delightful:ender_nectar'
   ])
+  add('toughasnails:hydration/80_hydration_drinks', [
+    '#toughasnails:thirst/8_thirst_drinks'
+  ])
   add('toughasnails:thirst/12_thirst_drinks', [
     /arsdelight:.*hornbeer/,
     'sob:aloe_tea',
     'twilightdelight:tear_drink'
+  ])
+  add('toughasnails:hydration/100_hydration_drinks', [
+    '#toughasnails:thirst/12_thirst_drinks'
   ])
   event.add("ad_astra:aeronos_logs", ["ad_astra:aeronos_cap", "ad_astra:aeronos_stem"]);
   event.add("ad_astra:strophar_logs", ["ad_astra:strophar_cap", "ad_astra:strophar_stem"]);

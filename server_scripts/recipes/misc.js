@@ -76,5 +76,17 @@ event.replaceOutput(
     event.shapeless('supplementaries:rope', ['farmersdelight:rope'])
         .id('kubejs:fd_rope_to_supplementaries_rope')
     
+    //Hemp canvas
+    event.shaped(
+        Item.of('farmersdelight:canvas', 1),
+        [
+            'cc',
+            'cc'
+        ],
+        {
+            c: 'immersiveengineering:hemp_fiber'
+        }
+    ).id('kubejs:canvas_from_hemp')
+
     
 });
