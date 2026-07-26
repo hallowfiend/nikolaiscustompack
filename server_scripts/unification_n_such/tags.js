@@ -395,7 +395,9 @@ ServerEvents.tags("item", (event) => {
   event.add("ad_astra:aeronos_logs", ["ad_astra:aeronos_cap", "ad_astra:aeronos_stem"]);
   event.add("ad_astra:strophar_logs", ["ad_astra:strophar_cap", "ad_astra:strophar_stem"]);
 
-  event.add("forge:cookies", "hexalia:galeberries_cookie")
+  event.add("forge:cookies", [
+    "hexalia:galeberries_cookie"
+  ])
 
   event.add('farm_and_charm:cabbage', 'farmersdelight:cabbage');
   event.add('farm_and_charm:cabbage', 'farmersdelight:cabbage_leaf');
@@ -432,7 +434,6 @@ ServerEvents.tags("item", (event) => {
   event.add("forge:essences/death", ["malum:rotting_essence"]);
 
   event.add("forge:wax", ["magichem:sealing_wax"])
-  event.add("forge:wax", ["brewincompatdelight:soy_wax"])
   event.add("forge:wax", ["hexerei:wax_blend"])
   event.add("forge:wax", ["species:wicked_wax"])
   event.add("forge:wax", ["immersiveweathering:tallow"]);

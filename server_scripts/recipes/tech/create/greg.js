@@ -35,10 +35,10 @@ const createMillableGems = [
 
 ServerEvents.recipes(event => {
     createMillableIngots.forEach(ingot => {
-    event.recipes.create.milling(`#forge:ingots/${ingot}`, `gtceu:${ingot}_dust`)
+    event.recipes.create.milling(`gtceu:${ingot}_dust`, `#forge:ingots/${ingot}`)
     })
     createMillableGems.forEach(ingot => {
-    event.recipes.create.milling(`#forge:gems/${ingot}`, `gtceu:${ingot}_dust`)
+    event.recipes.create.milling(`gtceu:${ingot}_dust`, `#forge:gems/${ingot}`)
     })
     /* event.forEachRecipe({ type: "gtceu:mixer" }, x => {
         let recipe = JSON.parse(x.json)

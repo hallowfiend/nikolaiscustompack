@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         "aspects": [dawnstone, copper],
         "inputs": [
             {
-                "item": "bloodmagic:reagent_lava"
+                "item": "bloodmagic:reagentlava"
             },
             {
                 "item": "ars_nouveau:fire_essence"

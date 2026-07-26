@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'minecraft:cow',
     2,
-    'minecraft:hay_bale',
+    'minecraft:hay_block',
     'minecraft:bone_meal',
     'minecraft:bucket',
     'minecraft:rotten_flesh'
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
     'create:dough',
     'minecraft:lime_dye',
     'minecraft:rotten_flesh',
-    'minecraft:moss'
+    'minecraft:moss_block'
   )
   brazier_summoning(
     'minecraft:magma_cube',
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'autumnity:snail',
     3,
-    'minecraft:slimeball',
+    'minecraft:slime_ball',
     'neapolitan:chocolate_bar',
     'minecraft:gold_nugget',
     'spawn:shell_fragments'

@@ -17,4 +17,5 @@ LootJS.modifiers((event) => {
     //replacing venison
     .replaceLoot(/.*:raw_venison/, "environmental:venison", true)
     .replaceLoot(/.*:cooked_venison/, "environmental:venison", true)
+    .replaceLoot('scguns:pebbles', 'twigs:pebble')
 });

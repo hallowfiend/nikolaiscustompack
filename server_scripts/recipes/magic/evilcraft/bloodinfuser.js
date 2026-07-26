@@ -13,7 +13,8 @@ ServerEvents.recipes(event => {
             "amount": 10000
         },
         "output_item": {
-            "id": "kubejs:bloodied_dust"
+            "id": "kubejs:bloodied_dust",
+            "count": 1
         },
         "duration": 100,
         "xp": 0.2,

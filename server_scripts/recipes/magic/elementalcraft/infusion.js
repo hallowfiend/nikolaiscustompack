@@ -6,19 +6,19 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'elementalcraft:infusion/air_silk' })
     elementalcraftRecipes.infuse(
         "elementalcraft:drenched_iron_ingot",
-        "#forge:ingots/invar",
+        {"tag": "#forge:ingots/invar"},
         500,
         "water"
     )
     elementalcraftRecipes.infuse(
         "elementalcraft:air_silk",
-        "mna:infused_silk",
+        {"item": "mna:infused_silk"},
         500,
         "air"
     )
     elementalcraftRecipes.infuse(
         "elementalcraft:burnt_glass",
-        "tconstruct:seared_glass",
+        {"item": "tconstruct:scorched_glass"},
         500,
         "fire"
     )

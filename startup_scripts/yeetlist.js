@@ -67,6 +67,7 @@ global.removedItems = [
   /enderio:.*grinding_ball/,
   /enderio:copper_alloy.*/,
   /enderio:redstone_alloy.*/,
+  /enderio:.*_gear/,
   //end of enderio yeet section
   'hibernalherbs:conjuration_altar',
   'brewincompatdelight:hard_cider',
@@ -97,7 +98,8 @@ global.removedItems = [
   //end of foodstuff unification
   'elementalcraft:elementpipe_impaired',
   'sons_of_sins:iron_and_ether',
-  'sosorgans:soulium_ingot'
+  'sosorgans:soulium_ingot',
+  'brewincompatdelight:soy_wax'
 ];
 
 global.removedRecipeIds = [
