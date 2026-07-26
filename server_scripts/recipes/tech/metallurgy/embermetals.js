@@ -63,16 +63,16 @@ ServerEvents.recipes(event => {
       "type": "embers:mixing",
       "inputs": [
         {
-          "amount": 2,
+          "amount": 144,
           "tag": "forge:copper"
         },
         {
-          "amount": 2,
+          "amount": 80,
           "fluid": "tcompat:molten_cthonic_gold"
         }
       ],
       "output": {
-        "amount": 4,
+        "amount": 288,
         "tag": "forge:molten_dawnstone"
       }
     })

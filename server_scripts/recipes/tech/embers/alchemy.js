@@ -35,6 +35,8 @@ ServerEvents.recipes(event => {
     mixing("silver", 16, "copper", 4, "sterling_silver", 20)
     mixing("lead", 2, "iron", 2, "pewter", 4)
     mixing("copper", 2, "aluminium", 6, "duralumin", 8)
+    //the aspecti proper
+    
     
     //Convenience recipes
 

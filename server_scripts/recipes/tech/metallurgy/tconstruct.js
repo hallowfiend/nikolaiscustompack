@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 			b: 'minecraft:copper_block',
 			f: "minecraft:blast_furnace"
         }
-    ).id('kubejs:mechanical_core')
+    ).id('kubejs:smeltery_controller')
     // making the ammy bronze recipe accurate
     event.remove({ id: 'tconstruct:smeltery/alloys/amethyst_bronze' })
     event.custom({
