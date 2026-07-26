@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    [
+    /* [
         ["embers:molten_iron", "gtceu:iron"],
         ["embers:molten_gold", "gtceu:gold"],
         ["embers:molten_copper", "gtceu:copper"],
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
                 recipe.save();
             }
         });
-    });
+    }); */
     //Dawnstone stuff
     event.remove({ id: 'embers:mixing/molten_dawnstone' })
     event.custom(
