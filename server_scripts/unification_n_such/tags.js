@@ -523,7 +523,7 @@ ServerEvents.tags("item", (event) => {
     "spawn:clam"
   ])
 
-  event.add("forge:raw_urchin", [
+  event.add("forge:urchin", [
     "collectorsreap:urchin",
     "lendersdelight:urchinkin",
     "spawn:sea_urchin"

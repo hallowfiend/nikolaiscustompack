@@ -46,7 +46,7 @@ const bulkReplace = [
     //wire unification end
     {target: "iss_magicfromtheeast:red_string", replacement: "botania:red_string"},
     { target: "immersiveengineering:electron_tube", replacement: "gtceu:vacuum_tube"},
-    { target: "collectorsreap:urchin", replacement: "#forge:raw_urchin"},
+    { target: "collectorsreap:urchin", replacement: "#forge:urchin"},
     { target: "alexsmobs:fish_oil", replacement: "#rusticdelight:cooking_oil"},
     { target: "hexalia:silk_fiber", replacement: "betterend:silk_fiber"},
     { target: "goety:ice_cube", replacement: "neapolitan:ice_cubes"},
