@@ -1,4 +1,19 @@
 ServerEvents.recipes((event) => {
+	// fuck the melter
+	event.remove({ output: 'tconstruct:smeltery_controller' })
+	event.shaped(
+        Item.of('tconstruct:smeltery_controller', 1),
+        [
+            'sss',
+            'bfb',
+            'sss'
+        ],
+        {
+            s: '#tconstruct:seared_blocks',
+			b: 'minecraft:copper_block',
+			f: "minecraft:blast_furnace"
+        }
+    ).id('kubejs:mechanical_core')
     // making the ammy bronze recipe accurate
     event.remove({ id: 'tconstruct:smeltery/alloys/amethyst_bronze' })
     event.custom({

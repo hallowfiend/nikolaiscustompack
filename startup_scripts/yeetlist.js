@@ -99,7 +99,10 @@ global.removedItems = [
   'elementalcraft:elementpipe_impaired',
   'sons_of_sins:iron_and_ether',
   'sosorgans:soulium_ingot',
-  'brewincompatdelight:soy_wax'
+  'brewincompatdelight:soy_wax',
+  //FUCK THE MELTER
+  'tconstruct:seared_melter',
+  'tconstruct:seared_heater'
 ];
 
 global.removedRecipeIds = [

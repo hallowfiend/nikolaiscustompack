@@ -8,4 +8,13 @@ ServerEvents.recipes(event => {
             'minecraft:amethyst_shard'
         ]
     ).heated()
+    //accurate sterling silver
+    event.remove({ id: "occultengineering:mixing/sterling_silver_ingot"})
+    event.recipes.create.mixing(
+        'gtceu:sterling_silver_ingot', //output
+        [
+            '4x gtceu:silver_ingot',
+            'minecraft:copper_ingot'
+        ]
+    ).heated()
 });
