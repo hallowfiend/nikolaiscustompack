@@ -1,7 +1,7 @@
 LootJS.modifiers((event) => {
   event
     .addLootTableModifier(/.*/)
-    .replaceLoot('eidolon:sulfur', 'immersiveengineering:sulfur_dust', true)
+    .replaceLoot('eidolon:sulfur', 'gtceu:sulfur_dust', true)
     .replaceLoot('caverns_and_chasms:tin_ingot', 'gtceu:tin_ingot', true)
     .replaceLoot('farmersdelight:rope', 'supplementaries:rope', true) //#FARMERSDELIGHTROPEHATEGANG
     .replaceLoot('supplementaries:pancake', 'rusticdelight:pancake', true)
@@ -16,6 +16,7 @@ LootJS.modifiers((event) => {
     .removeLoot('culturaldelights:squid')
     //replacing venison
     .replaceLoot(/.*:raw_venison/, "environmental:venison", true)
-    .replaceLoot(/.*:cooked_venison/, "environmental:venison", true)
+    .replaceLoot(/.*:cooked_venison/, "environmental:cooked_venison", true)
     .replaceLoot('scguns:pebbles', 'twigs:pebble')
+    .replaceLoot('supplementaries:ash', 'embers:ash', true)
 });

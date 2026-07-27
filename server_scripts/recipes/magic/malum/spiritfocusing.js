@@ -33,11 +33,11 @@ ServerEvents.recipes(event =>{
         "spirits": [
             {
             "type": type1,
-            "count": count1
+            "count": 2
             },
             {
             "type": type2,
-            "count": count2
+            "count": 2
             }
         ],
         "time": 300
@@ -59,7 +59,7 @@ ServerEvents.recipes(event =>{
     //arcane + earthen: quartz
     //arcane + aqueous: prismarine
     pureSpiritFocusing("wicked", "minecraft:soul_sand", 8)
-    //dualSpiritFocusing("wicked", "sacred",)
+    dualSpiritFocusing("wicked", "sacred", "sons_of_sins:ether_ashes", 4)
     dualSpiritFocusing("wicked", "aerial", "goety:jade", 8)
     dualSpiritFocusing("wicked", "infernal", "minecraft:blaze_powder", 8)
     dualSpiritFocusing("wicked", "earthen", "gtceu:saltpeter_dust", 8)

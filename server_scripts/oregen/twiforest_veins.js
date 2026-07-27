@@ -30,7 +30,7 @@ addVein("twilight_lubricant_vein", 'twiforest', 30, 20, -20, 40, 'soapstone', "s
       .size(1, 4));
 });
 
-addVein("twilight_olivine_vein", 'twiforest', 20, 20, -20, 0, 'olivine', "surface", (pattern) => {
+addVein("twilight_olivine_vein", 'twiforest', 20, 20, -20, 40, 'olivine', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('bentonite')
@@ -46,7 +46,7 @@ addVein("twilight_olivine_vein", 'twiforest', 20, 20, -20, 0, 'olivine', "surfac
       .size(1, 2));
 });
 
-addVein("twilight_apatite_vein", 'twiforest', 30, 20, -20, 0, 'apatite', "surface", (pattern) => {
+addVein("twilight_apatite_vein", 'twiforest', 30, 20, -20, 40, 'apatite', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('apatite')
@@ -88,7 +88,7 @@ addVein("topaz_vein", 'twiforest', 25, 70, -20, 40, 'blue_topaz', "surface", (pa
       .size(1, 2));
 });
 
-addVein("twilight_malignant_vein", 'twiforest', 40, 20, -65, -10, 'soulstone', "surface", (pattern) => {
+addVein("twilight_malignant_vein", 'twiforest', 40, 20, -20, 40, 'soulstone', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('soulstone')
@@ -101,7 +101,7 @@ addVein("twilight_malignant_vein", 'twiforest', 40, 20, -65, -10, 'soulstone', "
       .size(1, 3));
 });
 
-addVein("ancient_riches", 'twiforest', 10, 20, -20, 10, 'gold', "surface", (pattern) => {
+addVein("ancient_riches", 'twiforest', 10, 20, -20, 40, 'gold', "surface", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('opal')
@@ -117,7 +117,7 @@ addVein("ancient_riches", 'twiforest', 10, 20, -20, 10, 'gold', "surface", (patt
       .size(2, 2));
 });
 
-addVein("petrified_twilight", 'twiforest', 10, 60, -20, 10, 'vinteum', "above", (pattern) => {
+addVein("petrified_twilight", 'twiforest', 10, 60, -20, 40, 'vinteum', "above", (pattern) => {
   pattern
     .layer((l) => l.weight(3)
       .mat('vinteum')

@@ -55,4 +55,14 @@ ServerEvents.recipes(event => {
 
 })
 
+ServerEvents.tags('fluid', event => {
+    event.remove('minecraft:water', [
+    'ad_astra:oil', 'ad_astra:flowing_oil',
+    'ad_astra:cryo_fuel', 'ad_astra:flowing_cryo_fuel',
+    'ad_astra:fuel', 'ad_astra:flowing_fuel',
+    'createaddition:flowing_seed_oil', 'createaddition:seed_oil',
+    'createaddition:bioethanol', 'createaddition:flowing_bioethanol'])
+    event.add('forge:oil', '#forge:crude_oil')
+})
+
 console.log('Fluids distilled')
