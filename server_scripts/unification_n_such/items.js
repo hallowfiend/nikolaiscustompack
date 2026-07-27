@@ -49,7 +49,7 @@ const bulkReplace = [
     { target: "goety:ice_cube", replacement: "neapolitan:ice_cubes"},
     { target: "create:bar_of_chocolate", replacement: "neapolitan:chocolate_bar"},
     { target: "twilightforest:cooked_venison", replacement: "#forge:cooked_venison"},
-    { target: "scguns:pebbles", replacement: "twigs:pebble"}
+    { target: "scguns:pebbles", replacement: "twigs:pebble"},
 	];
 
 ServerEvents.recipes((event) => {

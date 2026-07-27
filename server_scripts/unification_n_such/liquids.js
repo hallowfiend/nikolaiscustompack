@@ -51,6 +51,9 @@ ServerEvents.recipes(event => {
     replaceFluidIO('embers:molten_zinc', 'gtceu:zinc')
     replaceFluidIO('embers:molten_constantan', 'gtceu:cupronickel')
     replaceFluidIO('constructs_casting:molten_mithril', 'gtceu:mithril')
+    replaceFluidIO('tconstruct:molten_amethyst', 'tconstruct:amethyst')
+    replaceFluidIO('tconstruct:molten_quartz', 'tconstruct:quartz')
+    //replaceFluidIO()
 
 
 })

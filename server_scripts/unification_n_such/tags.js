@@ -489,7 +489,7 @@ ServerEvents.tags("item", (event) => {
     "eidolon:magic_ink",
     "caverns_and_chasms:tether_potion",
     "caverns_and_chasms:trail_potion",
-    "#tconstruct:parts",
+    "#tconstruct:modifiable/multipart",
     "elementalcraft:pure_ore",
     /reliquary:.*mob_charm.*/,
     'enderio:broken_spawner',
