@@ -854,55 +854,7 @@ event.create('spirit_gem')
         .dust()
         .color(0xB3B3FF)
         .iconSet(GTMaterialIconSet.DULL);
-    
-    
-// Manaline
-    event.create('composite_stardust')
-        .dust()
-        .color(0xa187ff)
-        .iconSet(SHINY)
-        .components('deepsilver', 'starlit_diamond', 'luminite', 'purified_vinteum')
-        .flags(centrifuge);
-    
-    event.create('gigantarubra')
-        .gem()
-        .fluid()
-        .color(0x1a1818)
-        .secondaryColor(0xba0000)
-        .iconSet(NETHERSTAR)
-        .flags(no_decomp,
-            no_smashing,
-            no_smelt
-        );
-    
-    event.create('regal_zanite')
-        .dust()
-        .fluid()
-        .components('regalium', 'zanite')
-        .color(0xffea03)
-        .secondaryColor(0x8e51e9)
-        .iconSet(SHINY);
-    
-    event.create('rezanite_pentachloride')
-        .fluid()
-        .components('regal_zanite', '5x chlorine')
-        .color(0xffea03)
-        .secondaryColor(0x8e51e9)
-        .iconSet(SHINY);
-    
-    event.create('fluororezanitic_acid')
-        .fluid()
-        .components('rezanite_pentachloride', 'hydrofluoric_acid')
-        .color(0x8e51e9)
-        .secondaryColor(0xffea03)
-        .iconSet(NETHERSTAR);
-    
-    event.create('spiritual_debris')
-        .dust()
-        .formula('👻')
-        .color(0x99499c)
-        .secondaryColor(0xffe587)
-        .iconSet(WOOD);
+
 
     
     console.log('Materials ordered')

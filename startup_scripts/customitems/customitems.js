@@ -11,6 +11,10 @@ StartupEvents.registry('item', event => {
     .displayName('Castbrain');
     event.create('biomantic_neuron')
     .displayName('Biomantic Neuron')
+    event.create('ashen_blend')
+    .displayName('Ashen Blend')
+    event.create('ethereal_ashen_blend')
+    .displayName('Ethereal Ashen Blend')
     //hibernal herbs sigil replacements
     event.create('singed_leaves')
     .displayName('Singed Leaves');

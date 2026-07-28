@@ -22,8 +22,7 @@ ServerEvents.recipes(event => {
     bio_forge_tab: COMPONENTS,
     ingredients: [
       { item: "experienceobelisk:mending_neurogel" },
-      { count: 4, item: "biomancy:elastic_fibers" },
-      { count: 4, item: "biomancy:flesh_bits" },
+      { count: 8, item: "biomancy:elastic_fibers" },
       { item: "gtceu:potassium_carbonate_dust"},
       { item: "gtceu:salt_dust"},
       { item: "gtceu:energium_dust"}
@@ -41,9 +40,7 @@ ServerEvents.recipes(event => {
       { count: 16, item: "kubejs:biomantic_neuron" },
       { count: 4, item: "biomancy:regenerative_fluid" },
       { count: 6, item: "gtceu:vinteum_alloy_plate"},
-      { item: "mna:animus_dust"},
       { item: "hexerei:mindful_trance_blend"},
-      { item: "magichem:admixture_wizard"},
       { item: "malum:mnemonic_fragment"}
     ],
     nutrientsCost: 16,

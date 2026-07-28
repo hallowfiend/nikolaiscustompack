@@ -38,6 +38,45 @@ event.custom({
       item: "farmersdelight:ham"
     }
   })
+event.custom({
+    type: "biomancy:bio_forging",
+    bio_forge_tab: COMPONENTS,
+    ingredients: [
+      { item: "hexerei:selenite_shard" },
+      { item: "mna:vinteum_dust" },
+      { count: 8, item: "biomancy:bone_fragments" }
+    ],
+    nutrientsCost: 1,
+    result: {
+      item: "ars_nouveau:wilden_horn"
+    }
+  })
+event.custom({
+    type: "biomancy:bio_forging",
+    bio_forge_tab: COMPONENTS,
+    ingredients: [
+      { item: "eidolon:sildrian_seed" },
+      { item: "mna:vinteum_dust" },
+      { count: 8, item: "biomancy:lithic_powder" }
+    ],
+    nutrientsCost: 1,
+    result: {
+      item: "ars_nouveau:wilden_spike"
+    }
+  })
+event.custom({
+    type: "biomancy:bio_forging",
+    bio_forge_tab: COMPONENTS,
+    ingredients: [
+      { item: "hexalia:saltsprout" },
+      { item: "mna:vinteum_dust" },
+      { count: 8, item: "biomancy:tough_fibers" }
+    ],
+    nutrientsCost: 1,
+    result: {
+      item: "ars_nouveau:wilden_wing"
+    }
+  })
 /*
 // """"""Gregified""""" machine recipes
     forging(

@@ -102,7 +102,10 @@ global.removedItems = [
   'brewincompatdelight:soy_wax',
   //FUCK THE MELTER
   'tconstruct:seared_melter',
-  'tconstruct:seared_heater'
+  'tconstruct:seared_heater',
+  'extra_sins:mixture_of_ash_and_ethereal_ash',
+  /supplementaries:ash_bricks.*/
+  
 ];
 
 global.removedRecipeIds = [
