@@ -57,7 +57,7 @@ event.custom({
     ingredients: [
       { item: "eidolon:sildrian_seed" },
       { item: "mna:vinteum_dust" },
-      { count: 8, item: "biomancy:lithic_powder" }
+      { count: 8, item: "biomancy:stone_powder" }
     ],
     nutrientsCost: 1,
     result: {

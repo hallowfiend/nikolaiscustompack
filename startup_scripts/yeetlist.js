@@ -105,7 +105,11 @@ global.removedItems = [
   'tconstruct:seared_heater',
   'extra_sins:mixture_of_ash_and_ethereal_ash',
   /supplementaries:ash_bricks.*/,
-  'bakery:sandwich'
+  'bakery:sandwich',
+  'tconstruct:wire_cast',
+  /tconstruct:wire_.*sand_cast/,
+  'irons_spellbooks:blood_vial',
+  'evilcraft:blood_orb_empty'
   
 ];
 

@@ -53,7 +53,6 @@ ServerEvents.tags('block', event =>{
     'quark:black_corundum_cluster'
   ])
 
-  //bonus: whirlisprig exploit patch
   event.add('ars_nouveau:whirlisprig/denied_drop', [
     'minecraft:netherrack',
     'aether:aether_dirt',

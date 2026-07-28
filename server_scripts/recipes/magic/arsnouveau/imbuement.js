@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         {spellType: "abjuration", apparatus: "shielding_apparatus", techItem: "immersiveengineering:sheetmetal_steel", magicItem: "eidolon:purity_incense"},
         {spellType: "conjuration", apparatus: "warping_engine", techItem: "pneumaticcraft:air_compressor", magicItem: "occultism:otherworld_essence"}
     ]
-    event.remove({ id: /ars_nouveau:imbuement.*essence/ })
+    event.remove({ output: /ars_nouveau:.*_essence/ })
     event.remove({ id: "ars_elemental:imbuement_anima_essence" })
     //spelltype essences
     spellTypes.forEach(type => {

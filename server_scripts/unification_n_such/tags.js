@@ -620,6 +620,8 @@ ServerEvents.tags("item", (event) => {
 
   event.add('kubejs:incense', /eidolon:.*_incense/);
 
+  event.add('irons_spellbooks:blood_focus', 'hexerei:blood_bottle');
+
   event.add('hexalia:crushed_herbs', /hibernalherbs:pounded.*/);
 
   event.add("mynethersdelight:powdery_logs", ["mynethersdelight:powdery_block", "mynethersdelight:stripped_powdery_block"]);

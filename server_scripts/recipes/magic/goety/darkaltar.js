@@ -1,4 +1,83 @@
 ServerEvents.recipes(event => {
+    //NECROTURGY RITUALS
+    //Dormant Weak Blood Orb
+    event.recipes.goety.ritual('kubejs:dormant_weak_blood_orb', 'goety:craft', [
+            'botania:mana_diamond',
+            'eidolon:lesser_soul_gem',
+            'eidolon:holy_symbol',
+            'eidolon:offering_incense',
+            'hexalia:purity_idol',
+            'hexalia:celestial_crystal'
+        ])
+        .activationItem('evilcraft:blood_orb_filled')
+        .craftType('necroturgy')
+        .soulCost(80)
+        .duration(5);
+    //Dormant Apprentice Blood Orb
+    event.recipes.goety.ritual('kubejs:dormant_apprentice_blood_orb', 'goety:craft', [
+            'magichem:admixture_mana',
+            'bloodmagic:holy_water_anointment',
+            'malum:cluster_of_brilliance',
+            'elementalcraft:springaline_shard',
+            'apotheosis:uncommon_material',
+            'magichem:signalite_block'
+        ])
+        .activationItem('evilcraft:blood_orb_filled')
+        .craftType('necroturgy')
+        .soulCost(80)
+        .duration(5);
+    //Dormant Magician Blood Orb
+    event.recipes.goety.ritual('kubejs:dormant_magician_blood_orb', 'goety:craft', [
+            'magichem:perfected_electrum_block',
+            'mna:mote_arcane',
+            'malum:astral_weave',
+            'botania:rune_mana',
+            'bloodmagic:cyclingcatalyst',
+            'malum:block_of_hallowed_gold'
+        ])
+        .activationItem('evilcraft:blood_orb_filled')
+        .craftType('necroturgy')
+        .soulCost(80)
+        .duration(5);
+    //Dormant Master Blood Orb
+    event.recipes.goety.ritual('kubejs:dormant_master_blood_orb', 'goety:craft', [
+            'ars_elemental:mark_of_mastery',
+            'bloodmagic:holy_water_anointment_l',
+            'malum:mnemonic_fragment',
+            'botania:rune_pride',
+            'embers:focal_lens',
+            'bloodmagic:reinforcedteleposerfocus'
+        ])
+        .activationItem('evilcraft:blood_orb_filled')
+        .craftType('necroturgy')
+        .soulCost(80)
+        .duration(5);
+    //Dormant Archmage Blood Orb
+    event.recipes.goety.ritual('kubejs:dormant_archmage_blood_orb', 'goety:craft', [
+            'goety:corruption_focus',
+            'bloodmagic:holy_water_anointment_xl',
+            'lendersdelight:maledictus_heart',
+            'botania:gaia_ingot',
+            'goety:forbidden_scroll',
+            'bloodmagic:dungeonmetal'
+        ])
+        .activationItem('evilcraft:blood_orb_filled')
+        .craftType('necroturgy')
+        .soulCost(80)
+        .duration(5);
+    //Dormant Transcendent Blood Orb
+    event.recipes.goety.ritual('kubejs:dormant_transcendent_blood_orb', 'goety:craft', [
+            'deep_aether:stratus_block',
+            'magichem:selargyros',
+            'magichem:orichalkos',
+            'goety:undeath_potion',
+            'gtceu:luv_fusion_reactor',
+            'animus:crystallized_demon_will_block'
+        ])
+        .activationItem('evilcraft:blood_orb_filled')
+        .craftType('necroturgy')
+        .soulCost(80)
+        .duration(5);
     //DIVINATION RITUALS
     //Nature's Compass
     /* event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [
