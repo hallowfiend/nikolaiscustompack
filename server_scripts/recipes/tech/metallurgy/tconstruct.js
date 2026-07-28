@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
 	event.remove({ id: /tconstruct:.*mana_steel.*/})
+	event.remove({ id: /gm_construct:smeltery.*casting.*metal.*malachite.*/})
 	// fuck the melter
 	event.remove({ output: 'tconstruct:smeltery_controller' })
 	event.shaped(

@@ -7,6 +7,10 @@ StartupEvents.registry('item', event => {
     .displayName('Offering to Nature');
     event.create('bloodied_dust')
     .displayName('Bloodied Dust');
+    event.create('castbrain')
+    .displayName('Castbrain');
+    event.create('biomantic_neuron')
+    .displayName('Biomantic Neuron')
     //hibernal herbs sigil replacements
     event.create('singed_leaves')
     .displayName('Singed Leaves');

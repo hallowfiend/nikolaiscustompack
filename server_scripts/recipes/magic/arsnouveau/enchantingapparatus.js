@@ -1,19 +1,33 @@
 ServerEvents.recipes(event => {
-    /* event.remove({ output: 'ars_nouveau:storage_lectern' })
-    // Storage Lectern
+   //Spellbook
+   event.remove({ output: 'ars_nouveau:novice_spell_book' })
+   event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            'goety:mystic_core',
+            'irons_spellbooks:epic_ink',
+            'evilcraft:inverted_potentia_empowered',
+            'naturesaura:token_euphoria',
+            'occultism:spirit_attuned_gem',
+            'mna:greater_mote_arcane',
+            'create:deployer',
+            'malum:fused_consciousness'
+        ],
+        'irons_spellbooks:dragonskin_spell_book',             
+        'ars_nouveau:novice_spell_book',   
+        4000                            
+    )
+    //Spell turret
+    event.remove({ output: 'ars_nouveau:spell_turret' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            'botania:mana_diamond',
-            'evilcraft:blood_chest',
-            'hexalia:morphora',
-            'hexerei:mindful_trance_blend',
-            'create:precision_mechanism',
-            'mna:filter_item',
-            'goety:waystone',
-            'malum:cluster_of_brilliance'
+            'goety:mystic_core',
+            'kubejs:castbrain',
+            'ars_nouveau:source_gem_block',
+            'eidolon:arcane_gold_block',
+            'botania:dragonstone'
         ],
-        'minecraft:lectern',             
-        'ars_nouveau:storage_lectern',   
+        'scguns:sniper_turret',             
+        'ars_nouveau:spell_turret',   
         2000                            
-    ) */
+    )
 })

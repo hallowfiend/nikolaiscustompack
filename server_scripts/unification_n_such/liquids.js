@@ -14,6 +14,11 @@ ServerEvents.recipes(event => {
             Fluid.of(fluid),
             Fluid.of(unifiedFluid)
         )
+        event.replaceInput(
+            { fluid: Fluid.of(fluid) },
+            Fluid.of(fluid),
+            Fluid.of(unifiedFluid)
+        )
     }
     function replaceFluidOutput(fluid, unifiedFluid)
     {
@@ -44,12 +49,11 @@ ServerEvents.recipes(event => {
     replaceFluidIO('embers:molten_gold', 'gtceu:gold')
     replaceFluidIO('tconstruct:lead', 'gtceu:lead')
     replaceFluidIO('embers:molten_lead', 'gtceu:lead')
-    replaceFluidIO('embers:molten_dawnstone', 'gtceu:dawnstone')
     replaceFluidIO('embers:molten_mithril', 'gtceu:mithril')
     replaceFluidIO('embers:molten_tin', 'gtceu:tin')
     replaceFluidIO('embers:molten_aluminum', 'gtceu:aluminium')
     replaceFluidIO('embers:molten_zinc', 'gtceu:zinc')
-    replaceFluidIO('embers:molten_constantan', 'gtceu:cupronickel')
+    replaceFluidIO('embers:molten_constantan', 'tconstruct:constantan')
     replaceFluidIO('constructs_casting:molten_mithril', 'gtceu:mithril')
     replaceFluidIO('tconstruct:molten_amethyst', 'tconstruct:amethyst')
     replaceFluidIO('tconstruct:molten_quartz', 'tconstruct:quartz')

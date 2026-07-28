@@ -7,12 +7,12 @@ ServerEvents.recipes(event => {
     )
     event.custom({
         "type": "evilcraft:blood_infuser",
-        "input_item": "evilcraft:dull_dust",
-        "input_fluid": {
+        "item": "evilcraft:dull_dust",
+        "fluid": {
             "id": "evilcraft:blood",
             "amount": 10000
         },
-        "output_item": {
+        "result": {
             "id": "kubejs:bloodied_dust",
             "count": 1
         },

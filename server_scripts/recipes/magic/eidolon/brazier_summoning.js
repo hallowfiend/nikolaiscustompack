@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'alexsmobs:flutter',
     3,
-    'minecraft:moss',
+    'minecraft:moss_block',
     'minecraft:spore_blossom',
     'minecraft:flowering_azalea',
     'minecraft:pink_petals'

@@ -40,10 +40,6 @@ ServerEvents.recipes(event => {
     }
 
     let recipesToAdd = []
-    for (let type of ['glass', 'smart', 'dense', 'smart_dense', 'covered', 'covered_dense']) {
-            let template = `ae2:@_${type}_cable`
-            recipesToAdd.push(buildColorRecipe(template, template.replace('@', 'fluix')))
-        }
         recipesToAdd.push(buildColorRecipe('ae2:@_paint_ball', 'ae2:matter_ball'))
         recipesToAdd.push(buildColorRecipe('ae2:@_lumen_paint_ball', 'ae2:white_lumen_paint_ball'))
         recipesToAdd.push(buildColorRecipe('minecraft:@_harness', 'minecraft:white_harness'))

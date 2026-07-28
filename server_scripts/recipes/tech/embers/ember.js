@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
     emberCombustion({"item": "malum:auric_embers"}, 300, 4.0)
     emberCombustion({"item": "scguns:vehement_coal"}, 100, 6.6)
     emberCombustion({"item": "ars_nouveau:fire_essence"}, 400, 6.0)
-    emberCombustion({"item": "elementalcraft:fire_crystal"}, 2400, 8.8)
+    emberCombustion({"item": "elementalcraft:firecrystal"}, 2400, 8.8)
     //Boring
     function basicBoring(dimension, heightMax, weight, output) {
       event.custom({

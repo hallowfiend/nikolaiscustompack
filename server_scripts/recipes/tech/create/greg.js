@@ -18,7 +18,6 @@ const createMillableIngots = [
     'silver',
     'copper',
     'pewter',
-    'constantan',
     'invar'
 ]
 
@@ -28,9 +27,10 @@ const createMillableGems = [
     'emerald',
     'flint',
     'quartzite',
-    'certus_quartz',
-    'dark',
-    'amethyst'
+    'amethyst',
+    'coal',
+    'charcoal',
+    'coke'
 ]
 
 ServerEvents.recipes(event => {

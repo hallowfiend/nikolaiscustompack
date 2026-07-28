@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'elementalcraft:infusion/air_silk' })
     elementalcraftRecipes.infuse(
         "elementalcraft:drenched_iron_ingot",
-        {"tag": "#forge:ingots/invar"},
+        {"tag": "forge:ingots/invar"},
         500,
         "water"
     )

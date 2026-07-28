@@ -230,6 +230,9 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color(0x9be3fa)
         .components('vinteum', 'iron')
         .flags(centrifuge)
+        .flags(
+            plates
+        )
         .iconSet(METALLIC);
 
     event.create('purified_vinteum_alloy')

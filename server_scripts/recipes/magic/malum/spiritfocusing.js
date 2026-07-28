@@ -71,7 +71,7 @@ ServerEvents.recipes(event =>{
     dualSpiritFocusing("sacred", "aqueous", "gtceu:salt_dust", 8)
     //pureSpiritFocusing("aerial", "")
     dualSpiritFocusing("aerial", "infernal", "gtceu:sulfur_dust", 8)
-    dualSpiritFocusing("aerial", "earthen", "ae2:certus_quartz", 4)
+    dualSpiritFocusing("aerial", "earthen", "ae2:certus_quartz_crystal", 4)
     //dualSpiritFocusing("aerial", "aqueous", "")
     //pure infernal: glowstone
     dualSpiritFocusing("infernal", "earthen", "embers:ash", 8)
