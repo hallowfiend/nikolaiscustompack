@@ -30,7 +30,9 @@ const createMillableGems = [
     'amethyst',
     'coal',
     'charcoal',
-    'coke'
+    'coke',
+    'jade',
+    'nether_quartz'
 ]
 
 ServerEvents.recipes(event => {

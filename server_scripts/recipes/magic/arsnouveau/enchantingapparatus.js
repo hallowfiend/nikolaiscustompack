@@ -3,7 +3,6 @@ ServerEvents.recipes(event => {
    event.remove({ output: 'ars_nouveau:novice_spell_book' })
    event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            'goety:mystic_core',
             'irons_spellbooks:epic_ink',
             'evilcraft:inverted_potentia_empowered',
             'naturesaura:token_euphoria',

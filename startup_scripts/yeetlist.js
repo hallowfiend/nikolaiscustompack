@@ -104,7 +104,8 @@ global.removedItems = [
   'tconstruct:seared_melter',
   'tconstruct:seared_heater',
   'extra_sins:mixture_of_ash_and_ethereal_ash',
-  /supplementaries:ash_bricks.*/
+  /supplementaries:ash_bricks.*/,
+  'bakery:sandwich'
   
 ];
 

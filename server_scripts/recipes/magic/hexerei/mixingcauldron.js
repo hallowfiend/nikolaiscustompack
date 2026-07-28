@@ -42,11 +42,11 @@ const recipes = [
         {"item":"eidolon:crimson_essence"},
         {"item":"eidolon:merammer_resin"}
     ],
+    liquid:"minecraft_water",
     output:"eidolon:bloodlust_incense",
     output_amount:2,
     output_liquid:false,
     liquid_consum:250,
-    liquid:"minecraft_water",
     heat:true
 },
 {

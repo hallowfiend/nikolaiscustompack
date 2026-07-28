@@ -8,12 +8,11 @@ ItemEvents.tooltip(event => {
   event.add('hexalia:foul_sac', '§7Releases a poisonous and paralyzing mixture.')
   event.add('hexalia:frost_sac', '§7Releases a weakening and paralyzing mixture.')
   event.add('hexalia:searing_sac', '§7Releases a burning mixture.')
-  event.add('hexalia:earplugs', '§7Protects from mandrake screams.')
   event.add('hexalia:ghostveil', '§7Provides stealth to hostiles.')
   event.add('hexalia:bogshade', '§7Grants agility when swimming and on mud.')
   event.add('hexalia:bloomwrap_hat', '§7Grants knockback and stun resistance.')
   event.add('hexalia:bloomwrap_robes', '§7Reflects a portion of incoming damage.')
-  event.add('hexalia:bloomwrap_leggings', '§7Grants regeneration nearby flowers.')
+  event.add('hexalia:bloomwrap_leggings', '§7Grants regeneration while nearby flowers.')
   event.add('hexalia:bloomwrap_boots', '§7Increases speed when walking on leaves.')
 
   event.addAdvanced('malum:encyclopedia_arcana', (item, advanced, text) => {

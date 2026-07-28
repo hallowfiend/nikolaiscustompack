@@ -502,6 +502,10 @@ ServerEvents.tags("item", (event) => {
     "spawn:cooked_tuna_slice"
   ]);
 
+  event.add("forge:dusts/netherrack", [
+    "create:cinder_flour"
+  ]);
+
   event.add("tidesdelight:cooked_tuna", [
     "#forge:cooked_fishes/tuna"
   ]);
@@ -614,11 +618,17 @@ ServerEvents.tags("item", (event) => {
     'eccentrictome:tome'
   ])
 
+  event.add('kubejs:incense', /eidolon:.*_incense/);
+
+  event.add('hexalia:crushed_herbs', /hibernalherbs:pounded.*/);
+
   event.add("mynethersdelight:powdery_logs", ["mynethersdelight:powdery_block", "mynethersdelight:stripped_powdery_block"]);
 
   //#region remove item tag
   
   event.remove('farm_and_charm:cabbage', 'farm_and_charm:lettuce');
+
+  event.remove('forge:ingots/brick', 'supplementaries:ash_brick');
 
   event.remove('forge:gems/emerald', 'goety:magic_emerald')
   event.remove('forge:storage_blocks/emerald', 'goety:awakened_emerald_block')

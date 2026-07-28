@@ -41,7 +41,7 @@ const bulkReplace = [
     { target: "createaddition:iron_wire", replacement: "gtceu:iron_single_wire"},
     { target: "createaddition:gold_wire", replacement: "gtceu:gold_single_wire"},
     //wire unification end
-    {target: "iss_magicfromtheeast:red_string", replacement: "botania:red_string"},
+    { target: "iss_magicfromtheeast:red_string", replacement: "botania:red_string"},
     { target: "immersiveengineering:electron_tube", replacement: "gtceu:vacuum_tube"},
     { target: "collectorsreap:urchin", replacement: "#forge:urchin"},
     { target: "alexsmobs:fish_oil", replacement: "#rusticdelight:cooking_oil"},
@@ -50,7 +50,9 @@ const bulkReplace = [
     { target: "create:bar_of_chocolate", replacement: "neapolitan:chocolate_bar"},
     { target: "twilightforest:cooked_venison", replacement: "#forge:cooked_venison"},
     { target: "scguns:pebbles", replacement: "twigs:pebble"},
-    { target: "supplementaries:ash", replacement: "forge:ash"}
+    { target: "supplementaries:ash", replacement: "#forge:ash"},
+    { target: "naturalist:venison", replacement: "environmental:venison"},
+    { target: "cornexpansion:corn_dough", replacement: "culturaldelights:corn_dough"}
 	];
 
 ServerEvents.recipes((event) => {

@@ -68,7 +68,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
 //Ingots
     ingot('drenched_iron', 'elementalcraft:drenched_iron_ingot')
-    ingot('brass', 'create:brass_ingot')
     ingot('desh', 'ad_astra:desh_ingot')
     ingot('cloggrum', 'undergarden:cloggrum_ingot')
     ingot('froststeel', 'undergarden:froststeel_ingot')
@@ -124,7 +123,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
 //Blocks
     block('drenched_iron', 'elementalcraft:drenched_iron_block')
-    block('brass', 'create:brass_block')
     block('iesnium', 'occultism:iesnium_block')
     block('arcane_gold', 'eidolon:arcane_gold_block')
     block('pewter', 'eidolon:pewter_block')
@@ -198,6 +196,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     block('cursed_alloy', 'goety:cursed_metal_block')
     block('null_slate', 'malum:block_of_null_slate')
     block('ambrosium', 'aether:ambrosium_block')
+    block('blazing_quartz', 'malum:block_of_blazing_quartz')
 
 //Nuggets
     nugget('drenched_iron', 'elementalcraft:drenched_iron_nugget')
