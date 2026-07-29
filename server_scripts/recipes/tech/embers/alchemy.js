@@ -82,7 +82,10 @@ ServerEvents.recipes(event => {
         }
         })
     })
-    
+    //Apotheosis material upgrading
+    const apothicMaterials = [
+        { material: "", nextMaterial: ""},
+    ]
     //Convenience recipes
     //TF MATERIAL DUPES
     //Ironwood

@@ -168,4 +168,69 @@ ServerEvents.recipes(event => {
       20,
       "evilcraft:dark_gem_crushed"
     )
+    basicBoring(
+      "twilightforest:twilight_forest",
+      7,
+      60,
+      "enderio:grains_of_infinity"
+    )
+    //"Voidscraping"
+    function voidscraping(dimension, weight, output) {
+      event.custom({
+      "type": "embers:boring",
+        "dimensions": [
+          dimension
+        ],
+      "max_height": 30,
+      "required_block": {
+        "amount": 9,
+        "block_tag": "kubejs:airs"
+      },
+      "output": {
+        "item": output
+      },
+      "weight": weight
+    })
+    }
+    voidscraping(
+      "aether:the_aether", //is this even boring anymore
+      80,
+      "aether:cold_aercloud"
+    )
+    voidscraping(
+      "aether:the_aether",
+      60,
+      "aether:blue_aercloud"
+    )
+    voidscraping(
+      "aether:the_aether",
+      40,
+      "aether:golden_aercloud"
+    )
+    voidscraping(
+      "aether:the_aether",
+      20,
+      "deep_aether:sterling_aercloud"
+    )
+    voidscraping(
+      "aether:the_aether",
+      20,
+      "aether:aerogel"
+    )
+    voidscraping(
+      "aether:the_aether",
+      10,
+      "malum:astral_weave"
+    )
+    voidscraping(
+      "aether:the_aether",
+      20,
+      "malum:aerial_spirit"
+    )
+    voidscraping(
+      "minecraft:the_end",
+      80,
+      "malum:aerial_spirit"
+    )
+    
 })
