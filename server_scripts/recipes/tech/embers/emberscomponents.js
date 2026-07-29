@@ -62,4 +62,15 @@ ServerEvents.recipes(event => {
         ['kubejs:ashen_blend', 'kubejs:ashen_blend', 'create:cinder_flour', 'create:cinder_flour', 'sons_of_sins:ether_ashes', 'sons_of_sins:ether_ashes']
     ).id('kubejs:ethereal_ashen_blend')
     event.smelting('extra_sins:ethereal_ash_brick', 'kubejs:ethereal_ashen_blend')
+    //Replacing redstone in some resippys
+    event.replaceInput(
+        {output: 'embers:item_extractor'},
+        'minecraft:redstone',
+        'embers:ember_grit'
+    )
+    event.replaceInput(
+        {output: 'embers:fluid_extractor'},
+        'minecraft:redstone',
+        'embers:ember_grit'
+    )
 })

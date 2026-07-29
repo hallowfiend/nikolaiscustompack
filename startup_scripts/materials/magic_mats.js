@@ -170,8 +170,20 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.GENERATE_GEAR,
             GTMaterialFlags.GENERATE_SMALL_GEAR,
-            frames,
             no_decomp
+        );
+    
+    event.create('ichorfuel')
+        .color(0xffa73b)
+        .secondaryColor(0x9e0d0d)
+        .gem()
+        .iconSet(LAPIS)
+        .burnTime(424242)
+        .components('vehement_coal', 'ember', '4x carbon', '4x life_essence', '12x exispiravit')
+        .flags(
+            no_decomp,
+            flammable,
+            explosive
         );
 
     // Manaline

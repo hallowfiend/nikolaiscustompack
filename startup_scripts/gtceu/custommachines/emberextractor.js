@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('embers')
         .setEUIO('in')
         .setMaxIOSize(1, 9, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.FURNACE_OVERLAY_BRONZE)
+        .setSlotOverlay(false, false, GuiTextures.IN_SLOT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_COKE_OVEN, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MINER);
 
@@ -17,9 +17,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('ember_extraction')
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true).recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("dbd", "dfd", "dhhhd", "0f0", "000", "000")
-            .aisle("bab", "dad", "hiiih", "faf", "0g0", "0h0")
-            .aisle("dbd", "dfd", "dhhhd", "0f0", "000", "000")
+            .aisle("dbd", "dfd", "0f0", "000", "000")
+            .aisle("bab", "dad", "faf", "0g0", "0h0")
+            .aisle("dbd", "dcd", "0f0", "000", "000")
 
             .where("a", Predicates.blocks("sons_of_sins:soul_steel_block"))
             .where("b", Predicates.blocks("gtceu:bronze_pipe_casing")
@@ -27,8 +27,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setExactLimit(1)))
             .where("d", Predicates.blocks("embers:caminite_bricks"))
-            .where("f", Predicates.blocks("embers:ashen_brick")
-                .or(Predicates.controller(Predicates.blocks(definition.get()))))
+            .where("f", Predicates.blocks("embers:ashen_brick"))
+            .where("c", Predicates.controller(Predicates.blocks(definition.get())))
             .where("g", Predicates.blocks("embers:dawnstone_block"))
             .where("h", Predicates.blocks("embers:ember_funnel"))
             .where("0", Predicates.any())

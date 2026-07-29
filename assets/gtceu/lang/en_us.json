@@ -5,6 +5,8 @@
     "block.gtceu.drunken_terraprismatic_fluxinator": "Drunken Terra-Prismatic Fluxinator",
     "gtceu.dtpf": "Drunken Terra-Prismatic Fluxinator",
 
+    "block.gtceu.thermomechanical_ember_extractor": "Thermomechanical Ember Extractor",
+
     "tagprefix.glacio_stone": "Glacio %s Ore",
     "tagprefix.frosted_holystone": "Frosted Holystone %s Ore",
     "tagprefix.icestone": "Icestone %s Ore",
@@ -159,6 +161,8 @@
     "material.gtceu.utherium": "Utherium Crystal",
     "material.gtceu.regalium": "Regalium Crystal",
     "material.gtceu.froststeel": "Froststeel",
+
+    "material.gtceu.ichorfuel": "Ichorfuel",
 
     "material.gtceu.dawnstone": "Dawnstone",
     "material.gtceu.anthralite": "Anthralite",
