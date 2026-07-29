@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         4000                            
     )
     //Spell turret
-    event.remove({ output: 'ars_nouveau:spell_turret' })
+    event.remove({ output: 'ars_nouveau:basic_spell_turret' })
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             'goety:mystic_core',
@@ -25,8 +25,8 @@ ServerEvents.recipes(event => {
             'eidolon:arcane_gold_block',
             'botania:dragonstone'
         ],
-        'scguns:sniper_turret',             
-        'ars_nouveau:spell_turret',   
+        'scguns:basic_turret',             
+        'ars_nouveau:basic_spell_turret',   
         2000                            
     )
 })

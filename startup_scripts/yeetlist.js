@@ -109,7 +109,10 @@ global.removedItems = [
   'tconstruct:wire_cast',
   /tconstruct:wire_.*sand_cast/,
   'irons_spellbooks:blood_vial',
-  'evilcraft:blood_orb_empty'
+  'evilcraft:blood_orb_empty',
+  'create:bar_of_chocolate',
+  'iss_magicfromtheeast:red_string',
+  'embers:mechanical_pump'
   
 ];
 

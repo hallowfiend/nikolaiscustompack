@@ -437,7 +437,7 @@ ServerEvents.recipes((event) => {
                 "item": "gtceu:long_dawnstone_rod"
             },
             "r" : {
-                "item" : "bloodmagic:blankrune"
+                "item" : "bloodmagic:selfsacrificerune"
             },
             "b" : {
                 "item" : "malum:blazing_diode"
