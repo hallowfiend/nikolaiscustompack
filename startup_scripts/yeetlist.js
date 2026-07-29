@@ -111,8 +111,7 @@ global.removedItems = [
   'irons_spellbooks:blood_vial',
   'evilcraft:blood_orb_empty',
   'create:bar_of_chocolate',
-  'iss_magicfromtheeast:red_string',
-  'embers:mechanical_pump'
+  'iss_magicfromtheeast:red_string'
   
 ];
 

@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         ]
     )
     //Ethereal Ash Brick
-    event.remove({ type: /sons_of_sins:.*/, id: /sons_of_sins:ethereal_ashe_brick.*/ })
+    event.remove({ type: /sons_of_sins:etheric_blood_imbibation/, id: /sons_of_sins.*ethereal_ashe_brick.*/ })
     event.shapeless(
         Item.of('kubejs:ethereal_ashen_blend', 8),
         ['kubejs:ashen_blend', 'kubejs:ashen_blend', 'create:cinder_flour', 'create:cinder_flour', 'sons_of_sins:ether_ashes', 'sons_of_sins:ether_ashes']

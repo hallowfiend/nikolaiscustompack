@@ -55,6 +55,7 @@ event.replaceOutput(
     ).id('kubejs:black_dye_from_yellow_cyan_magenta');
 
     event.remove({ output: 'farmersdelight:rope' })
+    event.remove({ input: "sons_of_sins:iron_and_ether"})
 
     // Restore FD's rope recipe but output supplementaries:rope.
     // Original: 2 straw in a column -> 4 rope

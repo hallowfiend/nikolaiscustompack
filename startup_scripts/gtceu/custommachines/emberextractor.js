@@ -1,4 +1,4 @@
-/* GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('ember_extraction')
         .category('embers')
@@ -17,27 +17,21 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('ember_extraction')
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true).recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("d###d", "dbbbd", "dhhhd", "dhhhd", "jjkjj", "m###m")
-            .aisle("#aba#", "bfffb", "hiiih", "hiiih", "jjjjj", "#####")
-            .aisle("#bbb#", "bfgfb", "higih", "higih", "kjjjk", "#####")
-            .aisle("#aba#", "bfffb", "hiiih", "hiiih", "jjjjj", "#####")
-            .aisle("d###d", "dblbd", "dhhhd", "dhhhd", "jjkjj", "m###m")
+            .aisle("dbd", "dfd", "dhhhd", "0f0", "000", "000")
+            .aisle("bab", "dad", "hiiih", "faf", "0g0", "0h0")
+            .aisle("dbd", "dfd", "dhhhd", "0f0", "000", "000")
 
-            .where("a", Predicates.blocks("botania:glimmering_livingwood"))
-            .where("b", Predicates.blocks("kubejs:mana_reinforced_livingwood_casing")
-                .or(Predicates.abilities(PartAbility.OUTPUT_ENERGY).setExactLimit(1).setPreviewCount(1)))
-            .where("c", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("d", Predicates.blocks("botania:stripped_livingwood_log"))
-            .where("f", Predicates.blocks("biomancy:fibrous_flesh"))
-            .where("g", Predicates.blocks("biomancy:tubular_flesh"))
-            .where("h", Predicates.blocks("botania:bifrost_perm"))
-            .where("i", Predicates.blocks("botania:terrasteel_block"))
-            .where("j", Predicates.blocks("gtceu:clean_machine_casing")
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setExactLimit(1).setPreviewCount(1)))
-            .where("k", Predicates.blocks("botania:stripped_livingwood_stairs"))
-            .where('l', Predicates.controller(Predicates.blocks(definition.get())))
-            .where("m", Predicates.blocks("botania:prism"))
-            .where("#", Predicates.any())
+            .where("a", Predicates.blocks("sons_of_sins:soul_steel_block"))
+            .where("b", Predicates.blocks("gtceu:bronze_pipe_casing")
+                .or(Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setExactLimit(1)))
+            .where("d", Predicates.blocks("embers:caminite_bricks"))
+            .where("f", Predicates.blocks("embers:ashen_brick")
+                .or(Predicates.controller(Predicates.blocks(definition.get()))))
+            .where("g", Predicates.blocks("embers:dawnstone_block"))
+            .where("h", Predicates.blocks("embers:ember_funnel"))
+            .where("0", Predicates.any())
 
             .build()
         )
@@ -45,4 +39,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "embers:block/ashen_brick",
             "gtceu:block/machines/rock_crusher"
         )
-}) */
+})

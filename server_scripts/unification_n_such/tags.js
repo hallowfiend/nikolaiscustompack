@@ -737,3 +737,11 @@ ServerEvents.tags('entity_type', event => {
   ]);
 
 })
+
+ServerEvents.tags('block', event => {
+  event.add('coldsweat:warm_kitchen_blocks', [
+    /.*stove/,
+    /cookingforblockheads:.*oven/,
+    'handcrafted:oven'
+  ])
+})
