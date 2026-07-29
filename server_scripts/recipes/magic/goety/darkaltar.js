@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
             'lendersdelight:maledictus_heart',
             'botania:gaia_ingot',
             'goety:forbidden_scroll',
-            'bloodmagic:dungeonmetal'
+            'bloodmagic:dungeon_metal'
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    event.recipes.remove({ output: /botania:rune_.*/})
+    //Nodes
     event.recipes.botania.runic_altar('4x hexalia:fire_node',
         [
             'minecraft:amethyst_shard',
@@ -36,6 +36,8 @@ ServerEvents.recipes((event) => {
         ],
         2000
     )
+    //BLOOD MAGIC
+    //Prepared Stone
     event.recipes.botania.runic_altar('8x kubejs:prepared_stone',
         [
             'goety:empty_focus',
@@ -45,4 +47,19 @@ ServerEvents.recipes((event) => {
         ],
         4000
     )
+    //Blank Rune
+    event.remove({ output: "bloodmagic:blankrune" })
+    event.recipes.botania.runic_altar('2x bloodmagic:blankrune',
+        [
+            'bloodmagic:blankslate',
+            'bloodmagic:blankslate',
+            'botania:mana_powder',
+            'biomancy:gem_fragments',
+            'sons_of_sins:ether_ashes',
+            'occultism:burnt_otherstone'
+        ],
+        4000
+    )
+    //TIER 1
+    //Speed Rune
 })
