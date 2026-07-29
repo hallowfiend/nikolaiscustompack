@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
       },
       "pentacle_id": "occultism:summon_afrit",
       "duration": 90,
-	  "spirit_max_age": -1,
+	    "spirit_max_age": -1,
       "spirit_job_type": "occultism:crush_tier3",
       "entity_to_summon": "occultism:afrit",
       "ritual_dummy": {
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
       },
       "pentacle_id": "occultism:summon_marid",
       "duration": 150,
-	  "spirit_max_age": -1,
+	    "spirit_max_age": -1,
       "spirit_job_type": "occultism:crush_tier4",
       "entity_to_summon": "occultism:marid",
       "ritual_dummy": {

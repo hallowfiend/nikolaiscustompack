@@ -32,7 +32,7 @@ StartupEvents.registry('item', event => {
     bloodOrbTiers.forEach( tier => {
         var orbLang = capitalizeFirstLetter(tier)
         event.create(`dormant_${tier}_blood_orb`)
-        displayName(`Dormant ${orbLang} Blood Orb`)
+        .displayName(`Dormant ${orbLang} Blood Orb`)
     })
     //hibernal herbs sigil replacements
     event.create('singed_leaves')

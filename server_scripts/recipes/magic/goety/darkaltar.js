@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
-        .soulCost(80)
+        .soulCost(40)
         .duration(5);
     //Dormant Apprentice Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_apprentice_blood_orb', 'goety:craft', [
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
-        .soulCost(80)
+        .soulCost(100)
         .duration(5);
     //Dormant Magician Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_magician_blood_orb', 'goety:craft', [
@@ -37,8 +37,8 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
-        .soulCost(80)
-        .duration(5);
+        .soulCost(100)
+        .duration(10);
     //Dormant Master Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_master_blood_orb', 'goety:craft', [
             'ars_elemental:mark_of_mastery',
@@ -50,8 +50,8 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
-        .soulCost(80)
-        .duration(5);
+        .soulCost(200)
+        .duration(10);
     //Dormant Archmage Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_archmage_blood_orb', 'goety:craft', [
             'goety:corruption_focus',
@@ -63,8 +63,8 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
-        .soulCost(80)
-        .duration(5);
+        .soulCost(200)
+        .duration(20);
     //Dormant Transcendent Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_transcendent_blood_orb', 'goety:craft', [
             'deep_aether:stratus_block',
@@ -76,8 +76,8 @@ ServerEvents.recipes(event => {
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
-        .soulCost(80)
-        .duration(5);
+        .soulCost(400)
+        .duration(20);
     //DIVINATION RITUALS
     //Nature's Compass
     /* event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [
