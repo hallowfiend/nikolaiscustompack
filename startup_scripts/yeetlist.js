@@ -95,6 +95,26 @@ global.removedItems = [
   'farm_and_charm:onion_soup',
   'aquaculture:turtle_soup',
   'tidesdelight:seafood_paella',
+  'create:bar_of_chocolate',
+  'bakery:sandwich',
+  'bakery:grilled_salmon_sandwich',
+  'rusticdelight:potato_slices',
+  'rusticdelight:baked_potato_slices',
+  'moredelight:diced_potato',
+  'moredelight:mashed_potatoes',
+  'moredelight:potato_salad',
+  'farm_and_charm:potato_soup',
+  'constructs_casting:potato_stew',
+  'oceanic_delight:potato_salad',
+  'quark:potato_crate',
+  'farm_and_charm:potato_bag',
+  'farm_and_charm:bacon_with_eggs',
+  'farm_and_charm:bacon',
+  'farm_and_charm:minced_beef',
+  'bakery:grilled_bacon_sandwich',
+  'moredelight:egg_with_bacon_sandwich',
+  'crabbersdelight:salmon_barrel',
+  'delightfulsandwich:mutton_sandwich',
   //end of foodstuff unification
   'elementalcraft:elementpipe_impaired',
   'sons_of_sins:iron_and_ether',
@@ -105,14 +125,11 @@ global.removedItems = [
   'tconstruct:seared_heater',
   'extra_sins:mixture_of_ash_and_ethereal_ash',
   /supplementaries:ash_bricks.*/,
-  'bakery:sandwich',
   'tconstruct:wire_cast',
   /tconstruct:wire_.*sand_cast/,
   'irons_spellbooks:blood_vial',
   'evilcraft:blood_orb_empty',
-  'create:bar_of_chocolate',
   'iss_magicfromtheeast:red_string'
-  
 ];
 
 global.removedRecipeIds = [

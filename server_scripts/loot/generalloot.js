@@ -1,3 +1,5 @@
+//priority 200
+
 LootJS.modifiers((event) => {
   event
     .addLootTableModifier(/.*/)

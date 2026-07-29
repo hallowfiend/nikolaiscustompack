@@ -169,6 +169,12 @@ ServerEvents.recipes(event => {
       "evilcraft:dark_gem_crushed"
     )
     basicBoring(
+      'twilightforest:twilight_forest',
+      7,
+      40,
+      'mna:chimerite_gem'
+    )
+    basicBoring(
       "twilightforest:twilight_forest",
       7,
       60,
@@ -230,7 +236,32 @@ ServerEvents.recipes(event => {
     voidscraping(
       "minecraft:the_end",
       80,
-      "malum:aerial_spirit"
+      "occultism:crushed_end_stone"
+    )
+    voidscraping(
+      "minecraft:the_end",
+      60,
+      "goety:ectoplasm"
+    )
+    voidscraping(
+      "minecraft:the_end",
+      60,
+      "gtceu:obsidian_dust"
+    )
+    voidscraping(
+      "minecraft:the_end",
+      5,
+      "malum:warp_flux"
+    )
+    voidscraping(
+      "minecraft:the_end",
+      5,
+      "malum:eldritch_spirit"
+    )
+    voidscraping(
+      "minecraft:the_end",
+      20,
+      "experienceobelisk:forgotten_dust"
     )
     
 })

@@ -22,6 +22,12 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.of('Recipes may be incorrect, check JEI!').red())
   })
 
+  event.addAdvanced('exquisito:imaginal_capsule', (item, advanced, text) => {
+    text.add(1, Text.of('Used for cultivation of imaginal fruit').purple())
+    text.add(2, Text.of('Plant Glow Berry Pips inside to grow Starcloud Bulbs').pink())
+    text.add(2, Text.of('or Sweet Berry Pips to grow Midnight Berries').blue())
+  })
+
   //greg
 
    event.addAdvanced('kubejs:manaweave_processor', (item, advanced, text) => {

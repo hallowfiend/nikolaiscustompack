@@ -52,7 +52,8 @@ const bulkReplace = [
     { target: "scguns:pebbles", replacement: "twigs:pebble"},
     { target: "supplementaries:ash", replacement: "#forge:ash"},
     { target: "naturalist:venison", replacement: "environmental:venison"},
-    { target: "cornexpansion:corn_dough", replacement: "culturaldelights:corn_dough"}
+    { target: "cornexpansion:corn_dough", replacement: "culturaldelights:corn_dough"},
+    { target: "moredelight:diced_potatoes", replacement: "cosmopolitan:cut_potatoes"}
 	];
 
 ServerEvents.recipes((event) => {
