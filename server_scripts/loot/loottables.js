@@ -21,7 +21,7 @@ LootJS.modifiers((event) => {
     //globals
     event.addLootTypeModifier(LootType.CHEST)
     .apply(func => {
-        weightedReplace(func, 'bread', [
+        weightedReplace(func, 'minecraft:bread', [
             ['minecraft:bread', 8],
             ['vampiresdelight:rice_bread', 8],
             ['pneumaticcraft:sourdough_bread', 8],
@@ -32,32 +32,32 @@ LootJS.modifiers((event) => {
             ['bakery:crusty_bread', 4],
             ['cornexpansion:grandmas_cornbread', 4]
         ])
-        weightedReplace(func, ['potato', 'baked_potato'], [
-            ['potato', 8],
-            ['baked_potato', 6],
+        weightedReplace(func, ['minecraft:potato', 'minecraft:baked_potato'], [
+            ['minecraft:potato', 8],
+            ['minecraft:baked_potato', 6],
             ['farmersdelight:stuffed_potato', 4],
             ['cosmopolitan:potato_pancakes', 4],
             ['dungeonsdelight:bloated_baked_potato', 2]
         ])
-        weightedReplace(func, ['porkchop', 'cooked_porkchop'], [
-            ['porkchop', 8],
-            ['cooked_porkchop', 6],
+        weightedReplace(func, ['minecraft:porkchop', 'minecraft:cooked_porkchop'], [
+            ['minecraft:porkchop', 8],
+            ['minecraft:cooked_porkchop', 6],
             ['abnormals_delight:maple_glazed_bacon', 4],
             ['culturaldelights:pork_wrap', 4],
             ['sob:cactus_porkchop', 4],
             ['delightful:wrapped_cantaloupe', 4]
         ])
-        weightedReplace(func, ['beef', 'cooked_beef'], [
-            ['beef', 8],
-            ['cooked_beef', 6],
+        weightedReplace(func, ['minecraft:beef', 'minecraft:cooked_beef'], [
+            ['minecraft:beef', 8],
+            ['minecraft:cooked_beef', 6],
             ['miners_delight:beef_stew_cup', 4],
             ['culturaldelights:beef_burrito', 4],
             ['brewinandchewin:jerky', 4],
             ['farmersdelight:hamburger', 4]
         ])
-        weightedReplace(func, ['mutton', 'cooked_mutton'], [
-            ['mutton', 8],
-            ['cooked_mutton', 6],
+        weightedReplace(func, ['minecraft:mutton', 'minecraft:cooked_mutton'], [
+            ['minecraft:mutton', 8],
+            ['minecraft:cooked_mutton', 6],
             ['cosmopolitan:couscous_with_mutton', 4],
             ['farmersdelight:mutton_wrap', 4],
             ['delightful:mutton_pie_slice', 4],
@@ -79,32 +79,32 @@ LootJS.modifiers((event) => {
             ['delightfulsandwich:cooked_cod_sandwich', 4],
             ['brewinandchewin:kippers', 4]
         ])
-        weightedReplace(func, ['salmon', 'cooked_salmon'], [
-            ['salmon', 8],
-            ['cooked_salmon', 6],
+        weightedReplace(func, ['minecraft:salmon', 'minecraft:cooked_salmon'], [
+            ['minecraft:salmon', 8],
+            ['minecraft:cooked_salmon', 6],
             ['roll_delight:amazing_salmon_roll_slice', 4],
             ['farmersdelight:salmon_roll', 4],
             ['farmersdelight:grilled_salmon', 4],
             ['culturaldelights:rice_ball', 4]
         ])
-        weightedReplace(func, 'pumpkin_pie', [
+        weightedReplace(func, 'minecraft:pumpkin_pie', [
             ['farmersdelight:pumpkin_pie_slice', 8],
-            ['pumpkin_pie', 6],
+            ['minecraft:pumpkin_pie', 6],
             ['seasonals:pumpkin_cake_slice', 4],
             ['cookielicious:pumpkin_cookie', 4],
             ['miners_delight:pumpkin_soup_cup', 4],
             ['farmersdelight:stuffed_pumpkin', 4]
         ])
-        weightedReplace(func, 'sweet_berries', [
-            ['sweet_berries', 8],
+        weightedReplace(func, 'minecraft:sweet_berries', [
+            ['minecraft:sweet_berries', 8],
             ['brewinandchewin:sweet_berry_jam', 6],
             ['seasonals:glazed_sweet_berries', 4],
             ['sob:dried_berries', 4],
             ['farmersdelight:sweet_berry_cookie', 4],
             ['collectorsreap:sweet_berry_gummy', 4]
         ])
-        weightedReplace(func, 'melon_slice', [
-            ['melon_slice', 8],
+        weightedReplace(func, 'minecraft:melon_slice', [
+            ['minecraft:melon_slice', 8],
             ['farmersdelight:melon_popsicle', 4],
             ['farmersdelight:melon_juice', 4]
         ])

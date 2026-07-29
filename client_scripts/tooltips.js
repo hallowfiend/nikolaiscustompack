@@ -1,5 +1,5 @@
 ItemEvents.tooltip(event => {
-  // Hexalia 
+  //hexalia 
   event.add('hexalia:sage_pendant', '§7Increases experience gain.')
   event.add('hexalia:athame', '§7Can extract tree resin, harvest Lotus Blossoms and carve ritual braziers.')
   event.add('hexalia:briar_sickle', '§7Cuts vegetation in a wide area.')
@@ -14,6 +14,8 @@ ItemEvents.tooltip(event => {
   event.add('hexalia:bloomwrap_robes', '§7Reflects a portion of incoming damage.')
   event.add('hexalia:bloomwrap_leggings', '§7Grants regeneration while nearby flowers.')
   event.add('hexalia:bloomwrap_boots', '§7Increases speed when walking on leaves.')
+
+  //misc tips
 
   event.addAdvanced('malum:encyclopedia_arcana', (item, advanced, text) => {
     text.add(1, Text.of('Recipes may be incorrect, check JEI!').red())
@@ -66,6 +68,6 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('gtceu:grand_cauldron', (item, advanced, text) => {
      text.add(1, Text.purple("Exalted Thaumocombinator").italic().bold())
      text.add(2, Text.gray("Performs Mixing Cauldron, Ritual Table and Cauldron Crafting recipes very quickly"))
-     text.add(3, Text.gray("Requires 0 EU; operated by Wixies paid in Sourcediesel Elixir"))
+     text.add(3, Text.gray("Requires 0 EU; operated by Wixies paid in Source-Boosted Dieselixir"))
     })
 })

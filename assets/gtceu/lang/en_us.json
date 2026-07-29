@@ -352,5 +352,11 @@
     "material.gtceu.dienethylenetriamine_pentaacetonitrile": "2,2′,2′′,2′′′-{[(Carboxymethyl)azanediyl]bis(ethane-2,1-diylnitrilo)}tetraacetic Acid",
     "material.gtceu.cumene": "(Propan-2-yl)benzene",
     "material.gtceu.acetic_anhydride": "Ethanoic Anhydride",
-    "material.gtceu.acetone": "Propan-2-one"
+    "material.gtceu.acetone": "Propan-2-one",
+
+    "material.gtceu.magebloom_oil": "Magebloom Oil",
+    "material.gtceu.alchemically_prepared_magebloom_oil": "Alchemically Prepared Magebloom Oil",
+    "material.gtceu.thaumophytochemical_emulsion": "Thaumophytochemical Emulsion",
+    "material.gtceu.thaumophytochemical_extract": "Thaumophytochemical Extract",
+    "material.gtceu.source_boosted_dieselixir": "Source-Boosted Dieselixir"
 }
