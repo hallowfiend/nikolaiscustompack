@@ -65,6 +65,13 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
 //Rocks
     rock('limestone', 'create:limestone')
+    rock('moon_stone', 'ad_astra:moon_stone')
+    rock('mars_stone', 'ad_astra:mars_stone')
+    rock('venus_stone', 'ad_astra:venus_stone')
+    rock('mercury_stone', 'ad_astra:mercury_stone')
+    rock('glacio_stone', 'ad_astra:glacio_stone')
+    rock('depthrock', 'undergarden:depthrock')
+    rock('shiverstone', 'undergarden:shiverstone')
 
 //Ingots
     ingot('drenched_iron', 'elementalcraft:drenched_iron_ingot')
@@ -329,7 +336,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     rawOre('cloggrum', 'undergarden:raw_cloggrum')
     rawOre('vinteum', 'mna:raw_vinteum')
     rawOre('palladium', 'galosphere:raw_palladium')
-    rawOre('demonite', 'bloodmagic:raw_demonite')
+    rawOre('demonite', 'bloodmagic:rawdemonite')
     rawOre('anthralite', 'scguns:raw_anthralite')
     rawOre('froststeel', 'undergarden:raw_froststeel')
     rawOre('tin', 'caverns_and_chasms:raw_tin')

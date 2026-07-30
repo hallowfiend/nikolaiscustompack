@@ -89,5 +89,6 @@ event.replaceOutput(
         }
     ).id('kubejs:canvas_from_hemp')
 
+    event.remove({ id: /enderio.*gear_upgrade.*/})
     
 });

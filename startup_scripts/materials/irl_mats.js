@@ -23,6 +23,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     addFluid(GTMaterials.Tellurium, $FluidStorageKeys.LIQUID);
     GTMaterials.Cadmium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Cadmium, $FluidStorageKeys.LIQUID);
+    GTMaterials.Selenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Selenium, $FluidStorageKeys.LIQUID);
     GTMaterials.Germanium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Germanium, $FluidStorageKeys.LIQUID);
     GTMaterials.Brass.addFlags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR);

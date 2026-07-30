@@ -12,4 +12,10 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.mana_infusion('botania:mana_diamond_block', 'gtceu:sapphire_block', 8000)
     event.recipes.botania.mana_infusion(Item.of("botania:mana_diamond",2), '#forge:flawless_gems/sapphire', 9000)
     event.recipes.botania.mana_infusion(Item.of("botania:mana_diamond",4), '#forge:exquisite_gems/sapphire', 15000)
+
+    //more mana powder options
+    event.remove({ id: 'botania:mana_infusion/mana_powder_dye' })
+    event.recipes.botania.mana_infusion('botania:mana_powder', '#forge:dusts/electrotine', 500)
+    event.recipes.botania.mana_infusion('botania:mana_powder', '#forge:dusts/mundus', 500)
+    event.recipes.botania.mana_infusion('botania:mana_powder', '#forge:dusts/amethyst', 500)
 })

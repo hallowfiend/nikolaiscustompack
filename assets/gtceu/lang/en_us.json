@@ -187,6 +187,7 @@
     "material.gtceu.naumannite": "Naumannite",
     "material.gtceu.anorthite": "Anorthite",
     "material.gtceu.castorite": "Castorite",
+    "material.gtceu.moon_cheese": "Moon Cheese",
 
     "material.gtceu.source": "Source Gem",
     "material.gtceu.mithril": "Mithril",
@@ -310,6 +311,7 @@
     "material.gtceu.hallowed_gold": "Hallowed Gold",
     "material.gtceu.hex_ash": "Hex Ash",
     "material.gtceu.cthonic_gold": "Cthonic Gold",
+    "material.gtceu.null_slate": "Null Slate",
 
     "material.gtceu.calcium_magnesium_carbonate": "Calcium Magnesium Carbonate",
     "material.gtceu.limestone": "Limestone",
@@ -341,6 +343,14 @@
     "material.gtceu.liquid_venus_atmosphere": "Liquefacted Venus Atmosphere",
     "material.gtceu.glacio_atmosphere": "Glacio Atmosphere",
     "material.gtceu.liquid_glacio_atmosphere": "Liquefacted Glacio Atmosphere",
+
+    "material.gtceu.moon_stone": "Lunar Regolith",
+    "material.gtceu.mercury_stone": "Mercurial Rock",
+    "material.gtceu.mars_stone": "Martian Rock",
+    "material.gtceu.venus_stone": "Venusian Rock",
+    "material.gtceu.glacio_stone": "Glacial Rock",
+    "material.gtceu.shiverstone": "Shiverstone",
+    "material.gtceu.depthrock": "Depthrock",
 
     "material.gtceu.glyceryl_trinitrate": "Propane-1,2,3-triyl Trinitrate",
     "material.gtceu.vinyl_chloride": "Chloroethane",

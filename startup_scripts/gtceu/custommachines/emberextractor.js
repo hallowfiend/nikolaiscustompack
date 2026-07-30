@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('ember_extraction')
         .category('embers')
         .setEUIO('in')
-        .setMaxIOSize(1, 9, 0, 0)
+        .setMaxIOSize(1, 16, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.IN_SLOT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_COKE_OVEN, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MINER);

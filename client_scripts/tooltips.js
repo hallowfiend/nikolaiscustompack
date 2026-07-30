@@ -25,7 +25,7 @@ ItemEvents.tooltip(event => {
   })
 
   event.addAdvanced('exquisito:imaginal_capsule', (item, advanced, text) => {
-    text.add(1, Text.of('Used for cultivation of imaginal fruit').purple())
+    text.add(1, Text.of('Used for cultivation of imaginal fruit').darkPurple())
     text.add(2, Text.of('Plant Glow Berry Pips inside to grow Starcloud Bulbs').pink())
     text.add(2, Text.of('or Sweet Berry Pips to grow Midnight Berries').blue())
   })
@@ -60,13 +60,13 @@ ItemEvents.tooltip(event => {
     })
 
     event.addAdvanced('gtceu:thermomechanical_ember_extractor', (item, advanced, text) => {
-     text.add(1, Text.orange("Peak Dawi Engineering").italic().bold())
+     text.add(1, Text.gold("Peak Dawi Engineering").italic().bold())
      text.add(2, Text.gray("Uses Steam and alchemically pure fuels to extract infinite Ember"))
      text.add(3, Text.gray("(and/or other materials, depending on dimension)"))
     })
 
     event.addAdvanced('gtceu:grand_cauldron', (item, advanced, text) => {
-     text.add(1, Text.purple("Exalted Thaumocombinator").italic().bold())
+     text.add(1, Text.darkPurple("Exalted Thaumocombinator").italic().bold())
      text.add(2, Text.gray("Performs Mixing Cauldron, Ritual Table and Cauldron Crafting recipes very quickly"))
      text.add(3, Text.gray("Requires 0 EU; operated by Wixies paid in Source-Boosted Dieselixir"))
     })

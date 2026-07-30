@@ -810,13 +810,13 @@ event.create('spirit_gem')
         .flags(no_decomp)
         .iconSet(GTMaterialIconSet.DULL);
     event.create('venus_atmosphere')
-        .fluid()
+        .gas()
         .color(0xE6E600);
     event.create('liquid_venus_atmosphere')
         .fluid()
         .color(0x999900);
     event.create('glacio_atmosphere')
-        .fluid()
+        .gas()
         .color(0x9EFAFA);
     event.create('liquid_glacio_atmosphere')
         .fluid()
@@ -833,7 +833,15 @@ event.create('spirit_gem')
         .flags(plates, gear, small_gear, bolt_and_screw, rotor, no_decomp);
     
 
-// Misc stones
+// Rocks & stones
+    event.create('depthrock')
+        .dust()
+        .color(0x495B40)
+        .iconSet(DULL)
+    event.create('shiverstone')
+        .dust()
+        .color(0x404A4B)
+        .iconSet(DULL)
     event.create("moon_stone")
         .dust()
         .color(0x304750)

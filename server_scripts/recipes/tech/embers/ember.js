@@ -180,6 +180,12 @@ ServerEvents.recipes(event => {
       60,
       "enderio:grains_of_infinity"
     )
+    basicBoring(
+      "twilightforest:twilight_forest",
+      7,
+      60,
+      "hexcasting:amethyst_dust"
+    )
     //"Voidscraping"
     function voidscraping(dimension, weight, output) {
       event.custom({
