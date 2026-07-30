@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
         .duration(4000/fuel.mult)
         .dimension("minecraft:overworld")
         .posY(-65, -20)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Nether
         event.recipes.gtceu.ember_extraction(`kubejs:emberextractor/nether_ember_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
         .duration(3000/fuel.mult)
         .dimension("minecraft:the_nether")
         .posY(0, 20)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Undergarden
         event.recipes.gtceu.ember_extraction(`kubejs:emberextractor/undergarden_ember_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
         .duration(8000/fuel.mult)
         .dimension("undergarden:undergarden")
         .posY(0, 20)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Twilight Forest
         event.recipes.gtceu.ember_extraction(`kubejs:emberextractor/twilight_ember_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -81,7 +81,7 @@ ServerEvents.recipes((event) => {
         .duration(6000/fuel.mult)
         .dimension("twilightforest:twilight_forest")
         .posY(-40, 0)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Aether
         event.recipes.gtceu.ember_extraction(`kubejs:emberextractor/aether_voidscraping_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -104,7 +104,7 @@ ServerEvents.recipes((event) => {
         .duration(6000/fuel.mult)
         .dimension("aether:the_aether")
         .posY(-10, 30)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //End
         event.recipes.gtceu.ember_extraction(`kubejs:emberextractor/end_voidscraping_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -123,7 +123,7 @@ ServerEvents.recipes((event) => {
         .duration(6000/fuel.mult)
         .dimension("minecraft:the_end")
         .posY(-10, 30)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Venus
     })
 })

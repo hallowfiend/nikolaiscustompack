@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
         .duration(80 * 10)
         .EUt(GTValues.VA[GTValues.EV]);
      event.recipes.gtceu.distillation_tower('venus_atmosphere_distillation')
-        .inputFluids('gtceu:liquid_venus_atmosphere', 800000)
+        .inputFluids('gtceu:liquid_venus_atmosphere 800000')
         .chancedOutput('1x gtceu:enriched_naquadah_dust', 3000, 0)
         .outputFluids('gtceu:carbon_dioxide 720000')
         .outputFluids('gtceu:nitrogen 32000')
@@ -106,10 +106,10 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:carbon_monoxide 6000')
         .outputFluids('gtceu:helium 4000')
         .outputFluids('gtceu:neon 2000')
-        .duration(120 * 10)
+        .duration(1200)
         .EUt(LUv);
     event.recipes.gtceu.distillation_tower('glacio_atmosphere_distillation')
-        .inputFluids('gtceu:liquid_glacio_atmosphere', 1600000)
+        .inputFluids('gtceu:liquid_glacio_atmosphere 1600000')
         .chancedOutput('1x goety:ectoplasm', 5000, 0)
         .outputFluids('gtceu:methane 1440000')
         .outputFluids('gtceu:nitrogen 40000')
@@ -119,6 +119,6 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:xenon 16000')
         .outputFluids('gtceu:radon 7000')
         .outputFluids('gtceu:oganesson 2000')
-        .duration(120 * 10)
+        .duration(1200)
         .EUt(LUv);
 });
