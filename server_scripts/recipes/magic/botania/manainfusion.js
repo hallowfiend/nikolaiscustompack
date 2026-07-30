@@ -18,4 +18,6 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.mana_infusion('botania:mana_powder', '#forge:dusts/electrotine', 500)
     event.recipes.botania.mana_infusion('botania:mana_powder', '#forge:dusts/mundus', 500)
     event.recipes.botania.mana_infusion('botania:mana_powder', '#forge:dusts/amethyst', 500)
+    event.recipes.botania.mana_infusion('4x botania:mana_powder', 'scguns:sheol', 500)
+    event.recipes.botania.mana_infusion('4x botania:mana_powder', 'scguns:peal', 500)
 })

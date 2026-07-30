@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         'deep_iron'
     )
     mineralMix(
-        'gtceu:raw_gold', 0.6,
+        'minecraft:raw_gold', 0.6,
         'gtceu:raw_silver', 0.3,
         'gtceu:raw_cthonic_gold', 0.1,
         'embers:ember_grit',

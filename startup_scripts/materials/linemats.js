@@ -1,6 +1,7 @@
 //priority: 50
 
-ServerEvents.recipes(event => {
+
+GTCEuStartupEvents.registry("gtceu:material", event => {
     //Source-Boosted Dieselixir
     
     event.create('magebloom_oil')

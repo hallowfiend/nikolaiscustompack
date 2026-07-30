@@ -622,6 +622,8 @@ ServerEvents.tags("item", (event) => {
 
   event.add('forge:gems/coke', 'immersiveengineering:coal_coke');
 
+  event.add('forge:storage_blocks/arcane_charcoal', 'malum:block_of_arcane_charcoal');
+
   event.add('irons_spellbooks:blood_focus', 'hexerei:blood_bottle');
 
   event.add('hexalia:crushed_herbs', /hibernalherbs:pounded.*/);

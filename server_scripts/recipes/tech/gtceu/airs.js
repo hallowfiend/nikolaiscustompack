@@ -60,8 +60,8 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu.centrifuge('aether_air_centrifuging')
         .inputFluids(Fluid.of('gtceu:aether_air', 10000))
         .outputFluids(
-            Fluid.of('gtceu:fluorine', 4000),
-            Fluid.of('gtceu:oxygen', 3500)
+        Fluid.of('gtceu:fluorine', 4000),
+        Fluid.of('gtceu:oxygen', 3500)
         )
         .duration(20*30)
         .EUt(GTValues.VA[GTValues.MV]);
@@ -97,32 +97,28 @@ ServerEvents.recipes((event) => {
         .duration(80 * 10)
         .EUt(GTValues.VA[GTValues.EV]);
      event.recipes.gtceu.distillation_tower('venus_atmosphere_distillation')
-        .inputFluids(Fluid.of('gtceu:liquid_venus_atmosphere', 800000))
+        .inputFluids('gtceu:liquid_venus_atmosphere', 800000)
         .chancedOutput('1x gtceu:enriched_naquadah_dust', 3000, 0)
-        .outputFluids(
-            Fluid.of('gtceu:carbon_dioxide', 720000),
-            Fluid.of('gtceu:nitrogen', 32000),
-            Fluid.of('gtceu:sulfur_dioxide', 24000), 
-            Fluid.of('gtceu:argon', 12000),
-            Fluid.of('gtceu:carbon_monoxide', 6000),
-            Fluid.of('gtceu:helium', 4000),
-            Fluid.of('gtceu:neon', 2000)
-        )
+        .outputFluids('gtceu:carbon_dioxide 720000')
+        .outputFluids('gtceu:nitrogen 32000')
+        .outputFluids('gtceu:sulfur_dioxide 24000')
+        .outputFluids('gtceu:argon 12000')
+        .outputFluids('gtceu:carbon_monoxide 6000')
+        .outputFluids('gtceu:helium 4000')
+        .outputFluids('gtceu:neon 2000')
         .duration(120 * 10)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(LUv);
     event.recipes.gtceu.distillation_tower('glacio_atmosphere_distillation')
-        .inputFluids(Fluid.of('gtceu:liquid_glacio_atmosphere', 1600000))
+        .inputFluids('gtceu:liquid_glacio_atmosphere', 1600000)
         .chancedOutput('1x goety:ectoplasm', 5000, 0)
-        .outputFluids(
-            Fluid.of('gtceu:methane', 1440000),
-            Fluid.of('gtceu:nitrogen', 40000),
-            Fluid.of('gtceu:neon', 38000),
-            Fluid.of('gtceu:argon', 32000),
-            Fluid.of('gtceu:krypton', 24000),
-            Fluid.of('gtceu:xenon', 16000),
-            Fluid.of('gtceu:radon', 8000),
-            Fluid.of('gtceu:oganesson', 2000)
-        )
+        .outputFluids('gtceu:methane 1440000')
+        .outputFluids('gtceu:nitrogen 40000')
+        .outputFluids('gtceu:neon 38000')
+        .outputFluids('gtceu:argon 32000')
+        .outputFluids('gtceu:krypton 24000')
+        .outputFluids('gtceu:xenon 16000')
+        .outputFluids('gtceu:radon 7000')
+        .outputFluids('gtceu:oganesson 2000')
         .duration(120 * 10)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(LUv);
 });
