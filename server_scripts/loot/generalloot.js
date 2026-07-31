@@ -21,4 +21,7 @@ LootJS.modifiers((event) => {
     .replaceLoot(/.*:cooked_venison/, "environmental:cooked_venison", true)
     .replaceLoot('scguns:pebbles', 'twigs:pebble')
     .replaceLoot('supplementaries:ash', 'embers:ash', true)
+    .replaceLoot('irons_spellbooks:blood_vial', 'hexerei:blood_bottle')
+    .replaceLoot('iss_magicfromtheeast:red_string', 'botania:red_string')
+    .replaceLoot('iss_magicfromtheeast:bottle_of_souls', 'netherexp:wisp_bottle')
 });

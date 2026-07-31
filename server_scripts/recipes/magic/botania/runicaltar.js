@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: "animus:rune_unleashed_nature" })
     event.recipes.botania.runic_altar('animus:rune_unleashed_nature',
         [
-            'bloodmagic:imbuedslate',
+            'bloodmagic:infusedslate',
             'bloodmagic:blankrune',
             'naturesaura:infused_iron_block',
             'botania:rune_earth',
@@ -127,7 +127,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: "bloodmagic:dislocationrune" })
     event.recipes.botania.runic_altar('bloodmagic:dislocationrune',
         [
-            'bloodmagic:imbuedslate',
+            'bloodmagic:infusedslate',
             'bloodmagic:blankrune',
             'goety:wind_core',
             'biomancy:water_gel_block',
@@ -139,7 +139,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: "bloodmagic:altarcapacityrune" })
     event.recipes.botania.runic_altar('bloodmagic:altarcapacityrune',
         [
-            'bloodmagic:imbuedslate',
+            'bloodmagic:infusedslate',
             'bloodmagic:blankrune',
             'embers:copper_cell',
             'pneumaticcraft:air_canister',

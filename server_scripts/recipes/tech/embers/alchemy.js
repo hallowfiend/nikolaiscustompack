@@ -84,8 +84,65 @@ ServerEvents.recipes(event => {
     })
     //Apotheosis material upgrading
     const apothicMaterials = [
-        { material: "", nextMaterial: ""},
+        { material: "apotheosis:common_material", nextMaterial: "apotheosis:uncommon_material"},
+        { material: "apotheosis:uncommon_material", nextMaterial: "apotheosis:rare_material"},
+        { material: "apotheosis:rare_material", nextMaterial: "apotheosis:epic_material"},
+        { material: "apotheosis:epic_material", nextMaterial: "apotheosis:mythic_material"},
+        { material: "apotheosis:mythic_material", nextMaterial: "apotheotic_additions:artifact_material"},
+        { material: "apotheotic_additions:artifact_material", nextMaterial: "apotheotic_additions:esoteric_material"}
     ]
+    apothicMaterials.forEach(mat => {
+        event.custom({
+        "type": "embers:alchemy",
+        "aspects": [duralumin, invar, sterling_silver],
+        "inputs": [
+            {
+                "item": mat.material
+            },
+            {
+                "item": mat.material
+            },
+            {
+                "item": mat.material
+            },
+            {
+                "item": mat.material
+            }
+        ],
+        "output": {
+            "count": 1,
+            "item": mat.nextMaterial
+        },
+        "tablet": {
+            "item": "embers:isolated_materia"
+        }
+    })
+    })
+    event.custom({
+        "type": "embers:alchemy",
+        "aspects": [brass, lead],
+        "inputs": [
+            {
+                "item": "apotheosis:rare_material"
+            },
+            {
+                "item": "apotheosis:rare_material"
+            },
+            {
+                "item": "apotheosis:rare_material"
+            },
+            {
+                "item": "apotheosis:rare_material"
+            }
+        ],
+        "output": {
+            "count": 1,
+            "item": "apotheotic_additions:heirloom_material"
+        },
+        "tablet": {
+            "item": "scguns:callwell" //If it took more than one shot...
+        }
+    })
     //Convenience recipes
     //TF MATERIAL DUPES
     //Ironwood

@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:helium 4000')
         .outputFluids('gtceu:neon 2000')
         .duration(1200)
-        .EUt(LUv);
+        .EUt(GTValues.VA[GTValues.LuV]);
     event.recipes.gtceu.distillation_tower('glacio_atmosphere_distillation')
         .inputFluids('gtceu:liquid_glacio_atmosphere 1600000')
         .chancedOutput('1x goety:ectoplasm', 5000, 0)
@@ -118,7 +118,6 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:krypton 24000')
         .outputFluids('gtceu:xenon 16000')
         .outputFluids('gtceu:radon 7000')
-        .outputFluids('gtceu:oganesson 2000')
         .duration(1200)
-        .EUt(LUv);
+        .EUt(GTValues.VA[GTValues.LuV]);
 });

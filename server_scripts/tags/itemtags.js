@@ -624,7 +624,11 @@ ServerEvents.tags("item", (event) => {
 
   event.add('forge:storage_blocks/arcane_charcoal', 'malum:block_of_arcane_charcoal');
 
+  event.add('forge:storage_blocks/charcoal', 'betterend:charcoal_block');
+
   event.add('irons_spellbooks:blood_focus', 'hexerei:blood_bottle');
+
+  event.add('iss_magicfromtheeast:spirit_focus', 'netherexp:wisp_bottle');
 
   event.add('hexalia:crushed_herbs', /hibernalherbs:pounded.*/);
 

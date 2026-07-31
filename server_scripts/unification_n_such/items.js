@@ -42,6 +42,7 @@ const bulkReplace = [
     { target: "createaddition:gold_wire", replacement: "gtceu:gold_single_wire"},
     //wire unification end
     { target: "iss_magicfromtheeast:red_string", replacement: "botania:red_string"},
+    { target: "iss_magicfromtheeast:bottle_of_souls", replacement: "netherexp:wisp_bottle"},
     { target: "immersiveengineering:electron_tube", replacement: "gtceu:vacuum_tube"},
     { target: "collectorsreap:urchin", replacement: "#forge:urchin"},
     { target: "alexsmobs:fish_oil", replacement: "#rusticdelight:cooking_oil"},
