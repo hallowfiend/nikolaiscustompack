@@ -43,7 +43,7 @@ ServerEvents.recipes((event) => {
         .duration(2000/fuel.mult)
         .dimension("minecraft:overworld")
         .posY(-65, -20)
-        .EUt(GTValues.V[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Nether
         event.recipes.gtceu.ember_extraction(`nether_ember_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
         .duration(3000/fuel.mult)
         .dimension("minecraft:the_nether")
         .posY(0, 20)
-        .EUt(GTValues.V[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Undergarden
         event.recipes.gtceu.ember_extraction(`undergarden_ember_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
         .duration(8000/fuel.mult)
         .dimension("undergarden:undergarden")
         .posY(0, 20)
-        .EUt(GTValues.V[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Twilight Forest
         event.recipes.gtceu.ember_extraction(`twilight_ember_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -99,7 +99,7 @@ ServerEvents.recipes((event) => {
         .duration(6000/fuel.mult)
         .dimension("twilightforest:twilight_forest")
         .posY(-40, 0)
-        .EUt(GTValues.V[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Aether
         event.recipes.gtceu.ember_extraction(`aether_voidscraping_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -122,7 +122,7 @@ ServerEvents.recipes((event) => {
         .duration(6000/fuel.mult)
         .dimension("aether:the_aether")
         .posY(-10, 30)
-        .EUt(GTValues.V[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //End
         event.recipes.gtceu.ember_extraction(`end_voidscraping_with_${identifier}`)
         .itemInputs(fuel.fuel)
@@ -141,7 +141,7 @@ ServerEvents.recipes((event) => {
         .duration(6000/fuel.mult)
         .dimension("minecraft:the_end")
         .posY(-10, 30)
-        .EUt(GTValues.V[GTValues.LV]);
+        .EUt(GTValues.V[GTValues.ULV]);
         //Venus
     })
 })

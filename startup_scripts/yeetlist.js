@@ -130,7 +130,11 @@ global.removedItems = [
   /tconstruct:wire_.*sand_cast/,
   'irons_spellbooks:blood_vial',
   'evilcraft:blood_orb_empty',
-  'iss_magicfromtheeast:red_string'
+  'iss_magicfromtheeast:red_string',
+  'gtceu:treated_wood_planks',
+  'gtceu:treated_wood_slab',
+  'gtceu:treated_wood_fence',
+  'gtceu:treated_wood_stairs'
 ];
 
 global.removedRecipeIds = [

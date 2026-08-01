@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
           "item": "botania:vinculotus" //to bind the spirit
         },
         {
-          "item": "gtceu:luv_macerator" //to suffuse it with purpose
+          "item": "gtceu:zpm_macerator" //to suffuse it with purpose
         }
       ],
       "result": {
