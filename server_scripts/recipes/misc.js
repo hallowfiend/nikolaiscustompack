@@ -91,6 +91,8 @@ event.replaceOutput(
 
     event.remove({ id: /enderio.*gear_upgrade.*/})
 
+    event.remove({ id: /irons_spelbooks.*sequenced_assembly.*/})
+
     event.shaped(
         Item.of('malum:block_of_living_flesh', 1),
         [

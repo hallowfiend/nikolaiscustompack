@@ -24,4 +24,5 @@ LootJS.modifiers((event) => {
     .replaceLoot('irons_spellbooks:blood_vial', 'hexerei:blood_bottle')
     .replaceLoot('iss_magicfromtheeast:red_string', 'botania:red_string')
     .replaceLoot('iss_magicfromtheeast:bottle_of_souls', 'netherexp:wisp_bottle')
+    .replaceLoot('scguns:niter', 'gtceu:saltpeter_dust')
 });
