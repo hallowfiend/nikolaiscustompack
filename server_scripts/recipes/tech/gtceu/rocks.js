@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('1x minecraft:soul_sand', 9000, 300)
         .chancedOutput('1x gtceu:sulfur_dust', 860, 220)
         .chancedOutput('1x gtceu:carbon_dust', 200, 50)
-        .outputFluids(Fluid.of('gtceu:heavy_oil', 50))
+        .outputFluids(Fluid.of('gtceu:oil_heavy', 50))
         .duration(160)
         .EUt(GTValues.V[GTValues.EV])
     event.recipes.gtceu.centrifuge('moon_stone_centrifuge')

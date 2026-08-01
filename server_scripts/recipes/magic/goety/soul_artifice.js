@@ -12,7 +12,6 @@ ServerEvents.recipes(event => {
             "cookingtime": absorbTime //int in ticks
         })
     }
-
     soulAbsorption(
         {"tag": "malum:aspected_spirits"},
         30,
@@ -27,5 +26,10 @@ ServerEvents.recipes(event => {
         {"item": "netherexp:wisp_bottle"},
         80,
         200
+    )
+    soulAbsorption(
+        {"item": "netherexp:banshee_powder"},
+        15,
+        20
     )
 })

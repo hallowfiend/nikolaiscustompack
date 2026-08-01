@@ -26,6 +26,8 @@ ServerEvents.recipes((event) => {
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:arcane_charcoal', 600)
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:block_of_arcane_charcoal', 6000)
 
+  //apotheosis shelves
+
   //chimerite
   const chimeriteSeeds = [
     {nugget: "palladium", mult: "1"}, //4

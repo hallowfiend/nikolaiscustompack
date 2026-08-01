@@ -12,4 +12,18 @@ ServerEvents.tags('worldgen/biome', event => {
             'unusualend:gloopstone_lands'
         ]
     )
+    event.add('botania:mystical_flower_spawnlist',
+        [
+            '#aether:is_aether',
+            '#twilightforest:in_twilight_forest',
+            /eternalstarlight:.*/
+        ]
+    )
+    event.add('botania:mystical_mushroom_spawnlist',
+        [
+            '#twilightforest:in_twilight_forest',
+            /eternalstarlight:.*/,
+            '#undergarden:is_undergarden'
+        ]
+    )
 })

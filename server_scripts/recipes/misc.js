@@ -90,5 +90,21 @@ event.replaceOutput(
     ).id('kubejs:canvas_from_hemp')
 
     event.remove({ id: /enderio.*gear_upgrade.*/})
+
+    event.shaped(
+        Item.of('malum:block_of_living_flesh', 1),
+        [
+            'ccc',
+            'ccc',
+            'ccc'
+        ],
+        {
+            c: 'malum:living_flesh'
+        }
+    ).id('kubejs:idkwhythiswasremoved1')
+    event.shapeless(
+        Item.of('malum:living_flesh', 9),
+        ['malum:block_of_living_flesh']
+    ).id('kubejs:idkwhythiswasremoved2')
     
 });

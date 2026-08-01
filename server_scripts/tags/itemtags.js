@@ -632,6 +632,17 @@ ServerEvents.tags("item", (event) => {
 
   event.add('hexalia:crushed_herbs', /hibernalherbs:pounded.*/);
 
+  event.add('forge:corals/alive', [
+    '#create:upgrade_aquatic/coral',
+    'eternal_starlight:tentacles_coral',
+    'eternal_starlight:golden_coral',
+    'spawn:wax_coral',
+    'spawn:thorn_coral',
+    'spawn:heart_coral',
+    'spawn:reed_coral',
+    'spawn:spike_coral'
+  ])
+
   event.add("mynethersdelight:powdery_logs", ["mynethersdelight:powdery_block", "mynethersdelight:stripped_powdery_block"]);
 
   //#region remove item tag
