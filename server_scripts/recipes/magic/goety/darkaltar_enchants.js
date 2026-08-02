@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
         3,
         [
             {"item": "sob:builder_smoothie"},
-            {"item": "create:mechanical_piston"},
+            {"item": "create:deployer"},
             {"item": "eidolon:ender_calx"},
             {"item": "minecraft:lapis_lazuli"}
         ]
@@ -562,7 +562,7 @@ ServerEvents.recipes(event => {
         [
             {"item": "biomancy:bone_fragments"},
             {"item": "scguns:gibbs_round"},
-            {"item": "embers:resonating_lens"},
+            {"item": "embers:resonating_bell"},
             {"item": "scguns:peal"}
         ]
     )
@@ -600,6 +600,9 @@ ServerEvents.recipes(event => {
         ]
     )
     //ALEX'S MOBS ENCHANTS
+    //DUNGEON'S DELIGHT ENCHANTS
+    //BIOMANCY ENCHANTS
+    //MANA AND ARTIFICE ENCHANTS
     //APOTHEOSIS ENCHANTS
     function enchantApotheosis(enchant, soulCost, xpCostPerLevel, inputs){
         var identifier = enchant.replace(":", "_")

@@ -1,0 +1,18 @@
+{
+  "registry_name": "vampirism:vampire_baron",
+  "primary_type": "malum:wicked",
+  "spirits": [
+    {
+      "spirit": "malum:wicked",
+      "count": 4
+    },
+    {
+      "spirit": "malum:arcane",
+      "count": 4
+    },
+    {
+      "spirit": "malum:eldritch",
+      "count": 4
+    }
+  ]
+}
