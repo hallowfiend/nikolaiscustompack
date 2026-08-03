@@ -1,13 +1,13 @@
 {
   "registry_name": "vampirism:vampire",
-  "primary_type": "malum:wicked",
+  "primary_type": "wicked",
   "spirits": [
     {
-      "spirit": "malum:wicked",
+      "spirit": "wicked",
       "count": 2
     },
     {
-      "spirit": "malum:arcane",
+      "spirit": "arcane",
       "count": 2
     }
   ]

@@ -1,4 +1,37 @@
 ServerEvents.recipes(event => {
+    //Undergarden catalyst
+    event.remove({ output: 'undergarden:catalyst'})
+    event.custom({
+      "type": "occultism:ritual",
+        "ritual_type": "occultism:craft",
+        "activation_item": {
+          "item": "botania:mana_diamond"
+        },
+        "pentacle_id": "occultism:craft_foliot",
+        "duration": 60,
+        "ritual_dummy": {
+          "item": "undergarden:catalyst"
+        },
+        "ingredients": [
+          {
+            "item": "occultism:iesnium_pickaxe"
+          },
+          {
+            "item": "eidolon:pewter_inlay"
+          },
+          {
+            "item": "eidolon:gold_inlay"
+          },
+          {
+            "item": "embers:dawnstone_aspectus"
+          },
+          {
+            "item": "twilightforest:knightmetal_ingot"
+          }
+        ],
+        "result": 
+        { "item": "undergarden:catalyst" }
+      })
     //Crushers
     event.remove({ id: 'occultism:ritual/summon_foliot_crusher' })
     event.remove({ id: 'occultism:ritual/summon_djinni_crusher' })

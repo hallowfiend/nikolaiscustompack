@@ -16,7 +16,7 @@
             {"item": "hexalia:spirit_powder"},
             {"item": "goety:ectoplasm"},
             {"item": "hexerei:sage_seed"},
-            {"item": "elementalcraft:inert_crystal"},
+            {"item": "goety:cursed_ingot"},
             {"tag": "forge:essences/death"}
         ],
         "occultism:datura_seeds"

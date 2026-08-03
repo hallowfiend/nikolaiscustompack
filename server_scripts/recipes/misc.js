@@ -56,6 +56,7 @@ event.replaceOutput(
 
     event.remove({ output: 'farmersdelight:rope' })
     event.remove({ input: "sons_of_sins:iron_and_ether"})
+    event.remove({input:'immersiveengineering:hammer'})
 
     // Restore FD's rope recipe but output supplementaries:rope.
     // Original: 2 straw in a column -> 4 rope

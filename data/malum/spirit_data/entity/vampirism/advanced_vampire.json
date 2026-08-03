@@ -1,17 +1,17 @@
 {
   "registry_name": "vampirism:advanced_vampire",
-  "primary_type": "malum:wicked",
+  "primary_type": "wicked",
   "spirits": [
     {
-      "spirit": "malum:wicked",
+      "spirit": "wicked",
       "count": 3
     },
     {
-      "spirit": "malum:arcane",
+      "spirit": "arcane",
       "count": 3
     },
     {
-      "spirit": "malum:eldritch",
+      "spirit": "eldritch",
       "count": 1
     }
   ]
