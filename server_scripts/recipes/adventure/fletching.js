@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         6
     )
     fletch(
-        {tag: "dungeonsdelight:gunk"},
+        {item: "dungeonsdelight:gunk"},
         {tag: "forge:rods/wooden"},
         {tag: "forge:nuggets/copper"},
         "dungeonsdelight:gunk_arrow",

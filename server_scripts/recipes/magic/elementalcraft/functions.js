@@ -5,23 +5,23 @@ const elementalcraftRecipes = {
         this.event = event;
     },
 
-    bind (output, inputs, manaAmount, manaType) {this.event.custom({
+    bind (output, inputs, manaAmount, manaType, id) {this.event.custom({
         type: "elementalcraft:binding",
         element_amount: manaAmount,
         element_type: manaType, //air, earth, fire, water
         ingredients: inputs,
         output: output
-    })},
+    }).id(id)},
 
-    infuse (output, input, manaAmount, manaType) {this.event.custom({
+    infuse (output, input, manaAmount, manaType,id) {this.event.custom({
         type: "elementalcraft:infusion",
         element_amount: manaAmount,
         element_type: manaType, //air, earth, fire, water
         input: input,
         output: output
-    })},
+    }).id(id)},
 
-    grind (output, input, manaAmount, luckRatio) {
+    grind (output, input, manaAmount, luckRatio, id) {
         let lratio = output.count;
         if (luckRatio != null) {
             lratio = luckRatio;
@@ -32,7 +32,7 @@ const elementalcraftRecipes = {
             input: input,
             luck_ratio: lratio, //optional
             output: output
-        });
+        }).id(id);
     },
 
     pureInfuse (output, inputs, manaAmount) {this.event.custom({

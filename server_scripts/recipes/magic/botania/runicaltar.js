@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
         [
             'bloodmagic:blankslate',
             'bloodmagic:blankslate',
-            'kubejs:botania:mana_powder',
+            'botania:mana_powder',
             'biomancy:gem_fragments',
             'sons_of_sins:ether_ashes',
             'occultism:burnt_otherstone'
@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
             'bloodmagic:infusedslate',
             'bloodmagic:blankrune',
             'naturesaura:infused_iron_block',
-            'kubejs:botania:rune_earth',
+            'botania:rune_earth',
             'biomancy:fertilizer'
         ],
         12000

@@ -12,8 +12,9 @@ ServerEvents.recipes(event => {
             {"item": "ars_nouveau:conjuration_essence"}
         ],
         2000,
-        "air"
-    ).id('kubejs:elementalcraft/binding/weak_activation_crystal')
+        "air",
+        'kubejs:elementalcraft/binding/weak_activation_crystal'
+    )
     elementalcraftRecipes.bind(
         "bloodmagic:activationcrystalawakened",
         [
@@ -24,6 +25,7 @@ ServerEvents.recipes(event => {
             {"item": "naturesaura:sky_ingot"}
         ],
         4000,
-        "water"
-    ).id('kubejs:elementalcraft/binding/woke_activation_crystal')
+        "water",
+        'kubejs:elementalcraft/binding/woke_activation_crystal'
+    )
 })

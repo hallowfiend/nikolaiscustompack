@@ -119,7 +119,7 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "irons_spellbooks:ice_staff"
         }
-    }).id('kubejs:eidolon/worktable/staves/graybeard_staff')
+    }).id('kubejs:eidolon/worktable/staves/ice_staff')
     //artificer's cane
     event.remove({ id: 'irons_spellbooks:artificer_cane' })
     event.custom({
