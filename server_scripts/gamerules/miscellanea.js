@@ -4,6 +4,7 @@ EntityEvents.spawned(event => {
         'eidolon:lesser_soul_gem',
         'eidolon:soul_shard',
         'malum:astral_weave',
+        'malum:warp_flux',
         'malum:arcane_spirit',
         'malum:wicked_spirit',
         'malum:sacred_spirit',

@@ -20,5 +20,4 @@ ServerEvents.recipes(event => {
         "result": result
     }).id(`dungeonsdelight/monster_cooking/${result.getId().split(":")[1]}`)
     }
-    //Readding the aether food recipes
 })

@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 	        "item": result,
 	        "count": count
 	    }
-    }).id(`fletching/${result.getId().split(":")[1]}`)
+    }).id(`kubejs:fletching/${result.split(":")[1]}`)
     }
     fletch(
         {tag: "forge:ingots/tin"},
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     )
     fletch(
         {tag: "dungeonsdelight:gunk"},
-        {item: "minecraft:arrow"},
+        {tag: "forge:rods/wooden"},
         {tag: "forge:nuggets/copper"},
         "dungeonsdelight:gunk_arrow",
         6
