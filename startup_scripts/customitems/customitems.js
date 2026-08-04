@@ -2,6 +2,9 @@ StartupEvents.registry('item', event => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    // foodstuffs and food-related items
+    event.create('mother_of_vinegar')
+    .displayName('Mother of Vinegar')
     // biological cyberware
     event.create('nutrient_sacs')
     .displayName('Nutrient Sacs');

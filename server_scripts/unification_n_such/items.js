@@ -56,7 +56,8 @@ const bulkReplace = [
     { target: "cornexpansion:corn_dough", replacement: "culturaldelights:corn_dough"},
     { target: "moredelight:diced_potatoes", replacement: "cosmopolitan:cut_potatoes"},
     { target: "gtceu:treated_wood_planks", replacement: "immersiveengineering:treated_wood_horizontal"},
-    { target: 'aether:enchanted_gravitite', replacement: "#forge:storage_blocks/gravitite"}
+    { target: 'aether:enchanted_gravitite', replacement: "#forge:storage_blocks/gravitite"},
+    { target: "#forge:gears/energized", replacement: "forge:gears/energetic_alloy"}
 	];
 
 ServerEvents.recipes((event) => {

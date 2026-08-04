@@ -1,6 +1,10 @@
 ServerEvents.recipes(event => {
+    event.remove({ id: 'naturesaura:tree_ritual/ancient_sapling' })
+    event.remove({ id: 'naturesaura:tree_ritual/token_joy' })
+    event.remove({ id: 'naturesaura:tree_ritual/token_fear' })
+    event.remove({ id: 'naturesaura:tree_ritual/token_anger' })
+    event.remove({ id: 'naturesaura:tree_ritual/token_sorrow' })
     // Ancient Sapling
-    event.remove({ output: 'naturesaura:ancient_sapling' })
     event.custom({
       "type": "naturesaura:tree_ritual",
       "ingredients": [

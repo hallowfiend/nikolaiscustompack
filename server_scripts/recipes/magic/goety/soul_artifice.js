@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
             "ingredient": input, //item or tag
             "soulIncrease": value, //int
             "cookingtime": absorbTime //int in ticks
-        }).id(`kubejs:goety/soul_absorption/${input.split(":")[1]}`)
+        }).id(`kubejs:goety/soul_absorption/${crystal.split(":")[1]}`)
     })
     soulAbsorption(
         {"item": "netherexp:wisp_bottle"},
