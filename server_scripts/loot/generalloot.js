@@ -9,13 +9,6 @@ LootJS.modifiers((event) => {
     .replaceLoot('supplementaries:pancake', 'rusticdelight:pancake', true)
     .replaceLoot('immersiveengineering:nugget_lead', 'gtceu:lead_nugget', true)
     .replaceLoot('immersiveengineering:nugget_silver', 'gtceu:silver_nugget', true)
-    .removeLoot(/enderio:.*gear/)
-    //removing duplicate calamari
-    .removeLoot('rusticdelight:calamari')
-    .removeLoot('crabbersdelight:raw_squid_tentacles')
-    .removeLoot('crabbersdelight:cooked_squid_tentacles')
-    .removeLoot('oceanic_delight:squid_tentacles')
-    .removeLoot('culturaldelights:squid')
     //replacing venison
     .replaceLoot(/.*:raw_venison/, "environmental:venison", true)
     .replaceLoot(/.*:cooked_venison/, "environmental:cooked_venison", true)
@@ -26,4 +19,35 @@ LootJS.modifiers((event) => {
     .replaceLoot('iss_magicfromtheeast:bottle_of_souls', 'netherexp:wisp_bottle')
     .replaceLoot('scguns:niter_dust', 'gtceu:saltpeter_dust')
     .replaceLoot('scguns:sulfur_dust', 'gtceu:sulfur_dust')
+    .removeLoot([
+      'farm_and_charm:bacon',
+      'farm_and_charm:beetroot_bag',
+      'farm_and_charm:carrot_bag',
+      'farm_and_charm:chicken_parts',
+      'farm_and_charm:dough',
+      'farm_and_charm:fertilized_farmland',
+      'farm_and_charm:fertilized_soil',
+      'farm_and_charm:lamb_ham',
+      'farm_and_charm:minced_beef',
+      'farm_and_charm:nettle_tea_cup',
+      'farm_and_charm:onion',
+      'farm_and_charm:onion_bag',
+      'farm_and_charm:plow',
+      'farm_and_charm:potato_bag',
+      'farm_and_charm:raw_pasta',
+      'farm_and_charm:rotten_tomato',
+      'farm_and_charm:supply_cart',
+      'farm_and_charm:tomato',
+      'farm_and_charm:tomato_bag',
+      'farm_and_charm:tomato_seeds',
+      'farm_and_charm:wild_onions',
+      'farm_and_charm:wild_tomatoes',
+      'create:crafting_blueprint',
+      /enderio:.*gear/,
+      'culturaldelights:squid',
+      'oceanic_delight:squid_tentacles',
+      'crabbersdelight:cooked_squid_tentacles',
+      'crabbersdelight:raw_squid_tentacles',
+      'rusticdelight:calamari'
+    ])
 });

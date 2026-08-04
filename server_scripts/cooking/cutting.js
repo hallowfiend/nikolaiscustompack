@@ -1,6 +1,28 @@
 ServerEvents.recipes((event) => {
     event.remove({ id: 'dungeonsdelight:cutting/wardenzola' })
 
+
+    //Fish and seafood
+    event.custom({
+		type: 'farmersdelight:cutting',
+		ingredients: [
+		  { item: 'crabbersdelight:shrimp' }
+		],
+		tool: { tag: 'forge:tools/knives' },
+		result: [
+		  { item: 'oceanic_delight:shrimp_slices', count: 2 }
+		]
+	  })
+    event.custom({
+		type: 'farmersdelight:cutting',
+		ingredients: [
+		  { item: 'aquaculture:frog' }
+		],
+		tool: { tag: 'forge:tools/knives' },
+		result: [
+		  { item: 'quark:frog_leg', count: 2 }
+		]
+	  })
     //Mob heads
     event.custom({
     type: 'farmersdelight:cutting',

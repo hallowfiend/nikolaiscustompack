@@ -185,4 +185,7 @@ WorldgenEvents.remove(event => {
     "tconstruct:cobalt_ore_large",
     "tconstruct:cobalt_ore_small"
   ]);
+
+  event.removeFeatureById('lakes', 'pneumaticcraft:oil_lake_surface')
+	event.removeFeatureById('lakes', 'pneumaticcraft:oil_lake_underground')
 });

@@ -556,6 +556,14 @@ ServerEvents.tags("item", (event) => {
 
   event.add("forge:armors", /ad_astra:jet(.*)/);
 
+  event.add("scguns:advanced_bullet_material", [
+    "gtceu:steel_ingot",
+    'pneumaticcraft:ingot_iron_compressed'
+  ])
+
+  event.add("forge:dusts/saltpeter", "scguns:niter_dust")
+  event.add("forge:dusts/sulfur", "scguns:sulfur_dust")
+
   event.add("forge:armors", /ad_astra:(.*)space(.*)/);
   // event.add("forge:tools/knives", ["#farmersdelight:tools/knives"]);
   // event.add("forge:tools/knives", /:(.*)knife(.*)/);
@@ -577,8 +585,6 @@ ServerEvents.tags("item", (event) => {
   ]);
 
   event.add("forge:flour/wheat", ["gtceu:wheat_dust"]);
-
-  event.add("gbth:certus_quartz_blocks", ["ae2:smooth_quartz_block", "ae2:quartz_bricks", "ae2:quartz_pillar", "ae2:chiseled_quartz_block", "ae2:cut_quartz_block"]);
 
   event.add('farmersdelight:ropes', 'supplementaries:rope');
 

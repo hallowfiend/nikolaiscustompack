@@ -82,6 +82,8 @@ ServerEvents.tags('entity_type', event => {
     /goety:haunted.*/,
     'goety:envioker',
     'goety:sorcerer',
+    /.*possessed.*/,
+    /cataclysm.*/,
     'goety:warlock',
     'goety:heretic',
     'goety:crone',
@@ -119,7 +121,8 @@ ServerEvents.tags('entity_type', event => {
 
   event.add("scguns:yellow_blood", [
     'goety:wildfire',
-    'goety:inferno'
+    'goety:inferno',
+    'cataclysm:nether_monstrosity'
   ])
 
   event.add("scguns:black_blood", [
@@ -148,7 +151,8 @@ ServerEvents.tags('entity_type', event => {
     "alexsmobs:endergrade",
     "alexsmobs:farseer",
     "alexsmobs:mimicube",
-    "alexsmobs:enderiophage"
+    "alexsmobs:enderiophage",
+    /.*possessed.*/
   ])
 
   event.add('scguns:blue_blood', [
@@ -158,7 +162,12 @@ ServerEvents.tags('entity_type', event => {
     'twilightforest:hedge_spider',
     'twilightforest:swarm_spider',
     /.*crab.*/,
-    /.*shrimp.*/
+    /.*shrimp.*/,
+    /.*snail.*/,
+    /.*slug.*/,
+    /.*squid.*/,
+    /.*octopus.*/,
+    /.*clam.*/
   ])
 
   event.add("scguns:undead", [
@@ -197,6 +206,7 @@ ServerEvents.tags('entity_type', event => {
     "cataclysm:kobolediator",
     "cataclysm:wadjet",
     "goety:zombie_vindicator",
+    /.*possessed.*/
   ])
 
   event.add("scguns:illager", [
@@ -227,7 +237,7 @@ ServerEvents.tags('entity_type', event => {
     'goety:wildfire',
     'goety:inferno',
     'cataclysm:ignis',
-    "cataclysm:ignited_revenant",
+    "cataclysm:ignited_revenant"
   ])
 
   event.add('scguns:bot', [
@@ -244,28 +254,22 @@ ServerEvents.tags('entity_type', event => {
     "cataclysm:coralssus",
     'cataclysm:the_leviathan',
     /aquamirae.*/,
-    "alexsmobs:blobfish",
+    /.*clam.*/,
+    /.*shrimp.*/,
+    /.*fish.*/,
+    /.*squid.*/,
+    /.*octopus.*/,
+    /.*crab.*/,
     "alexsmobs:skelewag",
-    "alexsmobs:catfish",
     "alexsmobs:comb_jelly",
-    "alexsmobs:devils_hole_pupfish",
-    "alexsmobs:flying_fish",
     "alexsmobs:frilled_shark",
     "alexsmobs:hammerhead_shark",
     "alexsmobs:mudskipper",
     "alexsmobs:seal",
-    "cataclysm:lionfish",
     "cataclysm:the_baby_leviathan",
     "alexsmobs:cachalot_whale",
     "alexsmobs:orca",
-    "alexsmobs:mantis_shrimp",
-    "alexsmobs:giant_squid",
-    "alexsmobs:mimic_octopus",
-    "cataclysm:deepling",
-    "cataclysm:deepling_angler",
-    "cataclysm:deepling_brute",
-    "cataclysm:deepling_priest",
-    "cataclysm:deepling_warlock"
+    /.*deepling.*/
   ])
 
   event.add('scguns:heavy', [
@@ -296,6 +300,36 @@ ServerEvents.tags('entity_type', event => {
     "alexsmobs:void_worm",
 		"alexsmobs:void_worm_part",
     'alexsmobs:warped_mosco',
+  ])
+
+  event.add('supplementaries:jar_catchable', [
+    'minecraft:silverfish',
+    'scguns:swarm',
+    'minecraft:endermite',
+    'netherexp:wisp'
+  ])
+  event.add('supplementaries:jar_baby_catchable', [
+    'minecraft:turtle',
+    'minecraft:chicken'
+  ])
+  event.add('supplementaries:cage_catchable', [
+    'scguns:scampler',
+    'minecraft:silverfish'
+  ])
+  event.add('supplementaries:cage_baby_catchable', [
+    'minecraft:camel',
+    'minecraft:panda',
+    'minecraft:llama',
+    'minecraft:trader_llama',
+    'minecraft:drowned',
+    'minecraft:mooshroom',
+    'minecraft:strider',
+    'minecraft:villager',
+    'minecraft:zombie',
+    'minecraft:zombie_villager',
+    'minecraft:turtle',
+    'minecraft:husk',
+    'minecraft:zombified_piglin'
   ])
 
 })

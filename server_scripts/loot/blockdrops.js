@@ -24,5 +24,9 @@ LootJS.modifiers((event) => {
         
     ]);
 
+    event.addBlockLootModifier(/.*/)
+    .replaceLoot('scguns:niter_dust', 'gtceu:niter_dust')
+    .replaceLoot('scguns:sulfur_dust', 'gtceu:sulfur_dust')
+
 });
     

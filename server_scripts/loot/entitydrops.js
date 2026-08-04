@@ -23,4 +23,11 @@ LootJS.modifiers((event) => {
 				);
 		});
 
+	event.addEntityLootModifier('aether:blue_swet')
+    	.randomChance(0.1)
+		.addLoot('aether:blue_gummy_swet')
+  	event.addEntityLootModifier('aether:golden_swet')
+    	.randomChance(0.1)
+		.addLoot('aether:golden_gummy_swet')
+
 });
