@@ -37,16 +37,28 @@ ServerEvents.recipes(event => {
             "cookingtime": absorbTime //int in ticks
         }).id(`kubejs:goety/soul_absorption/${input.getId().split(":")[1]}`)
     }
-    soulAbsorption(
-        {"tag": "malum:aspected_spirits"},
+    const principleCrystals = [
+        'malum:arcane_spirit',
+        'malum:wicked_spirit',
+        'malum:sacred_spirit',
+        'malum:eldritch_spirit',
+        'malum:aerial_spirit',
+        'malum:earthen_spirit',
+        'malum:aqueous_spirit',
+        'malum:infernal_spirit',
+        'bloodmagic:defaultcrystal',
+        'bloodmagic:destructivecrystal',
+        'bloodmagic:vengefulcrystal',
+        'bloodmagic:corrosivecrystal',
+        'bloodmagic:steadfast_crystal'
+    ]
+    principleCrystals.forEach(crystal => {
+        soulAbsorption(
+        crystal,
         30,
         50
-    )
-    soulAbsorption(
-        {"tag": "bloodmagic:crystals/demon"},
-        30,
-        50
-    )
+        )
+    })
     soulAbsorption(
         {"item": "netherexp:wisp_bottle"},
         80,

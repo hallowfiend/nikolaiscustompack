@@ -155,7 +155,12 @@ global.removedItems = [
   'gtceu:treated_wood_planks',
   'gtceu:treated_wood_slab',
   'gtceu:treated_wood_fence',
-  'gtceu:treated_wood_stairs'
+  'gtceu:treated_wood_stairs',
+  //pneumaticcraft yeet section
+  'pneumaticcraft:air_compressor',
+  'pneumaticcraft:advanced_air_compressor',
+  'pneumaticcraft:manual_compressor',
+  'pneumaticcraft:flux_compressor'
 ];
 
 global.removedRecipeIds = [

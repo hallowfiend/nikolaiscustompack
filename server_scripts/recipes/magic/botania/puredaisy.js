@@ -3,56 +3,47 @@ ServerEvents.recipes((event) => {
     event.remove({id:'botania:pure_daisy/livingwood'})
 
     //Livingrock
-    event.recipes.botania.pure_daisy("botania:livingrock", "aether:holystone") //output, input
-        .id('kubejs:botania/pure_daisy/livingrock_from_holystone')
+    const livingrockMaterials = [
+        'aether:holystone',
+        'create:asurine',
+        'create:ochrum',
+        'create:veridium',
+        'create:crimsite',
+        'create:limestone',
+        'undergarden:shiverstone',
+        'cataclysm:azure_seastone',
+        'arts_and_crafts:soapstone',
+        'twigs:rhyolite',
+        'spawn:reefstone',
+        'scguns:phosphorite'
+    ]
+    livingrockMaterials.forEach(rock => {
+        event.recipes.botania.pure_daisy("botania:livingrock", rock)
+        .id(`kubejs:botania/pure_daisy/livingrock_from_${rock.getId().split(":")[1]}`)
+    })
     event.recipes.botania.pure_daisy("botania:livingrock", "goety:marble")
         .id('kubejs:botania/pure_daisy/livingrock_from_cursed_marble')
     event.recipes.botania.pure_daisy("botania:livingrock", "gtceu:marble")
         .id('kubejs:botania/pure_daisy/livingrock_from_mundane_marble')
-    event.recipes.botania.pure_daisy("botania:livingrock", "create:asurine")
-        .id('kubejs:botania/pure_daisy/livingrock_from_asurine')
-    event.recipes.botania.pure_daisy("botania:livingrock", "create:ochrum")
-        .id('kubejs:botania/pure_daisy/livingrock_from_ochrum')
-    event.recipes.botania.pure_daisy("botania:livingrock", "create:veridium")
-        .id('kubejs:botania/pure_daisy/livingrock_from_veridium')
-    event.recipes.botania.pure_daisy("botania:livingrock", "create:crimsite")
-        .id('kubejs:botania/pure_daisy/livingrock_from_crimsite')
-    event.recipes.botania.pure_daisy("botania:livingrock", "create:limestone")
-        .id('kubejs:botania/pure_daisy/livingrock_from_limestone')
-    event.recipes.botania.pure_daisy("botania:livingrock", "undergarden:shiverstone")
-        .id('kubejs:botania/pure_daisy/livingrock_from_shiverstone')
-    event.recipes.botania.pure_daisy("botania:livingrock", "cataclysm:azure_seastone")
-        .id('kubejs:botania/pure_daisy/livingrock_from_azure_seastone')
-    event.recipes.botania.pure_daisy("botania:livingrock", "arts_and_crafts:soapstone")
-        .id('kubejs:botania/pure_daisy/livingrock_from_foamstone')
-    event.recipes.botania.pure_daisy("botania:livingrock", "twigs:rhyolite")
-        .id('kubejs:botania/pure_daisy/livingrock_from_rhyolite')
-    event.recipes.botania.pure_daisy("botania:livingrock", "spawn:reefstone")
-        .id('kubejs:botania/pure_daisy/livingrock_from_reefstone')
-    event.recipes.botania.pure_daisy("botania:livingrock", "scguns:phosphorite")
-        .id('kubejs:botania/pure_daisy/livingrock_from_phosphorite')
 
     //Livingwood
+    const livingwoodMaterials = [
+        '#malum:runewood_logs',
+        '#malum:soulwood_logs',
+        '#environmental:willow_logs',
+        '#hexalia:cottonwood_logs',
+        '#hibernalherbs:myqueste_logs',
+        '#eidolon:illwood_logs',
+        '#undergarden:smogstem_logs',
+        '#undergarden:grongle_logs',
+        '#undergarden:wigglewood_logs'
+    ]
+    livingwoodMaterials.forEach(wood => {
+        event.recipes.botania.pure_daisy("botania:livingwood_log", wood)
+        .id(`kubejs:botania/pure_daisy/livingwood_from_${wood.getId().split(":")[1]}`)
+    })
     event.recipes.botania.pure_daisy("botania:livingwood_log", "#forge:logs/archwood")
         .id('kubejs:botania/pure_daisy/livingwood_from_archwood')
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#malum:runewood_logs")
-        .id('kubejs:botania/pure_daisy/livingwood_from_runewood')
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#malum:soulwood_logs")
-        .id('kubejs:botania/pure_daisy/livingwood_from_soulwood')
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#environmental:willow_logs")
-        .id('kubejs:botania/pure_daisy/livingwood_from_willow')
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#hexalia:cottonwood_logs")
-        .id('kubejs:botania/pure_daisy/livingwood_from_cottonwood')
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#hibernalherbs:myqueste_logs")
-        .id('kubejs:botania/pure_daisy/livingwood_from_myqueste')
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#eidolon:illwood_logs")
-        .id('kubejs:botania/pure_daisy/livingwood_from_illwood')
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#undergarden:smogstem_logs")
-        .id('kubejs:botania/pure_daisy/livingwood_from_smogstem')
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#undergarden:grongle_logs")
-        .id('kubejs:botania/pure_daisy/livingwood_from_grongle')
-    event.recipes.botania.pure_daisy("botania:livingwood_log", "#undergarden:wigglewood_logs")
-        .id('kubejs:botania/pure_daisy/livingwood_from_wigglewood')
     event.recipes.botania.pure_daisy("botania:livingwood_log", "#twilightforest:logs")
         .id('kubejs:botania/pure_daisy/livingwood_from_tf_logs')
 
