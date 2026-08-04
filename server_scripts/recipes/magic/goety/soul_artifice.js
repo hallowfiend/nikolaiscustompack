@@ -53,11 +53,12 @@ ServerEvents.recipes(event => {
         'bloodmagic:steadfast_crystal'
     ]
     principleCrystals.forEach(crystal => {
-        soulAbsorption(
-        crystal,
-        30,
-        50
-        )
+        event.custom({
+            "type": "goety:soul_absorber_recipes",
+            "ingredient": input, //item or tag
+            "soulIncrease": value, //int
+            "cookingtime": absorbTime //int in ticks
+        }).id(`kubejs:goety/soul_absorption/${input.split(":")[1]}`)
     })
     soulAbsorption(
         {"item": "netherexp:wisp_bottle"},

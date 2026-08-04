@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
     ]
     livingrockMaterials.forEach(rock => {
         event.recipes.botania.pure_daisy("botania:livingrock", rock)
-        .id(`kubejs:botania/pure_daisy/livingrock_from_${rock.getId().split(":")[1]}`)
+        .id(`kubejs:botania/pure_daisy/livingrock_from_${rock.split(":")[1]}`)
     })
     event.recipes.botania.pure_daisy("botania:livingrock", "goety:marble")
         .id('kubejs:botania/pure_daisy/livingrock_from_cursed_marble')
@@ -31,22 +31,22 @@ ServerEvents.recipes((event) => {
     const livingwoodMaterials = [
         '#malum:runewood_logs',
         '#malum:soulwood_logs',
-        '#hexerei:willow',
-        '#hexerei:mahogany',
-        '#hexerei:witch_hazel',
         '#hexalia:cottonwood_logs',
         '#hibernalherbs:myqueste_logs',
         '#eidolon:illwood_logs',
+        '#environmental:willow_logs',
         '#undergarden:smogstem_logs',
         '#undergarden:grongle_logs',
         '#undergarden:wigglewood_logs'
     ]
     livingwoodMaterials.forEach(wood => {
         event.recipes.botania.pure_daisy("botania:livingwood_log", wood)
-        .id(`kubejs:botania/pure_daisy/livingwood_from_${wood.getId().split(":")[1]}`)
+        .id(`kubejs:botania/pure_daisy/livingwood_from_${wood.split(":")[1]}`)
     })
     event.recipes.botania.pure_daisy("botania:livingwood_log", "#forge:logs/archwood")
         .id('kubejs:botania/pure_daisy/livingwood_from_archwood')
+    event.recipes.botania.pure_daisy("botania:livingwood_log", "#forge:logs/mahogany")
+        .id('kubejs:botania/pure_daisy/livingwood_from_mahogany')
     event.recipes.botania.pure_daisy("botania:livingwood_log", "#twilightforest:logs")
         .id('kubejs:botania/pure_daisy/livingwood_from_tf_logs')
 
