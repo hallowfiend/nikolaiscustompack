@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
-     let brazier_summoning = (mob, count, input1, input2, focus, reagent) => {
+    let brazier_summoning = (mob, count, input1, input2, focus, reagent) => {
+    var identifier = mob.replace(':', '_')
     event.custom({
       "type": "eidolon:ritual_brazier_summoning",
       "focusItems": [],
@@ -23,7 +24,7 @@ ServerEvents.recipes(event => {
           "item": reagent
         }
       ]
-    })
+    }).id(`kubejs:eidolon/brazier_summoning/${identifier}`)
   }
   //Vanilla
   brazier_summoning(
@@ -122,6 +123,39 @@ ServerEvents.recipes(event => {
     'minecraft:purpur_block',
     'minecraft:shulker_shell'
   )
+  //Ars Nouveau
+  brazier_summoning(
+    'ars_nouveau:wilden_hunter',
+    3,
+    'ars_nouveau:source_gem_block',
+    'hexalia:spirit_powder',
+    'hexerei:dried_sage',
+    'minecraft:bow'
+  )
+  brazier_summoning(
+    'ars_nouveau:wilden_stalker',
+    3,
+    'ars_nouveau:source_gem_block',
+    'malum:astral_weave',
+    'hexerei:mandrake_flowers',
+    'hexalia:ghost_powder'
+  )
+  brazier_summoning(
+    'ars_nouveau:wilden_guardian',
+    3,
+    'ars_nouveau:source_gem_block',
+    'minecraft:prismarine_shard',
+    'hexerei:infused_fabric',
+    'hexalia:galeberries'
+  )
+  brazier_summoning(
+    'ars_nouveau:wilden_boss',
+    1,
+    'twilightforest:hydra_chop',
+    'ars_nouveau:wilden_wing',
+    'ars_nouveau:wilden_spike',
+    'ars_nouveau:wilden_horn'
+  )
   //Eidolon
   brazier_summoning(
     'eidolon:zombie_brute',
@@ -183,6 +217,14 @@ ServerEvents.recipes(event => {
     'hexerei:mandrake_root'
   )
   brazier_summoning(
+    'alexsmobs:komodo_dragon',
+    1,
+    'eidolon:lesser_soul_gem',
+    'twilightforest:naga_scale',
+    'malum:earthen_spirit',
+    'minecraft:sand'
+  )
+  brazier_summoning(
     'alexsmobs:dropbear',
     2,
     'alexsmobs:bear_fur',
@@ -205,5 +247,13 @@ ServerEvents.recipes(event => {
     'minecraft:spore_blossom',
     'minecraft:flowering_azalea',
     'minecraft:pink_petals'
+  )
+  brazier_summoning(
+    'alexsmobs:guster',
+    3,
+    'quark:bottled_cloud',
+    'minecraft:sand',
+    'aether:gold_aercloud',
+    'malum:aerial_spirit'
   )
 })

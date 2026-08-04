@@ -555,6 +555,7 @@ ServerEvents.tags("item", (event) => {
   event.add("deep_aether:skyjade_repairing", ["#forge:gems/skyjade"]);
 
   event.add("forge:armors", /ad_astra:jet(.*)/);
+
   event.add("forge:armors", /ad_astra:(.*)space(.*)/);
   // event.add("forge:tools/knives", ["#farmersdelight:tools/knives"]);
   // event.add("forge:tools/knives", /:(.*)knife(.*)/);

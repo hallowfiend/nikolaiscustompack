@@ -1,3 +1,5 @@
+//Disable creating ritual table by rclick on deepslate
+
 BlockEvents.rightClicked(/minecraft:deepslate|minecraft:cobbled_deepslate/, event => {
     const { player, block } = event
     if (event.block != /minecraft:deepslate|minecraft:cobbled_deepslate/) return;
@@ -5,6 +7,8 @@ BlockEvents.rightClicked(/minecraft:deepslate|minecraft:cobbled_deepslate/, even
         event.cancel()
     }
 });
+
+//Disable making bottles of souls
 
 BlockEvents.rightClicked(/minecraft:soul_fire/, event => {
     const { player, block } = event

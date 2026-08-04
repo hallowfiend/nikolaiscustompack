@@ -12,6 +12,9 @@ ServerEvents.recipes(event => {
         "ritual_dummy": {
           "item": "undergarden:catalyst"
         },
+        "item_to_use": {
+            "item": "minecraft:flint_and_steel"
+        },
         "ingredients": [
           {
             "item": "occultism:iesnium_pickaxe"
@@ -31,7 +34,7 @@ ServerEvents.recipes(event => {
         ],
         "result": 
         { "item": "undergarden:catalyst" }
-      })
+      }).id('kubejs:occultism/ritual/undergarden_catalyst')
     //Crushers
     event.remove({ id: 'occultism:ritual/summon_foliot_crusher' })
     event.remove({ id: 'occultism:ritual/summon_djinni_crusher' })

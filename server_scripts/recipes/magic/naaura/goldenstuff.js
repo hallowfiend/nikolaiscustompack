@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
                     'eidolon:arcane_gold_nugget',
                     'farmersdelight:straw',
                     '#forge:dusts/electrum',
-                    'malum:ether',
+                    '#botania:petals',
                     '#forge:dusts/electrum',
                     'farmersdelight:straw',
                     'eidolon:arcane_gold_nugget',

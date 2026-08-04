@@ -58,6 +58,35 @@ event.replaceOutput(
     event.remove({ input: "sons_of_sins:iron_and_ether"})
     event.remove({input:'immersiveengineering:hammer'})
 
+    event.remove({ output: 'create:empty_blaze_burner' })
+    event.shaped('create:empty_blaze_burner', [
+    '   ',
+    ' C ',
+    'ABA'
+    ], {
+    A: 'caverns_and_chasms:silver_bars',
+    B: 'supplementaries:cage',
+    C: 'minecraft:netherrack',
+    })
+
+    event.remove({ output: 'minecraft:dried_ghast' })
+
+    event.remove({ output: 'ars_nouveau:ritual_animal_summon' })
+    event.remove({ output: 'ars_nouveau:ritual_wilden_summon' })
+
+    event.shaped(
+    Item.of('netherexp:enigma_flesh', 8),
+    [
+      'AAA',
+      'ABA',
+      'AAA'
+    ],
+    {
+      A: 'caverns_and_chasms:living_flesh',
+      B: 'netherexp:warped_wart'
+    }
+    )
+
     // Restore FD's rope recipe but output supplementaries:rope.
     // Original: 2 straw in a column -> 4 rope
     event.shaped(

@@ -124,5 +124,12 @@ const DYENAMICS_COLORS = [
     // EnderIO (grinding balls)
     event.remove({ output: ["enderio:soularium_grinding_ball", "enderio:conductive_alloy_grinding_ball", "enderio:pulsating_alloy_grinding_ball", "enderio:redstone_alloy_grinding_ball", "enderio:energetic_alloy_grinding_ball", "enderio:vibrant_alloy_grinding_ball", "enderio:copper_alloy_grinding_ball", "enderio:dark_steel_grinding_ball", "enderio:end_steel_grinding_ball"] })
 
+    event.replaceInput({},  'oceanic_delight:egg_roll', 'culturaldelights:egg_roll')
+    event.replaceOutput({}, 'oceanic_delight:egg_roll', 'culturaldelights:egg_roll')
+
+    event.replaceInput({},  'rusticdelight:calamari_roll', 'culturaldelights:calamari_roll')
+    event.replaceOutput({}, 'rusticdelight:calamari_roll', 'culturaldelights:calamari_roll')
+
+
   console.log('Items sorted')
 });

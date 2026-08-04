@@ -15,6 +15,13 @@ ItemEvents.tooltip(event => {
   event.add('hexalia:bloomwrap_leggings', '§7Grants regeneration while nearby flowers.')
   event.add('hexalia:bloomwrap_boots', '§7Increases speed when walking on leaves.')
 
+  //ars ritual tablets
+  event.remove(['ars_nouveau:ritual_animal_summon', 'ars_nouveau:ritual_wilden_summon'])
+  event.add([
+    'ars_nouveau:ritual_animal_summon',
+    'ars_nouveau:ritual_wilden_summon'
+  ], "Deprecated, use Eidolon's brazier summoning mechanic instead")
+
   //misc tips
 
   event.addAdvanced('malum:encyclopedia_arcana', (item, advanced, text) => {

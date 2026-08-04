@@ -112,7 +112,7 @@ const recipes = [
     inputItem:[
         {"item":"minecraft:warped_fungus"},
         {"item":"eidolon:ender_calx"},
-        {"item":"minecraft:nether_wart"}
+        {"item":"netherexp:warped_wart"}
     ],
     output:"eidolon:warped_sprouts",
     output_amount:4,

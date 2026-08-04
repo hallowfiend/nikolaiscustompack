@@ -116,6 +116,9 @@ global.removedItems = [
   'crabbersdelight:salmon_barrel',
   'delightfulsandwich:mutton_sandwich',
   'cratedelight:sugar_bag',
+  'rusticdelight:coffee',
+  'dungeonsdelight:sinigang',
+  'oceanicdelight:egg_roll',
   //end of foodstuff unification
   'elementalcraft:elementpipe_impaired',
   'sons_of_sins:iron_and_ether',

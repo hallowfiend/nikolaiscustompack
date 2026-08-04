@@ -109,4 +109,9 @@ LootJS.modifiers((event) => {
             ['farmersdelight:melon_juice', 4]
         ])
     })
+    event.addLootTableModifier('aquamirae:chests/frozen_chest')
+		.pool(pool => {
+			pool.rolls(1).randomChance(1);
+			pool.addLoot(LootEntry.of('twilightforest:ice_bow'))
+		});
 })
