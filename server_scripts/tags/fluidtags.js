@@ -18,4 +18,5 @@ ServerEvents.tags('fluid', event => {
         "hexerei:blood_flowing"
     ]);
     event.remove("minecraft:lava", ["hexerei:quicksilver_fluid"])
+    event.add("ad_astra:fuel", "gtceu:rocket_fuel")
 })

@@ -35,7 +35,9 @@ ServerEvents.tags('entity_type', event => {
     "cataclysm:coralssus",
     "cataclysm:amethyst_crab",
     "cataclysm:modern_remnant",
-    /goety:.*servant/
+    /goety:.*servant/,
+    /ars_nouveau:.*_weald_walker/,
+    /ars_elemental:.*_familiar/
   ])
   event.add('pneumaticcraft:vacuum_trap_blacklisted', '#kubejs:mob_blacklist')
   event.add('ars_nouveau:drygmy_blacklist', '#kubejs:mob_blacklist')
