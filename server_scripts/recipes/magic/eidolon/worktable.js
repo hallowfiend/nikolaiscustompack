@@ -15,6 +15,7 @@ const petalApothecary = [
     ]
 
 ServerEvents.recipes((event) => {
+    event.remove({ id: /irons_spellbooks:sequenced_assembly.*/ })
     //im turning this table into the central magic item crafting station and NOBODY CAN STOP ME
     //except for components that is im leaving those to be craftable normalstyle because i love ae2
     //MANA AND ARTIFICE
@@ -50,10 +51,9 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "mna:manaweaving_altar"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/manaweaving_altar')
     //IRON'S
     //graybeard staff
-    event.remove({ id: 'irons_spellbooks:sequenced_assembly/graybeard_staff' })
     event.remove({ id: 'irons_spellbooks:graybeard_staff' })
     event.custom({
         "type": "eidolon:worktable",
@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "irons_spellbooks:graybeard_staff"
         }
-    })
+    }).id('kubejs:eidolon/worktable/staves/graybeard_staff')
     //ice staff
     event.remove({ id: 'irons_spellbooks:deploying/ice_staff' })
     event.remove({ id: 'irons_spellbooks:ice_staff' })
@@ -119,9 +119,8 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "irons_spellbooks:ice_staff"
         }
-    })
+    }).id('kubejs:eidolon/worktable/staves/graybeard_staff')
     //artificer's cane
-    event.remove({ id: 'irons_spellbooks:sequenced_assembly/artificer_cane' })
     event.remove({ id: 'irons_spellbooks:artificer_cane' })
     event.custom({
         "type": "eidolon:worktable",
@@ -156,9 +155,8 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "irons_spellbooks:artificer_cane"
         }
-    })
+    }).id('kubejs:eidolon/worktable/staves/artificer_cane')
     //pyrium staff
-    event.remove({ id: 'irons_spellbooks:sequenced_assembly/pyrium_staff' })
     event.remove({ id: 'irons_spellbooks:pyrium_staff' })
     event.custom({
         "type": "eidolon:worktable",
@@ -190,9 +188,8 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "irons_spellbooks:pyrium_staff"
         }
-    })
+    }).id('kubejs:eidolon/worktable/staves/pyrium_staff')
     //inscription table
-    event.remove({ id: 'irons_spellbooks:sequenced_assembly/inscription_table' })
     event.remove({ id: 'irons_spellbooks:inscription_table' })
     event.custom({
         "type": "eidolon:worktable",
@@ -234,7 +231,7 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "irons_spellbooks:inscription_table"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/inscription_table')
     //scroll forge
     event.remove({ id: 'irons_spellbooks:scroll_forge' })
     event.custom({
@@ -264,7 +261,7 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "irons_spellbooks:scroll_forge"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/scroll_forge')
     //arcane anvil
     event.remove({ id: 'irons_spellbooks:arcane_anvil' })
     event.custom({
@@ -298,7 +295,7 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "irons_spellbooks:arcane_anvil"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/arcane_anvil')
     //BLOOD MAGIC
     //blood altar
     event.remove({ id: 'bloodmagic:blood_altar' })
@@ -335,7 +332,7 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "bloodmagic:altar"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/blood_altar')
     //alchemy table
     event.remove({ id: 'bloodmagic:alchemy_table' })
     event.custom({
@@ -374,7 +371,7 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "bloodmagic:alchemytable"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/alchemy_table')
     //hellfire forge
     event.remove({ id: 'bloodmagic:soul_forge' })
     event.custom({
@@ -413,7 +410,7 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "bloodmagic:soulforge"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/hellfire_forge')
     //incense altar
     event.remove({ id: 'bloodmagic:incense_altar' })
     event.custom({
@@ -452,7 +449,7 @@ ServerEvents.recipes((event) => {
         "result" : {
             "item": "bloodmagic:incensealtar"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/incense_altar')
     //HEXEREI
     //mixing cauldron
     event.remove({ id: 'hexerei:mixing_cauldron' })
@@ -486,7 +483,7 @@ ServerEvents.recipes((event) => {
         "result": {
             "item": "hexerei:mixing_cauldron"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/mixing_cauldron')
     //MALUM
     //spirit altar
     event.remove({ id: 'malum:spirit_altar' })
@@ -517,7 +514,7 @@ ServerEvents.recipes((event) => {
         "result": {
             "item": "malum:spirit_altar"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/spirit_altar')
     //ARS NOUVEAU
     //imbuement chamber
     event.remove({ id: 'ars_nouveau:imbuement_chamber' })
@@ -545,7 +542,7 @@ ServerEvents.recipes((event) => {
         "result": {
             "item": "ars_nouveau:imbuement_chamber"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/imbuement_chamber')
     //arcane core
     event.remove({ id: 'ars_nouveau:arcane_core' })
     event.custom({
@@ -578,7 +575,7 @@ ServerEvents.recipes((event) => {
         "result": {
             "item": "ars_nouveau:arcane_core"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/arcane_core')
     //enchanting apparatus
     event.remove({ id: 'ars_nouveau:enchanting_apparatus' })
     event.custom({
@@ -611,7 +608,7 @@ ServerEvents.recipes((event) => {
         "result": {
             "item": "ars_nouveau:enchanting_apparatus"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/enchanting_apparatus')
     //scribe's table
     event.remove({ id: 'ars_nouveau:scribes_table' })
     event.custom({
@@ -650,7 +647,7 @@ ServerEvents.recipes((event) => {
         "result": {
             "item": "ars_nouveau:scribes_table"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/scribes_table')
     //BOTANIA
     //runic altar
     event.remove({ id: 'botania:runic_altar' })
@@ -694,7 +691,7 @@ ServerEvents.recipes((event) => {
         "result": {
             "item": "botania:runic_altar"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/runic_altar')
     //brewery
     event.remove({ id: 'botania:brewery' })
     event.custom({
@@ -739,7 +736,7 @@ ServerEvents.recipes((event) => {
         "result": {
             "item": "botania:brewery"
         }
-    })
+    }).id('kubejs:eidolon/worktable/workstations/botanical_brewery')
     //petal apothecaries
     petalApothecary.forEach(group => {
         event.remove({ id: `botania:apothecary_${group.apothecary}` })
@@ -771,7 +768,7 @@ ServerEvents.recipes((event) => {
         "result": {
             "item": `botania:apothecary_${group.apothecary}`
         }
-    })
+    }).id(`kubejs:eidolon/worktable/workstations/apothecary_${group.apothecary}`)
     })
 
 });

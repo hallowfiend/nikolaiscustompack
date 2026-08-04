@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
                     {"item": {"item": type.techItem}},
                     {"item": {"item": type.magicItem}}
                 ]
-			  })
+			  }).id(`kubejs:ars_nouveau/imbuement/${type.spellType}_essence`)
     })
     //elemental essences
     elements.forEach(element => {
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
                     {"item": {"item": `hexalia:${element.element}_node`}},
                     {"item": {"item": element.extra}}
                 ]
-			  })
+			  }).id(`kubejs:ars_nouveau/imbuement/${element.element}_essence`)
     })
     //anima essence - the exception
     event.custom({
@@ -58,5 +58,5 @@ ServerEvents.recipes(event => {
                     {"item": {"item": "malum:rune_of_idle_restoration"}},
                     {"item": {"item": "malum:rune_of_culling"}}
                 ]
-			  })
+			  }).id(`kubejs:ars_nouveau/imbuement/anima_essence`)
 })

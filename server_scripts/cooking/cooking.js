@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         "ingredients": ingredients,
         "recipe_book_tab": category,
         "result": result
-    }).id(`kubejs:dungeonsdelight/monster_cooking/${result.getId().split(":")[1]}`)
+    }).id(`dungeonsdelight/monster_cooking/${result.getId().split(":")[1]}`)
     }
     function monsterCooking(ingredients, category, result, cookTime, xp){
         event.custom({
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         "ingredients": ingredients,
         "recipe_book_tab": category,
         "result": result
-    }).id(`kubejs:dungeonsdelight/monster_cooking/${result.getId().split(":")[1]}`)
+    }).id(`dungeonsdelight/monster_cooking/${result.getId().split(":")[1]}`)
     }
     //Readding the aether food recipes
 })

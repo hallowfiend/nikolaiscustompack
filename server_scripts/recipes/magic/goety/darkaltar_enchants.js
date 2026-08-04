@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         "result": {
             "item": "minecraft:enchanted_book"
         }
-        }).id(`kubejs:goety/enchant/${identifier}`)
+        }).id(`kubejs:goety/dark_ritual/mysticism/enchant/${identifier}`)
     }
     //ARS ENCHANTS
     enchant(
@@ -621,7 +621,7 @@ ServerEvents.recipes(event => {
         "result": {
             "item": "minecraft:enchanted_book"
         }
-        }).id(`kubejs:goety/enchant/${identifier}`)
+        }).id(`kubejs:goety/dark_ritual/apothic_mysticism/enchant/${identifier}`)
     }
     enchantApotheosis(
         "apotheosis:berserkers_fury",

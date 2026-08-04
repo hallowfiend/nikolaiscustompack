@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         ],
         2000,
         "air"
-    )
+    ).id('kubejs:elementalcraft/binding/weak_activation_crystal')
     elementalcraftRecipes.bind(
         "bloodmagic:activationcrystalawakened",
         [
@@ -25,5 +25,5 @@ ServerEvents.recipes(event => {
         ],
         4000,
         "water"
-    )
+    ).id('kubejs:elementalcraft/binding/woke_activation_crystal')
 })

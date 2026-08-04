@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
             'malum:infernal_spirit'
         ],
         2000
-    )
+    ).id('kubejs:botania/runic_altar/fire_node_efficient')
     event.recipes.botania.runic_altar('4x hexalia:water_node',
         [
             'minecraft:amethyst_shard',
@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
             'malum:aqueous_spirit'
         ],
         2000
-    )
+    ).id('kubejs:botania/runic_altar/water_node_efficient')
     event.recipes.botania.runic_altar('4x hexalia:air_node',
         [
             'minecraft:amethyst_shard',
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
             'malum:aerial_spirit'
         ],
         2000
-    )
+    ).id('kubejs:botania/runic_altar/air_node_efficient')
     event.recipes.botania.runic_altar('4x hexalia:earth_node',
         [
             'minecraft:amethyst_shard',
@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
             'malum:earthen_spirit'
         ],
         2000
-    )
+    ).id('kubejs:botania/runic_altar/earth_node_efficient')
     //BLOOD MAGIC
     //Prepared Stone
     event.recipes.botania.runic_altar('8x kubejs:prepared_stone',
@@ -46,20 +46,20 @@ ServerEvents.recipes((event) => {
             'eidolon:magicians_wax'
         ],
         4000
-    )
+    ).id('kubejs:botania/runic_altar/prepared_stone')
     //Blank Rune
     event.remove({ output: "bloodmagic:blankrune" })
     event.recipes.botania.runic_altar('2x bloodmagic:blankrune',
         [
             'bloodmagic:blankslate',
             'bloodmagic:blankslate',
-            'botania:mana_powder',
+            'kubejs:botania:mana_powder',
             'biomancy:gem_fragments',
             'sons_of_sins:ether_ashes',
             'occultism:burnt_otherstone'
         ],
         2000
-    )
+    ).id('kubejs:botania/runic_altar/blank_rune')
     //TIER 1
     //Speed Rune
     event.remove({ output: "bloodmagic:speedrune" })
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
             'mna:transmuted_silver'
         ],
         4000
-    )
+    ).id('kubejs:botania/runic_altar/speed_rune')
     //Arcane Rune
     event.remove({ output: "animus:arcane_rune" })
     event.recipes.botania.runic_altar('animus:arcane_rune',
@@ -84,7 +84,7 @@ ServerEvents.recipes((event) => {
             'constructs_casting:arcane_block'
         ],
         4000
-    )
+    ).id('kubejs:botania/runic_altar/arcane_rune')
     //TIER 2
     //Sacrifice Rune
     event.remove({ output: "bloodmagic:sacrificerune" })
@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
             'twilightforest:carminite'
         ],
         8000
-    )
+    ).id('kubejs:botania/runic_altar/sacrifice_rune')
     //Self-Sacrifice Rune
     event.remove({ output: "bloodmagic:selfsacrificerune" })
     event.recipes.botania.runic_altar('bloodmagic:selfsacrificerune',
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
             'tconstruct:pig_iron_ingot'
         ],
         8000
-    )
+    ).id('kubejs:botania/runic_altar/self_sacrifice_rune')
     //TIER 3
     //Rune of Unleashed Nature
     event.remove({ output: "animus:rune_unleashed_nature" })
@@ -118,11 +118,11 @@ ServerEvents.recipes((event) => {
             'bloodmagic:infusedslate',
             'bloodmagic:blankrune',
             'naturesaura:infused_iron_block',
-            'botania:rune_earth',
+            'kubejs:botania:rune_earth',
             'biomancy:fertilizer'
         ],
         12000
-    )
+    ).id('kubejs:botania/runic_altar/unleashed_nature_rune')
     //Displacement Rune
     event.remove({ output: "bloodmagic:dislocationrune" })
     event.recipes.botania.runic_altar('bloodmagic:dislocationrune',
@@ -134,7 +134,7 @@ ServerEvents.recipes((event) => {
             'pneumaticcraft:vacuum_pump'
         ],
         12000
-    )
+    ).id('kubejs:botania/runic_altar/displacement_rune')
     //Capacity Rune
     event.remove({ output: "bloodmagic:altarcapacityrune" })
     event.recipes.botania.runic_altar('bloodmagic:altarcapacityrune',
@@ -146,7 +146,7 @@ ServerEvents.recipes((event) => {
             'malum:block_of_blazing_quartz'
         ],
         12000
-    )
+    ).id('kubejs:botania/runic_altar/capacity_rune')
     //TIER 4
     //Augmented Capacity Rune
     event.remove({ output: "bloodmagic:bettercapacityrune" })
@@ -159,7 +159,7 @@ ServerEvents.recipes((event) => {
             'malum:block_of_auric_embers'
         ],
         16000
-    )
+    ).id('kubejs:botania/runic_altar/augmented_capacity_rune')
     //Orb Rune
     event.remove({ output: "bloodmagic:orbcapacityrune" })
     event.recipes.botania.runic_altar('bloodmagic:orbcapacityrune',
@@ -177,7 +177,7 @@ ServerEvents.recipes((event) => {
             'evilcraft:blood_orb_filled'
         ],
         16000
-    )
+    ).id('kubejs:botania/runic_altar/orb_rune')
     //Acceleration Rune
     event.remove({ output: "bloodmagic:accelerationrune" })
     event.recipes.botania.runic_altar('bloodmagic:accelerationrune',
@@ -189,7 +189,7 @@ ServerEvents.recipes((event) => {
             'ae2:speed_card'
         ],
         16000
-    )
+    ).id('kubejs:botania/runic_altar/acceleration_rune')
     //Charging Rune
     event.remove({ output: "bloodmagic:chargingrune" })
     event.recipes.botania.runic_altar('bloodmagic:chargingrune',
@@ -201,5 +201,5 @@ ServerEvents.recipes((event) => {
             'embers:catalytic_plug'
         ],
         16000
-    )
+    ).id('kubejs:botania/runic_altar/charging_rune')
 })

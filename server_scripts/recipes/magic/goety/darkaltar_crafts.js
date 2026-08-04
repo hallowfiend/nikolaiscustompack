@@ -12,7 +12,8 @@ ServerEvents.recipes(event => {
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
         .soulCost(40)
-        .duration(5);
+        .duration(5)
+        .id('kubejs:goety/dark_ritual/necroturgies/dormant_weak_blood_orb');
     //Dormant Apprentice Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_apprentice_blood_orb', 'goety:craft', [
             'magichem:admixture_mana',
@@ -25,7 +26,8 @@ ServerEvents.recipes(event => {
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
         .soulCost(100)
-        .duration(5);
+        .duration(5)
+        .id('kubejs:goety/dark_ritual/necroturgies/dormant_apprentice_blood_orb');
     //Dormant Magician Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_magician_blood_orb', 'goety:craft', [
             'magichem:perfected_electrum_block',
@@ -38,7 +40,8 @@ ServerEvents.recipes(event => {
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
         .soulCost(100)
-        .duration(10);
+        .duration(10)
+        .id('kubejs:goety/dark_ritual/necroturgies/dormant_magician_blood_orb');
     //Dormant Master Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_master_blood_orb', 'goety:craft', [
             'ars_elemental:mark_of_mastery',
@@ -51,7 +54,8 @@ ServerEvents.recipes(event => {
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
         .soulCost(200)
-        .duration(10);
+        .duration(10)
+        .id('kubejs:goety/dark_ritual/necroturgies/dormant_master_blood_orb');
     //Dormant Archmage Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_archmage_blood_orb', 'goety:craft', [
             'goety:corruption_focus',
@@ -64,7 +68,8 @@ ServerEvents.recipes(event => {
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
         .soulCost(200)
-        .duration(20);
+        .duration(20)
+        .id('kubejs:goety/dark_ritual/necroturgies/dormant_archmage_blood_orb');
     //Dormant Transcendent Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_transcendent_blood_orb', 'goety:craft', [
             'deep_aether:stratus_block',
@@ -77,7 +82,8 @@ ServerEvents.recipes(event => {
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
         .soulCost(400)
-        .duration(20);
+        .duration(20)
+        .id('kubejs:goety/dark_ritual/necroturgies/dormant_transcendent_blood_orb');
     //DIVINATION RITUALS
     //Nature's Compass
     /* event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [
@@ -116,7 +122,8 @@ ServerEvents.recipes(event => {
         .activationItem('hexalia:briar_sickle')
         .craftType('forge')
         .soulCost(50)
-        .duration(5);
+        .duration(5)
+        .id('kubejs:goety/dark_ritual/forging/wicked_boline');
     //Botania special weapons
     //Starcaller
     event.remove({ id: 'botania:star_sword' })
@@ -131,7 +138,8 @@ ServerEvents.recipes(event => {
         .activationItem('botania:terra_sword')
         .craftType('forge')
         .soulCost(50)
-        .duration(5);
+        .duration(5)
+        .id('kubejs:goety/dark_ritual/forging/starcaller');
     //Thundercaller
     event.remove({ id: 'botania:thunder_sword' })
     event.recipes.goety.ritual('botania:thunder_sword', 'goety:craft', [
@@ -145,13 +153,13 @@ ServerEvents.recipes(event => {
         .activationItem('botania:terra_sword')
         .craftType('forge')
         .soulCost(50)
-        .duration(5);
+        .duration(5)
+        .id('kubejs:goety/dark_ritual/forging/thundercaller');
 
     //Iron's Spellbooks weaponry
     //Weapon parts
     //Spellbreaker
     event.remove({ id: 'irons_spellbooks:spellbreaker' })
-    event.remove({ id: 'irons_spellbooks:sequenced_assembly/spellbreaker' })
     event.recipes.goety.ritual('irons_spellbooks:spellbreaker', 'goety:craft', [
             'constructs_casting:mithril_block',
             'magichem:alchemical_waste_block',
@@ -162,10 +170,10 @@ ServerEvents.recipes(event => {
         .activationItem('irons_spellbooks:weapon_parts')
         .craftType('forge')
         .soulCost(50)
-        .duration(5);
+        .duration(5)
+        .id('kubejs:goety/dark_ritual/forging/spellbreaker');
     //Amethyst Rapier
     event.remove({ id: 'irons_spellbooks:amethyst_rapier' })
-    event.remove({ id: 'irons_spellbooks:sequenced_assembly/amethyst_rapier' })
     event.recipes.goety.ritual('irons_spellbooks:amethyst_rapier', 'goety:craft', [
             'hexcasting:directrix/redstone',
             'caverns_and_chasms:echo_block',
@@ -176,10 +184,10 @@ ServerEvents.recipes(event => {
         .activationItem('irons_spellbooks:weapon_parts')
         .craftType('forge')
         .soulCost(50)
-        .duration(5);
+        .duration(5)
+        .id('kubejs:goety/dark_ritual/forging/amethyst_rapier');
     //Boreal Blade
     event.remove({ id: 'irons_spellbooks:boreal_blade' })
-    event.remove({ id: 'irons_spellbooks:sequenced_assembly/boreal_blade' })
     event.recipes.goety.ritual('irons_spellbooks:boreal_blade', 'goety:craft', [
             'undergarden:froststeel_block',
             'hexalia:celestial_crystal_block',
@@ -190,7 +198,8 @@ ServerEvents.recipes(event => {
         .activationItem('irons_spellbooks:weapon_parts')
         .craftType('forge')
         .soulCost(50)
-        .duration(5);
+        .duration(5)
+        .id('kubejs:goety/dark_ritual/forging/boreal_blade');
     //Twilight Gale
     event.remove({ id: 'irons_spellbooks:twilight_gale' })
     event.remove({ id: 'irons_spellbooks:sequenced_assembly/twilight_gale' })
@@ -204,7 +213,8 @@ ServerEvents.recipes(event => {
         .activationItem('irons_spellbooks:weapon_parts')
         .craftType('forge')
         .soulCost(50)
-        .duration(5);
+        .duration(5)
+        .id('kubejs:goety/dark_ritual/forging/twilight_gale');
 
     //Embers stuff
     //Ember Bore
@@ -225,7 +235,8 @@ ServerEvents.recipes(event => {
         .activationItem('embers:mechanical_core')
         .craftType('forge')
         .soulCost(16)
-        .duration(10);
+        .duration(10)
+        .id('kubejs:goety/dark_ritual/forging/ember_bore');
     //MnA stuff
     //Runeforge
     event.remove({ id: 'mna:runeforge' })
@@ -245,95 +256,104 @@ ServerEvents.recipes(event => {
         .activationItem('minecraft:blast_furnace')
         .craftType('forge')
         .soulCost(8)
-        .duration(8);
+        .duration(8)
+        .id('kubejs:goety/dark_ritual/forging/runeforge');
 
     //END RITUALS
     //BetterEnd infusion altar
-event.recipes.goety.ritual('betterend:crystalite_helmet', 'goety:craft', [
-    '#forge:gems/amber',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards'
-])
+    event.recipes.goety.ritual('betterend:crystalite_helmet', 'goety:craft', [
+        '#forge:gems/amber',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards'
+    ])
     .activationItem('betterend:terminite_helmet')
     .craftType('end')
     .soulCost(10)
-    .duration(7);
-event.recipes.goety.ritual('betterend:crystalite_chestplate', 'goety:craft', [
-    '#forge:gems/amber',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards'
-])
+    .duration(7)
+    .id('kubejs:goety/dark_ritual/voidwork/crystalite_helmet');
+    event.recipes.goety.ritual('betterend:crystalite_chestplate', 'goety:craft', [
+        '#forge:gems/amber',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards'
+    ])
     .activationItem('betterend:terminite_chestplate')
     .craftType('end')
     .soulCost(10)
-    .duration(15);
-event.recipes.goety.ritual('betterend:crystalite_leggings', 'goety:craft', [
-    '#forge:gems/amber',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards'
-])
+    .duration(15)
+    .id('kubejs:goety/dark_ritual/voidwork/crystalite_chestplate');
+    event.recipes.goety.ritual('betterend:crystalite_leggings', 'goety:craft', [
+        '#forge:gems/amber',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards'
+    ])
     .activationItem('betterend:terminite_leggings')
     .craftType('end')
     .soulCost(10)
-    .duration(11);
-event.recipes.goety.ritual('betterend:crystalite_boots', 'goety:craft', [
-    '#forge:gems/amber',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards'
-])
+    .duration(11)
+    .id('kubejs:goety/dark_ritual/voidwork/crystalite_leggings');
+    event.recipes.goety.ritual('betterend:crystalite_boots', 'goety:craft', [
+        '#forge:gems/amber',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards'
+    ])
     .activationItem('betterend:terminite_boots')
     .craftType('end')
     .soulCost(10)
-    .duration(7);
-event.recipes.goety.ritual('betterend:enchanted_membrane', 'goety:craft', [
+    .duration(7)
+    .id('kubejs:goety/dark_ritual/voidwork/crystalite_boots');
+    event.recipes.goety.ritual('betterend:enchanted_membrane', 'goety:craft', [
     'betterend:crystal_shards',
     'betterend:crystal_shards',
     'betterend:crystal_shards',
     'betterend:crystal_shards'
-])
+    ])
     .activationItem('minecraft:phantom_membrane')
     .craftType('end')
     .soulCost(10)
-    .duration(4);
-event.recipes.goety.ritual('betterend:elytra_crystalite', 'goety:craft', [
-    '#forge:gems/amber',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:enchanted_membrane',
-    'betterend:enchanted_membrane',
-    'betterend:enchanted_membrane'
-])
+    .duration(4)
+    .id('kubejs:goety/dark_ritual/voidwork/enchanted_membrane');
+    event.recipes.goety.ritual('betterend:elytra_crystalite', 'goety:craft', [
+        '#forge:gems/amber',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:enchanted_membrane',
+        'betterend:enchanted_membrane',
+        'betterend:enchanted_membrane'
+    ])
     .activationItem('minecraft:elytra')
     .craftType('end')
     .soulCost(25)
-    .duration(25);
-event.recipes.goety.ritual('betterend:flavolite_runed', 'goety:craft', [
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards'
-])
+    .duration(25)
+    .id('kubejs:goety/dark_ritual/voidwork/crystalite_elytra');
+    event.recipes.goety.ritual('betterend:flavolite_runed', 'goety:craft', [
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards'
+    ])
     .activationItem('betterend:flavolite_polished')
     .craftType('end')
     .soulCost(10)
-    .duration(5);
-event.recipes.goety.ritual('betterend:eternal_crystal', 'goety:craft', [
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    'betterend:crystal_shards',
-    '#forge:dusts/ender_pearl',
-    '#forge:dusts/ender_pearl',
-    '#forge:dusts/ender_pearl',
-    '#forge:dusts/ender_pearl'
-])
+    .duration(5)
+    .id('kubejs:goety/dark_ritual/voidwork/runed_flavolite');
+    event.recipes.goety.ritual('betterend:eternal_crystal', 'goety:craft', [
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        'betterend:crystal_shards',
+        '#forge:dusts/ender_pearl',
+        '#forge:dusts/ender_pearl',
+        '#forge:dusts/ender_pearl',
+        '#forge:dusts/ender_pearl'
+    ])
     .activationItem('minecraft:end_crystal')
     .craftType('end')
     .soulCost(25)
-    .duration(25);
+    .duration(25)
+    .id('kubejs:goety/dark_ritual/voidwork/eternal_crystal');
 });

@@ -7,7 +7,7 @@
             "ingredients": ingredients, //max 5
             "output": { "item": output }
         })
-    })
+    }).id(`kubejs:hexalia/ritual_table/${output.getId().split(":")[1]}`)
     }
 
     // OCCULTISM - demon's dream seeds

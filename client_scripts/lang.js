@@ -2,6 +2,7 @@ ClientEvents.lang('en_us', event => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    //Elementalcraft
     //BetterEnd
     event.renameItem('betterend:aurora_crystal', 'Shimmering Crystalix')
     event.renameItem('betterend:crystal_shards', 'Crystalix Fragment')

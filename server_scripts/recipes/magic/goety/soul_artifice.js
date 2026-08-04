@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             "ingredient": input, //item or tag
             "soulIncrease": value, //int
             "cookingtime": absorbTime //int in ticks
-        })
+        }).id(`kubejs:goety/soul_absorption/${input.getId().split(":")[1]}`)
     }
     soulAbsorption(
         {"tag": "malum:aspected_spirits"},

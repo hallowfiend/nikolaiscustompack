@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
         "duration": 100,
         "xp": 4,
         "tier": 2
-    })
+    }).id('kubejs:evilcraft/blood_infusion/bloodied_dust')
     event.custom({
         "type": "evilcraft:blood_infuser",
         "item": "magichem:glass_orb",
@@ -33,5 +33,5 @@ ServerEvents.recipes(event => {
         "duration": 20,
         "xp": 4,
         "tier": 1
-    })
+    }).id('kubejs:evilcraft/blood_infusion/blood_orb')
 })

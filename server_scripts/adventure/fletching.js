@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 	        "item": result,
 	        "count": count
 	    }
-    }).id(`kubejs:fletching/${result.getId().split(":")[1]}`)
+    }).id(`fletching/${result.getId().split(":")[1]}`)
     }
     fletch(
         {tag: "forge:ingots/tin"},

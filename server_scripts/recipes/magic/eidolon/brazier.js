@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             "item": "arts_and_crafts:light_blue_chalk_stick"
         }
     ]
-    })
+    }).id('kubejs:eidolon/brazier_crafting/wizard_chalk')
     //runic
     event.custom({
     "type": "eidolon:ritual_brazier_crafting",
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
             "item": "arts_and_crafts:blue_chalk_stick"
         }
     ]
-    })
+    }).id('kubejs:eidolon/brazier_crafting/runic_chalk')
     //white
     event.custom({
     "type": "eidolon:ritual_brazier_crafting",
@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
             "item": "arts_and_crafts:white_chalk_stick"
         }
     ]
-    })
+    }).id('kubejs:eidolon/brazier_crafting/white_occult_chalk')
     //red
     event.custom({
     "type": "eidolon:ritual_brazier_crafting",
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
             "item": "arts_and_crafts:red_chalk_stick"
         }
     ]
-    })
+    }).id('kubejs:eidolon/brazier_crafting/red_occult_chalk')
     //purple
     event.custom({
     "type": "eidolon:ritual_brazier_crafting",
@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
             "item": "arts_and_crafts:purple_chalk_stick"
         }
     ]
-    })
+    }).id('kubejs:eidolon/brazier_crafting/purple_occult_chalk')
     //gold
     event.custom({
     "type": "eidolon:ritual_brazier_crafting",
@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
             "item": "arts_and_crafts:yellow_chalk_stick"
         }
     ]
-    })
+    }).id('kubejs:eidolon/brazier_crafting/gold_occult_chalk')
     //copper
     event.custom({
     "type": "eidolon:ritual_brazier_crafting",
@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
             "item": "arts_and_crafts:orange_chalk_stick"
         }
     ]
-    })
+    }).id('kubejs:eidolon/brazier_crafting/copper_occult_chalk')
     //zinc
     event.custom({
     "type": "eidolon:ritual_brazier_crafting",
@@ -301,7 +301,7 @@ ServerEvents.recipes(event => {
             "item": "arts_and_crafts:light_gray_chalk_stick"
         }
     ]
-    })
+    }).id('kubejs:eidolon/brazier_crafting/zinc_occult_chalk')
     //brass
     event.custom({
     "type": "eidolon:ritual_brazier_crafting",
@@ -339,5 +339,5 @@ ServerEvents.recipes(event => {
             "item": "arts_and_crafts:brown_chalk_stick"
         }
     ]
-    })
+    }).id('kubejs:eidolon/brazier_crafting/brass_occult_chalk')
 })

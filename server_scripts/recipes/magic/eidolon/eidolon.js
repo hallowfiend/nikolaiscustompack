@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
         {
             "r": 'gtceu:pewter_ring'
         }
-    )
+    ).id('kubejs/shaped/pewter_inlay')
     event.shaped(
         Item.of('eidolon:gold_inlay', 1),
         [
@@ -23,6 +23,6 @@ ServerEvents.recipes((event) => {
         {
             "r": 'gtceu:arcane_gold_ring'
         }
-    )
+    ).id('kubejs/shaped/gold_inlay')
     
 })

@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     //crafting table recipe
     event.replaceInput({output: "elementalcraft:contained_crystal"}, "minecraft:gold_nugget", "#forge:plates/bronze");
     //cheaper spouting/casting/autoclave recipe
-    event.recipes.gtceu.autoclave("kubejs:contained_crystal")
+    event.recipes.gtceu.autoclave("contained_crystal")
         .itemInputs("elementalcraft:inert_crystal")
         .inputFluids(Fluid.of("gtceu:bronze", 288))
         .itemOutputs("elementalcraft:contained_crystal")
@@ -53,11 +53,11 @@ ServerEvents.recipes(event => {
                     {"item": {"item": "ars_nouveau:water_essence"}},
                     {"item": {"item": "botania:rune_water"}}
                 ]
-			  })
+			  }).id('kubejs:ars_nouveau/imbuement/drenched_invar')
     //Burnt Glass
     event.custom({
 				"type": 'ars_nouveau:imbuement',
-				"input":  {"item": "tconstruct:seared_glass" },
+				"input":  {"item": "tconstruct:scorched_glass" },
 				"output": "elementalcraft:burnt_glass",
                 "count": 1,
 				"source": 5000,
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
                     {"item": {"item": "ars_nouveau:fire_essence"}},
                     {"item": {"item": "botania:rune_fire"}}
                 ]
-			  })
+			  }).id('kubejs:ars_nouveau/imbuement/burnt_glass')
     //Air Silk
     event.custom({
 				"type": 'ars_nouveau:imbuement',
@@ -89,11 +89,11 @@ ServerEvents.recipes(event => {
                     {"item": {"item": "ars_nouveau:air_essence"}},
                     {"item": {"item": "botania:rune_fire"}}
                 ]
-			  })
+			  }).id('kubejs:ars_nouveau/imbuement/aerilated_silk')
     //Whiterock
     event.custom({
 				"type": 'ars_nouveau:imbuement',
-				"input":  {"item": "minecraft:stone" },
+				"input":  {"item": "aether:holystone" },
 				"output": "elementalcraft:whiterock",
                 "count": 1,
 				"source": 5000,
@@ -107,5 +107,5 @@ ServerEvents.recipes(event => {
                     {"item": {"item": "ars_nouveau:earth_essence"}},
                     {"item": {"item": "botania:rune_earth"}}
                 ]
-			  })
+			  }).id('kubejs:ars_nouveau/imbuement/cleanstone')
 })

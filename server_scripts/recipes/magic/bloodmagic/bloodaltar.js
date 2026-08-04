@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
             .upgradeLevel(orb.tier)
             .consumptionRate(orb.cost*0.05)
             .altarSyphon(orb.cost)
-            .id(`kubejs:${orb.name}_blood_orb`);
+            .id(`kubejs:blood_magic/blood_altar/${orb.name}_blood_orb`);
     })
 
     event.remove({ output: "animus:blood_orb_transcendent" })
@@ -32,5 +32,5 @@ ServerEvents.recipes(event => {
             .upgradeLevel(5)
             .consumptionRate(500)
             .altarSyphon(80000)
-            .id('kubejs:transcendent_blood_orb');
+            .id('kubejs:blood_magic/blood_altar/transcendent_blood_orb');
 })

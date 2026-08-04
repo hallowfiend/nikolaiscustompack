@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         'irons_spellbooks:dragonskin_spell_book',             
         'ars_nouveau:novice_spell_book',   
         4000                            
-    )
+    ).id('kubejs:ars_nouveau/enchanting_apparatus/novice_spell_book')
     //Spell turret
     event.remove({ output: 'ars_nouveau:basic_spell_turret' })
     event.recipes.ars_nouveau.enchanting_apparatus(
@@ -28,5 +28,5 @@ ServerEvents.recipes(event => {
         'scguns:basic_turret',             
         'ars_nouveau:basic_spell_turret',   
         2000                            
-    )
+    ).id('kubejs:ars_nouveau/enchanting_apparatus/basic_spell_turret')
 })
