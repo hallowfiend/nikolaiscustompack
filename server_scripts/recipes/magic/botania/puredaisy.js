@@ -10,6 +10,7 @@ ServerEvents.recipes((event) => {
         'create:veridium',
         'create:crimsite',
         'create:limestone',
+        'undergarden:depthrock',
         'undergarden:shiverstone',
         'cataclysm:azure_seastone',
         'arts_and_crafts:soapstone',
@@ -30,7 +31,9 @@ ServerEvents.recipes((event) => {
     const livingwoodMaterials = [
         '#malum:runewood_logs',
         '#malum:soulwood_logs',
-        '#environmental:willow_logs',
+        '#hexerei:willow',
+        '#hexerei:mahogany',
+        '#hexerei:witch_hazel',
         '#hexalia:cottonwood_logs',
         '#hibernalherbs:myqueste_logs',
         '#eidolon:illwood_logs',

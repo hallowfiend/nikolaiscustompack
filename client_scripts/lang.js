@@ -3,6 +3,8 @@ ClientEvents.lang('en_us', event => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
     //Elementalcraft
+    //Willow
+    //Mahogany
     //BetterEnd
     event.renameItem('betterend:aurora_crystal', 'Shimmering Crystalix')
     event.renameItem('betterend:crystal_shards', 'Crystalix Fragment')

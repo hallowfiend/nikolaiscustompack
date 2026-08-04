@@ -614,6 +614,15 @@ ServerEvents.tags("item", (event) => {
     "deep_aether:sunroot_chest_boat"
   ]);
 
+  event.add('hexerei:mahogany','hexerei:mahogany_log')
+	event.add('hexerei:mahogany','hexerei:stripped_mahogany_wood')
+
+	event.add('hexerei:willow','hexerei:willow_log')
+	event.add('hexerei:willow','hexerei:stripped_willow_wood')
+
+	event.add('hexerei:witch_hazel','hexerei:witch_hazel_log')
+	event.add('hexerei:witch_hazel','hexerei:stripped_witch_hazel_wood')
+
   event.add("minecraft:bookshelf_books", [
     /ars_elemental:.*caster_tome/,
     'patchouli:guide_book',
