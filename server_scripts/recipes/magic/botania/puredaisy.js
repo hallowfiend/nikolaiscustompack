@@ -37,7 +37,13 @@ ServerEvents.recipes((event) => {
         '#environmental:willow_logs',
         '#undergarden:smogstem_logs',
         '#undergarden:grongle_logs',
-        '#undergarden:wigglewood_logs'
+        '#undergarden:wigglewood_logs',
+        '#deep_aether:roseroot_logs',
+        '#deep_aether:yagroot_logs',
+        '#deep_aether:cruderoot_logs',
+        '#deep_aether:conberry_logs',
+        '#deep_aether:sunroot_logs',
+        '#aether:skyroot_logs'
     ]
     livingwoodMaterials.forEach(wood => {
         event.recipes.botania.pure_daisy("botania:livingwood_log", wood)

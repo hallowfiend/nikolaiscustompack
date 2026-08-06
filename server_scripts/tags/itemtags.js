@@ -627,6 +627,8 @@ ServerEvents.tags("item", (event) => {
 
   event.add('kubejs:incense', /eidolon:.*_incense/);
 
+  event.add('constructs_casting:dragon_scales', 'quark:dragon_scale'),
+
   event.add('forge:gems/coke', 'immersiveengineering:coal_coke');
 
   event.add('forge:storage_blocks/arcane_charcoal', 'malum:block_of_arcane_charcoal');

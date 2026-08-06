@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel(
-            "embers:block/sealed_planks",
+            "embers:block/reinforced_sealed_planks",
             "gtceu:block/machines/canner"
         )
 })

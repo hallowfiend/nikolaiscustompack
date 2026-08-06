@@ -32,10 +32,10 @@ ServerEvents.recipes(event => {
     function soulAbsorption (input, value, absorbTime) {
         event.custom({
             "type": "goety:soul_absorber_recipes",
-            "ingredient": input, //item or tag
+            "ingredient": {item: input}, //item
             "soulIncrease": value, //int
             "cookingtime": absorbTime //int in ticks
-        }).id(`kubejs:goety/soul_absorption/${input.getId().split(":")[1]}`)
+        }).id(`kubejs:goety/soul_absorption/${input.split(":")[1]}`)
     }
     const principleCrystals = [
         'malum:arcane_spirit',
@@ -50,23 +50,23 @@ ServerEvents.recipes(event => {
         'bloodmagic:destructivecrystal',
         'bloodmagic:vengefulcrystal',
         'bloodmagic:corrosivecrystal',
-        'bloodmagic:steadfast_crystal'
+        'bloodmagic:steadfastcrystal'
     ]
     principleCrystals.forEach(crystal => {
         event.custom({
             "type": "goety:soul_absorber_recipes",
-            "ingredient": input, //item or tag
-            "soulIncrease": value, //int
-            "cookingtime": absorbTime //int in ticks
+            "ingredient": {item: crystal}, //item or tag
+            "soulIncrease": 30, //int
+            "cookingtime": 50 //int in ticks
         }).id(`kubejs:goety/soul_absorption/${crystal.split(":")[1]}`)
     })
     soulAbsorption(
-        {"item": "netherexp:wisp_bottle"},
+        "netherexp:wisp_bottle",
         80,
         200
     )
     soulAbsorption(
-        {"item": "netherexp:banshee_powder"},
+        "netherexp:banshee_powder",
         15,
         20
     )
