@@ -467,7 +467,7 @@ ServerEvents.recipes((event) => {
       },
     ]
   })
-  //heart-forged seashelf
+  //gilded aerogel skyshelf
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {
