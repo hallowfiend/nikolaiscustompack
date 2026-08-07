@@ -475,7 +475,7 @@ ServerEvents.recipes((event) => {
       "count": 1
     },
     "output": {
-      "item": 'apotheotic_additions:gilded_areogel_skyshelf',
+      "item": 'apotheotic_additions:gilded_aerogel_skyshelf',
       "count": 1
     },
     "extra_items": [

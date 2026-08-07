@@ -57,7 +57,9 @@ const bulkReplace = [
     { target: "moredelight:diced_potatoes", replacement: "cosmopolitan:cut_potatoes"},
     { target: "gtceu:treated_wood_planks", replacement: "immersiveengineering:treated_wood_horizontal"},
     { target: 'aether:enchanted_gravitite', replacement: "#forge:storage_blocks/gravitite"},
-    { target: "#forge:gears/energized", replacement: "forge:gears/energetic_alloy"}
+    { target: "#forge:gears/energized", replacement: "#forge:gears/energetic_alloy"},
+    { target: "aquaculture:fish_fillet_raw", replacement: "tide:fish_slice"},
+    { target: "aquaculture:fish_fillet_cooked", replacement: "tide:cooked_fish_slice"}
 	];
 
 ServerEvents.recipes((event) => {
@@ -131,6 +133,8 @@ const DYENAMICS_COLORS = [
 
     event.replaceInput({},  'rusticdelight:calamari_roll', 'culturaldelights:calamari_roll')
     event.replaceOutput({}, 'rusticdelight:calamari_roll', 'culturaldelights:calamari_roll')
+
+    event.replaceOutput({input: 'spawn:tuna_slice', id: "spawn:cooked_tuna_slice"}, 'spawn:cooked_tuna_chunk', 'spawn:cooked_tuna_slice')
 
 
   console.log('Items sorted')

@@ -6,14 +6,14 @@ ServerEvents.recipes(event => {
                 "type": "hexerei:mixingcauldron",
                 "liquid": {"fluid": 'minecraft:water'},
                 "ingredients": [
-                    'eidolon:arcane_gold_nugget',
-                    'farmersdelight:straw',
-                    '#forge:dusts/electrum',
-                    '#botania:petals',
-                    '#forge:dusts/electrum',
-                    'farmersdelight:straw',
-                    'eidolon:arcane_gold_nugget',
-                    'malum:ether'
+                    {"item": 'eidolon:arcane_gold_nugget'},
+                    {"item": 'farmersdelight:straw'},
+                    {"tag": 'forge:dusts/electrum'},
+                    {"tag": 'botania:petals'},
+                    {"tag": 'forge:dusts/electrum'},
+                    {"item": 'farmersdelight:straw'},
+                    {"item": 'eidolon:arcane_gold_nugget'},
+                    {"item": 'malum:ether'}
                 ],
                 "output": {"item": 'naturesaura:gold_fiber', "count": 4},
                 "liquidOutput": {"fluid": 'minecraft:water'},

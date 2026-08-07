@@ -18,6 +18,8 @@ function weightedReplace(func, filter, map) {
 
 
 LootJS.modifiers((event) => {
+    event.addLootTableModifier(LootType.FISHING)
+    .replaceLoot('culturaldelights:squid', 'miners_delight:squid');
     //globals
     event.addLootTypeModifier(LootType.CHEST)
     .apply(func => {
