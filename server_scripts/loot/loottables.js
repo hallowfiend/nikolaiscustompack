@@ -1,6 +1,8 @@
 //priority 100
 
-/* function flipCoin(){return $Random().nextBoolean()}
+function flipCoin(){
+    return Math.random() < 0.5
+}
 global.flipCoin = () => flipCoin()
 
 function weightedReplace(func, filter, map) {
@@ -12,36 +14,108 @@ function weightedReplace(func, filter, map) {
         let counts = []
         Array.from(weightedList.values()).forEach(e => counts.push(Math.round(e / weights * count)))
         let countedMap = Array.from(weightedList.keys()).map((e, i) => [e, counts[i]])
-        countedMap.forEach(v => func.addLoot(LootEntry.of(v[0]).limitCount(flipCoin() ? flipCoin() ? v[1] + 1 : v[1] - 1 : v[1])))
+        countedMap.forEach(v => func.addLoot(Item.of(v[0]).limitCount(flipCoin() ? flipCoin() ? v[1] + 1 : v[1] - 1 : v[1])))
     })
-} */
+}
 
 
 LootJS.modifiers((event) => {
+    //fishing
     event.addLootTableModifier(LootType.FISHING)
-    .replaceLoot('culturaldelights:squid', 'miners_delight:squid');
-    //globals
-    /* event.addLootTypeModifier(LootType.CHEST)
-    .apply(func => {
-        weightedReplace(func, 'minecraft:bread', [
+    .replaceLoot('culturaldelights:squid', 'miners_delight:squid')
+    .apply(context => {
+        weightedReplace(context, 'minecraft:iron_nugget', [
+            ['minecraft:iron_ingot', 8],
+            ['minecraft:iron_nugget', 8],
+            ['minecraft:raw_iron', 8],
+            ['apotheosis:common_material', 6],
+            ['minecraft:chain', 6],
+            ['minecraft:raw_iron_block', 3],
+            ['minecraft:iron_block', 2]
+        ])
+        weightedReplace(context, 'minecraft:gold_nugget', [
+            ['minecraft:gold_ingot', 8],
+            ['minecraft:gold_nugget', 8],
+            ['minecraft:raw_gold', 8],
+            ['apotheosis:rare_material', 4],
+            ['minecraft:raw_gold_block', 3],
+            ['minecraft:gold_block', 2]
+        ])
+    });
+    //tide crates
+    event.addLootTableModifier("tide:chests/crates/surface_saltwater")
+        .pool(pool => {
+            pool.rolls([2,5])
+            pool.randomChance(0.75).addWeightedLoot([
+            Item.of('minecraft:kelp').withChance(80),
+            Item.of('minecraft:seagrass').withChance(80),
+            Item.of('minecraft:sea_pickle').withChance(60),
+            Item.of('gtceu:salt_dust').withChance(30)
+        ])
+        .pool(pool => {
+            pool.rolls([1,4])
+            pool.randomChance(0.4).addWeightedLoot([
+                Item.of('apotheosis:common_material').withChance(80),
+                Item.of('apotheosis:uncommon_material').withChance(80),
+                Item.of('create:raw_zinc').withChance(80)
+            ])
+        })
+        .pool(pool => {
+			pool.addLoot(
+				Item.of('upgrade_aquatic:driftwood_log').limitCount([2, 6])
+			)
+		})
+        });
+    event.addLootTableModifier("tide:chests/crates/surface_freshwater")
+        .pool(pool => {
+            pool.rolls([2,5])
+            pool.randomChance(0.75).addWeightedLoot([
+                Item.of('minecraft:clay').withChance(80),
+                Item.of('minecraft:clay_ball').withChance(80)
+            ])
+        })
+        .pool(pool => {
+            pool.rolls([2,5])
+			pool.randomChance(0.25).addWeightedLoot([
+				Item.of('oak_sapling').withChance(30).limitCount([1, 2]),
+				Item.of('birch_sapling').withChance(20).limitCount([1, 2]),
+				Item.of('jungle_sapling').withChance(4).limitCount([1, 1]),
+				Item.of('dark_oak_sapling').withChance(10).limitCount([1, 3]),
+				Item.of('acacia_sapling').withChance(8).limitCount([1, 2]),
+				Item.of('spruce_sapling').withChance(14).limitCount([1, 2]),
+			])
+        })
+        .pool(pool => {
+            pool.rolls([1,4])
+            pool.randomChance(0.4).addWeightedLoot([
+                Item.of('apotheosis:common_material').withChance(80),
+                Item.of('apotheosis:uncommon_material').withChance(80),
+                Item.of('minecraft:raw_iron').withChance(80),
+                Item.of('minecraft:raw_gold').withChance(40)
+            ])
+        });
+    event.addLootTypeModifier(LootType.CHEST)
+    .apply(context => {
+        //food replacement
+        weightedReplace(context, 'minecraft:bread', [
             ['minecraft:bread', 8],
             ['vampiresdelight:rice_bread', 8],
             ['pneumaticcraft:sourdough_bread', 8],
-            ['cosmopolitan:bush_bread', 8],
             ['neapolitan:banana_bread', 5],
             ['autumnity:pumpkin_bread', 5],
             ['delightful:cantaloupe_bread', 5],
             ['bakery:crusty_bread', 4],
-            ['cornexpansion:grandmas_cornbread', 4]
+            ['cornexpansion:grandmas_cornbread', 4],
+            ['cosmopolitan:bush_bread', 1]
         ])
-        weightedReplace(func, ['minecraft:potato', 'minecraft:baked_potato'], [
+        weightedReplace(context, ['minecraft:potato', 'minecraft:baked_potato'], [
             ['minecraft:potato', 8],
             ['minecraft:baked_potato', 6],
             ['farmersdelight:stuffed_potato', 4],
             ['cosmopolitan:potato_pancakes', 4],
             ['dungeonsdelight:bloated_baked_potato', 2]
         ])
-        weightedReplace(func, ['minecraft:porkchop', 'minecraft:cooked_porkchop'], [
+        weightedReplace(context, ['minecraft:porkchop', 'minecraft:cooked_porkchop'], [
             ['minecraft:porkchop', 8],
             ['minecraft:cooked_porkchop', 6],
             ['abnormals_delight:maple_glazed_bacon', 4],
@@ -49,7 +123,7 @@ LootJS.modifiers((event) => {
             ['sob:cactus_porkchop', 4],
             ['delightful:wrapped_cantaloupe', 4]
         ])
-        weightedReplace(func, ['minecraft:beef', 'minecraft:cooked_beef'], [
+        weightedReplace(context, ['minecraft:beef', 'minecraft:cooked_beef'], [
             ['minecraft:beef', 8],
             ['minecraft:cooked_beef', 6],
             ['miners_delight:beef_stew_cup', 4],
@@ -57,7 +131,7 @@ LootJS.modifiers((event) => {
             ['brewinandchewin:jerky', 4],
             ['farmersdelight:hamburger', 4]
         ])
-        weightedReplace(func, ['minecraft:mutton', 'minecraft:cooked_mutton'], [
+        weightedReplace(context, ['minecraft:mutton', 'minecraft:cooked_mutton'], [
             ['minecraft:mutton', 8],
             ['minecraft:cooked_mutton', 6],
             ['cosmopolitan:couscous_with_mutton', 4],
@@ -65,23 +139,23 @@ LootJS.modifiers((event) => {
             ['delightful:mutton_pie_slice', 4],
             ['neapolitan:cooked_mint_chops', 4]
         ])
-        weightedReplace(func, ['chicken', 'cooked_chicken'], [
-            ['chicken', 8],
-            ['cooked_chicken', 6],
+        weightedReplace(context, ['minecraft:chicken', 'minecraft:cooked_chicken'], [
+            ['minecraft:chicken', 8],
+            ['minecraft:cooked_chicken', 6],
             ['miners_delight:chicken_soup_cup', 4],
             ['frycooks_delight:fried_chicken_leg', 4],
             ['farmersdelight:chicken_sandwich', 4],
             ['culturaldelights:chicken_taco', 4]
         ])
-        weightedReplace(func, ['cod', 'cooked_cod'], [
-            ['cod', 8],
-            ['cooked_cod', 6],
+        weightedReplace(context, ['minecraft:cod', 'minecraft:cooked_cod'], [
+            ['minecraft:cod', 8],
+            ['minecraft:cooked_cod', 6],
             ['minersdelight:baked_cod_stew_cup', 4],
             ['farmersdelight:cod_roll', 4],
             ['delightfulsandwich:cooked_cod_sandwich', 4],
             ['brewinandchewin:kippers', 4]
         ])
-        weightedReplace(func, ['minecraft:salmon', 'minecraft:cooked_salmon'], [
+        weightedReplace(context, ['minecraft:salmon', 'minecraft:cooked_salmon'], [
             ['minecraft:salmon', 8],
             ['minecraft:cooked_salmon', 6],
             ['roll_delight:amazing_salmon_roll_slice', 4],
@@ -89,7 +163,7 @@ LootJS.modifiers((event) => {
             ['farmersdelight:grilled_salmon', 4],
             ['culturaldelights:rice_ball', 4]
         ])
-        weightedReplace(func, 'minecraft:pumpkin_pie', [
+        weightedReplace(context, 'minecraft:pumpkin_pie', [
             ['farmersdelight:pumpkin_pie_slice', 8],
             ['minecraft:pumpkin_pie', 6],
             ['seasonals:pumpkin_cake_slice', 4],
@@ -97,7 +171,7 @@ LootJS.modifiers((event) => {
             ['miners_delight:pumpkin_soup_cup', 4],
             ['farmersdelight:stuffed_pumpkin', 4]
         ])
-        weightedReplace(func, 'minecraft:sweet_berries', [
+        weightedReplace(context, 'minecraft:sweet_berries', [
             ['minecraft:sweet_berries', 8],
             ['brewinandchewin:sweet_berry_jam', 6],
             ['seasonals:glazed_sweet_berries', 4],
@@ -105,15 +179,17 @@ LootJS.modifiers((event) => {
             ['farmersdelight:sweet_berry_cookie', 4],
             ['collectorsreap:sweet_berry_gummy', 4]
         ])
-        weightedReplace(func, 'minecraft:melon_slice', [
+        weightedReplace(context, 'minecraft:melon_slice', [
             ['minecraft:melon_slice', 8],
             ['farmersdelight:melon_popsicle', 4],
             ['farmersdelight:melon_juice', 4]
         ])
-    }) */
+        //non-food
+    })
+    //some misc stuff
     event.addLootTableModifier('aquamirae:chests/frozen_chest')
 		.pool(pool => {
 			pool.rolls(1).randomChance(1);
-			pool.addLoot(LootEntry.of('twilightforest:ice_bow'))
+			pool.addLoot(Item.of('twilightforest:ice_bow'))
 		});
 })

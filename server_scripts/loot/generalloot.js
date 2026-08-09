@@ -5,20 +5,20 @@ LootJS.modifiers((event) => {
     .addLootTableModifier(/.*/)
     .replaceLoot('eidolon:sulfur', 'gtceu:sulfur_dust', true)
     .replaceLoot('caverns_and_chasms:tin_ingot', 'gtceu:tin_ingot', true)
+    .replaceLoot('caverns_and_chasms:silver_ingot', 'gtceu:silver_ingot', true)
     .replaceLoot('farmersdelight:rope', 'supplementaries:rope', true) //#FARMERSDELIGHTROPEHATEGANG
     .replaceLoot('supplementaries:pancake', 'rusticdelight:pancake', true)
     .replaceLoot('immersiveengineering:nugget_lead', 'gtceu:lead_nugget', true)
     .replaceLoot('immersiveengineering:nugget_silver', 'gtceu:silver_nugget', true)
-    //replacing venison
     .replaceLoot(/.*:raw_venison/, "environmental:venison", true)
     .replaceLoot(/.*:cooked_venison/, "environmental:cooked_venison", true)
-    .replaceLoot('scguns:pebbles', 'twigs:pebble')
+    .replaceLoot('scguns:pebbles', 'twigs:pebble', true)
     .replaceLoot('supplementaries:ash', 'embers:ash', true)
-    .replaceLoot('irons_spellbooks:blood_vial', 'hexerei:blood_bottle')
-    .replaceLoot('iss_magicfromtheeast:red_string', 'botania:red_string')
-    .replaceLoot('iss_magicfromtheeast:bottle_of_souls', 'netherexp:wisp_bottle')
-    .replaceLoot('scguns:niter_dust', 'gtceu:saltpeter_dust')
-    .replaceLoot('scguns:sulfur_dust', 'gtceu:sulfur_dust')
+    .replaceLoot('irons_spellbooks:blood_vial', 'hexerei:blood_bottle', true)
+    .replaceLoot('iss_magicfromtheeast:red_string', 'botania:red_string', true)
+    .replaceLoot('iss_magicfromtheeast:bottle_of_souls', 'netherexp:wisp_bottle', true)
+    .replaceLoot('scguns:niter_dust', 'gtceu:saltpeter_dust', true)
+    .replaceLoot('scguns:sulfur_dust', 'gtceu:sulfur_dust', true)
     .removeLoot([
       'farm_and_charm:bacon',
       'farm_and_charm:beetroot_bag',
