@@ -23,6 +23,8 @@ StartupEvents.registry('item', event => {
     .displayName('Ashen Blend');
     event.create('ethereal_ashen_blend')
     .displayName('Ethereal Ashen Blend');
+    event.create('aerilated_pneumatic_component')
+    .displayName('Aerilated Pneumatic Component')
     //dormant blood orbs
     const bloodOrbTiers = [
         'weak',

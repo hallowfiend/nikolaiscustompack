@@ -22,6 +22,16 @@ ServerEvents.recipes(event => {
         ],
         'components'
     )
+    event.recipes.immersiveengineering.blueprint(
+        '2x kubejs:aerilated_pneumatic_component',
+        [
+            '2x #forge:plates/compressed_iron',
+            '2x #forge:plates/duralumin',
+            '4x malum:aerial_spirit',
+            'deep_aether:skyjade',
+        ],
+        'components'
+    )
     //vacuum tube
     event.remove({ id: 'immersiveengineering:blueprint/electron_tube' })
     event.recipes.immersiveengineering.blueprint(

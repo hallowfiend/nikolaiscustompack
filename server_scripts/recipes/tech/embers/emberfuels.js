@@ -48,6 +48,6 @@ ServerEvents.recipes(event => {
                 "fluid": input //id
             },
             "power_multiplier": mult //float
-        })
+        }).id(`kubejs:embers/gaseous_fuel/${input.split(":")[1]}`)
     }
 })

@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         'evilcraft:dull_dust',
         ['goety:grave_dust', 'minecraft:gunpowder', 'minecraft:sugar', '#forge:dusts/ash', 'occultism:burnt_otherstone', 'mna:bone_ash']
-    )
+    ).id('kubejs/shapeless/dull_dust')
     event.custom({
         "type": "evilcraft:blood_infuser",
         "item": "evilcraft:dull_dust",

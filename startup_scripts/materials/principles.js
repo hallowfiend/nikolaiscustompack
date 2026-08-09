@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
 
     event.create('aerialis') //aerial spirit
         .element('aerialis')
-        .color(0xfeffed)
+        .color(0x6AFCFC)
         .gas();
 
     event.create('infernalis') //infernal spirit
@@ -103,15 +103,21 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .dust()
         .iconSet(OPAL)
-        .flags(no_decomp);
+        .flags(
+            no_decomp,
+            plates
+        );
 
     event.create('solid_aerialis')
         .components('aerialis', 'spirit', 'mundus')
-        .color(0xfeffed)
+        .color(0x6AFCFC)
         .gem()
         .dust()
         .iconSet(OPAL)
-        .flags(no_decomp);
+        .flags(
+            no_decomp,
+            plates
+        );
 
     event.create('solid_infernalis')
         .components('infernalis', 'spirit', 'mundus')
@@ -119,7 +125,10 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .dust()
         .iconSet(OPAL)
-        .flags(no_decomp);
+        .flags(
+            no_decomp,
+            plates
+        );
 
     event.create('solid_terrae')
         .components('terrae', 'spirit', 'mundus')
@@ -127,7 +136,10 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .dust()
         .iconSet(OPAL)
-        .flags(no_decomp);
+        .flags(
+            no_decomp,
+            plates
+        );
 
     event.create('solid_aqua')
         .color(0x8798fa)
@@ -135,7 +147,10 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .dust()
         .iconSet(OPAL)
-        .flags(no_decomp);
+        .flags(
+            no_decomp,
+            plates
+        );
 
     event.create('solid_sacrum')
         .color(0xff5493)
@@ -143,7 +158,10 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .dust()
         .iconSet(OPAL)
-        .flags(no_decomp);
+        .flags(
+            no_decomp,
+            plates
+        );
 
     event.create('solid_profanum')
         .color(0xa454ff)
@@ -151,7 +169,10 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .dust()
         .iconSet(OPAL)
-        .flags(no_decomp);
+        .flags(
+            no_decomp,
+            plates
+        );
 
     event.create('solid_xenorhast')
         .color(0x8e00a1)
@@ -159,7 +180,10 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .gem()
         .dust()
         .iconSet(OPAL)
-        .flags(no_decomp);
+        .flags(
+            no_decomp,
+            plates
+        );
     
     // Demonic spirits
 
@@ -169,7 +193,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .components('exispiravit', 'spirit', 'mundus')
         .flags(
             no_decomp,
-            crystallizable
+            crystallizable,
+            plates
         )
         .iconSet(QUARTZ);
     
@@ -180,7 +205,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .components('azoth', 'spirit', 'mundus')
         .flags(
             no_decomp,
-            crystallizable
+            crystallizable,
+            plates
         )
         .iconSet(QUARTZ);
     
@@ -190,7 +216,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .components('ragna', 'spirit', 'mundus')
         .flags(
             no_decomp,
-            crystallizable
+            crystallizable,
+            plates
         )
         .iconSet(QUARTZ);
     
@@ -200,7 +227,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .components('discidia', 'spirit', 'mundus')
         .flags(
             no_decomp,
-            crystallizable
+            crystallizable,
+            plates
         )
         .iconSet(QUARTZ);
     
@@ -210,7 +238,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .components('firmamentum', 'spirit', 'mundus')
         .flags(
             no_decomp,
-            crystallizable
+            crystallizable,
+            plates
         )
         .iconSet(QUARTZ);
 

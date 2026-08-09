@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
       "input": {
         "item": "gtceu:exquisite_ember_gem"
       }
-    })
+    }).id(`kubejs:embers/ember_activation/exquisite_gem`)
     event.custom(
     {
       "type": "embers:ember_activation",
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
       "input": {
         "item": "gtceu:ember_gem"
       }
-    })
+    }).id('kubejs:embers/ember_activation/normal_gem')
     //Boring
     function basicBoring(dimension, heightMax, weight, output) {
       event.custom({
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         "block_tag": "embers:world_bottom"
       },
       "weight": weight
-    })
+    }).id(`kubejs:embers/boring/${dimension.split(":")[1]}/${output.split(":")[1]}`)
     }
     //adding the greg embers to overworld and nether
     basicBoring(
@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
         "item": output
       },
       "weight": weight
-    })
+    }).id(`kubejs:embers/boring/${dimension.split(":")[1]}/${output.split(":")[1]}`)
     }
     voidscraping(
       "aether:the_aether", //is this even boring anymore

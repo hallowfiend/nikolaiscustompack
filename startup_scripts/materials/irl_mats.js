@@ -37,7 +37,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .fluid()
             .color(0xa9a9b0)
             .components('2x nickel', 'chromium', 'nether_quartz')
-            .flags(centrifuge)
+            .flags(
+                centrifuge,
+                plates,
+                rod,
+                bolt_and_screw
+            )
             .iconSet(METALLIC);
 
     event.create('duralumin')
@@ -45,7 +50,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .fluid()
             .color(0xbbc9c1)
             .components('3x aluminium', 'copper')
-            .flags(centrifuge)
+            .flags(
+                centrifuge,
+                plates,
+                rod,
+                frame
+            )
             .iconSet(SHINY);
 
     event.create('bendalloy')
@@ -53,7 +63,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .fluid()
             .color(0xbab6a2)
             .components('2x tin', 'cadmium', 'lead')
-            .flags(centrifuge)
+            .flags(
+                centrifuge,
+                plates,
+                rod,
+                frame
+            )
             .iconSet(METALLIC);
 
     event.create('pewter')
@@ -84,6 +99,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .secondaryColor(0x8a7a6e)
         .addOreByproducts('nickel', 'germanium', 'gallium')
         .formula('Fe?Ni?Ga?Ge?')
+        .flags(
+            plates
+        )
          .toolStats(
             ToolProperty.Builder.of(0.9, 5.5, 700, 3)
             .build()
@@ -122,7 +140,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("diamond")
         .components("1x calcium", "2x fluorine")
         .flags(
-            electrolyze
+            electrolyze,
+            lens
         )
         .addOreByproducts("calcite", "barite");
     

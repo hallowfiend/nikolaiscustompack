@@ -133,10 +133,10 @@ event.replaceOutput(
         {
             c: 'malum:living_flesh'
         }
-    ).id('kubejs:idkwhythiswasremoved1')
+    ).id('kubejs:shaped/idkwhythiswasremoved1')
     event.shapeless(
         Item.of('malum:living_flesh', 9),
         ['malum:block_of_living_flesh']
-    ).id('kubejs:idkwhythiswasremoved2')
+    ).id('kubejs:shapeless/idkwhythiswasremoved2')
     
 });

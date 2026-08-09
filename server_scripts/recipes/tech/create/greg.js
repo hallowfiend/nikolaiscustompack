@@ -35,12 +35,40 @@ const createMillableGems = [
     'nether_quartz'
 ]
 
+const createSmashableIngots = [
+    'nicrosil',
+    'bendalloy',
+    'pewter',
+    'invar',
+    'duralumin',
+    'compressed_iron'
+]
+
+const createCuttableGemBlocks = [
+    /* 'solid_aerialis',
+    'solid_terrae',
+    'solid_aqua',
+    'solid_infernalis',
+    'solid_arkanum',
+    'solid_profanum',
+    'solid_sacrum',
+    'solid_xenorhast',
+    'raw_will',
+    'corrosive_will',
+    'destructive_will',
+    'vengeful_will',
+    'steadfast_will', */
+]
+
 ServerEvents.recipes(event => {
     createMillableIngots.forEach(ingot => {
     event.recipes.create.milling(`gtceu:${ingot}_dust`, `#forge:ingots/${ingot}`)
     })
     createMillableGems.forEach(ingot => {
     event.recipes.create.milling(`gtceu:${ingot}_dust`, `#forge:gems/${ingot}`)
+    })
+    createSmashableIngots.forEach(ingot => {
+    event.recipes.create.pressing(`gtceu:${ingot}_plate`, `#forge:ingots/${ingot}`)
     })
     /* event.forEachRecipe({ type: "gtceu:mixer" }, x => {
         let recipe = JSON.parse(x.json)

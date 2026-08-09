@@ -831,6 +831,7 @@ event.create('spirit_gem')
         .color(0x839689)
         .iconSet(DULL)
         .flags(plates, gear, small_gear, bolt_and_screw, rotor, no_decomp);
+
     
 
 // Rocks & stones

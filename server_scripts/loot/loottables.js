@@ -45,15 +45,16 @@ LootJS.modifiers((event) => {
     //tide crates
     event.addLootTableModifier("tide:chests/crates/surface_saltwater")
         .pool(pool => {
-            pool.rolls([2,5])
+            pool.rolls([2,5]);
             pool.randomChance(0.75).addWeightedLoot([
             Item.of('minecraft:kelp').withChance(80),
             Item.of('minecraft:seagrass').withChance(80),
             Item.of('minecraft:sea_pickle').withChance(60),
             Item.of('gtceu:salt_dust').withChance(30)
-        ])
+            ])
+        })
         .pool(pool => {
-            pool.rolls([1,4])
+            pool.rolls([1,4]);
             pool.randomChance(0.4).addWeightedLoot([
                 Item.of('apotheosis:common_material').withChance(80),
                 Item.of('apotheosis:uncommon_material').withChance(80),
@@ -62,10 +63,10 @@ LootJS.modifiers((event) => {
         })
         .pool(pool => {
 			pool.addLoot(
-				Item.of('upgrade_aquatic:driftwood_log').limitCount([2, 6])
+				Item.of('upgrade_aquatic:driftwood_log')
 			)
-		})
-        });
+            pool.limitCount([2, 6])
+		});
     event.addLootTableModifier("tide:chests/crates/surface_freshwater")
         .pool(pool => {
             pool.rolls([2,5])

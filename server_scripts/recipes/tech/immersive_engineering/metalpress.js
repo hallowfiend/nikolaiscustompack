@@ -51,7 +51,10 @@ ServerEvents.recipes(event => {
         "cloggrum",
         "froststeel",
         "deepsilver",
-        "netherite"
+        "netherite",
+        'nicrosil',
+        'bendalloy',
+        'duralumin'
     ]
     const wiresToPull = [
         "gold",

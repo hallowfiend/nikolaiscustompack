@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
             m: '#biomancy:raw_meats',
             l: '#extra_sins:living_flesh'
         }
-    ).id('kubejs:primordial_core')
+    ).id('kubejs:shaped/primordial_core')
     //Neuron
     event.custom({
     type: "biomancy:bio_forging",
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     result: {
       item: "kubejs:biomantic_neuron"
     }
-    })
+    }).id('kubejs:biomancy/bioforging/biomantic_neuron')
     //Brain
     event.custom({
     type: "biomancy:bio_forging",
@@ -47,5 +47,5 @@ ServerEvents.recipes(event => {
     result: {
       item: "kubejs:castbrain"
     }
-    })
+    }).id('kubejs:biomancy/bioforging/castbrain')
 })

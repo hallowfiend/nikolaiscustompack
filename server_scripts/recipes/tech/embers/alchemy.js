@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
             "amount": alloyAmount,
             "tag": `forge:${outputAlloy}`
         }
-        })
+        }).id(`kubejs:embers/mixing/${outputAlloy}`)
     }
     mixing("gold", 16, "copper", 4, "rose_gold", 20)
     mixing("silver", 16, "copper", 4, "sterling_silver", 20)
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
             "stamp": {
                 "item": "embers:ingot_stamp"
         }
-        })
+        }).id(`kubejs:embers/stamping/aspectus_${metal}`)
     })
     //Apotheosis material upgrading
     const apothicMaterials = [
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "embers:isolated_materia"
         }
-    })
+    }).id(`kubejs:embers/alchemy/${mat.nextMaterial.split(":")[1]}`)
     })
     event.custom({
         "type": "embers:alchemy",
@@ -126,13 +126,13 @@ ServerEvents.recipes(event => {
                 "item": "apotheosis:rare_material"
             },
             {
-                "item": "apotheosis:rare_material"
+                "item": "apotheosis:mythic_material"
             },
             {
                 "item": "apotheosis:rare_material"
             },
             {
-                "item": "apotheosis:rare_material"
+                "item": "apotheosis:mythic_material"
             }
         ],
         "output": {
@@ -140,9 +140,34 @@ ServerEvents.recipes(event => {
             "item": "apotheotic_additions:heirloom_material"
         },
         "tablet": {
-            "item": "scguns:callwell" //If it took more than one shot...
+            "item": "scguns:treated_brass_ingot" //If it took more than one shot...
         }
-    })
+    }).id(`kubejs:embers/alchemy/heirloom_material`)
+    event.custom({
+        "type": "embers:alchemy",
+        "aspects": [duralumin, silver, constantan, electrum],
+        "inputs": [
+            {
+                "item": "cataclysm:ancient_metal_ingot"
+            },
+            {
+                "item": "apotheosis:mythic_material"
+            },
+            {
+                "item": "cataclysm:ancient_metal_ingot"
+            },
+            {
+                "item": "apotheosis:mythic_material"
+            }
+        ],
+        "output": {
+            "count": 1,
+            "item": "apotheosis:ancient_material"
+        },
+        "tablet": {
+            "item": "magichem:essentia_albedo"
+        }
+    }).id(`kubejs:embers/alchemy/ancient_material`)
     //Convenience recipes
     //TF MATERIAL DUPES
     //Ironwood
@@ -170,7 +195,7 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "twilightforest:ironwood_ingot"
         }
-    })
+    }).id(`kubejs:embers/alchemy/ironwood_ingot`)
     //Steeleaf
     event.custom({
         "type": "embers:alchemy",
@@ -196,7 +221,7 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "twilightforest:steeleaf_ingot"
         }
-    })
+    }).id(`kubejs:embers/alchemy/steeleaf`)
     //Knightmetal
     event.custom({
         "type": "embers:alchemy",
@@ -222,7 +247,7 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "twilightforest:knightmetal_ingot"
         }
-    })
+    }).id(`kubejs:embers/alchemy/knightmetal_ingot`)
     //Nagascale
     event.custom({
         "type": "embers:alchemy",
@@ -248,7 +273,7 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "twilightforest:naga_scale"
         }
-    })
+    }).id(`kubejs:embers/alchemy/naga_scale`)
     //Carminite
     event.custom({
         "type": "embers:alchemy",
@@ -274,7 +299,7 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "twilightforest:carminite"
         }
-    })
+    }).id(`kubejs:embers/alchemy/carminite`)
     //Aurora block
     event.custom({
         "type": "embers:alchemy",
@@ -300,7 +325,7 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "twilightforest:aurora_block"
         }
-    })
+    }).id(`kubejs:embers/alchemy/aurora_block`)
     //Actual progression n shit
     //Lava crystal
     event.custom({
@@ -324,11 +349,11 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "undergarden:utherium_crystal"
         }
-    })
+    }).id(`kubejs:embers/alchemy/lava_crystal`)
     //Depth ingots
     event.custom({
         "type": "embers:alchemy",
-        "aspects": [pewter, lead],
+        "aspects": [pewter, lead, sterling_silver],
         "inputs": [
             {
                 "item": "naturesaura:tainted_gold"
@@ -350,5 +375,5 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "minecraft:netherite_scrap"
         }
-    })
+    }).id(`kubejs:embers/alchemy/ingot_of_the_depths`)
 })

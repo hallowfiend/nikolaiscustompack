@@ -15,13 +15,13 @@ ServerEvents.recipes(event => {
             p: 'create:precision_mechanism',
             g: 'gtceu:brass_gear'
         }
-    ).id('kubejs:mechanical_core')
+    ).id('kubejs:goety/dark_ritual/forging/mechanical_core')
     //Caminite
     event.remove({ output: 'embers:caminite_blend' })
     event.shapeless(
         Item.of('embers:caminite_blend', 8),
         ['minecraft:clay_ball', 'minecraft:clay_ball', 'gtceu:stone_dust', 'gtceu:stone_dust', 'gtceu:stone_dust', 'gtceu:stone_dust']
-    ).id('kubejs:caminite_blend')
+    ).id('kubejs:shapeless/caminite_blend')
     event.recipes.farmersdelight.cutting(
         'embers:caminite_bricks',
         '#minecraft:pickaxes',
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('kubejs:ashen_blend', 8),
         ['embers:caminite_blend', 'embers:caminite_blend', 'gtceu:deepslate_dust', 'gtceu:deepslate_dust', 'embers:ash', 'embers:ash']
-    ).id('kubejs:ashen_blend')
+    ).id('kubejs:shapeless/ashen_blend')
     event.smelting('supplementaries:ash_brick', 'kubejs:ashen_blend')
     event.shaped(
         Item.of('embers:ashen_brick', 1),
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         {
             i: 'supplementaries:ash_brick'
         }
-    ).id('kubejs:ash_brick')
+    ).id('kubejs:shaped/ash_brick')
     event.recipes.farmersdelight.cutting(
         'embers:ashen_brick',
         '#minecraft:pickaxes',
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('kubejs:ethereal_ashen_blend', 8),
         ['kubejs:ashen_blend', 'kubejs:ashen_blend', 'create:cinder_flour', 'create:cinder_flour', 'sons_of_sins:ether_ashes', 'sons_of_sins:ether_ashes']
-    ).id('kubejs:ethereal_ashen_blend')
+    ).id('kubejs:shapeless/ethereal_ashen_blend')
     event.smelting('extra_sins:ethereal_ash_brick', 'kubejs:ethereal_ashen_blend')
     //Replacing redstone in some resippys
     event.replaceInput(
