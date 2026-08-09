@@ -1,6 +1,6 @@
 //priority 100
 
-function flipCoin(){return $Random().nextBoolean()}
+/* function flipCoin(){return $Random().nextBoolean()}
 global.flipCoin = () => flipCoin()
 
 function weightedReplace(func, filter, map) {
@@ -14,14 +14,14 @@ function weightedReplace(func, filter, map) {
         let countedMap = Array.from(weightedList.keys()).map((e, i) => [e, counts[i]])
         countedMap.forEach(v => func.addLoot(LootEntry.of(v[0]).limitCount(flipCoin() ? flipCoin() ? v[1] + 1 : v[1] - 1 : v[1])))
     })
-}
+} */
 
 
 LootJS.modifiers((event) => {
     event.addLootTableModifier(LootType.FISHING)
     .replaceLoot('culturaldelights:squid', 'miners_delight:squid');
     //globals
-    event.addLootTypeModifier(LootType.CHEST)
+    /* event.addLootTypeModifier(LootType.CHEST)
     .apply(func => {
         weightedReplace(func, 'minecraft:bread', [
             ['minecraft:bread', 8],
@@ -110,7 +110,7 @@ LootJS.modifiers((event) => {
             ['farmersdelight:melon_popsicle', 4],
             ['farmersdelight:melon_juice', 4]
         ])
-    })
+    }) */
     event.addLootTableModifier('aquamirae:chests/frozen_chest')
 		.pool(pool => {
 			pool.rolls(1).randomChance(1);
