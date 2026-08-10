@@ -1,4 +1,17 @@
 ServerEvents.recipes(event => {
+    //metal press molds
+    const extraMolds = [
+        
+    ]
+    //bullets (more efficient alternative to mechanical crafting)
+    //basics
+    const basicBullets = [
+        {ingredients: [], output: ''}
+    ]
+    //advanceds (sheol/peal/nitro/cells)
+    const advancedBullets = [
+        {ingredients: [], output: ''}
+    ]
     //mechanical components
     event.remove({ id: 'immersiveengineering:crafting/component_iron' })
     event.remove({ id: 'immersiveengineering:crafting/component_steel' })

@@ -4,6 +4,13 @@ ClientEvents.lang('en_us', event => {
     }
     //Quark
     event.renameItem('quark:dragon_crystal', 'Dragonscale Chip')
+    //Nature's Aura
+    event.renameItem('naturesaura:infused_iron', 'Infused Mithril Ingot')
+    event.renameItem('naturesaura:tainted_gold', 'Tainted Gold Ingot')
+    event.renameItem('naturesaura:sky_ingot', 'Heavenly Metal Ingot')
+    event.renameItem('naturesaura:infused_iron_block', 'Block of Infused Mithril')
+    event.renameItem('naturesaura:tainted_gold_block', 'Block of Tainted Gold')
+    event.renameItem('naturesaura:sky_ingot_block', 'Block of Heavenly Metal')
     //Elementalcraft
     //BetterEnd
     event.renameItem('betterend:aurora_crystal', 'Shimmering Crystalix')

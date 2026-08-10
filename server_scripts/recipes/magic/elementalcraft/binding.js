@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
     elementalcraftRecipes.initialize(event);
     
+    //activation crystals
     event.remove({ id: 'bloodmagic:weak_activation_crystal' })
     elementalcraftRecipes.bind(
         "bloodmagic:activationcrystalweak",

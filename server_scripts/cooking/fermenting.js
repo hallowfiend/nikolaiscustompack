@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
         },
       "strict": false
       }).id(`kubejs:bnc/pouring/${fluid.split(":")[1]}`)
-      event.recipes.create.filling(fluid, [`${fluid} 250`, container])
+      event.recipes.create.filling(fluid, [Fluid.of(`${fluid}`).withAmount(250), container])
       event.custom({
         "type": "immersiveengineering:bottling_machine",
         "input": {

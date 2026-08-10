@@ -172,4 +172,32 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             GTMaterialFlags.GENERATE_SMALL_GEAR,
             no_decomp
         );
+
+    // Nature's Aura
+
+    event.create('infused_iron')
+        .ingot()
+        .color(0x36bf3f)
+        .components('mithril', 'terrae', 'aura')
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD
+        );
+
+    event.create('tainted_gold')
+            .ingot()
+            .color(0xb6793e)
+            .components('hallowed_gold', 'infernalis', 'antiaura')
+            .iconSet(GTMaterialIconSet.DULL)
+            .flags(GTMaterialFlags.GENERATE_PLATE,
+                GTMaterialFlags.GENERATE_ROD
+            );
+
+    event.create('sky_ingot')
+        .ingot()
+        .color(0x99e0ff)
+        .components('aluminium', 'helium', 'solid_sacrum', 'solid_aerialis')
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .flags(GTMaterialFlags.GENERATE_PLATE,
+        );
 })

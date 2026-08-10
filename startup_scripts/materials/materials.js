@@ -594,35 +594,6 @@ event.create('mithril')
         )
         .separatedInto('silver', 'platinum');
 
-
-// Nature's Aura
-
-    event.create('infused_iron')
-        .ingot()
-        .color(0x36bf3f)
-        .components('iron', 'terrae', 'aura')
-        .iconSet(GTMaterialIconSet.METALLIC)
-        .flags(GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD
-        );
-
-    event.create('tainted_gold')
-            .ingot()
-            .color(0xb6793e)
-            .components('gold', 'infernalis', 'antiaura')
-            .iconSet(GTMaterialIconSet.DULL)
-            .flags(GTMaterialFlags.GENERATE_PLATE,
-                GTMaterialFlags.GENERATE_ROD
-            );
-
-    event.create('sky_ingot')
-        .ingot()
-        .color(0x99e0ff)
-        .components('aluminium', 'helium', 'solid_sacrum', 'solid_aerialis')
-        .iconSet(GTMaterialIconSet.METALLIC)
-        .flags(GTMaterialFlags.GENERATE_PLATE,
-        );
-
 // Blood grades
 
     // BM Life Essence, the purest
@@ -831,7 +802,6 @@ event.create('spirit_gem')
         .color(0x839689)
         .iconSet(DULL)
         .flags(plates, gear, small_gear, bolt_and_screw, rotor, no_decomp);
-
     
 
 // Rocks & stones
