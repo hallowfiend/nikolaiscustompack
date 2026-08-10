@@ -303,7 +303,8 @@ ServerEvents.tags("item", (event) => {
     'respiteful:mocha_coffee',
     'brewincompatdelight:black_russian',
     'brewincompatdelight:white_wine',
-    'brewincompatdelight:sweet_red_wine'
+    'brewincompatdelight:sweet_red_wine',
+    'kubejs:soulchill_absinthe'
   ])
   add('toughasnails:hydration/30_hydration_drinks', [
     '#toughasnails:thirst/4_thirst_drinks'
@@ -350,7 +351,9 @@ ServerEvents.tags("item", (event) => {
     /undergardendelight:.*juice/,
     'dungeonsdelight:liveroot_beer',
     'cosmopolitan:black_cow',
-    'abnormalsdelight:passion_aloe_nectar'
+    'abnormalsdelight:passion_aloe_nectar',
+    'kubejs:red_rock_blaster',
+    'kubejs:forgotten_imbibation'
   ])
   add('toughasnails:hydration/50_hydration_drinks', [
     '#toughasnails:thirst/5_thirst_drinks'

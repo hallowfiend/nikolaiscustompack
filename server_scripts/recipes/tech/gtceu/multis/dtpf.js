@@ -81,16 +81,22 @@ ServerEvents.recipes((event) => {
             {"drink": "brewinandchewin:strongroot_ale", "value": 4},
             {"drink": "brewinandchewin:dread_nog", "value": 4},
             {"drink": "brewinandchewin:kombucha", "value": 4},
+            {"drink": "kubejs:forgotten_imbibation", "value": 4},
             //deific nectars
             {"drink": "collectorsreap:heavens_cream", "value": 8},
             {"drink": "collectorsreap:rose_moon", "value": 8},
             {"drink": "cosmopolitan:exotic_mirage", "value": 8},
             {"drink": "brewinandchewin:steel_toe_stout", "value": 8},
             {"drink": "brewinandchewin:withering_dross", "value": 8},
+            {"drink": "kubejs:red_rock_blaster", "value": 8},
+            {"drink": "kubejs:slayer_stout", "value": 8},
+            {"drink": "kubejs:skull_crusher_ale", "value": 8},
             //transdimensional dews
             {"drink": "collectorsreap:reanimators_garden", "value": 16},
             {"drink": "collectorsreap:deific_blood", "value": 16},
-            {"drink": "sob:death_drink", "value": 16}
+            {"drink": "sob:death_drink", "value": 16},
+            {"drink": "kubejs:soulchill_absinthe", "value": 16},
+            {"drink": "kubejs:pyrogenic_cognac", "value": 16}
         
         ]
         alcohols.forEach(alcohol => {

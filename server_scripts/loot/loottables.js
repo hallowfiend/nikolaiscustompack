@@ -78,12 +78,12 @@ LootJS.modifiers((event) => {
         .pool(pool => {
             pool.rolls([2,5])
 			pool.randomChance(0.25).addWeightedLoot([
-				Item.of('oak_sapling').withChance(30).limitCount([1, 2]),
-				Item.of('birch_sapling').withChance(20).limitCount([1, 2]),
-				Item.of('jungle_sapling').withChance(4).limitCount([1, 1]),
-				Item.of('dark_oak_sapling').withChance(10).limitCount([1, 3]),
-				Item.of('acacia_sapling').withChance(8).limitCount([1, 2]),
-				Item.of('spruce_sapling').withChance(14).limitCount([1, 2]),
+				LootEntry.of('oak_sapling').withChance(30).limitCount([1, 2]),
+				LootEntry.of('birch_sapling').withChance(20).limitCount([1, 2]),
+				LootEntry.of('jungle_sapling').withChance(4).limitCount([1, 1]),
+				LootEntry.of('dark_oak_sapling').withChance(10).limitCount([1, 3]),
+				LootEntry.of('acacia_sapling').withChance(8).limitCount([1, 2]),
+				LootEntry.of('spruce_sapling').withChance(14).limitCount([1, 2]),
 			])
         })
         .pool(pool => {

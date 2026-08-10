@@ -5,6 +5,79 @@ StartupEvents.registry('item', event => {
     // foodstuffs and food-related items
     event.create('mother_of_vinegar')
     .displayName('Mother of Vinegar')
+    //drinks
+    event.create('forgotten_imbibation')
+    .displayName('Forgotten Imbibation')
+    .maxStackSize(16)
+    .food(food => {
+		food
+    		.effect('brewinandchewin:tipsy', 6000, 0, 1)
+            .effect('brewinandchewin:intoxication', 6000, 0, 1)
+			.effect('slow_falling', 3300, 0, 1)
+			.effect('weakness', 1000, 0, 1)
+			.alwaysEdible()
+        	})
+		.useAnimation("drink")
+    event.create('soulchill_absinthe')
+    .displayName('Soulchill Absinthe')
+    .maxStackSize(16)
+    .food(food => {
+		food
+    		.effect('brewinandchewin:tipsy', 6000, 1, 1)
+            .effect('brewinandchewin:intoxication', 6000, 0, 1)
+			.effect('cold_sweat:frigidness', 12000, 9, 1)
+			.alwaysEdible()
+        	})
+		.useAnimation("drink")
+    event.create('pyrogenic_cognac')
+    .displayName('Pyrogenic Cognac')
+    .maxStackSize(16)
+    .food(food => {
+		food
+    		.effect('brewinandchewin:tipsy', 6000, 2, 1)
+            .effect('brewinandchewin:intoxication', 6000, 0, 1)
+			.effect('cold_sweat:warmth', 12000, 9, 1)
+			.alwaysEdible()
+        	})
+		.useAnimation("drink")
+    event.create('skull_crusher_ale')
+    .displayName('Skullcrusher Ale')
+    .maxStackSize(16)
+    .food(food => {
+		food
+    		.effect('brewinandchewin:tipsy', 6000, 2, 1)
+            .effect('brewinandchewin:intoxication', 6000, 0, 1)
+			.effect('strength', 3300, 1, 1)
+			.effect('brewinandchewin:raging', 3300, 1, 1)
+            .effect('slowness', 1100, 1, 1)
+			.alwaysEdible()
+        	})
+		.useAnimation("drink")
+    event.create('slayer_stout')
+    .displayName('Slayer Stout')
+    .maxStackSize(16)
+     .food(food => {
+		food
+    		.effect('brewinandchewin:tipsy', 6000, 2, 1)
+            .effect('brewinandchewin:intoxication', 6000, 0, 1)
+			.effect('neapolitan:berserking', 3300, 2, 1)
+			.effect('dungeonsdelight:tenacity', 3300, 0, 1)
+            .effect('caverns_and_chasms:bloodlust', 6600, 0, 1)
+			.alwaysEdible()
+        	})
+		.useAnimation("drink")
+    event.create('red_rock_blaster')
+    .displayName('Red Rock Blaster')
+    .maxStackSize(16)
+    .food(food => {
+		food
+    		.effect('brewinandchewin:tipsy', 6000, 1, 1)
+            .effect('brewinandchewin:intoxication', 6000, 0, 1)
+			.effect('haste', 3300, 2, 1)
+			.effect('health_boost', 2200, 1, 1)
+			.alwaysEdible()
+        	})
+		.useAnimation("drink")
     // biological cyberware
     event.create('nutrient_sacs')
     .displayName('Nutrient Sacs');
