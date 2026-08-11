@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         event.recipes.immersiveengineering.metal_press(`gtceu:${plate}_plate`, `#forge:ingots/${plate}`, plateMold)
         .id(`kubejs:immersive_engineering/metal_press/${plate}_plate`);
     })
-    event.recipes.immersiveengineering.metal_press(`embers:dawnstone_plate`, `#forge:ingots/dawnstone`, plateMold)
+    event.recipes.immersiveengineering.metal_press(`embers:dawnstone_plate`, `#forge:ingots/dawnstone`, plateMold);
     const wiresToPull = [
         "gold",
         "iron",
@@ -90,7 +90,6 @@ ServerEvents.recipes(event => {
         'cupronickel',
         'froststeel',
         'red_alloy',
-        'conductive_alloy',
         'nickel',
         'hallowed_gold',
         'silver',
@@ -224,4 +223,7 @@ ServerEvents.recipes(event => {
         event.recipes.immersiveengineering.metal_press(`gtceu:${bolt}_screw`, `#forge:bolts/${bolt}`, rodMold)
         .id(`kubejs:immersive_engineering/metal_press/${bolt}_screw`);
     })
+    const gearsToRotate = [
+
+    ]
 })

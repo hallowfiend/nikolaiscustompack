@@ -41,6 +41,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
                 centrifuge,
                 plates,
                 rod,
+                long_rod,
                 bolt_and_screw
             )
             .iconSet(METALLIC);
@@ -54,6 +55,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
                 centrifuge,
                 plates,
                 rod,
+                long_rod,
                 frame
             )
             .iconSet(SHINY);
@@ -67,6 +69,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
                 centrifuge,
                 plates,
                 rod,
+                long_rod,
                 frame
             )
             .iconSet(METALLIC);
@@ -81,6 +84,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
                 GTMaterialFlags.GENERATE_PLATE,
                 GTMaterialFlags.GENERATE_BOLT_SCREW,
                 GTMaterialFlags.GENERATE_ROD,
+                long_rod,
                 GTMaterialFlags.GENERATE_SPRING,
                 GTMaterialFlags.GENERATE_SPRING_SMALL,
                 GTMaterialFlags.GENERATE_FOIL,

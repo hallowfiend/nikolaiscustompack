@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color(0x64615e)
         .secondaryColor(0x373332)
         .components('iron', '2x air', 'aerialis')
-        .flags(plates, gear, rod);
+        .flags(plates, gear, rod, long_rod);
 
 // Ars Nouveau
 
@@ -118,6 +118,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         foil,
         plates,
         rod,
+        long_rod,
         bolt_and_screw
       )
       .iconSet(GTMaterialIconSet.SHINY);
@@ -256,7 +257,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color(0xEDAE66)
         .components('9x gold', '9x redstone', '2x spirit', '2x arkanum')
         .iconSet(SHINY)
-        .flags(plates, rod, ring);
+        .flags(plates, rod, ring, long_rod);
 
     event.create('ether')
         .gem()
@@ -391,6 +392,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
+            long_rod,
             no_decomp
         );
     
@@ -494,7 +496,10 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             .addOreByproducts('zinc', 'copper', 'coal', 'sulfur')
             .components('iron', 'carbon', 'phosphorus', 'biotite', 'clay', '2x mundus', 'solid_infernalis', 'solid_terrae')
             .flags(
-            no_decomp
+            no_decomp,
+            plates,
+            rod,
+            long_rod
             );
 
     event.create('cloggrum')
@@ -511,6 +516,7 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
               GTMaterialFlags.GENERATE_PLATE,
               GTMaterialFlags.GENERATE_BOLT_SCREW,
               GTMaterialFlags.GENERATE_ROD,
+              long_rod,
               GTMaterialFlags.GENERATE_SPRING,
               GTMaterialFlags.GENERATE_SPRING_SMALL,
               GTMaterialFlags.GENERATE_FOIL,
@@ -585,6 +591,7 @@ event.create('mithril')
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
+            long_rod,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,

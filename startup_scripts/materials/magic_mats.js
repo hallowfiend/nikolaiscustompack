@@ -93,6 +93,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
+            long_rod,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
@@ -112,6 +113,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
+            long_rod,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
@@ -127,9 +129,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .cableProperties(GTValues.V[GTValues.LV], 8, 8, true)
             .components('gold', '4x quartzite', '2x sacrum', 'arkanum')
             .flags(
-                GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
+            long_rod,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
@@ -162,6 +165,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
+            long_rod,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
@@ -181,7 +185,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components('mithril', 'terrae', 'aura')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD
+            GTMaterialFlags.GENERATE_ROD,
+            long_rod,
         );
 
     event.create('tainted_gold')
@@ -190,7 +195,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .components('hallowed_gold', 'infernalis', 'antiaura')
             .iconSet(GTMaterialIconSet.DULL)
             .flags(GTMaterialFlags.GENERATE_PLATE,
-                GTMaterialFlags.GENERATE_ROD
+                GTMaterialFlags.GENERATE_ROD,
+                long_rod
             );
 
     event.create('sky_ingot')
