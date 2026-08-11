@@ -125,4 +125,10 @@ ServerEvents.recipes(event => {
       }
     ]
     })
+    //blood chest
+    //spiked plate
+    //sanguinary pedestal
+    //box of eternal closure
+    //spirit reanimator
+    //spirit furnace
 })

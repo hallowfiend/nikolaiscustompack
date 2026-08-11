@@ -1,13 +1,8 @@
 //priority 1000
 
 ServerEvents.tags("item", (event) => {
-  const add = (tag, items) => items.forEach(item => event.add(tag, item));
-  const remove = (tag, items) => items.forEach(item => event.remove(tag, item));
-  //#region add item tag
-  add('curios:necklace', [
-        'hexalia:sage_pendant'
-    ]);
-  add('forge:hearts', [
+  //#region event.add item tag
+  event.add('forge:hearts', [
         'eidolon:zombie_heart',
         'sons_of_sins:heart',
         'vampirism:human_heart',
@@ -18,23 +13,23 @@ ServerEvents.tags("item", (event) => {
         'alexsmobs:soul_heart',
         'deeperdarker:heart_of_the_deep'
     ]);
-  add('forge:zombie_heart', [
+  event.add('forge:zombie_heart', [
         'eidolon:zombie_heart',
         'reliquary:zombie_heart'
     ]);
-  add('forge:frigid_heart', [
+  event.add('forge:frigid_heart', [
         'eidolon:wraith_heart',
         'sons_of_sins:ice_heart',
         'reliquary:frozen_core'
     ]);
-  add('forge:wither_heart', [
+  event.add('forge:wither_heart', [
         'eidolon:withered_heart',
         'sosorgans:wither_skeleton_heart',
         'deeperdarker:heart_of_the_deep',
         'alexsmobs:soul_heart',
         'reliquary:nebulous_heart'
     ]);
-  add('neapolitan:ice_cream', [
+  event.add('neapolitan:ice_cream', [
         'exquisito:warzipan_ice_cream',
         'twilightdelight:aurora_ice_cream',
         'twilightdelight:torchberry_ice_cream',
@@ -60,7 +55,7 @@ ServerEvents.tags("item", (event) => {
         'mapleful:maple_ice_cream',
         'cosmopolitan:spaghettieis'
     ]);
-  add('coldsweat:large_cooling_foods',[
+  event.add('coldsweat:large_cooling_foods',[
       'hexalia:chillberry_pie',
       'twilightdelight:glacier_ice_tea',
       'twilightdelight:glacier_cake',
@@ -73,7 +68,7 @@ ServerEvents.tags("item", (event) => {
       'goetydelight:ectoplasmic_melon',
       'goetydelight:polarice'
   ]);
-  add('coldsweat:small_cooling_foods', [
+  event.add('coldsweat:small_cooling_foods', [
         'atmospheric:aloe_gel_bottle',
         'peculiars:tropical_salad',
         'peculiars:aloe_cake',
@@ -109,7 +104,7 @@ ServerEvents.tags("item", (event) => {
         'sob:spiky_salad',
         'collectorsreap:lucuma_gazpacho'
     ]);
-  add('coldsweat:large_warming_foods',[
+  event.add('coldsweat:large_warming_foods',[
     'mynethersdelight:fried_hoglin_chop',
     'mynethersdelight:spicy_noodle_soup',
     'mynethersdelight:plate_of_ghasta_with_cream',
@@ -142,7 +137,7 @@ ServerEvents.tags("item", (event) => {
     'tconstruct:magma_cake',
     'tinkersdelight:magma_cake_slice'
   ]);
-  add('coldsweat:small_warming_foods', [
+  event.add('coldsweat:small_warming_foods', [
     'mynethersdelight:deviled_egg',
     'mynethersdelight:spicy_cotton',
     'mynethersdelight:sizzling_pudding',
@@ -170,7 +165,7 @@ ServerEvents.tags("item", (event) => {
     'collectorsreap:spicy_grenadine_jelly',
     'sob:pepper_jelly'
     ]);
-  add('coldsweat:small_warming_drinks', [
+  event.add('coldsweat:small_warming_drinks', [
       /farmersrespite:.*coffee/,
       'cosmopolitan:dandelion_coffee',
       'farmersdelight:apple_cider',
@@ -192,7 +187,7 @@ ServerEvents.tags("item", (event) => {
     'cosmpolitan:charmed_infusion',
     'cosmopolitan:tisane'
     ])
-  add('coldsweat:large_warming_drinks', [
+  event.add('coldsweat:large_warming_drinks', [
     /farmersrespite:.*tea/,
     'vampiresdelight:daisy_tea',
     'vampiresdelight:orchid_tea',
@@ -225,7 +220,7 @@ ServerEvents.tags("item", (event) => {
     'cosmopolitan:winter_glogg',
     'cosmopolitan:netheresso'
   ])
-  add('coldsweat:small_cooling_drinks', [
+  event.add('coldsweat:small_cooling_drinks', [
     'respiteful:mint_green_tea',
     /farmersrespite:.*melon_juice/,
     /delightful:.*prickly_pear_juice/,
@@ -254,7 +249,7 @@ ServerEvents.tags("item", (event) => {
     'cosmopolitan:spring_soda',
     'cosmopolitan:greenday_juice'
   ])
-  add('coldsweat:large_cooling_drinks', [
+  event.add('coldsweat:large_cooling_drinks', [
     'cosmpolitan:summer_cordial',
     'goetydelight:liquid_void_tea_drink',
     'arsdelight:frostaya_tea',
@@ -270,20 +265,20 @@ ServerEvents.tags("item", (event) => {
     'cosmopolitan:ice_cream_float',
     'cosmopolitan:black_cow'
   ])
-  add('forge:logs/mahogany', [
+  event.add('forge:logs/mahogany', [
     /hexerei:.*mahogany_log/,
     /hexerei:.*mahogany_wood/
   ])
-  add('forge:logs/witch_hazel', [
+  event.add('forge:logs/witch_hazel', [
     /hexerei:.*witch_hazel_log/,
     /hexerei:.*witch_hazel_wood/
   ])
-  add('environmental:willow_logs', [
+  event.add('environmental:willow_logs', [
     '#hexalia:willow_logs',
     /hexerei:.*willow_wood/,
     /hexerei:.*willow_log/
   ])
-  add('toughasnails:thirst/2_thirst_drinks', [
+  event.add('toughasnails:thirst/2_thirst_drinks', [
     /.*milkshake.*/,
     /.*popsicle.*/,
     'sob:bitter_tea',
@@ -293,10 +288,10 @@ ServerEvents.tags("item", (event) => {
     'culturaldelights:pickle',
     'brewincompatdelight:blue_curacao'
   ])
-  add('toughasnails:hydration/10_hydration_drinks', [
+  event.add('toughasnails:hydration/10_hydration_drinks', [
     '#toughasnails:thirst/2_thirst_drinks'
   ])
-  add('toughasnails:thirst/4_thirst_drinks', [
+  event.add('toughasnails:thirst/4_thirst_drinks', [
     /rusticdelight:.*coffee/,
     /respiteful:snow_top.*/,
     /.*soup.*/,
@@ -306,10 +301,10 @@ ServerEvents.tags("item", (event) => {
     'brewincompatdelight:sweet_red_wine',
     'kubejs:soulchill_absinthe'
   ])
-  add('toughasnails:hydration/30_hydration_drinks', [
+  event.add('toughasnails:hydration/30_hydration_drinks', [
     '#toughasnails:thirst/4_thirst_drinks'
   ])
-  add('toughasnails:thirst/5_thirst_drinks', [
+  event.add('toughasnails:thirst/5_thirst_drinks', [
     /twilightdelight:.*juice/,
     /unusualend:.*juice/,
     /betterend:.*juice/,
@@ -355,10 +350,10 @@ ServerEvents.tags("item", (event) => {
     'kubejs:red_rock_blaster',
     'kubejs:forgotten_imbibation'
   ])
-  add('toughasnails:hydration/50_hydration_drinks', [
+  event.add('toughasnails:hydration/50_hydration_drinks', [
     '#toughasnails:thirst/5_thirst_drinks'
   ])
-  add('toughasnails:thirst/8_thirst_drinks', [
+  event.add('toughasnails:thirst/8_thirst_drinks', [
     /goetydelight:.*tea.*/,
     /dungeonsdelight:.*tea.*/,
     'brewinandchewin:kombucha',
@@ -384,15 +379,15 @@ ServerEvents.tags("item", (event) => {
     'sob:bustling_brew',
     'delightful:ender_nectar'
   ])
-  add('toughasnails:hydration/80_hydration_drinks', [
+  event.add('toughasnails:hydration/80_hydration_drinks', [
     '#toughasnails:thirst/8_thirst_drinks'
   ])
-  add('toughasnails:thirst/12_thirst_drinks', [
+  event.add('toughasnails:thirst/12_thirst_drinks', [
     /arsdelight:.*hornbeer/,
     'sob:aloe_tea',
     'twilightdelight:tear_drink'
   ])
-  add('toughasnails:hydration/100_hydration_drinks', [
+  event.add('toughasnails:hydration/100_hydration_drinks', [
     '#toughasnails:thirst/12_thirst_drinks'
   ])
   event.add("ad_astra:aeronos_logs", ["ad_astra:aeronos_cap", "ad_astra:aeronos_stem"]);
@@ -545,10 +540,21 @@ ServerEvents.tags("item", (event) => {
   event.add("chipped:stripped_crimson_log", ["#chipped:stripped_crimson_stem"]);
   event.add("chipped:stripped_snake_block_log", ["minecraft:prismarine"]);
   event.add("chipped:stripped_warped_log", ["#chipped:stripped_warped_stem"]);
-  event.add("chipped:glass", ["aether:quicksoil_glass"]);
-  event.add("chipped:glass_pane", ["aether:quicksoil_glass_pane"]);
 
   event.add("curios:head", ["gtceu:face_mask"]);
+  event.add('curios:necklace', [
+    'hexalia:sage_pendant',
+    'evilcraft:invigorating_pendant',
+    'evilcraft:primed_pendant'
+  ]);
+  event.add('curios:charm', [
+    'hexalia:sage_pendant',
+    'evilcraft:invigorating_pendant',
+    'evilcraft:primed_pendant'
+  ]);
+  event.add('curios:ring', [
+    'evilcraft:vengeance_ring'
+  ])
   event.add("curios:hands", ["gtceu:rubber_gloves"]);
 
   event.add("twilightdelight:vension_raw", ["#forge:raw_venison"])

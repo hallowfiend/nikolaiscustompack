@@ -20,6 +20,11 @@ ServerEvents.recipes(event => {
             "type": "pneumaticcraft:stacked_item",
             "count": 1,
             "item": "kubejs:bloodchannel_gem"
+            },
+            {
+            "type": "pneumaticcraft:stacked_item",
+            "count": 1,
+            "item": "minecraft:redstone"
             }
         ],
         4.0,
@@ -42,6 +47,11 @@ ServerEvents.recipes(event => {
             "type": "pneumaticcraft:stacked_item",
             "count": 9,
             "item": "kubejs:bloodchannel_gem"
+            },
+            {
+            "type": "pneumaticcraft:stacked_item",
+            "count": 1,
+            "item": "minecraft:redstone_block"
             }
         ],
         4.0,

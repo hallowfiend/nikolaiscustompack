@@ -43,7 +43,8 @@ ServerEvents.recipes((event) => {
             'goety:empty_focus',
             'biomancy:stone_powder',
             'malum:runic_sapball',
-            'eidolon:magicians_wax'
+            'eidolon:magicians_wax',
+            'kubejs:bloodchannel_gem'
         ],
         4000
     ).id('kubejs:botania/runic_altar/prepared_stone')

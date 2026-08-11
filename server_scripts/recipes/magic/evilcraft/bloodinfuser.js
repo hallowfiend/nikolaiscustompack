@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         'tconstruct:ichor_congealed_slime',
         'kubejs:blood_congealed_slime',
         240,
-        0
+        1
     )
     event.shaped('kubejs:blood_congealed_slime',[
         'bb',
@@ -43,6 +43,7 @@ ServerEvents.recipes(event => {
     {
         b: 'kubejs:blood_slime_ball'
     }).id('kubejs:shaped/blood_congealed_slime')
+    event.shapeless('4x kubejs:blood_slime_ball', ['kubejs:blood_congealed_slime']).id('kubejs:shapeless/blood_slime_from_congealed'),
     bloodInfuser(
         10000,
         'evilcraft:dull_dust',

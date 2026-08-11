@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
     result: [
       { item: 'farmersdelight:bacon', count: 4 },
       { item: 'undergarden:blood_globule', count: 2 },
-      { item: 'aquaculture:gold_hook', count: 1, chance: 0.1 }
+      { item: 'minecraft:gold_nugget', count: 1, chance: 0.1 }
     ]
     })
     event.custom({
