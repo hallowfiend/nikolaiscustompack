@@ -4,7 +4,7 @@ const copper = { "tag": "embers:aspectus/copper" }
 const silver = { "tag": "embers:aspectus/silver" }
 const dawnstone = { "tag": "embers:aspectus/dawnstone" }
 const tin = {"tag": "embers:aspectus/tin"}
-const zinc = {"tag": "embers:aspectus/tin"}
+const zinc = {"tag": "embers:aspectus/zinc"}
 const aluminium = {"tag": "embers:aspectus/aluminium"}
 const gold = {"tag": "embers:aspectus/gold"}
 const rose_gold = {"tag": "embers:aspectus/rose_gold"}
@@ -170,32 +170,6 @@ ServerEvents.recipes(event => {
     }).id(`kubejs:embers/alchemy/ancient_material`)
     //Convenience recipes
     //TF MATERIAL DUPES
-    //Ironwood
-    event.custom({
-        "type": "embers:alchemy",
-        "aspects": [iron, invar],
-        "inputs": [
-            {
-                "item": "minecraft:iron_ingot"
-            },
-            {
-                "item": "malum:alchemical_calx"
-            },
-            {
-                "item": "malum:earthen_spirit"
-            },
-            {
-                "tag": "farmersdelight:barks"
-            }
-        ],
-        "output": {
-            "count": 4,
-            "item": "twilightforest:ironwood_ingot"
-        },
-        "tablet": {
-            "item": "twilightforest:ironwood_ingot"
-        }
-    }).id(`kubejs:embers/alchemy/ironwood_ingot`)
     //Steeleaf
     event.custom({
         "type": "embers:alchemy",

@@ -601,6 +601,16 @@ event.create('mithril')
         )
         .separatedInto('silver', 'platinum');
 
+event.create('twilit_mithril')
+        .ingot()
+        .components('mithril', '2x vinteum', '2x apatite')
+        .color(0x90dee0)
+        .secondaryColor(0x6dcde3)
+        .cableProperties(GTValues.V[GTValues.HV], 2, 3, false)
+        .flags(
+            no_decomp
+        )
+
 // Blood grades
 
     // BM Life Essence, the purest

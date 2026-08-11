@@ -86,6 +86,8 @@ StartupEvents.registry('item', event => {
     .displayName('Offering to Nature');
     event.create('prepared_stone')
     .displayName('Prepared Stone');
+    event.create('treated_leather')
+    .displayName('Treated Leather');
     event.create('bloodied_dust')
     .displayName('Bloodied Dust');
     event.create('castbrain')

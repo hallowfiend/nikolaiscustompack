@@ -26,12 +26,6 @@ ServerEvents.recipes(event => {
         .EUt(120)
         .blastFurnaceTemp(1400);
     //Blend hand-mixing
-    event.shapeless("2x gtceu:conductive_alloy_dust",
-        [
-            "#forge:dusts/iron",
-            "#forge:dusts/redstone"
-        ]
-    )
     event.shapeless(
         Item.of('gtceu:pewter_dust', 2),
             [
@@ -63,7 +57,7 @@ ServerEvents.recipes(event => {
                 '#forge:dusts/nickel',
                 '#forge:dusts/nickel',
                 '#forge:dusts/chromium',
-                '#forge:dusts/quartz'
+                '#forge:dusts/quartzite'
             ]
     )
     event.shapeless(
@@ -72,7 +66,7 @@ ServerEvents.recipes(event => {
                 '#forge:dusts/nickel',
                 '#forge:dusts/nickel',
                 '#forge:dusts/chromium',
-                '#forge:dusts/silicon_dioxide'
+                '#forge:dusts/nether_quartz'
             ]
     )
     event.smelting('eidolon:pewter_ingot', 'gtceu:pewter_dust').xp(0.3).cookingTime(300)

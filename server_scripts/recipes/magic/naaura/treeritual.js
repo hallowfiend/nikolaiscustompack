@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
           "time": time //int
         }).id(`kubejs:natures_aura/tree_ritual/${output.split(":")[1]}`)
     }
-    // Ancient Sapling
+    //Ancient Sapling
     treeRitual(
       [
         {"item": 'twilightforest:liveroot'},
@@ -35,6 +35,20 @@ ServerEvents.recipes(event => {
       'quark:red_blossom_sapling',
       20
     );
+    //Rotbulb
+    treeRitual(
+      [
+        {'item': 'minecraft:poisonous_potato'},
+        {'item': 'farmersdelight:rotten_tomato'},
+        {'item': 'dungeonsdelight:rotten_tripe'},
+        {'item': 'gtceu:twilit_mithril_ingot'},
+        {'item': 'malum:wicked_spirit'},
+        {'item': 'hexalia:witchweed'}
+      ],
+      'dungeonsdelight:rotbulb', 4,
+      'goety:rotten_sapling',
+      120
+    )
     //TOKENS
     //Joy
     treeRitual(

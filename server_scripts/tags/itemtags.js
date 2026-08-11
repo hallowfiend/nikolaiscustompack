@@ -204,7 +204,7 @@ ServerEvents.tags("item", (event) => {
     'ends_delight:chorus_flower_tea',
     'goetydelight:boiling_blood_brew',
     /windswept:.*tea/,
-    'arsdelight:bombegranate_tea',
+    'arsdelight:bombegrante_tea',
     /farmersrespite:.*cocoa/,
     'sob:bitter_tea',
     'twilightdelight:thorn_rose_tea',
@@ -221,7 +221,6 @@ ServerEvents.tags("item", (event) => {
     'brewincompatdelight:mulled_wine',
     'sob:tequila',
     'arsdelight:bombegrante_hornbeer',
-    'arsdelight:bonbegrante_tea',
     'collectorsreap:deific_blood',
     'cosmopolitan:winter_glogg',
     'cosmopolitan:netheresso'

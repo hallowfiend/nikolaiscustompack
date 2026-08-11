@@ -51,7 +51,6 @@ ServerEvents.recipes(event => {
     })
     const platesToSmash = [
         "soul_stained_steel",
-        "amethyst_bronze",
         "drenched_iron",
         "manasteel",
         "pewter",

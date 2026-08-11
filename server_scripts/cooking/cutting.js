@@ -134,4 +134,15 @@ ServerEvents.recipes((event) => {
       { item: 'dungeonsdelight:gritty_flesh', count: 1, chance: 0.2}
     ]
     })
+    event.custom({
+    type: 'farmersdelight:cutting',
+    ingredients: [
+      { item: 'cold_sweat:hoglin_hide' }
+    ],
+    tool: { tag: 'forge:tools/knives' },
+    result: [
+      { item: 'irons_spellbooks:hogskin', count: 4 },
+      { item: 'minecraft:string', count: 1, chance: 0.5}
+    ]
+    })
 })

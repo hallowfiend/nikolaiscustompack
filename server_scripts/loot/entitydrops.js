@@ -42,11 +42,11 @@ LootJS.modifiers((event) => {
 		event.addEntityLootModifier(boss)
 		.killedByPlayer()
 		.pool(pool => {
-			pool.rolls(1);
+			pool.rolls(3);
 			pool
 				.addLoot(
 					LootEntry.of('apotheosis:uncommon_material')
-						.limitCount([1, 2])
+						.limitCount([1, 3])
 						.applyLootingBonus([0, 1])
 						.when(c => c.randomChanceWithLooting(0.5, 0.1))
 				)
@@ -63,11 +63,11 @@ LootJS.modifiers((event) => {
 		event.addEntityLootModifier(boss)
 		.killedByPlayer()
 		.pool(pool => {
-			pool.rolls(1);
+			pool.rolls(3);
 			pool
 				.addLoot(
 					LootEntry.of('apotheosis:rare_material')
-						.limitCount([1, 2])
+						.limitCount([1, 3])
 						.applyLootingBonus([0, 1])
 						.when(c => c.randomChanceWithLooting(0.5, 0.1))
 				)
@@ -88,11 +88,11 @@ LootJS.modifiers((event) => {
 		event.addEntityLootModifier(boss)
 		.killedByPlayer()
 		.pool(pool => {
-			pool.rolls(1);
+			pool.rolls(3);
 			pool
 				.addLoot(
 					LootEntry.of('apotheosis:epic_material')
-						.limitCount([1, 2])
+						.limitCount([1, 3])
 						.applyLootingBonus([0, 1])
 						.when(c => c.randomChanceWithLooting(0.5, 0.1))
 				)
@@ -107,11 +107,11 @@ LootJS.modifiers((event) => {
 		event.addEntityLootModifier(boss)
 		.killedByPlayer()
 		.pool(pool => {
-			pool.rolls(1);
+			pool.rolls(3);
 			pool
 				.addLoot(
 					LootEntry.of('apotheosis:mythic_material')
-						.limitCount([1, 2])
+						.limitCount([1, 3])
 						.applyLootingBonus([0, 1])
 						.when(c => c.randomChanceWithLooting(0.5, 0.1))
 				)

@@ -6,32 +6,41 @@ ServerEvents.recipes(event => {
         'evilcraft:dull_dust',
         ['goety:grave_dust', 'minecraft:gunpowder', 'minecraft:sugar', '#forge:dusts/ash', 'occultism:burnt_otherstone', 'mna:bone_ash']
     ).id('kubejs/shapeless/dull_dust')
-    event.custom({
+    function bloodInfuser(bloodCost, input, output, duration, tier){
+        event.custom({
         "type": "evilcraft:blood_infuser",
-        "item": "evilcraft:dull_dust",
+        "item": input,
         "fluid": {
             "fluid": "evilcraft:blood",
-            "amount": 10000
+            "amount": bloodCost
         },
         "result": {
-            "item": "kubejs:bloodied_dust"
+            "item": output
         },
-        "duration": 100,
-        "xp": 4,
-        "tier": 2
-    }).id('kubejs:evilcraft/blood_infusion/bloodied_dust')
-    event.custom({
-        "type": "evilcraft:blood_infuser",
-        "item": "magichem:glass_orb",
-        "fluid": {
-            "fluid": "evilcraft:blood",
-            "amount": 10000
-        },
-        "result": {
-            "item": "evilcraft:blood_orb_filled"
-        },
-        "duration": 20,
-        "xp": 4,
-        "tier": 1
-    }).id('kubejs:evilcraft/blood_infusion/blood_orb')
+        "duration": duration,
+        "xp": 0.5,
+        "tier": tier
+    }).id(`kubejs:evilcraft/blood_infusion/${output.split(":")[1]}`)
+    }
+    bloodInfuser(
+        10000,
+        'evilcraft:dull_dust',
+        'kubejs:bloodied_dust',
+        100,
+        2
+    )
+    bloodInfuser(
+        10000,
+        'magichem:glass_orb',
+        'evilcraft:blood_orb_filled',
+        20,
+        1
+    )
+    bloodInfuser(
+        4000,
+        'irons_spellbooks:hogskin',
+        'irons_spellbooks:bloody_vellum',
+        40,
+        0
+    )
 })

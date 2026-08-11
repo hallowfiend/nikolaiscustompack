@@ -2,11 +2,11 @@ ServerEvents.recipes((event) => {
 
 //Syrup
 
-event.recipes.create.compacting([Fluid.of('create_central_kitchen:syrup', 25)], [Fluid.of('create_central_kitchen:sap', 25)]).heated(),
+/* event.recipes.create.compacting([Fluid.of('create_central_kitchen:syrup', 25)], [Fluid.of('create_central_kitchen:sap', 25)]).heated(),
 
 event.recipes.create.filling('autumnity:sap_bottle', [Fluid.of('create_central_kitchen:sap', 25), 'minecraft:glass_bottle']),
 
-event.recipes.create.filling('rusticdelight:syrup', [Fluid.of('create_central_kitchen:syrup', 25), 'minecraft:glass_bottle']),
+event.recipes.create.filling('rusticdelight:syrup', [Fluid.of('create_central_kitchen:syrup', 25), 'minecraft:glass_bottle']), */
 
 event.remove({ output:'rusticdelight:syrup', type:'farmersdelight:cooking' }),
 
@@ -15,8 +15,9 @@ event.remove({ output:'autumnity:syrup_bottle' }),
 event.replaceInput(
   { input: 'autumnity:syrup_bottle' }, 
   'autumnity:syrup_bottle',
-  'rusticdelight:syrup'         
+  'rusticdelight:syrup'
 ),
+
 
 //Honey
 event.replaceOutput(

@@ -184,7 +184,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create('infused_iron')
         .ingot()
         .color(0x36bf3f)
-        .components('mithril', 'terrae', 'aura')
+        .components('twilit_mithril', 'terrae', 'aura')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
