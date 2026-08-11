@@ -2,6 +2,10 @@ ClientEvents.lang('en_us', event => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    //Living flesh dedup
+    event.renameItem('malum:living_flesh', 'Revitalized Flesh')
+    event.renameItem('malum:block_of_living_flesh', 'Block of Revitalized Flesh')
+    event.renameItem('caverns_and_chasms:living_flesh', 'Quasianimate Flesh')
     //Quark
     event.renameItem('quark:dragon_crystal', 'Dragonscale Chip')
     //Nature's Aura

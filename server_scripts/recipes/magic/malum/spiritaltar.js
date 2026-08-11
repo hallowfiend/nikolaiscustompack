@@ -43,6 +43,29 @@ ServerEvents.recipes((event) => {
   shelves.forEach(shelf => {
     event.remove({ id: shelf })
   })
+  //harder living flesh
+  event.remove({ id: 'malum:spirit_infusion/living_flesh' })
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'caverns_and_chasms:living_flesh',
+      "count": 4
+    },
+    "output": {
+      "item": 'malum:living_flesh',
+      "count": 4
+    },
+    "spirits": [
+      {
+        "type": "sacred",
+        "count": 2
+      },
+      {
+        "type": "wicked",
+        "count": 2
+      },
+    ]
+  })
   //blazing hellshelf
   event.custom({
     "type": "malum:spirit_infusion",

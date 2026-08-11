@@ -8,5 +8,5 @@ StartupEvents.registry('block', (event) => {
         .soundType('wood')
         .requiresTool(true)
         .tagBlock('mineable/axe')
-        .textureAll('kubejs:block/mana_reinforced_livingwood_casing')
+        .textureAll('kubejs:block/mana_reinforced_livingwood_casing');
 })

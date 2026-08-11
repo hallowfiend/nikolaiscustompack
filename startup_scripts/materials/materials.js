@@ -631,7 +631,7 @@ event.create('twilit_mithril')
         .color(0x86526E)
         .components('refined_blood', '3x ether');
     
-    // Hexerei/Iron's Blood, the sanctified
+    // Hexerei blood, the sanctified
     event.create('occult_darkblood')
         .fluid()
         .color(0x8c231d)

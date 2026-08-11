@@ -23,6 +23,20 @@ ServerEvents.recipes(event => {
     }).id(`kubejs:evilcraft/blood_infusion/${output.split(":")[1]}`)
     }
     bloodInfuser(
+        4000,
+        'minecraft:slime_ball',
+        'tconstruct:blood_slime_ball',
+        80,
+        0
+    )
+    bloodInfuser(
+        16000,
+        'tconstruct:earth_congealed_slime',
+        'tconstruct:blood_congealed_slime',
+        240,
+        0
+    )
+    bloodInfuser(
         10000,
         'evilcraft:dull_dust',
         'kubejs:bloodied_dust',
@@ -37,10 +51,10 @@ ServerEvents.recipes(event => {
         1
     )
     bloodInfuser(
-        4000,
+        8000,
         'irons_spellbooks:hogskin',
         'irons_spellbooks:bloody_vellum',
-        40,
+        160,
         0
     )
 })

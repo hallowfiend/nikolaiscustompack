@@ -88,6 +88,8 @@ StartupEvents.registry('item', event => {
     .displayName('Prepared Stone');
     event.create('treated_leather')
     .displayName('Treated Leather');
+    event.create('bloodchannel_gem')
+    .displayName('Hematic Hardruby');
     event.create('bloodied_dust')
     .displayName('Bloodied Dust');
     event.create('castbrain')

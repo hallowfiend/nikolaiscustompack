@@ -40,4 +40,23 @@ ServerEvents.recipes(event => {
             min_temp: 273,
         },
     });
+    //laserio
+    /* event.remove({ output: "laserio:logic_chip" });
+    event.remove({ output: "laserio:logic_chip_raw" });
+    event.remove({ output: "laserio:laser_connector" });
+    event.remove({ output: "laserio:laser_node" });
+
+    event.shaped("laserio:laser_connector", [" A ", "BCB", "DDD"], {
+        A: "#forge:gems/ruby",
+        B: "gtceu:vibrant_alloy_single_wire",
+        C: "gtceu:ev_emitter",
+        D: "#forge:plates/electrical_steel",
+    });
+
+    event.shaped("laserio:laser_node", ["ABA", "CDC", "ABA"], {
+        A: "#forge:plates/stainless_steel",
+        B: "#gtceu:circuits/ev",
+        C: "#forge:storage_blocks/ruby",
+        D: "laserio:laser_connector",
+    }); */
 })

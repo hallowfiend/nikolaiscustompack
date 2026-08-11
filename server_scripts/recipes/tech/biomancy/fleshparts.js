@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
             a: 'mna:animus_dust',
             g: 'evilcraft:dark_power_gem',
             m: '#biomancy:raw_meats',
-            l: '#extra_sins:living_flesh'
+            l: 'malum:living_flesh'
         }
     ).id('kubejs:shaped/primordial_core')
     //Neuron

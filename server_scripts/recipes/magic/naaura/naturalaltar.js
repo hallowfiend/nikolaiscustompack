@@ -108,13 +108,6 @@ ServerEvents.recipes(event => {
         40
     )
     conversion(
-        'tconstruct:ichor_slime_ball',
-        'evilcraft:condensed_blood',
-        1,
-        8000,
-        40
-    )
-    conversion(
         'gtceu:charcoal_block',
         'minecraft:coal_block',
         1,
