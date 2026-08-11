@@ -57,12 +57,12 @@ ServerEvents.recipes((event) => {
     arcFurnace(
         'gtceu:ruby_gem',
         1,
-        [{'item': 'tconstruct:blood_slime_ball'}],
+        [{'item': 'kubejs:blood_slime_ball'}],
         'kubejs:bloodchannel_gem',
         1
     )
     event.recipes.gtceu.alloy_smelter(`bloodchannel_gem`)
-        .itemInputs([`gtceu:ruby_gem`, `tconstruct:blood_slime_ball`])
+        .itemInputs([`gtceu:ruby_gem`, `kubejs:blood_slime_ball`])
         .itemOutputs(`kubejs:bloodchannel_gem`)
         .duration(80)
         .EUt(GTValues.VA[GTValues.LV]);

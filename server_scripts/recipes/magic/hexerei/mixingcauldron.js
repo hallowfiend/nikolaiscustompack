@@ -496,20 +496,6 @@ const recipes = [
     output_liquid:false,
     liquid_consum:2000,
     heat:false
-},
-{
-    inputItem:[
-        {"item" : "irons_spellbooks:hogskin"},
-        {"item" : "irons_spellbooks:hogskin"},
-        {"item" : "irons_spellbooks:hogskin"},
-        {"item" : "irons_spellbooks:hogskin"}
-    ],
-    output:"irons_spellbooks:bloody_vellum",
-    output_amount:4,
-    liquid:"hexerei:blood",
-    output_liquid:false,
-    liquid_consum:1000,
-    heat:false
 }
 ]
 

@@ -21,9 +21,9 @@ ServerEvents.recipes(event => {
             "result": {
                 "item": "biomancy:organic_matter"
             }
-        })
+        }).id(`kubejs/immersive_engineering/squeezer/blood_from_${squeezable.item.split(":")[1]}`)
 
-        event.recipes.gtceu.extractor(`blood_from_${squeezable.item}`)
+        event.recipes.gtceu.extractor(`kubejs:gtceu/extractor/blood_from_${squeezable.item.split(":")[1]}`)
         .itemInputs(squeezable.item)
         .outputFluids(`evilcraft:blood ${squeezable.amount}`)
         .itemOutputs('biomancy:organic_matter')
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.create.compacting(
             [Fluid.of('evilcraft:blood').withAmount(squeezable.amount), 'biomancy:organic_matter'],
-            squeezable.item);
+            squeezable.item).id(`kubejs:create/compacting/blood_from_${squeezable.item.split(":")[1]}`);
 
     })
     //blood infuser
@@ -61,10 +61,6 @@ ServerEvents.recipes(event => {
         "count": 1
       },
       {
-        "item": 'immersiveengineering:component_iron',
-        "count": 1,
-      },
-      {
         "item": "twilightforest:naga_scale",
         "count": 1
       }
@@ -83,5 +79,50 @@ ServerEvents.recipes(event => {
         "count": 4
       }
     ]
-  })
+    })
+    //purifier
+    event.remove({output: 'evilcraft:purifier'})
+    event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'evilcraft:blood_infusion_core',
+      "count": 1
+    },
+    "output": {
+      "item": 'evilcraft:purifier',
+      "count": 1
+    },
+    "extra_items": [
+      {
+        "item": "evilcraft:dark_gem",
+        "count": 8
+      },
+      {
+        "item": "kubejs:bloodchannel_gem",
+        "count": 4
+      },
+      {
+        "item": "hexalia:water_node",
+        "count": 1
+      },
+      {
+        "item": "eidolon:pewter_inlay",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "arcane",
+        "count": 16
+      },
+      {
+        "type": "sacred",
+        "count": 8
+      },
+      {
+        "type": "aqueous",
+        "count": 4
+      }
+    ]
+    })
 })

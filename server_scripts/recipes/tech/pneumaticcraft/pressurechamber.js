@@ -1,0 +1,56 @@
+ServerEvents.recipes(event => {
+    function pressureChamber(inputs, pressure, outputs, id){
+        event.custom({
+        "type": "pneumaticcraft:pressure_chamber",
+        "inputs": inputs, // list
+        "pressure": pressure,
+        "results": outputs //list
+    }).id(`kubejs:pneumaticcraft/pressure_chamber/${id}`)
+    }
+    //hematite
+    event.remove({id: 'tinkers_things:hematite/alloy'})
+    pressureChamber(
+        [
+            {
+            "type": "pneumaticcraft:stacked_item",
+            "count": 1,
+            "item": "pneumaticcraft:compressed_iron"
+            },
+            {
+            "type": "pneumaticcraft:stacked_item",
+            "count": 1,
+            "item": "kubejs:bloodchannel_gem"
+            }
+        ],
+        4.0,
+        [
+            {
+                "item": "tinkers_things:hematite",
+                "count": 1
+            }
+        ],
+        'hematite'
+    )
+    pressureChamber(
+        [
+            {
+            "type": "pneumaticcraft:stacked_item",
+            "count": 1,
+            "item": "pneumaticcraft:compressed_iron_block"
+            },
+            {
+            "type": "pneumaticcraft:stacked_item",
+            "count": 9,
+            "item": "kubejs:bloodchannel_gem"
+            }
+        ],
+        4.0,
+        [
+            {
+                "item": "tinkers_things:hematite_block",
+                "count": 1
+            }
+        ],
+        'bulk_hematite'
+    )
+})

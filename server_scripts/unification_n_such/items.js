@@ -59,7 +59,8 @@ const bulkReplace = [
     { target: 'aether:enchanted_gravitite', replacement: "#forge:storage_blocks/gravitite"},
     { target: "#forge:gears/energized", replacement: "#forge:gears/energetic_alloy"},
     { target: "aquaculture:fish_fillet_raw", replacement: "tide:fish_slice"},
-    { target: "aquaculture:fish_fillet_cooked", replacement: "tide:cooked_fish_slice"}
+    { target: "aquaculture:fish_fillet_cooked", replacement: "tide:cooked_fish_slice"},
+    { target: 'vampirism:injection_empty', replacement: 'scguns:syringe'}
 	];
 
 ServerEvents.recipes((event) => {

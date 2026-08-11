@@ -24,18 +24,25 @@ ServerEvents.recipes(event => {
     }
     bloodInfuser(
         4000,
-        'minecraft:slime_ball',
-        'tconstruct:blood_slime_ball',
+        'tconstruct:ichor_slime_ball',
+        'kubejs:blood_slime_ball',
         80,
         0
     )
     bloodInfuser(
         16000,
-        'tconstruct:earth_congealed_slime',
-        'tconstruct:blood_congealed_slime',
+        'tconstruct:ichor_congealed_slime',
+        'kubejs:blood_congealed_slime',
         240,
         0
     )
+    event.shaped('kubejs:blood_congealed_slime',[
+        'bb',
+        'bb'
+    ],
+    {
+        b: 'kubejs:blood_slime_ball'
+    }).id('kubejs:shaped/blood_congealed_slime')
     bloodInfuser(
         10000,
         'evilcraft:dull_dust',
@@ -50,6 +57,9 @@ ServerEvents.recipes(event => {
         20,
         1
     )
+    event.remove({id: 'constructs_casting:tools/parts/casting/pages_composite'})
+    event.remove({id: /constructs_casting:.*bloody_vellum/})
+    event.remove({id: 'irons_spellbooks:filling/bloody_vellum'})
     bloodInfuser(
         8000,
         'irons_spellbooks:hogskin',

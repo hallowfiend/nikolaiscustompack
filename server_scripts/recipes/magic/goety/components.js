@@ -9,4 +9,5 @@ ServerEvents.recipes(event => {
     event.recipes.goety.cursed_infuser_recipes('goety:cursed_metal_block', 'gtceu:brass_block')
         .cookingTime(360)
         .id('kubejs:goety/cursed_infuser/cursed_block');
+    //Haunting as an alternative to cursed infusion
 });

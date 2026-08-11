@@ -90,6 +90,9 @@ StartupEvents.registry('item', event => {
     .displayName('Treated Leather');
     event.create('bloodchannel_gem')
     .displayName('Hematic Hardruby');
+    event.create('blood_slime_ball')
+    .displayName('Coagulated Blood Ball')
+    .tag('forge:slimeball/blood');
     event.create('bloodied_dust')
     .displayName('Bloodied Dust');
     event.create('castbrain')

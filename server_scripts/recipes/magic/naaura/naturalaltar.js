@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
         40
     )
     conversion(
-        'gtceu:treated_wood_stick',
+        'gtceu:treated_wood_rod',
         'minecraft:bamboo',
         1,
         5000,
