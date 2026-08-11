@@ -65,6 +65,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 
 //Rocks
     rock('limestone', 'create:limestone')
+    rock('gypsum', 'arts_and_crafts:gypsum')
     rock('moon_stone', 'ad_astra:moon_stone')
     rock('mars_stone', 'ad_astra:mars_stone')
     rock('venus_stone', 'ad_astra:venus_stone')

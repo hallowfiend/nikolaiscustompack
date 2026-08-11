@@ -61,7 +61,13 @@ ServerEvents.recipes(event => {
             '4x minecraft:gunpowder',
             '4x #scguns:stan_bullet_tips'
         ],
-        output: '4x scguns:microjet'}
+        output: '4x scguns:microjet'},
+        {ingredients: [
+            '4x scguns:shulker_casing',
+            '4x scguns:gunpowder_dust',
+            '4x #scguns:advanced_bullet_tips'
+        ],
+        output: '4x scguns:shulkshot'}
     ]
     basicBullets.forEach(pew => {
         event.recipes.immersiveengineering.blueprint(
@@ -121,18 +127,42 @@ ServerEvents.recipes(event => {
         ],
         output: '4x scguns:energy_cell'},
         {ingredients: [
+            '4x scguns:empty_cell',
+            '4x scguns:peal_dust',
+            '4x #scguns:stan_bullet_tips'
+        ],
+        output: '4x scguns:sculk_cell'},
+        {ingredients: [
             '4x scguns:empty_core',
             '4x minecraft:redstone_block',
             '4x scguns:charged_amethyst_shard'
         ],
-        output: '4x scguns:energy_core'}
+        output: '4x scguns:energy_core'},
+        {ingredients: [
+            '4x scguns:large_iron_casing',
+            '4x scguns:nitro_powder_dust',
+            '4x #forge:nuggets/netherstar'
+        ],
+        output: '4x scguns:osborne_slug'},
+        {ingredients: [
+            '4x scguns:small_iron_casing',
+            '4x scguns:peal_dust',
+            '4x #scguns:advanced_bullet_tips'
+        ],
+        output: '4x scguns:ramrod_round'},
+        {ingredients: [
+            '4x scguns:large_iron_casing',
+            '4x scguns:sheol',
+            '4x #scguns:advanced_bullet_tips'
+        ],
+        output: '4x scguns:rocket'}
     ]
     advancedBullets.forEach(pow => {
         event.recipes.immersiveengineering.blueprint(
             pow.output,
             pow.ingredients,
             'specialBullet'
-        ).id(`kubejs:immersive_engineering/workbench${pow.output.split(":")[1]}`)
+        ).id(`kubejs:immersive_engineering/workbench/${pow.output.split(":")[1]}`)
     })
     //mechanical components
     event.remove({ id: 'immersiveengineering:crafting/component_iron' })
@@ -144,7 +174,7 @@ ServerEvents.recipes(event => {
         [
             '2x #forge:plates/iron',
             '#forge:rods/copper',
-            '#forge:screws/sterling_silver',
+            '4x #forge:screws/sterling_silver',
             'gtceu:brass_gear'
         ],
         'components'
@@ -154,7 +184,7 @@ ServerEvents.recipes(event => {
         [
             '2x #forge:plates/steel',
             '#forge:rods/bronze',
-            '#forge:screws/electrum',
+            '4x #forge:screws/electrum',
             'gtceu:invar_gear'
         ],
         'components'
@@ -164,7 +194,7 @@ ServerEvents.recipes(event => {
         [
             '4x #forge:plates/compressed_iron',
             '2x #forge:plates/duralumin',
-            '#forge:screws/potin',
+            '4x #forge:screws/potin',
             '4x malum:aerial_spirit',
             'deep_aether:skyjade',
         ],

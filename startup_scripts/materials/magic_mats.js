@@ -23,6 +23,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .addOreByproducts('zinc', 'copper', 'gold')
         .color(0xfcf49a)
         .secondaryColor(0x777777)
+        .washedIn('aqua_regia')
         .components('gold', '4x solid_terrae', 'ember', 'deepslate')
         .iconSet(SHINY)
         .flags(no_decomp);
@@ -41,7 +42,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .color(0xb8dd86)
             .secondaryColor(0x698d8e)
             .components('4x experience', 'deepslate', 'solid_terrae', 'aura', 'ether')
-            .addOreByproducts('emerald', 'lapis', 'experience')
+            .addOreByproducts('emerald', 'lapis', 'experience', 'amethyst')
+            .washedIn('mercury')
             .flags(no_decomp)
             .iconSet(GLASS);
     

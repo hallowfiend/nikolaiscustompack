@@ -11,18 +11,16 @@ ServerEvents.recipes(event => {
             {
                 "tag": "forge:dusts/iron"
             }
-        ],
+            ],
         "energy": 51200,
         "input": {
-            "base_ingredient": {
-                "item": "malum:earthen_spirited_glass"
-            },
+            "item": "malum:earthen_spirited_glass",
             "count": 2
-        },
+            },
         "results": [
-        {
+            {
             "count": 2,
-            "id": "immersiveengineering:insulating_glass"
+            "item": "immersiveengineering:insulating_glass"
             }
         ],
         "time": 100

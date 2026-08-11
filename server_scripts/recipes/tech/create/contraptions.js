@@ -12,4 +12,9 @@ ServerEvents.recipes((event) => {
         ]
     )
     //irons' fluids
+    //chalk compacting
+    event.recipes.create.compacting(
+        ['2x arts_and_crafts:white_chalk'],
+        ['2x gtceu:gypsum_dust', '2x gtceu:calcite_dust']
+    )
 })

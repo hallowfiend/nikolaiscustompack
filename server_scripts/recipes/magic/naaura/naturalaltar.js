@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
                 "item": input
             },
             "output": {
-                "id": output,
+                "item": output,
                 "count": count
             },
             "aura": aura,
