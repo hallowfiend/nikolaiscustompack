@@ -18,7 +18,6 @@ StartupEvents.registry('block', (event) => {
         .fullBlock(true)
         .soundType(SoundType.SLIME_BLOCK)
         .requiresTool(false)
-        .tagBlock('mineable/shovel')
         .tagBoth('tconstruct:congealed_slime')
         .textureAll('kubejs:block/blood_congealed_slime');
 })

@@ -23,6 +23,51 @@ ServerEvents.recipes((event) => {
 		  { item: 'quark:frog_leg', count: 2 }
 		]
 	  })
+    //Monster food
+    event.custom({
+    type: 'farmersdelight:cutting',
+    ingredients: [
+      { item: 'scguns:weird_flesh' }
+    ],
+    tool: { tag: 'forge:tools/knives' },
+    result: [
+      { item: 'minecraft:rotten_flesh', count: 1 },
+      { item: 'gtceu:sulfur_dust', count: 1, chance: 0.5},
+      { item: 'dungeonsdelight:gritty_flesh', count: 1, chance: 0.2}
+    ]
+    })
+    event.custom({
+    type: 'farmersdelight:cutting',
+    ingredients: [
+      { item: 'minecraft:dried_ghast' }
+    ],
+    tool: { tag: 'forge:tools/knives' },
+    result: [
+      { item: 'mynethersdelight:ghasta', count: 4 },
+      { item: 'dungeonsdelight:ghast_tentacle', count: 2 }
+    ]
+    })
+    event.custom({
+    type: 'farmersdelight:cutting',
+    ingredients: [
+      { item: 'dungeonsdelight:ghast_calamari' }
+    ],
+    tool: { tag: 'forge:tools/knives' },
+    result: [
+      { item: 'mynethersdelight:ghasta', count: 2 }
+    ]
+    })
+    event.custom({
+    type: 'farmersdelight:cutting',
+    ingredients: [
+      { item: 'dungeonsdelight:spider_meat' }
+    ],
+    tool: { tag: 'forge:tools/knives' },
+    result: [
+      { item: 'miners_delight:arthropod', count: 2 },
+      { item: 'biomancy:toxin_gland', count: 1, chance: 0.2}
+    ]
+    })
     //Mob heads
     event.custom({
     type: 'farmersdelight:cutting',
@@ -104,34 +149,11 @@ ServerEvents.recipes((event) => {
     event.custom({
     type: 'farmersdelight:cutting',
     ingredients: [
-      { item: 'minecraft:dried_ghast' }
-    ],
-    tool: { tag: 'forge:tools/knives' },
-    result: [
-      { item: 'mynethersdelight:ghasta', count: 4 },
-      { item: 'dungeonsdelight:ghast_tentacle', count: 2 }
-    ]
-    })
-    event.custom({
-    type: 'farmersdelight:cutting',
-    ingredients: [
       { item: 'alexsmobs:blood_sac' }
     ],
     tool: { tag: 'forge:tools/knives' },
     result: [
       { item: 'undergarden:blood_globule', count: 1 }
-    ]
-    })
-    event.custom({
-    type: 'farmersdelight:cutting',
-    ingredients: [
-      { item: 'scguns:weird_flesh' }
-    ],
-    tool: { tag: 'forge:tools/knives' },
-    result: [
-      { item: 'minecraft:rotten_flesh', count: 1 },
-      { item: 'gtceu:sulfur_dust', count: 1, chance: 0.5},
-      { item: 'dungeonsdelight:gritty_flesh', count: 1, chance: 0.2}
     ]
     })
     event.custom({

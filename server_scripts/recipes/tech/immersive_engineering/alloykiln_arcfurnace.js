@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: "immersiveeengineering:insulating_glass"})
     event.remove({ id: "immersiveengineering:alloy_smelter/rose_gold"})
     //insulating glass
-    event.recipes.immersiveengineering.alloy(Item.of('immersiveengineering:insulating_glass', 2), '2x malum:earthen_spirited_glass', '#forge:dusts/iron')
+    event.recipes.immersiveengineeringAlloy(Item.of('immersiveengineering:insulating_glass', 2), '2x malum:earthen_spirited_glass', '#forge:dusts/iron')
     .id('kubejs:immersive_engineering/alloy_kiln/insulating_glass');
     event.custom({
         "type": "immersiveengineering:arc_furnace",
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
     }).id('kubejs:immersive_engineering/arc_furnace/insulating_glass');
     // Basic Alloy Kiln alloys
     function alloyKiln(input1, input2, output){
-        event.recipes.immersiveengineering.alloy(output, input1, input2)
+        event.recipes.immersiveengineeringAlloy(output, input1, input2)
         .id(`kubejs/immersive_engineering/alloy_kiln/${output.split(":")[1]}`);
     }
     alloyKiln('#forge:ingots/bronze', 'minecraft:amethyst_shard', 'tconstruct:amethyst_bronze_ingot')

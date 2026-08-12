@@ -173,11 +173,33 @@ ServerEvents.recipes(event => {
         'cloggrum',
         'froststeel',
         'drenched_iron',
-        'potin'
+        'potin',
+        'cupronickel',
+        'anthralite'
     ]
     rodsToRoll.forEach(rod => {
         event.recipes.immersiveengineering.metal_press(`2x gtceu:${rod}_rod`, `#forge:ingots/${rod}`, rodMold)
         .id(`kubejs:immersive_engineering/metal_press/${rod}_rod`);
+        event.recipes.immersiveengineering.metal_press(`gtceu:long_${rod}_rod`, `#forge:double_plates/${rod}`, rodMold)
+        .id(`kubejs:immersive_engineering/metal_press/${rod}_long_rod`);
+    })
+    const rodsToElongate = [
+        'rose_gold',
+        'electrum',
+        'lead',
+        'invar',
+        'brass',
+        'copper',
+        'platinum',
+        'aluminium',
+        'bronze',
+        'silver',
+        'iron',
+        'tin',
+        'gold',
+        'steel'
+    ]
+    rodsToElongate.forEach(rod => {
         event.recipes.immersiveengineering.metal_press(`gtceu:long_${rod}_rod`, `#forge:double_plates/${rod}`, rodMold)
         .id(`kubejs:immersive_engineering/metal_press/${rod}_long_rod`);
     })

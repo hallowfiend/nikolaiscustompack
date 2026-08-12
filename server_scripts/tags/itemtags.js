@@ -26,6 +26,9 @@ ServerEvents.tags("item", (event) => {
     'cataclysm:chitin_claw',
     'crabbersdelight:crab_claw'
   ])
+  event.add('collectorsreap:gummies', [
+    /cosmopolitan:.*_gummy/
+  ])
   event.add('forge:tools/hammers', [
     'evilcraft:mace_of_destruction',
     'evilcraft:mace_of_distortion'

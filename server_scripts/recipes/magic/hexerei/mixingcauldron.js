@@ -441,7 +441,7 @@ const recipes = [
     inputItem:[
         {"item":"hexalia:ghost_powder"},
         {"item":"hexalia:chillberries"},
-        {"tag": "c:feathers"},
+        {"tag": "forge:feathers"},
         {"item":"minecraft:sculk"},
         {"item":"hexalia:rustic_bottle"}
     ],

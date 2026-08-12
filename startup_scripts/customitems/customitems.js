@@ -82,6 +82,21 @@ StartupEvents.registry('item', event => {
     event.create('nutrient_sacs')
     .displayName('Nutrient Sacs');
     // crafting components
+    const tokenNames = [
+        'change',
+        'flux',
+        'cycles',
+        'recurrence',
+        'defiance',
+        'determination',
+        'stillness',
+        'stasis'
+    ]
+    tokenNames.forEach(token => {
+        var tokenLang = capitalizeFirstLetter(token)
+        event.create(`token_${token}`)
+        .displayName(`Token of ${tokenLang}`)
+    })
     event.create('nature_offering')
     .displayName('Offering to Nature');
     event.create('prepared_stone')
@@ -92,7 +107,8 @@ StartupEvents.registry('item', event => {
     .displayName('Hematic Hardruby');
     event.create('blood_slime_ball')
     .displayName('Coagulated Blood Ball')
-    .tag('forge:slimeball/blood');
+    .tag('forge:slimeball/blood')
+    .tag('forge:slimeballs');
     event.create('bloodied_dust')
     .displayName('Bloodied Dust');
     event.create('castbrain')

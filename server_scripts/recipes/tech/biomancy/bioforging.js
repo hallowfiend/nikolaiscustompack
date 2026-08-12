@@ -104,6 +104,19 @@ bioForging(
     o: 'kubejs:slimy_eye',
     e: 'gtceu:electrotine_block'
   }).id('kubejs:shaped/bio_forge')
+  bioForging(
+    MACHINES,
+    [
+      {item: 'biomancy:living_flesh'},
+      {count: 4, item: 'biomancy:flesh_bits'},
+      {count: 2, tag: 'kubejs:crafting_claws'},
+      {count: 8, item: 'gtceu:electrotine_dust'},
+      {count: 4, item: 'minecraft:slime_ball'}
+    ],
+    8,
+    {item: 'biomancy:bio_forge'},
+    'bio_forge'
+  )
   event.shaped('biomancy:decomposer', [
     'c c',
     'fof',
@@ -115,21 +128,48 @@ bioForging(
     o: 'kubejs:slimy_eye',
     e: 'gtceu:electrotine_block'
   }).id('kubejs:shaped/decomposer')
-  /*
-    forging(
-        1,
-        [
-            "biomancy:living_flesh",
-            'biomancy:malignant_flesh',
-            "biomancy:bone_fragments",
-            "gtceu:electrotine_dust",
-            "biomancy:elastic_fibers",
-        ],
-        [1, 2, 5, 8, 4],
-        "biomancy:decomposer",
-        1
-    );
+  bioForging(
+    MACHINES,
+    [
+      {item: 'biomancy:living_flesh'},
+      {count: 4, item: 'biomancy:flesh_bits'},
+      {count: 8, item: 'gtceu:electrotine_dust'},
+      {count: 2, item: 'biomancy:mob_gland'},
+      {count: 8, item: 'biomancy:bone_fragments'}
+    ],
+    8,
+    {item: 'biomancy:decomposer'},
+    'decomposer'
+  )
+  //Fertilizer
+  event.remove({output: 'biomancy:fertilizer'})
+  bioForging(
+    MISC,
+    [
+      {count: 4, item: 'gtceu:tricalcium_phosphate_dust'},
+      {count: 4, item: 'gtceu:apatite_dust'},
+      {count: 8, item: 'biomancy:organic_matter'},
+      {count: 16, item: 'biomancy:nutrients'}
+    ],
+    8,
+    {item: 'biomancy:fertilizer', count: 8},
+    'bioalchemical_fertilizer'
+  )
+  bioForging(
+    MISC,
+    [
+      {count: 4, item: 'biomancy:lithic_powder'},
+      {count: 8, item: 'embers:ash'},
+      {count: 8, item: 'gtceu:electrotine_dust'},
+      {count: 16, item: 'biomancy:organic_matter'},
+      {count: 16, item: 'biomancy:nutrients'}
+    ],
+    8,
+    {item: 'create:tree_fertilizer', count: 16},
+    'tree_fertilizer'
+  )
 // Alternative recipes for expensive/loot items
+/*
     forging(
         33,
         [

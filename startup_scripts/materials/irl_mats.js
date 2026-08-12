@@ -30,7 +30,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Brass.addFlags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR);
     GTMaterials.CertusQuartz.addFlags(GTMaterialFlags.GENERATE_LENS);
     GTMaterials.Netherite.addFlags(GTMaterialFlags.GENERATE_PLATE);
-    GTMaterials.RedAlloy.addFlags(ring);
+    GTMaterials.RedAlloy.addFlags(ring, long_rod);
     GTMaterials.Electrotine.addFlags(block)
     
     //Metals

@@ -240,6 +240,13 @@ ServerEvents.recipes(event => {
         16000,
         240
     )
+    conversion(
+        'biomancy:fertilizer',
+        'botania:fertilizer',
+        16,
+        8000,
+        160
+    )
     //crushing
     crushing(
         'minecraft:warped_wart_block',

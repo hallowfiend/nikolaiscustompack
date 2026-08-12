@@ -19,6 +19,7 @@ ServerEvents.recipes(event => {
           "time": time //int
         }).id(`kubejs:natures_aura/tree_ritual/${output.split(":")[1]}`)
     }
+    //Organic Stuff(tm)
     //Slimy Eye
     treeRitual(
       [
@@ -33,22 +34,6 @@ ServerEvents.recipes(event => {
       'atmospheric:yucca_sapling',
       50
     )
-    //Ancient Sapling
-    treeRitual(
-      [
-        {"item": 'twilightforest:liveroot'},
-        {'item': 'hexerei:mugwort_leaves'},
-        {'item': 'hexalia:ancient_seed'},
-        {'item': 'caverns_and_chasms:spinel'},
-        {'item': 'naturesaura:gold_leaf'},
-        {'item': 'occultism:datura'},
-        {'item': 'hexalia:begonia'},
-        {'item': 'ars_nouveau:sourceberry_bush'}
-      ],
-      'naturesaura:ancient_sapling', 2,
-      'quark:red_blossom_sapling',
-      20
-    );
     //Rotbulb
     treeRitual(
       [
@@ -62,6 +47,35 @@ ServerEvents.recipes(event => {
       'dungeonsdelight:rotbulb', 4,
       'goety:rotten_sapling',
       120
+    )
+    //NATURE'S AURA
+    //Ancient Sapling
+    treeRitual(
+      [
+        {"item": 'twilightforest:liveroot'},
+        {'item': 'hexerei:mugwort_leaves'},
+        {'tag': 'kubejs:ancient_seeds'},
+        {'item': 'caverns_and_chasms:spinel'},
+        {'item': 'naturesaura:gold_leaf'},
+        {'item': 'occultism:datura'},
+        {'item': 'hexalia:begonia'},
+        {'item': 'ars_nouveau:sourceberry_bush'}
+      ],
+      'naturesaura:ancient_sapling', 2,
+      'quark:red_blossom_sapling',
+      20
+    );
+    //Natural Altar
+    treeRitual(
+      [
+        {'item': 'embers:caminite_large_tile'},
+        {'item': 'eidolon:avennian_sprig'},
+        {'item': 'embers:caminite_large_tile'},
+        {'item': 'minecraft:moss_block'},
+        {'item': 'hexalia:mutavis'},
+        {'item': 'cosmopolitan:fiddlehead_crate'},
+        {'item': 'naturesaura:token_joy'}
+      ]
     )
     //TOKENS
     //Joy
@@ -118,6 +132,62 @@ ServerEvents.recipes(event => {
       ],
       'naturesaura:token_anger', 2,
       'quark:red_blossom_sapling',
+      50
+    )
+    //Change
+    treeRitual(
+      [
+        {'item': 'hexerei:tallow_bottle'},
+        {'item': 'naturesaura:gold_leaf'},
+        {'item': 'hexerei:mugwort_flowers'},
+        {'item': 'malum:alchemical_calx'},
+        {'item': 'cosmopolitan:spinalberry'},
+        {'item': 'sons_of_sins:crystallized_ether'}
+      ],
+      'kubejs:token_change', 2,
+      'malum:soulwood_growth',
+      50
+    )
+    //Stillness
+    treeRitual(
+      [
+        {'item': 'hexerei:tallow_bottle'},
+        {'item': 'naturesaura:gold_leaf'},
+        {'item': 'malum:tin_node'},
+        {'item': 'mna:infused_silk'},
+        {'item': 'undergardendelight:shimmerpearl'},
+        {'item': 'mynethersdelight:tear_popsicle'}
+      ],
+      'kubejs:token_stillness', 2,
+      'eternal_starlight:northland_sapling',
+      50
+    )
+    //Defiance
+    treeRitual(
+      [
+        {'item': 'hexerei:blood_bottle'},
+        {'item': 'naturesaura:gold_leaf'},
+        {'item': 'galosphere:palladium_bomb'},
+        {'item': 'twilightdelight:glacier_ice_cream'},
+        {'item': 'goety:henbane_flower'},
+        {'item': 'gtceu:kyanite_dust'}
+      ],
+      'kubejs:token_defiance', 2,
+      'integrateddynamics:menril_sapling',
+      50
+    )
+    //Cycles
+    treeRitual(
+      [
+        {'item': 'hexerei:blood_bottle'},
+        {'item': 'naturesaura:gold_leaf'},
+        {'item': 'supplementaries:clock_block'},
+        {'item': 'malum:rotting_essence'},
+        {'item': 'minecraft:phantom_membrane'},
+        {'item': 'botania:fertilizer'}
+      ],
+      'kubejs:token_cycles', 2,
+      'windswept:flowering_acacia_sapling',
       50
     )
   //other crafts/gates
