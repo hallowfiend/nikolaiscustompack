@@ -247,6 +247,13 @@ ServerEvents.recipes(event => {
         8000,
         160
     )
+    conversion(
+        'minecraft:warped_fungus',
+        'netherexp:warped_wart',
+        1,
+        30000,
+        250
+    )
     //crushing
     crushing(
         'minecraft:warped_wart_block',

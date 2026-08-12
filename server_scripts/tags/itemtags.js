@@ -29,6 +29,15 @@ ServerEvents.tags("item", (event) => {
   event.add('collectorsreap:gummies', [
     /cosmopolitan:.*_gummy/
   ])
+  event.add('kubejs:ancient_seeds', [
+    'minecraft:torchflower_seeds',
+    'minecraft:pitcher_pod',
+    'collectorsreap:damselflower_seeds',
+    'collectorsreap:moontear_seeds',
+    'collectorsreap:skull_lily_seeds',
+    'collectorsreap:bulbous_rose_seeds',
+    'collectorsreap:heartpetals_seeds'
+  ])
   event.add('forge:tools/hammers', [
     'evilcraft:mace_of_destruction',
     'evilcraft:mace_of_distortion'

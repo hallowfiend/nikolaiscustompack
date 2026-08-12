@@ -1,5 +1,8 @@
 ServerEvents.recipes(event => {
     event.remove({ id: 'naturesaura:tree_ritual/ancient_sapling' })
+    event.remove({ id: 'naturesaura:tree_ritual/altar'})
+    event.remove({ id: 'naturesaura:tree_ritual/conversion_catalyst'})
+    event.remove({ id: 'naturesaura:tree_ritual/crushing_catalyst'})
     event.remove({ id: 'naturesaura:tree_ritual/token_joy' })
     event.remove({ id: 'naturesaura:tree_ritual/token_fear' })
     event.remove({ id: 'naturesaura:tree_ritual/token_anger' })
@@ -19,21 +22,7 @@ ServerEvents.recipes(event => {
           "time": time //int
         }).id(`kubejs:natures_aura/tree_ritual/${output.split(":")[1]}`)
     }
-    //Organic Stuff(tm)
-    //Slimy Eye
-    treeRitual(
-      [
-        {'item': 'vampiresdelight:human_eye'},
-        {'item': 'biomancy:mob_gland'},
-        {'item': 'minecraft:fermented_spider_eye'},
-        {'item': 'tconstruct:earth_congealed_slime'},
-        {'item': 'biomancy:mob_gland'},
-        {'item': 'goety:quick_growing_seed'}
-      ],
-      'kubejs:slimy_eye', 2,
-      'atmospheric:yucca_sapling',
-      50
-    )
+    //PLONTS
     //Rotbulb
     treeRitual(
       [
@@ -48,7 +37,6 @@ ServerEvents.recipes(event => {
       'goety:rotten_sapling',
       120
     )
-    //NATURE'S AURA
     //Ancient Sapling
     treeRitual(
       [
@@ -65,17 +53,54 @@ ServerEvents.recipes(event => {
       'quark:red_blossom_sapling',
       20
     );
+    //BLOCKS/MACHINES
     //Natural Altar
     treeRitual(
       [
         {'item': 'embers:caminite_large_tile'},
         {'item': 'eidolon:avennian_sprig'},
         {'item': 'embers:caminite_large_tile'},
-        {'item': 'minecraft:moss_block'},
+        {'item': 'kubejs:token_change'},
+        {'item': 'twilightforest:naga_scale'},
         {'item': 'hexalia:mutavis'},
         {'item': 'cosmopolitan:fiddlehead_crate'},
         {'item': 'naturesaura:token_joy'}
-      ]
+      ],
+      'naturesaura:nature_altar', 1,
+      'minecraft:oak_sapling',
+      500
+    )
+    //Transmutation Catalyst
+    treeRitual(
+      [
+        {'item': 'kubejs:token_change'},
+        {'item': 'embers:ashen_brick'},
+        {'item': 'botania:manasteel_ingot'},
+        {'item': 'naturesaura:gold_leaf'},
+        {'item': 'eidolon:warped_sprouts'},
+        {'item': 'naturesaura:infused_stone'},
+        {'item': 'minecraft:brewing_stand'},
+        {'item': 'magichem:admixture_change'}
+      ],
+      'naturesaura:conversion_catalyst', 1,
+      'hexalia:cottonwood_sapling',
+      500
+    )
+    //Crumbling Catalyst
+    treeRitual(
+      [
+        {'item': 'naturesaura:token_anger'},
+        {'item': 'botania:livingrock_bricks'},
+        {'item': 'embers:dawnstone_plate'},
+        {'item': 'naturesaura:gold_leaf'},
+        {'item': 'eidolon:warped_sprouts'},
+        {'item': 'naturesaura:infused_stone'},
+        {'item': 'create:millstone'},
+        {'item': 'magichem:admixture_erosion'}
+      ],
+      'naturesaura:crushing_catalyst', 1,
+      'hexalia:cottonwood_sapling',
+      500
     )
     //TOKENS
     //Joy
@@ -190,7 +215,41 @@ ServerEvents.recipes(event => {
       'windswept:flowering_acacia_sapling',
       50
     )
+    const tokens = [
+      {i: 'change', o: 'flux'},
+      {i: 'stillness', o: 'stasis'},
+      {i: 'defiance', o: 'determination'},
+      {i: 'cycles', o: 'recurrence'}
+    ]
+    tokens.forEach(token => {
+      event.custom({
+    "type": "naturesaura:offering",
+    "input": {
+        "item": `kubejs:token_${token.i}`
+    },
+    "start_item": {
+        "item": "naturesaura:calling_spirit"
+    },
+    "output": {
+        "id": `kubejs:token_${token.o}`
+    }
+    })
+    })
   //other crafts/gates
+  //Slimy Eye
+    treeRitual(
+      [
+        {'item': 'vampiresdelight:human_eye'},
+        {'item': 'biomancy:mob_gland'},
+        {'item': 'minecraft:fermented_spider_eye'},
+        {'item': 'tconstruct:earth_congealed_slime'},
+        {'item': 'biomancy:mob_gland'},
+        {'item': 'goety:quick_growing_seed'}
+      ],
+      'kubejs:slimy_eye', 2,
+      'atmospheric:yucca_sapling',
+      50
+    )
   //Entangled Block
   event.remove({ id: "entangled:block" })
   treeRitual(

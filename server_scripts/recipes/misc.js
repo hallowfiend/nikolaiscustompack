@@ -78,11 +78,14 @@ event.replaceOutput(
     C: 'minecraft:netherrack',
     })
 
-    event.remove({ output: 'minecraft:dried_ghast' })
+    //a few yeets
 
+    event.remove({ output: 'minecraft:dried_ghast' })
     event.remove({ output: 'ars_nouveau:ritual_animal_summon' })
     event.remove({ output: 'ars_nouveau:ritual_wilden_summon' })
 
+
+    //netherexp 
     event.shaped(
     Item.of('netherexp:enigma_flesh', 8),
     [
@@ -95,6 +98,12 @@ event.replaceOutput(
       B: 'netherexp:warped_wart'
     }
     )
+
+    let bolok = (input,output,count)=>{
+        event.custom({type:'unusualend:bolok_trading',ingredients:[{item:input}],output:{item:output,count:count}})
+    }
+    bolok('minecraft:warped_fungus','netherexp:warped_wart',1)
+    bolok('minecraft:nether_wart','netherexp:warped_wart',1)
 
     // Restore FD's rope recipe but output supplementaries:rope.
     // Original: 2 straw in a column -> 4 rope
