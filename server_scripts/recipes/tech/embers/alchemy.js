@@ -20,68 +20,6 @@ const duralumin = {"tag": "embers:aspectus/duralumin"}
 ServerEvents.recipes(event => {
     event.remove({ output: "bloodmagic:lavacrystal" })
     event.remove({ output: "naturesaura:depth_ingot" })
-
-    //Custom aspecti
-    //Base metals: Tin, Zinc, Aluminium, Gold
-    //Alloys: Rose Gold, Sterling Silver, Electrum, Constantan, Invar, Pewter, Bronze, Brass, Duralumin
-    //missing mixing recipes first
-    function mixing(firstMetal, firstRatio, secondMetal, secondRatio, outputAlloy, alloyAmount){
-        event.custom({
-            "type": "embers:mixing",
-            "inputs": [
-                {
-                "amount": firstRatio,
-                "tag": `forge:${firstMetal}`
-            },
-            {
-            "amount": secondRatio,
-                "tag": `forge:${secondMetal}`
-            }
-        ],
-        "output": {
-            "amount": alloyAmount,
-            "tag": `forge:${outputAlloy}`
-        }
-        }).id(`kubejs:embers/mixing/${outputAlloy}`)
-    }
-    mixing("gold", 16, "copper", 4, "rose_gold", 20)
-    mixing("silver", 16, "copper", 4, "sterling_silver", 20)
-    mixing("lead", 2, "iron", 2, "pewter", 4)
-    mixing("copper", 2, "aluminium", 6, "duralumin", 8)
-    //the aspecti proper
-    const customAspectiMetals = [
-        'tin',
-        'zinc',
-        'aluminium',
-        'gold',
-        'rose_gold',
-        'sterling_silver',
-        'electrum',
-        'constantan',
-        'invar',
-        'pewter',
-        'bronze',
-        'brass',
-        'duralumin'
-    ]
-    customAspectiMetals.forEach(metal =>{
-        event.custom({
-            "type": "embers:stamping",
-            "fluid": {
-                "amount": 144,
-                "tag": `forge:${metal}`
-            },
-            "input": {
-                "item": "embers:ember_shard"
-            },
-            "output": {
-                "item": `kubejs:aspectus_${metal}`
-            },
-            "stamp": {
-                "item": "embers:ingot_stamp"
-        }
-        }).id(`kubejs:embers/stamping/aspectus_${metal}`)
-    })
     //Apotheosis material upgrading
     const apothicMaterials = [
         { material: "apotheosis:common_material", nextMaterial: "apotheosis:uncommon_material"},

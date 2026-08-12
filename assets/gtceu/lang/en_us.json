@@ -253,6 +253,9 @@
     "material.gtceu.tainted_gold": "Tainted Gold",
     "material.gtceu.sky_ingot": "Heavenly Metal",
 
+    "material.gtceu.dormant_livingbronze": "Livingbronze",
+    "material.gtceu.livingbronze": "Awakened Livingbronze",
+
     "material.gtceu.solid_profanum": "Malicious Profanum",
     "material.gtceu.solid_sacrum": "Innocent Sacrum",
     "material.gtceu.solid_arkanum": "Fundamental Arkanum",

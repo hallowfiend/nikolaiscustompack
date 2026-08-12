@@ -55,4 +55,9 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.pure_daisy("botania:livingwood_log", "#twilightforest:logs")
         .id('kubejs:botania/pure_daisy/livingwood_from_tf_logs')
 
+    //Livingbronze
+
+    event.recipes.botania.pure_daisy('gtceu:livingbronze_block', 'gtceu:dormant_livingbronze_block')
+        .id(`kubejs:botania/pure_daisy/livingbronze_awakening`)
+
 })

@@ -57,19 +57,20 @@ ServerEvents.recipes(event => {
     //Natural Altar
     treeRitual(
       [
+        {'item': 'kubejs:token_change'},
         {'item': 'embers:caminite_large_tile'},
         {'item': 'eidolon:avennian_sprig'},
         {'item': 'embers:caminite_large_tile'},
-        {'item': 'kubejs:token_change'},
+        {'item': 'naturesaura:token_joy'},
         {'item': 'twilightforest:naga_scale'},
         {'item': 'hexalia:mutavis'},
-        {'item': 'cosmopolitan:fiddlehead_crate'},
-        {'item': 'naturesaura:token_joy'}
+        {'item': 'cosmopolitan:fiddlehead_crate'}
       ],
       'naturesaura:nature_altar', 1,
       'minecraft:oak_sapling',
       500
     )
+    //Offering Table
     //Transmutation Catalyst
     treeRitual(
       [
@@ -231,7 +232,7 @@ ServerEvents.recipes(event => {
         "item": "naturesaura:calling_spirit"
     },
     "output": {
-        "id": `kubejs:token_${token.o}`
+        "item": `kubejs:token_${token.o}`
     }
     })
     })

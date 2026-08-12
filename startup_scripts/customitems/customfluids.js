@@ -29,28 +29,33 @@ StartupEvents.registry('fluid', event => {
 
     event.create('forgotten_imbibation')
     .displayName('Forgotten Imbibation')
-    .thinTexture(0xc2c2c2)
+    .thinTexture(0xc2c2c2);
 
     event.create('red_rock_blaster')
     .displayName('Red Rock Blaster')
-    .thinTexture(0x7a0e00)
+    .thinTexture(0x7a0e00);
 
     event.create('skull_crusher_ale')
     .displayName('Skullcrusher Ale')
-    .thinTexture(0xFE0026)
+    .thinTexture(0xFE0026);
 
     event.create('slayer_stout')
     .displayName('Slayer Stout')
-    .thinTexture(0x3E1508)
+    .thinTexture(0x3E1508);
 
     event.create('soulchill_absinthe')
     .displayName('Soulchill Absinthe')
     .thinTexture(0x9cf8ff)
-    .luminosity(12)
+    .luminosity(12);
     
     event.create('pyrogenic_cognac')
     .displayName('Pyrogenic Cognac')
     .thinTexture(0xff9100)
-    .luminosity(12)
+    .luminosity(12);
+
+    //components n stuff
+    event.create('hemauric_nutrients')
+    .displayName('Hemauric Nutrient Slurry')
+    .thickTexture(0xb33914);
 
 })

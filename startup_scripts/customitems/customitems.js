@@ -97,6 +97,16 @@ StartupEvents.registry('item', event => {
         event.create(`token_${token}`)
         .displayName(`Token of ${tokenLang}`)
     })
+    event.create('blood_soaked_nutrient_bar')
+    .displayName('Bloodsoaked Nutrient Bar')
+    .food(food => {
+        food
+        .hunger(11)
+        .saturation(3)
+        .effect('dungeonsdelight:tenacity', 2000, 1, 1)
+    }).useAnimation('eat');
+    event.create('hemauric_nutrient_pellets')
+    .displayName('Hemauric Nutrient Pellets');
     event.create('nature_offering')
     .displayName('Offering to Nature');
     event.create('prepared_stone')

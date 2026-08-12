@@ -208,4 +208,24 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(GTMaterialFlags.GENERATE_PLATE,
         );
+
+    //misc shit ig
+
+    event.create('dormant_livingbronze')
+        .ingot()
+        .liquid()
+        .color(0x6c7367)
+        .iconSet(ROUGH)
+        .flags(no_decomp);
+    
+    event.create('livingbronze')
+        .ingot()
+        .color(0x89a36a)
+        .components('bronze', 'ember', '8x aura', '8x vitae', '8x methane', '8x ammonia', '8x phosphorus', '8x carbon_dioxide')
+        .secondaryColor(0xa3956a)
+        .iconSet(METALLIC)
+        .flags(
+            no_decomp,
+            plates
+        );
 })

@@ -76,4 +76,11 @@ ServerEvents.recipes(event => {
         200,
         1
     )
+    bloodInfuser(
+        40000,
+        'biomancy:nutrient_bar',
+        'kubejs:blood_soaked_nutrient_bar',
+        400,
+        1
+    )
 })

@@ -70,7 +70,6 @@ ServerEvents.recipes(event => {
     ]
     gummies.forEach(gummy => {
         event.recipes.farmersdelight.cooking(
-            "meals",
             [gummy.ingredient, '2x minecraft:sugar', 'biomancy:gelling_agent'],
             `2x ${gummy.flavor}_gummy`,
             0.5,

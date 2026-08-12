@@ -11,7 +11,6 @@ const petalApothecary = [
         {stoneType:{"item": "minecraft:mossy_cobblestone" }, apothecary: "mossy"},
         {stoneType:{"item": "minecraft:cobbled_deepslate" }, apothecary: "deepslate"},
         {stoneType:{"item": "botania:livingrock" }, apothecary: "livingrock"},
-
     ]
 
 ServerEvents.recipes((event) => {
@@ -166,7 +165,7 @@ ServerEvents.recipes((event) => {
             "t  "
         ],
         "reagents": [
-            "nnnn"
+            "annn"
         ],
         "key" : {
             "r": {
@@ -183,6 +182,9 @@ ServerEvents.recipes((event) => {
             },
             "n":{
                 "item": "gtceu:netherite_plate"
+            },
+            "a": {
+                "item": "naturesaura:token_rage"
             }
         },
         "result" : {
@@ -307,7 +309,7 @@ ServerEvents.recipes((event) => {
             "ptp"
         ],
         "reagents": [
-            "rrrr"
+            "rrra"
         ],
         "key" : {
             "s": {
@@ -327,6 +329,9 @@ ServerEvents.recipes((event) => {
             },
             "r": {
                 "item": "kubejs:bloodchannel_gem"
+            },
+            "a": {
+                "item": "naturesaura:token_anger"
             }
         },
         "result" : {
@@ -340,7 +345,7 @@ ServerEvents.recipes((event) => {
         "pattern": [
             "v a",
             "rrr",
-            "bbb"
+            "bfb"
         ],
         "reagents": [
             "ctit"
@@ -357,6 +362,9 @@ ServerEvents.recipes((event) => {
             },
             "b" : {
                 "item" : "embers:ashen_stone"
+            },
+            "b": {
+                "item": "kubejs:token_flux"
             },
             "c" : {
                 "item" : "gtceu:calcite_dust"
@@ -377,7 +385,7 @@ ServerEvents.recipes((event) => {
     event.custom({
         "type": "eidolon:worktable",
         "pattern": [
-            "ooo",
+            "odo",
             "sis",
             "srs"
         ],
@@ -387,6 +395,9 @@ ServerEvents.recipes((event) => {
         "key" : {
             "o": {
                 "item" : "gtceu:opal_gem"
+            },
+            "d": {
+                "item": "kubejs:token_determination"
             },
             "s": {
                 "item": "goety:shade_stone"
@@ -673,7 +684,7 @@ ServerEvents.recipes((event) => {
                 "item": "malum:tainted_rock_tablet"
             },
             "s": {
-                "item": "gtceu:silver_block"
+                "item": "kubejs:token_cycles"
             },
             "i" : {
                 "item" : "eidolon:pewter_inlay"

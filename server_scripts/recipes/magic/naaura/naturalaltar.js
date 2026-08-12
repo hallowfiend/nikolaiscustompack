@@ -262,4 +262,11 @@ ServerEvents.recipes(event => {
         40000,
         400
     )
+    crushing(
+        'kubejs:blood_soaked_nutrient_bar',
+        'kubejs:hemauric_nutrient_pellets',
+        1,
+        8000,
+        200
+    )
 })
