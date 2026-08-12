@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
                     {"item": {"item": "ars_nouveau:air_essence"}},
                     {"item": {"item": "botania:rune_air"}},
                     {"item": {"item": "ars_nouveau:air_essence"}},
-                    {"item": {"item": "botania:rune_fire"}}
+                    {"item": {"item": "botania:rune_air"}}
                 ]
 			  }).id('kubejs:ars_nouveau/imbuement/aerilated_silk')
     //Whiterock

@@ -12,7 +12,22 @@ ServerEvents.recipes((event) => {
     30,
     ["biomancy:elastic_fibers", "biomancy:storage_sac"]
   ) */
-// Organics
+//Cheaper quasianimate flesh
+event.custom({
+    type: "biomancy:bio_forging",
+    bio_forge_tab: COMPONENTS,
+    ingredients: [
+      { count: 16, item: "minecraft:rotten_flesh" },
+      { count: 4, item: "gtceu:silver_dust" },
+      { item: 'minecraft:ghast_tear'}
+    ],
+    nutrientsCost: 24,
+    result: {
+      item: "caverns_and_chasms:living_flesh",
+      count: 16
+    }
+  })
+//Organics
 event.custom({
     type: "biomancy:bio_forging",
     bio_forge_tab: COMPONENTS,

@@ -87,9 +87,7 @@ ServerEvents.recipes(event => {
         { material: "apotheosis:common_material", nextMaterial: "apotheosis:uncommon_material"},
         { material: "apotheosis:uncommon_material", nextMaterial: "apotheosis:rare_material"},
         { material: "apotheosis:rare_material", nextMaterial: "apotheosis:epic_material"},
-        { material: "apotheosis:epic_material", nextMaterial: "apotheosis:mythic_material"},
-        { material: "apotheosis:mythic_material", nextMaterial: "apotheotic_additions:artifact_material"},
-        { material: "apotheotic_additions:artifact_material", nextMaterial: "apotheotic_additions:esoteric_material"}
+        { material: "apotheosis:epic_material", nextMaterial: "apotheosis:mythic_material"}
     ]
     apothicMaterials.forEach(mat => {
         event.custom({
@@ -118,56 +116,39 @@ ServerEvents.recipes(event => {
         }
     }).id(`kubejs:embers/alchemy/${mat.nextMaterial.split(":")[1]}`)
     })
-    event.custom({
+    const apothicMaterialsAboveMythic = [
+        { material: 'apotheosis:mythic_material', nextMaterial: 'apotheosis:ancient_material'},
+        { material: 'apotheosis:ancient_material', nextMaterial: 'apotheotic_additions:artifact_material'},
+        { material: 'apotheotic_additions:artifact_material', nextMaterial: 'apotheotic_additions:heirloom_material'},
+        { material: 'apotheotic_additions:heirloom_material', nextMaterial: 'apotheotic_additions:esoteric_material'}
+    ]
+    apothicMaterialsAboveMythic.forEach(mat => {
+        event.custom({
         "type": "embers:alchemy",
-        "aspects": [brass, lead],
+        "aspects": [dawnstone, constantan, gold],
         "inputs": [
             {
-                "item": "apotheosis:rare_material"
+                "item": mat.material
             },
             {
-                "item": "apotheosis:mythic_material"
+                "item": 'cataclysm:ancient_metal_ingot'
             },
             {
-                "item": "apotheosis:rare_material"
+                "item": mat.material
             },
             {
-                "item": "apotheosis:mythic_material"
+                "item": 'cataclysm:ancient_metal_ingot'
             }
         ],
         "output": {
             "count": 1,
-            "item": "apotheotic_additions:heirloom_material"
-        },
-        "tablet": {
-            "item": "scguns:treated_brass_ingot" //If it took more than one shot...
-        }
-    }).id(`kubejs:embers/alchemy/heirloom_material`)
-    event.custom({
-        "type": "embers:alchemy",
-        "aspects": [duralumin, silver, constantan, electrum],
-        "inputs": [
-            {
-                "item": "cataclysm:ancient_metal_ingot"
-            },
-            {
-                "item": "apotheosis:mythic_material"
-            },
-            {
-                "item": "cataclysm:ancient_metal_ingot"
-            },
-            {
-                "item": "apotheosis:mythic_material"
-            }
-        ],
-        "output": {
-            "count": 1,
-            "item": "apotheosis:ancient_material"
+            "item": mat.nextMaterial
         },
         "tablet": {
             "item": "magichem:essentia_albedo"
         }
-    }).id(`kubejs:embers/alchemy/ancient_material`)
+    }).id(`kubejs:embers/alchemy/${mat.nextMaterial.split(":")[1]}`)
+    })
     //Convenience recipes
     //TF MATERIAL DUPES
     //Steeleaf

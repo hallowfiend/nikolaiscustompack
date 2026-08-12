@@ -326,7 +326,7 @@ ServerEvents.recipes((event) => {
                 "item" : "eidolon:pewter_inlay"
             },
             "r": {
-                "item": "kubejs:bloochannel_gem"
+                "item": "kubejs:bloodchannel_gem"
             }
         },
         "result" : {

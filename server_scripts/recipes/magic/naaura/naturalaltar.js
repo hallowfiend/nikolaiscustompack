@@ -150,6 +150,27 @@ ServerEvents.recipes(event => {
         50
     )
     conversion(
+        'minecraft:cactus_flower',
+        'eidolon:oanna_bloom',
+        1,
+        10000,
+        50
+    )
+    conversion(
+        'farmersrespite:coffee_beans',
+        'eidolon:sildrian_seed',
+        1,
+        10000,
+        50
+    )
+    conversion(
+        'undergarden:ink_mushroom',
+        'eidolon:mirecap',
+        1,
+        10000,
+        50
+    )
+    conversion(
         'immersiveengineering:seed',
         'spawn:sunflower_seeds',
         1,
@@ -204,6 +225,18 @@ ServerEvents.recipes(event => {
         1,
         5000,
         60
+    )
+    conversion(
+        'tconstruct:sky_slime_crystal',
+        'hexalia:celestial_crystal',
+        4000,
+        80
+    )
+    conversion(
+        'tconstruct:sky_slime_crystal_block',
+        'hexalia:celestial_crystal_block',
+        16000,
+        240
     )
     //crushing
     crushing(

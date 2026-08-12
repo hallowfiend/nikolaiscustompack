@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
             {
             "type": "pneumaticcraft:stacked_item",
             "count": 1,
-            "item": "pneumaticcraft:compressed_iron"
+            "item": "pneumaticcraft:ingot_iron_compressed"
             },
             {
             "type": "pneumaticcraft:stacked_item",

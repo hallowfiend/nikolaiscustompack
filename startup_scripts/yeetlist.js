@@ -160,7 +160,10 @@ global.removedItems = [
   'pneumaticcraft:air_compressor',
   'pneumaticcraft:advanced_air_compressor',
   'pneumaticcraft:manual_compressor',
-  'pneumaticcraft:flux_compressor'
+  'pneumaticcraft:flux_compressor',
+  'evilcraft:golden_string',
+  'hexalia:candle_skull',
+  'hexalia:wither_candle_skull'
 ];
 
 global.removedRecipeIds = [

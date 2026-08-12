@@ -95,17 +95,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x99499c)
         .secondaryColor(0xffe587)
         .iconSet(WOOD);
-
-    //Misc alloys
-
-    /* event.create('strumm')
-        .ingot()
-        .iconSet(LIGNITE)
-        .color(0x50555e)
-        .secondaryColor(0x5e5950)
-        .components('cloggrum', 'anthralite', 'zinc')
-        .flags(
-            plates,
-            rod
-        ) */
 })

@@ -40,6 +40,7 @@ ServerEvents.recipes(event => {
             min_temp: 273,
         },
     });
+    event.replaceInput({output: 'eidolon:basic_belt'}, 'minecraft:leather', 'kubejs:treated_leather')
     //laserio
     /* event.remove({ output: "laserio:logic_chip" });
     event.remove({ output: "laserio:logic_chip_raw" });

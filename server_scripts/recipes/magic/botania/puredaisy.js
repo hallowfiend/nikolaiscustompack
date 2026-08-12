@@ -11,7 +11,6 @@ ServerEvents.recipes((event) => {
         'create:crimsite',
         'create:limestone',
         'undergarden:depthrock',
-        'undergarden:shiverstone',
         'cataclysm:azure_seastone',
         'arts_and_crafts:soapstone',
         'twigs:rhyolite',

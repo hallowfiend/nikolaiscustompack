@@ -65,7 +65,7 @@ ServerEvents.recipes(event =>{
     dualSpiritFocusing("wicked", "earthen", "gtceu:saltpeter_dust", 8)
     dualSpiritFocusing("wicked", "aqueous", "netherexp:banshee_powder", 8)
     pureSpiritFocusing("sacred", "minecraft:sugar", 8)
-    dualSpiritFocusing("sacred", "aerial", "hexalia:celestial_crystal", 4)
+    // dualSpiritFocusing("sacred", "aerial", "hexalia:celestial_crystal", 4)
     dualSpiritFocusing("sacred", "infernal", "galosphere:lumiere_shard", 8)
     dualSpiritFocusing("sacred", "earthen", "hexerei:selenite_shard", 4)
     dualSpiritFocusing("sacred", "aqueous", "gtceu:salt_dust", 8)

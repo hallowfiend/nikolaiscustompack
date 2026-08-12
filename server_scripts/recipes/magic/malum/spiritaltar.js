@@ -55,6 +55,7 @@ ServerEvents.recipes((event) => {
       "item": 'malum:living_flesh',
       "count": 4
     },
+    "extra_items": [],
     "spirits": [
       {
         "type": "sacred",
@@ -63,7 +64,7 @@ ServerEvents.recipes((event) => {
       {
         "type": "wicked",
         "count": 2
-      },
+      }
     ]
   })
   //blazing hellshelf

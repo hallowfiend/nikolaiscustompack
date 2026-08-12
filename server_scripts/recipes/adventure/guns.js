@@ -1,3 +1,3 @@
 ServerEvents.recipes(event => {
-    event.replaceInput({mod: 'scguns'}, '#forge:planks', '#forge:treated_wood')
+    event.replaceInput({mod: 'scguns'}, '#minecraft:planks', '#forge:treated_wood')
 })

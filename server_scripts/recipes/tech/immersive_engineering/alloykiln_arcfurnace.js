@@ -42,7 +42,9 @@ ServerEvents.recipes((event) => {
         "additives": additives, //list
         "energy": 51200,
         "input": {
-            'item': mainInput, //item or tag
+            "base_ingredient":{
+            'item': mainInput
+            },
             "count": mainInputCount
             },
         "results": [
@@ -96,10 +98,10 @@ ServerEvents.recipes((event) => {
     )
     arcFurnace(
         'gtceu:bronze_ingot',
-        8,
+        2,
         [{'tag': 'forge:ingots/lead'}],
         'gtceu:potin_ingot',
-        9
+        3
     )
     arcFurnace(
         'gtceu:tin_ingot',

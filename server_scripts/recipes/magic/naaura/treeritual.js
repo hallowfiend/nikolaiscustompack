@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         {'item': 'naturesaura:gold_leaf'},
         {'item': 'occultism:datura'},
         {'item': 'hexalia:begonia'},
-        {'item': 'ars_nouveau:source_berry'}
+        {'item': 'ars_nouveau:sourceberry_bush'}
       ],
       'naturesaura:ancient_sapling', 2,
       'quark:red_blossom_sapling',

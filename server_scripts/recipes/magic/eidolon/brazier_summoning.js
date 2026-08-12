@@ -123,6 +123,14 @@ ServerEvents.recipes(event => {
     'minecraft:purpur_block',
     'minecraft:shulker_shell'
   )
+  //Hexalia
+  brazier_summoning(
+    'hexalia:silk_moth',
+    3,
+    'miners_delight:crunchy_bar',
+    'mna:infused_silk',
+    'hexalia:mutavis'
+  )
   //Ars Nouveau
   brazier_summoning(
     'ars_nouveau:wilden_hunter',
@@ -253,7 +261,7 @@ ServerEvents.recipes(event => {
     3,
     'quark:bottled_cloud',
     'minecraft:sand',
-    'aether:gold_aercloud',
+    'aether:golden_aercloud',
     'malum:aerial_spirit'
   )
 })
