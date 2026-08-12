@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
     )
     conversion(
         'gtceu:tricalcium_phosphate_dust',
-        'minecraft:glowstone',
+        'minecraft:glowstone_dust',
         1,
         4000,
         10
@@ -229,12 +229,14 @@ ServerEvents.recipes(event => {
     conversion(
         'tconstruct:sky_slime_crystal',
         'hexalia:celestial_crystal',
+        1,
         4000,
         80
     )
     conversion(
         'tconstruct:sky_slime_crystal_block',
         'hexalia:celestial_crystal_block',
+        1,
         16000,
         240
     )

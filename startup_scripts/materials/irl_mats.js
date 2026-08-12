@@ -31,6 +31,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.CertusQuartz.addFlags(GTMaterialFlags.GENERATE_LENS);
     GTMaterials.Netherite.addFlags(GTMaterialFlags.GENERATE_PLATE);
     GTMaterials.RedAlloy.addFlags(ring);
+    GTMaterials.Electrotine.addFlags(block)
     
     //Metals
     event.create('nicrosil')

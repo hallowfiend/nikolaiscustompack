@@ -17,6 +17,19 @@ ServerEvents.tags("item", (event) => {
         'eidolon:zombie_heart',
         'reliquary:zombie_heart'
     ]);
+  event.add('kubejs:crafting_claws', [
+    'alexsmobs:dropbear_claw',
+    'biomancy:mob_claw',
+    'collectorsreap:chieftain_claw',
+    'reliquary:rib_bone',
+    'spawn:coastal_crab_claw',
+    'cataclysm:chitin_claw',
+    'crabbersdelight:crab_claw'
+  ])
+  event.add('forge:tools/hammers', [
+    'evilcraft:mace_of_destruction',
+    'evilcraft:mace_of_distortion'
+  ])
   event.add('forge:frigid_heart', [
         'eidolon:wraith_heart',
         'sons_of_sins:ice_heart',

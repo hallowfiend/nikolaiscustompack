@@ -99,6 +99,8 @@ StartupEvents.registry('item', event => {
     .displayName('Castbrain');
     event.create('biomantic_neuron')
     .displayName('Biomantic Neuron');
+    event.create('slimy_eye')
+    .displayName('Biomantic Eyeball');
     event.create('ashen_blend')
     .displayName('Ashen Blend');
     event.create('ethereal_ashen_blend')

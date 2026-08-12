@@ -19,6 +19,20 @@ ServerEvents.recipes(event => {
           "time": time //int
         }).id(`kubejs:natures_aura/tree_ritual/${output.split(":")[1]}`)
     }
+    //Slimy Eye
+    treeRitual(
+      [
+        {'item': 'vampiresdelight:human_eye'},
+        {'item': 'biomancy:mob_gland'},
+        {'item': 'minecraft:fermented_spider_eye'},
+        {'item': 'tconstruct:earth_congealed_slime'},
+        {'item': 'biomancy:mob_gland'},
+        {'item': 'goety:quick_growing_seed'}
+      ],
+      'kubejs:slimy_eye', 2,
+      'atmospheric:yucca_sapling',
+      50
+    )
     //Ancient Sapling
     treeRitual(
       [
@@ -41,7 +55,7 @@ ServerEvents.recipes(event => {
         {'item': 'minecraft:poisonous_potato'},
         {'item': 'farmersdelight:rotten_tomato'},
         {'item': 'dungeonsdelight:rotten_tripe'},
-        {'item': 'gtceu:twilit_mithril_ingot'},
+        {'item': 'goety:cursed_ingot'},
         {'item': 'malum:wicked_spirit'},
         {'item': 'hexalia:witchweed'}
       ],

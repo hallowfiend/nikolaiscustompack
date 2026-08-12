@@ -3,6 +3,7 @@
 const BLOCKS = "biomancy:blocks"
 const WEAPONS = 'biomancy:weapons'
 const COMPONENTS = 'biomancy:components'
+const MACHINES = 'biomancy:machines'
 const MISC = 'biomancy:misc'
 
 ServerEvents.recipes((event) => {
@@ -88,8 +89,33 @@ bioForging(
   {item: 'ars_nouveau:wilden_wing'},
   'wilden_wing'
 )
-/*
+
 // """"""Gregified""""" machine recipes
+  event.remove({output: 'biomancy:decomposer'})
+  event.remove({output: 'biomancy:bio_forge'})
+  event.shaped('biomancy:bio_forge', [
+    'c c',
+    'fof',
+    'fef'
+  ],
+  {
+    c: '#kubejs:crafting_claws',
+    f: 'biomancy:living_flesh',
+    o: 'kubejs:slimy_eye',
+    e: 'gtceu:electrotine_block'
+  }).id('kubejs:shaped/bio_forge')
+  event.shaped('biomancy:decomposer', [
+    'c c',
+    'fof',
+    'efe'
+  ],
+  {
+    c: '#c:fangs',
+    f: 'biomancy:living_flesh',
+    o: 'kubejs:slimy_eye',
+    e: 'gtceu:electrotine_block'
+  }).id('kubejs:shaped/decomposer')
+  /*
     forging(
         1,
         [

@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
             "materia": `magichem:${essentia}`,
             "chance": chance,
             "result": output
-        })
+        }).id(`kubejs:magichem/anointing/${output.split(":")[1]}`)
     }
     materiaAnointing(
         'mynethersdelight:letios_compost',

@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     //treated leather
     event.recipes.create.filling("kubejs:treated_leather", [
         "minecraft:leather",
-        Fluid.of("immersiveengineering:creosote", 250),
+        Fluid.of("gtceu:creosote", 250),
     ]);
     event.custom({
         type: "immersiveengineering:bottling_machine",
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         fluid_input: {
             type: "pneumaticcraft:fluid",
             amount: 250,
-            fluid: "immersiveengineering:creosote",
+            fluid: "gtceu:creosote",
         },
         item_input: {
             item: "minecraft:leather",
