@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
             "item": "evilcraft:kineticator"
         }
     }).id('kubejs:eidolon/worktable/staves/kineticator')
-    event.remove({ id: 'evilcraft:kineticator' })
+    event.remove({ id: 'evilcraft:kineticator_repelling' })
     event.custom({
         "type": "eidolon:worktable",
         "pattern": [
@@ -150,11 +150,11 @@ ServerEvents.recipes(event => {
             }
         },
         "result" : {
-            "item": "evilcraft:repelling_kineticator"
+            "item": "evilcraft:kineticator_repelling"
         }
     }).id('kubejs:eidolon/worktable/staves/repelling_kineticator')
     //mace of distortion
-    event.remove({ id: 'evilcraft:mace_of_distortion' })
+    event.remove({ output: 'evilcraft:mace_of_distortion' })
     event.custom({
         "type": "eidolon:worktable",
         "pattern": [
@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
         }
     }).id('kubejs:eidolon/worktable/weapons/mace_of_distortion')
     //mace of destruction
-    event.remove({ id: 'evilcraft:mace_of_destruction' })
+    event.remove({ output: 'evilcraft:mace_of_destruction' })
     event.custom({
         "type": "eidolon:worktable",
         "pattern": [
