@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    event.remove({output: 'evilcraft:bound_blood_drop'})
     //alt spike recipe
     event.shaped('8x evilcraft:dark_spike', [
         'b',
@@ -58,7 +59,7 @@ ServerEvents.recipes(event => {
         g: 'naturesaura:token_anger',
         s: 'kubejs:bloodchannel_gem',
         r: 'malum:rune_of_aliment_cleansing',
-        g: 'gtceu:potin_plate'
+        g: 'irons_spellbooks:bloody_vellum'
     }).id('kubejs/shaped/invigorating_pendant')
     //primed pendant (GIGAnerfed for its gamebreak potential)
     event.remove({ output: "evilcraft:primed_pendant" })

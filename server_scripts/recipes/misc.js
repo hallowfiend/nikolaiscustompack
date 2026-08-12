@@ -18,6 +18,14 @@ event.replaceInput(
   'rusticdelight:syrup'
 ),
 
+event.remove({ id: "quark:building/crafting/compressed/charcoal_block"})
+event.remove({ id: "quark:building/crafting/compressed/sugar_cane_block"})
+event.remove({ id: "quark:building/crafting/compressed/gunpowder_sack"})
+event.remove({ id: "quark:building/crafting/compressed/apple_crate"})
+event.remove({ id: "quark:building/crafting/compressed/potato_crate"})
+event.remove({ id: "quark:building/crafting/compressed/carrot_crate"})
+event.remove({ id: "quark:building/crafting/compressed/beetroot_crate"})
+event.remove({ id: "quark:building/crafting/compressed/bamboo_block"})
 
 //Honey
 event.replaceOutput(

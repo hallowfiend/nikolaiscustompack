@@ -7,91 +7,87 @@ const MISC = 'biomancy:misc'
 
 ServerEvents.recipes((event) => {
 
+function bioForging (tab, ingredients, cost, result, id){
+  event.custom({
+    type: "biomancy:bio_forging",
+    bio_forge_tab: tab,
+    ingredients: ingredients,
+    nutrientsCost: cost,
+    result: result
+  }).id(`kubejs:biomancy/bio_forge/${id}`)
+}
+
 //Biological cyberware
   /*forging(
     30,
     ["biomancy:elastic_fibers", "biomancy:storage_sac"]
   ) */
-//Cheaper quasianimate flesh
-event.custom({
-    type: "biomancy:bio_forging",
-    bio_forge_tab: COMPONENTS,
-    ingredients: [
+//Organics
+bioForging(
+  COMPONENTS,
+  [
       { count: 16, item: "minecraft:rotten_flesh" },
       { count: 4, item: "gtceu:silver_dust" },
       { item: 'minecraft:ghast_tear'}
-    ],
-    nutrientsCost: 24,
-    result: {
-      item: "caverns_and_chasms:living_flesh",
-      count: 16
-    }
-  })
-//Organics
-event.custom({
-    type: "biomancy:bio_forging",
-    bio_forge_tab: COMPONENTS,
-    ingredients: [
+  ],
+  24,
+  { item: "caverns_and_chasms:living_flesh", count: 16},
+  'quasianimate_flesh'
+)
+bioForging(
+  COMPONENTS,
+  [
       { item: "biomancy:mob_claw" },
       { count: 16, item: "biomancy:bone_fragments" }
-    ],
-    nutrientsCost: 1,
-    result: {
-      item: "biomancy:mob_fang"
-    }
-  })
-event.custom({
-    type: "biomancy:bio_forging",
-    bio_forge_tab: COMPONENTS,
-    ingredients: [
-      { item: "minecraft:bone" },
-      { count: 4, item: "biomancy:flesh_bits" },
-      { count: 2, item: "minecraft:raw_porkchop"}
-    ],
-    nutrientsCost: 1,
-    result: {
-      item: "farmersdelight:ham"
-    }
-  })
-event.custom({
-    type: "biomancy:bio_forging",
-    bio_forge_tab: COMPONENTS,
-    ingredients: [
-      { item: "hexerei:selenite_shard" },
-      { item: "mna:vinteum_dust" },
-      { count: 8, item: "biomancy:bone_fragments" }
-    ],
-    nutrientsCost: 1,
-    result: {
-      item: "ars_nouveau:wilden_horn"
-    }
-  })
-event.custom({
-    type: "biomancy:bio_forging",
-    bio_forge_tab: COMPONENTS,
-    ingredients: [
-      { item: "eidolon:sildrian_seed" },
-      { item: "mna:vinteum_dust" },
-      { count: 8, item: "biomancy:stone_powder" }
-    ],
-    nutrientsCost: 1,
-    result: {
-      item: "ars_nouveau:wilden_spike"
-    }
-  })
-event.custom({
-    type: "biomancy:bio_forging",
-    bio_forge_tab: COMPONENTS,
-    ingredients: [
-      { item: "hexalia:saltsprout" },
-      { item: "mna:vinteum_dust" },
-      { count: 8, item: "biomancy:tough_fibers" }
-    ],
-    nutrientsCost: 1,
-    result: {
-      item: "ars_nouveau:wilden_wing"
-    }
-  })
+  ],
+  2,
+  {item: 'biomancy:mob_fang'},
+  'mob_fang'
+)
+bioForging(
+  COMPONENTS,
+  [
+    { item: "minecraft:bone" },
+    { count: 4, item: "biomancy:flesh_bits" },
+    { count: 2, item: "minecraft:raw_porkchop"}
+  ],
+  2,
+  {item: 'farmersdelight:ham'},
+  'ham'
+)
+bioForging(
+  COMPONENTS,
+  [
+    { item: "hexerei:selenite_shard" },
+    { item: "mna:vinteum_dust" },
+    { count: 8, item: "biomancy:bone_fragments" }
+  ],
+  8,
+  {item: 'ars_nouveau:wilden_horn'},
+  'wilden_horn'
+)
+bioForging(
+  COMPONENTS,
+  [
+    { item: "eidolon:sildrian_seed" },
+    { item: "mna:vinteum_dust" },
+    { count: 8, item: "biomancy:stone_powder" }
+  ],
+  8,
+  {item: 'ars_nouveau:wilden_spike'},
+  'wilden_spike'
+)
+bioForging(
+  COMPONENTS,
+  [
+    { item: "hexalia:saltsprout" },
+    { item: "mna:vinteum_dust" },
+    { count: 8, item: "biomancy:tough_fibers" }
+  ],
+  8,
+  {item: 'ars_nouveau:wilden_wing'},
+  'wilden_wing'
+)
 /*
 // """"""Gregified""""" machine recipes
     forging(

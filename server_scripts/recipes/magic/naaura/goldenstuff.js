@@ -31,6 +31,36 @@ ServerEvents.recipes(event => {
 		'8x naturesaura:gold_powder',
 		'naturesaura:gold_leaf'
 	)
+    //Wood Stand
+    event.remove({output: 'naturesaura:wood_stand'})
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            " i ",
+            " l ",
+            " e "
+        ],
+        "reagents": [
+            "gggg"
+        ],
+        "key" : {
+            "i": {
+                "item" : "eidolon:gold_inlay"
+            },
+            "e": {
+                "item": "malum:ether"
+            },
+            "l": {
+                "tag": "forge:stripped_logs"
+            },
+            "g": {
+                "item": "naturesaura:gold_powder"
+            }
+        },
+        "result" : {
+            "item": "naturesaura:wood_stand"
+        }
+    }).id('kubejs:eidolon/worktable/workstations/wooden_stand')
 
 
 })

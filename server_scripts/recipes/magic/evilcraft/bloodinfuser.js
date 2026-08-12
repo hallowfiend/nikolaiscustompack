@@ -68,4 +68,12 @@ ServerEvents.recipes(event => {
         160,
         0
     )
+    event.remove({output: 'evilcraft:undead_sapling'})
+    bloodInfuser(
+        25000,
+        'goety:haunted_sapling',
+        'evilcraft:undead_sapling',
+        200,
+        1
+    )
 })
