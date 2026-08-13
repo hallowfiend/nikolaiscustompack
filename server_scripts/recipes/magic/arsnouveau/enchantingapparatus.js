@@ -5,11 +5,12 @@ ServerEvents.recipes(event => {
         [
             'irons_spellbooks:epic_ink',
             'evilcraft:inverted_potentia_empowered',
-            'naturesaura:token_euphoria',
+            'kubejs:token_flux',
             'occultism:spirit_attuned_gem',
             'mna:greater_mote_arcane',
             'create:deployer',
-            'malum:fused_consciousness'
+            'malum:fused_consciousness',
+            'kubejs:rune_diligence'
         ],
         'irons_spellbooks:dragonskin_spell_book',             
         'ars_nouveau:novice_spell_book',   
@@ -29,4 +30,20 @@ ServerEvents.recipes(event => {
         'ars_nouveau:basic_spell_turret',   
         2000                            
     ).id('kubejs:ars_nouveau/enchanting_apparatus/basic_spell_turret')
+    //SANDSO TIMEO
+    event.remove({output: 'gag:time_sand_pouch'})
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            'kubejs:rune_time',
+            'kubejs:rune_patience',
+            'minecraft:nautilus_shell',
+            'malum:cthonic_gold',
+            'hexerei:infused_fabric',
+            'kubejs:treated_leather',
+            'kubejs:treated_leather'
+        ],
+        'minecraft:bundle',             
+        'gag:time_sand_pouch',   
+        1000                        
+    ).id('kubejs:ars_nouveau/enchanting_apparatus/time_sand_pouch')
 })

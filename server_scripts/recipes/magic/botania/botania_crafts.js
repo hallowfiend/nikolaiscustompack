@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    event.remove({id: 'botania:mana_void'})
     /* event.remove({ output: 'botania:alchemy_catalyst' })
     event.shaped('botania:alchemy_catalyst', [
         'LCL',
@@ -11,4 +12,14 @@ ServerEvents.recipes(event => {
         P: 'botania:mana_pearl',
         C: 'kubejs:aspectus_gold'
     }) */
+    //Mana Void
+    event.shaped('botania:mana_void', [
+        'LOL',
+        'ORO',
+        'LOL'
+    ], {
+        L: 'botania:livingrock',
+        O: 'minecraft:obsidian',
+        R: 'kubejs:rune_void'
+    }).id('kubejs:shaped/mana_void')
 })

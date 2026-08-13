@@ -1,4 +1,92 @@
 ServerEvents.recipes((event) => {
+    //Custom runes
+    event.recipes.botania.runic_altar('2x kubejs:rune_light',
+        [
+            'botania:mana_powder',
+            'botania:manasteel_ingot',
+            'minecraft:shroomlight',
+            'embers:ember_shard',
+            'eternal_starlight:starcore'
+        ],
+        5200
+    ).id('kubejs:botania/runic_altar/light')
+    event.recipes.botania.runic_altar('2x kubejs:rune_void',
+        [
+            'botania:mana_powder',
+            'botania:manasteel_ingot',
+            'minecraft:hopper',
+            'enderio:grains_of_infinity',
+            'evilcraft:ender_tear'
+        ],
+        5200
+    ).id('kubejs:botania/runic_altar/void')
+    event.recipes.botania.runic_altar('2x kubejs:rune_mind',
+        [
+            'botania:mana_powder',
+            'botania:manasteel_ingot',
+            'minecraft:book',
+            'hexcasting:amethyst_dust',
+            'magichem:admixture_thought'
+        ],
+        5200
+    ).id('kubejs:botania/runic_altar/mind')
+    event.recipes.botania.runic_altar('2x kubejs:rune_heart',
+        [
+            'botania:mana_powder',
+            'botania:manasteel_ingot',
+            'minecraft:rose_bush',
+            'biomancy:flesh_bits',
+            'collectorsreap:beetroot_gummy'
+        ],
+        5200
+    ).id('kubejs:botania/runic_altar/heart')
+    function tier2Rune(rune1, rune2, output, item1, item2, item3, item4){
+        event.recipes.botania.runic_altar(`kubejs:rune_${output}`,
+        [
+            `kubejs:rune_${rune1}`,
+            `kubejs:rune_${rune2}`,
+            item1,
+            item2,
+            item3,
+            item4
+        ],
+        8000
+    ).id(`kubejs:botania/runic_altar/${output}`)
+    }
+    tier2Rune(
+        'light', 'mind', 'storms',
+        'aether:aerogel', 'aether:aerogel', 'evilcraft:weather_container', 'gtceu:electrotine_dust'
+    )
+    tier2Rune(
+        'void', 'heart', 'space',
+        'minecraft:sculk', 'minecraft:sculk', 'minecraft:sculk', 'mna:cerublossom'
+    )
+    tier2Rune(
+        'light', 'heart', 'force',
+        'create:andesite_casing', 'create:andesite_casing', 'minecraft:wooden_sword', 'undergarden:cloggrum_ingot' 
+    )
+    tier2Rune(
+        'void', 'mind', 'time',
+        'minecraft:exposed_copper_block', 'minecraft:exposed_copper_block', 'minecraft:exposed_copper_block', 'create:large_cogwheel'
+    )
+    function tier3Rune(rune1, rune2, output){
+        event.recipes.botania.runic_altar(`kubejs:rune_${output}`,
+        [
+            `kubejs:rune_${rune1}`,
+            `kubejs:rune_${rune2}`,
+            'botania:mana_diamond',
+            'botania:mana_diamond'
+        ],
+        12000
+    ).id(`kubejs:botania/runic_altar/${output}`)
+    }
+    tier3Rune('light', 'space', 'charity')
+    tier3Rune('heart', 'space', 'chastity')
+    tier3Rune('heart', 'force', 'diligence')
+    tier3Rune('void', 'storms', 'humility')
+    tier3Rune('light', 'force', 'kindness')
+    tier3Rune('mind', 'time', 'patience')
+    tier3Rune('mind', 'storms', 'temperance')
     //Nodes
     event.recipes.botania.runic_altar('4x hexalia:fire_node',
         [

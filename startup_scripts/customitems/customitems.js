@@ -106,10 +106,10 @@ StartupEvents.registry('item', event => {
         'mind',
         'heart',
         //tier 2 (fundamental forces)
-        'storms', //electromagnetism, water & light
-        'space', //gravity, earth & void
-        'force', //strong force, fire & heart
-        'time', //weak force (because beta decay is slow i guess), mind & air
+        'storms', //electromagnetism, mind & light
+        'space', //gravity, heart & void
+        'force', //strong force, light & heart
+        'time', //weak force (because beta decay is slow i guess), mind & void
         //tier 3 (virtues)
         'charity', //light & space
         'chastity', //heart & space
@@ -123,6 +123,7 @@ StartupEvents.registry('item', event => {
         var runeLang = capitalizeFirstLetter(rune)
         event.create(`rune_${rune}`)
         .displayName(`Rune of ${runeLang}`)
+        .tag('botania:runes')
     })
     event.create('blood_soaked_nutrient_bar')
     .displayName('Bloodsoaked Nutrient Bar')

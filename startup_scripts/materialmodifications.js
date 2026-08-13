@@ -319,6 +319,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     gem('blazing_quartz', 'malum:blazing_quartz')
     gem('null_slate', 'malum:null_slate')
     gem('sal_ammoniac', 'theurgy:sal_ammoniac_crystal')
+    gem('starcore', 'eternal_starlight:starcore')
 
 //Flawless gems
     gemFlawless('ember', 'embers:ember_crystal')

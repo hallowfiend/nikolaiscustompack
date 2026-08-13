@@ -269,4 +269,11 @@ ServerEvents.recipes(event => {
         8000,
         200
     )
+    crushing(
+        'kubejs:rune_time',
+        'twilighttweaks:time_powder',
+        8,
+        2000,
+        30
+    )
 })
