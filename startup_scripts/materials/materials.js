@@ -119,7 +119,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         plates,
         rod,
         long_rod,
-        bolt_and_screw
+        bolt_and_screw,
+        ring
       )
       .iconSet(GTMaterialIconSet.SHINY);
 

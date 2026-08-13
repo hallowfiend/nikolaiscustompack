@@ -563,7 +563,7 @@ ServerEvents.recipes((event) => {
       "count": 1
       },
       {
-      "tag": "forge:gems/spinel",
+      "tag": "forge:gems/turquoise",
       "count": 1
       },
       {

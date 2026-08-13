@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
     )
     tier2Rune(
         'void', 'mind', 'time',
-        'minecraft:exposed_copper_block', 'minecraft:exposed_copper_block', 'minecraft:exposed_copper_block', 'create:large_cogwheel'
+        'minecraft:oxidized_copper', 'minecraft:oxidized_copper', 'minecraft:oxidized_copper', 'create:large_cogwheel'
     )
     function tier3Rune(rune1, rune2, output){
         event.recipes.botania.runic_altar(`kubejs:rune_${output}`,
