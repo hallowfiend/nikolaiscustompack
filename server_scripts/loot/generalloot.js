@@ -3,6 +3,8 @@
 LootJS.modifiers((event) => {
   event
     .addLootTableModifier(/.*/)
+    .replaceLoot('culturaldelights:squid', 'miners_delight:squid', true)
+    .replaceLoot('culturaldelights:glow_squid', 'miners_delight:glow_squid', true)
     .replaceLoot('eidolon:sulfur', 'gtceu:sulfur_dust', true)
     .replaceLoot('caverns_and_chasms:tin_ingot', 'gtceu:tin_ingot', true)
     .replaceLoot('caverns_and_chasms:silver_ingot', 'gtceu:silver_ingot', true)
@@ -44,7 +46,6 @@ LootJS.modifiers((event) => {
       'farm_and_charm:wild_tomatoes',
       'create:crafting_blueprint',
       /enderio:.*gear/,
-      'culturaldelights:squid',
       'oceanic_delight:squid_tentacles',
       'crabbersdelight:cooked_squid_tentacles',
       'crabbersdelight:raw_squid_tentacles',

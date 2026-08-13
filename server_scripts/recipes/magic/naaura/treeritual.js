@@ -58,10 +58,10 @@ ServerEvents.recipes(event => {
     treeRitual(
       [
         {'item': 'kubejs:token_change'},
+        {'item': 'naturesaura:token_joy'},
         {'item': 'embers:caminite_large_tile'},
         {'item': 'eidolon:avennian_sprig'},
         {'item': 'embers:caminite_large_tile'},
-        {'item': 'naturesaura:token_joy'},
         {'item': 'twilightforest:naga_scale'},
         {'item': 'hexalia:mutavis'},
         {'item': 'cosmopolitan:fiddlehead_crate'}

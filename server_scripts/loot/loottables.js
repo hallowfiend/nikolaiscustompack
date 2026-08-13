@@ -22,7 +22,6 @@ function weightedReplace(func, filter, map) {
 LootJS.modifiers((event) => {
     //fishing
     event.addLootTableModifier(LootType.FISHING)
-    .replaceLoot('culturaldelights:squid', 'miners_delight:squid')
     .apply(context => {
         weightedReplace(context, 'minecraft:iron_nugget', [
             ['minecraft:iron_ingot', 8],

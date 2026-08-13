@@ -18,10 +18,10 @@ ServerEvents.recipes(event => {
         }
         }).id(`kubejs:embers/mixing/${outputAlloy}`)
     }
-    mixing("gold", 16, "copper", 4, "rose_gold", 20)
-    mixing("silver", 16, "copper", 4, "sterling_silver", 20)
-    mixing("lead", 2, "iron", 2, "pewter", 4)
-    mixing("copper", 2, "aluminium", 6, "duralumin", 8)
+    metalMixing("gold", 16, "copper", 4, "rose_gold", 20)
+    metalMixing("silver", 16, "copper", 4, "sterling_silver", 20)
+    metalMixing("lead", 2, "iron", 2, "pewter", 4)
+    metalMixing("copper", 2, "aluminium", 6, "duralumin", 8)
     //dawnstone
     event.remove({ id: 'embers:mixing/molten_dawnstone' })
     event.custom(

@@ -82,6 +82,7 @@ StartupEvents.registry('item', event => {
     event.create('nutrient_sacs')
     .displayName('Nutrient Sacs');
     // crafting components
+    //custom tokens
     const tokenNames = [
         'change',
         'flux',
@@ -96,6 +97,32 @@ StartupEvents.registry('item', event => {
         var tokenLang = capitalizeFirstLetter(token)
         event.create(`token_${token}`)
         .displayName(`Token of ${tokenLang}`)
+    })
+    //custom runes
+    const runeNames = [
+        //basic
+        'light',
+        'void',
+        'mind',
+        'heart',
+        //tier 2 (fundamental forces)
+        'storms', //electromagnetism, water & light
+        'space', //gravity, earth & void
+        'force', //strong force, fire & heart
+        'time', //weak force (because beta decay is slow i guess), mind & air
+        //tier 3 (virtues)
+        'charity', //light & space
+        'chastity', //heart & space
+        'diligence', //heart & force
+        'humility', //void & storms
+        'kindness', //light & force
+        'patience', //mind & time
+        'temperance' //mind & storms
+    ]
+    runeNames.forEach(rune => {
+        var runeLang = capitalizeFirstLetter(rune)
+        event.create(`rune_${rune}`)
+        .displayName(`Rune of ${runeLang}`)
     })
     event.create('blood_soaked_nutrient_bar')
     .displayName('Bloodsoaked Nutrient Bar')

@@ -88,6 +88,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create('soul_stained_steel')
         .color(0xdb3dff)
         .secondaryColor(0xe683fc)
+        .iconSet(SHINY)
         .ingot()
         .components('amethyst_bronze', '4x soulstone', '3x profanum', 'arkanum', 'terrae')
         .cableProperties(GTValues.V[GTValues.MV], 2, 1, false)
@@ -221,11 +222,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create('livingbronze')
         .ingot()
         .color(0x89a36a)
-        .components('bronze', 'ember', '8x aura', '8x vitae', '8x methane', '8x ammonia', '8x phosphorus', '8x carbon_dioxide')
+        .components('bronze', 'ember', '8x terrae', '8x aqua', '8x aura', '8x vitae', '8x methane', '8x ammonia', '8x phosphorus', '8x carbon_dioxide')
         .secondaryColor(0xa3956a)
         .iconSet(METALLIC)
         .flags(
             no_decomp,
-            plates
+            plates,
+            rod,
+            long_rod
         );
 })
