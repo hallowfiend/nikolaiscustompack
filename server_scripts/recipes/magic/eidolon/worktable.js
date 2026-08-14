@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
                 "item": "goety:frost_breath_focus"
             },
             "e": {
-                "item": "cosmopolitan:glacier_essence"
+                "item": "goety:chill_fabric"
             },
             "g": {
                 "item": "goety:freezing_lamp"
@@ -145,7 +145,7 @@ ServerEvents.recipes((event) => {
                 "item": "gtceu:topaz_gem"
             },
             "e": {
-                "item": "gtceu:double_arcane_gold_plate"
+                "item": "goety:magic_fabric"
             },
             "i":{
                 "item": "eidolon:gold_inlay"
@@ -331,7 +331,7 @@ ServerEvents.recipes((event) => {
                 "item": "kubejs:bloodchannel_gem"
             },
             "a": {
-                "item": "naturesaura:token_anger"
+                "item": "naturesaura:token_rage"
             }
         },
         "result" : {
@@ -412,7 +412,7 @@ ServerEvents.recipes((event) => {
                 "item" : "hexerei:selenite_shard"
             },
             "g" : {
-                "item": "hexalia:spirit_powder"
+                "item": "goety:spirit_fabric"
             },
             "a": {
                 "item": "evilcraft:dark_power_gem_block"
@@ -637,7 +637,7 @@ ServerEvents.recipes((event) => {
                 "item": "ars_nouveau:archwood_slab"
             },
             "h": {
-                "item": "minecraft:gold_ingot"
+                "item": "eidolon:arcane_gold_ingot"
             },
             "l": {
                 "tag": "forge:logs/archwood"
@@ -687,7 +687,7 @@ ServerEvents.recipes((event) => {
                 "item": "kubejs:token_cycles"
             },
             "i" : {
-                "item" : "eidolon:pewter_inlay"
+                "item": "eidolon:pewter_inlay"
             },
             "p" : {
                 "item": "malum:prismatic_focus_lens"

@@ -45,6 +45,11 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(248)
         .symbol('Lx');
 
+    event.create('xithricite')
+        .protons(142)
+        .neutrons(142)
+        .symbol('Xh')
+
     event.create('isogen')
         .protons(150)
         .neutrons(250)

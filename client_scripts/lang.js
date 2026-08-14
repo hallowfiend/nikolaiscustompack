@@ -2,6 +2,15 @@ ClientEvents.lang('en_us', event => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    //Occultism
+    event.renameItem('occultism:spirit_attuned_gem', 'Xithricite Gem')
+    //Goety
+    event.renameItem('goety:spirit_fabric', 'Ensouled Tough Fabric')
+    event.renameItem('goety:dark_fabric', 'Darkened Tough Fabric')
+    event.renameItem('goety:magic_fabric', 'Gilded Tough Fabric')
+    event.renameItem('goety:gale_fabric', 'Jadewoven Tough Fabric')
+    event.renameItem('goety:occult_fabric', 'Occulted Tough Fabric')
+    event.renameItem('goety:chill_fabric', 'Chilled Tough Fabric')
     //Living flesh dedup
     event.renameItem('malum:living_flesh', 'Revitalized Flesh')
     event.renameItem('malum:block_of_living_flesh', 'Block of Revitalized Flesh')

@@ -277,6 +277,7 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
     
 
 //Gems
+    gem('xithricite', 'occultism:spirit_attuned_gem')
     gem('ambrosium', 'aether:ambrosium_shard')
     gem('turquoise', 'caverns_and_chasms:turquoise')
     gem('spinel', 'caverns_and_chasms:spinel')

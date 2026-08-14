@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
                 "item": "hexalia:spirit_bloom"
             },
             "i":{
-                "item": "brewincompatdelight:juniper_berries"
+                "item": "minecraft:glow_lichen"
             },
             "j":{
                 "tag": "forge:dusts/amethyst"

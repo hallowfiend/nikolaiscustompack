@@ -234,7 +234,7 @@ ServerEvents.recipes(event => {
     "output": {
         "item": `kubejs:token_${token.o}`
     }
-    })
+    }).id(`kubejs:natures_aura/offering_to_the_gods/token_${token.o}`)
     })
   //other crafts/gates
   //Slimy Eye

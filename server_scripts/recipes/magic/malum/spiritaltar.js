@@ -26,22 +26,256 @@ ServerEvents.recipes((event) => {
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:arcane_charcoal', 600)
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:block_of_arcane_charcoal', 6000)
 
-  //apotheosis shelves
-  const shelves = [
-    'apotheosis:blazing_hellshelf',
-    'apotheosis:glowing_hellshelf',
-    'apotheosis:crystal_seashelf',
-    'apotheosis:heart_seashelf',
-    'apotheosis:echoing_deepshelf',
-    'apotheosis:soul_touched_deepshelf',
-    'apotheosis:echoing_sculkshelf',
-    'apotheosis:soul_touched_sculkshelf',
-    'apotheotic_additions:gilded_aerogel_skyshelf',
-    'apotheosis:pearl_endshelf',
-    'apotheosis:draconic_endshelf'
+  //goety fabrics
+  const fabrics = [
+    'dark',
+    'chill',
+    'magic',
+    'gale',
+    'spirit',
+    'occult'
   ]
-  shelves.forEach(shelf => {
-    event.remove({ id: shelf })
+  fabrics.forEach(fabric => {
+    event.remove({id: `goety:${fabric}_fabric`})
+  })
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'immersive_engineering:hemp_fabric',
+      "count": 4
+    },
+    "output": {
+      "item": 'goety:dark_fabric',
+      "count": 4
+    },
+    "extra_items": [
+      {
+        "item": "minecraft:black_dye",
+        "count": 2
+      },
+      {
+        "item": "evilcraft:dark_gem",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "wicked",
+        "count": 2
+      },
+      {
+        "type": "arcane",
+        "count": 1
+      },
+      {
+        "type": "aerial",
+        "count": 1
+      }
+    ]
+  })
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'immersive_engineering:hemp_fabric',
+      "count": 4
+    },
+    "output": {
+      "item": 'goety:chill_fabric',
+      "count": 4
+    },
+    "extra_items": [
+      {
+        "item": "minecraft:blue_ice",
+        "count": 2
+      },
+      {
+        "item": "malum:astral_weave",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "wicked",
+        "count": 1
+      },
+      {
+        "type": "aqueous",
+        "count": 2
+      },
+      {
+        "type": "aerial",
+        "count": 1
+      }
+    ]
+  })
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'immersive_engineering:hemp_fabric',
+      "count": 4
+    },
+    "output": {
+      "item": 'goety:magic_fabric',
+      "count": 4
+    },
+    "extra_items": [
+      {
+        "item": "malum:cthonic_gold",
+        "count": 2
+      },
+      {
+        "item": "eidolon:arcane_gold_nugget",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "wicked",
+        "count": 1
+      },
+      {
+        "type": "arcane",
+        "count": 2
+      },
+      {
+        "type": "aerial",
+        "count": 1
+      }
+    ]
+  })
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'immersive_engineering:hemp_fabric',
+      "count": 4
+    },
+    "output": {
+      "item": 'goety:gale_fabric',
+      "count": 4
+    },
+    "extra_items": [
+      {
+        "item": "goety:jade",
+        "count": 2
+      },
+      {
+        "tag": "forge:feathers",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "wicked",
+        "count": 1
+      },
+      {
+        "type": "arcane",
+        "count": 1
+      },
+      {
+        "type": "aerial",
+        "count": 2
+      }
+    ]
+  })
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'immersive_engineering:hemp_fabric',
+      "count": 4
+    },
+    "output": {
+      "item": 'goety:spirit_fabric',
+      "count": 4
+    },
+    "extra_items": [
+      {
+        "item": "goety:ectoplasm",
+        "count": 2
+      },
+      {
+        "item": "hexalia:spirit_powder",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "wicked",
+        "count": 1
+      },
+      {
+        "type": "sacred",
+        "count": 2
+      },
+      {
+        "type": "aerial",
+        "count": 1
+      }
+    ]
+  })
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'immersive_engineering:hemp_fabric',
+      "count": 4
+    },
+    "output": {
+      "item": 'goety:occult_fabric',
+      "count": 4
+    },
+    "extra_items": [
+      {
+        "item": "ars_nouveau:sourceberry_bush",
+        "count": 2
+      },
+      {
+        "item": "minecraft:fermented_spider_eye",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "wicked",
+        "count": 2
+      },
+      {
+        "type": "arcane",
+        "count": 2
+      }
+    ]
+  })
+  //harder spirit fabric
+  event.remove({ id: 'malum:spirit_infusion/spirit_fabric' })
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'hexerei:infused_fabric',
+      "count": 4
+    },
+    "output": {
+      "item": 'malum:spirit_fabric',
+      "count": 4
+    },
+    "extra_items": [
+      {
+        "item": "malum:hex_ash",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "wicked",
+        "count": 2
+      },
+      {
+        "type": "earthen",
+        "count": 1
+      },
+      {
+        "type": "aerial",
+        "count": 1
+      }
+    ]
   })
   //harder living flesh
   event.remove({ id: 'malum:spirit_infusion/living_flesh' })
@@ -66,6 +300,23 @@ ServerEvents.recipes((event) => {
         "count": 2
       }
     ]
+  })
+  //apotheosis shelves
+  const shelves = [
+    'apotheosis:blazing_hellshelf',
+    'apotheosis:glowing_hellshelf',
+    'apotheosis:crystal_seashelf',
+    'apotheosis:heart_seashelf',
+    'apotheosis:echoing_deepshelf',
+    'apotheosis:soul_touched_deepshelf',
+    'apotheosis:echoing_sculkshelf',
+    'apotheosis:soul_touched_sculkshelf',
+    'apotheotic_additions:gilded_aerogel_skyshelf',
+    'apotheosis:pearl_endshelf',
+    'apotheosis:draconic_endshelf'
+  ]
+  shelves.forEach(shelf => {
+    event.remove({ id: shelf })
   })
   //blazing hellshelf
   event.custom({

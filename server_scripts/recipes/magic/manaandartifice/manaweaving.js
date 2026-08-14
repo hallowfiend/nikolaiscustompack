@@ -12,6 +12,7 @@ const hourglass = "mna:hourglass"
 const infinity = "mna:infinity"
 
 ServerEvents.recipes(event => {
+    //manaweaving components
     event.remove({id: 'mna:ritual_focus_minor'})
     event.shaped('4x mna:ritual_focus_minor', [
         'ztz',
@@ -22,6 +23,7 @@ ServerEvents.recipes(event => {
         t: 'gtceu:tin_nugget',
         g: 'caverns_and_chasms:float_glass_pane'
     }).id('kubejs:shaped/ritual_focus_minor')
+    //manaweaving proper
     const removals = [
         'botania:mana_ring',
         'botania:aura_ring',

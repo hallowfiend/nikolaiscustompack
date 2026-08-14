@@ -145,6 +145,18 @@ ServerEvents.recipes((event) => {
         'gtceu:twilit_mithril_ingot',
         1
     )
+    arcFurnace(
+        'undergarden:froststeel_ingot',
+        1,
+        [{'tag': 'forge:ingots/deepsilver', 'count': 1}],
+        'gtceu:frostsilver_ingot',
+        1
+    )
+    event.recipes.gtceu.alloy_smelter(`frostsilver_ingot`)
+        .itemInputs([`undergarden:froststeel_ingot`, `eternal_starlight:deepsilver_ingot`])
+        .itemOutputs(`gtceu:frostsilver_ingot`)
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.LV]);
     const nicrosilMaterials = [
         'quartzite',
         'nether_quartz'

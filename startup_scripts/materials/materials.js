@@ -564,6 +564,17 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
             GTMaterialFlags.GENERATE_GEAR,
             centrifuge
         );
+    
+    event.create('frostsilver')
+        .components('froststeel', 'deepsilver')
+        .ingot()
+        .color(0x67b9ee)
+        .secondaryColor(0x5B5D93)
+        .iconSet(SHINY)
+        .flags(
+            centrifuge
+        );
+
 
 //Iron's Spells & Spellbooks
 
@@ -695,15 +706,31 @@ event.create('iesnium')
             GTMaterialFlags.GENERATE_FINE_WIRE
         );
 
-event.create('spirit_gem')
+event.create('xithricite')
         .gem()
         .color(0xbb78cc)
-        .components('almandine', 'spirit', 'arkanum')
+        .element('xithricite')
         .iconSet(DIAMOND)
         .flags(
             no_decomp,
             no_smashing
         );
+
+event.create('strumm')
+        .ingot()
+        .color(0x95a3a3)
+        .secondaryColor(0xd2d4d4)
+        .iconSet(ROUGH)
+        .components('pewter', 'tin', 'sodium', 'ammonia', 'aerialis', 'aqua', 'exispiravit')
+        .flags(
+            no_decomp,
+            plates,
+            rod,
+            long_rod,
+            gear,
+            bolt_and_screw
+        )
+
 
 // Embers
 
