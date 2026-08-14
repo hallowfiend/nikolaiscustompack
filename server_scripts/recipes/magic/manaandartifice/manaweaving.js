@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
         [
             'gtceu:manasteel_ring',
             'kubejs:rune_storms',
-            'botania:lens_magnetizing',
+            'botania:lens_magnet',
             'goety:waystone'
         ],
         [diamond, circle, square], 'botania:magnet_ring'

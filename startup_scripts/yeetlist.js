@@ -163,7 +163,9 @@ global.removedItems = [
   'pneumaticcraft:flux_compressor',
   'evilcraft:golden_string',
   'hexalia:candle_skull',
-  'hexalia:wither_candle_skull'
+  'hexalia:wither_candle_skull',
+  'scguns:lightning_battery',
+  'scguns:lightning_rod_connector'
 ];
 
 global.removedRecipeIds = [

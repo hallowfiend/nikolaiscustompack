@@ -298,7 +298,7 @@ ServerEvents.recipes(event => {
     'gtceu:rubber_sapling',
     100
   )
-    //Terrestrial Agglomeration Plate
+  //Terrestrial Agglomeration Plate
   event.remove({id: 'botania:terra_plate'})
   treeRitual(
     [
@@ -315,5 +315,5 @@ ServerEvents.recipes(event => {
     'malum:azure_runewood_sapling',
     400
   )
-    //Elven Gateway Core
+  //Elven Gateway Core
 })

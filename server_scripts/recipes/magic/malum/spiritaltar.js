@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {
-      "item": 'immersive_engineering:hemp_fabric',
+      "item": 'immersiveengineering:hemp_fabric',
       "count": 4
     },
     "output": {
@@ -76,7 +76,7 @@ ServerEvents.recipes((event) => {
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {
-      "item": 'immersive_engineering:hemp_fabric',
+      "item": 'immersiveengineering:hemp_fabric',
       "count": 4
     },
     "output": {
@@ -111,7 +111,7 @@ ServerEvents.recipes((event) => {
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {
-      "item": 'immersive_engineering:hemp_fabric',
+      "item": 'immersiveengineering:hemp_fabric',
       "count": 4
     },
     "output": {
@@ -146,7 +146,7 @@ ServerEvents.recipes((event) => {
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {
-      "item": 'immersive_engineering:hemp_fabric',
+      "item": 'immersiveengineering:hemp_fabric',
       "count": 4
     },
     "output": {
@@ -181,7 +181,7 @@ ServerEvents.recipes((event) => {
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {
-      "item": 'immersive_engineering:hemp_fabric',
+      "item": 'immersiveengineering:hemp_fabric',
       "count": 4
     },
     "output": {
@@ -216,7 +216,7 @@ ServerEvents.recipes((event) => {
   event.custom({
     "type": "malum:spirit_infusion",
     "input": {
-      "item": 'immersive_engineering:hemp_fabric',
+      "item": 'immersiveengineering:hemp_fabric',
       "count": 4
     },
     "output": {

@@ -3,8 +3,6 @@ StartupEvents.registry('item', event => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
     // foodstuffs and food-related items
-    event.create('mother_of_vinegar')
-    .displayName('Mother of Vinegar')
     //drinks
     event.create('forgotten_imbibation')
     .displayName('Forgotten Imbibation')

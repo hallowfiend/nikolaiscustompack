@@ -62,8 +62,6 @@ ServerEvents.recipes(event => {
         recipesToAdd.push(buildColorRecipe('interiors:@_floor_chair', 'interiors:white_floor_chair'))
         recipesToAdd.push(buildColorRecipe('interiors:@_chair', 'interiors:white_chair'))
         recipesToAdd.push(buildColorRecipe('interiors:@_cushion', 'interiors:white_cushion'))
-        recipesToAdd.push(buildColorRecipe('handcrafted:@_cushion', 'handcrafted:white_cushion'))
-        recipesToAdd.push(buildColorRecipe('handcrafted:@_sheet', 'handcrafted:white_sheet'))
         recipesToAdd.push(buildColorRecipe('hearth_and_home:@_paper_lantern', 'hearth_and_home:white_paper_lantern'))
         recipesToAdd.push(buildColorRecipe('hearth_and_home:@_stained_barred_glass', 'hearth_and_home:barred_glass'))
         recipesToAdd.push(buildColorRecipe('hexcasting:dye_colorizer_@', 'hexcasting:dye_colorizer_white'))

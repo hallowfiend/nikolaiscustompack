@@ -66,4 +66,11 @@ ItemEvents.tooltip(event => {
      text.add(2, Text.gray("Performs Mixing Cauldron, Ritual Table and Cauldron Crafting recipes very quickly"))
      text.add(3, Text.gray("Requires 0 EU; operated by Wixies paid in Source-Boosted Dieselixir"))
     })
+
+    event.addAdvanced('gtceu:epic_keg', (item, advanced, text) => {
+     text.add(1, Text.gold("Glory to S. Cerevisiae").italic().bold())
+     text.add(2, Text.gray("Ferments food and drink with great speed and efficiency"))
+     text.add(3, Text.gray("Can run parallel recipes and automatically provides the optimal temperature for fermenting"))
+     text.add(4, Text.gray("Requires 0 EU"))
+    })
 })

@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             "item": "mna:vinteum_dust"
         },
         {
-            "item": "gtceu:small_silver_dust"
+            "item": "gtceu:silver_dust"
         }
     ],
     "reagent": [
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
             "item": "eidolon:crimson_essence"
         },
         {
-            "item": "evilcraft:dark_gem_crushed"
+            "item": "kubejs:blood_slime_ball"
         },
         {
             "item": "malum:auric_embers"
@@ -173,13 +173,13 @@ ServerEvents.recipes(event => {
             "item": "eidolon:ender_calx"
         },
         {
-            "item": "bloodmagic:reagentvoid"
+            "item": "eidolon:ender_calx"
         },
         {
             "tag": "forge:dusts/endstone"
         },
         {
-            "item": "gtceu:zanite_dust"
+            "item": "gtceu:xithricite_dust"
         }
     ],
     "reagent": [

@@ -720,7 +720,7 @@ event.create('strumm')
         .ingot()
         .color(0x95a3a3)
         .secondaryColor(0xd2d4d4)
-        .iconSet(ROUGH)
+        .iconSet(METALLIC)
         .components('pewter', 'tin', 'sodium', 'ammonia', 'aerialis', 'aqua', 'exispiravit')
         .flags(
             no_decomp,

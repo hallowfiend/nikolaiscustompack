@@ -128,8 +128,9 @@ ServerEvents.recipes(event => {
     'hexalia:silk_moth',
     3,
     'miners_delight:crunchy_bar',
-    'mna:infused_silk',
-    'hexalia:mutavis'
+    'minecraft:string',
+    'hexalia:mutavis',
+    'gtceu:stone_dust'
   )
   //Ars Nouveau
   brazier_summoning(

@@ -1,18 +1,3 @@
-ItemEvents.modification(event => {
-    event.modify('kubejs:mother_of_vinegar', item => {
-    item.foodProperties = food => {
-        food.hunger(1)
-        food.saturation(1)
-        .effect(
-            'collectorsreap:corrosion',
-            20,
-            2,
-            1      
-        ) 
-    }
-  })
-})
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('epic_keg_fermentation')
@@ -28,7 +13,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.ALL)
         .appearanceBlock(() => Block.getBlock('embers:sealed_planks'))
         .recipeType('epic_keg_fermentation')
-        .noRecipeModifier()
+        .recipeModifiers([
+            GTRecipeModifiers.PARALLEL_HATCH
+        ])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("0aaa0", "ad0da", "a000a", "ad0da", "0aaa0")
             .aisle("0bbb0", "baaab", "baaab", "baaab", "0bbb0")
@@ -38,7 +25,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
             .where("a", Predicates.blocks("embers:sealed_planks"))
             .where("b", Predicates.blocks("embers:reinforced_sealed_planks")
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("c", Predicates.controller(Predicates.blocks(definition.get())))
             .where("d", Predicates.blocks("magichem:silver_button"))
             .where("0", Predicates.any())
