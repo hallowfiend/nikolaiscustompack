@@ -2,7 +2,10 @@ ServerEvents.tags('fluid', event => {
     event.add('tconstruct:brass',
     'gtceu:brass'
     )
-
+    event.add('forge:phenol', 'gtceu:phenol')
+    event.add('forge:carbon_dioxide', 'gtceu:carbon_dioxide')
+    event.add('forge:formaldehyde', 'gtceu:formaldehyde')
+    event.add('forge:bakelite', 'gtceu:bakelite')
     event.remove("minecraft:water", [
         "undergarden:virulent_mix_source",
         "undergarden:virulent_mix_flowing",

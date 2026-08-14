@@ -1,4 +1,7 @@
 ServerEvents.recipes(event => {
+    const compressableDusts = [
+        
+    ]
     function pressureChamber(inputs, pressure, outputs, id){
         event.custom({
         "type": "pneumaticcraft:pressure_chamber",

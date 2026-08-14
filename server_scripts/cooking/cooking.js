@@ -74,6 +74,6 @@ ServerEvents.recipes(event => {
             `2x ${gummy.flavor}_gummy`,
             0.5,
             40
-        ).id(`kubejs:farmersdelight/cooking/${gummy.flavor}_gummy_from_gellant`)
+        ).id(`kubejs:farmersdelight/cooking/${gummy.flavor.split(":"[1])}_gummy_from_gellant`)
     })
 })

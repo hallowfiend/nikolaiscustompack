@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         'eidolon:merammer_root'
     ]
     eidolonCrops.forEach(crop => {
-        cloche(crop, {"type":"crop","block":crop}, crop, 'hexalia:infused_dirt', 1600)
+        cloche(crop, {"type":"crop","block":crop}, [{"item": crop}], 'hexalia:infused_dirt', 1600)
     })
     croppyCrops.forEach(crop => {
         cloche(crop.input, {"type":"crop","block":crop.render}, crop.output, crop.soil, crop.time)

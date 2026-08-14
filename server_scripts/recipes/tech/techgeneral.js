@@ -40,6 +40,10 @@ ServerEvents.recipes(event => {
             min_temp: 273,
         },
     });
+    const treatLeathers = [
+        'eidolon:basic_belt',
+        ''
+    ]
     event.replaceInput({output: 'eidolon:basic_belt'}, 'minecraft:leather', 'kubejs:treated_leather')
     //laserio
     /* event.remove({ output: "laserio:logic_chip" });
@@ -50,13 +54,13 @@ ServerEvents.recipes(event => {
     event.shaped("laserio:laser_connector", [" A ", "BCB", "DDD"], {
         A: "#forge:gems/ruby",
         B: "gtceu:vibrant_alloy_single_wire",
-        C: "gtceu:ev_emitter",
+        C: "gtceu:hv_emitter",
         D: "#forge:plates/electrical_steel",
     });
 
     event.shaped("laserio:laser_node", ["ABA", "CDC", "ABA"], {
         A: "#forge:plates/stainless_steel",
-        B: "#gtceu:circuits/ev",
+        B: "#gtceu:circuits/hv",
         C: "#forge:storage_blocks/ruby",
         D: "laserio:laser_connector",
     }); */

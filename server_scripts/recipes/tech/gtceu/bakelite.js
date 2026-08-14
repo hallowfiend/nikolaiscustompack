@@ -26,11 +26,11 @@ event.custom({
 	"energy": 120,
 	"input0": {
 		"amount": 16,
-		"fluid": "gtceu:hydrogen"
+		"tag": "forge:hydrogen"
 		},
         "input1": {
                 "amount": 4,
-                "fluid": "gtceu:carbon_dioxide"
+                "tag": "forge:carbon_dioxide"
         },
 	"result": {
 		"amount": 4,
@@ -46,11 +46,11 @@ event.custom({
 	"energy": 120,
 	"input0": {
 		"amount": 8,
-		"fluid": "gtceu:methanol"
+		"tag": "forge:methanol"
 		},
         "input1": {
                 "amount": 8,
-                "fluid": "gtceu:oxygen"
+                "tag": "forge:oxygen"
         },
 	"result": {
 		"amount": 8,
@@ -81,11 +81,11 @@ event.custom({
 	"energy": 120,
 	"input0": {
 		"amount": 8,
-		"fluid": "gtceu:phenol"
+		"tag": "forge:phenol"
 		},
         "input1": {
                 "amount": 8,
-                "fluid": "gtceu:formaldehyde"
+                "tag": "forge:formaldehyde"
         },
 	"result": {
 		"amount": 8,
@@ -107,22 +107,21 @@ event.remove({id: 'immersiveengineering:bottling/duroplast_block'})
 event.remove({id: 'immersiveengineering:bottling/duroplast_plate'})
 event.replaceInput({input: 'immersiveengineering:plate_duroplast'}, 'immersiveengineering:plate_duroplast', 'gtceu:bakelite_plate')
 event.replaceInput({input: 'pneumaticcraft:plastic_sheet'}, 'pneumaticcraft:plastic_sheet', 'gtceu:bakelite_plate')
-event.replaceInput({input: 'pneumaticcraft:plastic'}, 'pneumaticcraft:plastic', 'gtceu:bakelite')
 event.custom({
   "type": "immersiveengineering:bottling_machine",
   "fluid": {
     "amount": 144,
-    "fluid": "gtceu:bakelite"
+    "tag": "forge:bakelite"
   },
   "input": {
     "item": "immersiveengineering:mold_plate"
   },
   "results": [
     {
-      "id": "gtceu:bakelite_plate"
+      "item": "gtceu:bakelite_plate"
     },
     {
-      "id": "immersiveengineering:mold_plate"
+      "item": "immersiveengineering:mold_plate"
     }
   ]
 })
@@ -130,17 +129,17 @@ event.custom({
   "type": "immersiveengineering:bottling_machine",
   "fluid": {
     "amount": 144,
-    "fluid": "gtceu:bakelite"
+    "tag": "forge:bakelite"
   },
   "input": {
     "item": "immersiveengineering:mold_rod"
   },
   "results": [
     {
-      "id": "gtceu:bakelite_rod"
+      "item": "gtceu:bakelite_rod"
     },
     {
-      "id": "immersiveengineering:mold_rod"
+      "item": "immersiveengineering:mold_rod"
     }
   ]
 })
@@ -148,17 +147,17 @@ event.custom({
   "type": "immersiveengineering:bottling_machine",
   "fluid": {
     "amount": 576,
-    "fluid": "gtceu:bakelite"
+    "tag": "forge:bakelite"
   },
   "input": {
     "item": "immersiveengineering:mold_gear"
   },
   "results": [
     {
-      "id": "gtceu:bakelite_gear"
+      "item": "gtceu:bakelite_gear"
     },
     {
-      "id": "immersiveengineering:mold_gear"
+      "item": "immersiveengineering:mold_gear"
     }
   ]
 })
@@ -166,17 +165,17 @@ event.custom({
   "type": "immersiveengineering:bottling_machine",
   "fluid": {
     "amount": 1296,
-    "fluid": "gtceu:bakelite"
+    "tag": "forge:bakelite"
   },
   "input": {
     "item": "immersiveengineering:mold_packing_4"
   },
   "results": [
     {
-      "id": "gtceu:bakelite_block"
+      "item": "gtceu:bakelite_block"
     },
     {
-      "id": "immersiveengineering:mold_packing_4"
+      "item": "immersiveengineering:mold_packing_4"
     }
   ]
 })
