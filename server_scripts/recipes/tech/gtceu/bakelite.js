@@ -106,7 +106,7 @@ event.remove({id: 'immersiveengineering:bottling/empty_shell'})
 event.remove({id: 'immersiveengineering:bottling/duroplast_block'})
 event.remove({id: 'immersiveengineering:bottling/duroplast_plate'})
 event.replaceInput({input: 'immersiveengineering:plate_duroplast'}, 'immersiveengineering:plate_duroplast', 'gtceu:bakelite_plate')
-event.replaceInput({input: 'pneumaticcraft:plastic_sheet'}, 'pneumaticcraft:plastic_sheet', 'gtceu:bakelite_plate')
+event.replaceInput({input: 'pneumaticcraft:plastic'}, 'pneumaticcraft:plastic', 'gtceu:bakelite_plate')
 event.custom({
   "type": "immersiveengineering:bottling_machine",
   "fluid": {

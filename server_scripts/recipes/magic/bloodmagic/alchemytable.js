@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
-    //Ichorfuel
-    /* event.recipes.bloodmagic.alchemytable('gtceu:ichorfuel_gem',
-        [
+    //less shit plant oil recipe
 
-        ]
-    ).syphon(800).ticks(800).upgradeLevel(4) */
+    //catalysts
 })

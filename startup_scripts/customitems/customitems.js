@@ -131,6 +131,10 @@ StartupEvents.registry('item', event => {
         .saturation(3)
         .effect('dungeonsdelight:tenacity', 2000, 1, 1)
     }).useAnimation('eat');
+    event.create('concentratedcatalyst')
+    .displayName('Concentrated Catalyst');
+    event.create('infused_string')
+    .displayName('Infused String');
     event.create('hemauric_nutrient_pellets')
     .displayName('Hemauric Nutrient Pellets');
     event.create('nature_offering')

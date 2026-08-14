@@ -8,14 +8,15 @@ ServerEvents.recipes(event => {
             if (i.tag) ingredience.push(`#${i.tag}`)
             if (i.item) ingredience.push(`${i.item}`)
         })
-        if (recipe?.basefluid){
+        if (recipe?.basefluid & recipe?.result?.fluid){
             event.recipes.gtceu.epic_keg(`${recipe.result.fluid.split(":")[1]}`)
             .itemInputs(ingredience)
-            .outputFluids(`${recipe.result.count}x ${recipe.result.fluid}`)
+            .inputFluids(`${recipe.basefluid.fluid} ${recipe.basefluid.count}`)
+            .outputFluids(`${recipe.result.fluid} ${recipe.result.count}`)
             .duration(recipe.fermentingTime)
         }
         else {
-            event.recipes.gtceu.epic_keg(`${recipe.result.fluid.split(":")[1]}`)
+            event.recipes.gtceu.epic_keg(`${recipe.result.item.split(":")[1]}`)
             .itemInputs(ingredience)
             .itemOutputs(`${recipe.result.count}x ${recipe.result.item}`)
             .duration(recipe.fermentingTime)
