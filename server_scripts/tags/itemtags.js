@@ -379,7 +379,8 @@ ServerEvents.tags("item", (event) => {
     'brewincompatdelight:black_russian',
     'brewincompatdelight:white_wine',
     'brewincompatdelight:sweet_red_wine',
-    'kubejs:soulchill_absinthe'
+    'kubejs:soulchill_absinthe',
+    'crabbersdelight:kelp_shake'
   ])
   event.add('toughasnails:hydration/30_hydration_drinks', [
     '#toughasnails:thirst/4_thirst_drinks'
@@ -718,6 +719,8 @@ ServerEvents.tags("item", (event) => {
   event.add('constructs_casting:dragon_scales', 'quark:dragon_scale'),
 
   event.add('forge:gems/coke', 'immersiveengineering:coal_coke');
+
+  event.add('forge:storage_blocks/coke', 'immersiveengineering:coke');
 
   event.add('forge:storage_blocks/arcane_charcoal', 'malum:block_of_arcane_charcoal');
 

@@ -111,6 +111,16 @@ ServerEvents.recipes(event => {
             time: 480
         }
     ]
+    const eidolonCrops = [
+        'eidolon:avennian_sprig',
+        'eidolon:sildrian_seed',
+        'eidolon:mirecap',
+        'eidolon:oanna_bloom',
+        'eidolon:merammer_root'
+    ]
+    eidolonCrops.forEach(crop => {
+        cloche(crop, {"type":"crop","block":crop}, crop, 'hexalia:infused_dirt', 1600)
+    })
     croppyCrops.forEach(crop => {
         cloche(crop.input, {"type":"crop","block":crop.render}, crop.output, crop.soil, crop.time)
     })

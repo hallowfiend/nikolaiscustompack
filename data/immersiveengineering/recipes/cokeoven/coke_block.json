@@ -1,0 +1,14 @@
+{
+    "type": "immersiveengineering:coke_oven",
+        "fluid": {
+            "amount":5000,
+            "fluid":"gtceu:creosote"
+        },
+                "input": {
+                    "item":"minecraft:coal_block"
+                },
+                        "result": {
+                            "item":"gtceu:coke_block"
+                        },
+        "time": 100
+}

@@ -2,25 +2,34 @@
 ServerEvents.recipes((event) => {
 
   // arcane charcoal coking
-  event.recipes.gtceu.coke_oven('arcane_charcoal_coking')
-    .itemInputs('#malum:soulwood_logs')
-    .itemOutputs('malum:arcane_charcoal')
-    .outputFluids(Fluid.of('gtceu:creosote', 1000))
-    .duration(900);
-
-  event.recipes.gtceu.coke_oven('arcane_charcoal_coking2')
-    .itemInputs('#malum:runewood_logs')
-    .itemOutputs('malum:arcane_charcoal')
-    .outputFluids(Fluid.of('gtceu:creosote', 1000))
-    .duration(900);
   
-  event.recipes.immersiveengineering.coke_oven(
-    'malum:arcane_charcoal', '#malum:runewood_logs', 1000, 2000
-  );
+  event.custom({
+    "type": "immersiveengineering:coke_oven",
+        "fluid": {
+          "amount":2000,
+          "fluid":"gtceu:creosote"
+        },
+        "input": {
+          "tag":"malum:runewood_logs"},
+          "result": {
+          "item":"malum:arcane_charcoal"
+          },
+        "time": 1000
+  })
 
-  event.recipes.immersiveengineering.coke_oven(
-    'malum:arcane_charcoal', '#malum:soulwood_logs', 1000, 2000
-  );
+  event.custom({
+    "type": "immersiveengineering:coke_oven",
+        "fluid": {
+          "amount":2000,
+          "fluid":"gtceu:creosote"
+        },
+        "input": {
+          "tag":"malum:soulwood_logs"},
+          "result": {
+          "item":"malum:arcane_charcoal"
+          },
+        "time": 1000
+  })
 
   //blast furnace fuel
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:arcane_charcoal', 600)

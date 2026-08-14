@@ -1,0 +1,13 @@
+{
+    "type": "immersiveengineering:coke_oven",
+        "fluid": {
+            "amount":250,
+            "fluid":"gtceu:creosote"
+        },
+                "input": {
+                    "tag":"minecraft:logs"},
+                        "result": {
+                            "item":"minecraft:charcoal"
+                        },
+        "time": 100
+}
