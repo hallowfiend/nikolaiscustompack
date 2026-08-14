@@ -59,6 +59,11 @@ ServerEvents.recipes(event => {
     //netherexp
     //spawn
     //environmental
+    //mowzie's mobs
+    decomposing(1, 200, 'mowziesmobs:naga_fang', 
+        ['biomancy:mob_fang', toxin_extract],
+        [1, 1-4]
+    )
     //miner's delight
     decomposing(1, 150, 'miners_delight:arthropod', 
         [flesh_bits, toxin_extract, bile],
@@ -94,7 +99,7 @@ ServerEvents.recipes(event => {
     const slimeballs = [
         {item: 'tconstruct:sky_slime_ball', extra: bioluminescent_goo},
         {item: 'tconstruct:ichor_slime_ball', extra: hormone_secretion},
-        {item: 'tconstruct:ender_slime_ball', extra: exotic_dust},
+        {item: 'tconstruct:ender_slime_ball', extra: 'malum:arcane_spirit'},
         {item: 'kubejs:blood_slime_ball', extra: 'evilcraft:hardened_blood_shard'},
         {item: 'embers:adhesive', extra: 'biomancy:gelling_agent'},
         {item: 'malum:runic_sapball', extra: 'minecraft:glowstone_dust'},

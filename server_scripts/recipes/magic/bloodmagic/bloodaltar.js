@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             .consumptionRate(50)
             .drainRate(5)
             .altarSyphon(1000)
-            .id('kubejs:blank_slate');
+            .id('kubejs:blood_magic/blood_altar/blank_slate');
     //blood orbs
     const orbs = [
         {name: "weak", tier: 0, cost: 2000},
