@@ -90,6 +90,12 @@ event.add('malum:gross_foods', [
 
 //diet
 
+event.add('diet:grains', [
+    'dungeonsdelight:rotbulb',
+    'dungeonsdelight:gunk',
+    'twilightforest:borer_essence'
+])
+
 event.add('diet:sugars', [
     'malum:cursed_sap',
     'malum:runic_sap',
@@ -115,7 +121,8 @@ event.add('diet:fats', [
     'brewinandchewin:scarlet_cheese_wedge',
     'ad_astra:cheese',
     'netherexp:glowcheese',
-    'dungeonsdelight:wardenzola_crumbles'
+    'dungeonsdelight:wardenzola_crumbles',
+    'twilightforest:carminite'
 ])
 event.add('diet:vegetables', [
     'undergarden:glitterkelp',
@@ -124,22 +131,9 @@ event.add('diet:vegetables', [
     'undergarden:blue_mogmoss',
     'hexerei:mandrake_root',
     'hexalia:sunfire_tomato',
-    'undergarden:roasted_underbeans',
-    'undergarden:gloomgourd_pie',
-    'undergarden:bloody_stew',
-    'undergarden:inky_stew',
-    'undergarden:indigo_stew',
-    'undergarden:veiled_stew',
-    'undergarden:slop_bowl',
-    'miners_delight:pasta_with_veggieballs',
-    'miners_delight:vegan_patty',
-    'miners_delight:vegan_hamburger',
-    'miners_delight:vegan_wrap',
-    'miners_delight:vegan_steak_and_potatoes',
-    'miners_delight:bat_rolls',
-    'miners_delight:takoyaki',
-    'mynethersdelight:strider_with_grilled_fungus',
-    'upgrade_aquatic:boiled_pickerelweed'
+    'undergarden:underbeans',
+    'upgrade_aquatic:boiled_pickerelweed',
+    'netherexp:cerebrage'
 ])
 event.add('diet:psi', [
     'malum:cursed_sap',
@@ -152,7 +146,9 @@ event.add('diet:psi', [
     'ars_nouveau:bastion_pod',
     'ars_nouveau:bombegranate_pod',
     'ars_nouveau:frostaya_pod',
-    'hexerei:mandrake_root'
+    'hexerei:mandrake_root',
+    'dungeonsdelight:sculk_polyp',
+    'sob:exp_candy'
 ])
 
 event.add('diet:proteins', [
@@ -167,18 +163,32 @@ event.add('diet:proteins', [
     'brewinandchewin:scarlet_cheese_wedge',
     'ad_astra:cheese',
     'netherexp:glowcheese',
-    'dungeonsdelight:wardenzola_crumbles'
+    'dungeonsdelight:wardenzola_crumbles',
+    'alexsmobs:lost_tentacle',
+    'alexsmobsdelight:cooked_lost_tentacle',
+    'alexsmobsdelight:dried_shredded_squid',
+    'dungeonsdelight:ghast_tentacle',
+    'dungeonsdelight:ghast_calamari',
+    'mynethersdelight:ghasta',
+    'mynethersdelight:ghasmati'
 ])
 
 event.add('diet:ingredients', [
-    'minecraft:dried_kelp'
+    'minecraft:dried_kelp',
+    'dungeonsdelight:rotbulb',
+    'dungeonsdelight:gunk',
+    'twilightforest:carminite',
+    'twilightforest:borer_essence',
+    'alexsmobs:lost_tentacle',
+    'dungeonsdelight:sculk_polyp',
+    'undergarden:glitterkelp',
+    '#forge:milk',
+    '#forge:eggs',
+    '#forge:mushrooms'
 ])
 
 event.add('diet:special_food', [
-    '#forge:milk',
-    '#forge:eggs',
-    'undergarden:glitterkelp',
-    '#forge:mushrooms',
+
     'undergarden:mogmoss',
     'undergarden:blue_mogmoss',
     'hexerei:mandrake_root',
@@ -224,7 +234,6 @@ event.add('diet:special_food', [
     'largemeals:roasted_mutton_rack_block',
     'environmental:truffle_pie',
     'undergardendelight:stuffed_gloomgourd',
-    'hearthandharvest:carrot_cake',
     'seasonals:beetroot_cake',
     'farmersdelight:honey_glazed_ham_block',
     'brewinandchewin:fiery_fondue_pot'

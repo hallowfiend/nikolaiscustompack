@@ -10,18 +10,101 @@
     })
     }
 
-    // OCCULTISM - demon's dream seeds
+    //DUNGEON'S DELIGHT
     ritualtable(
         [
+            {'item': 'minecraft:poisonous_potato'},
+            {'item': 'hexalia:witchweed'},
+            {'item': 'farmersdelight:rotten_tomato'},
+            {'item': 'malum:wicked_spirit'},
+            {'item': 'dungeonsdelight:rotten_tripe'}
+        ],
+        'dungeonsdelight:rotbulb'
+    )
+    //OCCULTISM
+    ritualtable(
+        [
+            {"item": "hexerei:sage_seed"},
             {"item": "hexalia:spirit_powder"},
             {"item": "goety:ectoplasm"},
-            {"item": "hexerei:sage_seed"},
             {"item": "goety:cursed_ingot"},
             {"tag": "forge:essences/death"}
         ],
         "occultism:datura_seeds"
     )
-    // HIBERNAL HERBS - unifying herbal conjuration
+    //GOETY
+    ritualtable(
+        [
+            {"item": "immersiveengineering:seed"},
+            {"item": "windswept:yellow_petals"},
+            {"item": "hexerei:mandrake_flowers"},
+            {"item": "eidolon:fungus_sprouts"},
+            {"item": "malum:runic_sapball"}
+        ],
+        "goety:henbane_seeds"
+    )
+    ritualtable(
+        [
+            {"item": "immersiveengineering:seed"},
+            {"item": "hexerei:belladonna_berries"},
+            {"item": "eidolon:tattered_cloth"},
+            {"item": "environmental:violet"},
+            {"item": "malum:warp_flux"}
+        ],
+        "goety:nightshade_seeds"
+    )
+    //EIDOLON
+    ritualtable(
+        [
+            {"item": "minecraft:fern"},
+            {"item": "eidolon:soul_shard"},
+            {"item": "farmersrespite:green_tea_leaves"},
+            {"item": "goety:jade"},
+            {"item": "tconstruct:earth_slime_congealed"}
+        ],
+        "eidolon:avennian_sprig"
+    )
+    ritualtable(
+        [
+            {"item": "minecraft:cocoa_beans"},
+            {"item": "eidolon:soul_shard"},
+            {"item": "farmersrespite:coffee_beans"},
+            {"item": "gtceu:pyrochlore_dust"},
+            {"item": "hexalia:rabbage_seeds"}
+        ],
+        "eidolon:sildrian_seed"
+    )
+    ritualtable(
+        [
+            {"item": "minecraft:oxeye_daisy"},
+            {"item": "eidolon:soul_shard"},
+            {"item": "minecraft:blaze_powder"},
+            {"tag": "forge:resins"},
+            {"item": "miners_delight:cave_carrot"}
+        ],
+        "eidolon:merammer_root"
+    )
+    ritualtable(
+        [
+            {"item": "hexalia:lotus_flower"},
+            {"item": "eidolon:soul_shard"},
+            {"item": "minecraft:pink_petals"},
+            {"item": "gtceu:electrum_dust"},
+            {"item": "ars_nouveau:sourceberry_bush"}
+        ],
+        'eidolon:oanna_bloom'
+    )
+    ritualtable(
+        [
+            {'item': 'minecraft:warped_fungus'},
+            {"item": "eidolon:soul_shard"},
+            {"tag": "forge:essences/death"},
+            {'item': 'dungeonsdelight:rotbulb'},
+            {'item': 'minecraft:ink_sac'}
+        ],
+        'eidolon:mirecap'
+    )
+    //HIBERNAL HERBS - unifying herbal conjuration
     //singed leaves (replaces singed grimoire in ritual table recipes)
     ServerEvents.recipes((event) => {
     event.shapeless(

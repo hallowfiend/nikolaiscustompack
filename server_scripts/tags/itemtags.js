@@ -17,6 +17,12 @@ ServerEvents.tags("item", (event) => {
         'eidolon:zombie_heart',
         'reliquary:zombie_heart'
     ]);
+  event.add('kubejs:roses', [
+    'minecraft:rose_bush',
+    /windswept:.*_rose/,
+    /windswept:.*_rose_bush/,
+    'collectorsreap:bulbous_rose'
+  ])
   event.add('kubejs:crafting_claws', [
     'alexsmobs:dropbear_claw',
     'biomancy:mob_claw',

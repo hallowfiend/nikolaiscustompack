@@ -23,20 +23,6 @@ ServerEvents.recipes(event => {
         }).id(`kubejs:natures_aura/tree_ritual/${output.split(":")[1]}`)
     }
     //PLONTS
-    //Rotbulb
-    treeRitual(
-      [
-        {'item': 'minecraft:poisonous_potato'},
-        {'item': 'farmersdelight:rotten_tomato'},
-        {'item': 'dungeonsdelight:rotten_tripe'},
-        {'item': 'goety:cursed_ingot'},
-        {'item': 'malum:wicked_spirit'},
-        {'item': 'hexalia:witchweed'}
-      ],
-      'dungeonsdelight:rotbulb', 4,
-      'goety:rotten_sapling',
-      120
-    )
     //Ancient Sapling
     treeRitual(
       [
@@ -112,7 +98,7 @@ ServerEvents.recipes(event => {
         {'tag': 'forge:gems/ambrosium'},
         {'item': 'farmersdelight:honey_cookie'},
         {'item': 'galosphere:lumiere_shard'},
-        {'item': 'windswept:red_rose'}
+        {'tag': 'kubejs:roses'}
       ],
       'naturesaura:token_joy', 2,
       'minecraft:cherry_sapling',

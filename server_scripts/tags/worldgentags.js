@@ -26,4 +26,8 @@ ServerEvents.tags('worldgen/biome', event => {
             '#undergarden:is_undergarden'
         ]
     )
+
+    event.add('hexalia:has_shrooms', [
+        '#minecraft:is_taiga'
+    ])
 })

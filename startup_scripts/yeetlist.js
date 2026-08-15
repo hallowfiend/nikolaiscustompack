@@ -196,7 +196,8 @@ global.removedRecipeTypes = [
     'enderio:sag_milling', //not needed
     'enderio:enchanter', //we have a zillion magic mods to help us enchant stuff
     'hibernalherbs:herbal_conjuration', //flattened into hexalia ritual table
-    'ae2:inscriber' //folded into other crafting mechanics
+    'ae2:inscriber', //folded into other crafting mechanics
+    'eidolon:athame_foraging' //folded into hexalia ritual table
 ]
 
 global.removedFluids = [

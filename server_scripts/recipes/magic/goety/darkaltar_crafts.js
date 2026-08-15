@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     //FORGE RITUALS
     //Wicked Boline
     event.remove({ id: 'goety:wicked_boline' })
-    event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [
+    /* event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [
             'goety:cursed_ingot',
             'goety:pale_steel_ingot',
             'goety:pale_steel_ingot',
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
         .craftType('forge')
         .soulCost(50)
         .duration(5)
-        .id('kubejs:goety/dark_ritual/forging/wicked_boline');
+        .id('kubejs:goety/dark_ritual/forging/wicked_boline'); */
     //Botania special weapons
     //Starcaller
     event.remove({ id: 'botania:star_sword' })

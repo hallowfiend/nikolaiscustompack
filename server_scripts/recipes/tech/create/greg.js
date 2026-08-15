@@ -33,7 +33,10 @@ const createMillableGems = [
     'coke',
     'jade',
     'nether_quartz',
-    'apatite'
+    'apatite',
+    'salt',
+    'rock_salt',
+    'sal_ammoniac'
 ]
 
 const createSmashableIngots = [
