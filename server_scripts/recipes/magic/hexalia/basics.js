@@ -113,4 +113,44 @@ ServerEvents.recipes((event) => {
             "item": "hexalia:ritual_table"
         }
     });
+    //silkweave armor
+    event.remove({id: /hexalia:silkweave.*/})
+    event.shaped('hexalia:silkweave_helmet', [
+        ' S ',
+        'SLS',
+        ' W '
+        ], {
+    S: 'kubejs:woven_silk',
+    L: 'minecraft:leather',
+    W: '#minecraft:wool'
+    }).id('kubejs:shaped/silkweave_helmet')
+    event.shaped('hexalia:silkweave_mantle', [
+        'TWT',
+        'SLS',
+        ' W '
+        ], {
+    S: 'kubejs:woven_silk',
+    L: 'minecraft:leather',
+    T: 'immersiveengineering:hemp_fiber',
+    W: '#minecraft:wool'
+    }).id('kubejs:shaped/silkweave_mantle')
+    event.shaped('hexalia:silkweave_bindings', [
+        ' S ',
+        'SLS',
+        'TWT'
+        ], {
+    S: 'kubejs:woven_silk',
+    L: 'minecraft:leather',
+    T: 'immersiveengineering:hemp_fiber',
+    W: '#minecraft:wool'
+    }).id('kubejs:shaped/silkweave_bindings')
+    event.shaped('hexalia:silkweave_bindings', [
+        ' S ',
+        'SLS',
+        'TST'
+        ], {
+    S: 'kubejs:woven_silk',
+    L: 'minecraft:leather',
+    T: 'immersiveengineering:hemp_fiber'
+    }).id('kubejs:shaped/silkweave_footwraps')
 });

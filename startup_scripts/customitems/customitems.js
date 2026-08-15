@@ -131,6 +131,10 @@ StartupEvents.registry('item', event => {
         .saturation(3)
         .effect('dungeonsdelight:tenacity', 2000, 1, 1)
     }).useAnimation('eat');
+    event.create('bloomwrap_cloth')
+    .displayName('Bloomwrap Cloth');
+    event.create('woven_silk')
+    .displayName('Woven Silk')
     event.create('atropos_serum')
     .displayName('Atropos Serum');
     event.create('anointing_paste')

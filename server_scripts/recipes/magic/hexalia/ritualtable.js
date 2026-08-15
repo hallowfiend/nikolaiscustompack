@@ -9,7 +9,70 @@
         }).id(`kubejs:hexalia/ritual_table/${output.split(":")[1]}`)
     })
     }
-
+    //woven silk
+    event.shaped('kubejs:woven_silk', [
+        'SS',
+        'SS',
+        ], {
+    S: 'betterend:silk_fiber'
+    }).id('kubejs:shaped/woven_silk')
+    //bloomwrap cloth - alt crafting component for bloomwrap armor n other things
+    ritualtable(
+        [
+            {'item': 'kubejs:treated_leather'},
+            {'item': 'twigs:azalea_flowers'},
+            {'item': 'hexerei:infused_fabric'},
+            {'item': 'hexalia:mutavis'}
+        ],
+        'kubejs:bloomwrap_cloth'
+    )
+    //bloomwrap armor
+    event.remove({id: /hexalia:bloomwrap_.*_from_ritual_table/})
+    ritualtable(
+        [
+            {'item': 'kubejs:bloomwrap_cloth'},
+            {'item': 'minecraft:pink_tulip'},
+            {'item': 'hexerei:mandrake_root'},
+            {'item': 'cosmopolitan:tuber'}
+        ],
+        'hexalia:bloomwrap_hat'
+    )
+    ritualtable(
+        [
+            {'item': 'kubejs:bloomwrap_cloth'},
+            {'item': 'hexalia:earth_node'},
+            {'item': 'minecraft:moss_block'},
+            {'item': 'minecraft:iron_nugget'}
+        ],
+        'hexalia:bloomwrap_robes'
+    )
+    ritualtable(
+        [
+            {'item': 'kubejs:bloomwrap_cloth'},
+            {'item': 'minecraft:honeycomb'},
+            {'item': 'hexalia:spirit_bloom'},
+            {'item': 'minecraft:peony'}
+        ],
+        'hexalia:bloomwrap_leggings'
+    )
+    ritualtable(
+        [
+            {'item': 'kubejs:bloomwrap_cloth'},
+            {'item': 'hexalia:air_node'},
+            {'item': 'minecraft:dandelion'},
+            {'item': 'minecraft:sugar'}
+        ],
+        'hexalia:bloomwrap_boots'
+    )
+    //ancient seed - it can be DIABOLICALLY hard to find an actual goddamn jungle temple in this pack, sooooo
+    ritualtable(
+        [
+            {'item': 'eidolon:sildrian_seed'},
+            {'item': 'twilightforest:transformation_powder'},
+            {'item': 'embers:archaic_brick'}
+        ],
+        'hexalia:ancient_seed'
+    )
     //DUNGEON'S DELIGHT
     ritualtable(
         [
@@ -24,10 +87,10 @@
     //OCCULTISM
     ritualtable(
         [
-            {"item": "hexerei:sage_seed"},
-            {"item": "hexalia:spirit_powder"},
+            {"item": "hexalia:rabbage_seeds"},
+            {"item": "hexerei:mandrake_root"},
             {"item": "goety:ectoplasm"},
-            {"item": "goety:cursed_ingot"},
+            {"item": "malum:hex_ash"},
             {"tag": "forge:essences/death"}
         ],
         "occultism:datura_seeds"
@@ -56,7 +119,7 @@
     //EIDOLON
     ritualtable(
         [
-            {"item": "minecraft:fern"},
+            {"item": "hexalia:ghost_fern"},
             {"item": "eidolon:soul_shard"},
             {"item": "farmersrespite:green_tea_leaves"},
             {"item": "goety:jade"},

@@ -1,9 +1,29 @@
 //priority 999
 
 ServerEvents.recipes((event) => {
+event.remove({id: 'hexerei:infused_fabric_from_mixing_cauldron'})
 const id_prefix = 'kubejs:recipes/hexerei/mixingcauldron/'
 
 const recipes = [
+//Infused fabric is now made from woven silk
+{
+    inputItem:[
+        {"item":"kubejs:woven_silk"},
+        {"item":"kubejs:woven_silk"},
+        {"item":"kubejs:woven_silk"},
+        {"item":"kubejs:woven_silk"},
+        {"item":"kubejs:woven_silk"},
+        {"item":"kubejs:woven_silk"},
+        {"item":"minecraft:black_dye"},
+        {"item":"minecraft:black_dye"}
+    ],
+    liquid:"minecraft:water",
+    liquid_consum:250,
+    output_liquid:false,
+    output:"hexerei:infused_fabric",
+    output_amount:8,
+    heat:true
+},
 //Eidolon crucible
 {
     inputItem:[

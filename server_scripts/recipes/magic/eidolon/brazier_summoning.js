@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'hexalia:silk_moth',
     3,
-    'miners_delight:crunchy_bar',
+    'miners_delight:raw_arthropod',
     'minecraft:string',
     'hexalia:mutavis',
     'gtceu:stone_dust'
