@@ -30,4 +30,25 @@ ServerEvents.tags('worldgen/biome', event => {
     event.add('hexalia:has_shrooms', [
         '#minecraft:is_taiga'
     ])
+
+    event.add('hexalia:has_swamp_vegetation', [
+        '#forge:is_swamp'
+    ])
+
+    event.add('hexalia:has_floral_vegetation', [
+        '#minecraft:is_plains'
+    ])
+
+    event.add('hexalia:has_cool_biome_vegetation', [
+        '#forge:is_cold/overworld'
+    ])
+
+    event.add('hexalia:has_dry_biome_vegetation', [
+        '#forge:is_dry/overworld'
+    ])
+
+    event.add('hexalia:has_shaded_vegetation', [
+        '#forge:is_spooky'
+    ])
+    
 })

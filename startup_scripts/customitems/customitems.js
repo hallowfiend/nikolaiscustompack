@@ -80,6 +80,23 @@ StartupEvents.registry('item', event => {
     event.create('nutrient_sacs')
     .displayName('Nutrient Sacs');
     // crafting components
+    //custom nodes
+    const nodeNames = [
+        'arcane',
+        'wicked',
+        'sacred',
+        'eldritch',
+        'undirected',
+        'vengeful',
+        'corrosive',
+        'steadfast',
+        'destructive'
+    ]
+    nodeNames.forEach(node => {
+        var nodeLang = capitalizeFirstLetter(node)
+        event.create(`${node}_node`)
+        .displayName(`${nodeLang} Node`)
+    })
     //custom tokens
     const tokenNames = [
         'change',

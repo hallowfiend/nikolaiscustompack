@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
     tier3Rune('mind', 'time', 'patience')
     tier3Rune('mind', 'storms', 'temperance')
     //Nodes
-    event.recipes.botania.runic_altar('4x hexalia:fire_node',
+    /* event.recipes.botania.runic_altar('4x hexalia:fire_node',
         [
             'minecraft:amethyst_shard',
             'minecraft:coal',
@@ -124,6 +124,24 @@ ServerEvents.recipes((event) => {
         ],
         2000
     ).id('kubejs:botania/runic_altar/earth_node_efficient')
+    event.recipes.botania.runic_altar('4x kubejs:arcane_node',
+        [
+            'minecraft:amethyst_shard',
+            'mna:cerublossom',
+            'elementalcraft:inert_crystal',
+            'malum:arcane_spirit'
+        ],
+        2000
+    ).id('kubejs:botania/runic_altar/arcane_node_efficient')
+    event.recipes.botania.runic_altar('4x kubejs:eldritch_node',
+        [
+            'minecraft:amethyst_shard',
+            'miners_delight:tentacles',
+            'elementalcraft:inert_crystal',
+            'malum:eldritch_spirit'
+        ],
+        2000
+    ).id('kubejs:botania/runic_altar/eldritch_node_efficient') */
     //BLOOD MAGIC
     //Prepared Stone
     event.recipes.botania.runic_altar('8x kubejs:prepared_stone',

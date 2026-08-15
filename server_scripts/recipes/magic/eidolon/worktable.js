@@ -412,7 +412,7 @@ ServerEvents.recipes((event) => {
                 "item" : "hexerei:selenite_shard"
             },
             "g" : {
-                "item": "goety:spirit_fabric"
+                "item": "kubejs:undirected_node"
             },
             "a": {
                 "item": "evilcraft:dark_power_gem_block"
@@ -428,7 +428,7 @@ ServerEvents.recipes((event) => {
         "type": "eidolon:worktable",
         "pattern": [
             "pip",
-            "lpl",
+            "ldl",
             "lrl"
         ],
         "reagents": [
@@ -437,6 +437,9 @@ ServerEvents.recipes((event) => {
         "key" : {
             "p": {
                 "item" : "embers:dawnstone_plate"
+            },
+            "d": {
+                "item": "kubejs:destructive_node"
             },
             "i": {
                 "item": "kubejs:anointing_paste"
@@ -537,7 +540,7 @@ ServerEvents.recipes((event) => {
             "hhh"
         ],
         "reagents": [
-            "v v "
+            "vnvn"
         ],
         "key": {
             "h": {
@@ -548,6 +551,9 @@ ServerEvents.recipes((event) => {
             },
             "v": {
                 "item": "mna:vinteum_dust"
+            },
+            "n": {
+                "item": "kubejs:arcane_node"
             }
         },
         "result": {
@@ -564,7 +570,7 @@ ServerEvents.recipes((event) => {
             "sps"
         ],
         "reagents": [
-            "mmmm"
+            "mama"
         ],
         "key": {
             "h": {
@@ -581,6 +587,9 @@ ServerEvents.recipes((event) => {
             },
             "m":{
                 "item": "hexerei:moon_dust"
+            },
+            "a": {
+                "item": "kubejs:arcane_node"
             }
         },
         "result": {
@@ -613,7 +622,7 @@ ServerEvents.recipes((event) => {
                 "item": "botania:mana_pearl"
             },
             "m":{
-                "item": "irons_spellbooks:arcane_essence"
+                "item": "kubejs:arcane_node"
             }
         },
         "result": {
@@ -732,16 +741,16 @@ ServerEvents.recipes((event) => {
                 "item" : "eidolon:wooden_brewing_stand"
             },
             "p" : {
-                "item": "eidolon:restoration_incense"
+                "item": "kubejs:corrosive_node"
             },
             "f" : {
-                "item": "hexalia:siren_paste"
+                "item": "hexalia:water_node"
             },
             "v" : {
-                "item": "scguns:honey_sulfur_poultice"
+                "item": "kubejs:arcane_node"
             },
             "q" : {
-                "item": "hexerei:moon_dust"
+                "item": "hexalia:earth_node"
             }
         },
         "result": {
@@ -767,13 +776,13 @@ ServerEvents.recipes((event) => {
                 "tag": "botania:petals"
             },
             "a": {
-                "item": "malum:sacred_spirit"
+                "item": "kubejs:sacred_node"
             },
             "n": {
                 "item": "naturesaura:gold_powder"
             },
             "m" : {
-                "item" : "hexerei:dried_sage"
+                "item" : "malum:sacred_spirit"
             }
         },
         "result": {

@@ -16,13 +16,85 @@
         ], {
     S: 'betterend:silk_fiber'
     }).id('kubejs:shaped/woven_silk')
+    //custom nodes
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'mna:cerublossom'},
+            {'item': 'elementalcraft:inert_crystal'}
+        ],
+        'kubejs:arcane_node'
+    )
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'minecraft:egg'},
+            {'item': 'hexerei:dried_sage'}
+        ],
+        'kubejs:sacred_node'
+    )
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'malum:processed_soulstone'},
+            {'item': 'gtceu:palladium_nugget'}
+        ],
+        'kubejs:wicked_node'
+    )
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'miners_delight:tentacles'},
+            {'item': 'dungeonsdelight:sculk_polyp'}
+        ],
+        'kubejs:eldritch_node'
+    )
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'irons_spellbooks:lightning_bottle'},
+            {'item': 'galosphere:allurite_shard'}
+        ],
+        'kubejs:undirected_node'
+    )
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'hexalia:rabbage'},
+            {'item': 'minecraft:redstone'}
+        ],
+        'kubejs:vengeful_node'
+    )
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'farmersrespite:black_tea_leaves'},
+            {'item': 'ars_nouveau:bastion_pod'}
+        ],
+        'kubejs:steadfast_node'
+    )
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'collectorsreap:pomegranate_slice'},
+            {'item': 'scguns:vehement_coal'},
+        ],
+        'kubejs:destructive_node'
+    )
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'collectorsreap:lime'},
+            {'item': 'biomancy:toxin_gland'}
+        ],
+        'kubejs:corrosive_node'
+    )
     //bloomwrap cloth - alt crafting component for bloomwrap armor n other things
     ritualtable(
         [
             {'item': 'kubejs:treated_leather'},
             {'item': 'twigs:azalea_flowers'},
-            {'item': 'hexerei:infused_fabric'},
-            {'item': 'hexalia:mutavis'}
+            {'item': 'hexerei:infused_fabric'}
         ],
         'kubejs:bloomwrap_cloth'
     )
@@ -31,6 +103,7 @@
     ritualtable(
         [
             {'item': 'kubejs:bloomwrap_cloth'},
+            {'item': 'kubejs:steadfast_node'},
             {'item': 'minecraft:pink_tulip'},
             {'item': 'hexerei:mandrake_root'},
             {'item': 'cosmopolitan:tuber'}
@@ -42,6 +115,7 @@
             {'item': 'kubejs:bloomwrap_cloth'},
             {'item': 'hexalia:earth_node'},
             {'item': 'minecraft:moss_block'},
+            {'item': 'minecraft:moss_block'},
             {'item': 'minecraft:iron_nugget'}
         ],
         'hexalia:bloomwrap_robes'
@@ -49,6 +123,7 @@
     ritualtable(
         [
             {'item': 'kubejs:bloomwrap_cloth'},
+            {'item': 'kubejs:steadfast_node'},
             {'item': 'minecraft:honeycomb'},
             {'item': 'hexalia:spirit_bloom'},
             {'item': 'minecraft:peony'}
@@ -60,7 +135,8 @@
             {'item': 'kubejs:bloomwrap_cloth'},
             {'item': 'hexalia:air_node'},
             {'item': 'minecraft:dandelion'},
-            {'item': 'minecraft:sugar'}
+            {'item': 'minecraft:sugar'},
+            {'item': 'minecraft:azure_bluet'}
         ],
         'hexalia:bloomwrap_boots'
     )
