@@ -54,6 +54,11 @@ ServerEvents.tags("item", (event) => {
         'alexsmobs:soul_heart',
         'reliquary:nebulous_heart'
     ]);
+  event.add('diet:fruits', [
+    'ars_nouveau:sourceberry_bush',
+    'ars_nouveau:mendosteen_pod',
+    'ars_nouveau:bastion_pod'
+  ])
   event.add('malum:gross_foods', [
     'minecraft:poisonous_potato',
     'alexsmobsdelight:maggot_salad',

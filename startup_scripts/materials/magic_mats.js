@@ -190,6 +190,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             long_rod,
+            no_decomp
         );
 
     event.create('tainted_gold')
@@ -199,7 +200,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .iconSet(GTMaterialIconSet.DULL)
             .flags(GTMaterialFlags.GENERATE_PLATE,
                 GTMaterialFlags.GENERATE_ROD,
-                long_rod
+                long_rod,
+                no_decomp
             );
 
     event.create('sky_ingot')
@@ -208,7 +210,28 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components('aluminium', 'helium', 'solid_sacrum', 'solid_aerialis')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(GTMaterialFlags.GENERATE_PLATE,
+            no_decomp
         );
+
+    event.create('crowley_silver')
+        .ingot()
+        .liquid()
+        .color(0xe6ddcf)
+        .components('silver', 'iesnium', 'ember')
+        .iconSet(METALLIC)
+        .flags(no_decomp)
+
+    event.create('darkened_silver')
+        .ingot()
+        .color(0x4a4663)
+        .iconSet(DULL)
+        .components('crowley_silver', 'xenorhast', 'profanum')
+        .flags(
+            no_decomp,
+            plates,
+            rod,
+            long_rod
+        )
 
     //misc shit ig
 

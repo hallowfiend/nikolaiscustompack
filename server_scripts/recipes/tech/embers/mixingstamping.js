@@ -22,6 +22,30 @@ ServerEvents.recipes(event => {
     metalMixing("silver", 16, "copper", 4, "sterling_silver", 20)
     metalMixing("lead", 2, "iron", 2, "pewter", 4)
     metalMixing("copper", 2, "aluminium", 6, "duralumin", 8)
+    //crowley silver
+    event.custom(
+    {
+      "type": "embers:mixing",
+      "inputs": [
+        {
+          "amount": 144,
+          "tag": "forge:silver"
+        },
+        {
+          "amount": 144,
+          "fluid": "gtceu:iesnium"
+        }
+      ],
+      "output": {
+        "amount": 144,
+        "fluid": "gtceu:crowley_silver"
+      }
+    })
+    event.recipes.gtceu.mixer("kubejs:crowley_silver")
+        .itemInputs("2x #forge:dusts/silver", "2x #forge:dusts/iesnium", "#forge:dusts/ember")
+        .itemOutputs("gtceu:crowley_silver_dust")
+        .duration(80)
+        .EUt(320)
     //dawnstone
     event.remove({ id: 'embers:mixing/molten_dawnstone' })
     event.custom(
@@ -79,6 +103,19 @@ ServerEvents.recipes(event => {
         }).id(`kubejs:embers/mixing/dormant_livingbronze`)
     
     //stamping it so good rn
+    event.custom({
+            "type": "embers:stamping",
+            "fluid": {
+                "amount": 144,
+                "fluid": "gtceu:crowley_silver"
+            },
+            "output": {
+                "item": 'gtceu:crowley_silver_ingot'
+            },
+            "stamp": {
+                "item": "embers:ingot_stamp"
+        }
+        }).id(`kubejs:embers/stamping/dormant_livingbronze`)
     event.custom({
             "type": "embers:stamping",
             "fluid": {

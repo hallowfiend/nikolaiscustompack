@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
           { "item": "magichem:admixture_industry", "count": 1 },
           { "item": "magichem:essentia_precious", "count": 4 }
         ],
-        1.0, 8, 0
+        1.0, 8, 3
     )
     magichemicalLaboratory.distillItem('gtceu:aluminium_ingot',
         [
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
           { "item": "magichem:admixture_instrument", "count": 1 },
           { "item": "magichem:admixture_motion", "count": 1 }
         ],
-        1.0, 8, 0
+        1.0, 8, 1
     )
     magichemicalLaboratory.distillItem('gtceu:chromium_ingot',
         [
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
           { "item": "magichem:admixture_potential", "count": 2 },
           { "item": "magichem:admixture_motion", "count": 1 }
         ],
-        1.0, 8, 0
+        1.0, 8, 2
     )
     magichemicalLaboratory.distillItem('gtceu:antimony_ingot',
         [
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
           { "item": "magichem:admixture_protection", "count": 1 },
           { "item": "magichem:essentia_precious", "count": 1 }
         ],
-        1.0, 8, 0
+        1.0, 8, 3
     )
     magichemicalLaboratory.distillItem('gtceu:nickel_ingot',
         [
@@ -76,9 +76,9 @@ ServerEvents.recipes(event => {
         [
           { "item": "magichem:admixture_metal", "count": 2 },
           { "item": "magichem:admixture_stone", "count": 2 },
-          { "item": "magichem:essentia_nigredo", "count": 1 }
+          { "item": "magichem:essentia_albedo", "count": 1 }
         ],
-        1.0, 8, 0
+        1.0, 8, 3
     )
     magichemicalLaboratory.distillItem('gtceu:iridium_ingot',
         [
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
           { "item": "magichem:essentia_precious", "count": 8 },
           { "item": "magichem:essentia_albedo", "count": 1 }
         ],
-        1.0, 8, 0
+        1.0, 8, 3
     )
     magichemicalLaboratory.distillItem('gtceu:sodium_ingot',
         [

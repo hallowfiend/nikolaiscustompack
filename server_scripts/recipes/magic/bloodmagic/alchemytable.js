@@ -6,6 +6,18 @@ ServerEvents.recipes(event => {
         .syphon(cost).ticks(duration).upgradeLevel(tier)
         .id(`kubejs:blood_magic/blood_alchemy/${output.split(":")[1]}`)
     }
+    //glacier essence dupe
+    alchemytable('4x cosmopolitan:glacier_essence',
+        [
+            'cosmopolitan:glacier_essence',
+            'minecraft:packed_ice',
+            'irons_spellbooks:arcane_essence',
+            'biomancy:gem_fragments'
+        ],
+        400,
+        40,
+        1
+    )
     //base catalysts
     event.remove({id: 'bloodmagic:alchemytable/simple_catalyst'})
     event.remove({id: 'bloodmagic:alchemytable/strenghtened_catalyst'})

@@ -90,7 +90,21 @@ ServerEvents.recipes(event => {
         'twilightforest:ironwood_block',
         1,
         45000,
-        360
+        3600
+    )
+    catalystlessAltar(
+        'gtceu:crowley_silver_ingot',
+        'gtceu:darkened_silver_ingot',
+        1,
+        6000,
+        90
+    )
+    catalystlessAltar(
+        'gtceu:crowley_silver_block',
+        'gtceu:darkened_silver_block',
+        1,
+        63000,
+        8100
     )
     //conversion
     conversion(

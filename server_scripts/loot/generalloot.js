@@ -14,6 +14,7 @@ LootJS.modifiers((event) => {
     .replaceLoot('immersiveengineering:nugget_silver', 'gtceu:silver_nugget', true)
     .replaceLoot(/.*:raw_venison/, "environmental:venison", true)
     .replaceLoot(/.*:cooked_venison/, "environmental:cooked_venison", true)
+    .replaceLoot('aquaculture:driftwood', 'upgrade_aquatic:driftwood_log', true)
     .replaceLoot('scguns:pebbles', 'twigs:pebble', true)
     .replaceLoot('supplementaries:ash', 'embers:ash', true)
     .replaceLoot('irons_spellbooks:blood_vial', 'hexerei:blood_bottle', true)

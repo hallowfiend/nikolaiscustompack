@@ -223,6 +223,7 @@ LootJS.modifiers((event) => {
       		pool.rolls(1);
       		pool.addLoot(LootEntry.of('irons_spellbooks:ice_rune'))
 				.limitCount([1, 1])
+				.applyLootingBonus([0, 1])
 				.when(c => c.randomChanceWithLooting(0.2, 0.4));
     	})
 		.pool(pool => {
