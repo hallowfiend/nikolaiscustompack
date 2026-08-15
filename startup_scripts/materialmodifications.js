@@ -367,7 +367,6 @@ GTCEuStartupEvents.materialModification(/*'gtceu:material',*/ event => {
 //Crushed ores
     crushed('brilliance', 'malum:crushed_brilliance')
     crushed('soulstone', 'malum:crushed_soulstone')
-    crushed('mithril', 'create_wizardry:crushed_mithril')
     crushed('anthralite', 'scguns:crushed_raw_anthralite')
     crushed('iron', 'create:crushed_raw_iron')
     crushed('gold', 'create:crushed_raw_gold')

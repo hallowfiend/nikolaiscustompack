@@ -363,7 +363,7 @@ ServerEvents.recipes((event) => {
             "b" : {
                 "item" : "embers:ashen_stone"
             },
-            "b": {
+            "f": {
                 "item": "kubejs:token_flux"
             },
             "c" : {
@@ -439,7 +439,7 @@ ServerEvents.recipes((event) => {
                 "item" : "embers:dawnstone_plate"
             },
             "i": {
-                "item": "eidolon:purity_incense"
+                "item": "kubejs:anointing_paste"
             },
             "l": {
                 "item": "gtceu:long_dawnstone_rod"

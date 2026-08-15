@@ -9,7 +9,6 @@ ServerEvents.recipes(event => {
         t: 'kubejs:treated_leather',
         f: 'goety:empty_focus'
     }).id('kubejs:shaped/focus_bag')
-    event.replaceInput({id: 'goety:focus_pack'}, '#c:leathers', 'kubejs:treated_leather')
     //TOTEM OF ROOTS
     event.remove({ id: 'goety:totem_of_roots' })
     event.custom({

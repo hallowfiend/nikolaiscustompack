@@ -25,6 +25,7 @@ ClientEvents.lang('en_us', event => {
     event.renameItem('naturesaura:tainted_gold_block', 'Block of Tainted Gold')
     event.renameItem('naturesaura:sky_ingot_block', 'Block of Heavenly Metal')
     //Elementalcraft
+    event.renameItem('elementalcraft:air_silk', 'Aerilated Silk')
     //BetterEnd
     event.renameItem('betterend:aurora_crystal', 'Shimmering Crystalix')
     event.renameItem('betterend:crystal_shards', 'Crystalix Fragment')

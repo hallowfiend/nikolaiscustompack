@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         'ztz'
     ], {
         z: 'gtceu:zinc_plate',
-        t: 'gtceu:tin_nugget',
+        t: 'gtceu:silver_nugget',
         g: 'caverns_and_chasms:float_glass_pane'
     }).id('kubejs:shaped/ritual_focus_minor')
     //manaweaving proper
@@ -45,6 +45,7 @@ ServerEvents.recipes(event => {
         "patterns": patterns
         }).id(`kubejs:mna/manaweaving/${output.split(":")[1]}`)
     }
+    //irons' books
     //tania rings
     manaweave(2,
         [

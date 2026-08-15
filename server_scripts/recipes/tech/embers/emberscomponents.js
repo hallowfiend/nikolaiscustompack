@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
     event.remove({ type:"sons_of_sins:etheric_blood_imbibation", id: /sons_of_sins.*ethereal_ashe_brick.*/ })
     event.shapeless(
         Item.of('kubejs:ethereal_ashen_blend', 8),
-        ['kubejs:ashen_blend', 'kubejs:ashen_blend', 'create:cinder_flour', 'create:cinder_flour', 'sons_of_sins:ether_ashes', 'sons_of_sins:ether_ashes']
+        ['kubejs:ashen_blend', 'kubejs:ashen_blend', 'gtceu:netherrack_dust', 'gtceu:netherrack_dust', 'sons_of_sins:ether_ashes', 'sons_of_sins:ether_ashes']
     ).id('kubejs:shapeless/ethereal_ashen_blend')
     event.smelting('extra_sins:ethereal_ash_brick', 'kubejs:ethereal_ashen_blend')
     //Replacing redstone in some resippys

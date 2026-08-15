@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
         ],
         "key": {
             "a": {
-                "item": "hibernalherbs:herb_humus"
+                "item": "mna:tarma_root"
             },
             "b":{
                 "item": "hexerei:yellow_dock_flowers"
@@ -43,7 +43,8 @@ ServerEvents.recipes((event) => {
             }
         },
         "result": {
-            "item": "kubejs:nature_offering"
+            "item": "kubejs:nature_offering",
+            "count": 2
         }
     });
     //hex focus

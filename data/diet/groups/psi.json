@@ -1,0 +1,9 @@
+{
+  "icon": "mna:mote_arcane",
+  "color": "#9bbbfa",
+  "order": 12,
+  "default_value": 0.0,
+  "gain_multiplier": 1.0,
+  "decay_multiplier": 1.5,
+  "beneficial": true
+}

@@ -2,8 +2,8 @@ ServerEvents.recipes(event => {
     //atropos serum
     event.custom({
     "type": "goety:cauldron",
-    "soulCost": 4000,
-    "color": 15002780,
+    "soulCost": 8000,
+    "color": 14548453,
     "levelLeft": 1,
     "take_with": {
         "item": "supplementaries:lumisene_bottle"
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
             "item": "twilightforest:mushgloom"
         },
         {
-            "item": "sons_of_sins:ether_ashes"
+            "item": "occultism:datura"
         },
         {
             "item": "galosphere:allurite_shard"
@@ -36,4 +36,39 @@ ServerEvents.recipes(event => {
     }
     })
     //anointing paste
+    event.custom({
+    "type": "goety:cauldron",
+    "soulCost": 2000,
+    "color": 9151542,
+    "levelLeft": 1,
+    "take_with": {
+        "item": "hexerei:tallow_bottle"
+    },
+    "ingredients": [
+        {
+            "item": "eidolon:purity_incense"
+        },
+        {
+            "item": "botania:redstone_root"
+        },
+        {
+            "item": "hexerei:dried_sage"
+        },
+        {
+            "item": "embers:ash"
+        },
+        {
+            "item": "hexalia:ghost_powder"
+        },
+        {
+            "item": "naturesaura:infused_iron"
+        },
+        {
+            "item": "bloodmagic:simplecatalyst"
+        }
+    ],
+    "result": {
+        "item": "kubejs:anointing_paste"
+    }
+    })
 })

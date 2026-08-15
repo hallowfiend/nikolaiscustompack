@@ -722,17 +722,7 @@ event.create('strumm')
         .color(0x95a3a3)
         .secondaryColor(0xd2d4d4)
         .iconSet(METALLIC)
-        .components('pewter', 'tin', 'sodium', 'ammonia', 'aerialis', 'aqua', 'exispiravit')
-        .flags(
-            no_decomp
-        )
-
-event.create('tempered_strumm')
-        .ingot()
-        .color(0x9db0b0)
-        .secondaryColor(0xc5d6d6)
-        .iconSet(METALLIC)
-        .components('strumm', 'spirit')
+        .components('pewter', 'tin', 'sodium', 'ammonia', 'aerialis', 'aqua', 'exispiravit', 'spirit')
         .flags(
             no_decomp,
             plates,

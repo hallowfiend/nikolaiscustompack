@@ -220,11 +220,9 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier('twilightforest:snow_queen')
 		.killedByPlayer()
 		.pool(pool => {
-      		pool.rolls(1);
+      		pool.rolls(4);
       		pool.addLoot(LootEntry.of('irons_spellbooks:ice_rune'))
-				.limitCount([1, 1])
-				.applyLootingBonus([0, 1])
-				.when(c => c.randomChanceWithLooting(0.2, 0.4));
+			.randomChance(0.5)
     	})
 		.pool(pool => {
       		pool.rolls(2);

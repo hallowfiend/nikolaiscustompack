@@ -133,6 +133,7 @@ ServerEvents.recipes(event => {
             'botania:ender_air_bottle',
             'botania:ender_air_bottle',
             'embers:dawnstone_aspectus',
+            'kubejs:rune_space',
             'eternal_starlight:starcore_block'
         ])
         .activationItem('botania:terra_sword')
@@ -148,6 +149,7 @@ ServerEvents.recipes(event => {
             'botania:ender_air_bottle',
             'botania:ender_air_bottle',
             'magichem:thunderstone',
+            'kubejs:rune_storms',
             'cosmere:nicrosil_block'
         ])
         .activationItem('botania:terra_sword')
@@ -251,7 +253,7 @@ ServerEvents.recipes(event => {
             '#mna:stone_runes',
             '#mna:stone_runes',
             'minecraft:coal_block',
-            'mna:ritual_focus_minor'
+            '#forge:ingots/vinteum_alloy'
         ])
         .activationItem('minecraft:blast_furnace')
         .craftType('forge')

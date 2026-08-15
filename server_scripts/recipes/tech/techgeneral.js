@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    //early plates
+    event.shaped('2x gtceu:wood_plate', ['A', 'B'], { A: '#gtceu:crafting_tools/saw', B: '#minecraft:wooden_slabs' })
     //treated leather
     event.recipes.create.filling("kubejs:treated_leather", [
         "minecraft:leather",
@@ -42,9 +44,16 @@ ServerEvents.recipes(event => {
     });
     const treatLeathers = [
         'eidolon:basic_belt',
-        ''
+        'malum:gilded_belt',
+        'malum:gilded_ring',
+        'malum:elaborate_brooch',
+        'malum:ornate_ring',
+        'goety:focus_pack',
+        'goety:brew_bag'
     ]
-    event.replaceInput({output: 'eidolon:basic_belt'}, 'minecraft:leather', 'kubejs:treated_leather')
+    treatLeathers.forEach(item => {
+        event.replaceInput({output: item}, /minecraft:leather|#c:leathers|#forge:leather/, 'kubejs:treated_leather')
+    })
     //laserio
     /* event.remove({ output: "laserio:logic_chip" });
     event.remove({ output: "laserio:logic_chip_raw" });
