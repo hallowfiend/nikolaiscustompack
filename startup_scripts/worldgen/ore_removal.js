@@ -25,6 +25,7 @@ WorldgenEvents.remove(event => {
       /theurgy:.*/,
       /caverns_and_chasms:.*ore.*/,
       /galosphere:.*ore.*/,
+      /deep_aether:.*ore/,
       'mna:vinteum_ore',
       'elementalcraft:inert_crystal_ore',
       'create:zinc_ore',

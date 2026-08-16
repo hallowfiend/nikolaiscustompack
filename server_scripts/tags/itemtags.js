@@ -17,6 +17,10 @@ ServerEvents.tags("item", (event) => {
         'eidolon:zombie_heart',
         'reliquary:zombie_heart'
     ]);
+  event.add('forge:ashes/bone', [
+    'mna:bone_ash',
+    'eidolon:enchanted_ash'
+  ])
   event.add('kubejs:roses', [
     'minecraft:rose_bush',
     /windswept:.*_rose/,
@@ -468,6 +472,8 @@ ServerEvents.tags("item", (event) => {
 
   event.remove('forge:gems/emerald', 'goety:magic_emerald')
   event.remove('forge:storage_blocks/emerald', 'goety:awakened_emerald_block')
+
+  event.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')
 
   event.remove("minecraft:planks", ["gtceu:treated_wood_plate", "gtceu:wood_plate", "createdieselgenerators:chip_wood_block"]);
 

@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'minecraft:slime',
     2,
-    'farmersdelight:dough',
+    'farmersdelight:wheat_dough',
     'minecraft:lime_dye',
     'minecraft:rotten_flesh',
     'minecraft:moss_block'
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'minecraft:magma_cube',
     2,
-    'farmersdelight:dough',
+    'farmersdelight:wheat_dough',
     'minecraft:orange_dye',
     'minecraft:spider_eye',
     'eidolon:crimson_essence'

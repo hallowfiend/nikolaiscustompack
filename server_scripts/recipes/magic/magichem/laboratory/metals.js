@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
         ],
         1.0, 8, 3
     )
-    magichemicalLaboratory.distillItem('gtceu:sodium_ingot',
+    magichemicalLaboratory.distillItem('gtceu:sodium_dust',
         [
           { "item": "magichem:admixture_metal", "count": 2 },
           { "item": "magichem:essentia_water", "count": 1 },
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
         ],
         1.0, 8, 0
     )
-    magichemicalLaboratory.distillItem('gtceu:calcium_ingot',
+    magichemicalLaboratory.distillItem('gtceu:calcium_dust',
         [
           { "item": "magichem:admixture_metal", "count": 2 },
           { "item": "magichem:essentia_earth", "count": 1 },

@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
             "item": "undergarden:mogmoss"
         },
         {
-            "item": "kubejs:concentrated_catalyst"
+            "item": "kubejs:concentratedcatalyst"
         }
     ],
     "result": {

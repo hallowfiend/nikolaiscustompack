@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'evilcraft:blood_orb_filled' })
     event.shapeless(
         'evilcraft:dull_dust',
-        ['goety:grave_dust', 'minecraft:gunpowder', 'minecraft:sugar', '#forge:dusts/ash', 'occultism:burnt_otherstone', 'mna:bone_ash']
+        ['goety:grave_dust', 'minecraft:gunpowder', 'minecraft:sugar', '#forge:dusts/ash', 'occultism:burnt_otherstone', 'eidolon:enchanted_ash']
     ).id('kubejs/shapeless/dull_dust')
     function bloodInfuser(bloodCost, input, output, duration, tier){
         event.custom({

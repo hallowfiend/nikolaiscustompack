@@ -97,7 +97,7 @@
             {'item': 'hexalia:celestial_crystal'},
             {'item': 'malum:chunk_of_brilliance'},
             {'item': 'hexerei:sage'},
-            {'item': 'gtceu:zinc_nugget'},
+            {'item': 'gtceu:raw_malachite'},
             {'item': 'immersiveengineering:hemp_fiber'}
         ],
         'hexalia:sage_pendant'
@@ -211,7 +211,7 @@
             {"item": "eidolon:soul_shard"},
             {"item": "farmersrespite:green_tea_leaves"},
             {"item": "goety:jade"},
-            {"item": "tconstruct:earth_slime_congealed"}
+            {"item": "tconstruct:earth_congealed_slime"}
         ],
         "eidolon:avennian_sprig"
     )

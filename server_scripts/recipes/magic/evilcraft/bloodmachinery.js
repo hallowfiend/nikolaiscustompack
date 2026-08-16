@@ -50,6 +50,10 @@ ServerEvents.recipes(event => {
     "extra_items": [
       {
         "item": "gtceu:red_alloy_plate",
+        "count": 16
+      },
+      {
+        "item": "gtceu:cinnabar_block",
         "count": 8
       },
       {
@@ -94,7 +98,15 @@ ServerEvents.recipes(event => {
     },
     "extra_items": [
       {
+        "item": "gtceu:darkened_silver_plate",
+        "count": 16
+      },
+      {
         "item": "evilcraft:dark_gem",
+        "count": 8
+      },
+      {
+        "item": "gtceu:cinnabar_block",
         "count": 8
       },
       {
@@ -131,4 +143,17 @@ ServerEvents.recipes(event => {
     //box of eternal closure
     //spirit reanimator
     //spirit furnace
+    //environmental accumulator
+    //electrolytic composite
+    event.custom({
+    "type": "evilcraft:environmental_accumulator",
+    "item": "enderio:photovoltaic_composite",
+    "weather": "RAIN",
+    "result": {
+    "item": {
+      "item": "kubejs:electrolytic_composite"
+    },
+    "weather": "RAIN"
+  }
+})
 })

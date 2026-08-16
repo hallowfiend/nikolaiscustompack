@@ -243,6 +243,13 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .components('purified_vinteum', 'iron')
         .flags(centrifuge)
         .iconSet(METALLIC);
+    
+    event.create('imitation_thaumium')
+        .ingot()
+        .color(0x5a3896)
+        .components('iron', '8x purified_vinteum', 'brass', '4x arkanum', '2x terrae', 'mundus')
+        .iconSet(DULL)
+        .flags(no_decomp);
 
 // General
 

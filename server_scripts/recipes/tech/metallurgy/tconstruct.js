@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
         ],
         {
             s: '#tconstruct:seared_blocks',
-			b: 'minecraft:copper_block',
+			b: '#forge:storage_blocks/copper',
 			f: "minecraft:blast_furnace"
         }
     ).id('kubejs:smeltery_controller')

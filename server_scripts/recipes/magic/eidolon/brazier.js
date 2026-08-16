@@ -18,16 +18,16 @@ ServerEvents.recipes(event => {
     "pedestalItems":
     [
         {
-            "item": "mna:bone_ash"
+            "item": "eidolon:enchanted_ash"
         },
         {
-            "item": "mna:bone_ash"
+            "item": "eidolon:enchanted_ash"
         },
         {
             "item": "mna:vinteum_dust"
         },
         {
-            "item": "gtceu:silver_dust"
+            "item": "gtceu:mithril_dust"
         }
     ],
     "reagent": [

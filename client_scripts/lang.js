@@ -2,6 +2,8 @@ ClientEvents.lang('en_us', event => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    //Blood Magic
+    event.renameItem('bloodmagic:arcaneashes', 'Arraywork Powders')
     //Occultism
     event.renameItem('occultism:spirit_attuned_gem', 'Xithricite Gem')
     //Goety

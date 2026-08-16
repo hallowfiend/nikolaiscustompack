@@ -53,14 +53,16 @@ LootJS.modifiers((event) => {
             ])
         })
         .pool(pool => {
-            pool.rolls([1,4]);
+            pool.rolls([0,4]);
             pool.randomChance(0.4).addWeightedLoot([
                 Item.of('apotheosis:common_material').withChance(80),
-                Item.of('apotheosis:uncommon_material').withChance(80),
-                Item.of('create:raw_zinc').withChance(80)
+                Item.of('apotheosis:uncommon_material').withChance(40),
+                Item.of('gtceu:raw_sphalerite_block').withChance(40),
+                Item.of('gtceu:raw_cassiterite_block').withChance(40)
             ])
         })
         .pool(pool => {
+            pool.rolls([0,8])
 			pool.addLoot(
 				Item.of('upgrade_aquatic:driftwood_log')
 			)
@@ -89,9 +91,9 @@ LootJS.modifiers((event) => {
             pool.rolls([1,4])
             pool.randomChance(0.4).addWeightedLoot([
                 Item.of('apotheosis:common_material').withChance(80),
-                Item.of('apotheosis:uncommon_material').withChance(80),
-                Item.of('minecraft:raw_iron').withChance(80),
-                Item.of('minecraft:raw_gold').withChance(40)
+                Item.of('apotheosis:uncommon_material').withChance(40),
+                Item.of('minecraft:raw_iron_block').withChance(80),
+                Item.of('minecraft:raw_gold_block').withChance(40)
             ])
         });
     event.addLootTypeModifier(LootType.CHEST)

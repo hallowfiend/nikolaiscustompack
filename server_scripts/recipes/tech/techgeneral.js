@@ -54,6 +54,11 @@ ServerEvents.recipes(event => {
     treatLeathers.forEach(item => {
         event.replaceInput({output: item}, /minecraft:leather|#c:leathers|#forge:leather/, 'kubejs:treated_leather')
     })
+    //photovoltaic composite
+    event.remove({output: 'enderio:photovoltaic_composite'})
+    event.shapeless('4x enderio:photovoltaic_composite', [
+        'experienceobelisk:cognitive_flux', 'gtceu:electrotine_dust', 'minecraft:glowstone_dust', '#forge:dusts/coal'
+    ])
     //laserio
     /* event.remove({ output: "laserio:logic_chip" });
     event.remove({ output: "laserio:logic_chip_raw" });

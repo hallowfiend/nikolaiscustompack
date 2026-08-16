@@ -130,11 +130,11 @@ ServerEvents.recipes((event) => {
     "extra_items": [
       {
         "item": "malum:cthonic_gold",
-        "count": 2
+        "count": 8
       },
       {
         "item": "eidolon:arcane_gold_nugget",
-        "count": 1
+        "count": 4
       }
     ],
     "spirits": [
@@ -165,11 +165,11 @@ ServerEvents.recipes((event) => {
     "extra_items": [
       {
         "item": "goety:jade",
-        "count": 2
+        "count": 8
       },
       {
         "tag": "forge:feathers",
-        "count": 1
+        "count": 4
       }
     ],
     "spirits": [
@@ -200,11 +200,11 @@ ServerEvents.recipes((event) => {
     "extra_items": [
       {
         "item": "goety:ectoplasm",
-        "count": 2
+        "count": 8
       },
       {
         "item": "hexalia:spirit_powder",
-        "count": 1
+        "count": 4
       }
     ],
     "spirits": [
@@ -235,11 +235,11 @@ ServerEvents.recipes((event) => {
     "extra_items": [
       {
         "item": "ars_nouveau:sourceberry_bush",
-        "count": 2
+        "count": 8
       },
       {
         "item": "minecraft:fermented_spider_eye",
-        "count": 1
+        "count": 4
       }
     ],
     "spirits": [
@@ -898,7 +898,7 @@ ServerEvents.recipes((event) => {
         "count": 1
       },
       {
-        "item": "gtceu:cursed_alloy_plate",
+        "item": "goety:cursed_ingot",
         "count": 3
       }
     ],

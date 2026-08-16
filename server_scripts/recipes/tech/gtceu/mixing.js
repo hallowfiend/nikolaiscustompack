@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer()
         .itemInputs('4x #create:pulpifiable')
         .itemOutputs('create:pulp')
-        .inputFluids('250x minecraft:water')
+        .inputFluids('minecraft:water 250')
         .EUt(16, 1)
         .duration(100)
     event.recipes.gtceu.compressor()

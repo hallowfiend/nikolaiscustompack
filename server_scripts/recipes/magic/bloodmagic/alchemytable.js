@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     alchemytable('kubejs:concentratedcatalyst',
         [
             'bloodmagic:strengthenedcatalyst',
-            'cosmopolitan:glacier_essence',
+            'gtceu:gravitite_gem',
             'gtceu:electrotine_dust',
             'magichem:admixture_alcohol',
             'biomancy:exotic_dust'
@@ -57,5 +57,16 @@ ServerEvents.recipes(event => {
         100,
         6
     )
-    //reagents
+    //plain reagent
+    alchemytable('2x kubejs:reagentbasic',
+        [
+            'hexerei:quicksilver_bottle',
+            'kubejs:electrolytic_composite',
+            'magichem:admixture_acid',
+            'aether:healing_stone'
+        ],
+        200,
+        100,
+        1
+    )
 })
