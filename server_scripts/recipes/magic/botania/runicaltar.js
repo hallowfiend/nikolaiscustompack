@@ -1,4 +1,58 @@
 ServerEvents.recipes((event) => {
+    //Base runes
+    const runesToRemove = [
+        'fire',
+        'water',
+        'air',
+        'earth'
+    ]
+    runesToRemove.forEach(rune => {
+        event.remove({id: `botania:runic_altar/${rune}`})
+    })
+    event.recipes.botania.runic_altar('2x botania:rune_water',
+        [
+            'botania:mana_powder',
+            'botania:manasteel_ingot',
+            'minecraft:fishing_rod',
+            'minecraft:kelp',
+            'minecraft:bone_meal',
+            'hexalia:water_node'
+        ],
+        5200
+    ).id('kubejs:botania/runic_altar/water')
+    event.recipes.botania.runic_altar('2x botania:rune_fire',
+        [
+            'botania:mana_powder',
+            'botania:manasteel_ingot',
+            'minecraft:nether_brick',
+            'minecraft:gunpowder',
+            'minecraft:nether_wart',
+            'hexalia:fire_node'
+        ],
+        5200
+    ).id('kubejs:botania/runic_altar/fire')
+    event.recipes.botania.runic_altar('2x botania:rune_air',
+        [
+            'botania:mana_powder',
+            'botania:manasteel_ingot',
+            'minecraft:string',
+            '#minecraft:wool_carpets',
+            'farmersdelight:straw',
+            'hexalia:air_node'
+        ],
+        5200
+    ).id('kubejs:botania/runic_altar/air')
+    event.recipes.botania.runic_altar('2x botania:rune_earth',
+        [
+            'botania:mana_powder',
+            'botania:manasteel_ingot',
+            'minecraft:coal_block',
+            '#forge:ingots/copper',
+            'miners_delight:cave_carrot',
+            'hexalia:earth_node'
+        ],
+        5200
+    ).id('kubejs:botania/runic_altar/earth')
     //Custom runes
     event.recipes.botania.runic_altar('2x kubejs:rune_light',
         [
@@ -6,7 +60,8 @@ ServerEvents.recipes((event) => {
             'botania:manasteel_ingot',
             'minecraft:shroomlight',
             'embers:ember_shard',
-            'eternal_starlight:starcore'
+            'eternal_starlight:starcore',
+            'kubejs:arcane_node'
         ],
         5200
     ).id('kubejs:botania/runic_altar/light')
@@ -16,7 +71,8 @@ ServerEvents.recipes((event) => {
             'botania:manasteel_ingot',
             'minecraft:hopper',
             'enderio:grains_of_infinity',
-            'evilcraft:ender_tear'
+            'evilcraft:ender_tear',
+            'kubejs:eldritch_node'
         ],
         5200
     ).id('kubejs:botania/runic_altar/void')
@@ -26,7 +82,8 @@ ServerEvents.recipes((event) => {
             'botania:manasteel_ingot',
             'minecraft:book',
             'hexcasting:amethyst_dust',
-            'magichem:admixture_thought'
+            'magichem:admixture_thought',
+            'kubejs:wicked_node'
         ],
         5200
     ).id('kubejs:botania/runic_altar/mind')
@@ -36,7 +93,8 @@ ServerEvents.recipes((event) => {
             'botania:manasteel_ingot',
             'minecraft:rose_bush',
             'biomancy:flesh_bits',
-            'collectorsreap:beetroot_gummy'
+            'collectorsreap:beetroot_gummy',
+            'kubejs:sacred_node'
         ],
         5200
     ).id('kubejs:botania/runic_altar/heart')

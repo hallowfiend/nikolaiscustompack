@@ -9,13 +9,15 @@
         }).id(`kubejs:hexalia/ritual_table/${output.split(":")[1]}`)
     })
     }
-    //woven silk
-    event.shaped('kubejs:woven_silk', [
-        'SS',
-        'SS',
-        ], {
-    S: 'betterend:silk_fiber'
-    }).id('kubejs:shaped/woven_silk')
+    //alt fire node
+    ritualtable(
+        [
+            {'item': 'minecraft:amethyst_shard'},
+            {'item': 'minecraft:charcoal'},
+            {'item': 'minecraft:orange_dye'}
+        ],
+        'hexalia:fire_node'
+    )
     //custom nodes
     ritualtable(
         [
@@ -85,9 +87,20 @@
         [
             {'item': 'minecraft:amethyst_shard'},
             {'item': 'collectorsreap:lime'},
-            {'item': 'biomancy:toxin_gland'}
+            {'item': 'minecraft:spider_eye'}
         ],
         'kubejs:corrosive_node'
+    )
+    //sage pendant
+    ritualtable(
+        [
+            {'item': 'hexalia:celestial_crystal'},
+            {'item': 'malum:chunk_of_brilliance'},
+            {'item': 'hexerei:sage'},
+            {'item': 'gtceu:zinc_nugget'},
+            {'item': 'immersiveengineering:hemp_fiber'}
+        ],
+        'hexalia:sage_pendant'
     )
     //bloomwrap cloth - alt crafting component for bloomwrap armor n other things
     ritualtable(
@@ -99,7 +112,6 @@
         'kubejs:bloomwrap_cloth'
     )
     //bloomwrap armor
-    event.remove({id: /hexalia:bloomwrap_.*_from_ritual_table/})
     ritualtable(
         [
             {'item': 'kubejs:bloomwrap_cloth'},
@@ -115,7 +127,7 @@
             {'item': 'kubejs:bloomwrap_cloth'},
             {'item': 'hexalia:earth_node'},
             {'item': 'minecraft:moss_block'},
-            {'item': 'minecraft:moss_block'},
+            {'item': 'eidolon:tattered_cloth'},
             {'item': 'minecraft:iron_nugget'}
         ],
         'hexalia:bloomwrap_robes'

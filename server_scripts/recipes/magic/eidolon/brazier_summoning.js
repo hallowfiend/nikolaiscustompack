@@ -28,11 +28,19 @@ ServerEvents.recipes(event => {
   }
   //Vanilla
   brazier_summoning(
+    'minecraft:turtle',
+    1,
+    'minecraft:beef',
+    'minecraft:sea_pickle',
+    'minecraft:green_dye',
+    'minecraft:iron_ingot'
+  )
+  brazier_summoning(
     'minecraft:chicken',
     3,
     'minecraft:wheat_seeds',
     'minecraft:string',
-    'minecraft:calcite',
+    'gtceu:calcite_dust',
     'minecraft:apple'
   )
   brazier_summoning(
@@ -70,7 +78,7 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'minecraft:slime',
     2,
-    'create:dough',
+    'farmersdelight:dough',
     'minecraft:lime_dye',
     'minecraft:rotten_flesh',
     'minecraft:moss_block'
@@ -78,7 +86,7 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'minecraft:magma_cube',
     2,
-    'create:dough',
+    'farmersdelight:dough',
     'minecraft:orange_dye',
     'minecraft:spider_eye',
     'eidolon:crimson_essence'
@@ -95,7 +103,7 @@ ServerEvents.recipes(event => {
     'minecraft:ghast',
     1,
     'eidolon:lesser_soul_gem',
-    'mynethersdelight:ghast_sourdough',
+    'vampiresdelight:rice_dough',
     'minecraft:ghast_tear',
     'gtceu:silver_dust'
   )

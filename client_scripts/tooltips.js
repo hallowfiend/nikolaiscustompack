@@ -1,5 +1,16 @@
 ItemEvents.tooltip(event => {
 
+  //drop locations
+  event.add('gtceu:palladium_nugget', 'Drops from Illagers')
+
+  //crop locations
+  event.add(['hexalia:dreamshroom', 'minecraft:sweet_berries'],
+    'Found in taigas'
+  )
+  event.addAdvanced('netherexp:warped_wart', (item, advanced, text) => {
+    text.add(1, Text.of('Found only in Sanctums').cyan())
+  })
+
   //ars ritual tablets
   event.remove(['ars_nouveau:ritual_animal_summon', 'ars_nouveau:ritual_wilden_summon'])
   event.add([
@@ -14,10 +25,6 @@ ItemEvents.tooltip(event => {
   })
   event.addAdvanced('malum:encyclopedia_esoterica', (item, advanced, text) => {
     text.add(1, Text.of('Recipes may be incorrect, check JEI!').red())
-  })
-
-  event.addAdvanced('netherexp:warped_wart', (item, advanced, text) => {
-    text.add(1, Text.of('Found only in Sanctums').cyan())
   })
 
   event.addAdvanced('exquisito:imaginal_capsule', (item, advanced, text) => {
@@ -63,7 +70,7 @@ ItemEvents.tooltip(event => {
 
     event.addAdvanced('gtceu:grand_cauldron', (item, advanced, text) => {
      text.add(1, Text.darkPurple("Exalted Thaumocombinator").italic().bold())
-     text.add(2, Text.gray("Performs Mixing Cauldron, Ritual Table and Cauldron Crafting recipes very quickly"))
+     text.add(2, Text.gray("Performs Mixing Cauldron and Cauldron Crafting recipes very quickly"))
      text.add(3, Text.gray("Requires 0 EU; operated by Wixies paid in Source-Boosted Dieselixir"))
     })
 

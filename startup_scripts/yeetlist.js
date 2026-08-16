@@ -166,7 +166,8 @@ global.removedItems = [
   'hexalia:wither_candle_skull',
   'scguns:lightning_battery',
   'scguns:lightning_rod_connector',
-  'dungeonsdelight:aurora_ice_cream'
+  'dungeonsdelight:aurora_ice_cream',
+  'hexalia:ladle'
 ];
 
 global.removedRecipeIds = [

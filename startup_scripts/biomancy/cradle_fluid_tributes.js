@@ -65,6 +65,11 @@ const DRINKS = [
     'brewincompatdelight:blue_curacao',
     'brewincompatdelight:kraken_rum',
 
+    'kubejs:forgotten_imbibation',
+    'kubejs:soulchill_absinthe',
+    'kubejs:red_rock_blaster',
+    'kubejs:pyrogenic_cognac',
+
     'farmersrespite:green_tea',
     'farmersrespite:yellow_tea',
     'farmersrespite:black_tea',

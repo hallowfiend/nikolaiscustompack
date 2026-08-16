@@ -1,4 +1,26 @@
 ServerEvents.recipes(event => {
+    //the cauldron itself
+    event.remove({output: 'goety:witch_cauldron'})
+    event.shaped('goety:witch_cauldron', [
+        'C C',
+        'CNC',
+        'III'
+    ], {
+        C: 'gtceu:cursed_alloy_plate',
+        I: 'goety:cursed_ingot',
+        N: 'kubejs:wicked_node'
+    }).id('kubejs:shaped/cursed_cauldron')
+    //the ladle
+    event.remove({output: 'goety:cauldron_ladle'})
+    event.shaped('goety:cauldron_ladle', [
+        '  s',
+        ' w ',
+        't  '
+    ], {
+        s: 'goety:shade_stone',
+        t: '#forge:rods/wooden',
+        w: 'kubejs:wicked_node'
+    }).id('kubejs:shaped/cauldron_ladle')
     //atropos serum
     event.custom({
     "type": "goety:cauldron",
@@ -23,6 +45,9 @@ ServerEvents.recipes(event => {
         },
         {
             "item": "magichem:admixture_sight"
+        },
+        {
+            "item": "magichem:admixture_acid"
         },
         {
             "item": "undergarden:mogmoss"
@@ -52,13 +77,16 @@ ServerEvents.recipes(event => {
             "item": "botania:redstone_root"
         },
         {
-            "item": "hexerei:dried_sage"
+            "item": "kubejs:sacred_node"
         },
         {
             "item": "embers:ash"
         },
         {
             "item": "hexalia:ghost_powder"
+        },
+        {
+            "item": "hexerei:sage_bundle"
         },
         {
             "item": "naturesaura:infused_iron"

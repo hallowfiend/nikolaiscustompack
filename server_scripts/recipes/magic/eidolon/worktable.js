@@ -765,13 +765,16 @@ ServerEvents.recipes((event) => {
         "pattern": [
             "shs",
             " s ",
-            "sns"
+            "svs"
         ],
         "reagents": [
-            "mama"
+            "nana"
         ],
         "key": {
             "s" : group.stoneType,
+            "v": {
+                "item": "malum:alchemical_calx"
+            },
             "h": {
                 "tag": "botania:petals"
             },
@@ -780,9 +783,6 @@ ServerEvents.recipes((event) => {
             },
             "n": {
                 "item": "naturesaura:gold_powder"
-            },
-            "m" : {
-                "item" : "malum:sacred_spirit"
             }
         },
         "result": {

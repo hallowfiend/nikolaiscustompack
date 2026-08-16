@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
         "count": 4
       },
       {
-        "item": "hexalia:water_node",
+        "item": "kubejs:vengeful_node",
         "count": 1
       },
       {

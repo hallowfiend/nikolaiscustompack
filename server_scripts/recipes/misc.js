@@ -83,7 +83,8 @@ event.replaceOutput(
     event.remove({ output: 'minecraft:dried_ghast' })
     event.remove({ output: 'ars_nouveau:ritual_animal_summon' })
     event.remove({ output: 'ars_nouveau:ritual_wilden_summon' })
-
+    event.remove({input: 'hexalia:mortar_and_pestle'})
+    event.remove({input: '#gtceu:tools/crafting_mortars'})
 
     //netherexp 
     event.shaped(

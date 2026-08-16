@@ -1,4 +1,14 @@
 ServerEvents.recipes((event) => {
+    event.remove({id: /hexalia:bloomwrap_.*_from_ritual_table/})
+    event.remove({id: 'hexalia:fire_node_from_ritual_table'})
+    event.remove({id: 'hexalia:sage_pendant_from_ritual_table'})
+    //woven silk
+    event.shaped('kubejs:woven_silk', [
+        'SS',
+        'SS',
+        ], {
+    S: 'betterend:silk_fiber'
+    }).id('kubejs:shaped/woven_silk')
     event.custom({
         //offering to nature
         "type": "eidolon:worktable",
@@ -113,44 +123,15 @@ ServerEvents.recipes((event) => {
             "item": "hexalia:ritual_table"
         }
     });
-    //silkweave armor
-    event.remove({id: /hexalia:silkweave.*/})
-    event.shaped('hexalia:silkweave_helmet', [
+    //silk idol
+    event.remove({id: 'hexalia:silk_idol'})
+    event.shaped('hexalia:silk_idol', [
         ' S ',
-        'SLS',
-        ' W '
-        ], {
-    S: 'kubejs:woven_silk',
-    L: 'minecraft:leather',
-    W: '#minecraft:wool'
-    }).id('kubejs:shaped/silkweave_helmet')
-    event.shaped('hexalia:silkweave_mantle', [
-        'TWT',
-        'SLS',
-        ' W '
-        ], {
-    S: 'kubejs:woven_silk',
-    L: 'minecraft:leather',
-    T: 'immersiveengineering:hemp_fiber',
-    W: '#minecraft:wool'
-    }).id('kubejs:shaped/silkweave_mantle')
-    event.shaped('hexalia:silkweave_bindings', [
-        ' S ',
-        'SLS',
-        'TWT'
-        ], {
-    S: 'kubejs:woven_silk',
-    L: 'minecraft:leather',
-    T: 'immersiveengineering:hemp_fiber',
-    W: '#minecraft:wool'
-    }).id('kubejs:shaped/silkweave_bindings')
-    event.shaped('hexalia:silkweave_bindings', [
-        ' S ',
-        'SLS',
-        'TST'
-        ], {
-    S: 'kubejs:woven_silk',
-    L: 'minecraft:leather',
-    T: 'immersiveengineering:hemp_fiber'
-    }).id('kubejs:shaped/silkweave_footwraps')
+        'SPS',
+        ' T '
+    ], {
+        S: 'kubejs:woven_silk',
+        P: 'farmersdelight:straw',
+        T: 'immersiveengineering:hemp_fiber'
+    }).id('kubejs:shaped/silk_idol')
 });

@@ -36,7 +36,9 @@ const createMillableGems = [
     'apatite',
     'salt',
     'rock_salt',
-    'sal_ammoniac'
+    'sal_ammoniac',
+    'ender_pearl',
+    'ender_eye'
 ]
 
 const createSmashableIngots = [

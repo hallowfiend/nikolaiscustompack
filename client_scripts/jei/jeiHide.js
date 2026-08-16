@@ -8,3 +8,11 @@ JEIEvents.removeCategories(event => {
     event.remove(categories)
   })
 })
+
+JEIEvents.hideItems(event => {
+  const hide_by_name = [
+  ]
+  hide_by_name.forEach(name => {
+    event.hide(name)
+  })
+})

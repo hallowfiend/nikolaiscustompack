@@ -34,6 +34,31 @@ ServerEvents.recipes(event => {
         },
         "result" : Item.of('goety:totem_of_roots', '{"Max Souls":100,Souls:0}')
     })
+    //TOTEM OF SOULS
+    event.remove({ id: 'goety:totem_of_souls' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "blb",
+            "lll",
+            "blb"
+        ],
+        "reagents": [
+            "eeee"
+        ],
+        "key" : {
+            "l": {
+                "item": "goety:magic_emerald"
+            },
+            "b": {
+                "tag": "forge:plates/arcane_gold"
+            },
+            "e": {
+                "item": "malum:processed_soulstone"
+            }
+        },
+        "result" : 'goety:totem_of_souls'
+    })
     //SOUL ABSORBER
     //removals
     event.remove({id: "goety:soul_sand_souls"}) //as someone who's used it can attest: the sand -> soulsand (thru create haunting) -> SE exploit is OP, and this pack has a lot more ways of making a zillion soulsand

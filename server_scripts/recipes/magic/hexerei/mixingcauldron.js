@@ -172,7 +172,7 @@ const recipes = [
     inputItem:[
         {"tag": "forge:gems/coal"},
         {"item":"minecraft:ghast_tear"},
-        {"item":"eidolon:crimson_essence"},
+        {"item":"kubejs:vengeful_node"},
         {"item":"eidolon:crimson_essence"},
         {"item":"eidolon:soul_shard"},
         {"item":"eidolon:soul_shard"},
@@ -180,7 +180,7 @@ const recipes = [
     ],
     output:"eidolon:crimson_gem",
     output_amount:1,
-    liquid:"minecraft:lava",
+    liquid:"hexerei:quicksilver_fluid",
     output_liquid:false,
     liquid_consum:1000,
     heat:false
@@ -189,7 +189,7 @@ const recipes = [
     inputItem:[
         {"tag": "forge:gems/coal"},
         {"item":"minecraft:ghast_tear"},
-        {"tag": "forge:essences/death"},
+        {"item": "kubejs:wicked_node"},
         {"tag": "forge:essences/death"},
         {"item":"eidolon:soul_shard"},
         {"item":"eidolon:soul_shard"},
@@ -197,7 +197,7 @@ const recipes = [
     ],
     output:"eidolon:shadow_gem",
     output_amount:1,
-    liquid:"minecraft:lava",
+    liquid:"hexerei:quicksilver_fluid",
     output_liquid:false,
     liquid_consum:1000,
     heat:false
@@ -542,6 +542,43 @@ const recipes = [
                });
         }
     })
+//Quicksilver
+event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "minecraft:lava"
+    },
+    "ingredients": [
+      { "item": "gtceu:cinnabar_gem" },
+      { "item": "gtceu:cinnabar_gem" },
+      { "item": "gtceu:cinnabar_gem" },
+      { "item": "gtceu:cinnabar_gem" },
+      {"item": "mna:transmuted_silver"},
+      {"item": "mna:transmuted_silver"},
+      {"item": "mna:transmuted_silver"},
+      {"item": "mna:transmuted_silver"}
+    ],
+    "output": {
+      "fluid": "hexerei:quicksilver_fluid"
+    },
+    "heatRequirement": "heated"
+  });
+event.custom({
+    "type": "hexerei:fluid_mixing",
+    "input": {
+      "fluid": "gtceu:mercury"
+    },
+    "ingredients": [
+      {"item": "mna:transmuted_silver"},
+      {"item": "mna:transmuted_silver"},
+      {"item": "mna:transmuted_silver"},
+      {"item": "mna:transmuted_silver"}
+    ],
+    "output": {
+      "fluid": "hexerei:quicksilver_fluid"
+    },
+    "heatRequirement": "heated"
+  });
 //More Irons' garbage
  event.custom({
     "type": "hexerei:fluid_mixing",

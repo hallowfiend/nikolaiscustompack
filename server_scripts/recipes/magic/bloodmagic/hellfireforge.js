@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    //petty gem
     event.remove({id: 'bloodmagic:soulforge/petty_tartaric_gem'})
     //tartaric gems
     event.recipes.bloodmagic.soulforge('bloodmagic:soulgempetty',
@@ -9,4 +10,5 @@ ServerEvents.recipes(event => {
             'netherexp:phasmo_shard'
         ]
     ).drain(1.0)
+    //sentient tools
 })
