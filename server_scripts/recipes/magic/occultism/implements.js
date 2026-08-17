@@ -22,9 +22,9 @@ ServerEvents.recipes(event => {
         ' CC',
         ], {
     T: 'gtceu:double_iesnium_plate',
-    C: 'gtceu:double_silver_plate'
+    C: 'gtceu:double_strumm_plate'
     }).id('kubejs:shaped/empty_lamp')
-    event.shaped('occultism:magic_lamp_empty', [    
+    event.shaped('occultism:brush', [    
         'WWW',
         'HHS',
         ], {

@@ -1,4 +1,24 @@
 ServerEvents.recipes((event) => {
+    //Requesting halo
+    event.recipes.botania.runic_altar('interactive_corporea:requesting_halo',
+        [
+            'botania:crafting_halo',
+            'botania:corporea_crystal_cube',
+            'botania:mana_powder',
+            'integrateddynamics:menril_chunk'
+        ],
+        1000
+    ).id('kubejs:botania/runic_altar/requesting_halo')
+    //Item quantization device
+    event.recipes.botania.runic_altar('interactive_corporea:item_quantization_device',
+        [
+            'botania:corporea_block',
+            'alexsmobs:rainbow_jelly',
+            'botania:managlass',
+            'integrateddynamics:menril_block'
+        ],
+        1000
+    ).id('kubejs:botania/runic_altar/item_quantization_device')
     //Base runes
     const runesToRemove = [
         'fire',

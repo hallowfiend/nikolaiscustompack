@@ -167,7 +167,8 @@ global.removedItems = [
   'scguns:lightning_battery',
   'scguns:lightning_rod_connector',
   'dungeonsdelight:aurora_ice_cream',
-  'hexalia:ladle'
+  'hexalia:ladle',
+  'botania:endoflame' //you WILL use other means of generating mana or so help me Herobrine.
 ];
 
 global.removedRecipeIds = [

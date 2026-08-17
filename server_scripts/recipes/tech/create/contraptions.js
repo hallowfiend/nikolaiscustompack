@@ -14,7 +14,13 @@ ServerEvents.recipes((event) => {
     //irons' fluids
     //chalk compacting
     event.recipes.create.compacting(
-        ['2x arts_and_crafts:white_chalk'],
+        ['arts_and_crafts:white_chalk'],
         ['2x gtceu:gypsum_dust', '2x gtceu:calcite_dust']
     )
+    //pnc upgrade base ('spensive ver)
+    event.recipes.create.compacting(
+        ['pneumaticcraft:upgrade_matrix'],
+        ['8x minecraft:lapis_lazuli', '8x malum:chunk_of_brilliance']
+    )
+    //IE multi bricks
 })

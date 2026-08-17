@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
                 "item": "hexalia:water_node"
             },
             "e": {
-                "item": "irons_spellbooks:arcane_ingot"
+                "tag": "forge:storage_blocks/mithril"
             }
         },
         "result" : {

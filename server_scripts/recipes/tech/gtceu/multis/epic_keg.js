@@ -1,7 +1,7 @@
 //priority -100
 
 ServerEvents.recipes(event => {
-    event.forEachRecipe({type: 'brewinandchewin:fermenting'}, r =>{
+    /* event.forEachRecipe({type: 'brewinandchewin:fermenting'}, r =>{
         let recipe = JSON.parse(r.json)
         let ingredience = []
         recipe.ingredients.forEach(i => {
@@ -21,5 +21,5 @@ ServerEvents.recipes(event => {
             .itemOutputs(`${recipe.result.count}x ${recipe.result.item}`)
             .duration(recipe.fermentingTime)
         }
-    })
+    }) */
 })

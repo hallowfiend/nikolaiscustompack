@@ -37,11 +37,11 @@ ServerEvents.recipes(event => {
     type: "biomancy:bio_forging",
     bio_forge_tab: COMPONENTS,
     ingredients: [
+      { count: 16, item: "malum:mnemonic_fragment"},
       { count: 16, item: "kubejs:biomantic_neuron" },
-      { count: 4, item: "biomancy:regenerative_fluid" },
+      { count: 8, item: "biomancy:regenerative_fluid" },
       { count: 6, item: "gtceu:vinteum_alloy_plate"},
-      { item: "hexerei:mindful_trance_blend"},
-      { item: "malum:mnemonic_fragment"}
+      { item: "hexerei:mindful_trance_blend"}
     ],
     nutrientsCost: 16,
     result: {

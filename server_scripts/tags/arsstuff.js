@@ -20,10 +20,6 @@ ServerEvents.tags('item', event => {
         'quark:white_corundum_cluster',
         'quark:black_corundum_cluster'
     ])
-
-    event.add('immersiveengineering:toolbox/tools', [
-    'eccentrictome:tome'
-    ]);
 })
 
 ServerEvents.tags('block', event =>{

@@ -459,6 +459,10 @@ ServerEvents.tags("item", (event) => {
     'spawn:spike_coral'
   ])
 
+  event.add('immersiveengineering:toolbox/tools', [
+    'eccentrictome:tome'
+  ]);
+
   event.add("mynethersdelight:powdery_logs", ["mynethersdelight:powdery_block", "mynethersdelight:stripped_powdery_block"]);
 
   //#region remove item tag

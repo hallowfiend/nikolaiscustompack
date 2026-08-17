@@ -10,6 +10,23 @@ ServerEvents.recipes(event => {
         "results": outputs //list
     }).id(`kubejs:pneumaticcraft/pressure_chamber/${id}`)
     }
+    //ender air
+    pressureChamber(
+        [{
+            "type": "pneumaticcraft:stacked_item",
+            "count": 4,
+            "item": "naturesaura:aura_bottle",
+            "nbt": '{stored_type:"naturesaura:end"}'
+        }],
+        0.6,
+        [
+            {
+                "item": "botania:ender_air",
+                "count": 4
+            }
+        ],
+        'endless_air'
+    )
     //hematite
     event.remove({id: 'tinkers_things:hematite/alloy'})
     pressureChamber(
