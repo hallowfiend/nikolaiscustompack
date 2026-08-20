@@ -7,6 +7,8 @@ ServerEvents.tags('fluid', event => {
     event.add('forge:formaldehyde', 'gtceu:formaldehyde')
     event.add('forge:bakelite', 'gtceu:bakelite')
     event.add('forge:methanol', 'gtceu:methanol')
+    event.add('forge:menril_resin', 'integrateddynamics:menril_resin')
+    event.add('forge:liquid_chorus', 'integrateddynamics:liquid_chorus')
     event.remove("minecraft:water", [
         "undergarden:virulent_mix_source",
         "undergarden:virulent_mix_flowing",

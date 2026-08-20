@@ -170,6 +170,24 @@ const recipes = [
 },
 {
     inputItem:[
+        {"item":"minecraft:gold_block"},
+        {"item":"minecraft:redstone_block"},
+        {"item":"eidolon:soul_shard"},
+        {"item":"eidolon:soul_shard"},
+        {"item":"minecraft:gold_block"},
+        {"item":"minecraft:redstone_block"},
+        {"item":"eidolon:soul_shard"},
+        {"item":"eidolon:soul_shard"}
+    ],
+    output:"eidolon:arcane_gold_block",
+    output_amount:2,
+    liquid:"minecraft:lava",
+    output_liquid:false,
+    liquid_consum:2000,
+    heat:false
+},
+{
+    inputItem:[
         {"tag": "forge:gems/coal"},
         {"item":"minecraft:ghast_tear"},
         {"item":"kubejs:vengeful_node"},

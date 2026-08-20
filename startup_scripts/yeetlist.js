@@ -161,6 +161,7 @@ global.removedItems = [
   'pneumaticcraft:advanced_air_compressor',
   'pneumaticcraft:manual_compressor',
   'pneumaticcraft:flux_compressor',
+  //end of pnc yeet section
   'evilcraft:golden_string',
   'hexalia:candle_skull',
   'hexalia:wither_candle_skull',
@@ -168,7 +169,8 @@ global.removedItems = [
   'scguns:lightning_rod_connector',
   'dungeonsdelight:aurora_ice_cream',
   'hexalia:ladle',
-  'botania:endoflame' //you WILL use other means of generating mana or so help me Herobrine.
+  'botania:endoflame', //you WILL use other means of generating mana or so help me Herobrine.
+  'gtceu:block_of_brilliance'
 ];
 
 global.removedRecipeIds = [

@@ -10,4 +10,8 @@ ServerEvents.tags('block', event => {
     'minecraft:cave_air',
     'minecraft:void_air'
   ])
+
+  event.add('goety:heating', [ //thank you polarice
+    '#hexerei:heat_sources'
+  ])
 })

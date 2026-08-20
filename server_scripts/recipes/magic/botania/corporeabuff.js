@@ -5,7 +5,8 @@ ServerEvents.recipes(event => {
         'botania:corporea_spark_master',
         'botania:corporea_crystal_cube',
         'interactive_corporea:requesting_halo',
-        'interactive_corporea:item_quantization_device'
+        'interactive_corporea:item_quantization_device',
+        'botania:corporea_index'
     ]
     removals.forEach(removal => {
         event.remove({id: removal})
@@ -17,7 +18,7 @@ ServerEvents.recipes(event => {
         ' O '
     ], {
         O: 'naturesaura:gold_powder',
-        A: 'integrateddynamics:menril_chunk',
+        A: 'integrateddynamics:crystalized_menril_chunk',
         S: 'botania:spark'
     }).id('kubejs:shaped/corporea_spark')
     //master spark
@@ -38,6 +39,6 @@ ServerEvents.recipes(event => {
     ], {
         S: 'botania:corporea_spark',
         C: 'hexerei:crystal_ball',
-        M: 'gtceu:manasteel_plate'
+        M: 'gtceu:iesnium_plate'
     }).id('kubejs:shaped/corporea_crystal_cube')
 })

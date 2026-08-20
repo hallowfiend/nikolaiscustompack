@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
     }
     arcFurnace(
         'gtceu:ruby_gem',
-        1,
+        4,
         [{'item': 'kubejs:blood_slime_ball'}, {'item': 'kubejs:vengeful_node'}],
         'kubejs:bloodchannel_gem',
         1

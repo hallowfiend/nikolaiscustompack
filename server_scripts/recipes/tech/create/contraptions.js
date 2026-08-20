@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
     //pnc upgrade base ('spensive ver)
     event.recipes.create.compacting(
         ['pneumaticcraft:upgrade_matrix'],
-        ['8x minecraft:lapis_lazuli', '8x malum:chunk_of_brilliance']
+        ['minecraft:lapis_block', '8x malum:cluster_of_brilliance']
     )
     //IE multi bricks
 })

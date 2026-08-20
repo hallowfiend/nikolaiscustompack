@@ -48,7 +48,8 @@ const createSmashableIngots = [
     'invar',
     'duralumin',
     'compressed_iron',
-    'potin'
+    'potin',
+    'rose_gold'
 ]
 
 const createCuttableGemBlocks = [

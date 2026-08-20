@@ -463,6 +463,10 @@ ServerEvents.tags("item", (event) => {
     'eccentrictome:tome'
   ]);
 
+  event.add('forge:stripped_logs', [
+    'eidolon:stripped_illwood_log'
+  ])
+
   event.add("mynethersdelight:powdery_logs", ["mynethersdelight:powdery_block", "mynethersdelight:stripped_powdery_block"]);
 
   //#region remove item tag

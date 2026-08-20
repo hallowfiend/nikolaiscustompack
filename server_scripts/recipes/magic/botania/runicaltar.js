@@ -1,11 +1,21 @@
 ServerEvents.recipes((event) => {
+    //Corporea index
+    event.recipes.botania.runic_altar('botania:corporea_index',
+        [
+            'botania:corporea_spark',
+            'malum:warp_flux',
+            'botania:mana_glass',
+            'integratedterminals:menril_glass'
+        ],
+        1000
+    ).id('kubejs:botania/runic_altar/corporea_index')
     //Requesting halo
     event.recipes.botania.runic_altar('interactive_corporea:requesting_halo',
         [
             'botania:crafting_halo',
-            'botania:corporea_crystal_cube',
-            'botania:mana_powder',
-            'integrateddynamics:menril_chunk'
+            'malum:warp_flux',
+            'botania:corporea_index',
+            'integrateddynamics:crystalized_menril_chunk'
         ],
         1000
     ).id('kubejs:botania/runic_altar/requesting_halo')
@@ -13,9 +23,9 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.runic_altar('interactive_corporea:item_quantization_device',
         [
             'botania:corporea_block',
-            'alexsmobs:rainbow_jelly',
-            'botania:managlass',
-            'integrateddynamics:menril_block'
+            'malum:warp_flux',
+            'botania:corporea_crystal_cube',
+            'integrateddynamics:crystalized_menril_block'
         ],
         1000
     ).id('kubejs:botania/runic_altar/item_quantization_device')
