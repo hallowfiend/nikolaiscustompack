@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     squeezeYesResult(
         'integrateddynamics:liquid_chorus',
         125,
-        {item: 'minecraft:chorus_fruit'},
+        {item: 'minecraft:popped_chorus_fruit'},
         {item: 'integrateddynamics:crystalized_chorus_chunk'},
         'chorus_from_chorus'
     )
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
         "tag": "forge:menril_resin"
     },
     "input": {
-        "tag": "forge:glass"
+        "tag": "minecraft:glass_blocks"
     },
     "results": [
     {

@@ -81,6 +81,6 @@ ServerEvents.recipes(event => {
         'biomancy:nutrient_bar',
         'kubejs:blood_soaked_nutrient_bar',
         400,
-        1
+        2
     )
 })

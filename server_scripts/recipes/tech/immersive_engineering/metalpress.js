@@ -3,6 +3,7 @@ const wireMold = 'immersiveengineering:mold_wire'
 const rodMold = 'immersiveengineering:mold_rod'
 const gearMold = 'immersiveenginering:mold_gear'
 const boltMold = 'gtceu:invar_buzz_saw_blade'
+const doublePlateMold = 'immersiveengineering:hammer'
 
 ServerEvents.recipes(event => {
     //circuit components
