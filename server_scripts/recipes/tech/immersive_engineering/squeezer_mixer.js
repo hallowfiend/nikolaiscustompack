@@ -44,7 +44,8 @@ ServerEvents.recipes(event => {
         {item: 'integrateddynamics:crystalized_chorus_chunk'},
         'chorus_from_proto_chorus'
     )
-    event.custom({
+    //man i sure love IE NOT FUCKING WORKING
+    /* event.custom({
     "type": "immersiveengineering:bottling_machine",
     "fluid": {
         "amount": 1000,
@@ -74,5 +75,5 @@ ServerEvents.recipes(event => {
     {
       "item": "integratedtunnels:menril_glass"
     }]
-    })
+    }) */
 })
