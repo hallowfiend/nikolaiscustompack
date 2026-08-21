@@ -40,7 +40,9 @@ const bulkReplace = [
     { target: "immersiveengineering:wire_lead", replacement: "gtceu:lead_single_wire"},
     { target: "createaddition:iron_wire", replacement: "gtceu:iron_single_wire"},
     { target: "createaddition:gold_wire", replacement: "gtceu:gold_single_wire"},
+    {target: 'createaddition:copper_spool', replacement: 'immersiveengineering:wirecoil_copper'},
     //wire unification end
+    {target: 'createaddition:capacitor', replacement: 'gtceu:vacuum_tube'},
     { target: "iss_magicfromtheeast:red_string", replacement: "botania:red_string"},
     { target: "iss_magicfromtheeast:bottle_of_souls", replacement: "netherexp:wisp_bottle"},
     { target: "immersiveengineering:electron_tube", replacement: "gtceu:vacuum_tube"},

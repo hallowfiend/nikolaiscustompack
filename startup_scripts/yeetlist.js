@@ -170,7 +170,11 @@ global.removedItems = [
   'dungeonsdelight:aurora_ice_cream',
   'hexalia:ladle',
   'botania:endoflame', //you WILL use other means of generating mana or so help me Herobrine.
-  'gtceu:block_of_brilliance'
+  'gtceu:block_of_brilliance',
+  /createaddition:.*spool/,
+  'createaddition:capacitor',
+  'createaddition:gold_wire',
+  'createaddition:iron_wire'
 ];
 
 global.removedRecipeIds = [

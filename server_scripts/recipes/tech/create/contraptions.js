@@ -17,6 +17,11 @@ ServerEvents.recipes((event) => {
         ['arts_and_crafts:white_chalk'],
         ['2x gtceu:gypsum_dust', '2x gtceu:calcite_dust']
     )
+    //nether brick compacting
+    event.recipes.create.compacting(
+        ['minecraft:nether_brick'],
+        ['gtceu:netherrack_dust']
+    )
     //pnc upgrade base ('spensive ver)
     event.recipes.create.compacting(
         ['pneumaticcraft:upgrade_matrix'],
@@ -38,4 +43,20 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(17);
     //IE multi bricks
+    event.remove({id: 'immersiveengineering:crafting/cokebrick'})
+    event.remove({id: 'immersiveengineering:crafting/blastbrick'})
+    event.remove({id: 'immersiveengineering:crafting/alloybrick'})
+    event.remove({id: /createaddition:compat.*item_application.*kiln_brick.*/})
+    event.recipes.create.compacting(
+        ['immersiveengineering:cokebrick'],
+        ['4x embers:caminite_blend', '4x tconstruct:seared_brick', '8x gtceu:deepslate_dust', 'gtceu:flint_dust']
+    )
+    event.recipes.create.compacting(
+        ['immersiveengineering:blastbrick'],
+        ['4x kubejs:ashen_blend', '4x tconstruct:scorched_brick', '8x gtceu:netherrack_dust', 'minecraft:magma_cream']
+    )
+    event.recipes.create.compacting(
+        ['immersiveengineering:alloybrick'],
+        ['4x minecraft:clay', '4x embers:caminite_brick', 'gtceu:flint_dust']
+    )
 })

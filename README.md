@@ -2,4 +2,4 @@
 
 ## (current working name: Sauteed Gregonions)
 
-### progression lines to be written soon
+### progression chart to be written soon

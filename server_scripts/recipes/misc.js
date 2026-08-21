@@ -26,6 +26,7 @@ event.remove({ id: "quark:building/crafting/compressed/potato_crate"})
 event.remove({ id: "quark:building/crafting/compressed/carrot_crate"})
 event.remove({ id: "quark:building/crafting/compressed/beetroot_crate"})
 event.remove({ id: "quark:building/crafting/compressed/bamboo_block"})
+event.remove({id: /createaddition:.*capacitor.*/})
 
 //Honey
 event.replaceOutput(

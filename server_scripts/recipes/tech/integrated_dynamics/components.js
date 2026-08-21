@@ -40,8 +40,8 @@ ServerEvents.recipes(event =>{
         {type: 'fluid', item: 'create:fluid_tank', metal: 'copper'}
     ]
     tunnelsPartTypes.forEach(part => {
-        event.remove({id: `integrateddynamics:crafting/part_interface_${part.type}`})
-        event.shaped(`4x integrateddynamics:part_interface_${part.type}`,
+        event.remove({id: `integratedtunnels:crafting/part_interface_${part.type}`})
+        event.shaped(`4x integratedtunnels:part_interface_${part.type}`,
             [
                 'CIC',
                 'CMC'
