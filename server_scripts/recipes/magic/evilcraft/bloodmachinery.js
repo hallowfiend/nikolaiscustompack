@@ -138,6 +138,58 @@ ServerEvents.recipes(event => {
     ]
     })
     //blood chest
+    event.remove({output: 'evilcraft:blood_chest'})
+    event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'immersiveengineering:reinforced_crate',
+      "count": 1
+    },
+    "output": {
+      "item": 'evilcraft:blood_chest',
+      "count": 1
+    },
+    "extra_items": [
+      {
+        "item": "malum:repair_pylon",
+        "count": 1
+      },
+      {
+        "item": "evilcraft:dark_power_gem",
+        "count": 8
+      },
+      {
+        "item": "evilcraft:reinforced_undead_planks",
+        "count": 8
+      },
+      {
+        "item": "kubejs:bloodchannel_gem",
+        "count": 4
+      },
+      {
+        "item": "kubejs:steadfast_node",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "arcane",
+        "count": 16
+      },
+      {
+        "type": "wicked",
+        "count": 16
+      },
+      {
+        "type": "sacred",
+        "count": 8
+      },
+      {
+        "type": "aqueous",
+        "count": 4
+      }
+    ]
+    })
     //spiked plate
     //sanguinary pedestal
     //box of eternal closure
@@ -154,6 +206,5 @@ ServerEvents.recipes(event => {
       "item": "kubejs:electrolytic_composite"
     },
     "output_weather": "RAIN"
-  }
-})
+    }})
 })

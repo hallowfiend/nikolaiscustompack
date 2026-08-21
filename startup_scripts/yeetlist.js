@@ -174,7 +174,9 @@ global.removedItems = [
   /createaddition:.*spool/,
   'createaddition:capacitor',
   'createaddition:gold_wire',
-  'createaddition:iron_wire'
+  'createaddition:iron_wire',
+  'theurgy:logistics_item_inserter',
+  'theurgy:logistics_item_extractor'
 ];
 
 global.removedRecipeIds = [

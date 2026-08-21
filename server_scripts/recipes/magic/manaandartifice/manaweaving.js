@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
             'gtceu:manasteel_ring',
             'kubejs:rune_storms',
             'botania:lens_magnet',
-            'goety:waystone'
+            'bloodmagic:sigilofmagnetism'
         ],
         [diamond, circle, square], 'botania:magnet_ring'
     )

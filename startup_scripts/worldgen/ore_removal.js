@@ -189,4 +189,5 @@ WorldgenEvents.remove(event => {
 
   event.removeFeatureById('lakes', 'pneumaticcraft:oil_lake_surface')
 	event.removeFeatureById('lakes', 'pneumaticcraft:oil_lake_underground')
+  event.removeFeatureById(/.*/, /aether_redux:ore.*/)
 });
