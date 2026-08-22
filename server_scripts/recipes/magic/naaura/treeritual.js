@@ -412,7 +412,7 @@ ServerEvents.recipes(event => {
       {'item': 'botania:dreamwood_twig'},
       {'tag': 'forge:rods/potin'},
       {'item': 'galosphere:allurite_shard'},
-      {'item': 'botania:corporea_spark'},
+      {'item': 'botania:master_corporea_spark'},
       {'item': 'naturesaura:sky_ingot'}
     ],
     'entangled:item', 1,

@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     "result": {
         "item": output
     }
-    })
+    }).id(`kubejs:goety/cauldron_crafting/${output.split(":")[1]}`)
     }
     //atropos serum
     cauldronCraft(
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
             {"item": "hexalia:ghost_powder"},
             {"item": "vampirism:item_garlic"},
             {"item": "eidolon:enchanted_ash"},
-            {"item": "embers:caminite_blend"}
+            {"item": "malum:cthonic_gold"}
         ],
         'kubejs:anointing_paste'
     )
@@ -79,8 +79,8 @@ ServerEvents.recipes(event => {
             {'item': 'hexerei:blood_bottle'},
             {'item': 'hexalia:rabbage'},
             {'item': 'gtceu:netherrack_dust'},
-            {'item': 'eidolon:crimson_essence'},
-            {'item': 'evilcraft:dark_power_gem'}
+            {'item': 'eidolon:merammer_root'},
+            {'item': 'malum:blazing_quartz'}
         ],
         'kubejs:nethersblood'
     )
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
             {'item': 'gtceu:soapstone_dust'},
             {'item': 'gtceu:lepidolite_dust'},
             {'item': 'goety:ectoplasm'},
-            {'item': 'goety:animation_core'},
+            {'item': 'hexalia:lotus_flower'},
             {'item': 'hexalia:siren_kelp'},
             {'item': 'minecraft:cod'},
             {'item': 'minecraft:blue_orchid'}
@@ -134,13 +134,11 @@ ServerEvents.recipes(event => {
         2000,
         9350212,
         [
-            {'item': 'kubejs:deepbore_tar'},
+            {'item': 'kubejs:shifting_tincture'},
             {'item': 'kubejs:corrosive_node'},
-            {'item': 'goety:nightshade'},
+            {'item': 'hexerei:yellow_dock_flowers'},
             {'item': 'hexalia:witchweed'},
-            {'item': 'farmersdelight:tomato'},
-            {'tag': 'forge:dusts/saltpeter'},
-            {'item': 'minecraft:nether_wart'}
+            {'item': 'minecraft:gunpowder'}
         ],
         'kubejs:caustic_oil'
     )
@@ -151,11 +149,9 @@ ServerEvents.recipes(event => {
         [
             {'item': 'kubejs:nethersblood'},
             {'item': 'vampirism:human_heart'},
-            {'item': 'goety:hunger_core'},
-            {'item': 'hexalia:ghost_powder'},
             {'item': 'occultism:datura'},
-            {'item': 'goety:nightshade'},
-            {'item': 'hexerei:belladonna_flowers'}
+            {'item': 'hexerei:belladonna_flowers'},
+            {'item': 'goety:hunger_core'}
         ],
         'kubejs:daemonic_preparation'
     )
@@ -166,11 +162,9 @@ ServerEvents.recipes(event => {
         [
             {'item': 'kubejs:sanctified_steam'},
             {'item': 'alexsmobs:gazelle_horn'},
-            {'item': 'minecraft:phantom_membrane'},
             {'item': 'malum:grim_talc'},
-            {'item': 'hexalia:dreamshroom'},
-            {'item': 'mna:chimerite_gem'},
-            {'item': 'bloodmagic:simplecatalyst'}
+            {'item': 'magichem:signalite'},
+            {'item': 'goety:animation_core'}
         ],
         'kubejs:logisticians_alkahest'
     )
@@ -179,14 +173,28 @@ ServerEvents.recipes(event => {
         2000,
         6627484,
         [
-            {'item': 'kubejs:shifting_tincture'},
-            {'item': 'minecraft:chorus_fruit'},
+            {'item': 'kubejs:deepbore_tar'},
+            {'item': 'eidolon:warped_sprouts'},
             {'item': 'hexerei:mandrake_root'},
             {'tag': 'forge:gems/certus_quartz'},
-            {'item': 'goety:mystic_core'},
-            {'item': 'goety:nightshade'},
-            {'item': 'eidolon:warped_sprouts'}
+            {'item': 'goety:mystic_core'}
         ],
         'kubejs:realmsplit_dew'
+    )
+    //flying ointment
+    event.remove({id: 'goety:cauldron/flying_ointment'})
+    cauldronCraft(
+        2000,
+        15002780,
+        [
+            {'item': 'kubejs:sanctified_steam'},
+            {'item': 'kubejs:caustic_oil'},
+            {'tag': 'forge:tallow'},
+            {'item': 'goety:jade'},
+            {'item': 'goety:wind_core'},
+            {'item': 'minecraft:poppy'},
+            {'item': 'minecraft:ender_eye'}
+        ],
+        'goety:flying_ointment'
     )
 })

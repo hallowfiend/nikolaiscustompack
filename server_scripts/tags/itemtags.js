@@ -21,6 +21,12 @@ ServerEvents.tags("item", (event) => {
     'mna:bone_ash',
     'eidolon:enchanted_ash'
   ])
+  event.add('hexerei:tallow_meltable', [
+    'delightful:animal_fat',
+    'eidolon:candle',
+    /dyenamics:.*candle/,
+    'occultism:tallow'
+  ])
   event.add('kubejs:roses', [
     'minecraft:rose_bush',
     /windswept:.*_rose/,

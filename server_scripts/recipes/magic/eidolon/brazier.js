@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             "item": "mna:vinteum_dust"
         },
         {
-            "item": "gtceu:mithril_dust"
+            "item": "gtceu:calcite_dust"
         }
     ],
     "reagent": [

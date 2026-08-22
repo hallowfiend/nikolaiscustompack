@@ -7,7 +7,6 @@ ServerEvents.recipes(event => {
     removals.forEach(item => {
         event.remove({output: item})
     })
-    event.remove({output: 'occultism:golden_sacrificial_bowl'})
     event.shaped('occultism:golden_sacrificial_bowl', [
         ' p ',
         'gbg',

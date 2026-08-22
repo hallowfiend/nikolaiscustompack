@@ -140,7 +140,6 @@ const ieMillableGems = [
     'olivine',
     'yellow_garnet',
     'red_garnet',
-    'amethyst',
     'turquoise',
     'spinel',
     'almandine',
@@ -150,9 +149,7 @@ const ieMillableGems = [
 
 const ieMillableIngots = [
     'mithril',
-    'iesnium',
     'deepsilver',
-    'anthralite',
     'cloggrum',
     'froststeel',
     'compressed_iron',

@@ -85,8 +85,8 @@ ServerEvents.recipes(event => {
         ]},
         {type: 'sight', tier: 1, inputs: [
             {item: 'bloodmagic:divinationsigil'},
-            {item: 'botania:monocle'},
-            {item: 'malum:arcane_spirited_glass'},
+            {item: 'botania:lens_normal'},
+            {item: 'minecraft:fermented_spider_eye'},
             {item: 'evilcraft:blood_orb_filled'}
         ]},
         {type: 'air', tier: 2, inputs: [
@@ -120,13 +120,13 @@ ServerEvents.recipes(event => {
             {item: 'goety:shade_stone'}
         ]},
         {type: 'binding', tier: 3, inputs: [
-            {item: 'kubejs:bloodchannel_gem'},
+            {item: 'goety:flying_ointment'},
             {item: 'kubejs:bloodied_dust'},
-            {item: 'kubejs:token_determination'},
+            {item: 'mna:arcane_ash'},
             {item: 'botania:red_string'}
         ]},
         {type: 'bloodlight', tier: 3, inputs: [
-            {item: 'embers:wildfire_core'},
+            {item: 'embers:glimmer_crystal'},
             {item: 'malum:iridescent_ether'},
             {item: 'kubejs:rune_light'},
             {item: 'naturesaura:token_euphoria'}

@@ -2,18 +2,18 @@ ItemEvents.tooltip(event => {
 
   //drop locations
   event.addAdvanced('gtceu:palladium_nugget', (item, advanced, text) => {
-    text.add(1, Text.of('Drops from Illagers').gray())
+    text.add(1, Text.gray('Drops from Illagers'))
   })
 
   //crop locations
   event.addAdvanced(['hexalia:dreamshroom'], (item, advanced, text) => {
-    text.add(1, Text.of('Found in taigas').gray())
+    text.add(1, Text.gray('Found in taigas'))
   })
   event.addAdvanced(['hexalia:spirit_bloom'], (item, advanced, text) => {
-    text.add(1, Text.of('Found in swamps').gray())
+    text.add(1, Text.gray('Found in swamps'))
   })
   event.addAdvanced('netherexp:warped_wart', (item, advanced, text) => {
-    text.add(1, Text.of('Found only in Sanctums').cyan())
+    text.add(1, Text.cyan('Found only in Sanctums'))
   })
 
   //ars ritual tablets
@@ -24,16 +24,10 @@ ItemEvents.tooltip(event => {
 
   //misc tips
   event.addAdvanced(['malum:encyclopedia_arcana', 'malum:encyclopedia_esoterica'], (item, advanced, text) => {
-    text.add(1, Text.of('Recipes may be incorrect, check JEI!').red())
+    text.add(1, Text.red('Recipes may be incorrect, check JEI!'))
   })
   event.addAdvanced('hexalia:infused_dirt', (item, advanced, text)=> {
-    text.add(1, Text.of('Hexalia herbs placed atop this block can be duplicated with bone meal').gray())
-  })
-
-  event.addAdvanced('exquisito:imaginal_capsule', (item, advanced, text) => {
-    text.add(1, Text.of('Used for cultivation of imaginal fruit').darkPurple())
-    text.add(2, Text.of('Plant Glow Berry Pips inside to grow Starcloud Bulbs').pink())
-    text.add(2, Text.of('or Sweet Berry Pips to grow Midnight Berries').blue())
+    text.add(1, Text.gray('Hexalia herbs placed atop this block can be duplicated with bone meal'))
   })
 
   //greg
