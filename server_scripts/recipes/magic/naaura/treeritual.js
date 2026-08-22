@@ -1,12 +1,26 @@
 ServerEvents.recipes(event => {
-    event.remove({ id: 'naturesaura:tree_ritual/ancient_sapling' })
-    event.remove({ id: 'naturesaura:tree_ritual/altar'})
-    event.remove({ id: 'naturesaura:tree_ritual/conversion_catalyst'})
-    event.remove({ id: 'naturesaura:tree_ritual/crushing_catalyst'})
-    event.remove({ id: 'naturesaura:tree_ritual/token_joy' })
-    event.remove({ id: 'naturesaura:tree_ritual/token_fear' })
-    event.remove({ id: 'naturesaura:tree_ritual/token_anger' })
-    event.remove({ id: 'naturesaura:tree_ritual/token_sorrow' })
+    const yeeeet = [
+      'naturesaura:tree_ritual/ancient_sapling',
+      'naturesaura:tree_ritual/altar',
+      'naturesaura:tree_ritual/conversion_catalyst',
+      'naturesaura:tree_ritual/crushing_catalyst',
+      'naturesaura:tree_ritual/token_joy',
+      'naturesaura:tree_ritual/token_fear',
+      'naturesaura:tree_ritual/token_anger',
+      'naturesaura:tree_ritual/token_sorrow',
+      'naturesaura:offering_table',
+      'naturesaura:oak_generator',
+      'naturesaura:moss_generator',
+      'naturesaura:potion_generator',
+      'naturesaura:chorus_generator',
+      'naturesaura:animal_generator',
+      'naturesaura:firework_generator',
+      'naturesaura:projectile_generator',
+      'naturesaura:slime_split_generator'
+    ]
+    yeeeet.forEach(yote => {
+      event.remove({id: yote})
+    })
     //recipe function
     function treeRitual(ingredients, output, outputCount, sapling, time){
       event.custom({
@@ -57,6 +71,21 @@ ServerEvents.recipes(event => {
       500
     )
     //Offering Table
+    treeRitual(
+      [
+        {'item': 'eidolon:holy_symbol'},
+        {'item': 'eidolon:unholy_symbol'},
+        {'item': 'naturesaura:infused_stone'},
+        {'tag': 'forge:storage_blocks/regalium'},
+        {'tag': 'forge:storage_blocks/vehement_coal'},
+        {'item': 'eidolon:wooden_altar'},
+        {'item': 'naturesaura:token_sorrow'},
+        {'item': 'naturesaura:token_joy'}
+      ],
+      'naturesaura:offering_table', 1,
+      'aether:skyroot_sapling',
+      500
+    )
     //Transmutation Catalyst
     treeRitual(
       [
@@ -171,7 +200,7 @@ ServerEvents.recipes(event => {
         {'item': 'mynethersdelight:tear_popsicle'}
       ],
       'kubejs:token_stillness', 2,
-      'eternal_starlight:northland_sapling',
+      'arts_and_crafts:cork_sapling',
       50
     )
     //Defiance
@@ -222,6 +251,129 @@ ServerEvents.recipes(event => {
     }
     }).id(`kubejs:natures_aura/offering_to_the_gods/token_${token.o}`)
     })
+    //AURA GENERATORS
+    //Canopy Diminisher
+    treeRitual(
+      [
+        {'item': 'naturesaura:infused_iron'},
+        {'item': 'naturesaura:token_joy'},
+        {'item': 'hexalia:earth_node'},
+        {'item': 'botania:livingwood'},
+        {'item': 'goety:animation_core'},
+        {'item': 'botania:livingwood'}
+      ],
+      'naturesaura:oak_generator', 1,
+      'minecraft:oak_sapling',
+      600
+    )
+    //Disentangler of Mortals
+    treeRitual(
+      [
+        {'item': 'gtceu:darkened_silver_ingot'},
+        {'item': 'naturesaura:token_sorrow'},
+        {'item': 'kubejs:vengeful_node'},
+        {'item': 'minecraft:nether_brick'},
+        {'item': 'eidolon:reaper_scythe'},
+        {'item': 'goety:cursed_cage'}
+      ],
+      'naturesaura:animal_generator', 1,
+      'atmospheric:laurel_sapling',
+      600
+    )
+    treeRitual(
+      [
+        {'item': 'naturesaura:sky_ingot'},
+        {'item': 'naturesaura:token_joy'},
+        {'item': 'hexalia:air_node'},
+        {'item': 'minecraft:fire_charge'},
+        {'item': 'minecraft:firework_rocket'},
+        {'item': 'naturesaura:token_rage'}
+      ],
+      'naturesaura:firework_generator', 1,
+      'ars_nouveau:blazing_archwood_sapling',
+      600
+    )
+    //Herbivorous Absorber
+    treeRitual(
+      [
+        {'item': 'naturesaura:infused_iron'},
+        {'item': 'naturesaura:token_joy'},
+        {'item': 'kubejs:sacred_node'},
+        {'item': 'hexalia:fragrant_nectar'},
+        {'item': 'eidolon:holy_symbol'},
+        {'item': 'kubejs:bloomwrap_cloth'}
+      ],
+      'naturesaura:flower_generator', 1,
+      'minecraft:flowering_azalea',
+      600
+    )
+    treeRitual(
+      [
+        {'item': 'gtceu:darkened_silver_ingot'},
+        {'item': 'kubejs:token_change'},
+        {'item': 'kubejs:corrosive_node'},
+        {'item': 'botania:manasteel_sword'},
+        {'item': 'minecraft:bamboo'},
+        {'item': 'naturesaura:token_sorrow'}
+      ],
+      'naturesaura:slime_split_generator', 1,
+      'tconstruct:earth_slime_sapling',
+      600
+    )
+    //Reaper of Ender Heights
+    treeRitual(
+      [
+        {'item': 'gtceu:darkened_silver_ingot'},
+        {'item': 'kubejs:token_defiance'},
+        {'item': 'kubejs:eldritch_node'},
+        {'item': 'quark:ender_watcher'},
+        {'item': 'eidolon:ender_calx'},
+        {'item': 'create:mechanical_saw'}
+      ],
+      'naturesaura:chorus_generator', 1,
+      'betterendforge:dragon_tree_sapling',
+      600
+    )
+    treeRitual(
+      [
+        {'item': 'naturesaura:tainted_gold'},
+        {'item': 'kubejs:token_change'},
+        {'item': 'kubejs:arcane_node'},
+        {'item': 'eidolon:fungus_sprouts'},
+        {'item': 'eidolon:warped_sprouts'},
+        {'item': 'goety:mystic_core'}
+      ],
+      'naturesaura:potion_generator', 1,
+      'hexerei:witch_hazel_sapling',
+      600
+    )
+    treeRitual(
+      [
+        {'item': 'naturesaura:infused_iron'},
+        {'item': 'kubejs:token_recurrence'},
+        {'item': 'hexalia:water_node'},
+        {'item': 'eidolon:avennian_sprig'},
+        {'item': 'botania:grass_seeds'},
+        {'item': 'hexalia:morphora'}
+      ],
+      'naturesaura:moss_generator', 1,
+      'hexerei:willow_sapling',
+      600
+    )
+    //Shooting Mark
+    treeRitual(
+      [
+        {'item': 'naturesaura:infused_iron'},
+        {'item': 'kubejs:token_defiance'},
+        {'item': 'kubejs:vengeful_node'},
+        {'item': 'minecraft:crossbow'},
+        {'item': 'goety:wind_core'},
+        {'item': 'naturesaura:token_anger'}
+      ],
+      'naturesaura:projectile_generator', 1,
+      'hexerei:mahogany_sapling',
+      600
+    )
   //other crafts/gates
   //Slimy Eye
     treeRitual(
@@ -274,7 +426,7 @@ ServerEvents.recipes(event => {
       {'item': 'immersiveengineering:light_bulb'},
       {'item': 'create:fluid_tank'},
       {'item': 'immersiveengineering:component_iron'},
-      {'item': 'reliquary:fertile_essence'},
+      {'item': 'hexalia:infused_dirt'},
       {'item': 'immersiveengineering:slag_glass'},
       {'tag': 'forge:treated_wood'},
       {'item': 'immersiveengineering:slag_glass'},

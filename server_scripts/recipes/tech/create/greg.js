@@ -33,6 +33,7 @@ const createMillableGems = [
     'coke',
     'jade',
     'nether_quartz',
+    'blazing_quartz',
     'apatite',
     'salt',
     'rock_salt',

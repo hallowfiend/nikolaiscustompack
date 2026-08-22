@@ -27,6 +27,23 @@ const recipes = [
 //Eidolon crucible
 {
     inputItem:[
+        {"item":"mna:vellum"},
+        {"item":"mna:vellum"},
+        {"item":"mna:vellum"},
+        {"item":"mna:vellum"},
+        {"item":"eidolon:enchanted_ash"},
+        {"item":"malum:hallowed_gold_ingot"},
+        {"item":"embers:ash"}
+    ],
+    liquid:"hexerei:tallow_fluid",
+    liquid_consum:250,
+    output_liquid:false,
+    output:"eidolon:parchment",
+    output_amount:4,
+    heat:true
+},
+{
+    inputItem:[
         {"item":"eidolon:soul_shard"},
         {"item":"eidolon:mirecap"},
         {"item":"eidolon:lesser_soul_gem"},

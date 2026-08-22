@@ -2,6 +2,11 @@ ClientEvents.lang('en_us', event => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    //Eidolon
+    event.renameItem('eidolon:censer', "Hermetic Censer")
+    event.renameItem('eidolon:parchment', 'Hallowed Parchment')
+    //Hexalia
+    event.renameItem('hexalia:censer', 'Hedge Censer')
     //Blood Magic
     event.renameItem('bloodmagic:arcaneashes', 'Arraywork Powders')
     //Occultism
@@ -27,6 +32,9 @@ ClientEvents.lang('en_us', event => {
     event.renameItem('naturesaura:tainted_gold_block', 'Block of Tainted Gold')
     event.renameItem('naturesaura:sky_ingot_block', 'Block of Heavenly Metal')
     //Elementalcraft
+    event.renameItem('elementalcraft:drenched_iron_ingot', 'Drenched Invar Ingot')
+    event.renameItem('elementalcraft:drenched_iron_block', 'Drenched Invar Block')
+    event.renameItem('elementalcraft:drenched_iron_nugget', 'Drenched Invar Nugget')
     event.renameItem('elementalcraft:air_silk', 'Aerilated Silk')
     //BetterEnd
     event.renameItem('betterend:aurora_crystal', 'Shimmering Crystalix')

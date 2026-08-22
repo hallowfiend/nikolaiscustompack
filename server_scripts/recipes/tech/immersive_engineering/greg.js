@@ -126,39 +126,60 @@ const oresToProcessIE = [
 ]
 
 const ieMillableGems = [
+    'malarite',
+    'regalium',
+    'zanite',
+    'gravitite',
+    'ambrosium',
+    'source',
+    'starlit_diamond',
+    'skyjade',
+    'vehement_coal',
+    'ember',
+    'dark',
+    'ruby',
+    'olivine',
+    'yellow_garnet',
+    'red_garnet',
+    'amethyst',
+    'turquoise',
+    'spinel',
+    'almandine',
+    'cinnabar',
+    'xithricite'
 ]
 
 const ieMillableIngots = [
-    
-]
-
-const blacklist = [
-    'naquadah'
+    'mithril',
+    'iesnium',
+    'deepsilver',
+    'anthralite',
+    'cloggrum',
+    'froststeel',
+    'compressed_iron',
+    'vinteum_alloy',
+    'purified_vinteum_alloy',
+    'hallowed_gold',
+    'tainted_gold',
+    'infused_iron',
+    'darkened_silver'
 ]
 
 ServerEvents.recipes(event =>{
-    event.forEachRecipe({ type: "gtceu:macerator" }, x => {
-        let recipe = JSON.parse(x.json)
-        
-        let chancedOutputs = []
-        let eut = recipe.tickInputs.eu[0].content
-        if (eut > 128) return; //MV
-        if (recipe.inputs.length != 1) return; //length 1 only
-        let input = recipe.inputs.item[0].content.ingredient;
-        if (!input?.ingredient) return;
-        let mainOutputs = recipe.outputs.at(0)
-        let secondaryOutputs = recipe.outputs.slice(1)
-        secondaryOutputs.forEach(b => {
-            let actualChance = 0;
-            if (!b?.chance){
-                actualChance = 0.99
-            }
-            else actualChance = b.chance;
-
-            chancedOutputs.push({"chance": actualChance, "output": b.id})
-        })
-        event.recipes.immersiveengineering.crusher(
-            `${mainOutputs.content.count}x ${mainOutputs.content.ingredient.item}`, `#${input.tag}` || input.item, chancedOutputs
-        )
-    })
+    createMillableGems.forEach(gem => {
+    event.recipes.immersiveengineering.crusher(
+        `gtceu:${gem}_dust`, `#forge:gems/${gem}`
+    ).id(`kubejs:immersive_engineering/crusher/${gem}_dust`)})
+    ieMillableGems.forEach(gem => {
+    event.recipes.immersiveengineering.crusher(
+        `gtceu:${gem}_dust`, `#forge:gems/${gem}`
+    ).id(`kubejs:immersive_engineering/crusher/${gem}_dust`)})
+    createMillableIngots.forEach(ingot => {
+    event.recipes.immersiveengineering.crusher(
+        `gtceu:${ingot}_dust`, `#forge:ingots/${ingot}`
+    ).id(`kubejs:immersive_engineering/crusher/${ingot}_dust`)})
+    ieMillableIngots.forEach(ingot => {
+    event.recipes.immersiveengineering.crusher(
+        `gtceu:${ingot}_dust`, `#forge:ingots/${ingot}`
+    ).id(`kubejs:immersive_engineering/crusher/${ingot}_dust`)})
 })

@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         ],
         [circle, circle, circle], 'botania:monocle'
     )
-    //tania rings
+    //'tania rings
     manaweave(2,
         [
             'gtceu:manasteel_ring',

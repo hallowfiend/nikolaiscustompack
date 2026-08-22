@@ -60,11 +60,11 @@ ServerEvents.recipes((event) => {
     "extra_items": [
       {
         "item": "minecraft:black_dye",
-        "count": 2
+        "count": 8
       },
       {
         "item": "evilcraft:dark_gem",
-        "count": 1
+        "count": 4
       }
     ],
     "spirits": [
@@ -95,11 +95,11 @@ ServerEvents.recipes((event) => {
     "extra_items": [
       {
         "item": "minecraft:blue_ice",
-        "count": 2
+        "count": 8
       },
       {
         "item": "malum:astral_weave",
-        "count": 1
+        "count": 4
       }
     ],
     "spirits": [

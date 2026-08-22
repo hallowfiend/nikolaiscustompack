@@ -233,6 +233,13 @@ ServerEvents.recipes(event => {
         30000,
         250
     )
+    conversion(
+        'eidolon:tattered_cloth',
+        'kubejs:woven_silk',
+        1,
+        100,
+        20
+    )
     //crushing
     crushing(
         'minecraft:warped_wart_block',

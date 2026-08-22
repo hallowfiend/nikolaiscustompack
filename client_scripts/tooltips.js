@@ -1,30 +1,33 @@
 ItemEvents.tooltip(event => {
 
   //drop locations
-  event.add('gtceu:palladium_nugget', 'Drops from Illagers')
+  event.addAdvanced('gtceu:palladium_nugget', (item, advanced, text) => {
+    text.add(1, Text.of('Drops from Illagers').gray())
+  })
 
   //crop locations
-  event.add(['hexalia:dreamshroom', 'minecraft:sweet_berries'],
-    'Found in taigas'
-  )
+  event.addAdvanced(['hexalia:dreamshroom'], (item, advanced, text) => {
+    text.add(1, Text.of('Found in taigas').gray())
+  })
+  event.addAdvanced(['hexalia:spirit_bloom'], (item, advanced, text) => {
+    text.add(1, Text.of('Found in swamps').gray())
+  })
   event.addAdvanced('netherexp:warped_wart', (item, advanced, text) => {
     text.add(1, Text.of('Found only in Sanctums').cyan())
   })
 
   //ars ritual tablets
-  event.remove(['ars_nouveau:ritual_animal_summon', 'ars_nouveau:ritual_wilden_summon'])
-  event.add([
-    'ars_nouveau:ritual_animal_summon',
-    'ars_nouveau:ritual_wilden_summon'
-  ], "Deprecated, use Eidolon's brazier summoning mechanic instead")
+  event.addAdvanced(['ars_nouveau:ritual_animal_summon', 'ars_nouveau:ritual_wilden_summon'], (item, advanced, text) => {
+      text.remove(1)
+      text.add(1, Text.red("Deprecated, use Eidolon's Brazier Summoning instead!").bold())
+  })
 
   //misc tips
-
-  event.addAdvanced('malum:encyclopedia_arcana', (item, advanced, text) => {
+  event.addAdvanced(['malum:encyclopedia_arcana', 'malum:encyclopedia_esoterica'], (item, advanced, text) => {
     text.add(1, Text.of('Recipes may be incorrect, check JEI!').red())
   })
-  event.addAdvanced('malum:encyclopedia_esoterica', (item, advanced, text) => {
-    text.add(1, Text.of('Recipes may be incorrect, check JEI!').red())
+  event.addAdvanced('hexalia:infused_dirt', (item, advanced, text)=> {
+    text.add(1, Text.of('Hexalia herbs placed atop this block can be duplicated with bone meal').gray())
   })
 
   event.addAdvanced('exquisito:imaginal_capsule', (item, advanced, text) => {
