@@ -157,6 +157,7 @@ ServerEvents.recipes(event => {
         ]}
     ]
     reagenceBaseBM.forEach(reagent => {
+        event.remove({output: `bloodmagic:reagent${reagent.type}`})
         let ingredientlist = []
         if (reagent.tier < 3) {
             ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:simplecatalyst'})
@@ -264,6 +265,7 @@ ServerEvents.recipes(event => {
         ]}
     ]
     reagenceAnimus.forEach(reagent => {
+        event.remove({output: `animus:reagent${reagent.type}`})
         let ingredientlist = []
         if (reagent.tier < 3) {
             ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:simplecatalyst'})

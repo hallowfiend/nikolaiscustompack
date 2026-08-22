@@ -23,42 +23,27 @@ ServerEvents.recipes(event => {
     }).id('kubejs:blood_magic/hellfire_forge/petty_tartaric_gem')
     //sentient tools
     const tools = [
-        'axe',
-        'pickaxe',
-        'shovel',
-        'sword'
+        {input: 'axe', output: 'axe'},
+        {input: 'hoe', output: 'scythe'},
+        {input: 'pick', output: 'pickaxe'},
+        {input: 'shovel', output: 'shovel'},
+        {input: 'sword', output: 'sword'}
     ]
     tools.forEach(tool => {
-        event.remove({id: `bloodmagic:soulforge/sentient${tool}`})
+        event.remove({id: `bloodmagic:soulforge/sentient${tool.output}`})
         event.custom({
     "type": "bloodmagic:soulforge",
     "drain": 0.0,
     "input0": {
-        "item": `botania:manasteel_${tool}`
+        "item": `botania:manasteel_${tool.input}`
     },
     "input1": {
         "item": "bloodmagic:soulgempetty"
     },
     "minimumDrain": 0.0,
     "output": {
-        "item": `bloodmagic:soul${tool}`
+        "item": `bloodmagic:soul${tool.output}`
     }
-    }).id(`kubejs:blood_magic/hellfire_forge/sentient_${tool}`)
+    }).id(`kubejs:blood_magic/hellfire_forge/sentient_${tool.output}`)
     })
-    //scythe - special case
-    event.remove({id: 'bloodmagic:soulforge/sentientscythe'})
-    event.custom({
-    "type": "bloodmagic:soulforge",
-    "drain": 1.0,
-    "input0": {
-        "item": `botania:manasteel_hoe`
-    },
-    "input1": {
-        "item": "bloodmagic:soulgempetty"
-    },
-    "minimumDrain": 1.0,
-    "output": {
-        "item": `bloodmagic:soulscythe`
-    }
-    }).id(`kubejs:blood_magic/hellfire_forge/sentient_scythe`)
 });

@@ -260,7 +260,38 @@ ServerEvents.recipes(event => {
         .soulCost(8)
         .duration(8)
         .id('kubejs:goety/dark_ritual/forging/runeforge');
-
+    
+    //GEOTURGY RITUALS
+    //Targeting monocle
+    event.remove({id: 'goety:targeting_monocle'})
+    event.recipes.goety.ritual('goety:targeting_monocle', 'goety:craft', [
+            'goety:ectoplasm',
+            'malum:wicked_spirited_glass',
+            'malum:wicked_spirited_glass',
+            'kubejs:treated_leather',
+            'kubejs:treated_leather',
+            'malum:block_of_cthonic_gold',
+            'eidolon:pewter_inlay'
+        ])
+        .activationItem('hexcasting:lens')
+        .craftType('geoturgy')
+        .soulCost(1)
+        .duration(10)
+        .id('kubejs:goety/dark_ritual/earthshaping/targeting_monocle');
+    //OVERGROWN RITUALS
+    //Manaseer monocle
+    /* event.recipes.goety.ritual('botania:monocle', 'goety:craft', [
+            'botania:mana_glass',
+            'botania:mana_glass',
+            'gtceu:tainted_gold_plate',
+            'gtceu:manasteel_plate',
+            'mna:mote_arcane'
+        ])
+        .activationItem('goety:targeting_monocle')
+        .craftType('overgrown')
+        .soulCost(5)
+        .duration(20)
+        .id('kubejs:goety/dark_ritual/druidism/manaseer_monocle'); */
     //END RITUALS
     //BetterEnd infusion altar
     event.recipes.goety.ritual('betterend:crystalite_helmet', 'goety:craft', [

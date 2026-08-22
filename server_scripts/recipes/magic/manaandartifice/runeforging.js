@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     const yeet = [
         'mna:rune_clay_plate',
-        'mna:stone_rune_blank'
+        'mna:stone_runes/rune_blank'
     ]
     yeet.forEach(yeet => {
         event.remove({id: yeet})

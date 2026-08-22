@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         'ztz'
     ], {
         z: 'gtceu:zinc_plate',
-        t: 'gtceu:silver_nugget',
+        t: 'elementalcraft:inert_crystal',
         g: 'caverns_and_chasms:float_glass_pane'
     }).id('kubejs:shaped/ritual_focus_minor')
     //manaweaving proper
@@ -32,6 +32,7 @@ ServerEvents.recipes(event => {
         'botania:swap_ring',
         'botania:dodge_ring',
         'botania:mining_ring',
+        'botania:monocle'
     ]
     removals.forEach(item => {
         event.remove({output: item})
@@ -41,11 +42,23 @@ ServerEvents.recipes(event => {
         "type": "mna:manaweaving-recipe",
         "output": output,
         "tier": tier,
-        "items": inputs,
+        "items": inputs, //max 9
         "patterns": patterns
         }).id(`kubejs:mna/manaweaving/${output.split(":")[1]}`)
     }
     //irons' books
+    //manaseer monocle
+    manaweave(1,
+        [
+            'botania:mana_glass',
+            'botania:mana_glass',
+            'gtceu:tainted_gold_plate',
+            'gtceu:manasteel_plate',
+            'magichem:admixture_sight',
+            'goety:targeting_monocle'
+        ],
+        [circle, circle, circle], 'botania:monocle'
+    )
     //tania rings
     manaweave(2,
         [
@@ -69,7 +82,7 @@ ServerEvents.recipes(event => {
         [
             'gtceu:manasteel_ring',
             'kubejs:rune_storms',
-            'botania:lens_magnet',
+            'evilcraft:lightning_grenade',
             'bloodmagic:sigilofmagnetism'
         ],
         [diamond, circle, square], 'botania:magnet_ring'
