@@ -30,6 +30,9 @@ ServerEvents.recipes(event => {
           },
           {
             "item": "twilightforest:knightmetal_ingot"
+          },
+          {
+            "item": "kubejs:deepbore_tar"
           }
         ],
         "result": 

@@ -290,7 +290,7 @@ ServerEvents.recipes(event => {
         {'item': 'naturesaura:token_rage'}
       ],
       'naturesaura:firework_generator', 1,
-      'ars_nouveau:blazing_archwood_sapling',
+      'ars_nouveau:red_archwood_sapling',
       600
     )
     //Herbivorous Absorber
@@ -331,7 +331,7 @@ ServerEvents.recipes(event => {
         {'item': 'create:mechanical_saw'}
       ],
       'naturesaura:chorus_generator', 1,
-      'betterendforge:dragon_tree_sapling',
+      'betterend:dragon_tree_sapling',
       600
     )
     treeRitual(
@@ -340,7 +340,7 @@ ServerEvents.recipes(event => {
         {'item': 'kubejs:token_change'},
         {'item': 'kubejs:arcane_node'},
         {'item': 'eidolon:fungus_sprouts'},
-        {'item': 'eidolon:warped_sprouts'},
+        {'item': 'kubejs:shifting_tincture'},
         {'item': 'goety:mystic_core'}
       ],
       'naturesaura:potion_generator', 1,
@@ -353,7 +353,7 @@ ServerEvents.recipes(event => {
         {'item': 'kubejs:token_recurrence'},
         {'item': 'hexalia:water_node'},
         {'item': 'eidolon:avennian_sprig'},
-        {'item': 'botania:grass_seeds'},
+        {'item': 'goety:resilience_lotion'},
         {'item': 'hexalia:morphora'}
       ],
       'naturesaura:moss_generator', 1,
@@ -398,7 +398,7 @@ ServerEvents.recipes(event => {
       {'tag': 'forge:storage_blocks/mithril'},
       {'item': 'botania:corporea_spark'},
       {'item': 'minecraft:crying_obsidian'},
-      {'tag': 'forge:ender_pearls'}
+      {'item': 'eidolon:ender_calx'}
     ],
     'entangled:block', 1,
     'undergarden:wigglewood_sapling',
@@ -408,7 +408,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'entangled:item' })
   treeRitual(
     [
-      {'item': 'eidolon:warped_sprouts'},
+      {'item': 'kubejs:realmsplit_dew'},
       {'item': 'botania:dreamwood_twig'},
       {'tag': 'forge:rods/potin'},
       {'item': 'galosphere:allurite_shard'},
@@ -426,7 +426,7 @@ ServerEvents.recipes(event => {
       {'item': 'immersiveengineering:light_bulb'},
       {'item': 'create:fluid_tank'},
       {'item': 'immersiveengineering:component_iron'},
-      {'item': 'hexalia:infused_dirt'},
+      {'item': 'botania:fertilizer'},
       {'item': 'immersiveengineering:slag_glass'},
       {'tag': 'forge:treated_wood'},
       {'item': 'immersiveengineering:slag_glass'},

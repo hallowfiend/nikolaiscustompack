@@ -47,6 +47,19 @@ ServerEvents.recipes(event => {
         }).id(`kubejs:mna/manaweaving/${output.split(":")[1]}`)
     }
     //irons' books
+    //manaweave cloth
+    event.remove({id: 'botania:manaweave_cloth'})
+    manaweave(1,
+        [
+            'kubejs:bloomwrap_cloth',
+            'mna:vinteum_dust',
+            'botania:mana_string',
+            'botania:mana_string',
+            'botania:mana_string',
+            'botania:mana_string'
+        ],
+        [square, square, square, square], 'botania:manaweave_cloth'
+    )
     //manaseer monocle
     manaweave(1,
         [
@@ -92,7 +105,7 @@ ServerEvents.recipes(event => {
             'gtceu:manasteel_ring',
             'botania:rune_water',
             'minecraft:heart_of_the_sea',
-            'spawn:white_clam_case'
+            'kubejs:shifting_tincture'
         ],
         [diamond, circle, knot3], 'botania:water_ring'
     )
@@ -109,7 +122,7 @@ ServerEvents.recipes(event => {
         [
             'gtceu:manasteel_ring',
             'botania:rune_air',
-            'goety:jade',
+            'goety:flying_ointment',
             'kubejs:token_defiance'
         ],
         [diamond, circle, backslash], 'botania:dodge_ring'
@@ -119,7 +132,7 @@ ServerEvents.recipes(event => {
             'gtceu:manasteel_ring',
             'kubejs:rune_force',
             'embers:blasting_core',
-            'gtceu:brass_ingot'
+            'kubejs:caustic_oil'
         ],
         [diamond, circle, square], 'botania:mining_ring'
     )

@@ -1,3 +1,16 @@
+const pastesAndAnointments = [
+        {id: 'atropos_serum', name: 'Atropos Serum'},
+        {id: 'anointing_paste', name: 'Anointing Paste'},
+        {id: 'nethersblood', name: 'Seething Nethersblood'},
+        {id: 'shifting_tincture', name: 'Shifting Tincture'},
+        {id: 'sanctified_steam', name: 'Sanctified Steam'},
+        {id: 'deepbore_tar', name: 'Deepbore Tar'},
+        {id: 'caustic_oil', name: 'Caustic Oil'},
+        {id: 'daemonic_preparation', name: 'Daemonic Preparation'},
+        {id: 'logisticians_alkahest', name: "Logistician's Alkahest"},
+        {id: 'realmsplit_dew', name: 'Realmsplit Dew'}
+    ]
+
 StartupEvents.registry('item', event => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
@@ -140,6 +153,14 @@ StartupEvents.registry('item', event => {
         .displayName(`Rune of ${runeLang}`)
         .tag('botania:runes')
     })
+    //we have bewitchment at home
+    
+    pastesAndAnointments.forEach(item => {
+        event.create(item.id)
+        .displayName(item.name)
+        .maxStackSize(16)
+    })
+    //other items
     event.create('blood_soaked_nutrient_bar')
     .displayName('Bloodsoaked Nutrient Bar')
     .food(food => {
@@ -156,10 +177,6 @@ StartupEvents.registry('item', event => {
     .displayName('Bloomwrap Cloth');
     event.create('woven_silk')
     .displayName('Woven Silk');
-    event.create('atropos_serum')
-    .displayName('Atropos Serum');
-    event.create('anointing_paste')
-    .displayName('Anointing Paste');
     event.create('concentratedcatalyst')
     .displayName('Concentrated Catalyst');
     event.create('infused_string')
@@ -235,4 +252,12 @@ StartupEvents.registry('item', event => {
     event.create('aspectus_sterling_silver')
     .displayName('Sterling Silver Aspectus')
     .tag('embers:aspectus/sterling_silver')
+})
+
+ItemEvents.modification(event => {
+    pastesAndAnointments.forEach(i => {
+        event.modify(`kubejs:${i.id}`, item => {
+            item.craftingRemainder = Item.of('minecraft:glass_bottle').item
+        })
+    })
 })

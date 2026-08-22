@@ -415,7 +415,7 @@ ServerEvents.recipes((event) => {
                 "item": "kubejs:undirected_node"
             },
             "a": {
-                "item": "evilcraft:dark_power_gem_block"
+                "item": "kubejs:daemonic_preparation"
             }
         },
         "result" : {

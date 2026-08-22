@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     })
     event.remove({output: 'occultism:golden_sacrificial_bowl'})
     event.shaped('occultism:golden_sacrificial_bowl', [
-        'gpg',
+        ' p ',
         'gbg',
         'gug'
     ],{
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         b: 'occultism:sacrificial_bowl',
         p: '#eidolon:patron_symbol',
         u: 'gtceu:hallowed_gold_plate'
-    }).id('kubejs:shaped/golden_sacrificial_bowl')
+    }).keepIngredient('#eidolon:patron_symbol').id('kubejs:shaped/golden_sacrificial_bowl')
     event.shaped('occultism:magic_lamp_empty', [
         ' C ',
         'CTC',

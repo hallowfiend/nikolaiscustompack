@@ -136,7 +136,6 @@ const ieMillableGems = [
     'skyjade',
     'vehement_coal',
     'ember',
-    'dark',
     'ruby',
     'olivine',
     'yellow_garnet',
