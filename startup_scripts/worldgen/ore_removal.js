@@ -88,7 +88,8 @@ WorldgenEvents.remove(event => {
     /tconstruct:.*ore.*/,
     /goety:.*ore/,
     /aether:.*ore/,
-    /deep_aether:.*ore/
+    /deep_aether:.*ore/,
+    /aether_redux:.*ore/
     ]
   });
   event.removeFeatureById('raw_generation', [
@@ -189,5 +190,4 @@ WorldgenEvents.remove(event => {
 
   event.removeFeatureById('lakes', 'pneumaticcraft:oil_lake_surface')
 	event.removeFeatureById('lakes', 'pneumaticcraft:oil_lake_underground')
-  event.removeFeatureById(/.*/, /aether_redux:ore.*/)
 });

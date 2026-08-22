@@ -172,6 +172,15 @@
         ],
         'dungeonsdelight:rotbulb'
     )
+    //FARMER'S RESPITE (tea seed dupe)
+    ritualtable(
+        [
+            {'item': 'hexerei:sage_seed'},
+            {'item': 'farmersrespite:green_tea_leaves'},
+            {'item': 'farmersrespite:black_tea_leaves'}
+        ],
+        'farmersrespite:tea_seeds'
+    )
     //OCCULTISM
     ritualtable(
         [
@@ -227,11 +236,11 @@
     )
     ritualtable(
         [
-            {"item": "minecraft:oxeye_daisy"},
+            {"item": "miners_delight:cave_carrot"},
             {"item": "eidolon:soul_shard"},
+            {"item": "minecraft:oxeye_daisy"},
             {"item": "minecraft:blaze_powder"},
-            {"tag": "forge:resins"},
-            {"item": "miners_delight:cave_carrot"}
+            {"tag": "forge:resins"}
         ],
         "eidolon:merammer_root"
     )

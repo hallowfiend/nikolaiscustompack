@@ -119,9 +119,9 @@ ServerEvents.recipes(event => {
         'BCB',
         'ABA'
     ], {
-        C: 'hexerei:quicksilver_bottle',
+        A: 'hexerei:quicksilver_bottle',
         B: 'gtceu:hallowed_gold_plate',
-        A: 'malum:alchemical_impetus'
+        C: 'malum:alchemical_impetus'
     })
     event.shaped('theurgy:caloric_flux_emitter', [
         ' Q ',
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
         'CCC'
     ], {
         C: 'gtceu:pewter_plate',
-        A: 'gtceu:titanium_plate',
+        A: 'gtceu:anthralite_plate',
         B: '#forge:gems/ambrosium',
         Q: 'malum:block_of_auric_embers'
     })

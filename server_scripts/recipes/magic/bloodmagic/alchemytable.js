@@ -162,18 +162,18 @@ ServerEvents.recipes(event => {
             ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:simplecatalyst'})
             alchemytable(`bloodmagic:reagent${reagent.type}`,
         ingredientlist,
-        1000*tier,
+        1000*reagent.tier,
         100,
-        tier
+        reagent.tier
     )
         }
         else {
             ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:strengthenedcatalyst'})
             alchemytable(`bloodmagic:reagent${reagent.type}`,
         ingredientlist,
-        1000*tier,
+        1000*reagent.tier,
         100,
-        tier
+        reagent.tier
     )
         }
     })
@@ -269,18 +269,18 @@ ServerEvents.recipes(event => {
             ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:simplecatalyst'})
             alchemytable(`animus:reagent${reagent.type}`,
         ingredientlist,
-        1000*tier,
+        1000*reagent.tier,
         100,
-        tier
+        reagent.tier
     )
         }
         else {
             ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:strengthenedcatalyst'})
             alchemytable(`animus:reagent${reagent.type}`,
         ingredientlist,
-        1000*tier,
+        1000*reagent.tier,
         100,
-        tier
+        reagent.tier
     )
         }
     })

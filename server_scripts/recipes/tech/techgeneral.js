@@ -1,4 +1,7 @@
 ServerEvents.recipes(event => {
+    event.remove({id: 'create:crafting/materials/andesite_alloy'})
+    event.remove({id: 'embersaddcompat:stamping/andesite_alloy_from_iron'})
+    event.remove({id: 'create:mixing/andesite_alloy'})
     //early plates
     event.shaped('2x gtceu:wood_plate', ['A', 'B'], { A: '#gtceu:crafting_tools/saw', B: '#minecraft:wooden_slabs' })
     //treated leather

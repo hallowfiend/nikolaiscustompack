@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         event.remove({id: yeet})
     })
     //stone glyph
-    event.shaped('2x mna:stone_rune_blank', [
+    event.shaped('mna:stone_rune_blank', [
         ' S ',
         'SCS',
         ' S '
