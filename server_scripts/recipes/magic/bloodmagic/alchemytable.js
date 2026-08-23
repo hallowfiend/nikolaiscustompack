@@ -73,13 +73,13 @@ ServerEvents.recipes(event => {
     const reagenceBaseBM = [
         {type: 'lava', tier: 1, inputs: [ //max 4
             {item: 'theurgy:crystallized_lava'},
-            {item: 'malum:block_of_blazing_quartz'},
+            {item: 'kubejs:seething_nethersblood'},
             {item: 'botania:rune_fire'},
             {item: 'tconstruct:seared_tank'}
         ]},
         {type: 'water', tier: 1, inputs: [
             {item: 'theurgy:crystallized_water'},
-            {tag: 'forge:storage_blocks/salt'},
+            {item: 'kubejs:shifting_tincture'},
             {item: 'botania:rune_water'},
             {tag: 'forge:storage_blocks/sugar'}
         ]},
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
             {item: 'goety:gale_fabric'},
             {item: 'malum:aerial_spirited_glass'},
             {item: 'botania:rune_air'},
-            {item: 'hexerei:selenite_shard'}
+            {item: 'kubejs:sanctified_steam'}
         ]},
         {type: 'fastminer', tier: 2, inputs: [
             {item: 'goety:magic_fabric'},
@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
         ]},
         {type: 'growth', tier: 2, inputs: [
             {item: 'naturesaura:infused_iron'},
-            {item: 'magichem:essentia_verdant'},
+            {item: 'kubejs:ecologists_distillation'},
             {item: 'botania:rune_earth'},
             {item: 'kubejs:token_cycles'}
         ]},
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
         {type: 'frost', tier: 3, inputs: [
             {item: 'goety:chill_fabric'},
             {item: 'twilightforest:arctic_fur'},
-            {item: 'botania:rune_winter'},
+            {item: 'kubejs:frostfire_reduction'},
             {tag: 'forge:ingots/mithril'}
         ]},
         {type: 'magnetism', tier: 3, inputs: [
@@ -158,9 +158,8 @@ ServerEvents.recipes(event => {
     ]
     reagenceBaseBM.forEach(reagent => {
         event.remove({output: `bloodmagic:reagent${reagent.type}`})
-        let ingredientlist = []
         if (reagent.tier < 3) {
-            ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:simplecatalyst'})
+            let ingredientlist = reagent.inputs.concat({item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:simplecatalyst'})
             alchemytable(`bloodmagic:reagent${reagent.type}`,
         ingredientlist,
         1000*reagent.tier,
@@ -169,7 +168,7 @@ ServerEvents.recipes(event => {
     )
         }
         else {
-            ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:strengthenedcatalyst'})
+            let ingredientlist = reagent.inputs.concat({item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:strengthenedcatalyst'})
             alchemytable(`bloodmagic:reagent${reagent.type}`,
         ingredientlist,
         1000*reagent.tier,
@@ -266,9 +265,8 @@ ServerEvents.recipes(event => {
     ]
     reagenceAnimus.forEach(reagent => {
         event.remove({output: `animus:reagent${reagent.type}`})
-        let ingredientlist = []
         if (reagent.tier < 3) {
-            ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:simplecatalyst'})
+            let ingredientlist = reagent.inputs.concat({item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:simplecatalyst'})
             alchemytable(`animus:reagent${reagent.type}`,
         ingredientlist,
         1000*reagent.tier,
@@ -277,7 +275,7 @@ ServerEvents.recipes(event => {
     )
         }
         else {
-            ingredientlist.concat(reagent.inputs, {item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:strengthenedcatalyst'})
+            let ingredientlist = reagent.inputs.concat({item: 'kubejs:reagentbasic'}, {item: 'bloodmagic:strengthenedcatalyst'})
             alchemytable(`animus:reagent${reagent.type}`,
         ingredientlist,
         1000*reagent.tier,

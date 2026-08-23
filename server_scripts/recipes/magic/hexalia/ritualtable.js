@@ -18,6 +18,17 @@
         ],
         'hexalia:fire_node'
     )
+    //alt rabbage
+    ritualtable(
+        [
+            {'item': 'farmersdelight:cabbage_seeds'},
+            {'item': 'hexalia:dream_paste'},
+            {'item': 'minecraft:iron_ingot'},
+            {'item': 'minecraft:sweet_berries'},
+            {'item': 'minecraft:beetroot'}
+        ],
+        'hexalia:rabbage_seeds'
+    )
     //custom nodes
     ritualtable(
         [

@@ -176,7 +176,7 @@ ServerEvents.recipes((event) => {
     tier3Rune('mind', 'time', 'patience')
     tier3Rune('mind', 'storms', 'temperance')
     //Nodes
-    /* event.recipes.botania.runic_altar('4x hexalia:fire_node',
+    event.recipes.botania.runic_altar('4x hexalia:fire_node',
         [
             'minecraft:amethyst_shard',
             'minecraft:coal',
@@ -229,7 +229,7 @@ ServerEvents.recipes((event) => {
             'malum:eldritch_spirit'
         ],
         2000
-    ).id('kubejs:botania/runic_altar/eldritch_node_efficient') */
+    ).id('kubejs:botania/runic_altar/eldritch_node_efficient')
     //BLOOD MAGIC
     //Prepared Stone
     event.recipes.botania.runic_altar('8x kubejs:prepared_stone',
@@ -262,7 +262,7 @@ ServerEvents.recipes((event) => {
         [
             'bloodmagic:blankslate',
             'bloodmagic:blankrune',
-            'hexalia:air_node',
+            'kubejs:sanctified_steam',
             'neapolitan:chocolate_bar',
             'mna:transmuted_silver'
         ],
@@ -324,7 +324,7 @@ ServerEvents.recipes((event) => {
         [
             'bloodmagic:infusedslate',
             'bloodmagic:blankrune',
-            'goety:wind_core',
+            'kubejs:shifting_tincture',
             'biomancy:water_gel_block',
             'pneumaticcraft:vacuum_pump'
         ],
@@ -361,7 +361,7 @@ ServerEvents.recipes((event) => {
         [
             'bloodmagic:demonslate',
             'bloodmagic:blankrune',
-            'magichem:sidereal_orb',
+            'kubejs:rune_space',
             'evilcraft:blood_orb_filled',
             'evilcraft:blood_orb_filled',
             'evilcraft:blood_orb_filled',
@@ -379,7 +379,7 @@ ServerEvents.recipes((event) => {
         [
             'bloodmagic:demonslate',
             'bloodmagic:speedrune',
-            'magichem:red_vitriol',
+            'kubejs:caustic_oil',
             'malum:malignant_pewter_ingot',
             'ae2:speed_card'
         ],
@@ -393,7 +393,7 @@ ServerEvents.recipes((event) => {
             'bloodmagic:speedrune',
             'magichem:compacted_verdigris',
             'scguns:plasma_block',
-            'embers:catalytic_plug'
+            'kubejs:rune_storms'
         ],
         16000
     ).id('kubejs:botania/runic_altar/charging_rune')

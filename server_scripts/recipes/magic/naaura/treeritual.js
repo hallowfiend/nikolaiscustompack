@@ -353,7 +353,7 @@ ServerEvents.recipes(event => {
         {'item': 'kubejs:token_recurrence'},
         {'item': 'hexalia:water_node'},
         {'item': 'eidolon:avennian_sprig'},
-        {'item': 'goety:resilience_lotion'},
+        {'item': 'kubejs:ecologists_distillation'},
         {'item': 'hexalia:morphora'}
       ],
       'naturesaura:moss_generator', 1,

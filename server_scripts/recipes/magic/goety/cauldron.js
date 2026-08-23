@@ -37,13 +37,14 @@ ServerEvents.recipes(event => {
     }
     }).id(`kubejs:goety/cauldron_crafting/${output.split(":")[1]}`)
     }
+    //tier 1
     //atropos serum
     cauldronCraft(
         8000,
         14548453,
         [
             {"item": "twilightforest:mushgloom"},
-            {"item": "occultism:datura"},
+            {"item": "mna:transmuted_silver"},
             {"item": "galosphere:allurite_shard"},
             {"item": "minecraft:glow_berries"},
             {"item": "magichem:admixture_sight"},
@@ -79,10 +80,10 @@ ServerEvents.recipes(event => {
             {'item': 'hexerei:blood_bottle'},
             {'item': 'hexalia:rabbage'},
             {'item': 'gtceu:netherrack_dust'},
-            {'item': 'eidolon:merammer_root'},
+            {'item': 'minecraft:magma_cream'},
             {'item': 'malum:blazing_quartz'}
         ],
-        'kubejs:nethersblood'
+        'kubejs:seething_nethersblood'
     )
     //shifting tincture
     cauldronCraft(
@@ -92,8 +93,8 @@ ServerEvents.recipes(event => {
             {'item': 'gtceu:soapstone_dust'},
             {'item': 'gtceu:lepidolite_dust'},
             {'item': 'goety:ectoplasm'},
-            {'item': 'hexalia:lotus_flower'},
-            {'item': 'hexalia:siren_kelp'},
+            {'item': 'mna:wakebloom'},
+            {'item': 'hexalia:siren_paste'},
             {'item': 'minecraft:cod'},
             {'item': 'minecraft:blue_orchid'}
         ],
@@ -129,6 +130,35 @@ ServerEvents.recipes(event => {
         ],
         'kubejs:sanctified_steam'
     )
+    //whiff of vitality
+    cauldronCraft(
+        2000,
+        12930373,
+        [
+            {'item': 'eidolon:restoration_incense'},
+            {'item': 'minecraft:oak_sapling'},
+            {'item': 'minecraft:birch_sapling'},
+            {'item': 'minecraft:spruce_sapling'},
+            {'item': 'hexalia:lotus_flower'},
+            {'item': 'farmersrespite:rose_hips'},
+            {'item': 'farmersrespite:green_tea_leaves'}
+        ],
+        'kubejs:whiff_of_vitality'
+    )
+    //tier 2
+    //blacksmithing resin
+    cauldronCraft(
+        2000,
+        4925193,
+        [
+            {'item': 'kubejs:deepbore_tar'},
+            {'item': 'gtceu:steel_ingot'},
+            {'item': 'eidolon:merammer_resin'},
+            {'item': 'minecraft:honeycomb'},
+            {'item': 'goety:henbane_flower'}
+        ],
+        'kubejs:blacksmithing_resin'
+    )
     //caustic oil
     cauldronCraft(
         2000,
@@ -147,7 +177,7 @@ ServerEvents.recipes(event => {
         2000,
         8560539,
         [
-            {'item': 'kubejs:nethersblood'},
+            {'item': 'kubejs:seething_nethersblood'},
             {'item': 'vampirism:human_heart'},
             {'item': 'occultism:datura'},
             {'item': 'hexerei:belladonna_flowers'},
@@ -155,18 +185,18 @@ ServerEvents.recipes(event => {
         ],
         'kubejs:daemonic_preparation'
     )
-    //logistician's alkahest
+    //ecologist's distillation
     cauldronCraft(
         2000,
-        9945849,
+        4753190,
         [
-            {'item': 'kubejs:sanctified_steam'},
-            {'item': 'alexsmobs:gazelle_horn'},
-            {'item': 'malum:grim_talc'},
-            {'item': 'magichem:signalite'},
-            {'item': 'goety:animation_core'}
+            {'item': 'kubejs:whiff_of_vitality'},
+            {'item': 'naturesaura:gold_powder'},
+            {'item': 'farmersdelight:straw'},
+            {'item': 'minecraft:vine'},
+            {'item': 'hexerei:mugwort_leaves'}
         ],
-        'kubejs:logisticians_alkahest'
+        'kubejs:ecologists_distillation'
     )
     //realmsplit dew
     cauldronCraft(
@@ -181,14 +211,30 @@ ServerEvents.recipes(event => {
         ],
         'kubejs:realmsplit_dew'
     )
+    //tier 3
+    //logistician's alkahest
+    cauldronCraft(
+        2000,
+        9945849,
+        [
+            {'item': 'kubejs:blacksmithing_resin'},
+            {'item': 'kubejs:sanctified_steam'},
+            {'item': 'alexsmobs:gazelle_horn'},
+            {'item': 'malum:grim_talc'},
+            {'item': 'magichem:signalite'},
+            {'item': 'goety:animation_core'},
+            {'item': 'hexalia:galeberries'}
+        ],
+        'kubejs:logisticians_alkahest'
+    )
     //flying ointment
     event.remove({id: 'goety:cauldron/flying_ointment'})
     cauldronCraft(
         2000,
         15002780,
         [
-            {'item': 'kubejs:sanctified_steam'},
             {'item': 'kubejs:caustic_oil'},
+            {'item': 'kubejs:sanctified_steam'},
             {'tag': 'forge:tallow'},
             {'item': 'goety:jade'},
             {'item': 'goety:wind_core'},
@@ -196,5 +242,20 @@ ServerEvents.recipes(event => {
             {'item': 'minecraft:ender_eye'}
         ],
         'goety:flying_ointment'
+    )
+    //frostfire reduction
+    cauldronCraft(
+        2000,
+        8184315,
+        [
+            {'item': 'kubejs:demonic_preparation'},
+            {'item': 'kubejs:shifting_tincture'},
+            {'item': 'goety:freezing_lamp'},
+            {'item': 'botania:rune_winter'},
+            {'item': 'hexalia:chillberries'},
+            {'item': 'windswept:snowdrop'},
+            {'item': 'magichem:admixture_cold'}
+        ],
+        'kubejs:frostfire_reduction'
     )
 })

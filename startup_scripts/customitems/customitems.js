@@ -1,14 +1,18 @@
 const pastesAndAnointments = [
         {id: 'atropos_serum', name: 'Atropos Serum'},
         {id: 'anointing_paste', name: 'Anointing Paste'},
-        {id: 'nethersblood', name: 'Seething Nethersblood'},
+        {id: 'seething_nethersblood', name: 'Seething Nethersblood'},
         {id: 'shifting_tincture', name: 'Shifting Tincture'},
         {id: 'sanctified_steam', name: 'Sanctified Steam'},
         {id: 'deepbore_tar', name: 'Deepbore Tar'},
+        {id: 'whiff_of_vitality', name: 'Whiff of Vitality'},
         {id: 'caustic_oil', name: 'Caustic Oil'},
         {id: 'daemonic_preparation', name: 'Daemonic Preparation'},
         {id: 'logisticians_alkahest', name: "Logistician's Alkahest"},
-        {id: 'realmsplit_dew', name: 'Realmsplit Dew'}
+        {id: 'realmsplit_dew', name: 'Realmsplit Dew'},
+        {id: 'blacksmithing_resin', name: "Blacksmithing Resin"},
+        {id: 'frostfire_reduction', name: 'Frostfire Reduction'},
+        {id: 'ecologists_distillation', name: "Ecologist's Distillation"}
     ]
 
 StartupEvents.registry('item', event => {
