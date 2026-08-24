@@ -711,46 +711,6 @@ ServerEvents.recipes((event) => {
       },
     ]
   })
-  //gilded areogel skyshelf
-  event.custom({
-    "type": "malum:spirit_infusion",
-    "input": {
-      "item": "apotheosis:infused_seashelf",
-      "count": 1
-    },
-    "output": {
-      "item": 'apotheosis:crystal_seashelf',
-      "count": 1
-    },
-    "extra_items": [
-      {
-        "item": "minecraft:sea_lantern",
-        "count": 4
-      },
-      {
-        "item": "hexalia:nautilite",
-        "count": 1
-      }
-    ],
-    "spirits": [
-      {
-        "type": "arcane",
-        "count": 8
-      },
-      {
-        "type": "sacred",
-        "count": 8
-      },
-      {
-        "type": "aerial",
-        "count": 8
-      },
-      {
-        "type": "aqueous",
-        "count": 8
-      },
-    ]
-  })
   //gilded aerogel skyshelf
   event.custom({
     "type": "malum:spirit_infusion",
@@ -786,62 +746,6 @@ ServerEvents.recipes((event) => {
         "count": 16
       }
     ]
-  })
-  //chimerite
-  const chimeriteSeeds = [
-    {nugget: "palladium", mult: "1"}, //4
-    {nugget: "mithril", mult: "4"}, //16
-    {nugget: "sterling_silver", mult: "8"}, //32
-    {nugget: "iesnium", mult: "16"} //64
-  ]
-  chimeriteSeeds.forEach(seed => {
-    event.custom({
-    "type": "malum:spirit_infusion",
-    "input": {
-      "tag": `forge:nuggets/${seed.nugget}`,
-      "count": 1
-    },
-    "output": {
-      "item": "mna:chimerite_gem",
-      "count": 4*seed.mult
-    },
-    "extra_items": [
-      {
-      "item": "experienceobelisk:cognitive_flux",
-      "count": 1
-      },
-      {
-      "item": "mna:purified_vinteum_dust",
-      "count": 1
-      },
-      {
-      "item": "cold_sweat:chameleon_molt",
-      "count": 1
-      },
-      {
-      "item": "cosmopolitan:aurora_kohakutou",
-      "count": 1
-      },
-      {
-      "tag": "forge:gems/turquoise",
-      "count": 1
-      },
-      {
-      "tag": "forge:gems/opal",
-      "count": 1
-      }
-    ],
-    "spirits": [
-      {
-        "type": "arcane",
-        "count": 8
-      },
-      {
-        "type": "earthen",
-        "count": 8
-      }
-    ]
-  })
   })
   // soulstained bronze
   event.remove({ id: "malum:spirit_infusion/soul_stained_steel_ingot" })

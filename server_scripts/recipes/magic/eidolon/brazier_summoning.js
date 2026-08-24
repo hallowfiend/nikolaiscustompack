@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'hexalia:silk_moth',
     3,
-    'miners_delight:raw_arthropod',
+    'miners_delight:arthropod',
     'minecraft:string',
     'hexalia:mutavis',
     'gtceu:stone_dust'
@@ -182,6 +182,14 @@ ServerEvents.recipes(event => {
     'goety:grave_dust',
     'caverns_and_chasms:rotten_flesh_block'
   )
+  /* brazier_summoning(
+    'eidolon:giant_skeleton',
+    1,
+    'eidolon:lesser_soul_gem',
+    'reliquary:rib_bone',
+    'goety:grave_dust',
+    'malum:block_of_grim_talc'
+  )*/
   //Goety
   brazier_summoning(
     'goety:wraith',

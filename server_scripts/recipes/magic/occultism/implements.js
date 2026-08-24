@@ -10,12 +10,13 @@ ServerEvents.recipes(event => {
     event.shaped('occultism:golden_sacrificial_bowl', [
         ' p ',
         'gbg',
-        'gug'
+        'sus'
     ],{
         g: 'naturesaura:gold_powder',
         b: 'occultism:sacrificial_bowl',
         p: '#eidolon:patron_symbol',
-        u: 'gtceu:hallowed_gold_plate'
+        u: 'gtceu:hallowed_gold_plate',
+        s: 'malum:cthonic_gold'
     }).keepIngredient('#eidolon:patron_symbol').id('kubejs:shaped/golden_sacrificial_bowl')
     event.shaped('occultism:magic_lamp_empty', [
         ' C ',

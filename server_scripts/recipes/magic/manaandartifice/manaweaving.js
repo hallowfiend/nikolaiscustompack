@@ -1,13 +1,16 @@
-const bolt = "mna:bolt"
-const square = "mna:square"
-const triangle = "mna:triangle"
-const inverted_triangle = "mna:inverted_triangle"
+const bolt = "mna:bolt" //
+const square = "mna:square" //t1
+const triangle = "mna:triangle" //t1
+const inverted_triangle = "mna:inverted_triangle" //t2
 const split_triangle = "mna:split_triangle"
 const circle = "mna:circle"
 const diamond = "mna:diamond"
-const slash = "mna:slash"
-const backslash = "mna:backslash"
+const slash = "mna:slash" //t1
+const backslash = "mna:backslash" //t1
+const knot1 = "mna:knot1"
+const knot2 = "mna:knot2"
 const knot3 = "mna:knot3"
+const knot4 = "mna:knot4"
 const hourglass = "mna:hourglass"
 const infinity = "mna:infinity"
 
@@ -32,7 +35,8 @@ ServerEvents.recipes(event => {
         'botania:swap_ring',
         'botania:dodge_ring',
         'botania:mining_ring',
-        'botania:monocle'
+        'botania:monocle',
+        'botania:manaweave_cloth'
     ]
     removals.forEach(item => {
         event.remove({output: item})
@@ -46,9 +50,7 @@ ServerEvents.recipes(event => {
         "patterns": patterns
         }).id(`kubejs:mna/manaweaving/${output.split(":")[1]}`)
     }
-    //irons' books
     //manaweave cloth
-    event.remove({id: 'botania:manaweave_cloth'})
     manaweave(1,
         [
             'kubejs:bloomwrap_cloth',
@@ -58,7 +60,7 @@ ServerEvents.recipes(event => {
             'botania:mana_string',
             'botania:mana_string'
         ],
-        [square, square, square, square], 'botania:manaweave_cloth'
+        [square, square, square, slash], 'botania:manaweave_cloth'
     )
     //manaseer monocle
     manaweave(1,
@@ -134,6 +136,6 @@ ServerEvents.recipes(event => {
             'embers:blasting_core',
             'kubejs:caustic_oil'
         ],
-        [diamond, circle, square], 'botania:mining_ring'
+        [diamond, circle, knot1], 'botania:mining_ring'
     )
 })

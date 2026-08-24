@@ -52,6 +52,78 @@ ServerEvents.recipes((event) => {
         }
     }).id('kubejs:eidolon/worktable/workstations/manaweaving_altar')
     //IRON'S
+    //copper spellbook
+    event.remove({ id: 'irons_spellbooks:copper_spell_book' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "npc",
+            "ubc",
+            "npc"
+        ],
+        "reagents": [
+            "m   "
+        ],
+        "key" : {
+            "c": {
+                "item" : "gtceu:copper_plate"
+            },
+            "p": {
+                "tag": "botania:petals/brown"
+            },
+            "b": {
+                "item": "minecraft:book"
+            },
+            "n": {
+                "item": "eidolon:arcane_gold_nugget"
+            },
+            "u": {
+                "item": "hexerei:gold_rings"
+            },
+            "m": {
+                "item": "irons_spellbooks:common_ink"
+            }
+        },
+        "result" : {
+            "item": "irons_spellbooks:copper_spell_book"
+        }
+    }).id('kubejs:eidolon/worktable/books/copper_spell_book')
+    //iron spellbook
+    event.remove({ id: 'irons_spellbooks:iron_spell_book' })
+    event.custom({
+        "type": "eidolon:worktable",
+        "pattern": [
+            "npc",
+            "ubc",
+            "npc"
+        ],
+        "reagents": [
+            "m   "
+        ],
+        "key" : {
+            "c": {
+                "item" : "gtceu:iron_plate"
+            },
+            "p": {
+                "item": "kubejs:treated_leather"
+            },
+            "b": {
+                "item": "irons_spellbooks:copper_spell_book"
+            },
+            "n": {
+                "item": "eidolon:pewter_inlay"
+            },
+            "u": {
+                "tag": "mna:stone_runes"
+            },
+            "m": {
+                "item": "irons_spellbooks:uncommon_ink"
+            }
+        },
+        "result" : {
+            "item": "irons_spellbooks:iron_spell_book"
+        }
+    }).id('kubejs:eidolon/worktable/books/iron_spell_book')
     //graybeard staff
     event.remove({ id: 'irons_spellbooks:graybeard_staff' })
     event.custom({

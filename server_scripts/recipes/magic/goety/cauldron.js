@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
         5855577,
         [
             {"item": "cosmopolitan:roasted_tuber"},
-            {"item": "immersiveeengineering:slag"},
+            {"tag": "forge:slag"},
             {"item": "eidolon:mirecap"},
             {"item": "minecraft:amethyst_shard"},
             {"item": "create:andesite_alloy"},
@@ -248,7 +248,7 @@ ServerEvents.recipes(event => {
         2000,
         8184315,
         [
-            {'item': 'kubejs:demonic_preparation'},
+            {'item': 'kubejs:daemonic_preparation'},
             {'item': 'kubejs:shifting_tincture'},
             {'item': 'goety:freezing_lamp'},
             {'item': 'botania:rune_winter'},

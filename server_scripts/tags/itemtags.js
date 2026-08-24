@@ -11,7 +11,6 @@ ServerEvents.tags("item", (event) => {
         'eidolon:withered_heart',
         'lendersdelight:maledictus_heart',
         'alexsmobs:soul_heart',
-        'deeperdarker:heart_of_the_deep'
     ]);
   event.add('forge:zombie_heart', [
         'eidolon:zombie_heart',

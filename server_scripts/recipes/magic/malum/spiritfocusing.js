@@ -2,7 +2,7 @@ ServerEvents.recipes(event =>{
     function pureSpiritFocusing(type, output, outputCount){
         event.custom({
         "type": "malum:spirit_focusing",
-        "durabilityCost": 1,
+        "durabilityCost": 2,
         "input": {
                 "item": "malum:alchemical_impetus"
             },
@@ -13,7 +13,7 @@ ServerEvents.recipes(event =>{
         "spirits": [
             {
             "type": type,
-            "count": 1
+            "count": 2
             }
         ],
         "time": 300
@@ -22,7 +22,7 @@ ServerEvents.recipes(event =>{
     function dualSpiritFocusing(type1, type2, output, outputCount){
         event.custom({
         "type": "malum:spirit_focusing",
-        "durabilityCost": 1,
+        "durabilityCost": 2,
         "input": {
                 "item": "malum:alchemical_impetus"
             },
@@ -33,11 +33,11 @@ ServerEvents.recipes(event =>{
         "spirits": [
             {
             "type": type1,
-            "count": 2
+            "count": 4
             },
             {
             "type": type2,
-            "count": 2
+            "count": 4
             }
         ],
         "time": 300
@@ -53,7 +53,7 @@ ServerEvents.recipes(event =>{
     dualSpiritFocusing("eldritch", "aqueous", "theurgy:mercury_shard", 4)
     //pure arcane: redstone
     //dualSpiritFocusing("arcane", "wicked", "")
-    //dualSpiritFocusing("arcane", "sacred", )
+    dualSpiritFocusing("arcane", "sacred", "mna:chimerite_gem", 4)
     //arcane + aerial: amethyst
     //arcane + infernal: blazing quartz
     //arcane + earthen: quartz

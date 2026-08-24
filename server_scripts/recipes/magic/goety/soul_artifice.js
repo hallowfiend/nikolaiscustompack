@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
                 "item": "goety:magic_emerald"
             },
             "b": {
-                "tag": "forge:plates/arcane_gold"
+                "tag": "forge:plates/hallowed_gold"
             },
             "e": {
                 "item": "malum:processed_soulstone"
