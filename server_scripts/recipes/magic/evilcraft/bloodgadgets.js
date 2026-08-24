@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     {
         b: 'biomancy:bone_fragments',
         d: '#forge:gems/dark'
-    })
+    }).id('kubejs:shaped/alt_dark_spike')
     //dark stick
     event.remove({output: 'evilcraft:dark_stick'})
     event.shaped('evilcraft:dark_stick', [
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     {
         d: '#forge:dusts/dark',
         r: '#forge:rods/potin'
-    }).id('kubejs/shaped/dark_stick')
+    }).id('kubejs:shaped/dark_stick')
     //blood extractor
     event.remove({output: 'evilcraft:blood_extractor'})
     event.shaped('evilcraft:blood_extractor', [
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         p: 'gtceu:pewter_plate',
         r: 'scguns:syringe',
         d: 'evilcraft:dark_gem'
-    }).id('kubejs/shaped/blood_extractor')
+    }).id('kubejs:shaped/blood_extractor')
     //effortless ring
     event.remove({output: 'evilcraft:effortless_ring'})
     event.shaped('evilcraft:effortless_ring', [
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         r: 'gtceu:red_alloy_ring',
         g: 'irons_spellbooks:bloody_vellum',
         s: 'kubejs:bloodchannel_gem'
-    }).id('kubejs/shaped/effortless_ring')
+    }).id('kubejs:shaped/effortless_ring')
     //invigorating pendant
     event.remove({output: 'evilcraft:invigorating_pendant'})
     event.shaped('evilcraft:invigorating_pendant', [
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         s: 'kubejs:bloodchannel_gem',
         r: 'malum:rune_of_aliment_cleansing',
         g: 'irons_spellbooks:bloody_vellum'
-    }).id('kubejs/shaped/invigorating_pendant')
+    }).id('kubejs:shaped/invigorating_pendant')
     //primed pendant (GIGAnerfed for its gamebreak potential)
     event.remove({ output: "evilcraft:primed_pendant" })
     event.recipes.botania.runic_altar('evilcraft:primed_pendant',

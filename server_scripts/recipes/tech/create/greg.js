@@ -50,7 +50,9 @@ const createSmashableIngots = [
     'duralumin',
     'compressed_iron',
     'potin',
-    'rose_gold'
+    'rose_gold',
+    'hallowed_gold',
+    'arcane_gold'
 ]
 
 const createCuttableGemBlocks = [

@@ -196,6 +196,17 @@ ServerEvents.recipes(event => {
     //spirit reanimator
     //spirit furnace
     //environmental accumulator
+    //bottled lightning
+    event.custom({
+    "type": "evilcraft:environmental_accumulator",
+    "item": "minecraft:glass_bottle",
+    "input_weather": "LIGHTNING",
+    "result": {
+    "item": {
+      "item": "irons_spellbooks:lightning_bottle"
+    },
+    "output_weather": "RAIN"
+    }})
     //electrolytic composite
     event.custom({
     "type": "evilcraft:environmental_accumulator",

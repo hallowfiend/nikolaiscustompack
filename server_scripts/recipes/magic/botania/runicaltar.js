@@ -225,11 +225,74 @@ ServerEvents.recipes((event) => {
         [
             'minecraft:amethyst_shard',
             'miners_delight:tentacles',
-            'elementalcraft:inert_crystal',
+            'dungeonsdelight:sculk_polyp',
             'malum:eldritch_spirit'
         ],
         2000
     ).id('kubejs:botania/runic_altar/eldritch_node_efficient')
+    event.recipes.botania.runic_altar('4x kubejs:sacred_node',
+        [
+            'minecraft:amethyst_shard',
+            'minecraft:egg',
+            'hexerei:dried_sage',
+            'malum:sacred_spirit'
+        ],
+        2000
+    ).id('kubejs/botania/runic_altar/sacred_node_efficient')
+    event.recipes.botania.runic_altar('4x kubejs:wicked_node',
+        [
+            'minecraft:amethyst_shard',
+            'malum:processed_soulstone',
+            'gtceu:palladium_nugget',
+            'malum:wicked_spirit'
+        ],
+        2000
+    ).id('kubejs/botania/runic_altar/wicked_node_efficient')
+    event.recipes.botania.runic_altar('4x kubejs:undirected_node',
+        [
+            'minecraft:amethyst_shard',
+            'irons_spellbooks:lightning_bottle',
+            'galosphere:allurite_shard',
+            'bloodmagic:defaultcrystal'
+        ],
+        2000
+    ).id('kubejs/botania/runic_altar/undirected_node_efficient')
+    event.recipes.botania.runic_altar('4x kubejs:vengeful_node',
+        [
+            'minecraft:amethyst_shard',
+            'hexalia:rabbage',
+            'minecraft:redstone',
+            'bloodmagic:vengefulcrystal'
+        ],
+        2000
+    ).id('kubejs/botania/runic_altar/vengeful_node_efficient')
+    event.recipes.botania.runic_altar('4x kubejs:steadfast_node',
+        [
+            'minecraft:amethyst_shard',
+            'farmersrespite:black_tea_leaves',
+            'ars_nouveau:bastion_pod',
+            'bloodmagic:steadfastcrystal'
+        ],
+        2000
+    ).id('kubejs/botania/runic_altar/steadfast_node_efficient')
+    event.recipes.botania.runic_altar('4x kubejs:destructive_node',
+        [
+            'minecraft:amethyst_shard',
+            'collectorsreap:pomegranate_slice',
+            'scguns:vehement_coal',
+            'bloodmagic:destructivecrystal'
+        ],
+        2000
+    ).id('kubejs/botania/runic_altar/destructive_node_efficient')
+    event.recipes.botania.runic_altar('4x kubejs:corrosive_node',
+        [
+            'minecraft:amethyst_shard',
+            'collectorsreap:lime',
+            'minecraft:spider_eye',
+            'bloodmagic:corrosivecrystal'
+        ],
+        2000
+    ).id('kubejs/botania/runic_altar/corrosive_node_efficient')
     //BLOOD MAGIC
     //Prepared Stone
     event.recipes.botania.runic_altar('8x kubejs:prepared_stone',
