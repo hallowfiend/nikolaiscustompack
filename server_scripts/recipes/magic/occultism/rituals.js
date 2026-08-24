@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
           "item": "undergarden:catalyst"
         },
         "item_to_use": {
-            "item": "minecraft:flint_and_steel"
+            "item": "eidolon:chant_scroll"
         },
         "ingredients": [
           {

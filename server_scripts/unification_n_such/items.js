@@ -1,7 +1,6 @@
 //priority 900
 
 const bulkReplace = [
-    { target: 'eidolon:magic_ink', replacement: 'irons_spellbooks:common_ink'},
     { target: 'irons_spellbooks:blood_vial', replacement: 'hexerei:blood_bottle'},
     { target: 'hexalia:mandrake', replacement: 'hexerei:mandrake_root'},
     { target: 'hexalia:salt', replacement: '#forge:salt'},

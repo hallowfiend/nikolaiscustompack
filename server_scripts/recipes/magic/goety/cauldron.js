@@ -105,13 +105,13 @@ ServerEvents.recipes(event => {
         2000,
         5855577,
         [
-            {"item": "miners_delight:cave_carrot"},
+            {"item": "cosmopolitan:roasted_tuber"},
             {"item": "immersiveeengineering:slag"},
             {"item": "eidolon:mirecap"},
             {"item": "minecraft:amethyst_shard"},
             {"item": "create:andesite_alloy"},
-            {"item": "minecraft:pumpkin"},
-            {"tag": "forge:storage_blocks/coal"}
+            {"item": "minecraft:potato"},
+            {"item": "minecraft:coal_block"}
         ],
         'kubejs:deepbore_tar'
     )

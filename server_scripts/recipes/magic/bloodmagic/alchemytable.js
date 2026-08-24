@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
             {item: 'magichem:admixture_metal'}
         ]},
         {type: 'suppression', tier: 4, inputs: [
-            {item: 'occultism:sacrificial_bowl'},
+            {item: 'malum:warp_flux'},
             {item: 'kubejs:token_stasis'},
             {item: 'kubejs:rune_void'},
             {item: 'magichem:admixture_trap'}
@@ -218,7 +218,7 @@ ServerEvents.recipes(event => {
             {item: 'biomancy:decomposer'},
             {item: 'create:mechanical_drill'},
             {item: 'malum:warp_flux'},
-            {item: 'botania;elementium_pickaxe'}
+            {item: 'botania:elementium_pickaxe'}
         ]},
         {type: 'remendium', tier: 3, inputs: [
             {item: 'malum:rune_of_aliment_cleansing'},

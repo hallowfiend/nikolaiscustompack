@@ -97,13 +97,13 @@ ServerEvents.recipes(event => {
             "item": "eidolon:oanna_bloom"
         },
         {
-            "item": "hexalia:spirit_powder"
-        },
-        {
             "item": "hexerei:selenite_shard"
         },
         {
             "item": "goety:ectoplasm"
+        },
+        {
+            "item": "kubejs:sanctified_steam"
         }
     ],
     "reagent": [
@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
             "item": "kubejs:blood_slime_ball"
         },
         {
-            "item": "malum:auric_embers"
+            "item": "kubejs:seething_nethersblood"
         }
     ],
     "reagent": [
@@ -176,10 +176,10 @@ ServerEvents.recipes(event => {
             "item": "eidolon:ender_calx"
         },
         {
-            "tag": "forge:dusts/endstone"
+            "item": "gtceu:xithricite_dust"
         },
         {
-            "item": "gtceu:xithricite_dust"
+            "item": "kubejs:realmsplit_dew"
         }
     ],
     "reagent": [
@@ -208,16 +208,16 @@ ServerEvents.recipes(event => {
             "item": "occultism:burnt_otherstone"
         },
         {
-            "item": "eidolon:merammer_resin"
+            "item": "eidolon:arcane_gold_ingot"
         },
         {
             "item": "theurgy:purified_gold"
         },
         {
-            "tag": "forge:dusts/sulfur"
+            "item": "malum:ether"
         },
         {
-            "item": "malum:ether"
+            "item": "kubejs:deepbore_tar"
         }
     ],
     "reagent": [

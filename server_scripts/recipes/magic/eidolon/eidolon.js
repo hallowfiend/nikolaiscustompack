@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
         p: 'gtceu:pewter_plate',
         s: 'kubejs:sacred_node',
         u: 'malum:hallowed_gold_ingot'
-    }).id('kubeks:shaped/eidolon_censer')
+    }).id('eidolon:censer')
     //Wicked weave
     event.remove({output: 'eidolon:wicked_weave'})
     event.custom({
@@ -65,5 +65,5 @@ ServerEvents.recipes((event) => {
     "item": "eidolon:wicked_weave",
     "count": 8
     }
-    }).id('kubejs:eidolon/worktable/components/wicked_weave')
+    }).id('eidolon:wicked_weave')
 })

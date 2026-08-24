@@ -5,6 +5,7 @@ ClientEvents.lang('en_us', event => {
     //Eidolon
     event.renameItem('eidolon:censer', "Hermetic Censer")
     event.renameItem('eidolon:parchment', 'Hallowed Parchment')
+    event.renameItem('eidolon:magic_ink', 'Blessed Ink')
     //Hexalia
     event.renameItem('hexalia:censer', 'Hedge Censer')
     //Blood Magic

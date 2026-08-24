@@ -18,13 +18,31 @@ const recipes = [
         {"item":"minecraft:black_dye"}
     ],
     liquid:"minecraft:water",
-    liquid_consum:250,
+    liquid_consum:1000,
     output_liquid:false,
     output:"hexerei:infused_fabric",
     output_amount:6,
     heat:true
 },
 //Eidolon crucible
+{
+    inputItem:[
+        {"item":"irons_spellbooks:common_ink"},
+        {"item":"minecraft:glow_ink_sac"},
+        {"item":"minecraft:blue_dye"},
+        {"item": "minecraft:blue_dye"},
+        {"item":"minecraft:charcoal"},
+        {"tag": "forge:ingots/silver"},
+        {"item":"malum:cthonic_gold"},
+        {"item":"minecraft:glass_bottle"}
+    ],
+    liquid:"minecraft:water",
+    liquid_consum:1000,
+    output_liquid:"irons_spellbooks:common_ink",
+    output:"eidolon:magic_ink",
+    output_amount:8,
+    heat:false
+},
 {
     inputItem:[
         {"item":"mna:vellum"},

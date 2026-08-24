@@ -287,7 +287,6 @@ ServerEvents.tags("item", (event) => {
   event.add("c:hidden_from_recipe_viewers", [
     "ae2:facade",
     "hexalia:mandrake",
-    "eidolon:magic_ink",
     "caverns_and_chasms:tether_potion",
     "caverns_and_chasms:trail_potion",
     "#tconstruct:modifiable/multipart",
@@ -471,6 +470,25 @@ ServerEvents.tags("item", (event) => {
 
   event.add('forge:stripped_logs', [
     'eidolon:stripped_illwood_log'
+  ])
+
+  event.add('malum:soul_hunter_weapon', [
+    'embers:tyrfing',
+    /naturesaura:(sky|depth)_(sword|axe)/,
+    'irons_spellbooks:boreal_blade',
+    'embers:cinder_staff'
+  ])
+
+  event.add('malum:magic_capable_weapon', [
+    '#goety:wands',
+    'goetyawaken:potato_staff',
+    '#mna:staves',
+    'winds_spellbooks:wind_staff',
+    '#constructs_casting:modifiable_magic',
+    'ars_nouveau:wand',
+    'ars_nouveau:spell_crossbow',
+    'ars_nouveau:enchanters_sword',
+    'ars_nouveau:enchanters_shield'
   ])
 
   event.add("mynethersdelight:powdery_logs", ["mynethersdelight:powdery_block", "mynethersdelight:stripped_powdery_block"]);

@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
         "item": "bloodmagic:itemroutingnode"
     },
     "input1": {
-        "item": "minecraft:redstone_dust"
+        "item": "minecraft:redstone"
     },
     "input2": {
         "item": "gtceu:electrotine_dust"
