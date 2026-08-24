@@ -2,6 +2,10 @@ ClientEvents.lang('en_us', event => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    //MnA
+    event.renameItem('mna:vinteum_ingot', 'Vinteum Alloy Ingot')
+    event.renameItem('mna:infused_silk', 'Patternfused Silk')
+    event.renameItem('mna:infused_thread', 'Patternfused Thread')
     //Eidolon
     event.renameItem('eidolon:censer', "Hermetic Censer")
     event.renameItem('eidolon:parchment', 'Hallowed Parchment')

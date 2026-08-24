@@ -50,15 +50,29 @@ ServerEvents.recipes(event => {
         "patterns": patterns
         }).id(`kubejs:mna/manaweaving/${output.split(":")[1]}`)
     }
+    //infused silk & thread
+    event.remove({id: 'mna:manaweaving/intermediate/infused_silk'})
+    manaweave(1,
+        [
+            'kubejs:woven_silk',
+            'kubejs:woven_silk',
+            'kubejs:woven_silk',
+            'kubejs:woven_silk',
+            '#forge:rods/wooden',
+            'mna:ritual_focus_minor',
+            'mna:vinteum_dust'
+        ],
+        [square], '4x mna:infused_silk'
+    )
     //manaweave cloth
     manaweave(1,
         [
             'kubejs:bloomwrap_cloth',
-            'mna:vinteum_dust',
             'botania:mana_string',
             'botania:mana_string',
             'botania:mana_string',
-            'botania:mana_string'
+            'botania:mana_string',
+            'mna:infused_thread'
         ],
         [square, square, square, slash], 'botania:manaweave_cloth'
     )

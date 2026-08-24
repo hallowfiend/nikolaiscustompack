@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    event.remove({id: 'ars_nouveau:magebloom_crop'})
    //Spellbook
    event.remove({ output: 'ars_nouveau:novice_spell_book' })
    event.recipes.ars_nouveau.enchanting_apparatus(

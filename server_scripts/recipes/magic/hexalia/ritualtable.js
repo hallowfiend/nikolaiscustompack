@@ -275,6 +275,17 @@
         ],
         'eidolon:mirecap'
     )
+    //ARS NOUVEAU
+    ritualtable(
+        [
+            {'item': 'supplementaries:flax_seeds'},
+            {'item': 'mna:infused_silk'},
+            {'item': 'ars_nouveau:source_gem_block'},
+            {'item': 'kubejs:arcane_node'},
+            {'item': 'eidolon:wicked_weave'}
+        ],
+        'ars_nouveau:magebloom_crop'
+    )
     //HIBERNAL HERBS - unifying herbal conjuration
     //singed leaves (replaces singed grimoire in ritual table recipes)
     ServerEvents.recipes((event) => {

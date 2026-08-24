@@ -2,6 +2,33 @@ ServerEvents.recipes((event) => {
     event.remove({ id: 'dungeonsdelight:cutting/wardenzola' })
 
 
+    //Progression stuff
+    //Infused thread
+    event.remove({id: 'mna:manaweaving/intermediate/infused_thread'})
+    event.shapeless('4x mna:infused_thread', ['mna:infused_silk', '#forge:tools/shears'])
+    .damageIngredient('#forge:tools/shears', 1).id('kubejs:shapeless/infused_thread')
+    event.custom({
+		type: 'farmersdelight:cutting',
+		ingredients: [
+		  { item: 'mna:infused_silk' }
+		],
+		tool: { tag: 'forge:tools/shears' },
+		result: [
+		  { item: 'mna:infused_thread', count: 4 }
+		]
+	  }).id('kubejs:farmersdelight/cutting/infused_thread')
+    event.recipes.gtceu.cutter('infused_silk_cutting_water')
+        .itemInputs('mna:infused_silk')
+        .inputFluids('minecraft:water 10')
+        .itemOutputs('4x mna:infused_thread')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(100);
+    event.recipes.gtceu.cutter('infused_silk_cutting_distilled_water')
+        .itemInputs('mna:infused_silk')
+        .inputFluids('gtceu:distilled_water 5')
+        .itemOutputs('4x mna:infused_thread')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(50);
     //Fish and seafood
     event.custom({
 		type: 'farmersdelight:cutting',
