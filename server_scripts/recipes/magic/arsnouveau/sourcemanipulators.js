@@ -64,10 +64,10 @@ ServerEvents.recipes(event => {
     //collector relay
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
-            'goety:wind_core',
+            'goety:hunger_core',
             'malum:hallowed_gold_ingot',
             'minecraft:lapis_lazuli',
-            'malum:cthonic_gold'
+            'hexalia:air_node'
         ],
         'ars_nouveau:relay',             
         'ars_nouveau:relay_collector',   
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             'create:chute',
-            'eidolon:pewter_ingot',
+            'evilcraft:bowl_of_promises_empty',
             'hexcasting:charged_amethyst',
             'malum:processed_soulstone'
         ],
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         'DAD'
     ], {
         A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_plate',
+        B: 'gtceu:arcane_gold_rod',
         C: 'kubejs:ecologists_distillation',
         D: 'malum:cthonic_gold'
     }).id('kubejs:shaped/agronomic_sourcelink')
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
         'DAD'
     ], {
         A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_plate',
+        B: 'gtceu:arcane_gold_rod',
         C: 'kubejs:seething_nethersblood',
         D: 'malum:cthonic_gold'
     }).id('kubejs:shaped/volcanic_sourcelink')
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
         'DAD'
     ], {
         A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_plate',
+        B: 'gtceu:arcane_gold_rod',
         C: 'kubejs:caustic_oil',
         D: 'malum:cthonic_gold'
     }).id('kubejs:shaped/alchemical_sourcelink')
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         'DAD'
     ], {
         A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_plate',
+        B: 'gtceu:arcane_gold_rod',
         C: 'kubejs:whiff_of_vitality',
         D: 'malum:cthonic_gold'
     }).id('kubejs:shaped/vitalic_sourcelink')
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
         'DAD'
     ], {
         A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_plate',
+        B: 'ggtceu:arcane_gold_rod',
         C: 'kubejs:shifting_tincture',
         D: 'malum:cthonic_gold'
     }).id('kubejs:shaped/mycelial_sourcelink')

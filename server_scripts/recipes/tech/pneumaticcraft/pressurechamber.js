@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         0.6,
         [
             {
-                "item": "botania:ender_air",
+                "item": "botania:ender_air_bottle",
                 "count": 4
             }
         ],

@@ -1,4 +1,13 @@
 ServerEvents.recipes(event => {
+    const yeet = [
+        'evilcraft:crafting/bowl_of_promises_empty',
+        'evilcraft:crafting/bowl_of_promises_dusted',
+        'evilcraft:crafting/kineticator',
+        'evilcraft:crafting/kineticator_repelling'
+    ]
+    yeet.forEach(yote => {
+        event.remove({id: 'yote'})
+    })
     event.remove({output: 'evilcraft:bound_blood_drop'})
     //alt spike recipe
     event.shaped('8x evilcraft:dark_spike', [
@@ -77,7 +86,6 @@ ServerEvents.recipes(event => {
         60000
     ).id('kubejs:botania/runic_altar/primed_pendant')
     //kineticators
-    event.remove({ id: 'evilcraft:crafting/kineticator' })
     event.custom({
         "type": "eidolon:worktable",
         "pattern": [
@@ -115,7 +123,6 @@ ServerEvents.recipes(event => {
             "item": "evilcraft:kineticator"
         }
     }).id('kubejs:eidolon/worktable/staves/kineticator')
-    event.remove({ id: 'evilcraft:crafting/kineticator_repelling' })
     event.custom({
         "type": "eidolon:worktable",
         "pattern": [
@@ -226,4 +233,20 @@ ServerEvents.recipes(event => {
         }
     }).id('kubejs:eidolon/worktable/weapons/mace_of_destruction')
     //promise stuff
+    //bowl of promises
+    event.shaped('evilcraft:bowl_of_promises_empty', [
+        'GVG',
+        ' G '
+    ], {
+        G: 'evilcraft:dark_power_gem',
+        V: 'magichem:admixture_vessel'
+    }).id('evilcraft:crafting/bowl_of_promises_empty')
+    event.shapeless('evilcraft:bowl_of_promises_dusted', [
+        'evilcraft:bowl_of_promises_empty',
+        'evilcraft:dark_gem_crushed',
+        'eidolon:gloom_incense',
+        'eidolon:bloodlust_incense',
+        'gtceu:charcoal_dust',
+        'gtceu:soul_stained_steel_dust'
+    ]).id('evilcraft:crafting/bowl_of_promises_dusted')
 })

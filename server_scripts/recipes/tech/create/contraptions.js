@@ -29,9 +29,9 @@ ServerEvents.recipes((event) => {
     )
     //ID blocks
     event.recipes.create.compacting(['integrateddynamics:crystalized_menril_block'], [Fluid.of('integrateddynamics:menril_resin').withAmount(1000)])
-    event.recipes.create.filling('integratedterminals:menril_glass', [Fluid.of('integrateddynamics:menril_resin').withAmount(1000), '#minecraft:glass_blocks'])
+    event.recipes.create.filling('integratedterminals:menril_glass', [Fluid.of('integrateddynamics:menril_resin').withAmount(1000), '#forge:glass'])
     event.recipes.gtceu.fluid_solidifier('solidify_menril_glass')
-        .itemInputs('minecraft:glass')
+        .itemInputs('#forge:glass')
         .inputFluids(Fluid.of('integrateddynamics:menril_resin', 1000))
         .itemOutputs('integratedterminals:menril_glass')
         .duration(200)

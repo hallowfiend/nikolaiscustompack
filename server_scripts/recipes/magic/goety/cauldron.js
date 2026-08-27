@@ -136,11 +136,11 @@ ServerEvents.recipes(event => {
         12930373,
         [
             {'item': 'eidolon:restoration_incense'},
-            {'item': 'minecraft:oak_sapling'},
+            {'item': 'delightful:acorn'},
             {'item': 'minecraft:birch_sapling'},
             {'item': 'minecraft:spruce_sapling'},
-            {'item': 'hexalia:lotus_flower'},
-            {'item': 'farmersrespite:rose_hips'},
+            {'tag': 'forge:crops/eggplant'},
+            {'item': 'hexalia:menders_salve'},
             {'item': 'farmersrespite:green_tea_leaves'}
         ],
         'kubejs:whiff_of_vitality'
@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
         2000,
         6627484,
         [
-            {'item': 'kubejs:deepbore_tar'},
+            {'item': 'kubejs:sanctified_steam'},
             {'item': 'eidolon:warped_sprouts'},
             {'item': 'hexerei:mandrake_root'},
             {'tag': 'forge:gems/certus_quartz'},

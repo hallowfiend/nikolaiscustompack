@@ -843,7 +843,7 @@ ServerEvents.recipes(event => {
         10,
         5,
         [
-            {"item": "gtceu:gravitite_block"},
+            {"item": "gtceu:gravitite_gem"},
             {"item": "aether:aerogel"},
             {"item": "apotheosis:gem_dust"}
         ]

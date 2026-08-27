@@ -397,7 +397,7 @@ event.add('coldsweat:small_cooling_drinks', [
     'sob:pepper_jelly'
     ]);
 event.add('coldsweat:small_warming_drinks', [
-      /farmersrespite:.*coffee/,
+      /farmersrespite:.*coffee'/,
       'cosmopolitan:dandelion_coffee',
       'farmersdelight:apple_cider',
     'respiteful:mocha_coffee',
@@ -419,7 +419,7 @@ event.add('coldsweat:small_warming_drinks', [
     'cosmopolitan:tisane'
     ])
   event.add('coldsweat:large_warming_drinks', [
-    /farmersrespite:.*tea/,
+    /farmersrespite:.*tea'/,
     'vampiresdelight:daisy_tea',
     'vampiresdelight:orchid_tea',
     'delightful:matcha_latte',

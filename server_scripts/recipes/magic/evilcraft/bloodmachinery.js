@@ -191,6 +191,14 @@ ServerEvents.recipes(event => {
     ]
     })
     //spiked plate
+    event.shaped('evilcraft:spiked_plate', [
+      'SSS',
+      'NBN',
+    ], {
+      S: 'evilcraft:dark_spike',
+      N: 'evilcraft:dark_block',
+      B: 'kubejs:bloodied_dust'
+    })
     //sanguinary pedestal
     //box of eternal closure
     //spirit reanimator

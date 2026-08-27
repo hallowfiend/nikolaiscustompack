@@ -158,7 +158,8 @@ const ieMillableIngots = [
     'hallowed_gold',
     'tainted_gold',
     'infused_iron',
-    'darkened_silver'
+    'darkened_silver',
+    'soul_stained_steel'
 ]
 
 ServerEvents.recipes(event =>{

@@ -2,11 +2,9 @@ ServerEvents.recipes(event => {
     //NECROTURGY RITUALS
     //Dormant Weak Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_weak_blood_orb', 'goety:craft', [
-            'botania:mana_diamond',
             'eidolon:lesser_soul_gem',
             'eidolon:holy_symbol',
             'eidolon:offering_incense',
-            'hexalia:purity_idol',
             'hexalia:celestial_crystal'
         ])
         .activationItem('evilcraft:blood_orb_filled')
@@ -16,10 +14,8 @@ ServerEvents.recipes(event => {
         .id('kubejs:goety/dark_ritual/necroturgies/dormant_weak_blood_orb');
     //Dormant Apprentice Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_apprentice_blood_orb', 'goety:craft', [
-            'magichem:admixture_mana',
-            'bloodmagic:holy_water_anointment',
-            'malum:cluster_of_brilliance',
             'elementalcraft:springaline_shard',
+            'bloodmagic:holy_water_anointment',
             'apotheosis:uncommon_material',
             'magichem:signalite_block'
         ])
@@ -30,12 +26,10 @@ ServerEvents.recipes(event => {
         .id('kubejs:goety/dark_ritual/necroturgies/dormant_apprentice_blood_orb');
     //Dormant Magician Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_magician_blood_orb', 'goety:craft', [
-            'magichem:perfected_electrum_block',
             'mna:mote_arcane',
+            'magichem:perfected_electrum_block',
             'malum:astral_weave',
-            'botania:rune_mana',
-            'bloodmagic:cyclingcatalyst',
-            'malum:block_of_hallowed_gold'
+            'botania:rune_mana'
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
@@ -46,10 +40,8 @@ ServerEvents.recipes(event => {
     event.recipes.goety.ritual('kubejs:dormant_master_blood_orb', 'goety:craft', [
             'ars_elemental:mark_of_mastery',
             'bloodmagic:holy_water_anointment_l',
-            'malum:mnemonic_fragment',
             'botania:rune_pride',
-            'embers:focal_lens',
-            'bloodmagic:reinforcedteleposerfocus'
+            'embers:focal_lens'
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')
@@ -58,11 +50,9 @@ ServerEvents.recipes(event => {
         .id('kubejs:goety/dark_ritual/necroturgies/dormant_master_blood_orb');
     //Dormant Archmage Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_archmage_blood_orb', 'goety:craft', [
-            'goety:corruption_focus',
+            'botania:life_essence',
             'bloodmagic:holy_water_anointment_xl',
             'lendersdelight:maledictus_heart',
-            'botania:gaia_ingot',
-            'goety:forbidden_scroll',
             'bloodmagic:dungeon_metal'
         ])
         .activationItem('evilcraft:blood_orb_filled')
@@ -72,10 +62,8 @@ ServerEvents.recipes(event => {
         .id('kubejs:goety/dark_ritual/necroturgies/dormant_archmage_blood_orb');
     //Dormant Transcendent Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_transcendent_blood_orb', 'goety:craft', [
-            'deep_aether:stratus_block',
-            'magichem:selargyros',
-            'magichem:orichalkos',
             'goety:undeath_potion',
+            'deep_aether:stratus_block',
             'gtceu:luv_fusion_reactor',
             'animus:crystallized_demon_will_block'
         ])
@@ -228,8 +216,6 @@ ServerEvents.recipes(event => {
             'embers:caminite_bricks',
             'embers:caminite_bricks',
             'create:mechanical_drill',
-            'gtceu:double_copper_plate',
-            'gtceu:double_copper_plate',
             'magichem:cog_components',
             'immersiveengineering:heavy_engineering',
             'malum:intricate_assembly'

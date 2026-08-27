@@ -1,4 +1,5 @@
 ServerEvents.recipes(event =>{
+    event.remove({id: 'bloodmagic:alchemytable/arcane_ash'})
     /**
     {
      inputItem:[
@@ -54,6 +55,19 @@ ServerEvents.recipes(event =>{
             output:'hexalia:brambleguard_salve',
             output_amount:1,
             time:120
+        },
+        //Custom
+        {
+            inputItem:[
+                {"item": "mna:wizard_chalk"},
+                {"item": "evilcraft:dull_dust"},
+                {"item": "eidolon:enchanted_ash"},
+                {"item": "malum:grim_talc"},
+                {"item": "bloodmagic:blankslate"}
+            ],
+            output: "bloodmagic:arcaneashes",
+            output_amount:1,
+            time:240
         }
     ]
     
@@ -122,7 +136,7 @@ ServerEvents.recipes(event =>{
         },
         {
             input: {"item": "minecraft:copper_ingot"},
-            output: 'immersiveengineering:dust_copper',
+            output: 'gtceu:copper_dust',
             baseGrindingTime: 60
         },
         {
@@ -177,37 +191,37 @@ ServerEvents.recipes(event =>{
         },
         {
             input: {"tag": "forge:ingots/silver"},
-            output: 'immersiveengineering:dust_silver',
+            output: 'gtceu:silver_dust',
             baseGrindingTime: 60
         },
         {
             input: {"tag": "forge:ingots/gold"},
-            output: 'immersiveengineering:dust_gold',
+            output: 'gtceu:gold_dust',
             baseGrindingTime: 60
         },
         {
             input: {"tag": "forge:ingots/electrum"},
-            output: 'immersiveengineering:dust_electrum',
+            output: 'gtceu:electrum_dust',
             baseGrindingTime: 60
         },
         {
             input: {"tag": "forge:ingots/iron"},
-            output: 'immersiveengineering:dust_iron',
+            output: 'gtceu:iron_dust',
             baseGrindingTime: 60
         },
         {
             input: {"tag": "forge:ingots/nickel"},
-            output: 'immersiveengineering:dust_nickel',
+            output: 'gtceu:nickel_dust',
             baseGrindingTime: 60
         },
         {
             input: {"tag": "forge:ingots/lead"},
-            output: 'immersiveengineering:dust_lead',
+            output: 'gtceu:lead_dust',
             baseGrindingTime: 60
         },
         {
             input: {"tag": "forge:ingots/steel"},
-            output: 'immersiveengineering:dust_steel',
+            output: 'gtceu:steel_dust',
             baseGrindingTime: 60
         },
         {

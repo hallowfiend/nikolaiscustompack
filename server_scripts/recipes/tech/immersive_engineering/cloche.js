@@ -72,34 +72,56 @@ ServerEvents.recipes(event => {
             output:[{"item":"undergarden:gloomgourd"}],
             soil:'undergarden:deepsoil',
             time:800
+        },
+        {
+            input: 'hexalia:chillberries',
+            render: 'hexalia:chillberry_bush',
+            output: [{'item': 'hexalia:chillberries', 'count': 2}],
+            soil: 'hexalia:infused_dirt',
+            time: 370
+        },
+        {
+            input: 'hexalia:sunfire_tomato_seeds',
+            render: 'hexalia:sunfire_tomato_crop',
+            output: [{'item': 'hexalia:sunfire_tomato', 'count': 2}, {'item': 'hexalia:sunfire_tomato_seeds'}],
+            soil: 'hexalia:infused_dirt',
+            time: 370
+        },
+        {
+            input: 'hexalia:rabbage_seeds',
+            render: 'hexalia:rabbage_crop',
+            output: [{'item': 'hexalia:rabbage', 'count': 2}, {'item': 'hexalia:rabbage_seeds'}],
+            soil: 'hexalia:infused_dirt',
+            time: 370
         }
+        
     ]
     const blockCrops = [
         {
             input:'farmersrespite:tea_seeds',
             render:'farmersrespite:small_tea_bush',
-            output:[{'item': 'farmersrespite:black_tea_leaves'}],
+            output:[{'item': 'farmersrespite:black_tea_leaves', "count": 2}],
             soil:'farmersdelight:rich_soil',
             time:800
         },
         {
             input:'farmersrespite:tea_seeds',
             render:'farmersrespite:small_tea_bush',
-            output:[{'item': 'farmersrespite:yellow_tea_leaves'}],
+            output:[{'item': 'farmersrespite:yellow_tea_leaves', "count": 2}],
             soil:'minecraft:dirt',
             time:600
         },
         {
             input:'farmersrespite:tea_seeds',
             render:'farmersrespite:small_tea_bush',
-            output:[{'item': 'farmersrespite:green_tea_leaves'}],
+            output:[{'item': 'farmersrespite:green_tea_leaves', "count": 2}],
             soil:'minecraft:coarse_dirt',
             time:400
         },
         {
             input:'farmersrespite:coffee_beans',
             render:'farmersrespite:coffee_bush',
-            output:[{'item': 'farmersrespite:coffee_beans'}],
+            output:[{'item': 'farmersrespite:coffee_beans', "count": 2}],
             soil:'mynethersdelight:resurgent_soil',
             time:800
         },
@@ -109,7 +131,21 @@ ServerEvents.recipes(event => {
             output: [{'item': 'collectorsreap:portobello'}],
             soil: 'minecraft:mycelium',
             time: 480
-        }
+        },
+        {
+            input: 'minecraft:lily_pad',
+            render: 'minecraft:lily_pad',
+            output: [{'item': 'minecraft:lily_pad'}],
+            soil: 'minecraft:water_bucket',
+            time: 480
+        },
+        {
+            input: 'hexalia:lotus_flower',
+            render: 'hexalia:lotus_flower',
+            output: [{'item': 'hexalia:lotus_flower'}],
+            soil: 'minecraft:water_bucket',
+            time: 480
+        },
     ]
     const eidolonCrops = [
         'eidolon:avennian_sprig',
@@ -119,7 +155,7 @@ ServerEvents.recipes(event => {
         'eidolon:merammer_root'
     ]
     eidolonCrops.forEach(crop => {
-        cloche(crop, {"type":"crop","block":crop}, [{"item": crop}], 'hexalia:infused_dirt', 1600)
+        cloche(crop, {"type":"crop","block":crop}, [{"item": crop, "count": 2}], 'hexalia:infused_dirt', 1600)
     })
     croppyCrops.forEach(crop => {
         cloche(crop.input, {"type":"crop","block":crop.render}, crop.output, crop.soil, crop.time)
