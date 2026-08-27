@@ -20,8 +20,7 @@ ServerEvents.recipes((event) => {
     const pureFuels = [
         {fuel: "#forge:storage_blocks/charcoal", mult: 1},
         {fuel: "#forge:storage_blocks/coke", mult: 2},
-        {fuel: "#forge:storage_blocks/arcane_charcoal", mult: 4},
-        {fuel: "#forge:storage_blocks/ichorfuel", mult: 5}
+        {fuel: "#forge:storage_blocks/arcane_charcoal", mult: 4}
     ]
     pureFuels.forEach(fuel => {
         var identifier = fuel.fuel.replace("#forge:storage_blocks/", "")

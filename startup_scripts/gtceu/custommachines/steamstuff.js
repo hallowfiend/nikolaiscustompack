@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel(
-            "gtceu:block/casings/solid/machine_casing_industrial_steam",
+            "gtceu:block/casings/gcym/industrial_steam_casing",
             "gtceu:block/machines/sifter"
         );
 
@@ -67,7 +67,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel(
-            "gtceu:block/casings/solid/machine_casing_industrial_steam",
+            "gtceu:block/casings/gcym/industrial_steam_casing",
             "gtceu:block/machines/centrifuge"
         );
 })

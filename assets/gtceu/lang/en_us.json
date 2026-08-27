@@ -12,6 +12,9 @@
 
     "block.gtceu.epic_keg": "Epic Keg",
 
+    "block.gtceu.clockwork_sifter": "Clockwork Sifter",
+    "block.gtceu.clockwork_centrifuge": "Clockwork Centrifuge",
+
     "tagprefix.glacio_stone": "Glacio %s Ore",
     "tagprefix.frosted_holystone": "Frosted Holystone %s Ore",
     "tagprefix.icestone": "Icestone %s Ore",
