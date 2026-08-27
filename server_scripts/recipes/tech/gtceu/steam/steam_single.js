@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.shaped('gtceu:steam_mixer', [
+    /* event.shaped('gtceu:steam_mixer', [
             'WPH',
             'RKR',
             'SBS'
@@ -12,6 +12,6 @@ ServerEvents.recipes(event => {
                 B: 'gtceu:steam_machine_casing',
                 S: 'gtceu:steel_rotor'
         })
-        .id('kubejs:shaped/steam_mixer');
+        .id('kubejs:shaped/steam_mixer'); */
 
 })

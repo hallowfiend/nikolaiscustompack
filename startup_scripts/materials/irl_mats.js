@@ -21,6 +21,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Borax.setProperty(PropertyKey.ORE, new $OreProperty()); 
     GTMaterials.Tellurium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Tellurium, $FluidStorageKeys.LIQUID);
+    GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Zirconium, $FluidStorageKeys.LIQUID);
     GTMaterials.Cadmium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Cadmium, $FluidStorageKeys.LIQUID);
     GTMaterials.Selenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
@@ -32,6 +34,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Netherite.addFlags(GTMaterialFlags.GENERATE_PLATE);
     GTMaterials.RedAlloy.addFlags(ring, long_rod);
     GTMaterials.Electrotine.addFlags(block)
+    GTMaterials.Sulfur.addFlags(block)
     
     //Metals
     event.create('nicrosil')
