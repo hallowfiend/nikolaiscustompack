@@ -41,10 +41,11 @@ ServerEvents.recipes(event => {
     removals.forEach(item => {
         event.remove({output: item})
     })
-    function manaweave(tier, inputs, patterns, output){
+    function manaweave(tier, inputs, patterns, output, count){
         event.custom({
         "type": "mna:manaweaving-recipe",
         "output": output,
+        "quantity": count,
         "tier": tier,
         "items": inputs, //max 9
         "patterns": patterns
@@ -58,11 +59,11 @@ ServerEvents.recipes(event => {
             'kubejs:woven_silk',
             'kubejs:woven_silk',
             'kubejs:woven_silk',
-            '#forge:rods/wooden',
+            'forge:rods/wooden',
             'mna:ritual_focus_minor',
             'mna:vinteum_dust'
         ],
-        [square], '4x mna:infused_silk'
+        [square], 'mna:infused_silk', 4
     )
     //manaweave cloth
     manaweave(1,
@@ -74,7 +75,7 @@ ServerEvents.recipes(event => {
             'botania:mana_string',
             'mna:infused_thread'
         ],
-        [square, square, square, slash], 'botania:manaweave_cloth'
+        [square, square, square, slash], 'botania:manaweave_cloth', 1
     )
     //manaseer monocle
     manaweave(1,
@@ -86,7 +87,7 @@ ServerEvents.recipes(event => {
             'magichem:admixture_sight',
             'goety:targeting_monocle'
         ],
-        [circle, circle, circle], 'botania:monocle'
+        [circle, circle, circle], 'botania:monocle', 1
     )
     //'tania rings
     manaweave(2,
@@ -96,7 +97,7 @@ ServerEvents.recipes(event => {
             'botania:mana_tablet',
             'gtceu:infused_iron_plate'
         ],
-        [diamond, circle, circle], 'botania:mana_ring'
+        [diamond, circle, circle], 'botania:mana_ring', 1
     )
     manaweave(2,
         [
@@ -105,7 +106,7 @@ ServerEvents.recipes(event => {
             'naturesaura:infused_stone',
             'eternal_starlight:malarite'
         ],
-        [diamond, circle, diamond], 'botania:aura_ring'
+        [diamond, circle, diamond], 'botania:aura_ring', 1
     )
     manaweave(2,
         [
@@ -114,7 +115,7 @@ ServerEvents.recipes(event => {
             'evilcraft:lightning_grenade',
             'bloodmagic:sigilofmagnetism'
         ],
-        [diamond, circle, square], 'botania:magnet_ring'
+        [diamond, circle, square], 'botania:magnet_ring', 1
     )
     manaweave(2,
         [
@@ -123,7 +124,7 @@ ServerEvents.recipes(event => {
             'minecraft:heart_of_the_sea',
             'kubejs:shifting_tincture'
         ],
-        [diamond, circle, knot3], 'botania:water_ring'
+        [diamond, circle, knot3], 'botania:water_ring', 1
     )
     manaweave(2,
         [
@@ -132,7 +133,7 @@ ServerEvents.recipes(event => {
             'embers:caminite_plate',
             'kubejs:token_stillness'
         ],
-        [diamond, circle, slash], 'botania:swap_ring'
+        [diamond, circle, slash], 'botania:swap_ring', 1
     )
     manaweave(2,
         [
@@ -141,7 +142,7 @@ ServerEvents.recipes(event => {
             'goety:flying_ointment',
             'kubejs:token_defiance'
         ],
-        [diamond, circle, backslash], 'botania:dodge_ring'
+        [diamond, circle, backslash], 'botania:dodge_ring', 1
     )
     manaweave(2,
         [
@@ -150,6 +151,6 @@ ServerEvents.recipes(event => {
             'embers:blasting_core',
             'kubejs:caustic_oil'
         ],
-        [diamond, circle, knot1], 'botania:mining_ring'
+        [diamond, circle, knot1], 'botania:mining_ring', 1
     )
 })

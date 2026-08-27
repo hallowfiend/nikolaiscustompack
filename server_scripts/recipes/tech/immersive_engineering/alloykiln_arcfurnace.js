@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
     alloyKiln('#forge:ingots/bronze', 'minecraft:amethyst_shard', 'tconstruct:amethyst_bronze_ingot')
     alloyKiln('#forge:ingots/lead', '#forge:ingots/iron', '2x eidolon:pewter_ingot')
     alloyKiln('#forge:ingots/copper', '4x #forge:ingots/gold', '4x gtceu:rose_gold_ingot')
-    alloyKiln('#forge:ingots/copper', '4x forge:ingots/silver', '4x gtceu:sterling_silver_ingot')
+    alloyKiln('#forge:ingots/copper', '4x #forge:ingots/silver', '4x gtceu:sterling_silver_ingot')
     alloyKiln('#forge:dusts/redstone', '#forge:ingots/iron', 'enderio:conductive_alloy_ingot')
     alloyKiln('#forge:dusts/redstone', '#forge:ingots/copper', 'gtceu:red_alloy_ingot')
     //Arc Furnace alloys

@@ -266,6 +266,7 @@ ServerEvents.recipes(event => {
     event.remove({id: 'goety:targeting_monocle'})
     event.recipes.goety.ritual('goety:targeting_monocle', 'goety:craft', [
             'goety:ectoplasm',
+            'minecraft:spyglass',
             'malum:wicked_spirited_glass',
             'malum:wicked_spirited_glass',
             'kubejs:treated_leather',
@@ -277,21 +278,23 @@ ServerEvents.recipes(event => {
         .craftType('geoturgy')
         .soulCost(1)
         .duration(10)
-        .id('kubejs:goety/dark_ritual/earthshaping/targeting_monocle');
+        .id('goety:targeting_monocle');
     //OVERGROWN RITUALS
-    //Manaseer monocle
-    /* event.recipes.goety.ritual('botania:monocle', 'goety:craft', [
-            'botania:mana_glass',
-            'botania:mana_glass',
-            'gtceu:tainted_gold_plate',
-            'gtceu:manasteel_plate',
-            'mna:mote_arcane'
+    //Crow Ankh Amulet
+    event.remove({ id: 'hexerei:crow_ankh_amulet_from_mixing_cauldron' })
+    event.recipes.goety.ritual('hexerei:crow_ankh_amulet', 'goety:craft', [
+            'minecraft:totem_of_undying',
+            'minecraft:glow_berries',
+            'hexerei:dried_yellow_dock_leaves',
+            'hexerei:dried_mugwort_flowers',
+            'goety:grave_dust',
+            'kubejs:whiff_of_vitality'
         ])
-        .activationItem('goety:targeting_monocle')
+        .activationItem('hexerei:crow_blank_amulet')
         .craftType('overgrown')
         .soulCost(5)
         .duration(20)
-        .id('kubejs:goety/dark_ritual/druidism/manaseer_monocle'); */
+        .id('kubejs:goety/dark_ritual/druidism/crow_ankh_amulet');
     //END RITUALS
     //BetterEnd infusion altar
     event.recipes.goety.ritual('betterend:crystalite_helmet', 'goety:craft', [

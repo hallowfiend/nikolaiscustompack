@@ -5,14 +5,14 @@ ServerEvents.recipes((event) => {
     //Progression stuff
     //Infused thread
     event.remove({id: 'mna:manaweaving/intermediate/infused_thread'})
-    event.shapeless('4x mna:infused_thread', ['mna:infused_silk', '#forge:tools/shears'])
-    .damageIngredient('#forge:tools/shears', 1).id('kubejs:shapeless/infused_thread')
+    event.shapeless('4x mna:infused_thread', ['mna:infused_silk', '#forge:shears'])
+    .damageIngredient('#forge:shears', 1).id('kubejs:shapeless/infused_thread')
     event.custom({
 		type: 'farmersdelight:cutting',
 		ingredients: [
 		  { item: 'mna:infused_silk' }
 		],
-		tool: { tag: 'forge:tools/shears' },
+		tool: { tag: 'forge:shears' },
 		result: [
 		  { item: 'mna:infused_thread', count: 4 }
 		]
