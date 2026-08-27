@@ -9,6 +9,12 @@ ServerEvents.recipes(event => {
         B: 'gtceu:brass_plate',
         H: '#forge:tools/hammers'
     }).damageIngredient('#forge:tools/hammers')
+    event.recipes.gtceu.assembler('industrial_steam_casing')
+            .itemInputs('4x gtceu:dawnstone_bolt', '4x gtceu:brass_plate')
+            .circuit(6)
+            .itemOutputs('2x gtceu:industrial_steam_casing')
+            .duration(50)
+            .EUt(16);
     //clockwork sifter
     event.shaped('gtceu:clockwork_sifter', [
         'BMB',
