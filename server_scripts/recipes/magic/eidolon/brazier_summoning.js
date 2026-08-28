@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     1,
     'eidolon:lesser_soul_gem',
     'minecraft:echo_shard',
-    'occultism:iesnium_ingot',
+    'gtceu:strumm_ingot',
     'dungeonsdelight:wardenzola_crumbles'
   )
   brazier_summoning(
@@ -106,6 +106,14 @@ ServerEvents.recipes(event => {
     'vampiresdelight:rice_dough',
     'minecraft:ghast_tear',
     'gtceu:silver_dust'
+  )
+  brazier_summoning(
+    'minecraft:phantom',
+    2,
+    'eidolon:lesser_soul_gem',
+    'malum:alchemical_calx',
+    'kubejs:woven_silk',
+    'miners_delight:bat_wing'
   )
   brazier_summoning(
     'minecraft:blaze',
@@ -130,6 +138,14 @@ ServerEvents.recipes(event => {
     'eidolon:ender_calx',
     'minecraft:purpur_block',
     'minecraft:shulker_shell'
+  )
+  brazier_summoning(
+    'minecraft:bee',
+    3,
+    'miners_delight:arthropod',
+    'gtceu:charcoal_dust',
+    'aether:ambrosium_shard',
+    'minecraft:sugar'
   )
   //Hexalia
   brazier_summoning(
@@ -178,9 +194,9 @@ ServerEvents.recipes(event => {
     'eidolon:zombie_brute',
     1,
     'eidolon:lesser_soul_gem',
-    'malum:living_flesh',
+    'caverns_and_chasms:living_flesh',
     'goety:grave_dust',
-    'caverns_and_chasms:rotten_flesh_block'
+    'minecraft:rotten_flesh'
   )
   /* brazier_summoning(
     'eidolon:giant_skeleton',

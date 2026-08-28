@@ -9,9 +9,24 @@ ServerEvents.recipes(event => {
         {id: 'updraft', base: 'goety:jade', reagent: 'minecraft:glowstone_dust'}
     ]
     effectArrays.forEach(array => {
-        event.recipes.bloodmagic('minecraft:bedrock', array.base, array.reagent)
+        if (array.id = 'day'){
+        event.recipes.bloodmagic
+        .array('minecraft:bedrock', array.base, array.reagent)
+        .texture(`bloodmagic:textures/models/alchemyarrays/dayarray.png`)
+        .id(`bloodmagic:array/${array.id}`);
+        }
+        if (array.id = 'night'){
+        event.recipes.bloodmagic
+        .array('minecraft:bedrock', array.base, array.reagent)
+        .texture(`bloodmagic:textures/models/alchemyarrays/moonarray.png`)
+        .id(`bloodmagic:array/${array.id}`);
+        }
+        else {
+        event.recipes.bloodmagic
+        .array('minecraft:bedrock', array.base, array.reagent)
         .texture(`bloodmagic:textures/models/alchemyarrays/${array.id}array.png`)
-        .id(`bloodmagic:array/${array.id}`)
+        .id(`bloodmagic:array/${array.id}`);
+        }
     })
     //Runewood variant conversion
     event.recipes.bloodmagic
