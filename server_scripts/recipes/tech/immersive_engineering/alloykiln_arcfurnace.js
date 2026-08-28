@@ -182,4 +182,18 @@ ServerEvents.recipes((event) => {
         "time": 100
     }).id(`kubejs:immersive_engineering/arc_furnace/nicrosil_from_${material}`);
     })
+    arcFurnace(
+        'gtceu:tin_ingot',
+        1,
+        [{'tag': 'forge:dusts/steel'} ,{'item': 'gtceu:tuff_dust', 'count': 4}, {'item': 'gtceu:stone_dust', 'count': 4}, {'item': 'aether:holystone', 'count': 4}],
+        'aether_redux:refined_sentrite',
+        4
+    )
+    arcFurnace(
+        'gtceu:lead_ingot',
+        1,
+        [{'item': 'gtceu:soapstone_dust', 'count': 4}, {'item': 'gtceu:talc_dust', 'count': 4}, {'tag': 'forge:dusts/zanite', 'count': 2}],
+        'aether_redux:veridium_ingot',
+        4
+    )
 })

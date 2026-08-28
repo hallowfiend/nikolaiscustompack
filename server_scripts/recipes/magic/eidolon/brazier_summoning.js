@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
     1,
     'eidolon:lesser_soul_gem',
     'eidolon:ender_calx',
-    'minecraft:end_stone',
+    'hexcasting:amethyst_dust',
     'malum:eldritch_spirit'
   )
   brazier_summoning(
@@ -296,5 +296,14 @@ ServerEvents.recipes(event => {
     'minecraft:sand',
     'aether:golden_aercloud',
     'malum:aerial_spirit'
+  )
+  //Cold Sweat
+  brazier_summoning(
+    'cold_sweat:chameleon',
+    2,
+    'eidolon:soul_shard',
+    'alexsmobs:komodo_spit',
+    'minecraft:packed_ice',
+    'minecraft:blaze_powder'
   )
 })
