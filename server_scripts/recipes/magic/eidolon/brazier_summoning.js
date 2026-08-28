@@ -3,21 +3,22 @@ ServerEvents.recipes(event => {
     var identifier = mob.replace(':', '_')
     event.custom({
       "type": "eidolon:ritual_brazier_summoning",
-      "focusItems": [],
+      "focusItems": [
+        {
+          "item": focus
+        }
+      ],
       "output": {
         "count": count,
         "entity": mob
       },
       "pedestalItems": [
         {
-          "item": focus
-        },
-        {
           "item": input1
         },
         {
           "item": input2
-        },
+        }
       ],
       "reagent": [
         {
@@ -50,6 +51,38 @@ ServerEvents.recipes(event => {
     'minecraft:bone_meal',
     'minecraft:bucket',
     'minecraft:rotten_flesh'
+  )
+  brazier_summoning(
+    'minecraft:sheep',
+    2,
+    'farmersdelight:straw_bale',
+    'kubejs:woven_silk',
+    'minecraft:shears',
+    'minecraft:rotten_flesh'
+  )
+  brazier_summoning(
+    'minecraft:horse',
+    1,
+    'minecraft:golden_carrot',
+    'minecraft:lead',
+    'minecraft:feather',
+    'kubejs:treated_leather'
+  )
+  brazier_summoning(
+    'minecraft:donkey',
+    1,
+    'minecraft:golden_carrot',
+    'minecraft:lead',
+    'minecraft:chest',
+    'eidolon:tattered_cloth'
+  )
+  brazier_summoning(
+    'minecraft:llama',
+    1,
+    'minecraft:mushroom_soup',
+    'minecraft:lead',
+    'minecraft:tuff',
+    'minecraft:white_wool'
   )
   brazier_summoning(
     'minecraft:witch',
@@ -90,6 +123,14 @@ ServerEvents.recipes(event => {
     'minecraft:orange_dye',
     'minecraft:spider_eye',
     'eidolon:crimson_essence'
+  )
+  brazier_summoning(
+    'minecraft:fox',
+    2,
+    'minecraft:leather',
+    'minecraft:orange_dye',
+    'minecraft:sweet_berries',
+    'kubejs:woven_silk'
   )
   brazier_summoning(
     'minecraft:warden',

@@ -191,7 +191,7 @@ ServerEvents.recipes((event) => {
     )
     arcFurnace(
         'gtceu:lead_ingot',
-        1,
+        2,
         [{'item': 'gtceu:soapstone_dust', 'count': 4}, {'item': 'gtceu:talc_dust', 'count': 4}, {'tag': 'forge:dusts/zanite', 'count': 2}],
         'aether_redux:veridium_ingot',
         4

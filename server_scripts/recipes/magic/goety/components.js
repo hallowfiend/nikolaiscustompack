@@ -19,7 +19,6 @@ ServerEvents.recipes(event => {
         {input: '#forge:obsidian', output: 'goety:crypt_stone'},
         {input: 'minecraft:bone_block', output: 'goety:savage_tooth'},
         {input: 'minecraft:calcite', output: 'goety:marble'},
-        {input: 'gtceu:marble', output: 'goety:marble'},
         {input: '#forge:sandstone', output: 'goety:siltstone'},
         {input: '#forge:storage_blocks/gold', output: 'goety:indented_gold'},
         {input: '#forge:gems/amethyst', output: 'goety:empty_focus'},

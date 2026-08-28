@@ -6,6 +6,49 @@ ServerEvents.recipes(event => {
         .syphon(cost).ticks(duration).upgradeLevel(tier)
         .id(`kubejs:blood_magic/blood_alchemy/${output.split(":")[1]}`)
     }
+    //plant oil
+    event.remove({id: /bloodmagic:plantoil_from.*/})
+    event.remove({id: 'bloodmagic:smelting/saltpeter'})
+    event.remove({id: 'bloodmagic:alchemytable/saltpeter'})
+    event.recipes.create.filling('bloodmagic:plantoil', [Fluid.of('#forge:plant_oil').withAmount(250), 'minecraft:glass_bottle']);
+    event.recipes.create.emptying([Fluid.of('gtceu:seed_oil').withAmount(250), 'minecraft:glass_bottle'], 'bloodmagic:plantoil')
+    event.custom({
+    "type": "immersiveengineering:bottling_machine",
+    "fluid": {
+        "amount": 250,
+        "tag": "forge:plant_oil"
+    },
+    "input": {
+        "item": "minecraft:glass_bottle"
+    },
+    "results": [
+    {
+      "item": "bloodmagic:plantoil"
+    }]
+    })
+    alchemytable('4x gtceu:saltpeter_dust',
+        [
+            'scguns:bat_guano',
+            'bloodmagic:plantoil',
+            'bloodmagic:plantoil'
+        ],
+        50,
+        40,
+        1
+    )
+    //weak blood shard
+    alchemytable('bloodmagic:weak_blood_shard',
+        [
+            'bloodmagic:strong_tau',
+            'evilcraft:hardened_blood_shard',
+            'gtceu:ruby_gem',
+            'magichem:admixture_crystal',
+            'bloodmagic:strengthenedcatalyst'
+        ],
+        1000,
+        100,
+        3
+    )
     //glacier essence dupe
     alchemytable('4x cosmopolitan:glacier_essence',
         [
@@ -37,9 +80,9 @@ ServerEvents.recipes(event => {
         [
             'bloodmagic:simple_catalyst',
             'gtceu:sal_ammoniac_dust',
-            'biomancy:regenerative_fluid',
             'minecraft:glow_berries',
-            'vampiresdelight:rice_dough'
+            'vampiresdelight:rice_dough',
+            'biomancy:regenerative_fluid'
         ],
         1000,
         100,
@@ -48,8 +91,8 @@ ServerEvents.recipes(event => {
     alchemytable('kubejs:concentratedcatalyst',
         [
             'bloodmagic:strengthenedcatalyst',
-            'gtceu:gravitite_gem',
-            'gtceu:electrotine_dust',
+            'gtceu:gravitite_dust',
+            'gtceu:tricalcium_phosphate_dust',
             'magichem:admixture_alcohol',
             'biomancy:exotic_dust'
         ],
@@ -60,8 +103,8 @@ ServerEvents.recipes(event => {
     //plain reagent
     alchemytable('2x kubejs:reagentbasic',
         [
-            'hexerei:dried_mugwort_leaves',
-            'gtceu:talc_dust',
+            'hexerei:belladonna_berries',
+            'gtceu:rock_salt_dust',
             'magichem:admixture_acid',
             'aether:healing_stone'
         ],

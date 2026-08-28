@@ -264,4 +264,12 @@ ItemEvents.modification(event => {
             item.craftingRemainder = Item.of('minecraft:glass_bottle').item
         })
     })
+    const bottlefy = [
+        'bloodmagic:plantoil'
+    ]
+    bottlefy.forEach(i => {
+        event.modify(i, item => {
+            item.craftingRemainder = Item.of('minecraft:glass_bottle').item
+        })
+    })
 })

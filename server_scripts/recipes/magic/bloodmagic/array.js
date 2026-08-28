@@ -9,13 +9,14 @@ ServerEvents.recipes(event => {
         {id: 'updraft', base: 'goety:jade', reagent: 'minecraft:glowstone_dust'}
     ]
     effectArrays.forEach(array => {
-        if (array.id = 'day'){
+        event.remove({id: `bloodmagic:array/${array.id}`})
+        if (array.id == 'day'){
         event.recipes.bloodmagic
         .array('minecraft:bedrock', array.base, array.reagent)
-        .texture(`bloodmagic:textures/models/alchemyarrays/dayarray.png`)
+        .texture(`bloodmagic:textures/models/alchemyarrays/sunarray.png`)
         .id(`bloodmagic:array/${array.id}`);
         }
-        if (array.id = 'night'){
+        if (array.id == 'night'){
         event.recipes.bloodmagic
         .array('minecraft:bedrock', array.base, array.reagent)
         .texture(`bloodmagic:textures/models/alchemyarrays/moonarray.png`)
