@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('rezanite_pentachloride')
         .inputFluids(`gtceu:regal_zanite 1000`)
         .inputFluids(`gtceu:chlorine 5000`)
-        .itemInputs('16x gtceu:iesnium_foil')
+        .notConsumable('16x gtceu:iesnium_foil')
         .outputFluids('gtceu:rezanite_pentachloride 6000')
         .EUt(GTValues.VA[GTValues.UV])
         .duration(400);
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('fluororezanitic_acid')
         .inputFluids(`gtceu:rezanite_pentachloride 10000`)
         .inputFluids(`gtceu:hydrofluoric_acid 10000`)
-        .itemInputs('16x gtceu:iesnium_foil')
+        .notConsumable('16x gtceu:iesnium_foil')
         .outputFluids('gtceu:fluororezanitic_acid 10000')
         .EUt(GTValues.VA[GTValues.UV])
         .duration(400);
@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor('clarified_interdim_tisane')
         .inputFluids(`gtceu:fluororezanitic_acid 10000`)
         .inputFluids(`kubejs:impure_interdim_tisane 5000`)
-        .itemInputs('16x gtceu:froststeel_foil')
+        .notConsumable('16x gtceu:froststeel_foil')
         .outputFluids('kubejs:clarified_interdim_tisane 5000')
         .outputFluids('gtceu:acetic_acid 2000')
         .itemOutputs('4x gtceu:fluorite_dust')
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
     
     event.recipes.gtceu.centrifuge('spiritual_debris_centrifuging')
         .itemInputs('4x gtceu:spiritual_debris_dust')
-        .itemOutputs('gtceu:mundus_dust')
+        .itemOutputs('gtceu:luminite_dust')
         .itemOutputs('gtceu:solid_xenorhast_dust')
         .itemOutputs('gtceu:solid_arkanum_dust')
         .itemOutputs('sons_of_sins:ether_ashes')

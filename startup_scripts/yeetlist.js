@@ -176,7 +176,8 @@ global.removedItems = [
   'createaddition:gold_wire',
   'createaddition:iron_wire',
   'theurgy:logistics_item_inserter',
-  'theurgy:logistics_item_extractor'
+  'theurgy:logistics_item_extractor',
+  'vampirism:injection_empty'
 ];
 
 global.removedRecipeIds = [

@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
     const yeet = [
         'evilcraft:crafting/bowl_of_promises_empty',
+        'evilcraft:crafting/blood_extractor',
         'evilcraft:crafting/bowl_of_promises_dusted',
         'evilcraft:crafting/kineticator',
         'evilcraft:crafting/kineticator_repelling'
@@ -30,7 +31,6 @@ ServerEvents.recipes(event => {
         r: '#forge:rods/potin'
     }).id('kubejs:shaped/dark_stick')
     //blood extractor
-    event.remove({output: 'evilcraft:blood_extractor'})
     event.shaped('evilcraft:blood_extractor', [
         'sss',
         'prp',

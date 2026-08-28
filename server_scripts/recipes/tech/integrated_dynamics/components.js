@@ -28,7 +28,7 @@ ServerEvents.recipes(event =>{
             'ABA',
             'AAA'
         ],
-        {A: 'integrateddynamics:crystalized_menril_chunk', B: 'gtceu:wood_plate'}
+        {A: 'integrateddynamics:crystalized_menril_chunk', B: '#forge:treated_wood'}
     ).id('kubejs:shaped/id_variable')
     //variable store
     event.replaceInput({output: 'integrateddynamics:variablestore'}, '#forge:chests/wooden', 'immersiveengineering:crate')
