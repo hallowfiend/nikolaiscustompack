@@ -175,8 +175,6 @@ StartupEvents.registry('item', event => {
     }).useAnimation('eat');
     event.create('reagentbasic')
     .displayName('Plain Reagent');
-    event.create('electrolytic_composite')
-    .displayName('Electrolytic Composite')
     event.create('bloomwrap_cloth')
     .displayName('Bloomwrap Cloth');
     event.create('woven_silk')

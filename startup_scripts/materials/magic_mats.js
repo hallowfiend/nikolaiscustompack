@@ -190,7 +190,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             long_rod,
-            no_decomp
+            no_decomp,
+            ring
         );
 
     event.create('tainted_gold')

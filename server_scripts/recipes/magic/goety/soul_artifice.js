@@ -100,9 +100,4 @@ ServerEvents.recipes(event => {
         80,
         200
     )
-    soulAbsorption(
-        "netherexp:banshee_powder",
-        15,
-        20
-    )
 })

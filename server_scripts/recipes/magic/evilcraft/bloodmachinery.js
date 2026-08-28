@@ -215,15 +215,4 @@ ServerEvents.recipes(event => {
     },
     "output_weather": "RAIN"
     }})
-    //electrolytic composite
-    event.custom({
-    "type": "evilcraft:environmental_accumulator",
-    "item": "enderio:photovoltaic_composite",
-    "input_weather": "RAIN",
-    "result": {
-    "item": {
-      "item": "kubejs:electrolytic_composite"
-    },
-    "output_weather": "RAIN"
-    }})
 })

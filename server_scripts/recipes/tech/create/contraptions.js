@@ -42,6 +42,8 @@ ServerEvents.recipes((event) => {
         .itemOutputs('integrateddynamics:crystalized_menril_block')
         .duration(200)
         .EUt(17);
+    //hardened blood
+    event.recipes.create.compacting(['evilcraft:hardened_blood'], [Fluid.of('evilcraft:blood').withAmount(1000)])
     //IE multi bricks
     event.remove({id: 'immersiveengineering:crafting/cokebrick'})
     event.remove({id: 'immersiveengineering:crafting/blastbrick'})

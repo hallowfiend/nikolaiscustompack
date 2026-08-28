@@ -1,43 +1,36 @@
 ServerEvents.recipes(event => {
     //Undergarden catalyst
     event.remove({ output: 'undergarden:catalyst'})
-    event.custom({
-      "type": "occultism:ritual",
-        "ritual_type": "occultism:craft",
-        "activation_item": {
-          "item": "botania:mana_diamond"
-        },
-        "pentacle_id": "occultism:craft_foliot",
-        "duration": 60,
-        "ritual_dummy": {
-          "item": "undergarden:catalyst"
-        },
-        "item_to_use": {
-            "item": "eidolon:chant_scroll"
-        },
-        "ingredients": [
-          {
-            "item": "occultism:iesnium_pickaxe"
-          },
-          {
-            "item": "eidolon:pewter_inlay"
-          },
-          {
-            "item": "eidolon:gold_inlay"
-          },
-          {
-            "item": "embers:dawnstone_aspectus"
-          },
-          {
-            "item": "twilightforest:knightmetal_ingot"
-          },
-          {
-            "item": "kubejs:deepbore_tar"
-          }
-        ],
-        "result": 
-        { "item": "undergarden:catalyst" }
-      }).id('kubejs:occultism/ritual/undergarden_catalyst')
+    event.recipes.occultism.ritual(
+      'undergarden:catalyst',
+      [
+        'occultism:iesnium_pickaxe',
+        'eidolon:pewter_inlay',
+        'eidolon:gold_inlay',
+        'embers:dawnstone_aspectus',
+        'twilightforest:knightmetal_ingot',
+        'kubejs:deepbore_tar'
+      ],
+      'botania:mana_diamond',
+      'occultism:craft_foliot'
+    ).dummy("undergarden:catalyst").useItem('eidolon:chant_scroll')
+    //Dimensional Storage
+    //Controller Base
+    event.remove({ id: 'occultism:ritual/craft_storage_controller_base' })
+    event.recipes.occultism.ritual(
+      'occultism:storage_controller_base',
+      [
+        'occultism:otherstone_pedestal',
+        'eidolon:lesser_soul_gem',
+        'eidolon:lesser_soul_gem',
+        'gtceu:double_gold_plate',
+        'gtceu:double_gold_plate',
+        'create:item_vault',
+        'magichem:materia_jar'
+      ],
+      'occultism:book_of_binding_bound_foliot',
+      'occultism:craft_foliot'
+    ).dummy("occultism:ritual_dummy/craft_storage_controller_base")
     //Crushers
     event.remove({ id: 'occultism:ritual/summon_foliot_crusher' })
     event.remove({ id: 'occultism:ritual/summon_djinni_crusher' })

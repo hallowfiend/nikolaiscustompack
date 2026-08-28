@@ -62,7 +62,7 @@ ServerEvents.recipes(event =>{
                 {"item": "mna:wizard_chalk"},
                 {"item": "evilcraft:dull_dust"},
                 {"item": "eidolon:enchanted_ash"},
-                {"item": "malum:grim_talc"},
+                {"item": "gtceu:talc_dust"},
                 {"item": "bloodmagic:blankslate"}
             ],
             output: "bloodmagic:arcaneashes",

@@ -60,8 +60,8 @@ ServerEvents.recipes(event => {
     //plain reagent
     alchemytable('2x kubejs:reagentbasic',
         [
-            'hexerei:quicksilver_bottle',
-            'kubejs:electrolytic_composite',
+            'hexerei:dried_mugwort_leaves',
+            'gtceu:talc_dust',
             'magichem:admixture_acid',
             'aether:healing_stone'
         ],

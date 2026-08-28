@@ -198,7 +198,7 @@
             {"item": "hexalia:rabbage_seeds"},
             {"item": "hexerei:mandrake_root"},
             {"item": "goety:ectoplasm"},
-            {"item": "malum:hex_ash"},
+            {"item": "malum:block_of_soulstone"},
             {"tag": "forge:essences/death"}
         ],
         "occultism:datura_seeds"

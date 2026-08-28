@@ -298,9 +298,9 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.runic_altar('8x kubejs:prepared_stone',
         [
             'goety:empty_focus',
+            'gtceu:talc_dust',
+            'mna:arcane_ash',
             'biomancy:stone_powder',
-            'malum:runic_sapball',
-            'eidolon:magicians_wax',
             'kubejs:bloodchannel_gem'
         ],
         4000
@@ -312,7 +312,7 @@ ServerEvents.recipes((event) => {
             'bloodmagic:blankslate',
             'bloodmagic:blankslate',
             'botania:mana_powder',
-            'biomancy:gem_fragments',
+            'biomancy:mineral_fragments',
             'sons_of_sins:ether_ashes',
             'occultism:burnt_otherstone'
         ],
