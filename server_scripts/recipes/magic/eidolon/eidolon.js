@@ -6,24 +6,26 @@ ServerEvents.recipes((event) => {
         Item.of('eidolon:pewter_inlay', 1),
         [
             ' r ',
-            'r r',
+            'rfr',
             ' r '
         ],
         {
-            "r": 'gtceu:pewter_ring'
+            r: 'gtceu:pewter_ring',
+            f: '#forge:tools/files'
         }
-    ).id('kubejs:shaped/pewter_inlay')
+    ).damageIngredient('#forge:tools/files').id('kubejs:shaped/pewter_inlay')
     event.shaped(
         Item.of('eidolon:gold_inlay', 1),
         [
             ' r ',
-            'r r',
+            'rfr',
             ' r '
         ],
         {
-            "r": 'gtceu:arcane_gold_ring'
+            r: 'gtceu:arcane_gold_ring',
+            f: '#forge:tools/files'
         }
-    ).id('kubejs:shaped/gold_inlay')
+    ).damageIngredient('#forge:tools/files').id('kubejs:shaped/gold_inlay')
     //Censer
     event.remove({output: 'eidolon:censer'})
     event.shaped('eidolon:censer',[

@@ -28,12 +28,13 @@ ServerEvents.recipes(event => {
     event.remove({id: 'hexalia:bogshade_boots'})
     event.shaped('hexalia:bogshade_boots', [
         'SWS',
-        'K K'
+        'KNK'
         ], {
     S: 'kubejs:woven_silk',
     K: 'minecraft:kelp',
-    W: 'hexerei:water_node'
-    }).id('kubejs:shaped/bogshade_boots')
+    W: 'hexerei:water_node',
+    N: '#forge:tools/needles'
+    }).keepIngredient('').id('kubejs:shaped/bogshade_boots')
     //silkweave armor
     event.remove({id: /hexalia:silkweave.*/})
     event.shaped('hexalia:silkweave_hood', [

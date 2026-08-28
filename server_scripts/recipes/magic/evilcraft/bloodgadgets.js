@@ -4,21 +4,22 @@ ServerEvents.recipes(event => {
         'evilcraft:crafting/blood_extractor',
         'evilcraft:crafting/bowl_of_promises_dusted',
         'evilcraft:crafting/kineticator',
-        'evilcraft:crafting/kineticator_repelling'
+        'evilcraft:crafting/kineticator_repelling',
+        'evilcraft:crafting/dark_spike'
     ]
     yeet.forEach(yote => {
         event.remove({id: 'yote'})
     })
     event.remove({output: 'evilcraft:bound_blood_drop'})
-    //alt spike recipe
+    //dark spike
     event.shaped('8x evilcraft:dark_spike', [
         'b',
         'd'
     ],
     {
-        b: 'biomancy:bone_fragments',
+        b: 'kubejs:bone_needle',
         d: '#forge:gems/dark'
-    }).id('kubejs:shaped/alt_dark_spike')
+    }).id('evilcraft:crafting/dark_spike')
     //dark stick
     event.remove({output: 'evilcraft:dark_stick'})
     event.shaped('evilcraft:dark_stick', [
@@ -235,18 +236,21 @@ ServerEvents.recipes(event => {
     //promise stuff
     //bowl of promises
     event.shaped('evilcraft:bowl_of_promises_empty', [
+        ' H ',
         'GVG',
         ' G '
     ], {
         G: 'evilcraft:dark_power_gem',
+        H: '#forge:tools/hammers',
         V: 'magichem:admixture_vessel'
-    }).id('evilcraft:crafting/bowl_of_promises_empty')
+    }).damageIngredient('#forge:tools/hammers').id('evilcraft:crafting/bowl_of_promises_empty')
     event.shapeless('evilcraft:bowl_of_promises_dusted', [
         'evilcraft:bowl_of_promises_empty',
         'evilcraft:dark_gem_crushed',
         'eidolon:gloom_incense',
         'eidolon:bloodlust_incense',
         'gtceu:charcoal_dust',
-        'gtceu:soul_stained_steel_dust'
-    ]).id('evilcraft:crafting/bowl_of_promises_dusted')
+        'gtceu:soul_stained_steel_dust',
+        'goety:cauldron_ladle'
+    ]).keepIngredient('goety:cauldron_ladle').id('evilcraft:crafting/bowl_of_promises_dusted')
 })

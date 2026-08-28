@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'gtceu:double_pewter_plate',
         C: 'gtceu:copper_ring',
-        R: 'malum:block_of_alchemical_calx',
+        R: 'malum:alchemical_calx',
         B: 'embers:archaic_circuit'
     })
     event.shaped('theurgy:pyromantic_brazier', [
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         R: 'gtceu:brass_rod',
         C: 'gtceu:double_copper_plate',
         F: 'magichem:admixture_energy',
-        B: 'malum:block_of_alchemical_calx'
+        B: 'malum:alchemical_calx'
     })
     event.shaped('theurgy:liquefaction_cauldron', [
         'CFC',

@@ -28,6 +28,16 @@ event.remove({ id: "quark:building/crafting/compressed/beetroot_crate"})
 event.remove({ id: "quark:building/crafting/compressed/bamboo_block"})
 event.remove({id: /createaddition:.*capacitor.*/})
 
+//Needle
+event.shaped('kubejs:bone_needle', [
+    'BS',
+    'F '
+], {
+    B: '#forge:rods/bone',
+    S: '#forge:tools/saws',
+    F: '#forge:tools/files'
+}).damageIngredient('#forge:tools/saws').damageIngredient('#forge:tools/files').id('kubejs:shaped/bone_needle')
+
 //Honey
 event.replaceOutput(
     {}, 
@@ -134,17 +144,43 @@ event.replaceOutput(
     event.shapeless('supplementaries:rope', ['farmersdelight:rope'])
         .id('kubejs:fd_rope_to_supplementaries_rope')
     
-    //Hemp canvas
+    //canvas
+    event.remove({id: 'farmersdelight:canvas'})
     event.shaped(
         Item.of('farmersdelight:canvas', 1),
         [
-            'cc',
-            'cc'
+            'cc ',
+            'ccn'
         ],
         {
-            c: 'immersiveengineering:hemp_fiber'
+            c: 'farmersdelight:straw',
+            n: '#forge:tools/needles'
         }
-    ).id('kubejs:canvas_from_hemp')
+    ).keepIngredient('#forge:tools/needles').id('kubejs:canvas_from_straw')
+    event.shaped(
+        Item.of('farmersdelight:canvas', 1),
+        [
+            'cc ',
+            'ccn'
+        ],
+        {
+            c: 'immersiveengineering:hemp_fiber',
+            n: '#forge:tools/needles'
+        }
+    ).keepIngredient('#forge:tools/needles').id('kubejs:canvas_from_hemp')
+
+    //sewing table
+    event.remove({output: 'cold_sweat:sewing_table'})
+    event.shaped('cold_sweat:sewing_table', [
+        'SN',
+        'RR',
+        'WW'
+    ], {
+        S: '#forge:tools/knives',
+        N: '#forge:tools/needles',
+        R: 'minecraft:red_carpet',
+        W: '#minecraft:planks'
+    })
 
     event.remove({ id: /enderio.*gear.*/})
 

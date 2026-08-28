@@ -79,124 +79,17 @@ ServerEvents.tags("item", (event) => {
     /hexerei:.*willow_wood/,
     /hexerei:.*willow_log/
   ])
-  event.add('toughasnails:thirst/2_thirst_drinks', [
-    /.*milkshake.*/,
-    /.*popsicle.*/,
-    'sob:bitter_tea',
-    'brewincompatdelight:vodka_tonic',
-    'brewincompatdelight:red_wine',
-    'culturaldelights:cucumber',
-    'culturaldelights:pickle',
-    'brewincompatdelight:blue_curacao'
-  ])
-  event.add('toughasnails:hydration/10_hydration_drinks', [
-    '#toughasnails:thirst/2_thirst_drinks'
-  ])
-  event.add('toughasnails:thirst/4_thirst_drinks', [
-    /rusticdelight:.*coffee/,
-    /respiteful:snow_top.*/,
-    /.*soup.*/,
-    'respiteful:mocha_coffee',
-    'brewincompatdelight:black_russian',
-    'brewincompatdelight:white_wine',
-    'brewincompatdelight:sweet_red_wine',
-    'kubejs:soulchill_absinthe',
-    'crabbersdelight:kelp_shake'
-  ])
-  event.add('toughasnails:hydration/30_hydration_drinks', [
-    '#toughasnails:thirst/4_thirst_drinks'
-  ])
-  event.add('toughasnails:thirst/5_thirst_drinks', [
-    /twilightdelight:.*juice/,
-    /unusualend:.*juice/,
-    /betterend:.*juice/,
-    /delightful.*juice/,
-    /abnormals_delight:.*juice/,
-    /undergardendelight:.*juice/,
-    /jadensnetherexpansiondelight:.*juice/,
-    /sob:.*juice/,
-    /.*smoothie.*/,
-    'sob:birch_beer',
-    'sob:hard_cider',
-    'sob:prickly_melomel',
-    'sob:sunrise_seltzer',
-    'sob:creeper_drink',
-    'sob:pale_daiquiri',
-    'sob:root_beer',
-    'sob:death_drink',
-    'brewincompatdelight:white_russian',
-    'brewincompatdelight:mojito',
-    'brewincompatdelight:kraken_rum',
-    'brewincompatdelight:brass_monkey',
-    'brewinandchewin:beer',
-    'brewinandchewin:rice_wine',
-    'brewinandchewin:mead', //vodka, tequila and withering dross give 0 thirst bc theyre too strong
-    'brewinandchewin:pale_jane',
-    'brewinandchewin:egg_grog',
-    'brewinandchewin:glittering_grenadine',
-    'brewinandchewin:saccharine_rum',
-    'brewinandchewin:salty_folly',
-    'brewinandchewin:bloody_mary',
-    'brewinandchewin:red_rum',
-    'brewinandchewin:strongroot_ale',
-    'brewinandchewin:steel_toe_stout',
-    'brewinandchewin:dread_nog',
-    'brewincompatdelight:nut_brown_ale',
-    'brewincompatdelight:boilermaker',
-    'brewincompatdelight:rum',
-    'ends_delight:chorus_fruit_wine',
-    /undergardendelight:.*juice/,
-    'dungeonsdelight:liveroot_beer',
-    'cosmopolitan:black_cow',
-    'abnormalsdelight:passion_aloe_nectar',
-    'kubejs:red_rock_blaster',
-    'kubejs:forgotten_imbibation'
-  ])
-  event.add('toughasnails:hydration/50_hydration_drinks', [
-    '#toughasnails:thirst/5_thirst_drinks'
-  ])
-  event.add('toughasnails:thirst/8_thirst_drinks', [
-    /goetydelight:.*tea.*/,
-    /dungeonsdelight:.*tea.*/,
-    'brewinandchewin:kombucha',
-    'collectorsreap:lime_green_tea',
-    'collectorsreap:pomegranate_black_tea',
-    /windswept:.*tea/,
-    /arsdelight:.*_tea/,
-    'respiteful:mint_green_tea',
-    'respiteful:vanilla_milk_tea',
-    'respiteful:adzuki_milk_tea',
-    'oceanicdelight:sea_grape_juice',
-    'oceanicdelight:nautilus_juice',
-    /.*limeade.*/,
-    /vampiresdelight:.*tea/,
-    'cosmopolitan:exotic_mirage',
-    'cosmopolitan:green_beer',
-    'cosmopolitan:generic_romance',
-    'collectorsreap:deific_blood',
-    'collectorsreap:hermits_sour',
-    'collectorsreap:rose_moon',
-    'collectorsreap:reanimators_garden',
-    'collectorsreap:heavens_cream',
-    'sob:bustling_brew',
-    'delightful:ender_nectar'
-  ])
-  event.add('toughasnails:hydration/80_hydration_drinks', [
-    '#toughasnails:thirst/8_thirst_drinks'
-  ])
-  event.add('toughasnails:thirst/12_thirst_drinks', [
-    /arsdelight:.*hornbeer/,
-    'sob:aloe_tea',
-    'twilightdelight:tear_drink'
-  ])
-  event.add('toughasnails:hydration/100_hydration_drinks', [
-    '#toughasnails:thirst/12_thirst_drinks'
-  ])
+  
   event.add("ad_astra:aeronos_logs", ["ad_astra:aeronos_cap", "ad_astra:aeronos_stem"]);
   event.add("ad_astra:strophar_logs", ["ad_astra:strophar_cap", "ad_astra:strophar_stem"]);
 
   event.add("forge:cookies", [
     "hexalia:galeberries_cookie"
+  ])
+  
+  event.add('forge:tools/needles', [
+    'kubejs:bone_needle',
+    'mna:vinteum_needle'
   ])
 
   event.add('farm_and_charm:cabbage', 'farmersdelight:cabbage');

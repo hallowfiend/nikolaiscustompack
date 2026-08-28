@@ -98,6 +98,32 @@ ServerEvents.recipes(event => {
         .soulCost(50)
         .duration(5); */
     //FORGE RITUALS
+    //Sacrificial Dagger
+    event.remove({id: 'bloodmagic:sacrificial_dagger'})
+    event.recipes.goety.ritual('bloodmagic:sacrificialdagger', 'goety:craft', [
+            'kubejs:bone_needle',
+            'evilcraft:dark_spike',
+            'hexerei:blood_bottle',
+            'kubejs:vengeful_node'
+        ])
+        .activationItem('delightful:steel_knife')
+        .craftType('forge')
+        .soulCost(10)
+        .duration(5)
+        .id('bloodmagic:sacrificial_dagger');
+    //Dagger of Sacrifice
+    event.remove({id: 'bloodmagic:altar/daggerofsacrifice'})
+    event.recipes.goety.ritual('bloodmagic:daggerofsacrifice', 'goety:craft', [
+            'eidolon:goblet',
+            'evilcraft:blood_extractor',
+            'hexerei:quicksilver_bottle',
+            'kubejs:vengeful_node'
+        ])
+        .activationItem('evilcraft:vein_sword')
+        .craftType('forge')
+        .soulCost(20)
+        .duration(5)
+        .id('bloodmagic:altar/daggerofsacrifice');
     //Wicked Boline
     event.remove({ id: 'goety:wicked_boline' })
     /* event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [

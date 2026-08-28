@@ -254,6 +254,8 @@ StartupEvents.registry('item', event => {
     event.create('aspectus_sterling_silver')
     .displayName('Sterling Silver Aspectus')
     .tag('embers:aspectus/sterling_silver')
+    event.create('bone_needle')
+    .displayName('Bone Needle')
 })
 
 ItemEvents.modification(event => {

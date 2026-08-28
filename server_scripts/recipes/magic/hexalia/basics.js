@@ -5,11 +5,12 @@ ServerEvents.recipes((event) => {
     event.remove({id: 'hexalia:rabbage_seeds_from_ritual_table'})
     //woven silk
     event.shaped('kubejs:woven_silk', [
-        'SS',
-        'SS',
+        'SS ',
+        'SSN',
         ], {
-    S: 'betterend:silk_fiber'
-    }).id('kubejs:shaped/woven_silk')
+    S: 'betterend:silk_fiber',
+    N: '#forge:tools/needles'
+    }).keepIngredient('#forge:tools/needles').id('kubejs:shaped/woven_silk')
     event.custom({
         //offering to nature
         "type": "eidolon:worktable",
@@ -91,6 +92,16 @@ ServerEvents.recipes((event) => {
             "item": "hexalia:hex_focus"
         }
     });
+    event.shaped('hexalia:hex_focus', [
+        ' WA',
+        ' SW',
+        'E'
+    ], {
+        E: 'hexalia:earth_node',
+        S: '#forge:tools/wooden',
+        W: 'gtceu:wood_bolt',
+        A: 'hexcasting:charged_amethyst'
+    }).id('kubejs/shaped/hex_focus_alt')
     //ritual table
     event.remove({ id: 'hexalia:ritual_table' })
     event.custom({
@@ -124,15 +135,25 @@ ServerEvents.recipes((event) => {
             "item": "hexalia:ritual_table"
         }
     });
+    event.shaped('hexalia:ritual_table', [
+        ' E ',
+        ' M ',
+        ' D '
+    ], {
+        E: 'hexalia:earth_node',
+        M: '#forge:moss',
+        D: '#forge:deepslate'
+    }).id('kubejs/shaped/ritual_table_alt')
     //silk idol
     event.remove({id: 'hexalia:silk_idol'})
     event.shaped('hexalia:silk_idol', [
         ' S ',
         'SPS',
-        ' T '
+        'TNT'
     ], {
         S: 'kubejs:woven_silk',
         P: 'farmersdelight:straw',
-        T: 'immersiveengineering:hemp_fiber'
-    }).id('kubejs:shaped/silk_idol')
+        T: 'immersiveengineering:hemp_fiber',
+        N: '#forge:tools/needles'
+    }).keepIngredient('#forge:tools/needles').id('kubejs:shaped/silk_idol')
 });

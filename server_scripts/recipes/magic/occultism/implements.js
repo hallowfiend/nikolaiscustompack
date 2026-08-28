@@ -28,14 +28,16 @@ ServerEvents.recipes(event => {
     T: 'gtceu:double_iesnium_plate',
     C: 'gtceu:double_strumm_plate'
     }).id('kubejs:shaped/empty_lamp')
-    event.shaped('occultism:brush', [    
+    event.shaped('occultism:brush', [
+        '  F',    
         'WWW',
         'HHS',
         ], {
     W: '#minecraft:wooden_slabs',
     H: 'farmersdelight:straw_bale',
-    S: 'gtceu:silver_plate'
-    }).id('kubejs:shaped/chalk_brush')
+    S: 'gtceu:silver_plate',
+    F: '#forge:tools/files'
+    }).damageIngredient('#forge:tools/files').id('kubejs:shaped/chalk_brush')
     event.shaped('occultism:lens_frame', [
     'PHP',
     'ILI',
@@ -47,16 +49,16 @@ ServerEvents.recipes(event => {
     L: 'gtceu:silver_ring',
     F: '#forge:tools/files',
     H: '#forge:tools/hammers'
-    })
+    }).damageIngredient('#forge:tools/files').damageIngredient('#forge:tools/hammers')
     event.shaped('occultism:lenses', [
     ' C ',
     'IPI',
     'SFS'
     ], {
-    P: 'gtceu:fine_gold_wire',
+    P: 'gtceu:fine_soul_stained_steel_wire',
     I: 'occultism:spirit_attuned_gem',
     S: 'malum:arcane_spirited_glass',
     F: '#forge:tools/files',
     C: '#forge:tools/wire_cutters'
-    })
+    }).damageIngredient('#forge:tools/files').damageIngredient('#forge:tools/wire_cutters')
 })

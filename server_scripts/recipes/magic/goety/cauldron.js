@@ -2,25 +2,27 @@ ServerEvents.recipes(event => {
     //the cauldron itself
     event.remove({output: 'goety:witch_cauldron'})
     event.shaped('goety:witch_cauldron', [
-        'C C',
+        'CHC',
         'CNC',
         'III'
     ], {
         C: 'gtceu:cursed_alloy_plate',
         I: 'goety:cursed_ingot',
-        N: 'kubejs:wicked_node'
-    }).id('kubejs:shaped/cursed_cauldron')
+        N: 'kubejs:wicked_node',
+        H: '#forge:tools/hammers'
+    }).damageIngredient('#forge:tools/hammers').id('kubejs:shaped/cursed_cauldron')
     //the ladle
     event.remove({output: 'goety:cauldron_ladle'})
     event.shaped('goety:cauldron_ladle', [
-        '  s',
+        ' fs',
         ' w ',
         't  '
     ], {
         s: 'goety:shade_stone',
         t: '#forge:rods/wooden',
-        w: 'kubejs:wicked_node'
-    }).id('kubejs:shaped/cauldron_ladle')
+        w: 'kubejs:wicked_node',
+        f: '#forge:tools/files'
+    }).damageIngredient('#forge:tools/files').id('kubejs:shaped/cauldron_ladle')
     //cauldron crafting proper
     function cauldronCraft(soulCost, color, ingredients, output){
         event.custom({
