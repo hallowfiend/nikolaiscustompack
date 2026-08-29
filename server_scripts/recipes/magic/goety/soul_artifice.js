@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    //taglock kit
+    event.replaceInput({output: 'goety:taglock_kit'}, '#forge:bones', 'kubejs:bone_needle')
     //foci shenanigans
     event.remove({id: 'goety:focus_bag'})
     event.shaped('goety:focus_bag', [

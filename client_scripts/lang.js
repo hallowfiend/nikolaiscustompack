@@ -27,6 +27,9 @@ ClientEvents.lang('en_us', event => {
     event.renameItem('malum:living_flesh', 'Revitalized Flesh')
     event.renameItem('malum:block_of_living_flesh', 'Block of Revitalized Flesh')
     event.renameItem('caverns_and_chasms:living_flesh', 'Quasianimate Flesh')
+    //Crystal ball dedup
+    event.renameItem('hexerei:crystal_ball', "Crystal Cube")
+    event.renameItem('goety:crystal_ball', "Scryer's Crystal Cube")
     //Quark
     event.renameItem('quark:dragon_crystal', 'Dragonscale Chip')
     //Nature's Aura

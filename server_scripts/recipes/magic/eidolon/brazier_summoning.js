@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
   //Vanilla
   brazier_summoning(
     'minecraft:turtle',
-    1,
+    2,
     'minecraft:beef',
     'minecraft:sea_pickle',
     'minecraft:green_dye',
@@ -87,10 +87,10 @@ ServerEvents.recipes(event => {
   brazier_summoning(
     'minecraft:witch',
     1,
-    'minecraft:glass_bottle',
+    'goety:magic_emerald',
     'minecraft:redstone',
-    'minecraft:nether_wart',
-    'minecraft:glowstone_dust'
+    'minecraft:glowstone_dust',
+    'minecraft:nether_wart'
   )
   brazier_summoning(
     'minecraft:squid',
@@ -187,6 +187,14 @@ ServerEvents.recipes(event => {
     'gtceu:charcoal_dust',
     'aether:ambrosium_shard',
     'minecraft:sugar'
+  )
+  brazier_summoning(
+    'minecraft:allay',
+    3,
+    'galosphere:allurite_shard',
+    'hexcasting:charged_amethyst',
+    'goety:spirit_fabric',
+    'hexalia:ghost_powder'
   )
   //Hexalia
   brazier_summoning(

@@ -10,7 +10,22 @@ ServerEvents.recipes(event => {
     event.remove({id: /bloodmagic:plantoil_from.*/})
     event.remove({id: 'bloodmagic:smelting/saltpeter'})
     event.remove({id: 'bloodmagic:alchemytable/saltpeter'})
-    event.recipes.create.filling('bloodmagic:plantoil', [Fluid.of('#forge:plant_oil').withAmount(250), 'minecraft:glass_bottle']);
+    //had to use event.custom for this
+    event.custom({
+      type: 'create:filling',
+      ingredients: [
+        {
+          'item': 'minecraft:glass_bottle'
+        },
+        {
+          'fluidTag': 'forge:plant_oil',
+          'amount': 250
+        }
+      ],
+      results: [
+        {'item': 'bloodmagic:plantoil'}
+      ]
+    }).id('kubejs:create/filling/plant_oil')
     event.recipes.create.emptying([Fluid.of('gtceu:seed_oil').withAmount(250), 'minecraft:glass_bottle'], 'bloodmagic:plantoil')
     event.custom({
     "type": "immersiveengineering:bottling_machine",
@@ -37,7 +52,7 @@ ServerEvents.recipes(event => {
         1
     )
     //weak blood shard
-    alchemytable('bloodmagic:weak_blood_shard',
+    alchemytable('bloodmagic:weakbloodshard',
         [
             'bloodmagic:strong_tau',
             'evilcraft:hardened_blood_shard',

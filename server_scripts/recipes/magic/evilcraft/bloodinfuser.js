@@ -62,6 +62,13 @@ ServerEvents.recipes(event => {
     event.remove({id: /constructs_casting:.*bloody_vellum/})
     event.remove({id: 'irons_spellbooks:filling/bloody_vellum'})
     bloodInfuser(
+        16000,
+        'bloodmagic:weak_tau',
+        'bloodmagic:strong_tau',
+        240,
+        2
+    )
+    bloodInfuser(
         8000,
         'irons_spellbooks:hogskin',
         'irons_spellbooks:bloody_vellum',

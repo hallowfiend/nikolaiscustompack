@@ -124,6 +124,20 @@ ServerEvents.recipes(event => {
         .soulCost(20)
         .duration(5)
         .id('bloodmagic:altar/daggerofsacrifice');
+    //Scryer's Crystal Cube
+    event.recipes.goety.ritual('goety:crystal_cube', 'goety:craft', [
+            'eidolon:gold_inlay',
+            'goety:taglock_kit',
+            'minecraft:ender_eye',
+            'goety:mystic_core',
+            'malum:wicked_spirited_glass',
+            'malum:wicked_spirited_glass'
+        ])
+        .activationItem('hexerei:crystal_cube')
+        .craftType('forge')
+        .soulCost(10)
+        .duration(10)
+        .id('kubejs:goety/dark_ritual/forging/hexerei_crystal_cube_to_goety_crystal_cube')
     //Wicked Boline
     event.remove({ id: 'goety:wicked_boline' })
     /* event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [

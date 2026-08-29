@@ -2,6 +2,7 @@
 
 ServerEvents.recipes((event) => {
 event.remove({id: 'hexerei:infused_fabric_from_mixing_cauldron'})
+event.remove({id: 'hexerei:crystal_ball_from_mixing_cauldron'})
 const id_prefix = 'kubejs:recipes/hexerei/mixingcauldron/'
 
 const recipes = [
@@ -23,6 +24,25 @@ const recipes = [
     output:"hexerei:infused_fabric",
     output_amount:6,
     heat:true
+},
+//Crystal ball
+{
+  inputItem:[
+    {"item": "malum:arcane_spirited_glass"},
+    {"item": "malum:arcane_spirited_glass"},
+    {"item": "minecraft:diamond"},
+    {"item": "malum:arcane_spirited_glass"},
+    {"item": "malum:arcane_spirited_glass"},
+    {"tag": "forge:ingots/vinteum_alloy"},
+    {"tag": "forge:ingots/vinteum_alloy"},
+    {"tag": "forge:stone"}
+  ],
+  liquid: "minecraft:lava",
+  liquid_consum: 1000,
+  output_liquid: false,
+  output: "hexerei:crystal_ball",
+  output_amount: 1,
+  heat: true
 },
 //Eidolon crucible
 {

@@ -177,7 +177,8 @@ global.removedItems = [
   'createaddition:iron_wire',
   'theurgy:logistics_item_inserter',
   'theurgy:logistics_item_extractor',
-  'vampirism:injection_empty'
+  'vampirism:injection_empty',
+  'bloodmagic:sanguinereverter'
 ];
 
 global.removedRecipeIds = [
@@ -208,7 +209,9 @@ global.removedRecipeTypes = [
     'enderio:enchanter', //we have a zillion magic mods to help us enchant stuff
     'hibernalherbs:herbal_conjuration', //flattened into hexalia ritual table
     'ae2:inscriber', //folded into other crafting mechanics
-    'eidolon:athame_foraging' //folded into hexalia ritual table
+    'eidolon:athame_foraging', //folded into hexalia ritual table
+    'bloodmagic:arc', //redundant
+    'bloodmagic:arcfurnace' //likewise
 ]
 
 global.removedFluids = [
