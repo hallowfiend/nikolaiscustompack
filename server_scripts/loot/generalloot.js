@@ -13,6 +13,7 @@ LootJS.modifiers((event) => {
     .replaceLoot('immersiveengineering:nugget_lead', 'gtceu:lead_nugget', true)
     .replaceLoot('immersiveengineering:nugget_silver', 'gtceu:silver_nugget', true)
     .replaceLoot(/.*:raw_venison/, "environmental:venison", true)
+    .replaceLoot('actuallyadditions:bats_wing', 'miners_delight:bat_wing', true)
     .replaceLoot(/.*:cooked_venison/, "environmental:cooked_venison", true)
     .replaceLoot('galosphere:palladium_nugget', 'gtceu:palladium_nugget', true)
     .replaceLoot(/.*copper_nugget/, 'gtceu:copper_nugget', true)
@@ -58,6 +59,9 @@ LootJS.modifiers((event) => {
       'oceanic_delight:squid_tentacles',
       'crabbersdelight:cooked_squid_tentacles',
       'crabbersdelight:raw_squid_tentacles',
-      'rusticdelight:calamari'
+      'rusticdelight:calamari',
+      'actuallyadditions:flax_seeds',
+      'actuallyadditions:rice_seeds',
+      'actuallyadditions:canola_seeds'
     ])
 });

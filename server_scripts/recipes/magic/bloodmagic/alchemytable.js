@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
           'item': 'minecraft:glass_bottle'
         },
         {
-          'fluidTag': 'forge:plant_oil',
+          'fluidTag': 'forge:plantoil',
           'amount': 250
         }
       ],
@@ -29,17 +29,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.emptying([Fluid.of('gtceu:seed_oil').withAmount(250), 'minecraft:glass_bottle'], 'bloodmagic:plantoil')
     event.custom({
     "type": "immersiveengineering:bottling_machine",
-    "fluid": {
-        "amount": 250,
-        "tag": "forge:plant_oil"
-    },
-    "input": {
-        "item": "minecraft:glass_bottle"
-    },
-    "results": [
-    {
-      "item": "bloodmagic:plantoil"
-    }]
+    "fluid": {"amount": 250, "tag": "forge:plantoil"},
+    "input": {"item": "minecraft:glass_bottle"},
+    "results": [{"item": "bloodmagic:plantoil"}]
     })
     alchemytable('4x gtceu:saltpeter_dust',
         [
@@ -174,7 +166,7 @@ ServerEvents.recipes(event => {
             {item: 'kubejs:destructive_node'},
             {item: 'malum:malignant_lead'},
             {item: 'kubejs:rune_void'},
-            {item: 'goety:shade_stone'}
+            {item: 'actuallyadditions:empowered_void_crystal'}
         ]},
         {type: 'binding', tier: 3, inputs: [
             {item: 'goety:flying_ointment'},

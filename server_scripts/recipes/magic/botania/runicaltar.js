@@ -121,7 +121,7 @@ ServerEvents.recipes((event) => {
         [
             'botania:mana_powder',
             'botania:manasteel_ingot',
-            'minecraft:rose_bush',
+            'actuallyadditions:restonia_crystal',
             'biomancy:flesh_bits',
             'collectorsreap:beetroot_gummy',
             'kubejs:sacred_node'

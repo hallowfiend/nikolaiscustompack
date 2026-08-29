@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
         {'tag': 'aether:aerclouds'},
         {'tag': 'forge:gems/salt'},
         {'item': 'twilightforest:carminite'},
-        {'item': 'netherexp:wisp_bottle'}
+        {'item': 'kubejs:woven_silk'}
       ],
       'naturesaura:token_sorrow', 2,
       'hexerei:willow_sapling',

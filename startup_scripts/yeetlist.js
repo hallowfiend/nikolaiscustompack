@@ -178,7 +178,36 @@ global.removedItems = [
   'theurgy:logistics_item_inserter',
   'theurgy:logistics_item_extractor',
   'vampirism:injection_empty',
-  'bloodmagic:sanguinereverter'
+  'bloodmagic:sanguinereverter',
+  //AA yeet section
+  'actuallyadditions:rice_dough',
+  'actuallyadditions:rice_slimeball',
+  'actuallyadditions:rice',
+  'actuallyadditions:rice_seeds',
+  'actuallyadditions:coffee_beans',
+  'actuallyadditions:canola_seeds',
+  'actuallyadditions:canola',
+  'actuallyadditions:flax_seeds',
+  'actuallyadditions:ring',
+  'actuallyadditions:ring_of_growth',
+  'actuallyadditions:ring_of_magnetizing',
+  'actuallyadditions:leaf_generator',
+  'actuallyadditions:crusher',
+  'actuallyadditions:crusher_double',
+  'actuallyadditions:canola_press',
+  'actuallyadditions:fermenting_barrel',
+  'actuallyadditions:bio_reactor',
+  'actuallyadditions:tiny_coal',
+  'actuallyadditions:tiny_charcoal',
+  'actuallyadditions:empty_cup',
+  'actuallyadditions:coffee_cup',
+  'actuallyadditions:powered_furnace',
+  'actuallyadditions:player_interface',
+  'actuallyadditions:laser_relay_item',
+  'actuallyadditions:laser_relay_item_advanced',
+  'actuallyadditions:bats_wing',
+  'actuallyadditions:feeder',
+  'actuallyadditions:dropper'
 ];
 
 global.removedRecipeIds = [
@@ -211,7 +240,12 @@ global.removedRecipeTypes = [
     'ae2:inscriber', //folded into other crafting mechanics
     'eidolon:athame_foraging', //folded into hexalia ritual table
     'bloodmagic:arc', //redundant
-    'bloodmagic:arcfurnace' //likewise
+    'bloodmagic:arcfurnace', //likewise
+    'actuallyadditions:crushing', //redundant
+    'actuallyadditions:fermenting', //folded into bnc keg
+    'actuallyadditions:coffee_ingredient', //redundant
+    'actuallyadditions:pressing', //folded into IE squeezer
+    'actuallyadditions:coffee_machine' //we have farmer's respite
 ]
 
 global.removedFluids = [

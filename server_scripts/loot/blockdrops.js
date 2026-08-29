@@ -21,7 +21,6 @@ LootJS.modifiers((event) => {
     .addWeightedLoot([3,5], [
         Item.of("farmersdelight:cabbage").withChance(10),
         Item.of("farmersdelight:cabbage_seeds").withChance(50)
-        
     ]);
 
     event.addBlockLootModifier(/.*/)

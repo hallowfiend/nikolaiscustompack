@@ -94,7 +94,7 @@ bioForging(
   event.remove({output: 'biomancy:decomposer'})
   event.remove({output: 'biomancy:bio_forge'})
   event.shaped('biomancy:bio_forge', [
-    'c c',
+    'clc',
     'fof',
     'fef'
   ],
@@ -102,7 +102,8 @@ bioForging(
     c: '#kubejs:crafting_claws',
     f: 'biomancy:living_flesh',
     o: 'kubejs:slimy_eye',
-    e: 'gtceu:electrotine_block'
+    e: 'gtceu:electrotine_block',
+    l: 'kubejs:lifecrystal'
   }).id('kubejs:shaped/bio_forge')
   bioForging(
     MACHINES,
@@ -118,7 +119,7 @@ bioForging(
     'bio_forge'
   )
   event.shaped('biomancy:decomposer', [
-    'c c',
+    'clc',
     'fof',
     'efe'
   ],
@@ -126,7 +127,8 @@ bioForging(
     c: '#c:fangs',
     f: 'biomancy:living_flesh',
     o: 'kubejs:slimy_eye',
-    e: 'gtceu:electrotine_block'
+    e: 'gtceu:electrotine_block',
+    l: 'kubejs:lifecrystal'
   }).id('kubejs:shaped/decomposer')
   bioForging(
     MACHINES,

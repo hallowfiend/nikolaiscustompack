@@ -12,6 +12,7 @@ WorldgenEvents.remove(event => {
   });
   event.removeOres(props => {
     props.blocks = [
+      'actuallyadditions:ore_black_quartz',
       "immersiveengineering:ore_lead",
       "immersiveengineering:deepslate_ore_lead",
       "immersiveengineering:ore_nickel",

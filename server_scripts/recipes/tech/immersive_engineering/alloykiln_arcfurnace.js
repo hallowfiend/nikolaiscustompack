@@ -35,6 +35,7 @@ ServerEvents.recipes((event) => {
     alloyKiln('#forge:ingots/copper', '4x #forge:ingots/silver', '4x gtceu:sterling_silver_ingot')
     alloyKiln('#forge:dusts/redstone', '#forge:ingots/iron', 'enderio:conductive_alloy_ingot')
     alloyKiln('#forge:dusts/redstone', '#forge:ingots/copper', 'gtceu:red_alloy_ingot')
+    alloyKiln('4x #forge:dusts/coal_coke', '#forge:gems/quartzite', 'actuallyadditions:black_quartz')
     //Arc Furnace alloys
     function arcFurnace(mainInput, mainInputCount, additives, output, outputCount) {
         event.custom({
@@ -57,9 +58,16 @@ ServerEvents.recipes((event) => {
     }).id(`kubejs:immersive_engineering/arc_furnace/${output.split(":")[1]}`);
     }
     arcFurnace(
+        'gtceu:coke_dust',
+        4,
+        [{'tag': 'forge:dusts/quartzite'}],
+        'actuallyadditions:black_quartz',
+        1
+    )
+    arcFurnace(
         'gtceu:ruby_gem',
         4,
-        [{'item': 'kubejs:blood_slime_ball'}, {'item': 'kubejs:vengeful_node'}],
+        [{'item': 'kubejs:blood_slime_ball'}, {'item': 'actuallyadditions:empowered_restonia_crystal'}],
         'kubejs:bloodchannel_gem',
         1
     )

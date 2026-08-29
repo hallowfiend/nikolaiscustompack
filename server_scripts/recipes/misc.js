@@ -198,5 +198,4 @@ event.replaceOutput(
         Item.of('malum:living_flesh', 9),
         ['malum:block_of_living_flesh']
     ).id('kubejs:shapeless/idkwhythiswasremoved2')
-    
 });

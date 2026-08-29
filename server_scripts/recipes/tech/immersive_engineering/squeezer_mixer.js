@@ -22,6 +22,12 @@ ServerEvents.recipes(event => {
         result: result
     }).id(`kubejs:immersive_engineering/squeezer/${id}`);
     }
+    squeezeNoResult(
+        'actuallyadditions:canola_oil',
+        80,
+        {item: 'frycooks_delight:canola'},
+        'canola_oil_squeezing'
+    )
     //ID
     squeezeYesResult(
         'integrateddynamics:menril_resin',

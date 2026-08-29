@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
             'lmf'
         ],
         {
-            f: 'minecraft:rotten_flesh',
+            f: 'kubejs:lifecrystal',
             a: 'mna:animus_dust',
             g: 'evilcraft:dark_power_gem',
             m: '#biomancy:raw_meats',
