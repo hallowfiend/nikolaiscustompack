@@ -57,7 +57,6 @@ ServerEvents.recipes(event => {
             'bloodmagic:strong_tau',
             'evilcraft:hardened_blood_shard',
             'gtceu:ruby_gem',
-            'magichem:admixture_crystal',
             'bloodmagic:strengthenedcatalyst'
         ],
         1000,
