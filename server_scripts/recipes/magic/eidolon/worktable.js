@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
                 "item": "hexalia:water_node"
             },
             "e": {
-                "tag": "forge:storage_blocks/mithril"
+                "tag": "forge:ingots/steel"
             }
         },
         "result" : {
@@ -184,7 +184,7 @@ ServerEvents.recipes((event) => {
                 "item": "goety:chill_fabric"
             },
             "g": {
-                "item": "goety:freezing_lamp"
+                "item": "actuallyadditions:palis_crystal"
             }
         },
         "result" : {
@@ -284,10 +284,10 @@ ServerEvents.recipes((event) => {
                 "item": "minecraft:writable_book"
             },
             "w": {
-                "item": "eidolon:illwood_planks_slab"
+                "item": "eidolon:polished_planks_slab"
             },
             "f": {
-                "item": "eidolon:illwood_planks_fence"
+                "item": "eidolon:polished_planks_fence"
             },
             "l" : {
                 "item" : "hexcasting:lens"
@@ -439,7 +439,7 @@ ServerEvents.recipes((event) => {
                 "item": "kubejs:token_flux"
             },
             "c" : {
-                "item" : "gtceu:calcite_dust"
+                "item" : "kubejs:lifecrystal"
             },
             "t": {
                 "item": "evilcraft:corrupted_tear"
@@ -658,7 +658,7 @@ ServerEvents.recipes((event) => {
                 "item": "ars_nouveau:source_gem_block"
             },
             "m":{
-                "item": "hexerei:moon_dust"
+                "item": "actuallyadditions:palis_crystal"
             },
             "a": {
                 "item": "kubejs:arcane_node"
@@ -762,7 +762,7 @@ ServerEvents.recipes((event) => {
                 "item": "botania:livingrock"
             },
             "t": {
-                "item": "malum:tainted_rock_tablet"
+                "item": "actuallyadditions:enori_crystal"
             },
             "s": {
                 "item": "kubejs:token_cycles"

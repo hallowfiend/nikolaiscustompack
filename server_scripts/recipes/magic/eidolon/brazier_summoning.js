@@ -85,14 +85,6 @@ ServerEvents.recipes(event => {
     'minecraft:white_wool'
   )
   brazier_summoning(
-    'minecraft:witch',
-    1,
-    'goety:magic_emerald',
-    'minecraft:redstone',
-    'minecraft:glowstone_dust',
-    'minecraft:nether_wart'
-  )
-  brazier_summoning(
     'minecraft:squid',
     2,
     'minecraft:kelp',

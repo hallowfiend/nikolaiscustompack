@@ -34,21 +34,21 @@ ServerEvents.recipes(event => {
     }
     brewSlimeHeart(
         'earth',
-        'minecraft:pink_dye',
+        'minecraft:pink_wool',
         'gtceu:rock_salt_dust',
         'collectorsreap:strawberry_gummy',
         'slimy'
     )
     brewSlimeHeart(
         'ichor',
-        'minecraft:fermented_spider_eye',
+        'goety:spider_nest',
         'vampiresdelight:human_eye',
-        'goetydelight:spider_egg_bubble_tea',
+        'dungeonsdelight:spider_salmagundi',
         'all-seeing'
     )
     brewSlimeHeart(
         'earth',
-        'minecraft:redstone_block',
+        'actuallyadditions:restonia_crystal_block',
         'create:rose_quartz',
         'farmersrespite:black_tea',
         'bitwise'
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
     )
     brewSlimeHeart(
         'earth',
-        'minecraft:dirt',
+        'minecraft:mud',
         'malum:rotting_essence',
         'dungeonsdelight:rubaboo',
         'rotting'
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
     )
     brewSlimeHeart(
         'sky',
-        'minecraft:white_wool',
+        'minecraft:quartz_block',
         'goety:venomous_fang',
         'dungeonsdelight:spider_donut',
         'webby'
