@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
             {'item': 'gtceu:calcite_dust'},
             {'tag': 'forge:gems/certus_quartz'},
             {'item': 'gtceu:tin_alloy_ingot'},
-            {'item': 'eidolon:enchanted_ash'}
+            {'item': 'embers:caminite_brick'}
         ]
     )
     empowerCrystal(
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         'palis',
         2437779,
         [
-            {'item': 'mna:transmuted_silver'},
+            {'item': 'hexalia:siren_paste'},
             {'item': 'mna:vinteum_dust'},
             {'item': 'tconstruct:sky_slime_crystal_block'},
             {'item': 'minecraft:prismarine_shard'}

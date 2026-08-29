@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
     alloyKiln('#forge:ingots/copper', '4x #forge:ingots/silver', '4x gtceu:sterling_silver_ingot')
     alloyKiln('#forge:dusts/redstone', '#forge:ingots/iron', 'enderio:conductive_alloy_ingot')
     alloyKiln('#forge:dusts/redstone', '#forge:ingots/copper', 'gtceu:red_alloy_ingot')
-    alloyKiln('4x #forge:dusts/coal_coke', '#forge:gems/quartzite', 'actuallyadditions:black_quartz')
+    alloyKiln('malum:natural_quartz', '4x #forge:dusts/graphite', 'actuallyadditions:black_quartz')
     //Arc Furnace alloys
     function arcFurnace(mainInput, mainInputCount, additives, output, outputCount) {
         event.custom({
@@ -58,9 +58,9 @@ ServerEvents.recipes((event) => {
     }).id(`kubejs:immersive_engineering/arc_furnace/${output.split(":")[1]}`);
     }
     arcFurnace(
-        'gtceu:coke_dust',
-        4,
-        [{'tag': 'forge:dusts/quartzite'}],
+        'malum:natural_quartz',
+        1,
+        [{'tag': 'forge:dusts/graphite', 'count': 4}],
         'actuallyadditions:black_quartz',
         1
     )
@@ -193,14 +193,14 @@ ServerEvents.recipes((event) => {
     arcFurnace(
         'gtceu:tin_ingot',
         1,
-        [{'tag': 'forge:dusts/steel'} ,{'item': 'gtceu:tuff_dust', 'count': 4}, {'item': 'gtceu:stone_dust', 'count': 4}, {'item': 'aether:holystone', 'count': 4}],
+        [{'item': 'actuallyadditions:enori_crystal'}, {'tag': 'forge:dusts/steel'} ,{'item': 'gtceu:tuff_dust', 'count': 4}, {'item': 'gtceu:stone_dust', 'count': 4}, {'item': 'aether:holystone', 'count': 4}],
         'aether_redux:refined_sentrite',
         4
     )
     arcFurnace(
         'gtceu:lead_ingot',
         2,
-        [{'item': 'gtceu:soapstone_dust', 'count': 4}, {'item': 'gtceu:talc_dust', 'count': 4}, {'tag': 'forge:dusts/zanite', 'count': 2}],
+        [{'item': 'actuallyadditions:palis_crystal'}, {'item': 'gtceu:soapstone_dust', 'count': 4}, {'item': 'gtceu:talc_dust', 'count': 4}, {'tag': 'forge:dusts/zanite', 'count': 2}],
         'aether_redux:veridium_ingot',
         4
     )

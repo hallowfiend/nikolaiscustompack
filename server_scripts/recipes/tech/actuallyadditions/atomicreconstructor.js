@@ -3,7 +3,13 @@ ServerEvents.recipes(event => {
         'actuallyadditions:wood_casing',
         'actuallyadditions:iron_casing',
         'actuallyadditions:ender_casing',
-        'actuallyadditions:atomic_reconstructor'
+        'actuallyadditions:atomic_reconstructor',
+        'actuallyadditions:lens',
+        'actuallyadditions:laser/lens_of_color',
+        'actuallyadditions:laser/lens_of_detonation',
+        'actuallyadditions:lens_of_the_killer',
+        'actuallyadditions:laser/lens_of_certain_death',
+        'actuallyadditions:lens_of_disenchanting' //miner lens already removed in yeetlist.js
     ]
     yote.forEach(yeet => {
         event.remove({id: yeet})
@@ -37,15 +43,17 @@ ServerEvents.recipes(event => {
     })
     //the reconstructor itself
     event.shaped('actuallyadditions:atomic_reconstructor', [
-        'RER',
+        'PER',
         'ICM',
-        'RER'
+        'PSR'
     ], {
         R: 'gtceu:red_alloy_plate',
         E: 'immersiveengineering:component_electronic_adv',
-        I: 'nagichem:signalite_block',
+        I: 'magichem:signalite_block',
         C: 'actuallyadditions:iron_casing',
-        M: 'integrateddynamics:materializer'
+        M: 'integrateddynamics:materializer',
+        S: 'immersiveengineering:component_steel',
+        P: 'immersiveengineering:sheetmetal_steel'
     })
     //restonia from signalite
     event.remove({id: 'actuallyadditions:laser/crystalize_restonia_crystal'})
@@ -69,5 +77,67 @@ ServerEvents.recipes(event => {
     "result": {
         "item": "actuallyadditions:restonia_crystal_block"
     }
+    })
+    //lenses
+    event.shaped('actuallyadditions:lens', [
+        'HIB',
+        'IGI',
+        'BIW'
+    ], {
+        H: '#forge:tools/hammers',
+        W: '#forge:tools/wrenches',
+        I: '#forge:rods/steel',
+        G: 'gtceu:black_lens',
+        B: 'actuallyadditions:black_quartz'
+    }).damageIngredient('#forge:tools/hammers').damageIngredient('#forge:tools/wrenches')
+    event.shaped('actuallyadditions:lens_of_color', [
+        'VAV',
+        'BLB',
+        'VAV'
+    ], {
+        A: 'magichem:admixture_color',
+        B: 'magichem:bleached_amethyst',
+        V: 'actuallyadditions:empowered_emeradic_crystal',
+        L: 'actuallyadditions:lens'
+    })
+    event.shaped('actuallyadditions:lens_of_detonation', [
+        'RDR',
+        'TLT',
+        'RDR'
+    ], {
+        R: 'actuallyadditions:empowered_restonia_crystal',
+        T: 'scguns:nitro_powder',
+        L: 'actuallyadditions:lens',
+        D: 'kubejs:destructive_node'
+    })
+    event.shaped('actuallyadditions:lens_of_certain_death', [
+        'PSP',
+        'SLS',
+        'PSP'
+    ], {
+        S: 'evilcraft:dark_block',
+        P: 'actuallyadditions:empowered_enori_crystal',
+        L: 'actuallyadditions:lens'
+    })
+    event.shaped('actuallyadditions:lens_of_the_killer', [
+        'SVS',
+        'DLD',
+        'SVS'
+    ], {
+        V: Item.of('minecraft:enchanted_book', "{Enchantments:[{id:\"minecraft:sharpness\",lvl:5s}]}"),
+        S: 'actuallyadditions:empowered_restonia_crystal_block',
+        D: 'evilcraft:spiked_plate',
+        L: 'actuallyadditions:lens_of_certain_death'
+    })
+    event.shaped('actuallyadditions:lens_of_disenchanting', [
+        'EAV',
+        'MLM',
+        'VEA'
+    ], {
+        V: 'actuallyadditions:empowered_palis_crystal_block',
+        E: 'actuallyadditions:empowered_diamantine_crystal_block',
+        A: 'apotheosis:mythic_material',
+        M: 'goety:mystic_core',
+        L: 'actuallyadditions:lens'
     })
 })
