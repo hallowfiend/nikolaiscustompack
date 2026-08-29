@@ -175,8 +175,7 @@ global.removedItems = [
   'createaddition:capacitor',
   'createaddition:gold_wire',
   'createaddition:iron_wire',
-  'theurgy:logistics_item_inserter',
-  'theurgy:logistics_item_extractor',
+  /theurgy:logistics.*/,
   'vampirism:injection_empty',
   'bloodmagic:sanguinereverter',
   //AA yeet section

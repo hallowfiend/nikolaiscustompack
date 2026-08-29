@@ -204,4 +204,11 @@ ServerEvents.recipes((event) => {
         'aether_redux:veridium_ingot',
         4
     )
+    arcFurnace(
+        'evilcraft:potentia_sphere',
+        1,
+        [{'item': 'evilcraft:dark_gem'}, {'item': 'bloodmagic:suppressionreagent'}, {'item': 'actuallyadditions:empowered_void_crystal'}, {'item': 'minecraft:redstone_torch'}],
+        'evilcraft:inverted_potentia',
+        1
+    )
 })

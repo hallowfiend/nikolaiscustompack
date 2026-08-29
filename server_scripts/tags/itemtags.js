@@ -244,7 +244,8 @@ ServerEvents.tags("item", (event) => {
   event.add('curios:charm', [
     'hexalia:sage_pendant',
     'evilcraft:invigorating_pendant',
-    'evilcraft:primed_pendant'
+    'evilcraft:primed_pendant',
+    'immersiveengineering:earmuffs'
   ]);
   event.add('curios:ring', [
     'evilcraft:vengeance_ring'

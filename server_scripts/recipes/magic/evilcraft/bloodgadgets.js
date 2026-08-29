@@ -5,10 +5,12 @@ ServerEvents.recipes(event => {
         'evilcraft:crafting/bowl_of_promises_dusted',
         'evilcraft:crafting/kineticator',
         'evilcraft:crafting/kineticator_repelling',
-        'evilcraft:crafting/dark_spike'
+        'evilcraft:crafting/dark_spike',
+        'evilcraft:crafting/potentia_sphere',
+        'evilcraft:crafting/inverted_potentia'
     ]
     yeet.forEach(yote => {
-        event.remove({id: 'yote'})
+        event.remove({id: yote})
     })
     event.remove({output: 'evilcraft:bound_blood_drop'})
     //dark spike
@@ -42,7 +44,7 @@ ServerEvents.recipes(event => {
         p: 'gtceu:pewter_plate',
         r: 'scguns:syringe',
         d: 'evilcraft:dark_gem'
-    }).id('kubejs:shaped/blood_extractor')
+    }).id('evilcraft:crafting/blood_extractor')
     //effortless ring
     event.remove({output: 'evilcraft:effortless_ring'})
     event.shaped('evilcraft:effortless_ring', [
@@ -253,4 +255,14 @@ ServerEvents.recipes(event => {
         'gtceu:soul_stained_steel_dust',
         'goety:cauldron_ladle'
     ]).keepIngredient('goety:cauldron_ladle').id('evilcraft:crafting/bowl_of_promises_dusted')
+    //potentia sphere (inverted potentia in alloykiln_arcfurnace.js)
+    event.shaped('evilcraft:potentia_sphere', [
+        'PRP',
+        'ROR',
+        'PRP'
+    ], {
+        O: 'magichem:glass_orb',
+        R: 'kubejs:reagentbasic',
+        P: 'magichem:admixture_potential'
+    }).id('evilcraft:crafting/potentia_sphere')
 })
