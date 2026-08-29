@@ -375,6 +375,25 @@ ServerEvents.recipes(event => {
       600
     )
   //other crafts/gates
+  //Life Crystal
+  treeRitual(
+    [
+      {'item': 'malum:eldritch_spirit'},
+      {'item': 'malum:eldritch_spirit'},
+      {'item': 'gtceu:charcoal_dust'}, //C
+      {"type": "forge:nbt",
+      "count": 1,
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"minecraft:water\"}"}, //H
+      {'item': 'magichem:essentia_fleshy'}, //N
+      {'item': 'magichem:essentia_verdant'}, //O
+      {'item': 'gtceu:phosphorus_dust'}, //P
+      {'item': 'gtceu:sulfur_dust'} //S
+    ],
+    'kubejs:lifecrystal', 1,
+    'ars_nouveau:green_archwood_sapling',
+    100
+  )
   //Slimy Eye
     treeRitual(
       [

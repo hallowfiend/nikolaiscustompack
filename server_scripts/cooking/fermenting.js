@@ -1,4 +1,64 @@
 ServerEvents.recipes(event => {
+    //spinalberry duplication
+    event.custom({
+  "type": "brewinandchewin:fermenting",
+  "basefluid": {
+    "count": 1000,
+    "fluid": "evilcraft:blood"
+  },
+  "experience": 1.0,
+  "fermentingtime": 9600,
+  "ingredients": [
+    {
+      "item": "cosmopolitan:spinalberry"
+    },
+    {
+      "item": "cosmopolitan:spinalberry"
+    },
+    {
+      "item": "biomancy:bone_fragments"
+    },
+    {
+      "item": "biomancy:bone_fragments"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 8,
+    "item": "cosmopolitan:spinalberry"
+  },
+  "temperature": 5
+})
+    //boilberry duplication
+event.custom({
+  "type": "brewinandchewin:fermenting",
+  "basefluid": {
+    "count": 1000,
+    "fluid": "evilcraft:blood"
+  },
+  "experience": 1.0,
+  "fermentingtime": 9600,
+  "ingredients": [
+    {
+      "item": "cosmopolitan:boilberry"
+    },
+    {
+      "item": "cosmopolitan:boilberry"
+    },
+    {
+      "item": "biomancy:flesh_bits"
+    },
+    {
+      "item": "biomancy:flesh_bits"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 8,
+    "item": "cosmopolitan:boilberry"
+  },
+  "temperature": 5
+})
     //forgotten imbibation
     event.custom({
         "type": "brewinandchewin:fermenting",

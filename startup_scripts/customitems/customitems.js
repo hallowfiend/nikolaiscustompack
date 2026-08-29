@@ -205,6 +205,8 @@ StartupEvents.registry('item', event => {
     .displayName('Biomantic Neuron');
     event.create('slimy_eye')
     .displayName('Biomantic Eyeball');
+    event.create('lifecrystal')
+    .displayName('Life Crystal');
     event.create('ashen_blend')
     .displayName('Ashen Blend');
     event.create('ethereal_ashen_blend')

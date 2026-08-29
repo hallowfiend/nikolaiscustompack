@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
         4753190,
         [
             {'item': 'kubejs:whiff_of_vitality'},
-            {'item': 'naturesaura:gold_powder'},
+            {'item': 'kubejs:lifecrystal'},
             {'item': 'farmersdelight:straw'},
             {'item': 'minecraft:vine'},
             {'item': 'hexerei:mugwort_leaves'}

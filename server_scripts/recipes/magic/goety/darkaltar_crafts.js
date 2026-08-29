@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
         .duration(5)
         .id('bloodmagic:altar/daggerofsacrifice');
     //Scryer's Crystal Cube
-    event.recipes.goety.ritual('goety:crystal_cube', 'goety:craft', [
+    event.recipes.goety.ritual('goety:crystal_ball', 'goety:craft', [
             'eidolon:gold_inlay',
             'goety:taglock_kit',
             'minecraft:ender_eye',
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
             'malum:wicked_spirited_glass',
             'malum:wicked_spirited_glass'
         ])
-        .activationItem('hexerei:crystal_cube')
+        .activationItem('hexerei:crystal_ball')
         .craftType('forge')
         .soulCost(10)
         .duration(10)

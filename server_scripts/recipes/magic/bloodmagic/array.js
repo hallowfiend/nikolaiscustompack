@@ -10,13 +10,13 @@ ServerEvents.recipes(event => {
     ]
     effectArrays.forEach(array => {
         event.remove({id: `bloodmagic:array/${array.id}`})
-        if (array.id == 'day'){
+        if (array.id.equals('day')){
         event.recipes.bloodmagic
         .array('minecraft:bedrock', array.base, array.reagent)
         .texture(`bloodmagic:textures/models/alchemyarrays/sunarray.png`)
         .id(`bloodmagic:array/${array.id}`);
         }
-        if (array.id == 'night'){
+        if (array.id.equals('night')){
         event.recipes.bloodmagic
         .array('minecraft:bedrock', array.base, array.reagent)
         .texture(`bloodmagic:textures/models/alchemyarrays/moonarray.png`)
