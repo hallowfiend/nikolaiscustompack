@@ -1,5 +1,5 @@
 ServerEvents.tags('item', event => {
-    event.add('kubejs:1_echo_worth', [
+    event.add('kubejs:1_echoes_worth', [
         'biomancy:mob_sinew',
         'vampirism:vampire_fang',
         'farmersdelight:ham'
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
             "item": "kubejs:dread_echoes",
             "count": echoCount
         }
-        }).id(`kubejs:sons_of_sins/echo_trade/${input.split(":")[1]}`)
+        }).id(`kubejs:sons_of_sins/echo_trade/${echoCount}`)
     }
     const numbers = [
         1,
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
     ]
     numbers.forEach(integer => {
         dreadEchoTrade(
-        {'tag': `kubejs:${integer}_echo_worth`}, integer
+        {'tag': `kubejs:${integer}_echoes_worth`}, integer
     )
     })
     const yote = [

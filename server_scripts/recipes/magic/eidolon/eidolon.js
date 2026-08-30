@@ -74,8 +74,8 @@ ServerEvents.recipes((event) => {
         'DOL',
         'PNU'
     ], {
-        R: '#forge:dyes/red',
-        U: '#forge:dyes/yellow',
+        R: 'eidolon:shadow_gem',
+        U: 'eidolon:crimson_gem',
         G: 'eidolon:gold_inlay',
         P: 'eidolon:pewter_inlay',
         O: 'eidolon:wicked_weave',
@@ -84,4 +84,15 @@ ServerEvents.recipes((event) => {
         L: Item.of('eidolon:chant_scroll', '{Damage:0,spell:[{id:"eidolon:sacred"},{id:"eidolon:sacred"},{id:"eidolon:sacred"}]}').strongNBT(),
         D: Item.of('eidolon:chant_scroll', '{Damage:0,spell:[{id:"eidolon:wicked"},{id:"eidolon:wicked"},{id:"eidolon:wicked"}]}').strongNBT()
     }).id('kubejs:shaped/book_of_invocations')
+    //Goblet
+    event.remove({output: 'eidolon:goblet'})
+    event.shaped('eidolon:goblet', [
+        'PHP',
+        ' P ',
+        'PRP'
+    ], {
+        P: 'gtceu:arcane_gold_plate',
+        R: 'gtceu:arcane_gold_rod',
+        H: '#forge:tools/hammers'
+    }).damageIngredient('#forge:tools/hammers')
 })

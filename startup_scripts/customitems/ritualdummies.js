@@ -16,6 +16,11 @@ StartupEvents.registry('item', (event) => {
         "Borrowing scant wisps of knowledge from the Otherworld and combining it with condensed memory, inscribe a book with sigils and symbols that can open one's mind to the flow of mana through the planes."
     )
     registerRitualDummy(
+        'sated_dreadshard',
+        'Craft Sated Dreadshard',
+        'Quench a Thirsting Dreadshard with the use of divine invocations, delicious foods and natural magic.'
+    )
+    registerRitualDummy(
         'conjure_witch',
         'Conjure Witch',
         'Call forth a Witch to trade with, kill or learn the secrets of the Dark One from.'

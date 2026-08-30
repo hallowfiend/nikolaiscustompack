@@ -260,7 +260,7 @@ StartupEvents.registry('item', event => {
     .displayName('Bone Needle')
     event.create('book_of_invocations')
     .displayName('Book of Invocations')
-    .maxDamage(64)
+    .maxDamage(32)
     .use((level, player, hand) => {
         if (player == null || !player.isPlayer()) return true;
         let mainItemStack = player.getItemInHand(hand)
@@ -268,6 +268,7 @@ StartupEvents.registry('item', event => {
         // let darkReputation = player.getCapability(ForgeCapabilities.IReputation).getReputation()
         const effects = player.potionEffects;
         effects.add('constructs_casting:holy_empowerment', 120*20)
+        effects.add('constructs_casting:ender_empowerment', 120*20)
         effects.add('constructs_casting:blood_empowerment', 120*20)
         player.playSound('malum:arcana_page_flipped')
         player.playSound('eidolon:chant_word')
@@ -278,7 +279,9 @@ StartupEvents.registry('item', event => {
     event.create('dread_echoes')
     .displayName('Dread Echoes');
     event.create('thirsting_dreadshard')
-    .displayName('Thirsting Dreadshard')
+    .displayName('Thirsting Dreadshard');
+    event.create('sated_dreadshard')
+    .displayName('Sated Dreadshard');
 })
 
 ItemEvents.modification(event => {

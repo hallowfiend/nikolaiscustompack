@@ -381,7 +381,7 @@ ServerEvents.recipes((event) => {
             "ptp"
         ],
         "reagents": [
-            "rrra"
+            "rrar"
         ],
         "key" : {
             "s": {
@@ -391,7 +391,7 @@ ServerEvents.recipes((event) => {
                 "item": "eidolon:bloodlust_incense"
             },
             "b": {
-                "item": "evilcraft:blood_infuser"
+                "item": "eidolon:goblet"
             },
             "t" : {
                 "item" : "evilcraft:dark_tank"
@@ -403,7 +403,7 @@ ServerEvents.recipes((event) => {
                 "item": "kubejs:bloodchannel_gem"
             },
             "a": {
-                "item": "naturesaura:token_rage"
+                "item": "kubejs:sated_dreadshard"
             }
         },
         "result" : {

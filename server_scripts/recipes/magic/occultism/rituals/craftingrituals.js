@@ -28,6 +28,20 @@ ServerEvents.recipes(event => {
       'minecraft:writable_book',
       'occultism:craft_foliot'
     ).dummy('kubejs:ritual_dummy/codex_arcana').useItem('minecraft:experience_bottle')
+    //Sated Dreadshard
+    event.recipes.occultism.ritual(
+      'kubejs:sated_dreadshard',
+      [
+        'naturesaura:token_anger',
+        'minecraft:honey_bottle',
+        'arsdelight:chimera_meat',
+        'sons_of_sins:ribs',
+        'farmersdelight:tomato_sauce',
+        'kubejs:sacred_node'
+      ],
+      'kubejs:thirsting_dreadshard',
+      'occultism:craft_foliot'
+    ).dummy('kubejs:ritual_dummy/sated_dreadshard').useItem('kubejs:book_of_invocation')
     //Dimensional Storage
     //Controller Base
     event.remove({ id: 'occultism:ritual/craft_storage_controller_base' })
