@@ -103,7 +103,10 @@ ServerEvents.recipes(event => {
     event.recipes.goety.ritual('bloodmagic:sacrificialdagger', 'goety:craft', [
             'kubejs:bone_needle',
             'evilcraft:dark_spike',
-            'hexerei:blood_bottle',
+            'kubejs:dread_echoes',
+            'kubejs:dread_echoes',
+            'kubejs:dread_echoes',
+            'kubejs:dread_echoes',
             'kubejs:vengeful_node'
         ])
         .activationItem('delightful:steel_knife')
@@ -138,6 +141,18 @@ ServerEvents.recipes(event => {
         .soulCost(10)
         .duration(10)
         .id('kubejs:goety/dark_ritual/forging/hexerei_crystal_cube_to_goety_crystal_cube')
+    //Flesh Plunderer
+    event.remove({output: 'biomancy:despoil_sickle'})
+    event.recipes.goety.ritual('biomancy:despoil_sickle', 'goety:craft', [
+            'hexerei:blood_bottle',
+            '#forge:bones',
+            'malum:living_flesh'
+        ])
+        .activationItem('hexalia:briar_sickle')
+        .craftType('forge')
+        .soulCost(1)
+        .duration(10)
+        .id('kubejs:goety/dark_ritual/forging/flesh_plunderer')
     //Wicked Boline
     event.remove({ id: 'goety:wicked_boline' })
     /* event.recipes.goety.ritual('goety:wicked_boline', 'goety:craft', [

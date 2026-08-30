@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         'void',
         3355443,
         [
-            {'item': 'culturaldelights:eggplant'},
+            {'item': 'malum:processed_soulstone'},
             {'tag': 'forge:gems/zanite'},
             {'item': 'minecraft:flint'},
             {'item': 'goety:nightshade_blossom'}
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         'emeradic',
         3492376,
         [
-            {'item': 'tconstruct:earth_slime_crystal_block'},
+            {'item': 'gtceu:soapstone_dust'},
             {'item': 'ars_nouveau:mendosteen_pod'},
             {'item': 'goety:jade'},
             {'item': 'minecraft:moss_block'}

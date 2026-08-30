@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         ],
         15,
         20,
-        'hexerei:blood_bottle',
+        'sons_of_sins:bottle_of_blood',
         'vampirism:vampire_blood_bottle'
     )
     bioBrew(
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
     //Heart to weak human heart
     bioBrew(
         [
-            {'item': 'magichem:essentia_fleshy'},
+            {'item': 'magichem:essentia_nourishing'},
             {'item': 'vampirism:pure_salt'},
             {'item': 'kubejs:lifecrystal'}
         ],

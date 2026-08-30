@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
             {"item": "hexerei:sage"},
             {"item": "embers:ash"},
             {"item": "hexalia:ghost_powder"},
-            {"item": "vampirism:item_garlic"},
+            {"item": "vampirism:pure_salt"},
             {"item": "eidolon:enchanted_ash"},
             {"item": "malum:cthonic_gold"}
         ],
@@ -290,7 +290,7 @@ ServerEvents.recipes(event => {
             {'item': 'mna:aum'},
             {'item': 'magichem:admixture_crystal'}
         ],
-        'eidolon:enchanted_ash',
+        'gtceu:gypsum_dust',
         'vampirism:pure_salt', 4
     )
 })

@@ -1,20 +1,21 @@
 ServerEvents.tags('item', event => {
     event.add('kubejs:1_echo_worth', [
         'biomancy:mob_sinew',
-        'vampirism:vampire_fang'
+        'vampirism:vampire_fang',
+        'farmersdelight:ham'
     ])
     event.add('kubejs:4_echoes_worth', [
         'sons_of_sins:heart',
         'sons_of_sins:flesh_of_demise',
-        'vampirism:weak_human_heart',
         'alexsmobs:mosquito_proboscis',
         'alexsmobs:blood_sac',
-        'eternal_starlight:rookfish_air_sac'
+        'vampiresdelight:human_eye'
     ])
     event.add('kubejs:8_echoes_worth', [
         'eidolon:zombie_heart',
         'sons_of_sins:ribs',
-        'sons_of_sins:muscle'
+        'sons_of_sins:muscle',
+        'vampirism:weak_human_heart'
     ])
     event.add('kubejs:12_echoes_worth', [
         'sons_of_sins:spider_heart',
@@ -51,10 +52,10 @@ ServerEvents.tags('item', event => {
         'sons_of_sins:charged_creeper_ribs',
         'sons_of_sins:golem_cuirass',
         'sons_of_sins:ravager_muscle',
-        'eidolon:withered_heart'
+        'eidolon:withered_heart',
+        'lendersdelight:koboleton_meat'
     ])
     event.add('kubejs:32_echoes_worth', [
-        'lendersdelight:koboleton_meat',
         'ender_sins:golem_heart',
         'ender_sins:enderling_muscle',
         'alexsmobs:warped_muscle',

@@ -27,7 +27,7 @@ ClientEvents.lang('en_us', event => {
     event.renameItem('malum:living_flesh', 'Revitalized Flesh')
     event.renameItem('malum:block_of_living_flesh', 'Block of Revitalized Flesh')
     event.renameItem('caverns_and_chasms:living_flesh', 'Quasianimate Flesh')
-    //Crystal ball dedup
+    //Crystal ball dedup (also, no ball allowed in block game)
     event.renameItem('hexerei:crystal_ball', "Crystal Cube")
     event.renameItem('goety:crystal_ball', "Scryer's Crystal Cube")
     //Quark

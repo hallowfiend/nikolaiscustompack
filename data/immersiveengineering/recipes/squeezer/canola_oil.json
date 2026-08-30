@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:squeezer",
+  "energy": 6400,
+  "fluid": {
+    "amount": 80,
+    "fluid": "actuallyadditions:canola_oil"
+  },
+  "input": {
+    "item": "frycooks_delight:canola"
+  }
+}
