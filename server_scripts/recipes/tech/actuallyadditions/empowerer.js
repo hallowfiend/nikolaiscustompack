@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     const yeet = [
-        'actuallyadditions:empowering/diamantine',
+        'actuallyadditions:empowering/diamatine',
         'actuallyadditions:empowering/enori',
         'actuallyadditions:empowering/void',
         'actuallyadditions:empowering/palis',
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
                 "item": `actuallyadditions:empowered_${type}_crystal`
             },
             "time": 50
-            })
+            }).id(`actuallyadditions:empowering/${type}`)
     }
     empowerCrystal(
         'enori',
@@ -43,14 +43,14 @@ ServerEvents.recipes(event => {
             {'item': 'culturaldelights:eggplant'},
             {'tag': 'forge:gems/zanite'},
             {'item': 'minecraft:flint'},
-            {'item': 'goety:nightshade'}
+            {'item': 'goety:nightshade_blossom'}
         ]
     )
     empowerCrystal(
         'restonia',
         10365735,
         [
-            {'tag': 'forge:ingots/conductive_alloy'},
+            {'item': 'enderio:conductive_alloy_ingot'},
             {'item': 'gtceu:garnet_gem'},
             {'item': 'gtceu:netherrack_dust'},
             {'item': 'minecraft:beetroot'}
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         ]
     )
     empowerCrystal(
-        'diamantine',
+        'diamatine',
         6522834,
         [
             {'item': 'minecraft:clay'},

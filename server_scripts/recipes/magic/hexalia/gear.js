@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         ], {
     S: 'kubejs:woven_silk',
     K: 'minecraft:kelp',
-    W: 'hexerei:water_node',
+    W: 'hexalia:water_node',
     N: '#forge:tools/needles'
     }).keepIngredient('').id('kubejs:shaped/bogshade_boots')
     //silkweave armor

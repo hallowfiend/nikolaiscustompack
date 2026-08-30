@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
       ],
       'botania:mana_diamond',
       'occultism:craft_foliot'
-    ).dummy("kubejs:ritual_dummy/undergarden_catalyst").useItem('eidolon:chant_scroll')
+    ).dummy("kubejs:ritual_dummy/undergarden_catalyst").useItem('kubejs:book_of_invocations')
     //Codex Arcana
     event.recipes.occultism.ritual(
       'mna:guide_book',
@@ -25,9 +25,9 @@ ServerEvents.recipes(event => {
         'eidolon:magic_ink',
         'occultism:otherworld_essence'
       ],
-      'minecraft:book_and_quill',
+      'minecraft:writable_book',
       'occultism:craft_foliot'
-    ).dummy('kubejs:ritual_dummy/codex_arcana').useItem('malum:chunk_of_brilliance')
+    ).dummy('kubejs:ritual_dummy/codex_arcana').useItem('minecraft:experience_bottle')
     //Dimensional Storage
     //Controller Base
     event.remove({ id: 'occultism:ritual/craft_storage_controller_base' })

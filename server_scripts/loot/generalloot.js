@@ -3,6 +3,7 @@
 LootJS.modifiers((event) => {
   event
     .addLootTableModifier(/.*/)
+    .replaceLoot('reliquary:zombie_heart', 'eidolon:zombie_heart', true)
     .replaceLoot('culturaldelights:squid', 'miners_delight:squid', true)
     .replaceLoot('culturaldelights:glow_squid', 'miners_delight:glow_squid', true)
     .replaceLoot('eidolon:sulfur', 'gtceu:sulfur_dust', true)

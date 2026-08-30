@@ -37,132 +37,132 @@ ServerEvents.recipes(event => {
         'minecraft:pink_wool',
         'gtceu:rock_salt_dust',
         'collectorsreap:strawberry_gummy',
-        'slimy'
+        'splendid_slimes:slimy'
     )
     brewSlimeHeart(
         'ichor',
         'goety:spider_nest',
         'vampiresdelight:human_eye',
         'dungeonsdelight:spider_salmagundi',
-        'all-seeing'
+        'splendid_slimes:all_seeing'
     )
     brewSlimeHeart(
         'earth',
         'actuallyadditions:restonia_crystal_block',
         'create:rose_quartz',
         'farmersrespite:black_tea',
-        'bitwise'
+        'splendid_slimes:bitwise'
     )
     brewSlimeHeart(
         'ichor',
         'botania:blaze_mesh',
         'twilightforest:torchberries',
         'arsdelight:bombegranate_jam',
-        'blazing'
+        'splendid_slimes:blazing'
     )
     brewSlimeHeart(
         'earth',
         'malum:block_of_grim_talc',
         'reliquary:rib_bone',
         'brewinandchewin:flaxen_cheese_wedge',
-        'bony'
+        'splendid_slimes:bony'
     )
     brewSlimeHeart(
         'earth',
         'caverns_and_chasms:tmt',
         'savage_and_ravage:creeper_spores',
         'cosmopolitan:paw_cookie',
-        'boomcat'
+        'splendid_slimes:boomcat'
     )
     brewSlimeHeart(
         'ender',
         'minecraft:purpur_block',
         'eidolon:ender_calx',
         'ends_delight:bubble_tea',
-        'ender'
+        'splendid_slimes:ender'
     )
     brewSlimeHeart(
         'ichor',
         'malum:block_of_cthonic_gold',
         'eidolon:magic_ink',
         'minecraft:golden_apple',
-        'gold'
+        'splendid_slimes:gold'
     )
     brewSlimeHeart(
         'ichor',
         'minecraft:glowstone',
         'netherexp:lightspores',
         'miners_delight:glow_ink_pasta',
-        'luminous'
+        'splendid_slimes:luminous'
     )
     brewSlimeHeart(
         'ender',
         'neapolitan:mint_ice_cream_block',
         'apotheosis:infused_dragon_breath',
         'alexsmobsdelight:rainbow_custard',
-        'minty'
+        'splendid_slimes:minty'
     )
     brewSlimeHeart(
         'earth',
         'create:experience_block',
         'experienceobelisk:bibliophage',
         'sob:exp_candy',
-        'orby'
+        'splendid_slimes:orby'
     )
     brewSlimeHeart(
         'sky',
         'malum:block_of_astral_weave',
         'biomancy:insomnia_cure',
         'dungeonsdelight:ghast_roll',
-        'phantom'
+        'splendid_slimes:phantom'
     )
     brewSlimeHeart(
         'sky',
         'minecraft:sea_lantern',
         'create:rose_quartz',
         'delightful:rock_candy',
-        'prisma'
+        'splendid_slimes:prisma'
     )
     brewSlimeHeart(
         'sky',
         'minecraft:sea_lantern',
         'create:andesite_alloy',
         'farmersdelight:melon_juice',
-        'puddle'
+        'splendid_slimes:puddle'
     )
     brewSlimeHeart(
         'earth',
         'minecraft:mud',
         'malum:rotting_essence',
         'dungeonsdelight:rubaboo',
-        'rotting'
+        'splendid_slimes:rotting'
     )
     brewSlimeHeart(
         'ender',
         'minecraft:obsidian',
         'minecraft:chorus_fruit',
         'ends_delight:shulker_soup',
-        'shulking'
+        'splendid_slimes:shulking'
     )
     brewSlimeHeart(
         'sky',
         'supplementaries:sugar_cube',
         'minecraft:honey_bottle',
         'minecraft:cake',
-        'sweet'
+        'splendid_slimes:sweet'
     )
     brewSlimeHeart(
         'sky',
         'minecraft:quartz_block',
         'goety:venomous_fang',
         'dungeonsdelight:spider_donut',
-        'webby'
+        'splendid_slimes:webby'
     )
     brewSlimeHeart(
         'ichor',
         'malum:block_of_living_flesh',
         'kubejs:shifting_tincture',
         'mynethersdelight:bread_loaf',
-        'weeping'
+        'splendid_slimes:weeping'
     )
 })

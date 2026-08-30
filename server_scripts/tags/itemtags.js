@@ -2,15 +2,11 @@
 
 ServerEvents.tags("item", (event) => {
   //#region event.add item tag
-  event.add('forge:hearts', [
-        'eidolon:zombie_heart',
+  event.add('forge:fleshy_heart', [
         'sons_of_sins:heart',
         'vampirism:human_heart',
         'vampirism:weak_human_heart',
-        'eidolon:wraith_heart',
-        'eidolon:withered_heart',
-        'lendersdelight:maledictus_heart',
-        'alexsmobs:soul_heart',
+        'cyber_ware_port:body_part_heart'
     ]);
   event.add('forge:zombie_heart', [
         'eidolon:zombie_heart',
@@ -62,7 +58,6 @@ ServerEvents.tags("item", (event) => {
   event.add('forge:wither_heart', [
         'eidolon:withered_heart',
         'sosorgans:wither_skeleton_heart',
-        'deeperdarker:heart_of_the_deep',
         'alexsmobs:soul_heart',
         'reliquary:nebulous_heart'
     ])

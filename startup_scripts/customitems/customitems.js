@@ -258,6 +258,27 @@ StartupEvents.registry('item', event => {
     .tag('embers:aspectus/sterling_silver')
     event.create('bone_needle')
     .displayName('Bone Needle')
+    event.create('book_of_invocations')
+    .displayName('Book of Invocations')
+    .maxDamage(64)
+    .use((level, player, hand) => {
+        if (player == null || !player.isPlayer()) return true;
+        let mainItemStack = player.getItemInHand(hand)
+        if (level.clientSide) return true;
+        // let darkReputation = player.getCapability(ForgeCapabilities.IReputation).getReputation()
+        const effects = player.potionEffects;
+        effects.add('constructs_casting:holy_empowerment', 120*20)
+        effects.add('constructs_casting:blood_empowerment', 120*20)
+        player.playSound('malum:arcana_page_flipped')
+        player.playSound('eidolon:chant_word')
+        let damage = mainItemStack.getDamageValue();
+        mainItemStack.setDamageValue(damage-1)
+        player.getCooldowns().addCooldown(mainItemStack, 160)
+    })
+    event.create('dread_echoes')
+    .displayName('Dread Echoes');
+    event.create('thirsting_dreadshard')
+    .displayName('Thirsting Dreadshard')
 })
 
 ItemEvents.modification(event => {

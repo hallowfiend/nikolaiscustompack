@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
         'DAD'
     ], {
         A: 'ars_nouveau:source_gem',
-        B: 'ggtceu:arcane_gold_rod',
+        B: 'gtceu:arcane_gold_rod',
         C: 'kubejs:shifting_tincture',
         D: 'malum:cthonic_gold'
     }).id('kubejs:shaped/mycelial_sourcelink')

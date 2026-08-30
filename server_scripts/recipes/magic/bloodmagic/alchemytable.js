@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
     )
     //base catalysts
     event.remove({id: 'bloodmagic:alchemytable/simple_catalyst'})
-    event.remove({id: 'bloodmagic:alchemytable/strenghtened_catalyst'})
+    event.remove({id: 'bloodmagic:alchemytable/strengthened_catalyst'})
     alchemytable('2x bloodmagic:simplecatalyst',
         [
             'minecraft:sugar',
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     )
     alchemytable('bloodmagic:strengthenedcatalyst',
         [
-            'bloodmagic:simple_catalyst',
+            'bloodmagic:simplecatalyst',
             'gtceu:sal_ammoniac_dust',
             'minecraft:glow_berries',
             'vampiresdelight:rice_dough',
@@ -165,8 +165,8 @@ ServerEvents.recipes(event => {
         {type: 'void', tier: 2, inputs: [
             {item: 'kubejs:destructive_node'},
             {item: 'malum:malignant_lead'},
-            {item: 'kubejs:rune_void'},
-            {item: 'actuallyadditions:empowered_void_crystal'}
+            {item: 'gtceu:darkened_silver_ingot'},
+            {item: 'actuallyadditions:empowered_void_crystal_block'}
         ]},
         {type: 'binding', tier: 3, inputs: [
             {item: 'goety:flying_ointment'},
@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
             {item: 'hexalia:spiritroot_tether'},
             {item: 'eidolon:tether_incense'},
             {item: 'kubejs:rune_chastity'},
-            {item: 'goety:fire_spawner_cage'}
+            {item: 'goety:flame_capture'}
         ]},
         {type: 'consumption', tier: 3, inputs:[
             {item: 'biomancy:decomposer'},

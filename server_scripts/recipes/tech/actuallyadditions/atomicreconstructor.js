@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
         H: '#forge:tools/hammers',
         W: '#forge:tools/wrenches',
         I: '#forge:rods/steel',
-        G: 'gtceu:black_lens',
+        G: 'gtceu:black_glass_lens',
         B: 'actuallyadditions:black_quartz'
     }).damageIngredient('#forge:tools/hammers').damageIngredient('#forge:tools/wrenches')
     event.shaped('actuallyadditions:lens_of_color', [
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
         'VAV'
     ], {
         A: 'magichem:admixture_color',
-        B: 'magichem:bleached_amethyst',
+        B: 'magichem:bleached_amethyst_shard',
         V: 'actuallyadditions:empowered_emeradic_crystal',
         L: 'actuallyadditions:lens'
     })
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
         'DLD',
         'SVS'
     ], {
-        V: Item.of('minecraft:enchanted_book', "{Enchantments:[{id:\"minecraft:sharpness\",lvl:5s}]}"),
+        V: Item.of('minecraft:enchanted_book', "{Enchantments:[{id:\"minecraft:sharpness\",lvl:5s}]}").weakNBT(),
         S: 'actuallyadditions:empowered_restonia_crystal_block',
         D: 'evilcraft:spiked_plate',
         L: 'actuallyadditions:lens_of_certain_death'
@@ -132,10 +132,10 @@ ServerEvents.recipes(event => {
     event.shaped('actuallyadditions:lens_of_disenchanting', [
         'EAV',
         'MLM',
-        'VEA'
+        'VAE'
     ], {
         V: 'actuallyadditions:empowered_palis_crystal_block',
-        E: 'actuallyadditions:empowered_diamantine_crystal_block',
+        E: 'actuallyadditions:empowered_diamatine_crystal_block',
         A: 'apotheosis:mythic_material',
         M: 'goety:mystic_core',
         L: 'actuallyadditions:lens'

@@ -24,21 +24,23 @@ ServerEvents.recipes(event => {
         f: '#forge:tools/files'
     }).damageIngredient('#forge:tools/files').id('kubejs:shaped/cauldron_ladle')
     //cauldron crafting proper
-    function cauldronCraft(soulCost, color, ingredients, output){
+    function cauldronCraft(soulCost, color, ingredients, takeWith, output, outputCount){
         event.custom({
     "type": "goety:cauldron",
     "soulCost": soulCost,
     "color": color,
     "levelLeft": 1,
     "take_with": {
-        "item": "minecraft:glass_bottle"
+        "item": takeWith
     },
     "ingredients": ingredients,
     "result": {
-        "item": output
+        "item": output,
+        "count": outputCount
     }
     }).id(`kubejs:goety/cauldron_crafting/${output.split(":")[1]}`)
     }
+    //UNGUENTS
     //tier 1
     //atropos serum
     cauldronCraft(
@@ -54,7 +56,8 @@ ServerEvents.recipes(event => {
             {"item": "undergarden:mogmoss"},
             {"item": "kubejs:concentratedcatalyst"}
         ],
-        'kubejs:atropos_serum'
+        "minecraft:glass_bottle",
+        'kubejs:atropos_serum', 1
     )
     //anointing paste
     cauldronCraft(
@@ -70,7 +73,8 @@ ServerEvents.recipes(event => {
             {"item": "eidolon:enchanted_ash"},
             {"item": "malum:cthonic_gold"}
         ],
-        'kubejs:anointing_paste'
+        "minecraft:glass_bottle",
+        'kubejs:anointing_paste', 1
     )
     //seething nethersblood
     cauldronCraft(
@@ -85,7 +89,8 @@ ServerEvents.recipes(event => {
             {'item': 'minecraft:magma_cream'},
             {'item': 'malum:blazing_quartz'}
         ],
-        'kubejs:seething_nethersblood'
+        "minecraft:glass_bottle",
+        'kubejs:seething_nethersblood', 1
     )
     //shifting tincture
     cauldronCraft(
@@ -100,7 +105,8 @@ ServerEvents.recipes(event => {
             {'item': 'minecraft:cod'},
             {'item': 'minecraft:blue_orchid'}
         ],
-        'kubejs:shifting_tincture'
+        "minecraft:glass_bottle",
+        'kubejs:shifting_tincture', 1
     )
     //deepbore tar
     cauldronCraft(
@@ -115,7 +121,8 @@ ServerEvents.recipes(event => {
             {"item": "minecraft:potato"},
             {"item": "minecraft:coal_block"}
         ],
-        'kubejs:deepbore_tar'
+        "minecraft:glass_bottle",
+        'kubejs:deepbore_tar', 1
     )
     //sanctified steam
     cauldronCraft(
@@ -130,7 +137,8 @@ ServerEvents.recipes(event => {
             {'item': 'hexalia:spirit_powder'},
             {'item': 'malum:alchemical_calx'}
         ],
-        'kubejs:sanctified_steam'
+        "minecraft:glass_bottle",
+        'kubejs:sanctified_steam', 1
     )
     //whiff of vitality
     cauldronCraft(
@@ -141,11 +149,12 @@ ServerEvents.recipes(event => {
             {'item': 'delightful:acorn'},
             {'item': 'minecraft:birch_sapling'},
             {'item': 'minecraft:spruce_sapling'},
-            {'tag': 'forge:crops/eggplant'},
+            {'item': 'culturaldelights:eggplant'},
             {'item': 'hexalia:menders_salve'},
             {'item': 'farmersrespite:green_tea_leaves'}
         ],
-        'kubejs:whiff_of_vitality'
+        "minecraft:glass_bottle",
+        'kubejs:whiff_of_vitality', 1
     )
     //tier 2
     //blacksmithing resin
@@ -159,7 +168,8 @@ ServerEvents.recipes(event => {
             {'item': 'minecraft:honeycomb'},
             {'item': 'goety:henbane_flower'}
         ],
-        'kubejs:blacksmithing_resin'
+        "minecraft:glass_bottle",
+        'kubejs:blacksmithing_resin', 1
     )
     //caustic oil
     cauldronCraft(
@@ -172,7 +182,8 @@ ServerEvents.recipes(event => {
             {'item': 'hexalia:witchweed'},
             {'item': 'minecraft:gunpowder'}
         ],
-        'kubejs:caustic_oil'
+        "minecraft:glass_bottle",
+        'kubejs:caustic_oil', 1
     )
     //daemonic preparation
     cauldronCraft(
@@ -180,12 +191,13 @@ ServerEvents.recipes(event => {
         8560539,
         [
             {'item': 'kubejs:seething_nethersblood'},
-            {'item': 'vampirism:human_heart'},
+            {'tag': 'forge:fleshy_heart'},
             {'item': 'occultism:datura'},
             {'item': 'hexerei:belladonna_flowers'},
             {'item': 'goety:hunger_core'}
         ],
-        'kubejs:daemonic_preparation'
+        "minecraft:glass_bottle",
+        'kubejs:daemonic_preparation', 1
     )
     //ecologist's distillation
     cauldronCraft(
@@ -198,7 +210,8 @@ ServerEvents.recipes(event => {
             {'item': 'minecraft:vine'},
             {'item': 'hexerei:mugwort_leaves'}
         ],
-        'kubejs:ecologists_distillation'
+        "minecraft:glass_bottle",
+        'kubejs:ecologists_distillation', 1
     )
     //realmsplit dew
     cauldronCraft(
@@ -211,7 +224,8 @@ ServerEvents.recipes(event => {
             {'tag': 'forge:gems/certus_quartz'},
             {'item': 'goety:mystic_core'}
         ],
-        'kubejs:realmsplit_dew'
+        "minecraft:glass_bottle",
+        'kubejs:realmsplit_dew', 1
     )
     //tier 3
     //logistician's alkahest
@@ -227,7 +241,8 @@ ServerEvents.recipes(event => {
             {'item': 'goety:animation_core'},
             {'item': 'hexalia:galeberries'}
         ],
-        'kubejs:logisticians_alkahest'
+        "minecraft:glass_bottle",
+        'kubejs:logisticians_alkahest', 1
     )
     //flying ointment
     event.remove({id: 'goety:cauldron/flying_ointment'})
@@ -243,7 +258,8 @@ ServerEvents.recipes(event => {
             {'item': 'minecraft:poppy'},
             {'item': 'minecraft:ender_eye'}
         ],
-        'goety:flying_ointment'
+        "minecraft:glass_bottle",
+        'goety:flying_ointment', 1
     )
     //frostfire reduction
     cauldronCraft(
@@ -258,6 +274,23 @@ ServerEvents.recipes(event => {
             {'item': 'windswept:snowdrop'},
             {'item': 'magichem:admixture_cold'}
         ],
-        'kubejs:frostfire_reduction'
+        "minecraft:glass_bottle",
+        'kubejs:frostfire_reduction', 1
+    )
+    //OTHER STUFF
+    //Pure Salt
+    cauldronCraft(
+        1000,
+        14214366,
+        [
+            {'item': 'gtceu:salt_dust'},
+            {'item': 'gtceu:salt_dust'},
+            {'item': 'gtceu:salt_dust'},
+            {'item': 'vampirism:item_garlic'},
+            {'item': 'mna:aum'},
+            {'item': 'magichem:admixture_crystal'}
+        ],
+        'eidolon:enchanted_ash',
+        'vampirism:pure_salt', 4
     )
 })

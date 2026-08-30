@@ -206,7 +206,8 @@ global.removedItems = [
   'actuallyadditions:laser_relay_item_advanced',
   'actuallyadditions:bats_wing',
   'actuallyadditions:feeder',
-  'actuallyadditions:dropper'
+  'actuallyadditions:dropper',
+  'actuallyadditions:lens_of_the_miner'
 ];
 
 global.removedRecipeIds = [

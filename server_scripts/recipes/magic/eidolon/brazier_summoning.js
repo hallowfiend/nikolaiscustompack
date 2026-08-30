@@ -338,6 +338,14 @@ ServerEvents.recipes(event => {
     'aether:golden_aercloud',
     'malum:aerial_spirit'
   )
+  brazier_summoning(
+    'alexsmobs:murmur',
+    1,
+    'minecraft:cherry_sapling',
+    'kubejs:dread_echoes',
+    'eidolon:wicked_weave',
+    'eidolon:wicked_weave'
+  )
   //Cold Sweat
   brazier_summoning(
     'cold_sweat:chameleon',

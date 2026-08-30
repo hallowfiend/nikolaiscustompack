@@ -11,10 +11,10 @@ ServerEvents.recipes(event => {
         "item": "kubejs:undirected_node"
     },
     "input2": {
-        "item": "goety:magic_emerald"
+        "item": "goety:empty_focus"
     },
     "input3": {
-        "item": "eidolon:soul_shard"
+        "item": "eidolon:lesser_soul_gem"
     },
     "minimumDrain": 1.0,
     "output": {

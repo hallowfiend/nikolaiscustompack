@@ -35,6 +35,34 @@ ServerEvents.recipes((event) => {
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:arcane_charcoal', 600)
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:block_of_arcane_charcoal', 6000)
 
+  //dread shard
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'actuallyadditions:restonia_crystal_block',
+      "count": 1
+    },
+    "output": {
+      "item": 'kubejs:thirsting_dreadshard',
+      "count": 1
+    },
+    "extra_items": [
+      {
+        "item": "evilcraft:dark_power_gem",
+        "count": 1
+      },
+      {
+        "item": "kubejs:dread_echoes",
+        "count": 16
+      }
+    ],
+    "spirits": [
+      {
+        "type": "wicked",
+        "count": 64
+      }
+    ]
+  })
   //goety fabrics
   const fabrics = [
     'dark',

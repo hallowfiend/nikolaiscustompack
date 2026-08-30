@@ -4,7 +4,8 @@ ServerEvents.recipes(event => {
       "type": "occultism:ritual",
       "ritual_type": "occultism:summon",
       "activation_item": {
-        "item": "hexalia:athame"
+        "item": "hexalia:athame",
+        "nbt": '{Damage:0}'
       },
       "pentacle_id": "occultism:summon_foliot",
       "duration": 60,
@@ -20,7 +21,7 @@ ServerEvents.recipes(event => {
           "item": "minecraft:poisonous_potato"
         },
         {
-          "item": "goety:nightshade"
+          "item": "goety:nightshade_blossom"
         }
       ],
       "result": {

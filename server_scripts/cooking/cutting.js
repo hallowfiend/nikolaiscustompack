@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
 
     //Progression stuff
     //Infused thread
-    event.remove({id: 'mna:manaweaving/intermediate/infused_thread'})
+    event.remove({id: 'mna:manaweaving/armor/infused_thread'})
     event.shapeless('4x mna:infused_thread', ['mna:infused_silk', '#forge:shears'])
     .damageIngredient('#forge:shears', 1).id('kubejs:shapeless/infused_thread')
     event.custom({

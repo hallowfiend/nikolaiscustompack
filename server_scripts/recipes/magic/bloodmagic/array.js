@@ -2,7 +2,6 @@ ServerEvents.recipes(event => {
     //Effect arrays
     const effectArrays = [
         {id: 'bounce', base: '#forge:slimeballs', reagent: 'gtceu:soapstone_dust'},
-        {id: 'day', base: 'malum:blazing_quartz', reagent: 'naturesaura:gold_powder'},
         {id: 'movement', base: '#forge:feathers', reagent: 'minecraft:redstone'},
         {id: 'night', base: 'minecraft:lapis_lazuli', reagent: '#forge:dusts/dark'},
         {id: 'spike', base: 'evilcraft:dark_spike', reagent: '#forge:dusts/silver'},
@@ -10,12 +9,6 @@ ServerEvents.recipes(event => {
     ]
     effectArrays.forEach(array => {
         event.remove({id: `bloodmagic:array/${array.id}`})
-        if (array.id.equals('day')){
-        event.recipes.bloodmagic
-        .array('minecraft:bedrock', array.base, array.reagent)
-        .texture(`bloodmagic:textures/models/alchemyarrays/sunarray.png`)
-        .id(`bloodmagic:array/${array.id}`);
-        }
         if (array.id.equals('night')){
         event.recipes.bloodmagic
         .array('minecraft:bedrock', array.base, array.reagent)

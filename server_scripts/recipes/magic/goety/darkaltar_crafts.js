@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     //NECROTURGY RITUALS
     //Dormant Weak Blood Orb
     event.recipes.goety.ritual('kubejs:dormant_weak_blood_orb', 'goety:craft', [
-            'eidolon:lesser_soul_gem',
+            'kubejs:thirsting_soulshard',
             'eidolon:holy_symbol',
             'eidolon:offering_incense',
             'hexalia:celestial_crystal'
@@ -16,8 +16,8 @@ ServerEvents.recipes(event => {
     event.recipes.goety.ritual('kubejs:dormant_apprentice_blood_orb', 'goety:craft', [
             'elementalcraft:springaline_shard',
             'bloodmagic:holy_water_anointment',
-            'apotheosis:uncommon_material',
-            'magichem:signalite_block'
+            'actuallyadditions:empowered_restonia_crystal_block',
+            'eidolon:lesser_soul_gem'
         ])
         .activationItem('evilcraft:blood_orb_filled')
         .craftType('necroturgy')

@@ -68,4 +68,20 @@ ServerEvents.recipes((event) => {
     "count": 8
     }
     }).id('eidolon:wicked_weave')
+    //Book of Invocations
+    event.shaped('kubejs:book_of_invocations', [
+        'RBG',
+        'DOL',
+        'PNU'
+    ], {
+        R: '#forge:dyes/red',
+        U: '#forge:dyes/yellow',
+        G: 'eidolon:gold_inlay',
+        P: 'eidolon:pewter_inlay',
+        O: 'eidolon:wicked_weave',
+        B: Item.of('eidolon:chant_scroll', '{Damage:0,spell:[{id:"eidolon:sacred"},{id:"eidolon:soul"},{id:"eidolon:sacred"},{id:"eidolon:soul"}]}').strongNBT(),
+        N: Item.of('eidolon:chant_scroll', '{Damage:0,spell:[{id:"eidolon:wicked"},{id:"eidolon:soul"},{id:"eidolon:wicked"},{id:"eidolon:soul"}]}').strongNBT(),
+        L: Item.of('eidolon:chant_scroll', '{Damage:0,spell:[{id:"eidolon:sacred"},{id:"eidolon:sacred"},{id:"eidolon:sacred"}]}').strongNBT(),
+        D: Item.of('eidolon:chant_scroll', '{Damage:0,spell:[{id:"eidolon:wicked"},{id:"eidolon:wicked"},{id:"eidolon:wicked"}]}').strongNBT()
+    }).id('kubejs:shaped/book_of_invocations')
 })

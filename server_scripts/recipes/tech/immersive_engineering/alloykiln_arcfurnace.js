@@ -60,19 +60,19 @@ ServerEvents.recipes((event) => {
     arcFurnace(
         'malum:natural_quartz',
         1,
-        [{'tag': 'forge:dusts/graphite', 'count': 4}],
+        [{'item': 'gtceu:graphite_dust', 'count': 4}],
         'actuallyadditions:black_quartz',
         1
     )
     arcFurnace(
         'gtceu:ruby_gem',
         4,
-        [{'item': 'kubejs:blood_slime_ball'}, {'item': 'actuallyadditions:empowered_restonia_crystal'}],
+        [{'item': 'kubejs:blood_slime_ball'}],
         'kubejs:bloodchannel_gem',
         1
     )
     event.recipes.gtceu.alloy_smelter(`bloodchannel_gem`)
-        .itemInputs([`gtceu:ruby_gem`, `kubejs:blood_slime_ball`])
+        .itemInputs([`4x gtceu:ruby_gem`, `kubejs:blood_slime_ball`])
         .itemOutputs(`kubejs:bloodchannel_gem`)
         .duration(80)
         .EUt(GTValues.VA[GTValues.LV]);
@@ -207,7 +207,7 @@ ServerEvents.recipes((event) => {
     arcFurnace(
         'evilcraft:potentia_sphere',
         1,
-        [{'item': 'evilcraft:dark_gem'}, {'item': 'bloodmagic:suppressionreagent'}, {'item': 'actuallyadditions:empowered_void_crystal'}, {'item': 'minecraft:redstone_torch'}],
+        [{'item': 'evilcraft:dark_gem'}, {'item': 'bloodmagic:reagentsuppression'}, {'item': 'actuallyadditions:empowered_void_crystal'}, {'item': 'minecraft:redstone_torch'}],
         'evilcraft:inverted_potentia',
         1
     )

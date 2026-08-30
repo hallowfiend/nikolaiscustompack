@@ -8,12 +8,12 @@ StartupEvents.registry('item', (event) => {
     registerRitualDummy(
         'undergarden_catalyst',
         'Craft Catalyst',
-        'With the blessing of the Otherworld, create a keystone capable of catalyzing the formation of a planar rift to the Undergarden.'
+        'With the blessing of the Otherworld and invoking higher powers, create a keystone capable of catalyzing the formation of a planar rift to the Undergarden.'
     )
     registerRitualDummy(
         'codex_arcana',
         'Craft Codex Arcana',
-        "Borrowing scant wisps of knowledge from the Otherworld and combining it with crystalized memory of ages past, inscribe a book with sigils and symbols that can open one's mind to the flow of mana through the planes."
+        "Borrowing scant wisps of knowledge from the Otherworld and combining it with condensed memory, inscribe a book with sigils and symbols that can open one's mind to the flow of mana through the planes."
     )
     registerRitualDummy(
         'conjure_witch',

@@ -53,8 +53,12 @@ ServerEvents.recipes(event => {
         "count": 16
       },
       {
-        "item": "gtceu:cinnabar_block",
+        "item": "gtceu:cinnabar_gem",
         "count": 8
+      },
+      {
+        "item": "kubejs:dread_echoes",
+        "count": 4
       },
       {
         "item": "malum:living_flesh",

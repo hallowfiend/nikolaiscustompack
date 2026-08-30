@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
         'evilcraft:dull_dust',
         ['goety:grave_dust', 'mna:arcane_ash', 'minecraft:gunpowder', 'minecraft:sugar', 'occultism:burnt_otherstone', 'eidolon:death_essence']
     ).id('kubejs/shapeless/dull_dust')
+    event.replaceInput({output: 'evilcraft:blood_infusion_core'}, 'evilcraft:dark_power_gem', 'kubejs:thirsting_dreadshard')
     function bloodInfuser(bloodCost, input, output, duration, tier){
         event.custom({
         "type": "evilcraft:blood_infuser",
@@ -22,6 +23,7 @@ ServerEvents.recipes(event => {
         "tier": tier
     }).id(`kubejs:evilcraft/blood_infusion/${output.split(":")[1]}`)
     }
+    //blood slime
     bloodInfuser(
         4000,
         'tconstruct:ichor_slime_ball',
@@ -43,7 +45,8 @@ ServerEvents.recipes(event => {
     {
         b: 'kubejs:blood_slime_ball'
     }).id('kubejs:shaped/blood_congealed_slime')
-    event.shapeless('4x kubejs:blood_slime_ball', ['kubejs:blood_congealed_slime']).id('kubejs:shapeless/blood_slime_from_congealed'),
+    event.shapeless('4x kubejs:blood_slime_ball', ['kubejs:blood_congealed_slime']).id('kubejs:shapeless/blood_slime_from_congealed')
+    //dull dust
     bloodInfuser(
         10000,
         'evilcraft:dull_dust',
@@ -51,6 +54,7 @@ ServerEvents.recipes(event => {
         100,
         2
     )
+    //blood orb with magichem's glass orb
     bloodInfuser(
         10000,
         'magichem:glass_orb',
@@ -58,16 +62,10 @@ ServerEvents.recipes(event => {
         20,
         1
     )
+    //bloody vellum
     event.remove({id: 'constructs_casting:tools/parts/casting/pages_composite'})
     event.remove({id: /constructs_casting:.*bloody_vellum/})
     event.remove({id: 'irons_spellbooks:filling/bloody_vellum'})
-    bloodInfuser(
-        16000,
-        'bloodmagic:weak_tau',
-        'bloodmagic:strong_tau',
-        240,
-        2
-    )
     bloodInfuser(
         8000,
         'irons_spellbooks:hogskin',
@@ -75,6 +73,31 @@ ServerEvents.recipes(event => {
         160,
         0
     )
+    //tau
+    bloodInfuser(
+        16000,
+        'bloodmagic:weak_tau',
+        'bloodmagic:strong_tau',
+        240,
+        2
+    )
+    //pure blood final step
+    bloodInfuser(
+        40000,
+        'vampirism:pure_blood_3',
+        'vampirism:pure_blood_4',
+        800,
+        2
+    )
+    //weak to normal human heart
+    bloodInfuser(
+        20000,
+        'vampirism:weak_human_heart',
+        'vampirism:human_heart',
+        100,
+        1
+    )
+    //undead sapling
     event.remove({output: 'evilcraft:undead_sapling'})
     bloodInfuser(
         25000,
@@ -83,6 +106,7 @@ ServerEvents.recipes(event => {
         200,
         1
     )
+    //blood-soaked nutrient bar
     bloodInfuser(
         40000,
         'biomancy:nutrient_bar',
