@@ -63,6 +63,7 @@ LootJS.modifiers((event) => {
       'rusticdelight:calamari',
       'actuallyadditions:flax_seeds',
       'actuallyadditions:rice_seeds',
-      'actuallyadditions:canola_seeds'
+      'actuallyadditions:canola_seeds',
+      'actuallyadditions:coffee_seeds'
     ])
 });

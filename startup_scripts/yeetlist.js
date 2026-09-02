@@ -207,7 +207,9 @@ global.removedItems = [
   'actuallyadditions:bats_wing',
   'actuallyadditions:feeder',
   'actuallyadditions:dropper',
-  'actuallyadditions:lens_of_the_miner'
+  'actuallyadditions:lens_of_the_miner',
+  //end of aa yeet section
+  'cleaver_compendium:embers_silver_cleaver'
 ];
 
 global.removedRecipeIds = [

@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
     'ars_nouveau:wilden_stalker',
     3,
     'ars_nouveau:source_gem_block',
-    'malum:astral_weave',
+    'miners_delight:bat_wing',
     'hexerei:mandrake_flowers',
     'hexalia:ghost_powder'
   )
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
     3,
     'ars_nouveau:source_gem_block',
     'minecraft:prismarine_shard',
-    'hexerei:infused_fabric',
+    'hexerei:dried_yellow_dock_flowers',
     'hexalia:galeberries'
   )
   brazier_summoning(

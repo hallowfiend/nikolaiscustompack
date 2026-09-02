@@ -4,12 +4,12 @@ ServerEvents.recipes(event => {
     event.remove({id: 'embersaddcompat:stamping/andesite_alloy_from_iron'})
     event.remove({id: 'create:mixing/andesite_alloy'})
     //wood plate sawing
-    event.shaped('2x gtceu:wood_plate', ['A', 'B'], { A: '#gtceu:crafting_tools/saw', B: '#minecraft:wooden_slabs' })
-    .damageIngredient('#gtceu:crafting_tools/saw')
-    event.shaped('2x gtceu:treated_wood_plate', ['A', 'B'], { A: '#gtceu:crafting_tools/saw', B: '#forge:treated_wood_slab' })
-    .damageIngredient('#gtceu:crafting_tools/saw')
-    event.shaped('2x gtceu:livingwood_plate', ['A', 'B'], { A: '#gtceu:crafting_tools/saw', B: 'botania:livingwood_planks_slab' })
-    .damageIngredient('#gtceu:crafting_tools/saw')
+    event.shaped('2x gtceu:wood_plate', ['A', 'B'], { A: '#forge:tools/saws', B: '#minecraft:wooden_slabs' })
+    .damageIngredient('#forge:tools/saws')
+    event.shaped('2x gtceu:treated_wood_plate', ['A', 'B'], { A: '#forge:tools/saws', B: '#forge:treated_wood_slab' })
+    .damageIngredient('#forge:tools/saws')
+    event.shaped('2x gtceu:livingwood_plate', ['A', 'B'], { A: '#forge:tools/saws', B: 'botania:livingwood_planks_slab' })
+    .damageIngredient('#forge:tools/saws')
     //treated leather
     event.recipes.create.filling("kubejs:treated_leather", [
         "minecraft:leather",

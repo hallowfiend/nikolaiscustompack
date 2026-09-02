@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
       ],
       'kubejs:thirsting_dreadshard',
       'occultism:craft_foliot'
-    ).dummy('kubejs:ritual_dummy/sated_dreadshard').useItem('kubejs:book_of_invocation')
+    ).dummy('kubejs:ritual_dummy/sated_dreadshard').useItem('kubejs:book_of_invocations')
     //Dimensional Storage
     //Controller Base
     event.remove({ id: 'occultism:ritual/craft_storage_controller_base' })
