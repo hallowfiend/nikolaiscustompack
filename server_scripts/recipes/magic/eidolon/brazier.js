@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: /occultism:crafting.*impure/ })
     event.remove({ id: /occultengineering:compacting.*impure/ })
     event.remove({ id: 'mna:wizard_chalk' })
-    event.remove({ id: 'ars_nouveau:runic_chalk' })
+    event.remove({ output: 'ars_nouveau:runic_chalk' }) //output, not id, to prevent the magichem bypass
     //wizard's
     event.custom({
     "type": "eidolon:ritual_brazier_crafting",
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
     "type": "eidolon:ritual_brazier_crafting",
     "focusItems": [
         {
-            "item": "hexalia:purity_idol"
+            "item": "magichem:bleached_amethyst_shard"
         }
     ],
     "output": {
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
             "item": "eidolon:oanna_bloom"
         },
         {
-            "item": "hexerei:selenite_shard"
+            "item": "hexerei:wax_blend"
         },
         {
             "item": "goety:ectoplasm"

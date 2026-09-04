@@ -60,7 +60,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 .where("f", Predicates.blocks("immersiveengineering:sheetmetal_electrum"))
 .where("g", Predicates.blocks("immersiveengineering:insulating_glass"))
 .where("h", Predicates.blocks("immersiveengineering:light_engineering"))
-.where("i", Predicates.blocks("immersivetechnology:barrel_steel"))
+.where("i", Predicates.blocks("immersiveengineering:metal_barrel"))
 .where("j", Predicates.blocks("magichem:signalite_block"))
 
 
