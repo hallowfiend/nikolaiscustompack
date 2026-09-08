@@ -35,6 +35,34 @@ ServerEvents.recipes((event) => {
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:arcane_charcoal', 600)
   event.recipes.immersiveengineering.blast_furnace_fuel('malum:block_of_arcane_charcoal', 6000)
 
+  //occult darkblood => etheric coldblood (expensive)
+  event.custom({
+    "type": "malum:spirit_infusion",
+    "input": {
+      "item": 'hexerei:blood_bottle',
+      "count": 1
+    },
+    "output": {
+      "item": 'sons_of_sins:bottle_of_blood',
+      "count": 1
+    },
+    "extra_items": [
+      {
+        "item": "sons_of_sins:ether_ashes",
+        "count": 4
+      },
+      {
+        "item": "evilcraft:ender_tear",
+        "count": 1
+      }
+    ],
+    "spirits": [
+      {
+        "type": "eldritch",
+        "count": 8
+      }
+    ]
+  })
   //dread shard
   event.custom({
     "type": "malum:spirit_infusion",

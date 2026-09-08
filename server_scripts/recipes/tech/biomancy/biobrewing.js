@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     "result": {
         item: result
     }})}
-    //Vampirism blood
+    //Vampirism blood refining
     bioBrew(
         [
             {'item': 'vampirism:vampire_fang'},
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
             {'item': 'sons_of_sins:bottle_of_blood'},
             {'item': 'sons_of_sins:bottle_of_blood'},
             {'item': 'eidolon:gloom_incense'},
-            {'item': 'biomancy:aging_serum'}
+            {'item': 'biomancy:ageing_serum'}
         ],
         15,
         80,
