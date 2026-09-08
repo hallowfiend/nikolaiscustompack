@@ -269,4 +269,63 @@ ServerEvents.recipes(event => {
             "item": "minecraft:netherite_scrap"
         }
     }).id(`kubejs:embers/alchemy/ingot_of_the_depths`)
+    //Bellows (plus manatide)
+    event.remove({output: "embers:atmospheric_bellows"})
+    event.custom({
+        "type": "embers:alchemy",
+        "aspects": [bronze, brass, copper],
+        "inputs": [
+            {
+                "item": "gtceu:double_copper_plate"
+            },
+            {
+                "item": "gtceu:double_copper_plate"
+            },
+            {
+                "item": "embers:sealed_planks"
+            },
+            {
+                "item": "embers:sealed_planks"
+            },
+            {
+                "item": "gtceu:small_pewter_gear"
+            }
+        ],
+        "output": {
+            "count": 1,
+            "item": "embers:atmospheric_bellows"
+        },
+        "tablet": {
+            "item": "supplementaries:bellows"
+        }
+    }).id(`kubejs:embers/alchemy/atmospheric_bellows`)
+    event.remove({output: 'botania:bellows'})
+    event.custom({
+        "type": "embers:alchemy",
+        "aspects": [zinc, duralumin, sterling_silver],
+        "inputs": [
+            {
+                "item": "botania:livingwood"
+            },
+            {
+                "item": "botania:livingwood"
+            },
+            {
+                "item": "botania:livingwood"
+            },
+            {
+                "item": "botania:rune_air"
+            },
+            {
+                "item": "magichem:admixture_motion"
+            }
+        ],
+        "output": {
+            "count": 1,
+            "item": "botania:bellows"
+        },
+        "tablet": {
+            "item": "supplementaries:bellows"
+        }
+    }).id(`kubejs:embers/alchemy/atmospheric_bellows`)
 })

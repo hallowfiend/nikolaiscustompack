@@ -209,7 +209,9 @@ global.removedItems = [
   'actuallyadditions:dropper',
   'actuallyadditions:lens_of_the_miner',
   //end of aa yeet section
-  'cleaver_compendium:embers_silver_cleaver'
+  'cleaver_compendium:embers_silver_cleaver',
+  'pneumaticcraft:solar_cell',
+  'pneumaticcraft:solar_wafer'
 ];
 
 global.removedRecipeIds = [

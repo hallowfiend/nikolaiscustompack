@@ -27,4 +27,9 @@ ServerEvents.tags('fluid', event => {
     ]);
     event.remove("minecraft:lava", ["hexerei:quicksilver_fluid"])
     event.add("ad_astra:fuel", "gtceu:rocket_fuel")
+    //metals
+    event.add('forge:molten_copper', 'gtceu:copper')
+    event.add('forge:molten_iron', 'gtceu:iron')
+    event.add('forge:molten_gold', 'gtceu:gold')
+    event.add('forge:molten_brass', ['gtceu:brass', 'tconstruct:brass'])
 })

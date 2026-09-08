@@ -10,6 +10,31 @@ ServerEvents.recipes(event => {
         "results": outputs //list
     }).id(`kubejs:pneumaticcraft/pressure_chamber/${id}`)
     }
+    //photovoltaic plate
+    pressureChamber(
+        [
+            {
+                "type": "pneumaticcraft:stacked_item",
+                "count": 1,
+                "item": "pneumaticcraft:upgrade_matrix"},
+            {
+                "type": "pneumaticcraft:stacked_item",
+                "count": 4,
+                "item": "enderio:photovoltaic_composite"},
+            {
+                "type": "pneumaticcraft:stacked_item",
+                "count": 1,
+                "item": "gtceu:silicon_wafer"
+            }
+            ],
+        2.5,
+        [
+            {
+                "item": "enderio:photovoltaic_plate",
+                "count": 1
+            }
+        ]
+    )
     //ender air
     pressureChamber(
         [{

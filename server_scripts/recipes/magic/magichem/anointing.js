@@ -9,6 +9,12 @@ ServerEvents.recipes(event => {
         }).id(`kubejs:magichem/anointing/${output.split(":")[1]}`)
     }
     materiaAnointing(
+        'minecraft:gray_concrete',
+        'pneumaticcraft:reinforced_stone',
+        'admixture_metal',
+        100.0
+    )
+    materiaAnointing(
         'mynethersdelight:letios_compost',
         'mynethersdelight:resurgent_soil',
         'essentia_rotten',
