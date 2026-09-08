@@ -269,7 +269,7 @@ ServerEvents.recipes(event => {
             "item": "minecraft:netherite_scrap"
         }
     }).id(`kubejs:embers/alchemy/ingot_of_the_depths`)
-    //Bellows (plus manatide)
+    //Bellows
     event.remove({output: "embers:atmospheric_bellows"})
     event.custom({
         "type": "embers:alchemy",
@@ -327,5 +327,5 @@ ServerEvents.recipes(event => {
         "tablet": {
             "item": "supplementaries:bellows"
         }
-    }).id(`kubejs:embers/alchemy/atmospheric_bellows`)
+    }).id(`kubejs:embers/alchemy/manatide_bellows`)
 })

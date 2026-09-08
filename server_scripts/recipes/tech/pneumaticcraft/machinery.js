@@ -32,9 +32,9 @@ ServerEvents.recipes(event => {
             f: 'pneumaticcraft:compressed_iron_block'
         })
     //rotational
-    event.remove({output: "compressed_creativity:rotational_compressor"})
+    event.remove({output: "compressedcreativity:rotational_compressor"})
     event.shaped(
-        Item.of('compressed_creativity:rotational_compressor', 1),
+        Item.of('compressedcreativity:rotational_compressor', 1),
         [
             'aba',
             'cdc',
@@ -95,8 +95,8 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('pneumaticcraft:electrostatic_compressor', 1),
         [
-            'aba',
-            'cdg',
+            'cbg',
+            'ada',
             'efe'
         ],
         {

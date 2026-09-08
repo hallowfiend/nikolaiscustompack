@@ -61,7 +61,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
                 plates,
                 rod,
                 long_rod,
-                frame
+                frame,
+                gear,
+                small_gear
             )
             .iconSet(SHINY);
 
