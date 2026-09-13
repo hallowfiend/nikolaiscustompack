@@ -564,4 +564,8 @@ event.add('coldsweat:small_warming_drinks', [
   event.add('toughasnails:hydration/100_hydration_drinks', [
     '#toughasnails:thirst/12_thirst_drinks'
   ])
+
+  event.remove('diet:special_food', [
+    /arsdelight:.*_pie_slice/
+  ])
 })
