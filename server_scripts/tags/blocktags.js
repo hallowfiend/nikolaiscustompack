@@ -1,8 +1,7 @@
 ServerEvents.tags('block', event => {
   event.add('coldsweat:warm_kitchen_blocks', [
     /.*stove/,
-    /cookingforblockheads:.*oven/,
-    'handcrafted:oven'
+    /cookingforblockheads:.*oven/
   ])
 
   event.add('kubejs:airs', [

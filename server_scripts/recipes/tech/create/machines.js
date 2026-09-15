@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
         B: '#forge:tools/files',
         C: '#forge:tools/screwdrivers',
         D: 'create:precision_mechanism',
-        F: 'gtceu:copper_plate'
+        F: '#embers:dials'
     }).damageIngredient('#forge:tools/files').damageIngredient('#forge:tools/screwdrivers')
     event.shaped('2x create:package_frogport', [
         'ABA',

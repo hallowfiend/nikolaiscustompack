@@ -51,6 +51,18 @@ ServerEvents.recipes(event => {
         "patterns": patterns
         }).id(`kubejs:mna/manaweaving/${output.split(":")[1]}`)
     }
+    //atmo gauge
+    manaweave(1,
+        [
+            'create:factory_gauge',
+            'supplementaries:altimeters',
+            'goety:sensing_focus',
+            'malum:copper_impetus',
+            'mna:stone_rune_orange',
+            'mna:stone_rune_gray'
+        ],
+        [circle, circle, square, slash], 'embers:atmospheric_gauge', 1
+    )
     //infused silk & thread
     event.remove({id: 'mna:manaweaving/intermediate/infused_silk'})
     manaweave(1,
@@ -64,6 +76,19 @@ ServerEvents.recipes(event => {
             'mna:vinteum_dust'
         ],
         [square], 'mna:infused_silk', 4
+    )
+    //gaia ingot
+    event.remove({id: 'botania:gaia_ingot'})
+    manaweave(3,
+        [
+            'gtceu:gravitite_gem',
+            'gtceu:strumm_ingot',
+            'gtceu:darkened_silver_ingot',
+            'magichem:admixture_mountains',
+            'magichem:admixture_realm',
+            'botania:life_essence'
+        ],
+        [split_triangle, knot3, knot4, diamond], 'botania:gaia_ingot', 1
     )
     //manaweave cloth
     manaweave(1,
