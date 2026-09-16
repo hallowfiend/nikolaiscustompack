@@ -50,11 +50,11 @@ ServerEvents.recipes(event => {
             {"item": "twilightforest:mushgloom"},
             {"item": "mna:transmuted_silver"},
             {"item": "galosphere:allurite_shard"},
-            {"item": "minecraft:glow_berries"},
+            {"item": "hexerei:belladonna_berries"},
+            {"item": "undergarden:mogmoss"},
             {"item": "magichem:admixture_sight"},
             {"item": "magichem:admixture_acid"},
-            {"item": "undergarden:mogmoss"},
-            {"item": "kubejs:concentratedcatalyst"}
+            {"item": "gtceu:tricalcium_phosphate_dust"}
         ],
         "minecraft:glass_bottle",
         'kubejs:atropos_serum', 1

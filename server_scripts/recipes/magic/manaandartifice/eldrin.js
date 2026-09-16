@@ -12,12 +12,12 @@ ServerEvents.recipes(event => {
     }).id(`kubejs:mna/eldrin_fume_filter/${item.split(":")[1]}`)
     }
 
-    fumeSingle('kubejs:arcane_cluster', "ARCANE", 500)
-    fumeSingle('kubejs:ender_cluster', "ENDER", 500)
-    fumeSingle('kubejs:fire_cluster', "FIRE", 500)
-    fumeSingle('kubejs:air_cluster', "WIND", 500)
-    fumeSingle('kubejs:water_cluster', "WATER", 500)
-    fumeSingle('kubejs:earth_cluster', "EARTH", 500)
+    fumeSingle('kubejs:arcane_cluster', "ARCANE", 600)
+    fumeSingle('kubejs:ender_cluster', "ENDER", 600)
+    fumeSingle('kubejs:fire_cluster', "FIRE", 600)
+    fumeSingle('kubejs:air_cluster', "WIND", 600)
+    fumeSingle('kubejs:water_cluster', "WATER", 600)
+    fumeSingle('kubejs:earth_cluster', "EARTH", 600)
     fumeSingle('elementalcraft:air_shard', "WIND", 25)
     fumeSingle('elementalcraft:water_shard', "WATER", 25)
     fumeSingle('elementalcraft:earth_shard', "EARTH", 25)

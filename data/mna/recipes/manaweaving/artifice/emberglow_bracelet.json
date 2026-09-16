@@ -1,0 +1,21 @@
+{
+	"type": "mna:manaweaving-recipe",
+	"output": "mna:emberglow_bracelet",
+	"requiredFaction": "mna:demons",
+	"tier": 3,
+	"items": [
+		"embers:ember_crystal_cluster",
+        "embers:glimmer_crystal",
+		"embers:wildfire_core",
+		"mna:mote_fire",
+		"mna:mundane_bracelet"
+	],
+	"patterns": [
+		"mna:triangle",
+		"mna:triangle",
+		"mna:triangle",
+		"mna:triangle",
+		"mna:triangle",
+		"mna:triangle"
+	]
+}

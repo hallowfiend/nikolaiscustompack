@@ -9,7 +9,7 @@
         "goety:waystone",
         "embers:item_dial",
 		"minecraft:emerald",
-		"minecraft:diamond"
+		"kubejs:atropos_serum"
 	],
 	"patterns":
 	[

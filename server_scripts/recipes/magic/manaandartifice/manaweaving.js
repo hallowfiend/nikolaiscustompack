@@ -39,9 +39,9 @@ ServerEvents.recipes(event => {
         'botania:manaweave_cloth'
     ]
     removals.forEach(item => {
-        event.remove({output: item})
+        event.remove({id: item})
     })
-    function manaweave(tier, inputs, patterns, output, count){
+    function manaweave(tier, inputs, patterns, output, count, id){
         event.custom({
         "type": "mna:manaweaving-recipe",
         "output": output,
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         "tier": tier,
         "items": inputs, //max 9
         "patterns": patterns
-        }).id(`kubejs:mna/manaweaving/${output.split(":")[1]}`)
+        }).id(id)
     }
     //clusters - alternative to sachets, requires cross-mod progression
     //arcane
@@ -62,7 +62,8 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:arcane_ingot',
             'hexerei:mandrake_root'
         ],
-        [diamond, bolt, bolt, split_triangle], 'kubejs:arcane_cluster', 1
+        [diamond, bolt, bolt, split_triangle], 'kubejs:arcane_cluster', 1,
+        'kubejs:mna/manaweaving/arcane_cluster'
     )
     //ender
     manaweave(3,
@@ -72,9 +73,10 @@ ServerEvents.recipes(event => {
             'malum:eldritch_spirit',
             'minecraft:chorus_fruit',
             'occultism:iesnium_ingot',
-            'goety:nightshade'
+            'goety:nightshade_blossom'
         ],
-        [diamond, bolt, inverted_triangle, split_triangle], 'kubejs:ender_cluster', 1
+        [diamond, bolt, inverted_triangle, split_triangle], 'kubejs:ender_cluster', 1,
+        'kubejs:mna/manaweaving/ender_cluster'
     )
     //fire
     manaweave(3,
@@ -86,7 +88,8 @@ ServerEvents.recipes(event => {
             'tconstruct:seared_brick',
             'elementalcraft:fire_shard'
         ],
-        [diamond, bolt, triangle, triangle], 'kubejs:fire_cluster', 1
+        [diamond, bolt, triangle, triangle], 'kubejs:fire_cluster', 1,
+        'kubejs:mna/manaweaving/fire_cluster'
     )
     //air
     manaweave(3,
@@ -98,7 +101,8 @@ ServerEvents.recipes(event => {
             'goety:jade',
             'elementalcraft:air_shard'
         ],
-        [diamond, bolt, knot1, knot3], 'kubejs:air_cluster', 1
+        [diamond, bolt, knot4, knot3], 'kubejs:air_cluster', 1,
+        'kubejs:mna/manaweaving/air_cluster'
     )
     //earth
     manaweave(3,
@@ -107,10 +111,11 @@ ServerEvents.recipes(event => {
             'forge:dusts/graphite',
             'malum:earthen_spirit',
             'naturesaura:infused_stone',
-            'eidolon:fungus_sprouts',
+            'supplementaries:ash_brick',
             'elementalcraft:earth_shard'
         ],
-        [diamond, bolt, square, diamond], 'kubejs:fire_cluster', 1
+        [diamond, bolt, square, diamond], 'kubejs:earth_cluster', 1,
+        'kubejs:mna/manaweaving/earth_cluster'
     )
     //water
     manaweave(3,
@@ -119,14 +124,43 @@ ServerEvents.recipes(event => {
             'cataclysm:lacrima',
             'malum:aqueous_spirit',
             'undergarden:glitterkelp',
-            'forge:dusts/saltpeter',
+            'aquamirae:fin',
             'elementalcraft:water_shard'
         ],
-        [diamond, bolt, circle, inverted_triangle], 'kubejs:water_cluster', 1
+        [diamond, bolt, circle, inverted_triangle], 'kubejs:water_cluster', 1,
+        'kubejs:mna/manaweaving/water_cluster'
     )
+    //various artifices
     //mna baubles
     //selfish belt
+    event.remove({id: 'mna:manaweaving/artifice/belt_of_selfishness'})
+    manaweave(2,
+        [
+            'eidolon:basic_belt',
+            'mna:belt_buckle',
+            'mna:rune_aura',
+            'minecraft:tripwire_hook'
+        ],
+        [circle], 'mna:selfish_belt', 1,
+        'mna:manaweaving/artifice/belt_of_selfishness'
+    )
     //lock belt
+    event.remove({id: 'mna:manaweaving/artifice/belt_of_locks'})
+    manaweave(2,
+        [
+            'eidolon:basic_belt',
+            'mna:belt_buckle',
+            'supplementaries:key',
+            'supplementaries:lock_block',
+            'mna:chimerite_gem',
+            'mna:chimerite_gem',
+            'mna:chimerite_gem',
+            'mna:chimerite_gem',
+            'mna:chimerite_gem'
+        ],
+        [triangle, circle], 'mna:affinity_lock_belt', 1,
+        'mna:manaweaving/artifice/belt_of_locks'
+    )
     //atmo gauge
     manaweave(2,
         [
@@ -137,9 +171,10 @@ ServerEvents.recipes(event => {
             'mna:stone_rune_gray',
             'mna:stone_rune_black'
         ],
-        [circle, circle, square, diamond, slash], 'embers:atmospheric_gauge', 1
+        [circle, circle, square, diamond, slash], 'embers:atmospheric_gauge', 1,
+        'kubejs:mna/manaweaving/atmospheric_gauge'
     )
-    //infused silk & thread
+    //infused silk
     event.remove({id: 'mna:manaweaving/intermediate/infused_silk'})
     manaweave(1,
         [
@@ -151,7 +186,8 @@ ServerEvents.recipes(event => {
             'mna:ritual_focus_minor',
             'mna:vinteum_dust'
         ],
-        [square], 'mna:infused_silk', 4
+        [square], 'mna:infused_silk', 4,
+        'mna:manaweaving/intermediate/infused_silk'
     )
     //blank rune
     manaweave(2,
@@ -163,7 +199,8 @@ ServerEvents.recipes(event => {
             'mna:decoration/arcane_stone',
             'mna:decoration/arcane_stone'
         ],
-        [diamond, triangle, knot4], 'irons_spellbooks:blank_rune', 1
+        [diamond, triangle, knot4], 'irons_spellbooks:blank_rune', 1,
+        'kubejs:mna/manaweaving/blank_iss_rune'
     )
     //mithril weave
     event.remove({output: 'irons_spellbooks:mithril_weave'})
@@ -177,7 +214,8 @@ ServerEvents.recipes(event => {
             'minecraft:chain',
             'minecraft:chain'
         ],
-        [square, bolt, bolt, bolt], 'irons_spellbooks:mithril_weave', 2
+        [square, bolt, bolt, bolt], 'irons_spellbooks:mithril_weave', 2,
+        'kubejs:mna/manaweaving/mithril_weave'
     )
     //gaia ingot
     event.remove({id: 'botania:gaia_ingot'})
@@ -191,7 +229,8 @@ ServerEvents.recipes(event => {
             'magichem:admixture_realm',
             'botania:life_essence'
         ],
-        [split_triangle, knot3, knot4, diamond], 'botania:gaia_ingot', 1
+        [split_triangle, knot3, knot4, diamond], 'botania:gaia_ingot', 1,
+        'kubejs:mna/manaweaving/gaia_ingot'
     )
     //manaweave cloth
     manaweave(1,
@@ -203,7 +242,8 @@ ServerEvents.recipes(event => {
             'botania:mana_string',
             'mna:infused_thread'
         ],
-        [square, square, square, slash], 'botania:manaweave_cloth', 1
+        [square, square, square, slash], 'botania:manaweave_cloth', 1,
+        'botania:manaweave_cloth'
     )
     //manaseer monocle
     manaweave(1,
@@ -215,7 +255,8 @@ ServerEvents.recipes(event => {
             'magichem:admixture_sight',
             'goety:targeting_monocle'
         ],
-        [circle, circle, circle], 'botania:monocle', 1
+        [circle, circle, circle], 'botania:monocle', 1,
+        'botania:manaseer_monocle'
     )
     //'tania rings
     manaweave(2,
@@ -225,7 +266,8 @@ ServerEvents.recipes(event => {
             'botania:mana_tablet',
             'gtceu:infused_iron_plate'
         ],
-        [diamond, circle, circle], 'botania:mana_ring', 1
+        [diamond, circle, circle], 'botania:mana_ring', 1,
+        'botania:mana_ring'
     )
     manaweave(2,
         [
@@ -234,7 +276,8 @@ ServerEvents.recipes(event => {
             'naturesaura:infused_stone',
             'eternal_starlight:malarite'
         ],
-        [diamond, circle, diamond], 'botania:aura_ring', 1
+        [diamond, circle, diamond], 'botania:aura_ring', 1,
+        'botania:aura_ring'
     )
     manaweave(2,
         [
@@ -243,7 +286,8 @@ ServerEvents.recipes(event => {
             'evilcraft:lightning_grenade',
             'bloodmagic:sigilofmagnetism'
         ],
-        [diamond, circle, square], 'botania:magnet_ring', 1
+        [diamond, circle, square], 'botania:magnet_ring', 1,
+        'botania:magnet_ring'
     )
     manaweave(2,
         [
@@ -252,7 +296,8 @@ ServerEvents.recipes(event => {
             'minecraft:heart_of_the_sea',
             'kubejs:shifting_tincture'
         ],
-        [diamond, circle, knot3], 'botania:water_ring', 1
+        [diamond, circle, knot3], 'botania:water_ring', 1,
+        'botania:water_ring'
     )
     manaweave(2,
         [
@@ -261,7 +306,8 @@ ServerEvents.recipes(event => {
             'embers:caminite_plate',
             'kubejs:token_stillness'
         ],
-        [diamond, circle, slash], 'botania:swap_ring', 1
+        [diamond, circle, slash], 'botania:swap_ring', 1,
+        'botania:swap_ring'
     )
     manaweave(2,
         [
@@ -270,7 +316,8 @@ ServerEvents.recipes(event => {
             'goety:flying_ointment',
             'kubejs:token_defiance'
         ],
-        [diamond, circle, backslash], 'botania:dodge_ring', 1
+        [diamond, circle, backslash], 'botania:dodge_ring', 1,
+        'botania:dodge_ring'
     )
     manaweave(2,
         [
@@ -279,6 +326,7 @@ ServerEvents.recipes(event => {
             'embers:blasting_core',
             'kubejs:caustic_oil'
         ],
-        [diamond, circle, knot1], 'botania:mining_ring', 1
+        [diamond, circle, knot1], 'botania:mining_ring', 1,
+        'botania:mining_ring'
     )
 })
