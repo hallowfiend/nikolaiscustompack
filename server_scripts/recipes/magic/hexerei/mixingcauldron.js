@@ -3,6 +3,7 @@
 ServerEvents.recipes((event) => {
 event.remove({id: 'hexerei:infused_fabric_from_mixing_cauldron'})
 event.remove({id: 'hexerei:crystal_ball_from_mixing_cauldron'})
+event.remove({output: 'irons_spellbooks:magic_cloth'})
 const id_prefix = 'kubejs:recipes/hexerei/mixingcauldron/'
 
 const recipes = [
@@ -23,6 +24,24 @@ const recipes = [
     output_liquid:false,
     output:"hexerei:infused_fabric",
     output_amount:6,
+    heat:true
+},
+//Arcane cloth
+{
+    inputItem:[
+        {"tag":"minecraft:wool"},
+        {"item":"mna:infused_silk"},
+        {"item":"malum:astral_weave"},
+        {"item":"irons_spellbooks:arcane_essence"},
+        {"item":"irons_spellbooks:arcane_essence"},
+        {"item":"irons_spellbooks:arcane_essence"},
+        {"item":"irons_spellbooks:arcane_essence"}
+    ],
+    liquid:"constructs_casting:squid_ink",
+    liquid_consum:1000,
+    output_liquid:"constructs_casting:common_ink",
+    output:"irons_spellbooks:magic_cloth",
+    output_amount:3,
     heat:true
 },
 //Crystal ball

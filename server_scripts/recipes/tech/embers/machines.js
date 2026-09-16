@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
         ],
         {
             c: 'malum:copper_node',
-            b: 'minecraft:copper_ingot',
+            b: '#forge:ingots/constantan',
             p: 'gtceu:double_steel_plate',
             b: 'embers:caminite_plate'
         }
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
             ' p '
         ],
         {
-            c: 'gtceu:copper_rod',
+            c: '#forge:rods/constantan',
             f: 'malum:cthonic_gold',
             p: 'gtceu:double_steel_plate'
         }
@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
             'ccr'
         ],
         {
-            r: 'gtceu:copper_rod',
+            r: '#forge:rods/constantan',
             w: 'immersiveengineering:wirecoil_copper',
             c: 'gtceu:compressed_iron_plate'
         }

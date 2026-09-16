@@ -51,17 +51,93 @@ ServerEvents.recipes(event => {
         "patterns": patterns
         }).id(`kubejs:mna/manaweaving/${output.split(":")[1]}`)
     }
+    //clusters - alternative to sachets, requires cross-mod progression
+    //arcane
+    manaweave(3,
+        [
+            'forge:gems/source',
+            'botania:mana_pearl',
+            'malum:arcane_spirit',
+            'hexcasting:quenched_allay_shard',
+            'irons_spellbooks:arcane_ingot',
+            'hexerei:mandrake_root'
+        ],
+        [diamond, bolt, bolt, split_triangle], 'kubejs:arcane_cluster', 1
+    )
+    //ender
+    manaweave(3,
+        [
+            'forge:gems/fluorite',
+            'evilcraft:dark_power_gem',
+            'malum:eldritch_spirit',
+            'minecraft:chorus_fruit',
+            'occultism:iesnium_ingot',
+            'goety:nightshade'
+        ],
+        [diamond, bolt, inverted_triangle, split_triangle], 'kubejs:ender_cluster', 1
+    )
+    //fire
+    manaweave(3,
+        [
+            'forge:gems/ember',
+            'irons_spellbooks:cinder_essence',
+            'malum:infernal_spirit',
+            'bloodmagic:simplecatalyst',
+            'tconstruct:seared_brick',
+            'elementalcraft:fire_shard'
+        ],
+        [diamond, bolt, triangle, triangle], 'kubejs:fire_cluster', 1
+    )
+    //air
+    manaweave(3,
+        [
+            'forge:gems/ambrosium',
+            'aether:aerogel',
+            'malum:aerial_spirit',
+            'botania:mana_string',
+            'goety:jade',
+            'elementalcraft:air_shard'
+        ],
+        [diamond, bolt, knot1, knot3], 'kubejs:air_cluster', 1
+    )
+    //earth
+    manaweave(3,
+        [
+            'malum:cthonic_gold',
+            'forge:dusts/graphite',
+            'malum:earthen_spirit',
+            'naturesaura:infused_stone',
+            'eidolon:fungus_sprouts',
+            'elementalcraft:earth_shard'
+        ],
+        [diamond, bolt, square, diamond], 'kubejs:fire_cluster', 1
+    )
+    //water
+    manaweave(3,
+        [
+            'forge:gems/salt',
+            'cataclysm:lacrima',
+            'malum:aqueous_spirit',
+            'undergarden:glitterkelp',
+            'forge:dusts/saltpeter',
+            'elementalcraft:water_shard'
+        ],
+        [diamond, bolt, circle, inverted_triangle], 'kubejs:water_cluster', 1
+    )
+    //mna baubles
+    //selfish belt
+    //lock belt
     //atmo gauge
-    manaweave(1,
+    manaweave(2,
         [
             'create:factory_gauge',
-            'supplementaries:altimeters',
             'goety:sensing_focus',
             'malum:copper_impetus',
-            'mna:stone_rune_orange',
-            'mna:stone_rune_gray'
+            'mna:mote_fire',
+            'mna:stone_rune_gray',
+            'mna:stone_rune_black'
         ],
-        [circle, circle, square, slash], 'embers:atmospheric_gauge', 1
+        [circle, circle, square, diamond, slash], 'embers:atmospheric_gauge', 1
     )
     //infused silk & thread
     event.remove({id: 'mna:manaweaving/intermediate/infused_silk'})
@@ -77,6 +153,32 @@ ServerEvents.recipes(event => {
         ],
         [square], 'mna:infused_silk', 4
     )
+    //blank rune
+    manaweave(2,
+        [
+            'malum:tainted_rock_tablet',
+            'mna:rune_ritual_metal',
+            'mna:decoration/arcane_stone',
+            'mna:decoration/arcane_stone',
+            'mna:decoration/arcane_stone',
+            'mna:decoration/arcane_stone'
+        ],
+        [diamond, triangle, knot4], 'irons_spellbooks:blank_rune', 1
+    )
+    //mithril weave
+    event.remove({output: 'irons_spellbooks:mithril_weave'})
+    manaweave(3,
+        [
+            'goety:magic_fabric',
+            'kubejs:treated_leather',
+            'botania:manaweave_cloth',
+            'forge:ingots/mithril',
+            'minecraft:chain',
+            'minecraft:chain',
+            'minecraft:chain'
+        ],
+        [square, bolt, bolt, bolt], 'irons_spellbooks:mithril_weave', 2
+    )
     //gaia ingot
     event.remove({id: 'botania:gaia_ingot'})
     manaweave(3,
@@ -84,6 +186,7 @@ ServerEvents.recipes(event => {
             'gtceu:gravitite_gem',
             'gtceu:strumm_ingot',
             'gtceu:darkened_silver_ingot',
+            'gtceu:livingbronze_ingot',
             'magichem:admixture_mountains',
             'magichem:admixture_realm',
             'botania:life_essence'

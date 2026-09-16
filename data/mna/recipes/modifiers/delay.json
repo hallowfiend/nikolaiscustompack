@@ -1,0 +1,12 @@
+{
+	"type": "mna:modifier",
+	"output": "mna:delay",
+	"tier": 2,
+	"items":
+	[
+		"supplementaries:hourglass"
+	],
+	"patterns":
+	[
+	]
+}

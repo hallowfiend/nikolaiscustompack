@@ -1,0 +1,21 @@
+{
+	"type": "mna:component",
+	"tier": 2,
+	"output": "mna:poison",
+	"items":
+	[
+		"minecraft:lily_of_the_valley",
+		"minecraft:lily_of_the_valley",
+		"mna:desert_nova",
+		"mna:desert_nova",
+		"hexerei:dried_belladonna_flowers",
+		"hexerei:dried_belladonna_flowers",
+		"mna:tarma_root",
+		"mna:tarma_root"
+	],
+	"patterns":
+	[
+		"mna:manaweave_patterns/knot",
+		"mna:manaweave_patterns/circle"
+	]
+}

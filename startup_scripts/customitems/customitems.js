@@ -158,11 +158,28 @@ StartupEvents.registry('item', event => {
         .tag('botania:runes')
     })
     //we have bewitchment at home
-    
     pastesAndAnointments.forEach(item => {
         event.create(item.id)
         .displayName(item.name)
         .maxStackSize(16)
+    })
+    //eldrin clusters
+    const affinities = [
+        {name: 'arcane', color: '#b870ef'},
+        {name: 'ender', color: '#2e1c45'},
+        {name: 'fire', color: '#ee8015'},
+        {name: 'water', color: '#2c66bd'},
+        {name:'earth', color: '#442f17'},
+        {name:'air', color: '#c9c3b1'}
+    ]
+    affinities.forEach(affinity => {
+        var clusterLang = capitalizeFirstLetter(affinity.name)
+        event.create(`${affinity.name}_cluster`)
+            .textureJson({
+            layer0: 'malum:item/natural_quartz',
+            })
+        .color(0, affinity.color)
+        .displayName(`${clusterLang} Cluster`)
     })
     //other items
     event.create('blood_soaked_nutrient_bar')

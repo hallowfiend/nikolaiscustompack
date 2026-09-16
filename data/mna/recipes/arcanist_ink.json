@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "eidolon:magic_ink"
+    },
+    {
+      "item": "mna:purified_vinteum_dust"
+    },
+    {
+      "tag": "forge:dyes/cyan"
+    },
+    {
+      "tag": "mna:ma_flowers"
+    }
+  ],
+  "result": {
+    "item": "mna:arcanist_ink"
+  }
+}

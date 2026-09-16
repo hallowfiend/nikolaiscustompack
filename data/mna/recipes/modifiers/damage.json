@@ -1,0 +1,17 @@
+{
+	"type": "mna:modifier",
+	"output": "mna:damage",
+	"tier": 2,
+	"items":
+	[
+		"mna:chimerite_gem",
+		"evilcraft:dark_spike",
+		"evilcraft:dark_spike",
+		"mna:stone_rune_red",
+		"mna:stone_rune_red",
+		"minecraft:diamond"
+	],
+	"patterns":
+	[
+	]
+}

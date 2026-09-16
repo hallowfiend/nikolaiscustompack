@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     "output": {
         "item": "bloodmagic:soulgempetty"
     }
-    }).id('kubejs:blood_magic/hellfire_forge/petty_tartaric_gem')
+    }).id('bloodmagic:soulforge/pettytartaricgem')
     //sentient tools
     const tools = [
         {input: 'axe', output: 'axe'},
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
     "output": {
         "item": `bloodmagic:soul${tool.output}`
     }
-    }).id(`kubejs:blood_magic/hellfire_forge/sentient_${tool.output}`)
+    }).id(`bloodmagic:soulforge/sentient${tool.output}`)
     })
     //routing nodes
     const yote = [
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
         "item": `bloodmagic:itemroutingnode`,
         "count": 16
     }
-    }).id('kubejs:blood_magic/hellfire_forge/routing_node_base')
+    }).id('bloodmagic:soulforge/routing_node')
     event.custom({
     "type": "bloodmagic:soulforge",
     "drain": 2.0,
@@ -90,13 +90,13 @@ ServerEvents.recipes(event => {
         "item": "malum:block_of_hallowed_gold"
     },
     "input3": {
-        "item": "create:chute"
+        "item": "create:package_frogport"
     },
     "minimumDrain": 400.0,
     "output": {
         "item": `bloodmagic:masterroutingnode`
     }
-    }).id('kubejs:blood_magic/hellfire_forge/routing_node_master')
+    }).id('bloodmagic:soulforge/master_routing_node')
     event.custom({
     "type": "bloodmagic:soulforge",
     "drain": 0.0,
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
     "output": {
         "item": `bloodmagic:outputroutingnode`
     }
-    }).id('kubejs:blood_magic/hellfire_forge/routing_node_output')
+    }).id('bloodmagic:soulforge/output_routing_node')
     event.custom({
     "type": "bloodmagic:soulforge",
     "drain": 0.0,
@@ -130,5 +130,5 @@ ServerEvents.recipes(event => {
     "output": {
         "item": `bloodmagic:inputroutingnode`
     }
-    }).id('kubejs:blood_magic/hellfire_forge/routing_node_input')
+    }).id('bloodmagic:soulforge/input_routing_node')
 });

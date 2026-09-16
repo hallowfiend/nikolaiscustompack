@@ -1,0 +1,17 @@
+{
+	"type": "mna:manaweaving-recipe",
+	"tier": 1,
+	"output": "mna:animus_dust",	
+	"quantity": 8,	
+	"items": [
+		"goety:animation_core",
+		"malum:spirits",
+		"malum:spirits",
+		"malum:spirits",
+		"malum:spirits",
+		"mna:vinteum_dust"
+	],
+	"patterns": [
+		"mna:circle"	
+	]
+}

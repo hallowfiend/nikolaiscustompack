@@ -1,0 +1,17 @@
+{
+	"type": "mna:component",
+	"tier": 1,
+	"output": "mna:break",
+	"items":
+	[
+		"mna:stone_rune_brown",		
+		"mna:vinteum_dust",
+		"create:mechanical_drill",
+		"create:mechanical_drill",
+		"mna:stone_rune_gray"
+	],
+	"patterns":
+	[
+		"mna:manaweave_patterns/square"	
+	]
+}

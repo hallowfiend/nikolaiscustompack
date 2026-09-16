@@ -40,6 +40,6 @@ ServerEvents.recipes(event => {
     }).id('kubejs:shaped/mana_lens')
     event.shapeless(
         'botania:lens_magnet',
-        ['botania:lens_normal', 'gtceu:magnetic_iron_rod', 'enderio:conductive_alloy_ingot']
+        ['botania:lens_normal', 'gtceu:magnetic_iron_rod', 'enderio:conductive_alloy_ingot', 'actuallyadditions:empowered_restonia_crystal', 'actuallyadditions:empowered_palis_crystal', 'actuallyadditions:empowered_enori_crystal']
     ).id('kubejs/shapeless/magnetizing_lens')
 })
