@@ -202,7 +202,6 @@ ServerEvents.recipes(event => {
         .id('kubejs:goety/dark_ritual/forging/thundercaller');
 
     //Iron's Spellbooks weaponry
-    //Weapon parts
     //Spellbreaker
     event.remove({ id: 'irons_spellbooks:spellbreaker' })
     event.recipes.goety.ritual('irons_spellbooks:spellbreaker', 'goety:craft', [

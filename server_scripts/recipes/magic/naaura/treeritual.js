@@ -347,6 +347,7 @@ ServerEvents.recipes(event => {
       'hexerei:witch_hazel_sapling',
       600
     )
+    //Swamp Homi
     treeRitual(
       [
         {'item': 'naturesaura:infused_iron'},
@@ -429,7 +430,7 @@ ServerEvents.recipes(event => {
     [
       {'item': 'kubejs:realmsplit_dew'},
       {'item': 'botania:dreamwood_twig'},
-      {'tag': 'forge:rods/potin'},
+      {'tag': 'forge:rods/darkened_silver'},
       {'item': 'galosphere:allurite_shard'},
       {'item': 'botania:master_corporea_spark'},
       {'item': 'naturesaura:sky_ingot'}

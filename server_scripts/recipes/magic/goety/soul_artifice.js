@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             }
         },
         "result" : Item.of('goety:totem_of_roots', '{"Max Souls":100,Souls:0}')
-    })
+    }).id('goety:totem_of_roots')
     //TOTEM OF SOULS
     event.remove({ id: 'goety:totem_of_souls' })
     event.custom({
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
             }
         },
         "result" : 'goety:totem_of_souls'
-    })
+    }).id('goety:totem_of_souls')
     //SOUL ABSORBER
     //removals
     event.remove({id: "goety:soul_sand_souls"}) //as someone who's used it can attest: the sand -> soulsand (thru create haunting) -> SE exploit is OP, and this pack has a lot more ways of making a zillion soulsand

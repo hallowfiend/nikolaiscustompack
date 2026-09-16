@@ -249,7 +249,8 @@ global.removedRecipeTypes = [
     'actuallyadditions:fermenting', //folded into bnc keg
     'actuallyadditions:coffee_ingredient', //redundant
     'actuallyadditions:pressing', //folded into IE squeezer
-    'actuallyadditions:coffee_machine' //we have farmer's respite
+    'actuallyadditions:coffee_machine', //we have farmer's respite
+    'gtceu:implosion_compressor' //flattened into pnc pressure chamber
 ]
 
 global.removedFluids = [
