@@ -106,7 +106,7 @@
     ritualtable(
         [
             {'item': 'hexalia:celestial_crystal'},
-            {'item': 'malum:chunk_of_brilliance'},
+            {'item': 'malum:cluster_of_brilliance'},
             {'item': 'hexerei:sage'},
             {'item': 'gtceu:raw_malachite'},
             {'item': 'immersiveengineering:hemp_fiber'}
@@ -257,7 +257,7 @@
     )
     ritualtable(
         [
-            {"item": "hexalia:lotus_flower"},
+            {"item": "hexalia:lotus_blossom"},
             {"item": "eidolon:soul_shard"},
             {"item": "minecraft:pink_petals"},
             {"item": "gtceu:electrum_dust"},

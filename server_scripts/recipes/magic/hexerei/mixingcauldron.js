@@ -594,6 +594,21 @@ const recipes = [
     liquid_consum:250,
     heat:true
 },
+{
+    inputItem:[
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "hexalia:spirit_powder"},
+        {"item": "hexalia:witchweed"},
+        {"tag": "forge:resins"},
+        {"item":"hexalia:rustic_bottle"}
+    ],
+    output:"hexalia:brew_of_gravebloom",
+    output_amount:1,
+    liquid:"minecraft:water",
+    output_liquid:false,
+    liquid_consum:250,
+    heat:true
+},
 // Iron's Spells & Spellbooks stuff
 {
     inputItem:[

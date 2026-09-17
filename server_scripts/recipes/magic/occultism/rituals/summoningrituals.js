@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
       },
       "ingredients": [
         {
-          "item": "hexalia:lotus_flower"
+          "item": "hexalia:lotus_blossom"
         },
         {
           "item": "gtceu:salt_dust"

@@ -29,4 +29,39 @@ ServerEvents.recipes(event => {
     hauntInBulk.forEach(recipe => {
         event.recipes.create.haunting(recipe.output, recipe.input).id(`kubejs:create/haunting/${recipe.output.split(":")[1]}`)
     })
+    //Philo stone (citation needed)
+    event.remove({id:'goety:philosophers_stone'})
+    event.custom({
+        "type": "goety:brazier",
+        "soulCost": 50000,
+        "ingredients": [
+            {
+                "tag": "forge:ingots/uranium"
+            },
+            {
+                "item": 'magichem:essentia_nigredo'
+            },
+            {
+                "item": "magichem:essentia_albedo"
+            },
+            {
+                "item": "magichem:essentia_citrinitas"
+            },
+            {
+                "item": "magichem:essentia_rubedo"
+            },
+            {
+                "item": "botania:rune_greed"
+            },
+            {
+                "item": "embers:glimmer_crystal"
+            },
+            {
+                "item": "kubejs:concentratedcatalyst"
+            }
+        ],
+        "result": {
+            "item": "goety:philosophers_stone"
+        }
+    }).id('goety:philosophers_stone')
 });

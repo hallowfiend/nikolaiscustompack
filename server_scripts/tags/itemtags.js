@@ -148,6 +148,22 @@ ServerEvents.tags("item", (event) => {
   event.add("c:white_dyes", ["#forge:dyes/white"]);
   event.add("c:yellow_dyes", ["#forge:dyes/yellow"]);
 
+  event.add('goety:soul_taking', [ //thanks again, polarice
+    "malum:tyrving",
+    "malum:weight_of_worlds",
+    "malum:soul_stained_steel_axe",
+    "malum:soul_stained_steel_pickaxe",
+    "malum:soul_stained_steel_shovel",
+    "malum:soul_stained_steel_sword",
+    "malum:soul_stained_steel_hoe",
+    "malum:soul_stained_steel_knife",
+    'cleavercompendium:soul_stained_steel_cleaver',
+    '#malum:scythe',
+    'eidolon:cleaving_axe',
+    'embers:tyrfing',
+    'eidolon:sapping_sword'
+  ])
+
   /* event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/sand')
   event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/gravel')
   event.add('minecraft:mineable/pickaxe', '#forge:ores_in_ground/soul_soil')

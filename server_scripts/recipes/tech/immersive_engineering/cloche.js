@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
         {
             input: 'hexalia:lotus_flower',
             render: 'hexalia:lotus_flower',
-            output: [{'item': 'hexalia:lotus_flower'}],
+            output: [{'item': 'hexalia:lotus_blossom'}],
             soil: 'minecraft:water_bucket',
             time: 480
         },
