@@ -197,6 +197,14 @@ ServerEvents.recipes(event => {
     'hexalia:mutavis',
     'gtceu:stone_dust'
   )
+  brazier_summoning(
+    'hexalia:cacofey',
+    1,
+    'hexalia:galeberries_cookie',
+    'hexerei:yellow_dock_leaves',
+    'goety:quick_growing_seed',
+    'minecraft:glistering_melon_slice'
+  )
   //Ars Nouveau
   brazier_summoning(
     'ars_nouveau:wilden_hunter',

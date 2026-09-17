@@ -64,6 +64,7 @@ LootJS.modifiers((event) => {
       'actuallyadditions:flax_seeds',
       'actuallyadditions:rice_seeds',
       'actuallyadditions:canola_seeds',
-      'actuallyadditions:coffee_seeds'
+      'actuallyadditions:coffee_seeds',
+      'actuallyadditions:coffee_beans'
     ])
 });

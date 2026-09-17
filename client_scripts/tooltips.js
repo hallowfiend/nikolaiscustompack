@@ -9,6 +9,9 @@ ItemEvents.tooltip(event => {
   event.addAdvanced(['hexalia:dreamshroom'], (item, advanced, text) => {
     text.add(1, Text.gray('Found in taigas'))
   })
+  event.addAdvanced(['collectorsreap:portobello'], (item, advanced, text) => {
+    text.add(1, Text.gray('Found only in meadows'))
+  })
   event.addAdvanced(['hexalia:spirit_bloom'], (item, advanced, text) => {
     text.add(1, Text.gray('Found in swamps'))
   })

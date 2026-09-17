@@ -8,7 +8,6 @@ ServerEvents.tags('item', event => {
     'minecraft:clay_ball',
     'minecraft:brown_mushroom',
     'minecraft:red_mushroom',
-    'collectorsreap:portobello',
     '#botania:petals',
     'farmersdelight:cabbage_seeds',
     'farmersdelight:tomato_seeds',

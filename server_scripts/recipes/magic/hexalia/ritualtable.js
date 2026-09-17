@@ -34,7 +34,7 @@
         [
             {'item': 'minecraft:amethyst_shard'},
             {'item': 'mna:cerublossom'},
-            {'item': 'elementalcraft:inert_crystal'}
+            {'item': 'minecraft:gold_nugget'}
         ],
         'kubejs:arcane_node'
     )
@@ -58,7 +58,7 @@
         [
             {'item': 'minecraft:amethyst_shard'},
             {'item': 'miners_delight:tentacles'},
-            {'item': 'dungeonsdelight:sculk_polyp'}
+            {'item': 'minecraft:ender_pearl'}
         ],
         'kubejs:eldritch_node'
     )
@@ -126,7 +126,7 @@
     ritualtable(
         [
             {'item': 'kubejs:bloomwrap_cloth'},
-            {'item': 'kubejs:steadfast_node'},
+            {'item': 'kubejs:arcane_node'},
             {'item': 'minecraft:pink_tulip'},
             {'item': 'hexerei:mandrake_root'},
             {'item': 'cosmopolitan:tuber'}
@@ -231,7 +231,9 @@
             {"item": "eidolon:soul_shard"},
             {"item": "farmersrespite:green_tea_leaves"},
             {"item": "goety:jade"},
-            {"item": "tconstruct:earth_congealed_slime"}
+            {"item": "tconstruct:earth_congealed_slime"},
+            {"item": "hexerei:yellow_dock_leaves"},
+            {"item": "minecraft:kelp"}
         ],
         "eidolon:avennian_sprig"
     )
@@ -241,7 +243,9 @@
             {"item": "eidolon:soul_shard"},
             {"item": "farmersrespite:coffee_beans"},
             {"item": "gtceu:pyrochlore_dust"},
-            {"item": "hexalia:rabbage_seeds"}
+            {"item": "hexalia:rabbage_seeds"},
+            {"item": "farmersdelight:rice"},
+            {"item": "hibernalherbs:sin_petals"}
         ],
         "eidolon:sildrian_seed"
     )
@@ -251,7 +255,9 @@
             {"item": "eidolon:soul_shard"},
             {"item": "minecraft:oxeye_daisy"},
             {"item": "minecraft:blaze_powder"},
-            {"tag": "forge:resins"}
+            {"tag": "forge:resins"},
+            {"item": "embers:ash"},
+            {"item": "mna:tarma_root"}
         ],
         "eidolon:merammer_root"
     )
@@ -261,7 +267,9 @@
             {"item": "eidolon:soul_shard"},
             {"item": "minecraft:pink_petals"},
             {"item": "gtceu:electrum_dust"},
-            {"item": "ars_nouveau:sourceberry_bush"}
+            {"item": "ars_nouveau:sourceberry_bush"},
+            {"tag": "botania:petals/magenta"},
+            {"item": "mna:wakebloom"}
         ],
         'eidolon:oanna_bloom'
     )
@@ -271,7 +279,9 @@
             {"item": "eidolon:soul_shard"},
             {"tag": "forge:essences/death"},
             {'item': 'dungeonsdelight:rotbulb'},
-            {'item': 'minecraft:ink_sac'}
+            {'item': 'minecraft:ink_sac'},
+            {"item": "collectorsreap:portobello"},
+            {"item": "goety:grave_dust"}
         ],
         'eidolon:mirecap'
     )
