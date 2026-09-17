@@ -1,6 +1,5 @@
 ServerEvents.recipes((event) => {
     event.remove({id: /hexalia:bloomwrap_.*_from_ritual_table/})
-    event.remove({id: 'hexalia:fire_node_from_ritual_table'})
     event.remove({id: 'hexalia:sage_pendant_from_ritual_table'})
     event.remove({id: 'hexalia:rabbage_seeds_from_ritual_table'})
     event.remove({id: /hexalia:summon.*/})

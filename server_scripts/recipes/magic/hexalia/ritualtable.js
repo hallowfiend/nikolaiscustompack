@@ -9,15 +9,6 @@
         }).id(`kubejs:hexalia/ritual_table/${output.split(":")[1]}`)
     })
     }
-    //alt fire node
-    ritualtable(
-        [
-            {'item': 'minecraft:amethyst_shard'},
-            {'item': 'minecraft:charcoal'},
-            {'item': 'minecraft:orange_dye'}
-        ],
-        'hexalia:fire_node'
-    )
     //alt rabbage
     ritualtable(
         [
