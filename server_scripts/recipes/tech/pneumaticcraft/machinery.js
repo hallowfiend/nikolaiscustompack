@@ -2,21 +2,72 @@ ServerEvents.recipes(event => {
     //pnc is gated behind create like IE is, but its also itself gated behind a lil bit of IE, together they gate greg
     event.replaceInput({ mod: "pneumaticcraft"}, '#forge:glass', 'immersiveengineering:insulating_glass')
     event.replaceInput({ mod: "pneumaticcraft"}, 'minecraft:iron_bars', 'undergarden:cloggrum_bars')
+    const yeet = [
+        'pneumaticcraft:thermal_lagging',
+        'pneumaticcraft:pressure_tube',
+        'pneumaticcraft:solar_compressor',
+        "compressedcreativity:rotational_compressor",
+        "pneumaticcraft:liquid_compressor",
+        "pneumaticcraft:advanced_liquid_compressor",
+        "pneumaticcraft:electrostatic_compressor",
+        "pneumaticcraft:thermal_compressor",
+        'pneumaticcraft:pressure_chamber_wall',
+        'pneumaticcraft:pressure_chamber_glass',
+        'pneumaticcraft:pressure_chamber_x1',
+        'pneumaticcraft:pressure_chamber_x4'
+    ]
+    yeet.forEach(item => {
+        event.remove({id: item})
+    })
     //pressure tubes and associated gizmos
-    event.remove({ output: "pneumaticcraft:pressure_tube"})
     event.shaped(
-        Item.of('pneumaticcraft:pressure_tube', 2),
+        Item.of('pneumaticcraft:pressure_tube', 4),
         [
-            'aga'
+            'aga',
+            ' e '
         ],
         {
             a: '#forge:plates/compressed_iron',
             g: 'immersiveengineering:insulating_glass',
+            e: 'kubejs:industrial_sealant'
         }
     ).id('kubejs:shaped/pressure_tube')
+    //temperature stuff
+    event.shaped('4x pneumaticcraft:thermal_lagging', [ 
+    'GIT', 
+    'IG '
+    ], {
+      G: 'immersiveengineering:insulating_glass',
+      I: 'cold_sweat:chameleon_molt',
+      T: '#forge:tools/hammers'
+    }).damageIngredient('#forge:tools/hammers')
+    .id('kubejs:shaped/thermal_lagging')
+    //pressure chamber
+    event.shaped('16x pneumaticcraft:pressure_chamber_wall', [ 
+      'SSS', 
+      'SBS',
+      'SSS'
+      ], {
+        S: 'pneumaticcraft:reinforced_bricks',
+        B: 'kubejs:industrial_sealant'
+    }).id('kubejs:shaped/pressure_chamber_wall')
+    event.shapeless('pneumaticcraft:pressure_chamber_glass', ['immersiveengineering:insulating_glass', 'pneumaticcraft:pressure_chamber_wall'])
+    event.shapeless('4x pneumaticcraft:pressure_chamber_glass', ['immersiveengineering:insulating_glass', 'pneumaticcraft:pressure_chamber_wall', 'pneumaticcraft:pressure_chamber_wall', 'pneumaticcraft:pressure_chamber_wall', 'pneumaticcraft:pressure_chamber_wall'])
+    //tppn
+    event.shaped('pneumaticcraft:thermopneumatic_processing_plant', [ 
+      'LSL', 
+      'GTG',
+      'PWP'
+      ], {
+        T: 'pneumaticcraft:small_tank',
+        S: 'embers:stamper',
+        W: 'embers:wildfire_core',
+        G: 'immersiveengineering:insulating_glass',
+        P: 'kubejs:aerilated_pneumatic_component',
+        L: 'kubejs:industrial_sealant'
+    }).id('kubejs:shaped/tppn')
     //compressors
     //solar
-    event.remove({output: "pneumaticcraft:solar_compressor"})
     event.shaped(
         Item.of('pneumaticcraft:solar_compressor', 1),
         [
@@ -32,7 +83,6 @@ ServerEvents.recipes(event => {
             f: 'pneumaticcraft:compressed_iron_block'
         })
     //rotational
-    event.remove({output: "compressedcreativity:rotational_compressor"})
     event.shaped(
         Item.of('compressedcreativity:rotational_compressor', 1),
         [
@@ -50,7 +100,6 @@ ServerEvents.recipes(event => {
         }
     )
     //liquid
-    event.remove({output: "pneumaticcraft:liquid_compressor"})
     event.shaped(
         Item.of(
                 'pneumaticcraft:liquid_compressor',
@@ -71,7 +120,6 @@ ServerEvents.recipes(event => {
         }
     )
     //advanced liquid
-    event.remove({output: "pneumaticcraft:advanced_liquid_compressor"})
     event.shaped(
         Item.of(
                 'pneumaticcraft:advanced_liquid_compressor',
@@ -91,7 +139,6 @@ ServerEvents.recipes(event => {
                 }
     )
     //electrostatic
-    event.remove({output: "pneumaticcraft:electrostatic_compressor"})
     event.shaped(
         Item.of('pneumaticcraft:electrostatic_compressor', 1),
         [
@@ -110,7 +157,6 @@ ServerEvents.recipes(event => {
         }
     )
     //thermal
-    event.remove({output: "pneumaticcraft:thermal_compressor"})
     event.shaped(
         Item.of('pneumaticcraft:thermal_compressor', 1),
         [

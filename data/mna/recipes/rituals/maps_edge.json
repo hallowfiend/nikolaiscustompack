@@ -1,0 +1,59 @@
+{
+  "type": "mna:ritual",
+  "tier": 2,
+  "pattern": [
+    [0, 0, 1, 2, 3],
+    [0, 12, 0, 0, 4],
+    [11, 0, 13, 0, 5],
+    [0, 10, 0, 0, 6],
+    [0, 0, 9, 8, 7]
+  ],
+  "reagents": [
+    "     ",
+    "    a",
+    "d m b",
+    "    c",
+    "     "
+  ],
+  "createsItem": "explorerscompass:explorers_compass",
+  "displayPattern": [
+    [0, 0, 1, 2, 3],
+    [0, 12, 0, 0, 4],
+    [11, 0, 13, 0, 5],
+    [0, 10, 0, 0, 6],
+    [0, 0, 9, 8, 7]
+  ],
+  "keys": {
+    "a": {
+      "item": "kubejs:aether_keys",
+      "consumed": false
+    },
+    "b": {
+      "item": "mna:mote_of_fire",
+      "consumed": true
+    },
+    "c": {
+      "item": "miners_delight:weird_caviar",
+      "consumed": true
+    },
+    "d": {
+      "item": "goety:waystone",
+      "consumed": true
+    },
+    "m": {
+      "item": "magichem:travellers_compass",
+      "consumed": true
+    }
+  },
+  "parameters": {
+    "innerColor": "0x242424",
+    "outerColor": "0x525252",
+    "beamColor": "0xffffff"
+  },
+  "manaweave": [
+    "mna:manaweave_patterns/circle",
+    "mna:manaweave_patterns/slash",
+    "mna:manaweave_patterns/backslash",
+    "mna:manaweave_patterns/diamond"
+  ]
+}

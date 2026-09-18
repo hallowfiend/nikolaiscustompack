@@ -148,6 +148,8 @@ ServerEvents.tags("item", (event) => {
   event.add("c:white_dyes", ["#forge:dyes/white"]);
   event.add("c:yellow_dyes", ["#forge:dyes/yellow"]);
 
+  event.add('kubejs:aether_keys', [/aether:.*key/])
+
   event.add('goety:soul_taking', [ //thanks again, polarice
     "malum:tyrving",
     "malum:weight_of_worlds",

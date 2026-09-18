@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
 			},
 			{
 				amount: 144,
-				fluid: 'tconstruct:amethyst'
+				fluid: 'tconstruct:molten_amethyst'
 			}
 		],
 		result: {
@@ -36,4 +36,32 @@ ServerEvents.recipes((event) => {
 		},
         "temperature": 820
     })
+	//improvable modifier rebalance
+	event.remove({id: "tinkerslevellingaddon:tools/modifiers/ability/improvable"})
+  	event.custom({
+    "type": "tconstruct:modifier",
+    "inputs": [
+      {
+        "item": "gobber2:dragon_star"
+      },
+      {
+        "item": "iceandfire:fire_dragon_blood"
+      },
+      {
+        "item": "kubejs:demon_pearl"
+      }
+    ],
+    "tools": {
+      "tag": "tconstruct:modifiable"
+    },
+    "slots": {
+      "abilities": 1
+    },
+    "allow_crystal": true,
+    "result": {
+      "name": "tinkerslevellingaddon:improvable",
+      "level": 1
+    },
+    "max_level": 1
+  })
 });

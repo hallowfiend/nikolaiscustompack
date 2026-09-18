@@ -1,7 +1,4 @@
 ServerEvents.tags('fluid', event => {
-    event.add('tconstruct:brass',
-    'gtceu:brass'
-    )
     event.add('forge:phenol', 'gtceu:phenol')
     event.add('forge:carbon_dioxide', 'gtceu:carbon_dioxide')
     event.add('forge:formaldehyde', 'gtceu:formaldehyde')
@@ -31,6 +28,5 @@ ServerEvents.tags('fluid', event => {
     event.add('forge:molten_copper', 'gtceu:copper')
     event.add('forge:molten_iron', 'gtceu:iron')
     event.add('forge:molten_gold', 'gtceu:gold')
-    event.add('forge:molten_brass', ['gtceu:brass', 'tconstruct:brass'])
-    event.add('forge:amethyst_bronze', 'tconstruct:amethyst_bronze')
+    event.add('forge:molten_brass', 'gtceu:brass')
 })

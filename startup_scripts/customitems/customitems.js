@@ -192,6 +192,8 @@ StartupEvents.registry('item', event => {
     }).useAnimation('eat');
     event.create('reagentbasic')
     .displayName('Plain Reagent');
+    event.create('industrial_sealant')
+    .displayName('Industrial Sealant');
     event.create('bloomwrap_cloth')
     .displayName('Bloomwrap Cloth');
     event.create('woven_silk')

@@ -119,11 +119,13 @@ ServerEvents.recipes(event => {
             {
                 "type": "pneumaticcraft:stacked_item",
                 "count": 1,
-                "item": "pneumaticcraft:upgrade_matrix"},
+                "item": "pneumaticcraft:upgrade_matrix"
+            },
             {
                 "type": "pneumaticcraft:stacked_item",
                 "count": 4,
-                "item": "enderio:photovoltaic_composite"},
+                "item": "enderio:photovoltaic_composite"
+            },
             {
                 "type": "pneumaticcraft:stacked_item",
                 "count": 1,
@@ -136,24 +138,8 @@ ServerEvents.recipes(event => {
                 "item": "enderio:photovoltaic_plate",
                 "count": 1
             }
-        ]
-    )
-    //ender air
-    pressureChamber(
-        [{
-            "type": "pneumaticcraft:stacked_item",
-            "count": 4,
-            "item": "naturesaura:aura_bottle",
-            "nbt": '{stored_type:"naturesaura:end"}'
-        }],
-        0.6,
-        [
-            {
-                "item": "botania:ender_air_bottle",
-                "count": 4
-            }
         ],
-        'endless_air'
+        'photovoltaic_plate'
     )
     //hematite
     event.remove({id: 'tinkers_things:hematite/alloy'})

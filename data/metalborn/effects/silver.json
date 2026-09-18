@@ -18,14 +18,14 @@
     },
     {
       "type": "metalborn:attribute",
-      "attribute": "apothic_attributes:armor_pierce",
+      "attribute": "attributeslib:armor_pierce",
       "multiplier": 1.0,
       "operation": "addition"
     }
   ],
   "format": "ticks",
   "hemalurgy_charge": 10,
-  "index": 12,
-  "name": "brass",
+  "index": 26,
+  "name": "silver",
   "temperature": 605
 }

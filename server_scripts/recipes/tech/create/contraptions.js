@@ -11,6 +11,47 @@ ServerEvents.recipes((event) => {
             Fluid.of('minecraft:water').withAmount(1000)
         ]
     )
+    //industrial sealant
+    event.recipes.create.mixing(
+        '4x kubejs:industrial_sealant',
+        [
+            'goety:repair_putty',
+            'embers:adhesive',
+            '4x gtceu:sticky_resin',
+            '16x magichem:alchemical_waste',
+            Fluid.of('gtceu:seed_oil').withAmount(200)
+        ]
+    )
+    event.recipes.gtceu.mixer("industrial_sealant")
+        .itemInputs(
+            'goety:repair_putty',
+            'embers:adhesive',
+            '4x gtceu:sticky_resin',
+            '16x magichem:alchemical_waste'
+        )
+        .inputFluids('gtceu:seed_oil 200')
+        .itemOutputs('4x kubejs:industrial_sealant')
+        .duration(40)
+        .EUt(4)
+    event.recipes.create.mixing(
+        '8x kubejs:industrial_sealant',
+        [
+            'goety:repair_putty',
+            'embers:adhesive',
+            'magichem:resin_gray',
+            Fluid.of('gtceu:seed_oil').withAmount(100)
+        ]
+    )
+    event.recipes.gtceu.mixer("industrial_sealant_efficient")
+        .itemInputs(
+            'goety:repair_putty',
+            'embers:adhesive',
+            'magichem:resin_gray'
+        )
+        .inputFluids('gtceu:seed_oil 100')
+        .itemOutputs('8x kubejs:industrial_sealant')
+        .duration(40)
+        .EUt(4)
     //irons' fluids
     //chalk compacting
     event.recipes.create.compacting(

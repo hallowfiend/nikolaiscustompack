@@ -3,7 +3,7 @@
 WorldgenEvents.remove(event => {
   event.removeOres((props) => {
     props.worldgenLayer = "underground_ores";
-    props.blocks = [/aether:.*ore.*/, /deeperdarker:.*ore.*/, /tinkersadvanced:.*/, /immersiveengineering:.*ore.*/, /deep_aether:.*ore/];
+    props.blocks = [/metalborn:.*ore.*/,/aether:.*ore.*/, /deeperdarker:.*ore.*/, /tinkersadvanced:.*/, /immersiveengineering:.*ore.*/, /deep_aether:.*ore/];
   });
 
   event.removeOres((props) => {
