@@ -1,0 +1,10 @@
+{
+  "append": true,
+  "storing": [
+    "Disables healing",
+    "Reduces movement speed and attack damage"
+  ],
+  "tapping": [
+    "Applies a fortune-like effect to mined blocks"
+  ]
+}

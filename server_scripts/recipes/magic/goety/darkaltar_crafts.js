@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
             'botania:ender_air_bottle',
             'magichem:thunderstone',
             'kubejs:rune_storms',
-            'cosmere:nicrosil_block'
+            'gtceu:nicrosil_block'
         ])
         .activationItem('botania:terra_sword')
         .craftType('forge')

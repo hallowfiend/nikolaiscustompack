@@ -3,7 +3,7 @@
 WorldgenEvents.remove(event => {
   event.removeOres((props) => {
     props.worldgenLayer = "underground_ores";
-    props.blocks = [/aether:.*ore.*/, /deeperdarker:.*ore.*/, /cosmere:.*ore.*/, /tinkersadvanced:.*/, /immersiveengineering:.*ore.*/, /deep_aether:.*ore/];
+    props.blocks = [/aether:.*ore.*/, /deeperdarker:.*ore.*/, /tinkersadvanced:.*/, /immersiveengineering:.*ore.*/, /deep_aether:.*ore/];
   });
 
   event.removeOres((props) => {
@@ -83,7 +83,6 @@ WorldgenEvents.remove(event => {
       'malum:cthonic_gold_ore',
       'malum:brilliant_stone',
       'malum:brilliant_deepslate',
-      /cosmere:.*ore.*/,
     /immersiveengineering:.*/,
     /eternal_starlight:.*ore.*/,
     /tconstruct:.*ore.*/,

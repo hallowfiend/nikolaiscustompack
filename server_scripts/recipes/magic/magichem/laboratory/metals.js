@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
         ],
         1.0, 4, 1
     )
-    magichemicalLaboratory.distillItem('cosmere:duralumin_ingot',
+    magichemicalLaboratory.distillItem('gtceu:duralumin_ingot',
         [
           { "item": "magichem:admixture_metal", "count": 4 },
           { "item": "magichem:admixture_comfort", "count": 2 },
@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
         1.0, 4, 1
     )
     //complex alloys
-    magichemicalLaboratory.distillItem('cosmere:nicrosil_ingot',
+    magichemicalLaboratory.distillItem('gtceu:nicrosil_ingot',
         [
           { "item": "magichem:admixture_metal", "count": 6 },
           { "item": "magichem:admixture_crystal", "count": 4 },
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
         ],
         1.0, 2, 2
     )
-    magichemicalLaboratory.distillItem('cosmere:bendalloy_ingot',
+    magichemicalLaboratory.distillItem('gtceu:bendalloy_ingot',
         [
           { "item": "magichem:admixture_metal", "count": 6 },
           { "item": "magichem:essentia_nourishing", "count": 4 },

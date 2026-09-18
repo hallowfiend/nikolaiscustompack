@@ -1,42 +1,24 @@
-//probably gonna recode this whole fuckass thing in java
+const $Helper = Java.loadClass('de.teamlapen.vampirism.common.util.Helper')
 
-/*StartupEvents.registry('item', event => {
-    //personal ember heater
-    event.create('personal_ember_heater').attachCuriosCapability(
-        CuriosJSCapabilityBuilder.create()
-                .curioTick((slotContext, stack) => {
-                    let player = slotContext.entity();
-                    let emberCurioList = []
-                    if (player.level.isClientSide() || (!player.isPlayer())) return;
-                    //Check the player's body temp
-                    let temperature = ColdSweat.getTemperature(player, 'body')
-                    //If below freezing threshold (8 degrees),
-                    if (temperature < 8){
-                        //Get the player's curio inventory
-                        let curioInv = $CuriosApi.getCuriosInventory(player).resolve();
-                        if (curioInv.isEmpty()) {
-                            return false;
-                        }
-                        //Check for any item containing at least 5 Ember
-                        curioInv.array.forEach(element => {
-                            const emberCap = element.nbt.ForgeCaps["embers:ember"]
-                            if (!emberCap || emberCap < 5) return;
-                            emberCurioList.push(element)
-                        });
-                        //and get the first one we find
-                        let emberCurio = emberCurioList.at(0)
-                        //Give the player a strong warmth effect,
-                        player.potionEffects.add(
-                            'cold_sweat:warmth',
-                            3300,
-                            9,
-                            false,
-                            true
-                        )
-                        //at the cost of draining 5 ember
-                        let emberAmount = (emberCurio.nbt.ForgeCaps["embers:ember"].get() - 5)
-                        emberCurio.nbt.ForgeCaps["embers:ember"].set(emberAmount)
+StartupEvents.registry('item', event => {
+    //Seal of the Ordo Sanguinis
+    event.create('ordo_sanguinis_seal')
+    .displayName('Seal of the Ordo Sanguinis')
+    .maxStackSize(1)
+    .tooltip("§6Provides a permanent sunscreen effect while equipped, and improves holy spell power in sunlight. For the sacred sanguophage or other exalted exanimate.")
+    .tag("curios:charm") 
+    .attachCuriosCapability(
+            CuriosJSCapabilityBuilder.create()
+                .curioTick((slotContext, stack) => { 
+                    let entity = slotContext.entity()
+                    if (entity.age % 200 === 0) {
+                        entity.potionEffects.add('vampirism:sunscreen', 220, 1, false, false)
+                        entity.potionEffects.add('mowziesmobs:sunblock', 220, 1, false, false)
+                    }
+                    let isSunlight = $Helper.hasLevelSunDamage(entity.level(), entity.blockPosition())
+                    if (isSunlight) {
+                        entity.potionEffects.add('constructs_casting:holy_empowerment', 220, 3, false, false)
                     }
                 })
-    )
-}) */
+        );
+})

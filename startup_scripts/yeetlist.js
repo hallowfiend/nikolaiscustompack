@@ -31,7 +31,6 @@ global.removedItems = [
   /tconstruct:.*mortar.*/,
   /tconstruct:.*gear_cast.*/,
   "aether:enchanted_gravitite",
-  /cosmere:.*blend.*/,
   "eidolon:crucible",
   "hexalia:mandrake_seeds",
   "hexalia:wild_mandrake",
@@ -215,7 +214,6 @@ global.removedItems = [
 ];
 
 global.removedRecipeIds = [
-    /cosmere:.*blend.*/,
     "rusticdelight:brewing/coffee",
     "rusticdelight:coffee"
 ]

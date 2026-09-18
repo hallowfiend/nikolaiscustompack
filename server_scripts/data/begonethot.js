@@ -16,31 +16,7 @@ ServerEvents.highPriorityData(e => {
     "immersiveengineering:mineral_veins",
     "immersiveengineering:nickel",
     "immersiveengineering:silver",
-    "immersiveengineering:uranium",
-    "cosmere:ore_nickel_middle",
-    "cosmere:ore_nickel_small",
-    "cosmere:ore_nickel_upper",
-    "cosmere:ore_silver_abundant",
-    "cosmere:ore_silver_normal",
-    "cosmere:ore_silver_rich",
-    "cosmere:ore_tin_abundant",
-    "cosmere:ore_tin_medium",
-    "cosmere:ore_tin_small",
-    "cosmere:ore_zinc_deep",
-    "cosmere:ore_zinc_middle",
-    "cosmere:ore_zinc_upper",
-    "cosmere:ore_aluminum_buried",
-    "cosmere:ore_aluminum_medium",
-    "cosmere:ore_aluminum_small",
-    "cosmere:ore_cadmium_abundant",
-    "cosmere:ore_cadmium_deep",
-    "cosmere:ore_cadmium_normal",
-    "cosmere:ore_chromium_deep",
-    "cosmere:ore_chromium_normal",
-    "cosmere:ore_chromium_rare",
-    "cosmere:ore_lead_abundant",
-    "cosmere:ore_lead_deep",
-    "cosmere:ore_lead_normal"
+    "immersiveengineering:uranium"
 
   ]
 

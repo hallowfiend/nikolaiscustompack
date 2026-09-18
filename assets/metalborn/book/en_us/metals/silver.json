@@ -1,0 +1,11 @@
+{
+  "append": true,
+  "storing": [
+    "You are considered undead",
+    "Reduces armor-pierce, if you had any"
+  ],
+  "tapping": [
+    "Applies a smite-like effect to all weapons",
+    "Makes your attacks armor-piercing"
+  ]
+}

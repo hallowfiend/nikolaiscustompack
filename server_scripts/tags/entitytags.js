@@ -10,9 +10,7 @@ ServerEvents.tags('entity_type', event => {
         "aquamirae:maze_mother",
         "alexsmobs:void_worm",
         "alexsmobs:void_worm_part",
-        "alexscaves:forsaken",
-        "alexscaves:hullbreaker",
-        "goety:wither_necromancer",
+        "goety:wither_necromancer"
   ])
   event.add('kubejs:mob_blacklist', [
     'artifacts:mimic',

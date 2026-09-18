@@ -284,7 +284,7 @@ StartupEvents.registry('item', event => {
         if (level.clientSide) return true;
         // let darkReputation = player.getCapability(ForgeCapabilities.IReputation).getReputation()
         const effects = player.potionEffects;
-        effects.add('constructs_casting:holy_empowerment', 120*20)
+        effects.add('constructs_casting:recovery_empowerment', 120*20)
         effects.add('constructs_casting:ender_empowerment', 120*20)
         effects.add('constructs_casting:blood_empowerment', 120*20)
         player.playSound('malum:arcana_page_flipped')

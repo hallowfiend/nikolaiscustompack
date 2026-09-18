@@ -136,14 +136,14 @@ ServerEvents.recipes((event) => {
         'gtceu:tin_ingot',
         2,
         [{'tag': 'forge:ingots/cadmium'}, {'tag': 'forge:ingots/lead'}],
-        'cosmere:bendalloy_ingot',
+        'gtceu:bendalloy_ingot',
         4
     )
     arcFurnace(
         'gtceu:aluminium_ingot',
         3,
         [{'tag': 'forge:ingots/copper'}],
-        'cosmere:duralumin_ingot',
+        'gtceu:duralumin_ingot',
         4
     )
     arcFurnace(
@@ -184,7 +184,7 @@ ServerEvents.recipes((event) => {
         "results": [
             {
             "count": 4,
-            "item": 'cosmere:nicrosil_ingot'
+            "item": 'gtceu:nicrosil_ingot'
             }
         ],
         "time": 100

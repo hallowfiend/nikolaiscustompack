@@ -1,0 +1,15 @@
+{
+  "storing": [
+    "-10% heat damage",
+    "+10% cold damage",
+    "-1 fire per second",
+    "If not on fire, adds 2 seconds freezing"
+  ],
+  "tapping": [
+    "-10% cold damage",
+    "+10% heat damage",
+    "-1 freeze per second",
+    "+0.5 fire melee damage, +1 if on fire",
+    "Melee attacks ignite you"
+  ]
+}
