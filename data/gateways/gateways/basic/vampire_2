@@ -1,0 +1,93 @@
+
+{
+    "size": "large",
+	"color": "#CF0000",
+	"waves": [
+		{
+			"entities": [
+			{
+				"entity": "vampirism:vampire",
+				"count": 3
+			},
+            {
+                "entity": "vampirism:advanced_vampire",
+                "count": 1
+            }
+			],
+			"rewards": [
+				{
+					"type": "gateways:experience",
+					"experience": 500,
+                    "orb_size": 25
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 120
+		},
+		{
+			"entities": [
+			{
+				"entity": "vampirism:vampire",
+				"count": 6
+			},
+            {
+                "entity": "vampirism:advanced_vampire",
+                "count": 2
+            }
+			],
+			"rewards": [
+				{
+					"type": "gateways:experience",
+					"experience": 500,
+                    "orb_size": 40
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 120
+		},
+		{
+			"entities": [
+			{
+				"entity": "vampirism:vampire",
+				"count": 9
+			},
+            {
+                "entity": "vampirism:advanced_vampire",
+                "count": 3
+            },
+            {
+                "entity": "vampirism:vampire_baron",
+                "count": 1
+            }
+			],
+			"rewards": [
+				{
+					"type": "gateways:experience",
+					"experience": 500,
+                    "orb_size": 75
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 120
+		}
+	],
+    "rewards": [
+        {
+            "type": "gateways:entity_loot",
+            "entity": "vampirism:vampire",
+            "rolls": 20
+        },
+        {
+            "type": "gateways:entity_loot",
+            "entity": "vampirism:advanced_vampire",
+            "rolls": 20
+        },
+        {
+            "type": "gateways:entity_loot",
+            "entity": "vampirism:vampire_baron",
+            "rolls": 5
+        }
+    ],
+    "failures": [
+    ]
+}

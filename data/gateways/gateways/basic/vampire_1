@@ -1,0 +1,70 @@
+
+{
+    "size": "medium",
+	"color": "#9C0000",
+	"waves": [
+		{
+			"entities": [
+			{
+				"entity": "vampirism:vampire",
+				"count": 3
+			}
+			],
+			"rewards": [
+				{
+					"type": "gateways:experience",
+					"experience": 500,
+                    "orb_size": 25
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 120
+		},
+		{
+			"entities": [
+			{
+				"entity": "vampirism:vampire",
+				"count": 5
+			}
+			],
+			"rewards": [
+				{
+					"type": "gateways:experience",
+					"experience": 500,
+                    "orb_size": 40
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 120
+		},
+		{
+			"entities": [
+			{
+				"entity": "vampirism:vampire",
+				"count": 6
+			},
+            {
+                "entity": "vampirism:advanced_vampire",
+                "count": 1
+            }
+			],
+			"rewards": [
+				{
+					"type": "gateways:experience",
+					"experience": 500,
+                    "orb_size": 75
+				}
+			],
+			"max_wave_time": 1200,
+			"setup_time": 120
+		}
+	],
+    "rewards": [{
+            "type": "gateways:entity_loot",
+            "entity": "vampirism:vampire",
+            "rolls": 30
+        }
+    ],
+    "failures": [
+    ]
+}

@@ -1,4 +1,19 @@
 ServerEvents.tags('entity_type', event => {
+  event.add('forge:bosses', [
+        "mowziesmobs:ferrous_wroughtnaut",
+        "mowziesmobs:frostmaw",
+        "mowziesmobs:umvuthi",
+        "mowziesmobs:sculptor",
+        "irons_spellbooks:dead_king_corpse",
+        "botania:doppleganger",
+        "aquamirae:captain_cornelia",
+        "aquamirae:maze_mother",
+        "alexsmobs:void_worm",
+        "alexsmobs:void_worm_part",
+        "alexscaves:forsaken",
+        "alexscaves:hullbreaker",
+        "goety:wither_necromancer",
+  ])
   event.add('kubejs:mob_blacklist', [
     'artifacts:mimic',
     'aquamirae:captain_cornelia',
