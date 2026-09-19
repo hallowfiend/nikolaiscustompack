@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         2000                            
     ).id('kubejs:ars_nouveau/enchanting_apparatus/basic_spell_turret')
     //SANDSO TIMEO
-    event.remove({output: 'gag:time_sand_pouch'})
+    /* event.remove({output: 'gag:time_sand_pouch'})
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             'kubejs:rune_time',
@@ -61,5 +61,5 @@ ServerEvents.recipes(event => {
         'goety:ominous_stone',             
         'gag:hearthstone',   
         1000                        
-    ).id('kubejs:ars_nouveau/enchanting_apparatus/hearthstone')
+    ).id('kubejs:ars_nouveau/enchanting_apparatus/hearthstone')*/
 })

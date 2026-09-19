@@ -10,6 +10,6 @@ ServerEvents.recipes(event => {
     }
 
     fulminate('evilcraft:inverted_potentia', 'evilcraft:inverted_potentia_empowered')
-    fulminate('gag:hearthstone', 'gag:energized_hearthstone')
+    // fulminate('gag:hearthstone', 'gag:energized_hearthstone')
     fulminate('minecraft:glass_bottle', 'irons_spellbooks:lightning_bottle')
 })
