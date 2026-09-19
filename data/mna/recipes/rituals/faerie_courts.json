@@ -1,0 +1,101 @@
+{
+	"type": "mna:ritual",	
+	"tier": 2,
+	"pattern":
+	[
+		[ 0,15,-1,16,-1,17, 0 ],
+		[14,-1,-1,-1,-1,-1,18 ],
+		[13,-1,12,10,20,-1,19 ],
+		[ 0,22, 0, 9, 0, 0,24 ],
+		[ 0, 0, 0, 8, 0, 0,25 ],
+		[ 0, 0, 2, 7, 3, 0, 0 ],
+		[ 0, 1,-1, 5,-1, 4, 0 ]
+	],	
+	"reagents":
+	[
+		" L A L ",
+		"L MOM L",
+		"LMLFLML",
+		"   P   ",
+		"   P   ",
+		"  PPP  ",
+		" DQWUD "
+	],
+	"keys":
+	{
+		"L": 
+		{ 
+			"item": "minecraft:leaves",
+			"optional": false,
+			"consume": true
+		},
+		"A":
+		{
+			"item": "mna:mote_air",
+			"optional": false,
+			"consume": true
+		},
+		"P":
+		{
+			"item": "botania:livingwood",
+			"optional": false,
+			"consume": true
+		},
+		"D":
+		{
+			"item": "farmersdelight:rich_soil",
+			"optional": false,
+			"consume": true
+		},
+		"W":
+		{
+			"item": "mna:mote_water",
+			"optional": false,
+			"consume": true
+		},
+		"F":
+		{
+			"item": "minecraft:flowers",
+			"optional": false,
+			"consume": true
+		},
+        "M":
+        {
+          "item": "naturesaura:gold_powder",
+          "optional": false,
+          "consume": true
+        },
+        "O":
+        {
+            "item": "kubejs:bloomwrap_cloth",
+            "optional": false,
+            "consume": true
+        },
+        "Q":
+        {
+            "item": "hexalia:earth_node",
+            "optional": false,
+            "consume": true
+        },
+        "U":
+        {
+            "item": "kubejs:undirected_node",
+            "optional": false,
+            "consume": true
+        }
+	},
+	"manaweave":
+	[
+		"mna:manaweave_patterns/triangle",
+		"mna:manaweave_patterns/inverted_triangle",
+		"mna:manaweave_patterns/circle",
+		"mna:manaweave_patterns/inverted_triangle"
+	],
+	"parameters":
+	{
+		"innerColor": "0x00CC00",
+		"outerColor": "0x6600FF",
+		"displayIndexes": false,
+		"beamColor": "0xcc1bc9"
+	}
+}

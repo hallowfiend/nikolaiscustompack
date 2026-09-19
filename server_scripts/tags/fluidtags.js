@@ -25,8 +25,33 @@ ServerEvents.tags('fluid', event => {
     event.remove("minecraft:lava", ["hexerei:quicksilver_fluid"])
     event.add("ad_astra:fuel", "gtceu:rocket_fuel")
     //metals
-    event.add('forge:molten_copper', 'gtceu:copper')
-    event.add('forge:molten_iron', 'gtceu:iron')
-    event.add('forge:molten_gold', 'gtceu:gold')
-    event.add('forge:molten_brass', 'gtceu:brass')
+    const gtceuMetalsToTagify = [
+        'copper',
+        'iron',
+        'gold',
+        'tin',
+        'zinc',
+        'nickel',
+        'brass',
+        'bronze',
+        'nicrosil',
+        'bendalloy',
+        'duralumin',
+        'steel',
+        'lead',
+        'silver',
+        'cobalt',
+        'rose_gold',
+        'pewter',
+        'electrum',
+        'invar',
+        'platinum'
+    ]
+    gtceuMetalsToTagify.forEach(metal => {
+        event.add(`forge:molten_${metal}`, `gtceu:${metal}`)
+    })
+    event.add('forge:molten_aluminum', 'gtceu:aluminium')
+     event.add('constructs_casting:molten_mithril', 'gtceu:mithril')
+    event.add('tcompat:molten_aeternium', 'gtceu:aeternium')
+    event.add('tcompat:molten_terminite', 'gtceu:terminite')
 })

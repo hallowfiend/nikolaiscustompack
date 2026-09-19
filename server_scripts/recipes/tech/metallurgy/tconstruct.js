@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
 	event.remove({ id: /tconstruct:.*mana_steel.*/})
+  event.remove({ id: /tcompat:smeltery.*melting.*soul_stained_steel/})
 	event.remove({ id: /gm_construct:smeltery.*casting.*metal.*malachite.*/})
 	// fuck the melter
 	event.remove({ output: 'tconstruct:smeltery_controller' })
@@ -32,7 +33,7 @@ ServerEvents.recipes((event) => {
 		],
 		result: {
 			amount: 144,
-			fluid: 'tconstruct:amethyst_bronze'
+			fluid: 'tconstruct:molten_amethyst_bronze'
 		},
         "temperature": 820
     })
@@ -42,13 +43,19 @@ ServerEvents.recipes((event) => {
     "type": "tconstruct:modifier",
     "inputs": [
       {
-        "item": "gobber2:dragon_star"
+        "item": "botania:dragonstone"
       },
       {
-        "item": "iceandfire:fire_dragon_blood"
+        "item": "cataclysm:ancient_metal_ingot"
       },
       {
-        "item": "kubejs:demon_pearl"
+        "item": "botania:dragonstone"
+      },
+      {
+        "item": "kubejs:biomantic_neuron"
+      },
+      {
+        "item": "kubejs:biomantic_neuron"
       }
     ],
     "tools": {

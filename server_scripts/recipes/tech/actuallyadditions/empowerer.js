@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         10365735,
         [
             {'item': 'enderio:conductive_alloy_ingot'},
-            {'item': 'gtceu:garnet_gem'},
+            {'item': 'gtceu:red_garnet_gem'},
             {'item': 'gtceu:netherrack_dust'},
             {'item': 'minecraft:beetroot'}
         ]

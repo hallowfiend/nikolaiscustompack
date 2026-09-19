@@ -18,6 +18,9 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('netherexp:warped_wart', (item, advanced, text) => {
     text.add(1, Text.cyan('Found only in Sanctums'))
   })
+  event.addAdvanced('explorerscompass:explorers_compass', (item, advanced, text) => {
+    text.add(1, Text.gray("Created through the Ritual of the Map's Edge"))
+  })
 
   //ars ritual tablets
   event.addAdvanced(['ars_nouveau:ritual_animal_summon', 'ars_nouveau:ritual_wilden_summon'], (item, advanced, text) => {

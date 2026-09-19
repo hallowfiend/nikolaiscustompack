@@ -1,0 +1,95 @@
+{
+  "type": "mna:ritual",
+  "tier": 2,
+  "pattern":
+  [
+    [ 0, 0, 0, 5, 0, 0, 0 ],
+    [ 0, 0,16, 4,17, 0, 0 ],
+    [ 0, 2, 1, 0, 7, 8, 0 ],
+    [ 0, 0,15,10,18, 0, 0 ],
+    [ 0, 0, 0,11, 0, 0, 0 ],
+    [ 0, 0, 0,12, 0, 0, 0 ],
+    [ 0, 0, 0,13, 0, 0, 0 ]
+  ],
+  "displayPattern":
+  [
+    [ 0, 0, 0, 5, 0, 0, 0 ],
+    [ 0, 0,16, 4,17, 0, 0 ],
+    [ 0, 2, 1, 0, 7, 8, 0 ],
+    [ 0, 0,15,10,18, 0, 0 ],
+    [ 0, 0, 0,11, 0, 0, 0 ],
+    [ 0, 0, 0,12, 0, 0, 0 ],
+    [ 0, 0, 0,13, 0, 0, 0 ]
+  ],
+  "reagents":
+  [
+    "   O   ",
+    "  SUS  ",
+    " SG GS ",
+    "  APA  ",
+    "   I   ",
+    "   I   ",
+    "   I   "
+  ],
+  "keys":
+  {
+    "S":
+    {
+      "item": "malum:sacred_spirit",
+      "optional": false,
+      "consume": true
+    },
+    "A":
+    {
+        "item": "eidolon:arcane_gold_inlay",
+        "optional": false,
+        "consume": true
+    },
+    "O":
+    {
+        "item": "eidolon:offering_incense",
+        "optional": false,
+        "consume": true
+    },
+    "G":
+    {
+        "item": "gtceu:steel_plate",
+        "optional": false,
+        "consume": true
+    },
+    "U":
+    {
+        "item": "eidolon:holy_symbol",
+        "optional": false,
+        "consume": false
+    },  
+    "I":
+    {
+      "item": "minecraft:iron_ingot",
+      "optional": false,
+      "consume": true
+    },
+    "P":
+    {
+      "item": "fnc:paladin_equipment",
+      "optional": false,
+      "consume": true
+    }
+  },
+  "manaweave":
+  [
+    "mna:manaweave_patterns/triangle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/circle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/inverted_triangle"
+  ],
+  "parameters":
+  {
+    "innerColor": "0x111111",
+    "outerColor": "0x808080",
+    "displayIndexes": false,
+    "connectBeam": false,
+    "beamColor": "0xc0c0c0"
+  }
+}

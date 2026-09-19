@@ -81,7 +81,6 @@ ServerEvents.recipes(event => {
         recipesToAdd.push(buildColorRecipe('gtceu:@_dye_bucket', 'gtceu:white_dye_bucket'))
         recipesToAdd.push(buildColorRecipe('gtceu:@_metal_sheet', 'gtceu:white_metal_sheet'))
         recipesToAdd.push(buildColorRecipe('gtceu:@_large_metal_sheet', 'gtceu:white_large_metal_sheet'))
-        recipesToAdd.push(buildColorRecipe('botania_seeds:@_mystical_flower_seed', 'botania_seeds:white_mystical_flower_seed'))
         recipesToAdd.push(buildColorRecipe('gtceu:@_studs', 'gtceu:black_studs'))
         recipesToAdd.push(buildColorRecipe('gtceu:@_dye_spray_can', 'gtceu:white_dye_spray_can'))
         recipesToAdd.push(buildColorRecipe('vampiresdelight:@_bar_stool', 'vampiresdelight:white_bar_stool'))

@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
     event.shaped('hexalia:hex_focus', [
         ' WA',
         ' SW',
-        'E'
+        'E  '
     ], {
         E: 'hexalia:earth_node',
         S: '#forge:tools/wooden',

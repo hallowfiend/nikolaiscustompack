@@ -1,0 +1,107 @@
+{
+	"type": "mna:ritual",
+	"tier": 2,
+	"pattern":
+	[
+		[ 0, 0,19,20, 1, 2, 3, 0, 0 ],
+		[ 0,18,21,22,23,24,25, 4, 0 ],
+		[ 0,17, 0, 0,26, 0, 0, 5, 0 ],
+		[ 0,16, 0, 0,27, 0, 0, 6, 0 ],
+		[ 0,15,28,29,30,31,32, 7, 0 ],
+		[ 0, 0,14,33, 0,34, 8, 0, 0 ],
+		[ 0, 0, 0,13,35, 9, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+		[ 0, 0, 0,12,11,10, 0, 0, 0 ]
+	],	
+	"displayPattern":
+	[
+		[ 0, 0,14,13, 1, 2, 3, 0, 0 ],
+		[ 0,15,24,25,26,27,28, 4, 0 ],
+		[ 0,16, 0, 0,36, 0, 0, 5, 0 ],
+		[ 0,17, 0, 0,37, 0, 0, 6, 0 ],
+		[ 0,18,34,33,32,31,30, 7, 0 ],
+		[ 0, 0,19,20, 0, 9, 8, 0, 0 ],
+		[ 0, 0, 0,21,39,10, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+		[ 0, 0, 0,22,40,11, 0, 0, 0 ]
+	],	
+	"reagents":
+	[
+		"  A B A  ",
+		" A  E  A ",
+		"    H    ",
+		"         ",
+		" AM C MA ",
+		"  IM MI  ",
+		"   AOA   ",
+		"         ",
+		"   ABA   "
+	],
+	"keys":
+	{
+		"A": 
+		{ 
+			"item": "sons_of_sins:ether_ashes",
+			"optional": false,
+			"consume": true
+		},
+		"B": 
+		{ 
+			"item": "eidolon:undeath_incense",
+			"optional": false,
+			"consume": true
+		},
+		"E": 
+		{ 
+			"item": "mna:mote_ender",
+			"optional": false,
+			"consume": true
+		},
+		"I": 
+		{ 
+			"item": "goety:chill_fabric",
+			"optional": false,
+			"consume": true
+		},
+		"C": 
+		{ 
+			"item": "mna:warding_candle",
+			"optional": false,
+			"consume": true
+		},
+        "M":
+        {
+          "item": "malum:rotting_essence",
+          "optional": false,
+          "consume": true
+        },
+        "H":
+        {
+            "item": "goety:hunger_core",
+            "optional": false,
+            "consume": true
+        },
+        "O":
+        {
+            "item": "eidolon:wraith_heart",
+            "optional": false,
+            "consume": true
+        }
+		
+	},
+	"manaweave":
+	[
+		"mna:manaweave_patterns/inverted_triangle",
+		"mna:manaweave_patterns/knot",
+		"mna:manaweave_patterns/diamond",
+		"mna:manaweave_patterns/knot3",
+		"mna:manaweave_patterns/inverted_triangle"
+	],
+	"parameters":
+	{
+		"innerColor": "0x1E0740",
+		"outerColor": "0x7ECCD6",
+		"displayIndexes": false,
+		"connectBeam": false
+	}
+}

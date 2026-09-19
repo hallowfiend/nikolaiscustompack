@@ -1,0 +1,76 @@
+{
+  "type": "mna:ritual",
+  "tier": 2,
+  "pattern":
+  [
+    [ 0, 0, 0, 2, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0 ],
+    [ 4, 0, 0, 0, 0, 0, 5 ],
+    [ 0, 0, 0, 1, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 6, 0, 0, 0, 3, 0 ]
+  ],
+  "displayPattern":
+  [
+    [ 0, 0, 0, 1, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0 ],
+    [ 3, 0, 0, 0, 0, 0, 4 ],
+    [ 0, 0, 0,-1, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 5, 0, 0, 0, 2, 0 ]
+  ],
+  "reagents":
+  [
+    "   C   ",
+    "       ",
+    "L     L",
+    "   D   ",
+    "       ",
+    "       ",
+    " G   G "
+  ],
+  "keys":
+  {
+    "D":
+    {
+      "item": "fnc:dice_six",
+      "optional": false,
+      "consume": true
+    },
+    "G":
+    {
+      "item": "goety:gale_fabric",
+      "optional": false,
+      "consume": true
+    },
+    "L":
+    {
+      "item": "goety:occult_fabric",
+      "optional": false,
+      "consume": true
+    },
+    "C":
+    {
+        "item": "botania:mana_cookie",
+        "optional": false,
+        "consume": true
+    }
+  },
+  "manaweave":
+  [
+    "mna:manaweave_patterns/triangle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/circle",
+    "mna:manaweave_patterns/square",
+    "mna:manaweave_patterns/inverted_triangle"
+  ],
+  "parameters":
+  {
+    "innerColor": "0xDAA520",
+    "outerColor": "0xFFD700",
+    "displayIndexes": false,
+    "connectBeam": true
+  }
+}
