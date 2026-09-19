@@ -1,5 +1,3 @@
-const $Helper = Java.loadClass('de.teamlapen.vampirism.common.util.Helper')
-
 StartupEvents.registry('item', event => {
     //Seal of the Ordo Sanguinis
     event.create('ordo_sanguinis_seal')
