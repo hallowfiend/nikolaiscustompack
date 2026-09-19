@@ -5,7 +5,7 @@ StartupEvents.registry('item', event => {
     event.create('ordo_sanguinis_seal')
     .displayName('Seal of the Ordo Sanguinis')
     .maxStackSize(1)
-    .tooltip("§6Provides a permanent sunscreen effect while equipped, and improves holy spell power in sunlight. For the sacred sanguophage or other exalted exanimate.")
+    .tooltip("§6Provides a permanent sunscreen effect while equipped, and improves holy magic. For the sacred sanguophage or other exalted exanimate.")
     .tag("curios:charm") 
     .attachCuriosCapability(
             CuriosJSCapabilityBuilder.create()
@@ -15,10 +15,18 @@ StartupEvents.registry('item', event => {
                         entity.potionEffects.add('vampirism:sunscreen', 220, 1, false, false)
                         entity.potionEffects.add('mowziesmobs:sunblock', 220, 1, false, false)
                     }
-                    let isSunlight = $Helper.hasLevelSunDamage(entity.level(), entity.blockPosition())
-                    if (isSunlight) {
-                        entity.potionEffects.add('constructs_casting:holy_empowerment', 220, 3, false, false)
-                    }
                 })
+                .addAttribute(
+                    "irons_spellbooks:holy_spell_power",
+                    UUID,
+                    0.3,
+                    "addition"
+                )
+                .addAttribute(
+                    "eidolon:chanting_speed",
+                    UUID,
+                    0.3,
+                    "multiply_total"
+                )
         );
 })

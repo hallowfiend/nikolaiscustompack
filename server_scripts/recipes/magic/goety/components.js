@@ -57,7 +57,10 @@ ServerEvents.recipes(event => {
                 "item": "embers:glimmer_crystal"
             },
             {
-                "item": "kubejs:concentratedcatalyst"
+                "item": "goety:unholy_blood"
+            },
+            {
+                "item": "bloodmagic:strengthenedcatalyst"
             }
         ],
         "result": {

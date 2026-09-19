@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
             'gtceu:brass_gear'
         ],
         'components'
-    ).id('kubejs:immersive_engineering/workbench/iron_component')
+    ).id('immersiveengineering:blueprint/component_iron')
     event.recipes.immersiveengineering.blueprint(
         '2x immersiveengineering:component_steel',
         [
@@ -188,9 +188,9 @@ ServerEvents.recipes(event => {
             'gtceu:invar_gear'
         ],
         'components'
-    ).id('kubejs:immersive_engineering/workbench/steel_component')
+    ).id('immersiveengineering:blueprint/component_steel')
     event.recipes.immersiveengineering.blueprint(
-        '2x kubejs:aerilated_pneumatic_component',
+        '4x kubejs:aerilated_pneumatic_component',
         [
             '4x #forge:plates/compressed_iron',
             '2x #forge:plates/duralumin',
@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
         `ae2:${type}_processor`,
         [
             `ae2:printed_${type}_processor`,
-            'gtceu:red_alloy_single_wire',
+            '2x gtceu:red_alloy_single_wire',
             'ae2:printed_silicon'
         ],
         'components'
