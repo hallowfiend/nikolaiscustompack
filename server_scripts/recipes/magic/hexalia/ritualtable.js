@@ -48,7 +48,7 @@
     ritualtable(
         [
             {'item': 'minecraft:amethyst_shard'},
-            {'item': 'miners_delight:tentacles'},
+            {'item': 'windswept:lavender'},
             {'item': 'minecraft:ender_pearl'}
         ],
         'kubejs:eldritch_node'

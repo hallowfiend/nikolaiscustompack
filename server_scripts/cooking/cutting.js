@@ -194,4 +194,16 @@ ServerEvents.recipes((event) => {
       { item: 'minecraft:string', count: 1, chance: 0.5}
     ]
     })
+    //Salvaging
+    event.custom({
+    type: 'farmersdelight:cutting',
+    ingredients: [
+      { item: 'aether:life_shard' }
+    ],
+    tool: { tag: 'forge:tools/pickaxes' },
+    result: [
+      { item: 'kubejs:lifecrystal', count: 2 },
+      { item: 'kubejs:lifecrystal', count: 1, chance: 0.5}
+    ]
+    })
 })

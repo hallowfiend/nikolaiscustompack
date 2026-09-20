@@ -224,8 +224,8 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.runic_altar('4x kubejs:eldritch_node',
         [
             'minecraft:amethyst_shard',
-            'miners_delight:tentacles',
-            'dungeonsdelight:sculk_polyp',
+            'windswept:lavender',
+            'minecraft:ender_pearl',
             'malum:eldritch_spirit'
         ],
         2000

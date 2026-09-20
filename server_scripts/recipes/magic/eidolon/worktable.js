@@ -263,6 +263,7 @@ ServerEvents.recipes((event) => {
             "item": "irons_spellbooks:pyrium_staff"
         }
     }).id('kubejs:eidolon/worktable/staves/pyrium_staff')
+    //engineer's power glove
     //inscription table
     event.remove({ id: 'irons_spellbooks:inscription_table' })
     event.custom({

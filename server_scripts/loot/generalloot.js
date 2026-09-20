@@ -33,6 +33,7 @@ LootJS.modifiers((event) => {
     .replaceLoot('scguns:niter_dust', 'gtceu:saltpeter_dust', true)
     .replaceLoot('scguns:sulfur_dust', 'gtceu:sulfur_dust', true)
     .replaceLoot('hexerei:animal_fat', 'delightful:animal_fat', true)
+    .replaceLoot('aether:enchanted_gravitite', 'gtceu:gravitite_block', true)
     .removeLoot([
       'farm_and_charm:bacon',
       'farm_and_charm:beetroot_bag',

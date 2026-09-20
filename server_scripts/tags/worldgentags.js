@@ -50,5 +50,13 @@ ServerEvents.tags('worldgen/biome', event => {
     event.add('hexalia:has_shaded_vegetation', [
         '#forge:is_spooky'
     ])
+
+    event.add('kubejs:is_ashy', [
+        'minecraft:basalt_deltas',
+        'incendium:ash_barrens',
+        'incendium:volcanic_deltas',
+        'incendium:withered_forest',
+        'undergarden:smog_spires'
+    ])
     
 })

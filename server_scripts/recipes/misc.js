@@ -18,6 +18,9 @@ event.replaceInput(
   'rusticdelight:syrup'
 ),
 
+event.replaceInput({}, "farmersdelight:fried_egg", "#forge:cooked_eggs")
+event.replaceInput({}, "aquaculture:perch", "#forge:raw_fishes/perch")
+event.replaceInput({}, "farm_and_charm:strawberry", "#forge:fruits/strawberry")
 event.remove({ id: "quark:building/crafting/compressed/charcoal_block"})
 event.remove({ id: "quark:building/crafting/compressed/sugar_cane_block"})
 event.remove({ id: "quark:building/crafting/compressed/gunpowder_sack"})

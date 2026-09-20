@@ -30,7 +30,9 @@ event.add('collectorsreap:gummies', [
         'aethersdelight:aechor_ice_cream',
         'dungeonsdelight:aurora_ice_cream',
         'mapleful:maple_ice_cream',
-        'cosmopolitan:spaghettieis'
+        'cosmopolitan:spaghettieis',
+        'alexsmobsdelight:acacia_blossom_ice_cream',
+        'alexsmobsdelight:mungal_spores_ice_cream'
     ]);
 
 //malum
@@ -133,7 +135,8 @@ event.add('diet:vegetables', [
     'hexalia:sunfire_tomato',
     'undergarden:underbeans',
     'upgrade_aquatic:boiled_pickerelweed',
-    'netherexp:cerebrage'
+    'netherexp:cerebrage',
+    'cosmopolitan:wheatgrass'
 ])
 event.add('diet:psi', [
     'malum:cursed_sap',
@@ -551,7 +554,10 @@ event.add('coldsweat:small_warming_drinks', [
     'collectorsreap:reanimators_garden',
     'collectorsreap:heavens_cream',
     'sob:bustling_brew',
-    'delightful:ender_nectar'
+    'delightful:ender_nectar',
+    'cosmopolitan:ice_cream_float',
+    'delightful:matcha_latte',
+    'delightful:berry_matcha_latte'
   ])
   event.add('toughasnails:hydration/80_hydration_drinks', [
     '#toughasnails:thirst/8_thirst_drinks'
@@ -567,5 +573,28 @@ event.add('coldsweat:small_warming_drinks', [
 
   event.remove('diet:special_food', [
     /arsdelight:.*_pie_slice/
+  ])
+
+  event.add('forge:fruits/blueberry', 'aether:blue_berry')
+  event.add('forge:fruits/blueberries', 'aether:blue_berry')
+  event.add('forge:fruits/cherries', ['environmental:cherries']);
+  event.add('forge:grains/oats', 'aether_redux:wynd_oat_panicle')
+  event.add('forge:fishes/bass', [
+    'tide:largemouth_bass',
+    'tide:smallmouth_bass',
+    'naturalist:bass'
+  ])
+  event.add('forge:fishes/perch', [
+    'tide:yellow_perch',
+    'tide:ash_perch',
+    'aquaculture:perch',
+    'upgrade_aquatic:perch'
+  ])
+  event.add('forge:raw_fishes', [
+    'tide:fish_slice'
+  ])
+  event.add('forge:bars/chocolate', [
+    'neapolitan:chocolate_bar',
+    'bakery:chocolate_truffle'
   ])
 })

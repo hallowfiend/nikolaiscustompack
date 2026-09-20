@@ -1,0 +1,6 @@
+{
+  "type": "farmersdelight:add_features_by_filter",
+  "allowed_biomes": "#kubejs:is_ashy",
+  "features": "farmersrespite:patch_wild_coffee_bush",
+  "step": "vegetal_decoration"
+}

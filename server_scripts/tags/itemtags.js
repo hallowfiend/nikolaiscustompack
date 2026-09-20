@@ -252,7 +252,12 @@ ServerEvents.tags("item", (event) => {
   event.add('curios:necklace', [
     'hexalia:sage_pendant',
     'evilcraft:invigorating_pendant',
-    'evilcraft:primed_pendant'
+    'evilcraft:primed_pendant',
+    'aether:ice_pendant',
+    'aether:golden_pendant',
+    'aether:zanite_pendant',
+    'aether:iron_pendant',
+    'deep_aether:aercloud_necklace'
   ]);
   event.add('curios:charm', [
     'hexalia:sage_pendant',
