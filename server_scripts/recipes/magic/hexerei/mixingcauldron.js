@@ -805,9 +805,9 @@ const fluidMixingRecipes = [
         {'item': 'eidolon:undeath_incense'},
         {'item': 'goety:shadow_essence'},
         {'tag': 'forge:tallow'},
+        {'tag': 'forge:slimeballs'},
         {'item': 'gtceu:talc_dust'},
-        {'item': 'kubejs:lifecrystal'},
-        {'item': 'eidolon:soul_shard'}
+        {'item': 'magichem:admixture_protection'}
       ],
       input: 'irons_spellbooks:greater_oakskin_elixir',
       output: 'kubejs:sunscreen_elixir',
@@ -995,43 +995,43 @@ cauldronEmptying(
 cauldronEmptying(
   'minecraft:string',
   'kubejs:golden_fiber_dye',
-  100,
+  200,
   'kubejs:golden_thread'
 )
 cauldronEmptying(
-  'betterend:silk_thread',
+  'betterend:silk_fiber',
   'kubejs:witches_fiber_dye',
-  100,
+  200,
   'kubejs:witches_stitching'
 )
 cauldronEmptying(
   'botania:mana_string',
   'kubejs:pure_fiber_dye',
-  100,
+  200,
   'kubejs:pure_filament'
 )
 cauldronEmptying(
   'immersiveengineering:hemp_fiber',
   'kubejs:travellers_fiber_dye',
-  100,
+  200,
   'kubejs:travellers_twine'
 )
 cauldronEmptying(
   'farmersdelight:straw',
   'kubejs:herbal_fiber_dye',
-  100,
+  200,
   'kubejs:herbal_string'
 )
 cauldronEmptying(
   'mna:infused_thread',
   'kubejs:flowing_fiber_dye',
-  100,
+  200,
   'kubejs:flowing_yarn'
 )
 cauldronEmptying(
   'biomancy:sinew',
   'kubejs:diabolical_fiber_dye',
-  100,
+  200,
   'kubejs:diabolical_vein'
 )
 //iss elixirs
