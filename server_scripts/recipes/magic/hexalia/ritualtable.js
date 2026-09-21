@@ -49,7 +49,7 @@
         [
             {'item': 'minecraft:amethyst_shard'},
             {'item': 'windswept:lavender'},
-            {'item': 'minecraft:ender_pearl'}
+            {'item': 'mna:vinteum_dust'}
         ],
         'kubejs:eldritch_node'
     )
@@ -64,7 +64,7 @@
     ritualtable(
         [
             {'item': 'minecraft:amethyst_shard'},
-            {'item': 'hexalia:rabbage'},
+            {'item': 'hexalia:rabbage_seeds'},
             {'item': 'minecraft:redstone'}
         ],
         'kubejs:vengeful_node'
@@ -73,14 +73,14 @@
         [
             {'item': 'minecraft:amethyst_shard'},
             {'item': 'farmersrespite:black_tea_leaves'},
-            {'item': 'ars_nouveau:bastion_pod'}
+            {'item': 'malum:grim_talc'}
         ],
         'kubejs:steadfast_node'
     )
     ritualtable(
         [
             {'item': 'minecraft:amethyst_shard'},
-            {'item': 'collectorsreap:pomegranate_slice'},
+            {'item': 'collectorsreap:pomegranate'},
             {'item': 'scguns:vehement_coal'},
         ],
         'kubejs:destructive_node'
@@ -88,7 +88,7 @@
     ritualtable(
         [
             {'item': 'minecraft:amethyst_shard'},
-            {'item': 'collectorsreap:lime'},
+            {'item': 'magichem:alchemical_waste'},
             {'item': 'minecraft:spider_eye'}
         ],
         'kubejs:corrosive_node'

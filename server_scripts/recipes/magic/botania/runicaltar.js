@@ -216,7 +216,7 @@ ServerEvents.recipes((event) => {
         [
             'minecraft:amethyst_shard',
             'mna:cerublossom',
-            'elementalcraft:inert_crystal',
+            'minecraft:gold_nugget',
             'malum:arcane_spirit'
         ],
         2000
@@ -225,7 +225,7 @@ ServerEvents.recipes((event) => {
         [
             'minecraft:amethyst_shard',
             'windswept:lavender',
-            'minecraft:ender_pearl',
+            'mna:vinteum_dust',
             'malum:eldritch_spirit'
         ],
         2000
@@ -260,7 +260,7 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.runic_altar('4x kubejs:vengeful_node',
         [
             'minecraft:amethyst_shard',
-            'hexalia:rabbage',
+            'hexalia:rabbage_seeds',
             'minecraft:redstone',
             'bloodmagic:vengefulcrystal'
         ],
@@ -270,7 +270,7 @@ ServerEvents.recipes((event) => {
         [
             'minecraft:amethyst_shard',
             'farmersrespite:black_tea_leaves',
-            'ars_nouveau:bastion_pod',
+            'malum:grim_talc',
             'bloodmagic:steadfastcrystal'
         ],
         2000
@@ -278,7 +278,7 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.runic_altar('4x kubejs:destructive_node',
         [
             'minecraft:amethyst_shard',
-            'collectorsreap:pomegranate_slice',
+            'collectorsreap:pomegranate',
             'scguns:vehement_coal',
             'bloodmagic:destructivecrystal'
         ],
@@ -287,7 +287,7 @@ ServerEvents.recipes((event) => {
     event.recipes.botania.runic_altar('4x kubejs:corrosive_node',
         [
             'minecraft:amethyst_shard',
-            'collectorsreap:lime',
+            'magichem:alchemical_waste',
             'minecraft:spider_eye',
             'bloodmagic:corrosivecrystal'
         ],

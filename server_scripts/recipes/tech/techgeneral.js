@@ -53,7 +53,6 @@ ServerEvents.recipes(event => {
     });
     const treatLeathers = [
         'eidolon:basic_belt',
-        'malum:gilded_belt',
         'malum:gilded_ring',
         'malum:elaborate_brooch',
         'malum:ornate_ring',

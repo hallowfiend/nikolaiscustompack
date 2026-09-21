@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
     treeRitual(
       [
         {"item": 'twilightforest:liveroot'},
-        {'item': 'hexerei:mugwort_leaves'},
+        {'item': 'kubejs:herbal_string'},
         {'tag': 'kubejs:ancient_seeds'},
         {'item': 'caverns_and_chasms:spinel'},
         {'item': 'naturesaura:gold_leaf'},
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
         {type: 'forge:nbt', item: 'naturesaura:aura_bottle', nbt: { stored_type: 'naturesaura:nether' }},
         {'item': 'naturesaura:gold_leaf'},
         {'item': 'goety:cursed_ingot'},
-        {'item': 'dungeonsdelight:rancid_reduction'},
+        {'item': 'malum:wicked_spirit'},
         {'tag': 'forge:wither_bones'},
         {'item': 'netherexp:banshee_powder'}
       ],
@@ -313,7 +313,7 @@ ServerEvents.recipes(event => {
         {'item': 'kubejs:token_change'},
         {'item': 'kubejs:corrosive_node'},
         {'item': 'botania:manasteel_sword'},
-        {'item': 'minecraft:bamboo'},
+        {'item': 'kubejs:herbal_string'},
         {'item': 'naturesaura:token_sorrow'}
       ],
       'naturesaura:slime_split_generator', 1,
@@ -431,7 +431,7 @@ ServerEvents.recipes(event => {
       {'item': 'kubejs:realmsplit_dew'},
       {'item': 'botania:dreamwood_twig'},
       {'tag': 'forge:rods/darkened_silver'},
-      {'item': 'galosphere:allurite_shard'},
+      {'item': 'kubejs:travellers_twine'},
       {'item': 'botania:master_corporea_spark'},
       {'item': 'naturesaura:sky_ingot'}
     ],

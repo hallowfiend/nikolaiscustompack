@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         'grg'
     ],
     {
-        f: 'naturesaura:gold_fiber',
+        f: 'kubejs:golden_thread',
         g: 'naturesaura:token_anger',
         s: 'kubejs:bloodchannel_gem',
         r: 'malum:rune_of_aliment_cleansing',
@@ -82,8 +82,8 @@ ServerEvents.recipes(event => {
             'kubejs:bloodied_dust',
             'kubejs:bloodied_dust',
             'kubejs:bloodied_dust',
-            'naturesaura:gold_fiber',
-            'naturesaura:gold_fiber',
+            'kubejs:golden_thread',
+            'kubejs:golden_thread',
             'gtceu:iv_emitter'
         ],
         60000

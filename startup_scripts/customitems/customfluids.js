@@ -58,4 +58,21 @@ StartupEvents.registry('fluid', event => {
     .displayName('Hemauric Nutrient Slurry')
     .thickTexture(0xb33914);
 
+    //fiber dyes
+    const dye = [
+        {id: 'pure', name: 'Pure', color: 0xc3c5c9}, //sacred
+        {id: 'witches', name: "Witches'", color: 0xc3c5c9}, //wicked
+        {id: 'golden', name: 'Golden', color: 0xc3c5c9}, //arcane
+        {id: 'herbal', name: 'Herbal', color: 0x149900}, //earthen
+        {id: 'diabolical', name: 'Diabolical', color: 0xc3c5c9}, //infernal
+        //air silk from elementalcraft fills the aerial spot
+        {id: 'flowing', name: 'Flowing', color: 0x413e50}, //aqueous
+        {id: "travellers", name: "Travellers'", color: 0x413e50} //eldritch
+    ]
+    dye.forEach(d => {
+        event.create(`${d.id}_fiber_dye`)
+        .displayName(`${d.name} Fiber Dye`)
+        .thinTexture(d.color)
+    })
+
 })

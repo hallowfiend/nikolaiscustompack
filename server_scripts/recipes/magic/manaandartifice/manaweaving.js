@@ -36,7 +36,10 @@ ServerEvents.recipes(event => {
         'botania:dodge_ring',
         'botania:mining_ring',
         'botania:monocle',
-        'botania:manaweave_cloth'
+        'botania:manaweave_cloth',
+        /botania:.*pendant/,
+        /botania:.*_cloak/,
+        /botania:.*_belt/
     ]
     removals.forEach(item => {
         event.remove({id: item})
@@ -139,6 +142,7 @@ ServerEvents.recipes(event => {
             'eidolon:basic_belt',
             'mna:belt_buckle',
             'mna:rune_aura',
+            'kubejs:golden_thread',
             'minecraft:tripwire_hook'
         ],
         [circle], 'mna:selfish_belt', 1,
@@ -156,7 +160,7 @@ ServerEvents.recipes(event => {
             'mna:chimerite_gem',
             'mna:chimerite_gem',
             'mna:chimerite_gem',
-            'mna:chimerite_gem'
+            'kubejs:pure_filament'
         ],
         [triangle, circle], 'mna:affinity_lock_belt', 1,
         'mna:manaweaving/artifice/belt_of_locks'
@@ -189,19 +193,6 @@ ServerEvents.recipes(event => {
         [square], 'mna:infused_silk', 4,
         'mna:manaweaving/intermediate/infused_silk'
     )
-    //blank rune
-    manaweave(2,
-        [
-            'malum:tainted_rock_tablet',
-            'mna:rune_ritual_metal',
-            'mna:decoration/arcane_stone',
-            'mna:decoration/arcane_stone',
-            'mna:decoration/arcane_stone',
-            'mna:decoration/arcane_stone'
-        ],
-        [diamond, triangle, knot4], 'irons_spellbooks:blank_rune', 1,
-        'kubejs:mna/manaweaving/blank_iss_rune'
-    )
     //mithril weave
     event.remove({output: 'irons_spellbooks:mithril_weave'})
     manaweave(3,
@@ -212,7 +203,8 @@ ServerEvents.recipes(event => {
             'forge:ingots/mithril',
             'minecraft:chain',
             'minecraft:chain',
-            'minecraft:chain'
+            'minecraft:chain',
+            'kubejs:pure_filament'
         ],
         [square, bolt, bolt, bolt], 'irons_spellbooks:mithril_weave', 2,
         'kubejs:mna/manaweaving/mithril_weave'
@@ -304,7 +296,7 @@ ServerEvents.recipes(event => {
             'gtceu:manasteel_ring',
             'malum:alchemical_calx',
             'embers:caminite_plate',
-            'kubejs:token_stillness'
+            'goety:empty_focus'
         ],
         [diamond, circle, slash], 'botania:swap_ring', 1,
         'botania:swap_ring'
@@ -328,5 +320,192 @@ ServerEvents.recipes(event => {
         ],
         [diamond, circle, knot1], 'botania:mining_ring', 1,
         'botania:mining_ring'
+    )
+    //'tania belts
+    manaweave(2,
+        [
+            'malum:gilded_belt',
+            'botania:rune_air',
+            'botania:rune_earth',
+            'botania:manasteel_ingot',
+            'mna:infused_silk'
+        ],
+        [circle, circle], 'botania:travel_belt', 1,
+        'botania:travel_belt'
+    )
+    manaweave(2,
+        [
+            'botania:travel_belt',
+            'kubejs:whiff_of_vitality',
+            'botania:grass_seeds',
+            'kubejs:travellers_twine'
+        ],
+        [circle, circle], 'botania:speed_up_belt', 1,
+        'botania:speed_up_belt'
+    )
+    manaweave(3,
+        [
+            'botania:travel_belt',
+            'botania:life_essence',
+            'botania:elementium_ingot',
+            'kubejs:realmsplit_dew'
+        ],
+        [bolt, bolt, circle, circle], 'botania:super_travel_belt', 1,
+        'botania:super_travel_belt'
+    )
+    manaweave(2,
+        [
+            'eidolon:resolute_belt',
+            'botania:rune_earth',
+            'kubejs:blacksmithing_resin',
+            'botania:manasteel_ingot'
+        ],
+        [circle, square, square, square], 'botania:knockback_belt', 1,
+        'botania:knockback_belt'
+    )
+    //'tania pendants/necklaces
+    manaweave(2,
+        [
+            'eidolon:basic_amulet',
+            'botania:rune_winter',
+            'botania:rune_water',
+            'botania:mana_string',
+            'kubejs:flowing_yarn',
+            'irons_spellbooks:frozen_bone'
+        ],
+        [circle, square, diamond, knot1], 'botania:ice_pendant', 1,
+        'botania:ice_pendant'
+    )
+    manaweave(2,
+        [
+            'eidolon:basic_amulet',
+            'botania:rune_summer',
+            'botania:rune_fire',
+            'botania:mana_string',
+            'kubejs:diabolical_vein',
+            'minecraft:magma_block'
+        ],
+        [circle, square, triangle, inverted_triangle], 'botania:lava_pendant', 1,
+        'botania:lava_pendant'
+    )
+    manaweave(3,
+        [
+            'botania:lava_pendant',
+            'botania:life_essence',
+            'botania:elementium_ingot',
+            'mna:mote_fire',
+            'kubejs:seething_nethersblood',
+            'magichem:admixture_demon'
+        ],
+        [bolt, triangle, inverted_triangle], 'botania:super_lava_pendant', 1,
+        'botania:super_lava_pendant'
+    )
+    manaweave(2,
+        [
+            'eidolon:basic_amulet',
+            'botania:rune_autumn',
+            'botania:rune_air',
+            'botania:mana_string',
+            'elementalcraft:air_silk',
+            'aether:aerclouds'
+        ],
+        [circle, square, knot3, knot4], 'botania:cloud_pendant', 1,
+        'botania:cloud_pendant'
+    )
+    manaweave(3,
+        [
+            'botania:cloud_pendant',
+            'botania:life_essence',
+            'botania:elementium_ingot',
+            'mna:mote_air',
+            'kubejs:sanctified_steam',
+            'magichem:admixture_breath'
+        ],
+        [bolt, knot3, knot4], 'botania:super_cloud_pendant', 1,
+        'botania:super_cloud_pendant'
+    )
+    manaweave(2,
+        [
+            'eidolon:basic_amulet',
+            'botania:mana_diamond',
+            'kubejs:shifting_tincture',
+            'kubejs:diabolical_vein',
+            'kubejs:flowing_yarn',
+            'minecraft:ghast_tear'
+        ],
+        [circle, square, inverted_triangle, slash], 'botania:blood_pendant', 1,
+        'botania:blood_pendant'
+    )
+    //'tania cloaks
+    manaweave(2,
+        [
+            'eidolon:raven_cloak',
+            'botania:phantom_ink',
+            'mna:stone_rune_white',
+            'botania:mana_glass',
+            'mna:infused_silk'
+        ],
+        [square, inverted_triangle, circle], 'botania:invisibility_cloak', 1,
+        'botania:invisibility_cloak'
+    )
+    manaweave(3,
+        [
+            'eidolon:warlock_cloak',
+            'botania:life_essence',
+            'actuallyadditions:restonia_crystal',
+            'mna:stone_rune_black',
+            'kubejs:diabolical_vein',
+            'evilcraft:dark_power_gem'
+        ],
+        [square, square, bolt], 'botania:unholy_cloak', 1,
+        'botania:unholy_cloak'
+    )
+    manaweave(3,
+        [
+            'eidolon:warlock_cloak',
+            'botania:life_essence',
+            'irons_spellbooks:divine_pearl',
+            'mna:stone_rune_white',
+            'kubejs:pure_filament',
+            'actuallyadditions:empowered_enori_crystal'
+        ],
+        [square, square, bolt], 'botania:holy_cloak', 1,
+        'botania:holy_cloak'
+    )
+    manaweave(3,
+        [
+            'eidolon:warlock_cloak',
+            'botania:life_essence',
+            'goety:magic_emerald',
+            'mna:stone_rune_light_gray',
+            'kubejs:herbal_string',
+            'kubejs:life_crystal'
+        ],
+        [square, square, bolt], 'botania:balance_cloak', 1,
+        'botania:balance_cloak'
+    )
+    //convenience recipes
+    //blank rune
+    manaweave(2,
+        [
+            'malum:tainted_rock_tablet',
+            'mna:rune_ritual_metal',
+            'mna:decoration/arcane_stone',
+            'mna:decoration/arcane_stone',
+            'mna:decoration/arcane_stone',
+            'mna:decoration/arcane_stone'
+        ],
+        [diamond, triangle, knot4], 'irons_spellbooks:blank_rune', 1,
+        'kubejs:mna/manaweaving/blank_iss_rune'
+    )
+    //eldritch spirit
+    manaweave(3,
+        [
+            'malum:wicked_spirit',
+            'malum:sacred_spirit',
+            'ars_nouveau:manipulation_essence'
+        ],
+        [bolt], 'malum:eldritch_spirit', 2,
+        'kubejs:mna/manaweaving/impulse_inversion'
     )
 })

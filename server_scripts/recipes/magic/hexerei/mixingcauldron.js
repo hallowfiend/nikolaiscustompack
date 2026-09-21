@@ -44,6 +44,92 @@ const recipes = [
     output_amount:3,
     heat:true
 },
+//STRING DYES
+{
+    inputItem:[
+        {"item": "goety:magic_fabric"},
+        {"item": "goety:magic_fabric"},
+        {"item": "naturesaura:gold_powder"},
+        {"item": "minecraft:wheat"},
+        {"item": "supplementaries:flax"},
+        {"item": "minecraft:sunflower"},
+        {"item": "embers:ember_grit"}
+    ],
+    liquid:"gtceu:seed_oil",
+    liquid_consum:100,
+    output_liquid:"kubejs:golden_fiber_dye",
+    output:"immersive_engineering:hemp_fabric",
+    output_amount:2,
+    heat:false
+},
+{
+    inputItem:[
+        {"item": "eidolon:wicked_weave"},
+        {"item": "eidolon:wicked_weave"},
+        {"item": "hexerei:mandrake_root"},
+        {"item": "hexerei:mandrake_flowers"},
+        {"item": "hexalia:dream_paste"},
+        {"item": "goety:nightshade_blossom"},
+        {"item": "mna:arcane_ash"}
+    ],
+    liquid:"constructs_casting:squid_ink",
+    liquid_consum:100,
+    output_liquid:"kubejs:witches_fiber_dye",
+    output:"kubejs:woven_silk",
+    output_amount:2,
+    heat:false
+},
+{
+    inputItem:[
+        {"item": "irons_spellbooks:bloody_vellum"},
+        {"item": "irons_spellbooks:bloody_vellum"},
+        {"item": "kubejs:daemonic_preparation"},
+        {"item": "biomancy:toxin_gland"},
+        {"item": "occultism:otherworld_ashes"},
+        {"item": "kubejs:dread_echoes"},
+        {"item": "magichem:admixture_demon"}
+    ],
+    liquid:"evilcraft:blood",
+    liquid_consum:100,
+    output_liquid:"kubejs:diabolical_fiber_dye",
+    output:"irons_spellbooks:hogskin",
+    output_amount:2,
+    heat:false
+},
+{
+    inputItem:[
+        {"item": "hexerei:infused_fabric"},
+        {"item": "hexerei:infused_fabric"},
+        {"item": "kubejs:ecologists_distillation"},
+        {"item": "hexerei:yellow_dock_leaves"},
+        {"item": "hexerei:mugwort_leaves"},
+        {"item": "goety:quick_growing_seed"},
+        {"item": "eidolon:avennian_sprig"}
+    ],
+    liquid:"farmersdelight:green_tea",
+    liquid_consum:100,
+    output_liquid:"kubejs:herbal_fiber_dye",
+    output:"kubejs:woven_silk",
+    output_amount:2,
+    heat:false
+},
+{
+    inputItem:[
+        {"item": "goety:spirit_fabric"},
+        {"item": "goety:chill_fabric"},
+        {"item": "kubejs:shifting_tincture"},
+        {"item": "upgrade_aquatic:boiled_blue_pickerelweed"},
+        {"item": "minecraft:nautilus_shell"},
+        {"item": "magichem:admixture_motion"},
+        {"item": "gtceu:electrotine_dust"}
+    ],
+    liquid:"minecraft:water",
+    liquid_consum:100,
+    output_liquid:"kubejs:flowing_fiber_dye",
+    output:"immersive_engineering:hemp_fabric",
+    output_amount:2,
+    heat:false
+},
 //Crystal ball
 {
   inputItem:[
@@ -625,7 +711,94 @@ const recipes = [
     heat:false
 }
 ]
-
+const fluidMixingRecipes = [
+    {
+      inputItem:[
+        { "item": "gtceu:cinnabar_gem" },
+        { "item": "gtceu:cinnabar_gem" },
+        { "item": "gtceu:cinnabar_gem" },
+        { "item": "gtceu:cinnabar_gem" },
+        {"item": "mna:transmuted_silver"},
+        {"item": "mna:transmuted_silver"},
+        {"item": "mna:transmuted_silver"},
+        {"item": "mna:transmuted_silver"}
+      ],
+      input: 'minecraft:lava',
+      output: 'hexerei:quicksilver_fluid',
+      heat: false
+    },
+    {
+      inputItem:[
+        {"item": "mna:transmuted_silver"},
+        {"item": "mna:transmuted_silver"},
+        {"item": "mna:transmuted_silver"},
+        {"item": "mna:transmuted_silver"}
+      ],
+      input: 'gtceu:mercury',
+      output: 'hexerei:quicksilver_fluid',
+      heat: false
+    },
+    {
+      inputItem:[
+        { "item": "irons_spellbooks:icy_fang" }
+      ],
+      input: 'minecraft:water',
+      output: 'irons_spellbooks:ice_venom',
+      heat: true
+    },
+    {
+      inputItem:[
+        { "item": "malum:warp_flux" }
+      ],
+      input: 'irons_spellbooks:evasion_elixir',
+      output: 'irons_spellbooks:greater_evasion_elixir',
+      heat: true
+    },
+    {
+      inputItem:[
+        { "item": "minecraft:amethyst_shard" }
+      ],
+      input: 'irons_spellbooks:oakskin_elixir',
+      output: 'irons_spellbooks:greater_oakskin_elixir',
+      heat: true
+    },
+    {
+      inputItem:[
+        { "item": "minecraft:amethyst_cluster" }
+      ],
+      input: 'irons_spellbooks:invisibility_elixir',
+      output: 'irons_spellbooks:greater_invisibility_elixir',
+      heat: true
+    },
+    {
+      inputItem:[
+        {'item': 'cosmopolitan:birch_sap_bottle'},
+        {'item': 'cosmopolitan:birch_sap_bottle'},
+        {'item': 'kubejs:anointing_paste'},
+        {'item': 'hexalia:lotus_blossom'},
+        {'item': 'gtceu:steel_ingot'},
+        {'item': 'alexsmobs:straddlite'},
+        {'item': 'magichem:admixture_healing'}
+      ],
+      input: 'magichem:liquid_light',
+      output: 'kubejs:pure_fiber_dye',
+      heat: false
+    },
+    {
+      inputItem:[
+        {'item': 'magichem:admixture_realm'},
+        {'item': 'magichem:admixture_realm'},
+        {'item': 'kubejs:sanctified_steam'},
+        {'item': 'hexerei:belladonna_flowers'},
+        {'item': 'delightful:animal_fat'},
+        {'item': 'windswept:bluebells'},
+        {'item': 'alexsmobs:raccoon_tail'}
+      ],
+      input: 'netherexp:ectoplasm',
+      output: 'kubejs:travellers_fiber_dye',
+      heat: false
+    }
+]
  recipes.forEach(recipe =>{
         recipe.output_liquid = (recipe.output_liquid == false) ? recipe.liquid : recipe.output_liquid
         if(recipe.heat == false){
@@ -649,43 +822,33 @@ const recipes = [
                });
         }
     })
-//Quicksilver
-event.custom({
+  fluidMixingRecipes.forEach(recipe => {
+      if(recipe.heat == true){
+    event.custom({
     "type": "hexerei:fluid_mixing",
     "input": {
-      "fluid": "minecraft:lava"
+      "fluid": recipe.input
     },
-    "ingredients": [
-      { "item": "gtceu:cinnabar_gem" },
-      { "item": "gtceu:cinnabar_gem" },
-      { "item": "gtceu:cinnabar_gem" },
-      { "item": "gtceu:cinnabar_gem" },
-      {"item": "mna:transmuted_silver"},
-      {"item": "mna:transmuted_silver"},
-      {"item": "mna:transmuted_silver"},
-      {"item": "mna:transmuted_silver"}
-    ],
+    "ingredients": recipe.inputItem,
     "output": {
-      "fluid": "hexerei:quicksilver_fluid"
+      "fluid": recipe.output
     },
     "heatRequirement": "heated"
-  });
-event.custom({
+    });
+    }
+    else{
+    event.custom({
     "type": "hexerei:fluid_mixing",
     "input": {
-      "fluid": "gtceu:mercury"
+      "fluid": recipe.input
     },
-    "ingredients": [
-      {"item": "mna:transmuted_silver"},
-      {"item": "mna:transmuted_silver"},
-      {"item": "mna:transmuted_silver"},
-      {"item": "mna:transmuted_silver"}
-    ],
+    "ingredients": recipe.inputItem,
     "output": {
-      "fluid": "hexerei:quicksilver_fluid"
-    },
-    "heatRequirement": "heated"
-  });
+      "fluid": recipe.output
+    }
+    });
+    }
+  })
 //More Irons' garbage
  event.custom({
     "type": "hexerei:fluid_mixing",
@@ -704,19 +867,6 @@ event.custom({
     },
     "heatRequirement": "heated"
   });
- event.custom({
-    "type": "hexerei:fluid_mixing",
-    "input": {
-      "fluid": "minecraft:water"
-    },
-    "ingredients": [
-      { "item": "irons_spellbooks:icy_fang" }
-    ],
-    "output": {
-      "fluid": "irons_spellbooks:ice_venom"
-    },
-    "heatRequirement": "none"
-  });
 event.custom({
     "type": "hexerei:fluid_mixing",
     "input": {
@@ -731,19 +881,6 @@ event.custom({
     ],
     "output": {
       "fluid": "irons_spellbooks:evasion_elixir"
-    },
-    "heatRequirement": "heated"
-  });
-event.custom({
-    "type": "hexerei:fluid_mixing",
-    "input": {
-      "fluid": "irons_spellbooks:evasion_elixir"
-    },
-    "ingredients": [
-      { "item": "malum:warp_flux" }
-    ],
-    "output": {
-      "fluid": "irons_spellbooks:greater_evasion_elixir"
     },
     "heatRequirement": "heated"
   });
@@ -784,19 +921,6 @@ event.custom({
 event.custom({
     "type": "hexerei:fluid_mixing",
     "input": {
-      "fluid": "irons_spellbooks:oakskin_elixir"
-    },
-    "ingredients": [
-      { "item": "minecraft:amethyst_shard" }
-    ],
-    "output": {
-      "fluid": "irons_spellbooks:greater_oakskin_elixir"
-    },
-    "heatRequirement": "heated"
-  });
-event.custom({
-    "type": "hexerei:fluid_mixing",
-    "input": {
       "fluid": "hexerei:potion",
         "nbt": {
           "Bottle": "REGULAR",
@@ -811,144 +935,101 @@ event.custom({
     },
     "heatRequirement": "heated"
   });
-event.custom({
-    "type": "hexerei:fluid_mixing",
-    "input": {
-      "fluid": "irons_spellbooks:invisibility_elixir"
-    },
-    "ingredients": [
-      { "item": "minecraft:amethyst_cluster" }
-    ],
-    "output": {
-      "fluid": "irons_spellbooks:greater_invisibility_elixir"
-    },
-    "heatRequirement": "heated"
-  });
-event.custom({
+//Emptying
+function cauldronEmptying(extract, fluid, fluidAmount, output){
+  event.custom({
     "type": "hexerei:cauldron_emptying",
     "input": {
-      "item": "minecraft:glass_bottle"
+      "item": extract
     },
     "fluid": {
-      "fluid": "irons_spellbooks:timeless_slurry",
-      "amount": 250
+      "fluid": fluid,
+      "amount": fluidAmount
     },
     "output": {
-      "item": "irons_spellbooks:timeless_slurry",
+      "item": output,
       "count": 1
     }
-  });
-event.custom({
-    "type": "hexerei:cauldron_emptying",
-    "input": {
-      "item": "minecraft:glass_bottle"
-    },
-    "fluid": {
-      "fluid": "irons_spellbooks:ice_venom",
-      "amount": 250
-    },
-    "output": {
-      "item": "irons_spellbooks:ice_venom_vial",
-      "count": 1
-    }
-  });
-event.custom({
-    "type": "hexerei:cauldron_emptying",
-    "input": {
-      "item": "minecraft:glass_bottle"
-    },
-    "fluid": {
-      "fluid": "irons_spellbooks:oakskin_elixir",
-      "amount": 250
-    },
-    "output": {
-      "item": "irons_spellbooks:oakskin_elixir",
-      "count": 1
-    }
-  });
-event.custom({
-    "type": "hexerei:cauldron_emptying",
-    "input": {
-      "item": "minecraft:glass_bottle"
-    },
-    "fluid": {
-      "fluid": "irons_spellbooks:greater_oakskin_elixir",
-      "amount": 250
-    },
-    "output": {
-      "item": "irons_spellbooks:greater_oakskin_elixir",
-      "count": 1
-    }
-  });
-event.custom({
-    "type": "hexerei:cauldron_emptying",
-    "input": {
-      "item": "minecraft:glass_bottle"
-    },
-    "fluid": {
-      "fluid": "irons_spellbooks:invisibility_elixir",
-      "amount": 250
-    },
-    "output": {
-      "item": "irons_spellbooks:invisibility_elixir",
-      "count": 1
-    }
-  });
-event.custom({
-    "type": "hexerei:cauldron_emptying",
-    "input": {
-      "item": "minecraft:glass_bottle"
-    },
-    "fluid": {
-      "fluid": "irons_spellbooks:evasion_elixir",
-      "amount": 250
-    },
-    "output": {
-      "item": "irons_spellbooks:evasion_elixir",
-      "count": 1
-    }
-  });
-event.custom({
-    "type": "hexerei:cauldron_emptying",
-    "input": {
-      "item": "minecraft:glass_bottle"
-    },
-    "fluid": {
-      "fluid": "irons_spellbooks:greater_evasion_elixir",
-      "amount": 250
-    },
-    "output": {
-      "item": "irons_spellbooks:greater_evasion_elixir",
-      "count": 1
-    }
-  });
-event.custom({
-    "type": "hexerei:cauldron_emptying",
-    "input": {
-      "item": "minecraft:glass_bottle"
-    },
-    "fluid": {
-      "fluid": "irons_spellbooks:greater_invisibility_elixir",
-      "amount": 250
-    },
-    "output": {
-      "item": "irons_spellbooks:greater_invisibility_elixir",
-      "count": 1
-    }
-  });
-event.custom({
-    "type": "hexerei:cauldron_emptying",
-    "input": {
-      "item": "minecraft:glass_bottle"
-    },
-    "fluid": {
-      "fluid": "hexerei:quicksilver_fluid",
-      "amount": 250
-    },
-    "output": {
-      "item": "hexerei:quicksilver_bottle",
-      "count": 1
-    }
-  });
-
+  })
+}
+cauldronEmptying(
+  'minecraft:glass_bottle',
+  'irons_spellbooks:timeless_slurry',
+  250,
+  'irons_spellbooks:timeless_slurry'
+)
+cauldronEmptying(
+  'minecraft:glass_bottle',
+  'irons_spellbooks:ice_venom',
+  250,
+  'irons_spellbooks:ice_venom_vial'
+)
+cauldronEmptying(
+  'minecraft:glass_bottle',
+  'hexerei:quicksilver_fluid',
+  250,
+  'hexerei:quicksilver_bottle'
+)
+//funky strings
+cauldronEmptying(
+  'minecraft:string',
+  'kubejs:golden_fiber_dye',
+  100,
+  'kubejs:golden_thread'
+)
+cauldronEmptying(
+  'betterend:silk_thread',
+  'kubejs:witches_fiber_dye',
+  100,
+  'kubejs:witches_stitching'
+)
+cauldronEmptying(
+  'botania:mana_string',
+  'kubejs:pure_fiber_dye',
+  100,
+  'kubejs:pure_filament'
+)
+cauldronEmptying(
+  'immersiveengineering:hemp_fiber',
+  'kubejs:travellers_fiber_dye',
+  100,
+  'kubejs:travellers_twine'
+)
+cauldronEmptying(
+  'farmersdelight:straw',
+  'kubejs:herbal_fiber_dye',
+  100,
+  'kubejs:herbal_string'
+)
+cauldronEmptying(
+  'mna:infused_thread',
+  'kubejs:flowing_fiber_dye',
+  100,
+  'kubejs:flowing_yarn'
+)
+cauldronEmptying(
+  'biomancy:sinew',
+  'kubejs:diabolical_fiber_dye',
+  100,
+  'kubejs:diabolical_vein'
+)
+//iss elixirs
+function issElixirs(name){
+  cauldronEmptying(
+    'minecraft:glass_bottle',
+    `irons_spellbooks:${name}_elixir`,
+    250,
+    `irons_spellbooks:${name}_elixir`
+  )
+  cauldronEmptying(
+    'minecraft:glass_bottle',
+    `irons_spellbooks:greater_${name}_elixir`,
+    250,
+    `irons_spellbooks:greater${name}_elixir`
+  )
+}
+issElixirs('oakskin')
+issElixirs('evasion')
+issElixirs('healing')
+issElixirs('invisibility')
 });

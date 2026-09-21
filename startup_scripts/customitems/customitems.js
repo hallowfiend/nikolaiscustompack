@@ -181,6 +181,26 @@ StartupEvents.registry('item', event => {
         .color(0, affinity.color)
         .displayName(`${clusterLang} Cluster`)
     })
+    //fabric stuff
+    event.create('bloomwrap_cloth')
+    .displayName('Bloomwrap Cloth');
+    event.create('woven_silk')
+    .displayName('Woven Silk');
+    //we have bewitchment at home pt 2: string boogaloo
+    event.create('golden_thread')
+    .displayName('Golden Thread')
+    event.create('witches_stitching')
+    .displayName("Witches' Stitching")
+    event.create('pure_filament')
+    .displayName('Pure Filament')
+    event.create('diabolical_vein')
+    .displayName('Diabolical Vein')
+    event.create('flowing_yarn')
+    .displayName('Flowing Yarn')
+    event.create('herbal_string')
+    .displayName('Herbal String')
+    event.create('travellers_twine')
+    .displayName("Traveller's Twine")
     //other items
     event.create('blood_soaked_nutrient_bar')
     .displayName('Bloodsoaked Nutrient Bar')
@@ -194,14 +214,8 @@ StartupEvents.registry('item', event => {
     .displayName('Plain Reagent');
     event.create('industrial_sealant')
     .displayName('Industrial Sealant');
-    event.create('bloomwrap_cloth')
-    .displayName('Bloomwrap Cloth');
-    event.create('woven_silk')
-    .displayName('Woven Silk');
     event.create('concentratedcatalyst')
     .displayName('Concentrated Catalyst');
-    event.create('infused_string')
-    .displayName('Infused String');
     event.create('hemauric_nutrient_pellets')
     .displayName('Hemauric Nutrient Pellets');
     event.create('nature_offering')

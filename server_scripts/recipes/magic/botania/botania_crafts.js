@@ -2,7 +2,8 @@ ServerEvents.recipes(event => {
     const removals = [
         'botania:mana_void',
         'botania:lens_normal',
-        'botania:lens_magnet'
+        'botania:lens_magnet',
+        'botania:phantom_ink'
     ]
     removals.forEach(item => {
         event.remove({id: item})
@@ -19,6 +20,16 @@ ServerEvents.recipes(event => {
         P: 'botania:mana_pearl',
         C: 'kubejs:aspectus_gold'
     }) */
+    //Phantom Ink
+    event.shapeless('4x botania:phantom_ink', [
+        'irons_spellbooks:greater_invisibility_elixir',
+        'irons_spellbooks:common_ink',
+        'magichem:essentia_air',
+        'magichem:essentia_air',
+        '#forge:dyes',
+        '#forge:dyes',
+        'botania:mana_pearl'
+    ]).id('botania:phantom_ink')
     //Mana Void
     event.shaped('botania:mana_void', [
         'LOL',
@@ -28,7 +39,7 @@ ServerEvents.recipes(event => {
         L: 'botania:livingrock',
         O: 'minecraft:obsidian',
         R: 'kubejs:rune_void'
-    }).id('kubejs:shaped/mana_void')
+    }).id('botania:mana_void')
     //Lenses
     event.shaped('botania:lens_normal', [
         ' M ',
@@ -37,9 +48,9 @@ ServerEvents.recipes(event => {
     ], {
         M: 'gtceu:manasteel_plate',
         P: 'botania:mana_glass_pane'
-    }).id('kubejs:shaped/mana_lens')
+    }).id('botania:lens_normal')
     event.shapeless(
         'botania:lens_magnet',
-        ['botania:lens_normal', 'gtceu:magnetic_iron_rod', 'enderio:conductive_alloy_ingot', 'actuallyadditions:empowered_restonia_crystal', 'actuallyadditions:empowered_palis_crystal', 'actuallyadditions:empowered_enori_crystal']
-    ).id('kubejs/shapeless/magnetizing_lens')
+        ['botania:lens_normal', 'gtceu:magnetic_iron_rod', 'enderio:conductive_alloy_ingot', 'actuallyadditions:empowered_palis_crystal']
+    ).id('botania:lens_magnet')
 })
