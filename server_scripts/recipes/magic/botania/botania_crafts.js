@@ -3,7 +3,8 @@ ServerEvents.recipes(event => {
         'botania:mana_void',
         'botania:lens_normal',
         'botania:lens_magnet',
-        'botania:phantom_ink'
+        'botania:phantom_ink',
+        'botania:mana_gun'
     ]
     removals.forEach(item => {
         event.remove({id: item})
@@ -53,4 +54,38 @@ ServerEvents.recipes(event => {
         'botania:lens_magnet',
         ['botania:lens_normal', 'gtceu:magnetic_iron_rod', 'enderio:conductive_alloy_ingot', 'actuallyadditions:empowered_palis_crystal']
     ).id('botania:lens_magnet')
+    //Mana Blaster
+    event.custom({
+    "type": "scguns:gun_bench",
+    "result": {
+    "item": "botania:mana_gun",
+    "count": 1
+    },
+    "ingredients": {
+    "blueprint": {
+      "item": "botania:lexicon"
+    },
+    "gun_internal_1": {
+      "item": "botania:mana_diamond"
+    },
+    "gun_internal_2": {
+      "item": "minecraft:tnt"
+    },
+    "gun_top_internal_2": {
+      "item": "botania:mana_glass"
+    },
+    "gun_top_internal_1": {
+      "tag": "botania:livingwood_logs"
+    },
+    "gun_barrel_1": {
+      "item": "botania:redstone_spreader"
+    },
+    "gun_grip": {
+      "tag": "botania:livingwood_logs"
+    },
+    "gun_magazine": {
+      "item": "botania:rune_mana"
+    }
+  }
+}).id('kubejs:scguns/mana_blaster_from_gun_bench')
 })

@@ -797,6 +797,21 @@ const fluidMixingRecipes = [
       input: 'netherexp:ectoplasm',
       output: 'kubejs:travellers_fiber_dye',
       heat: false
+    },
+    {
+      inputItem:
+      [
+        {'tag': 'vampirism:pure_blood'},
+        {'item': 'eidolon:undeath_incense'},
+        {'item': 'goety:shadow_essence'},
+        {'tag': 'forge:tallow'},
+        {'item': 'gtceu:talc_dust'},
+        {'item': 'kubejs:lifecrystal'},
+        {'item': 'eidolon:soul_shard'}
+      ],
+      input: 'irons_spellbooks:greater_oakskin_elixir',
+      output: 'kubejs:sunscreen_elixir',
+      heat: true
     }
 ]
  recipes.forEach(recipe =>{
@@ -969,6 +984,12 @@ cauldronEmptying(
   'hexerei:quicksilver_fluid',
   250,
   'hexerei:quicksilver_bottle'
+)
+cauldronEmptying(
+  'minecraft:glass_bottle',
+  'kubejs:sunscreen_elixir',
+  250,
+  'kubejs:sunscreen_elixir'
 )
 //funky strings
 cauldronEmptying(

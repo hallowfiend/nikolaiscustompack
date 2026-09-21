@@ -93,6 +93,17 @@ StartupEvents.registry('item', event => {
 			.alwaysEdible()
         	})
 		.useAnimation("drink")
+    event.create('sunscreen_elixir')
+    .displayName('Sunscreen Elixir')
+    .maxStackSize(16)
+    .food(food => {
+		food
+    		.effect('vampirism:sunscreen', 12000, 0, 1)
+            .effect('minecraft:fire_resistance', 12000, 0, 1)
+			.effect('minecraft:weakness', 12000, 1, 1)
+			.alwaysEdible()
+        	})
+		.useAnimation("drink")
     // biological cyberware
     event.create('nutrient_sacs')
     .displayName('Nutrient Sacs');

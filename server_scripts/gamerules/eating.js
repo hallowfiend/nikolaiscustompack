@@ -22,6 +22,16 @@ ItemEvents.foodEaten([
 	}
 })
 
+ItemEvents.foodEaten([
+    'kubejs:sunscreen_elixir'
+	], event => {
+		if (!event.player.isCreative()) {
+			event.server.schedule(1, callback => {
+				event.player.giveInHand('minecraft:glass_bottle')
+		})
+	}
+})
+
 ItemEvents.foodEaten('kubejs:forgotten_imbibation', event =>{
 	event.player.activeEffects.forEach(effect => {
 		if (effect.descriptionId == 'effect.brewinandchewin.tipsy' && effect.amplifier < 9) {

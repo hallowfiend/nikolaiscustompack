@@ -54,9 +54,14 @@ StartupEvents.registry('fluid', event => {
     .luminosity(12);
 
     //components n stuff
+    event.create('Sunscreen Elixir')
+    .displayName('sunscreen_elixir')
+    .thinTexture(0xcacaca);
+    
     event.create('hemauric_nutrients')
     .displayName('Hemauric Nutrient Slurry')
     .thickTexture(0xb33914);
+    
 
     //fiber dyes
     const dye = [

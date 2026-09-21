@@ -39,7 +39,9 @@ ServerEvents.recipes(event => {
         'botania:manaweave_cloth',
         /botania:.*pendant/,
         /botania:.*_cloak/,
-        /botania:.*_belt/
+        /botania:.*_belt/,
+        'botania:world_seed',
+        /botania:.*_rod/
     ]
     removals.forEach(item => {
         event.remove({id: item})
@@ -484,6 +486,77 @@ ServerEvents.recipes(event => {
         [square, square, bolt], 'botania:balance_cloak', 1,
         'botania:balance_cloak'
     )
+    //'tania rods
+    manaweave(2,
+        [
+            'mna:staves',
+            'minecraft:cobblestone',
+            'botania:rune_fire',
+            'botania:rune_water',
+            'botania:livingwood_twig',
+            'botania:livingwood_twig'
+        ],
+        [slash, square, square], 'botania:cobble_rod', 1,
+        'botania:cobble_rod'
+    )
+    manaweave(2,
+        [
+            'mna:staves',
+            'minecraft:dirt',
+            'botania:rune_earth',
+            'botania:livingwood_twig',
+            'botania:livingwood_twig'
+        ],
+        [slash, square, square], 'botania:dirt_rod', 1,
+        'botania:dirt_rod'
+    )
+    manaweave(2,
+        [
+            'mna:staves',
+            'kubejs:deepbore_tar',
+            'botania:mana_diamond',
+            'kubejs:rune_mind',
+            'botania:livingwood_twig',
+            'botania:livingwood_twig'
+        ],
+        [slash, square, square, circle, inverted_triangle], 'botania:divining_rod', 1,
+        'botania:divining_rod'
+    )
+    manaweave(2,
+        [
+            'mna:staves',
+            'botania:rune_fire',
+            'mna:mote_fire',
+            'botania:livingwood_twig',
+            'botania:livingwood_twig'
+        ],
+        [slash, square, square, circle, inverted_triangle], 'botania:fire_rod', 1,
+        'botania:fire_rod'
+    )
+    manaweave(2,
+        [
+            'mna:staves',
+            'botania:rune_sloth',
+            'botania:livingwood_twig',
+            'botania:livingwood_twig'
+        ],
+        [slash, square, square, slash, backslash], 'botania:exchange_rod', 1,
+        'botania:exchange_rod'
+    )
+    manaweave(3,
+        [
+            'mna:staves',
+            'kubejs:rune_force',
+            'kubejs:rune_space',
+            'kubejs:rune_time',
+            'botania:dragonstone',
+            'minecraft:echo_shard',
+            'botania:dreamwood_twig',
+            'botania:dreamwood_twig'
+        ],
+        [slash, square, square, split_triangle, circle], 'botania:gravity_rod', 1,
+        'botania:gravity_rod'
+    )
     //convenience recipes
     //blank rune
     manaweave(2,
@@ -507,5 +580,17 @@ ServerEvents.recipes(event => {
         ],
         [bolt], 'malum:eldritch_spirit', 2,
         'kubejs:mna/manaweaving/impulse_inversion'
+    )
+    //world seed (no longer locked behind alfheim, solid alternative to enderfeather charms if youve progressed in botania)
+    manaweave(2,
+        [
+            'hexalia:ancient_seed',
+            'botania:grass_seeds',
+            'botania:mana_powder',
+            'magichem:essentia_ender',
+            'malum:earthen_spirit'
+        ],
+        [square], 'botania:world_seed', 4,
+        'botania:world_seed'
     )
 })
