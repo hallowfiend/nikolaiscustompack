@@ -402,6 +402,18 @@ ServerEvents.tags("item", (event) => {
     'ars_nouveau:enchanters_shield'
   ])
 
+  event.add('kubejs:non_fey_admixtures', [
+    'magichem:admixture_wizard',
+    'magichem:admixture_exanimate',
+    'magichem:admixture_demon'
+  ])
+
+  event.add('kubejs:non_fey_marks', [
+    'mna:mark_of_the_council',
+    'mna:mark_of_the_undead',
+    'mna:mark_of_the_nether'
+  ])
+
   event.add("mynethersdelight:powdery_logs", ["mynethersdelight:powdery_block", "mynethersdelight:stripped_powdery_block"]);
 
   //#region remove item tag

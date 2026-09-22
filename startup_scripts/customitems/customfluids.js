@@ -66,12 +66,12 @@ StartupEvents.registry('fluid', event => {
     //fiber dyes
     const dye = [
         {id: 'pure', name: 'Pure', color: 0xc3c5c9}, //sacred
-        {id: 'witches', name: "Witches'", color: 0xc3c5c9}, //wicked
-        {id: 'golden', name: 'Golden', color: 0xc3c5c9}, //arcane
+        {id: 'witches', name: "Witches'", color: 0xCA78DA}, //wicked
+        {id: 'golden', name: 'Golden', color: 0xE9C944}, //arcane
         {id: 'herbal', name: 'Herbal', color: 0x149900}, //earthen
-        {id: 'diabolical', name: 'Diabolical', color: 0xc3c5c9}, //infernal
+        {id: 'diabolical', name: 'Diabolical', color: 0xAD0000}, //infernal
         //air silk from elementalcraft fills the aerial spot
-        {id: 'flowing', name: 'Flowing', color: 0x413e50}, //aqueous
+        {id: 'flowing', name: 'Flowing', color: 0x5891A8}, //aqueous
         {id: "travellers", name: "Travellers'", color: 0x413e50} //eldritch
     ]
     dye.forEach(d => {

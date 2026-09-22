@@ -129,7 +129,12 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .fluid()
         .color(0xf472c6)
         .components('ambrosium', 'cobalt_brass', '2x mana', 'mundus', '2x sacrum', 'aura', 'arkanum')
-        .flags(no_decomp)
+        .flags(
+            plates,
+            no_decomp,
+            rod,
+            ring
+        )
         .iconSet(GTMaterialIconSet.SHINY);
 
     event.create('mana_pearl')

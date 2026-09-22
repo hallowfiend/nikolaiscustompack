@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
   "ingredients": [
     {
       "count": 8,
-      "item": "theurgy:alchemical_sulfur_cobaltite"
+      "item": "kubejs:alchemical_sulfur_cobaltite"
     },
     {
         "count": 4,
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
   ],
   "result": {
     "Count": 4,
-    "id": "theurgy:alchemical_sulfur_cobalt"
+    "id": "kubejs:alchemical_sulfur_cobalt"
   },
   "time": 400
 })

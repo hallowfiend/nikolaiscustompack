@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
             f: {"item": "biomancy:flesh_bits"},
             d: {"item": "goety:grave_dust"},
             g: {"item": "evilcraft:dark_power_gem"},
-            e: {"item": "mna:mote_of_ender"}
+            e: {"item": "mna:mote_ender"}
         },
         'vampire_1'
     )
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
             d: {"item": "goety:shadow_essence"},
             v: {"item": "vampirism:vampire_blood"},
             l: {"item": "magichem:admixture_exanimate"},
-            e: {"item": "mna:mote_of_ender"}
+            e: {"item": "mna:mote_ender"}
         },
         'vampire_2'
     )

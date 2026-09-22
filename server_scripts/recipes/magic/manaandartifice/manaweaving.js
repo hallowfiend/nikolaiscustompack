@@ -37,6 +37,7 @@ ServerEvents.recipes(event => {
         'botania:mining_ring',
         'botania:monocle',
         'botania:manaweave_cloth',
+        'botania:reach_ring',
         /botania:.*pendant/,
         /botania:.*_cloak/,
         /botania:.*_belt/,
@@ -323,6 +324,15 @@ ServerEvents.recipes(event => {
         [diamond, circle, knot1], 'botania:mining_ring', 1,
         'botania:mining_ring'
     )
+    manaweave(3,
+        [
+            'gtceu:elementium_ring',
+            'botania:rune_pride',
+            'kubejs:token_determination'
+        ],
+        [diamond, circle, split_triangle], 'botania:reach_ring', 1,
+        'botania:reach_ring'
+    )
     //'tania belts
     manaweave(2,
         [
@@ -489,7 +499,7 @@ ServerEvents.recipes(event => {
     //'tania rods
     manaweave(2,
         [
-            'mna:staves',
+            'mna:wands',
             'minecraft:cobblestone',
             'botania:rune_fire',
             'botania:rune_water',
@@ -501,7 +511,7 @@ ServerEvents.recipes(event => {
     )
     manaweave(2,
         [
-            'mna:staves',
+            'mna:wands',
             'minecraft:dirt',
             'botania:rune_earth',
             'botania:livingwood_twig',
@@ -510,9 +520,18 @@ ServerEvents.recipes(event => {
         [slash, square, square], 'botania:dirt_rod', 1,
         'botania:dirt_rod'
     )
+    manaweave(3,
+        [
+            'botania:dirt_rod',
+            'botania:rune_air',
+            'botania:pixie_dust'
+        ],
+        [slash, square, square, knot4], 'botania:skydirt_rod', 1,
+        'botania:skydirt_rod'
+    )
     manaweave(2,
         [
-            'mna:staves',
+            'mna:wands',
             'kubejs:deepbore_tar',
             'botania:mana_diamond',
             'kubejs:rune_mind',
@@ -524,8 +543,9 @@ ServerEvents.recipes(event => {
     )
     manaweave(2,
         [
-            'mna:staves',
+            'mna:wands',
             'botania:rune_fire',
+            'mna:stone_rune_red',
             'mna:mote_fire',
             'botania:livingwood_twig',
             'botania:livingwood_twig'
@@ -535,7 +555,57 @@ ServerEvents.recipes(event => {
     )
     manaweave(2,
         [
-            'mna:staves',
+            'mna:wands',
+            'botania:rune_air',
+            'forge:feathers',
+            'eidolon:avennian_sprig',
+            'botania:livingwood_twig',
+            'botania:livingwood_twig'
+        ],
+        [slash, square, square, knot3, knot3], 'botania:tornado_rod', 1,
+        'botania:tornado_rod'
+    )
+    manaweave(2,
+        [
+            'mna:wands',
+            'botania:rune_water',
+            'mna:mote_water',
+            'botania:livingwood_twig',
+            'botania:livingwood_twig'
+        ],
+        [slash, square, square, circle, circle], 'botania:water_rod', 1,
+        'botania:water_rod'
+    )
+    manaweave(3,
+        [
+            'mna:wands',
+            'botania:life_essence',
+            'botania:dragonstone',
+            'ars_nouveau:source_gem',
+            'forge:gems/zanite',
+            'mna:mote_ender',
+            'mna:mote_arcane',
+            'botania:dreamwood_twig',
+            'botania:dreamwood_twig'
+        ],
+        [slash, square, square, bolt, bolt], 'botania:missile_rod', 1,
+        'botania:missile_rod'
+    )
+    manaweave(2,
+        [
+            'mna:wands',
+            'botania:rune_fire',
+            'mna:stone_rune_gray',
+            'mna:mote_earth',
+            'botania:livingwood_twig',
+            'botania:livingwood_twig'
+        ],
+        [slash, square, square, triangle, triangle], 'botania:smelt_rod', 1,
+        'botania:smelt_rod'
+    )
+    manaweave(2,
+        [
+            'mna:wands',
             'botania:rune_sloth',
             'botania:livingwood_twig',
             'botania:livingwood_twig'
@@ -545,7 +615,7 @@ ServerEvents.recipes(event => {
     )
     manaweave(3,
         [
-            'mna:staves',
+            'mna:wands',
             'kubejs:rune_force',
             'kubejs:rune_space',
             'kubejs:rune_time',
@@ -556,6 +626,19 @@ ServerEvents.recipes(event => {
         ],
         [slash, square, square, split_triangle, circle], 'botania:gravity_rod', 1,
         'botania:gravity_rod'
+    )
+    manaweave(3,
+        [
+            'mna:wands',
+            'kubejs:rune_light',
+            'botania:dragonstone',
+            'twilightforest:aurora_block',
+            'alexsmobs:rainbow_jelly',
+            'gtceu:elementium_rod',
+            'gtceu:elementium_rod'
+        ],
+        [slash, square, square, circle, bolt], 'botania:rainbow_rod', 1,
+        'botania:rainbow_rod'
     )
     //convenience recipes
     //blank rune

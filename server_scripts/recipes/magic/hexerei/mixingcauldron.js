@@ -56,7 +56,7 @@ const recipes = [
         {"item": "embers:ember_grit"}
     ],
     liquid:"gtceu:seed_oil",
-    liquid_consum:100,
+    liquid_consum:2000,
     output_liquid:"kubejs:golden_fiber_dye",
     output:"immersive_engineering:hemp_fabric",
     output_amount:2,
@@ -73,7 +73,7 @@ const recipes = [
         {"item": "mna:arcane_ash"}
     ],
     liquid:"constructs_casting:squid_ink",
-    liquid_consum:100,
+    liquid_consum:2000,
     output_liquid:"kubejs:witches_fiber_dye",
     output:"kubejs:woven_silk",
     output_amount:2,
@@ -90,7 +90,7 @@ const recipes = [
         {"item": "magichem:admixture_demon"}
     ],
     liquid:"evilcraft:blood",
-    liquid_consum:100,
+    liquid_consum:2000,
     output_liquid:"kubejs:diabolical_fiber_dye",
     output:"irons_spellbooks:hogskin",
     output_amount:2,
@@ -107,7 +107,7 @@ const recipes = [
         {"item": "eidolon:avennian_sprig"}
     ],
     liquid:"farmersdelight:green_tea",
-    liquid_consum:100,
+    liquid_consum:2000,
     output_liquid:"kubejs:herbal_fiber_dye",
     output:"kubejs:woven_silk",
     output_amount:2,
@@ -124,7 +124,7 @@ const recipes = [
         {"item": "gtceu:electrotine_dust"}
     ],
     liquid:"minecraft:water",
-    liquid_consum:100,
+    liquid_consum:2000,
     output_liquid:"kubejs:flowing_fiber_dye",
     output:"immersive_engineering:hemp_fabric",
     output_amount:2,
