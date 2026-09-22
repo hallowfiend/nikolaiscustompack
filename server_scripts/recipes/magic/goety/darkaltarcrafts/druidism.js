@@ -7,7 +7,8 @@ ServerEvents.recipes(event => {
             'hexerei:dried_yellow_dock_leaves',
             'hexerei:dried_mugwort_flowers',
             'goety:grave_dust',
-            'kubejs:whiff_of_vitality'
+            'kubejs:whiff_of_vitality',
+            'kubejs:herbal_string'
         ])
         .activationItem('hexerei:crow_blank_amulet')
         .craftType('overgrown')

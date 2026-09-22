@@ -1046,7 +1046,7 @@ function issElixirs(name){
     'minecraft:glass_bottle',
     `irons_spellbooks:greater_${name}_elixir`,
     250,
-    `irons_spellbooks:greater${name}_elixir`
+    `irons_spellbooks:greater_${name}_elixir`
   )
 }
 issElixirs('oakskin')

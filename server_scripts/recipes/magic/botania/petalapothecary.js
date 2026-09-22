@@ -7,7 +7,8 @@ ServerEvents.recipes(event => {
         'botania:petal_apothecary/bubbell',
         'botania:petal_apothecary/vinculotus',
         'botania:petal_apothecary/pollidisiac',
-        'botania:petal_apothecary/pure_daisy'
+        'botania:petal_apothecary/pure_daisy',
+        'botania:petal_apothecary/hydroangeas'
     ]
     yeets.forEach(yeet => {
         event.remove({id: yeet})
@@ -20,6 +21,14 @@ ServerEvents.recipes(event => {
         '#botania:petals/white',
         'kubejs:lifecrystal'
     ]).id('botania:petal_apothecary/pure_daisy')
+    //hydroangeas
+    event.recipes.botania.petal_apothecary("botania:hydroangeas", [
+        '#botania:petals/blue',
+        '#botania:petals/blue',
+        '#botania:petals/cyan',
+        '#botania:petals/cyan',
+        'kubejs:lifecrystal'
+    ]).id('botania:petal_apothecary/hydroangeas')
     //rosa arcana (nerfed slightly bc xp farms)
     event.recipes.botania.petal_apothecary("botania:rosa_arcana", [
         '#botania:petals/pink',
@@ -51,8 +60,7 @@ ServerEvents.recipes(event => {
         '#botania:petals/orange',
         'kubejs:rune_heart',
         'botania:rune_spring',
-        'kubejs:rune_temperance',
-        'kubejs:whiff_of_vitality'
+        'kubejs:rune_temperance'
     ]).id('botania:petal_apothecary/fallen_kanade')
     //bubbell (why the hell is this gated behind alfheim)
     event.recipes.botania.petal_apothecary("botania:bubbell", [

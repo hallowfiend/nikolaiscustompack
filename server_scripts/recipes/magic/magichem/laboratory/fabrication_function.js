@@ -19,6 +19,21 @@ const magichemicalLaboratory = {
       })
     },
 
+    distillItemWithRequirement(object, components, ratio, batchSize, wisdom, requirement){
+        this.event.custom({
+        "type": "magichem:distillation_fabrication",
+        "wisdom": wisdom,
+        "categories": 1,
+        "batch_size": batchSize,
+        "required_advancement": requirement,
+        "output_rate": ratio,
+        "object": {
+          "item": object
+        },
+        "components": components
+      })
+    },
+
     distillFluid(fluid, components, ratio, batchSize, wisdom){
         this.event.custom({
         "type": "magichem:fluid_distillation_fabrication",
@@ -26,6 +41,19 @@ const magichemicalLaboratory = {
         "categories": 1,
         "output_rate": ratio,
         "batch_size": batchSize,
+        "fluid": fluid,
+        "components": components
+    })
+    },
+
+    distillFluidWithRequirement(fluid, components, ratio, batchSize, wisdom, requirement){
+        this.event.custom({
+        "type": "magichem:fluid_distillation_fabrication",
+        "wisdom": wisdom,
+        "categories": 1,
+        "output_rate": ratio,
+        "batch_size": batchSize,
+        "required_advancement": requirement,
         "fluid": fluid,
         "components": components
     })

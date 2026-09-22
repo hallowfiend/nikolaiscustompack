@@ -336,7 +336,7 @@ ServerEvents.recipes(event => {
         3,
         [
             {"item": "goety:mystic_core"},
-            {"item": "mna:arcane_ash"},
+            {"item": "netherexp:wisp_bottle"},
             {"item": "malum:eldritch_spirit"},
             {"item": "malum:chunk_of_brilliance"}
         ]

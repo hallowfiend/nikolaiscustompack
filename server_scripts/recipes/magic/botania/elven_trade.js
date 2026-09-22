@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         [
             'mna:mark_of_the_council',
             'mna:mark_of_the_council',
-            '#forge:flowers'
+            'farmersdelight:straw'
         ],
         'mna:cerublossom'
     )
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         [
             'mna:mark_of_the_nether',
             'mna:mark_of_the_nether',
-            'minecraft:dead_bush'
+            'minecraft:cactus'
         ],
         'mna:desert_nova'
     )
@@ -77,5 +77,24 @@ ServerEvents.recipes(event => {
             'eidolon:enchanted_ash'
         ],
         'mna:vinteum_dust'
+    )
+    elvenTrade(
+        [
+            'malum:grim_talc'
+        ],
+        'mna:chimerite_block'
+    )
+    elvenTrade(
+        [
+            'malum:rotting_essence'
+        ],
+        'kubejs:lifecrystal'
+    )
+    elvenTrade(
+        [
+            'embers:ember_shard',
+            'eternal_starlight:crinoa'
+        ],
+        'eternal_starlight:starcore'
     )
 })

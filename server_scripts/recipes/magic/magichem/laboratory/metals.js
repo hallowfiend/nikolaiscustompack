@@ -89,23 +89,23 @@ ServerEvents.recipes(event => {
         ],
         1.0, 8, 3
     )
-    magichemicalLaboratory.distillItem('gtceu:sodium_dust',
+    magichemicalLaboratory.distillItem('gtceu:sodium_ingot',
         [
           { "item": "magichem:admixture_metal", "count": 2 },
           { "item": "magichem:essentia_water", "count": 1 },
           { "item": "magichem:admixture_potential", "count": 1 },
           { "item": "magichem:admixture_acid", "count": 1 }
         ],
-        1.0, 8, 0
+        1.0, 8, 1
     )
-    magichemicalLaboratory.distillItem('gtceu:calcium_dust',
+    magichemicalLaboratory.distillItem('gtceu:calcium_ingot',
         [
           { "item": "magichem:admixture_metal", "count": 2 },
           { "item": "magichem:essentia_earth", "count": 1 },
           { "item": "magichem:admixture_permanence", "count": 1 },
           { "item": "magichem:admixture_bone", "count": 1 }
         ],
-        1.0, 8, 0
+        1.0, 8, 1
     )
     //simple alloys
     magichemicalLaboratory.distillItem('gtceu:bronze_ingot',

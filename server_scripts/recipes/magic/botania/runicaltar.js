@@ -387,7 +387,7 @@ ServerEvents.recipes((event) => {
         [
             'bloodmagic:infusedslate',
             'bloodmagic:blankrune',
-            'kubejs:shifting_tincture',
+            'kubejs:logisticians_alkahest',
             'biomancy:water_gel_block',
             'pneumaticcraft:vacuum_pump'
         ],

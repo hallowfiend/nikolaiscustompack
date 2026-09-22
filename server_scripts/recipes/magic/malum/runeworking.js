@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
         'irons_spellbooks:fire_rune',
         'irons_spellbooks:blank_rune',
         {
-            "count": 32,
+            "count": 8,
             "item": "magichem:essentia_fire"
         },
         'iss_runes/fire_from_essentia'
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
         'irons_spellbooks:lightning_rune',
         'irons_spellbooks:blank_rune',
         {
-            "count": 16,
+            "count": 8,
             "item": "magichem:admixture_storms"
         },
         'iss_runes/lightning_from_admixture'
