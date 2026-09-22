@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         {input: 'gtceu:brass_block', output: 'goety:cursed_metal_block'},
         {input: 'minecraft:emerald', output: 'goety:magic_emerald'},
         {input: 'minecraft:emerald_block', output: 'goety:awakened_emerald_block'},
-        {input: 'minecraft:spore_blossom', output: 'goety:spore_blossom'},
+        {input: 'minecraft:spore_blossom', output: 'goety:corpse_blossom'},
         {input: '#forge:obsidian', output: 'goety:crypt_stone'},
         {input: 'minecraft:bone_block', output: 'goety:savage_tooth'},
         {input: 'minecraft:calcite', output: 'goety:marble'},

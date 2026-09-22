@@ -14,4 +14,6 @@ ServerEvents.recipes(event => {
             o: 'magichem:glass_orb'
         }
     ).id('kubejs:shaped/upgrade_orb')
+    //Divine pearl alt recipe
+    event.shapeless('4x irons_spellbooks:divine_pearl', ['aether:zanite_gem', 'aether:ambrosium_shard'])
 })

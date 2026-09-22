@@ -411,9 +411,8 @@ ServerEvents.tags("item", (event) => {
 
   //alt iss foci
   event.add('irons_spellbooks:fire_focus', [
-    'minecraft:fire_charge',
-    'malum:infernal_spirit',
     'tide:magma_mackerel',
+    'elementalcraft:powerful_fire_shard',
     'tide:blazing_swordfish',
     'alexsmobs:bone_serpent_tooth',
     'cataclysm:dying_ember',
@@ -426,14 +425,14 @@ ServerEvents.tags("item", (event) => {
     'alexsmobs:flying_fish',
     'tide:cave_eel',
     'gtceu:magnetic_iron_rod',
-    'gtceu:neodymium_ingot'
+    'gtceu:neodymium_ingot',
+    'alexsmobs:moose_antler'
   ])
   event.add('irons_spellbooks:nature_focus', [
     'hexalia:rabbage',
-    'hexerei:yellow_dock_flowers',
-    'hexerei:mugwort_flowers',
+    'hexerei:dried_yellow_dock_leaves',
     'goety:henbane_flower',
-    '#botania:petals',
+    'botania:grass_seeds',
     'alexsmobs:komodo_spit',
     'mowziesmobs:naga_fang'
   ])
@@ -442,14 +441,14 @@ ServerEvents.tags("item", (event) => {
     'twilightforest:yeti_fur',
     'alexsmobs:froststalker_horn',
     'windswept:snowdrop',
-    'windswept:frozen_branch'
+    'windswept:frozen_branch',
+    'alexsmobs:raccoon_tail'
   ])
   event.add('irons_spellbooks:holy_focus', [
     'eidolon:arcane_gold_ingot',
     'galosphere:lumiere_shard',
     'galosphere:golden_lichen_cordyceps',
     'naturesaura:gold_leaf',
-    'malum:sacred_spirit',
     'eidolon:oanna_bloom',
     'hexerei:dried_sage'
   ])
@@ -462,7 +461,6 @@ ServerEvents.tags("item", (event) => {
     'bloodmagic:slate_ampoule'
   ])
   event.add('irons_spellbooks:ender_focus', [
-    'mna:mote_ender',
     'alexsmobs:capsid',
     'tide:enderfin',
     'tide:ender_glider',
@@ -477,16 +475,39 @@ ServerEvents.tags("item", (event) => {
     'netherexp:banshee_rod',
     'savage_and_ravage:creeper_spores',
     'quark:soul_bead',
-    'mna:animus_dust',
     'eidolon:lesser_soul_gem'
   ])
   event.add('irons_spellbooks:eldritch_focus', [
     'alexsmobs:skreecher_soul',
-    'goety:unholy_blood'
+    'goety:unholy_blood',
+    'botania:life_essence',
+    'oneironaut:pseudoamethyst_shard',
+    'malum:umbral_spirit',
+    'alexsmobs:void_worm_eye'
+  ])
+  event.add('kubejs:protection_focus', [
+    'minecraft:pufferfish',
+    'alexsmobs:spiked_scute',
+    'alexsmobs:crocodile_scute',
+    'minecraft:scute',
+    'mna:rune_ritual_metal',
+    'irons_spellbooks:dragonskin',
+    'twilightforest:naga_scale'
+  ])
+  event.add('kubejs:recovery_focus', [
+    'minecraft:phantom_membrane',
+    'windswept:lupine',
+    'alexsmobs:mungal_spores',
+    'alexsmobs:elastic_tendon',
+    'biomancy:mob_gland'
+  ])
+  event.add('kubejs:arcane_focus', [
+    'irons_spellbooks:arcane_essence',
+    'magichem:admixture_sorcery',
+    'mna:purified_vinteum_dust'
   ])
   event.add('iss_magicfromtheeast:spirit_focus', [
     'netherexp:wisp_bottle',
-    'malum:arcane_spirit',
     'goety:ectoplasm',
     'malum:astral_weave',
     'malum:processed_soulstone',
@@ -494,11 +515,8 @@ ServerEvents.tags("item", (event) => {
   ]);
   event.add('iss_magicfromtheeast:symmetry_focus', [
     'goety:jade',
-    'neapolitan:adzuki_beans',
-    'hexerei:mandrake_root',
+    'neapolitan:roasted_adzuki_beans',
     'windswept:ginger_root',
-    'magichem:admixture_nigredo',
-    'magichem:admixture_albedo',
     'magichem:perfected_electrum',
     'magichem:chiaroscuro',
     'mna:transmuted_silver',
@@ -509,21 +527,25 @@ ServerEvents.tags("item", (event) => {
     'gtceu:vacuum_tube',
     'create:precision_mechanism',
     'immersiveengineering:component_steel',
-    'embers:dawnstone_plate'
+    'embers:dawnstone_plate',
+    'gtceu:stainless_steel_ingot'
   ])
-  event.add('winds_spellbooks:wind_focus', [
-    'malum:aerial_spirit',
+  event.add('wind_spellbooks:wind_focus', [
+    'elementalcraft:powerful_air_shard',
     '#forge:feathers',
     'goety:gale_fabric',
     'goety:wind_core',
-    'goety:flying_ointment'
+    'goety:flying_ointment',
+    'alexsmobs:rattlesnake_rattle',
+    'alexsmobs:cockroach_wing'
   ])
   event.add('gtbcs_geomancy_plus:geo_focus', [
-    'malum:earthen_spirit',
+    'elementalcraft:powerful_earth_shard',
     'hexcasting:charged_amethyst',
     'miners_delight:cave_carrot',
     'cosmopolitan:tuber',
-    'embers:caminite_brick'
+    'embers:caminite_brick',
+    'alexsmobs:centipede_leg',
   ])
 
   event.remove('irons_spellbooks:lootable_focus', /.*/)
@@ -540,7 +562,8 @@ ServerEvents.tags("item", (event) => {
     'alexsmobs:bone_serpent_tooth',
     'goety:jade',
     'minecraft:feather',
-    'hexcasting:charged_amethyst'
+    'hexcasting:charged_amethyst',
+    'gtceu:vacuum_tube'
   ])
 
   event.add("mynethersdelight:powdery_logs", ["mynethersdelight:powdery_block", "mynethersdelight:stripped_powdery_block"]);

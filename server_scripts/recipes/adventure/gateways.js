@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         {
             f: {"item": "kubejs:bloodchannel_gem"},
             d: {"item": "goety:shadow_essence"},
-            v: {"item": "vampirism:vampire_blood"},
+            v: {"item": "vampirism:vampire_blood_bottle"},
             l: {"item": "magichem:admixture_exanimate"},
             e: {"item": "mna:mote_ender"}
         },

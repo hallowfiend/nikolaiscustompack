@@ -58,7 +58,7 @@ const recipes = [
     liquid:"gtceu:seed_oil",
     liquid_consum:2000,
     output_liquid:"kubejs:golden_fiber_dye",
-    output:"immersive_engineering:hemp_fabric",
+    output:"immersiveengineering:hemp_fabric",
     output_amount:2,
     heat:false
 },
@@ -126,7 +126,7 @@ const recipes = [
     liquid:"minecraft:water",
     liquid_consum:2000,
     output_liquid:"kubejs:flowing_fiber_dye",
-    output:"immersive_engineering:hemp_fabric",
+    output:"immersiveengineering:hemp_fabric",
     output_amount:2,
     heat:false
 },
@@ -163,7 +163,7 @@ const recipes = [
     ],
     liquid:"minecraft:water",
     liquid_consum:1000,
-    output_liquid:"irons_spellbooks:common_ink",
+    output_liquid:"constructs_casting:common_ink",
     output:"eidolon:magic_ink",
     output_amount:8,
     heat:false
