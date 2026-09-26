@@ -42,6 +42,22 @@ ServerEvents.recipes(event => {
       'kubejs:thirsting_dreadshard',
       'occultism:craft_foliot'
     ).dummy('kubejs:ritual_dummy/sated_dreadshard').useItem('kubejs:book_of_invocations')
+    //Scroll of Flay Mind
+    event.recipes.occultism.ritual(
+      Item.of('hexcasting:scroll', '{op_id:"hexcasting:brainsweep"}'),
+      [
+        'kubejs:rune_mind',
+        'hexcasting:charged_amethyst',
+        'botania:ender_dagger',
+        'mna:magic_broom',
+        'hexcasting:charged_amethyst',
+        'magichem:admixture_history',
+        'goety:aging_cream',
+        'hexcasting:scroll'
+      ],
+      'occultism:book_of_binding_bound_djinni',
+      'occultism:craft_djinni'
+    ).dummy('kubejs:ritual_dummy/brainsweep_scroll')
     //Dimensional Storage
     //Controller Base
     event.remove({ id: 'occultism:ritual/craft_storage_controller_base' })

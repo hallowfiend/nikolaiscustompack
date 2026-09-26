@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         O: 'naturesaura:gold_powder',
         A: 'integrateddynamics:crystalized_menril_chunk',
         S: 'botania:spark'
-    }).id('kubejs:shaped/corporea_spark')
+    }).id('botania:corporea_spark')
     //master spark
     event.shaped('botania:corporea_spark_master', [
         'CIC',
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         I: 'gtceu:iesnium_plate',
         C: 'hexcasting:charged_amethyst',
         S: 'botania:corporea_spark'
-    }).id('kubejs:shaped/corporea_spark_master')
+    }).id('botania:corporea_spark_master')
     //crystal cube
     event.shaped('botania:corporea_crystal_cube', [
         'S',
@@ -40,5 +40,5 @@ ServerEvents.recipes(event => {
         S: 'botania:corporea_spark',
         C: 'hexerei:crystal_ball',
         M: 'gtceu:iesnium_plate'
-    }).id('kubejs:shaped/corporea_crystal_cube')
+    }).id('botania:corporea_crystal_cube')
 })

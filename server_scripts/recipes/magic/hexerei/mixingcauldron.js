@@ -106,7 +106,7 @@ const recipes = [
         {"item": "goety:quick_growing_seed"},
         {"item": "eidolon:avennian_sprig"}
     ],
-    liquid:"farmersdelight:green_tea",
+    liquid:"farmersrespite:green_tea",
     liquid_consum:2000,
     output_liquid:"kubejs:herbal_fiber_dye",
     output:"kubejs:woven_silk",
@@ -118,7 +118,7 @@ const recipes = [
         {"item": "goety:spirit_fabric"},
         {"item": "goety:chill_fabric"},
         {"item": "kubejs:shifting_tincture"},
-        {"item": "upgrade_aquatic:boiled_blue_pickerelweed"},
+        {"item": "upgrade_aquatic:boiled_pickerelweed"},
         {"item": "minecraft:nautilus_shell"},
         {"item": "magichem:admixture_motion"},
         {"item": "gtceu:electrotine_dust"}
@@ -1029,7 +1029,7 @@ cauldronEmptying(
   'kubejs:flowing_yarn'
 )
 cauldronEmptying(
-  'biomancy:sinew',
+  'biomancy:mob_sinew',
   'kubejs:diabolical_fiber_dye',
   200,
   'kubejs:diabolical_vein'

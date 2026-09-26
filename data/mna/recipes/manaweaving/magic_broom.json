@@ -1,0 +1,15 @@
+{
+	"type": "mna:manaweaving-recipe",
+	"tier": 2,
+	"output": "mna:magic_broom",		
+	"items": [
+		"botania:livingwood_twig",
+		"botania:livingwood_twig",
+		"hexerei:broom_brush",
+		"mna:animus_dust"
+	],
+	"patterns": [
+		"mna:circle",
+		"mna:knot"
+	]
+}

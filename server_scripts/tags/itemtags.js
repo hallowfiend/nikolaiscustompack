@@ -548,7 +548,7 @@ ServerEvents.tags("item", (event) => {
     'alexsmobs:centipede_leg',
   ])
 
-  event.remove('irons_spellbooks:lootable_focus', /.*/)
+  event.remove('irons_spellbooks:lootable_focus', [/.*/])
   event.add('irons_spellbooks:lootable_focus', [
     'goety:magic_emerald',
     'netherexp:wisp_bottle',

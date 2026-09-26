@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         'botania:livingwood_twig',             
         'ars_nouveau:dominion_wand',   
         0                       
-    ).id('kubejs:ars_nouveau/enchanting_apparatus/dominion_wand')
+    ).id('ars_nouveau:dominion_wand')
     //source jar
     event.shaped('ars_nouveau:source_jar', [
         'G',
@@ -98,59 +98,23 @@ ServerEvents.recipes(event => {
         0                       
     ).id('kubejs:ars_nouveau/enchanting_apparatus/warp_relay')
     //SOURCELINKS
-    //agronomic
-    event.shaped('ars_nouveau:agronomic_sourcelink', [
+    const sourcelinks = [
+        {id: 'agronomic', unguent: 'ecologists_distillation'},
+        {id: 'volcanic', unguent: 'seething_nethersblood'},
+        {id: 'alchemical', unguent: 'shifting_tincture'},
+        {id: 'vitalic', unguent: 'whiff_of_vitality'},
+        {id: 'mycelial', unguent: 'caustic_oil'}
+    ]
+    sourcelinks.forEach(i => {
+        event.shaped(`ars_nouveau:${i.id}_sourcelink`, [
         'DAD',
         'BCB',
         'DAD'
     ], {
         A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_rod',
-        C: 'kubejs:ecologists_distillation',
+        B: 'gtceu:hallowed_gold_rod',
+        C: `kubejs:${i.unguent}`,
         D: 'malum:cthonic_gold'
-    }).id('kubejs:shaped/agronomic_sourcelink')
-    //volcanic
-    event.shaped('ars_nouveau:volcanic_sourcelink', [
-        'DAD',
-        'BCB',
-        'DAD'
-    ], {
-        A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_rod',
-        C: 'kubejs:seething_nethersblood',
-        D: 'malum:cthonic_gold'
-    }).id('kubejs:shaped/volcanic_sourcelink')
-    //alchemical
-    event.shaped('ars_nouveau:alchemical_sourcelink', [
-        'DAD',
-        'BCB',
-        'DAD'
-    ], {
-        A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_rod',
-        C: 'kubejs:caustic_oil',
-        D: 'malum:cthonic_gold'
-    }).id('kubejs:shaped/alchemical_sourcelink')
-    //vitalic
-    event.shaped('ars_nouveau:vitalic_sourcelink', [
-        'DAD',
-        'BCB',
-        'DAD'
-    ], {
-        A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_rod',
-        C: 'kubejs:whiff_of_vitality',
-        D: 'malum:cthonic_gold'
-    }).id('kubejs:shaped/vitalic_sourcelink')
-    //mycelial
-    event.shaped('ars_nouveau:mycelial_sourcelink', [
-        'DAD',
-        'BCB',
-        'DAD'
-    ], {
-        A: 'ars_nouveau:source_gem',
-        B: 'gtceu:arcane_gold_rod',
-        C: 'kubejs:shifting_tincture',
-        D: 'malum:cthonic_gold'
-    }).id('kubejs:shaped/mycelial_sourcelink')
+    }).id(`ars_nouveau:${i.id}_sourcelink`)
+    })
 })

@@ -381,7 +381,7 @@ ServerEvents.recipes((event) => {
     'apotheosis:draconic_endshelf'
   ]
   shelves.forEach(shelf => {
-    event.remove({ id: shelf })
+    event.remove({ output: shelf })
   })
   //blazing hellshelf
   event.custom({

@@ -37,7 +37,7 @@ event.remove({output: 'create_enchantment_industry:printer'})
     },
     "stages": [
     {
-      "experience": 64000,
+      "experience": 6400,
       "components": [
         { "item": "malum:brilliant_obelisk" },
         { "item": "botania:mana_pylon" },
@@ -53,7 +53,7 @@ event.remove({output: 'create_enchantment_industry:printer'})
       ]
     },
     {
-      "experience": 64000,
+      "experience": 6400,
       "components": [
         { "item": "goety:dark_anvil" },
         { "item": "gtceu:hv_forge_hammer" },
@@ -70,13 +70,13 @@ event.remove({output: 'create_enchantment_industry:printer'})
       ]
     },
     {
-      "experience": 64000,
+      "experience": 6400,
       "components": [
-        { "item": "create:precision_mechanism" },
+        { "item": "irons_spellbooks:legendary_ink" },
         { "item": "cataclysm:ignitium_ingot" },
         { "item": "create:spout" },
         { "item": "eternal_starlight:golem_steel_ingot" },
-        { "item": "embers:shifting_gears" }
+        { "item": "embers:winding_gears" }
       ],
       "materia": [
         { "item": "magichem:admixture_industry", "count": 128 },
@@ -100,7 +100,7 @@ event.custom({
     },
     "stages": [
     {
-      "experience": 64000,
+      "experience": 6400,
       "components": [
         { "item": "malum:brilliant_obelisk" },
         { "item": "botania:mana_pylon" },
@@ -116,7 +116,7 @@ event.custom({
       ]
     },
     {
-      "experience": 64000,
+      "experience": 6400,
       "components": [
         { "item": "apotheosis:draconic_endshelf" },
         { "item": "gtceu:hv_alloy_smelter" },
@@ -133,10 +133,10 @@ event.custom({
       ]
     },
     {
-      "experience": 64000,
+      "experience": 6400,
       "components": [
         { "item": "create:precision_mechanism" },
-        { "tag": "forge:ingots/calorite" },
+        { "item": "ad_astra:calorite_ingot" },
         { "item": "create:spout" },
         { "item": "botania:terrasteel_ingot" },
         { "item": "embers:focal_lens" }

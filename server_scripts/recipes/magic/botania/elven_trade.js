@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         [
             'malum:rotting_essence'
         ],
-        'kubejs:lifecrystal'
+        'kubejs:lifecrystal' //if you wanna ""skip""" naaura, better rush alfheim
     )
     elvenTrade(
         [

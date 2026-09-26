@@ -49,7 +49,7 @@ ServerEvents.recipes((event) => {
             'hexalia:water_node'
         ],
         5200
-    ).id('kubejs:botania/runic_altar/water')
+    ).id('botania:runic_altar/water')
     event.recipes.botania.runic_altar('2x botania:rune_fire',
         [
             'botania:mana_powder',
@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
             'hexalia:fire_node'
         ],
         5200
-    ).id('kubejs:botania/runic_altar/fire')
+    ).id('botania:runic_altar/fire')
     event.recipes.botania.runic_altar('2x botania:rune_air',
         [
             'botania:mana_powder',
@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
             'hexalia:air_node'
         ],
         5200
-    ).id('kubejs:botania/runic_altar/air')
+    ).id('botania:runic_altar/air')
     event.recipes.botania.runic_altar('2x botania:rune_earth',
         [
             'botania:mana_powder',
@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
             'hexalia:earth_node'
         ],
         5200
-    ).id('kubejs:botania/runic_altar/earth')
+    ).id('botania:runic_altar/earth')
     //Custom runes
     event.recipes.botania.runic_altar('2x kubejs:rune_light',
         [
