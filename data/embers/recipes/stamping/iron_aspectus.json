@@ -1,7 +1,7 @@
 {
   "type": "embers:stamping",
   "fluid": {
-    "amount": 144,
+    "amount": 90,
     "tag": "forge:iron"
   },
   "input": {

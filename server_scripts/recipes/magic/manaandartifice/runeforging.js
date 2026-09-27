@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     ], {
         S: '#forge:stone',
         C: 'elementalcraft:inert_crystal'
-    })
+    }).id('mna:rune_clay_plate')
     //unfired rune plate
     event.shaped('mna:rune_clay_plate', [
         ' C ',
@@ -23,5 +23,5 @@ ServerEvents.recipes(event => {
     ], {
         C: 'embers:raw_caminite_plate',
         S: '#mna:stone_runes'
-    })
+    }).id('mna:stone_runes/rune_blank')
 })

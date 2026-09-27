@@ -108,6 +108,13 @@ ServerEvents.recipes(event => {
     )
     //conversion
     conversion(
+        'botania:grass_seeds',
+        'cosmopolitan:wheatgrass',
+        4,
+        2000,
+        20
+    )
+    conversion(
         'kubejs:treated_leather',
         'irons_spellbooks:hogskin',
         1,

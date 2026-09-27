@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "amount": 144,
+            "amount": 90,
             "tag": `forge:${metal}`
         }
     }).id(`kubejs:embers/melting/${metal}_ingot`)
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "amount": 144,
+            "amount": 90,
             "tag": `forge:${metal}`
         }
     }).id(`kubejs:embers/melting/${metal}_plate`)
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "amount": 16,
+            "amount": 10,
             "tag": `forge:${metal}`
         }
     }).id(`kubejs:embers/melting/${metal}_nugget`)
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
       "type": "embers:mixing",
       "inputs": [
         {
-          "amount": 144,
+          "amount": 90,
           "tag": "forge:copper"
         },
         {
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         }
       ],
       "output": {
-        "amount": 288,
+        "amount": 180,
         "tag": "forge:molten_dawnstone"
       }
     }).id('kubejs:embers/mixing/dawnstone')
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
             "type": "embers:mixing",
             "inputs": [
                 {
-                "amount": 144,
+                "amount": 90,
                 "tag": `forge:molten_cloggrum`
             },
             {
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "amount": 144,
+            "amount": 180,
             "fluid": 'gtceu:dormant_livingbronze'
         }
         }).id(`kubejs:embers/mixing/dormant_livingbronze`)
@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
         event.custom({
             "type": "embers:stamping",
             "fluid": {
-                "amount": 144,
+                "amount": 90,
                 "tag": `forge:${metal}`
             },
             "output": {
@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
         event.custom({
             "type": "embers:stamping",
             "fluid": {
-                "amount": 144,
+                "amount": 90,
                 "tag": `forge:${metal}`
             },
             "input": {

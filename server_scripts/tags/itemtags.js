@@ -530,7 +530,7 @@ ServerEvents.tags("item", (event) => {
     'embers:dawnstone_plate',
     'gtceu:stainless_steel_ingot'
   ])
-  event.add('wind_spellbooks:wind_focus', [
+  event.add('irons_spellbooks:wind_focus', [
     'elementalcraft:powerful_air_shard',
     '#forge:feathers',
     'goety:gale_fabric',

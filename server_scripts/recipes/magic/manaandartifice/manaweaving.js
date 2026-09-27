@@ -7,7 +7,7 @@ const circle = "mna:circle"
 const diamond = "mna:diamond"
 const slash = "mna:slash" //t1
 const backslash = "mna:backslash" //t1
-const knot1 = "mna:knot1"
+const knot1 = "mna:knot"
 const knot2 = "mna:knot2"
 const knot3 = "mna:knot3"
 const knot4 = "mna:knot4"
@@ -42,7 +42,11 @@ ServerEvents.recipes(event => {
         /botania:.*_cloak/,
         /botania:.*_belt/,
         'botania:world_seed',
-        /botania:.*_rod/
+        /botania:.*_rod/,
+        'mna:manaweaving/artifice/belt_of_selfishness',
+        'mna:manaweaving/artifice/belt_of_locks',
+        'mna:manaweaving/intermediate/infused_silk',
+        'botania:gaia_ingot'
     ]
     removals.forEach(item => {
         event.remove({id: item})
@@ -136,10 +140,8 @@ ServerEvents.recipes(event => {
         [diamond, bolt, circle, inverted_triangle], 'kubejs:water_cluster', 1,
         'kubejs:mna/manaweaving/water_cluster'
     )
-    //various artifices
     //mna baubles
     //selfish belt
-    event.remove({id: 'mna:manaweaving/artifice/belt_of_selfishness'})
     manaweave(2,
         [
             'eidolon:basic_belt',
@@ -152,18 +154,17 @@ ServerEvents.recipes(event => {
         'mna:manaweaving/artifice/belt_of_selfishness'
     )
     //lock belt
-    event.remove({id: 'mna:manaweaving/artifice/belt_of_locks'})
     manaweave(2,
         [
             'eidolon:basic_belt',
             'mna:belt_buckle',
             'supplementaries:key',
-            'supplementaries:lock_block',
             'mna:chimerite_gem',
             'mna:chimerite_gem',
             'mna:chimerite_gem',
             'mna:chimerite_gem',
-            'kubejs:pure_filament'
+            'goety:dark_fabric',
+            'mna:infused_thread'
         ],
         [triangle, circle], 'mna:affinity_lock_belt', 1,
         'mna:manaweaving/artifice/belt_of_locks'
@@ -182,7 +183,6 @@ ServerEvents.recipes(event => {
         'kubejs:mna/manaweaving/atmospheric_gauge'
     )
     //infused silk
-    event.remove({id: 'mna:manaweaving/intermediate/infused_silk'})
     manaweave(1,
         [
             'kubejs:woven_silk',
@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
     event.remove({output: 'irons_spellbooks:mithril_weave'})
     manaweave(3,
         [
-            'goety:magic_fabric',
+            'irons_spellbooks:magic_cloth',
             'kubejs:treated_leather',
             'botania:manaweave_cloth',
             'forge:ingots/mithril',
@@ -213,7 +213,6 @@ ServerEvents.recipes(event => {
         'kubejs:mna/manaweaving/mithril_weave'
     )
     //gaia ingot
-    event.remove({id: 'botania:gaia_ingot'})
     manaweave(3,
         [
             'gtceu:gravitite_gem',
@@ -225,7 +224,7 @@ ServerEvents.recipes(event => {
             'botania:life_essence'
         ],
         [split_triangle, knot3, knot4, diamond], 'botania:gaia_ingot', 1,
-        'kubejs:mna/manaweaving/gaia_ingot'
+        'botania:gaia_ingot'
     )
     //manaweave cloth
     manaweave(1,
@@ -340,7 +339,8 @@ ServerEvents.recipes(event => {
             'botania:rune_air',
             'botania:rune_earth',
             'botania:manasteel_ingot',
-            'mna:infused_silk'
+            'mna:infused_silk',
+            'mna:pilgrim_staff'
         ],
         [circle, circle], 'botania:travel_belt', 1,
         'botania:travel_belt'
@@ -360,7 +360,8 @@ ServerEvents.recipes(event => {
             'botania:travel_belt',
             'botania:life_essence',
             'botania:elementium_ingot',
-            'kubejs:realmsplit_dew'
+            'kubejs:realmsplit_dew',
+            'kubejs:travellers_twine'
         ],
         [bolt, bolt, circle, circle], 'botania:super_travel_belt', 1,
         'botania:super_travel_belt'
@@ -545,7 +546,7 @@ ServerEvents.recipes(event => {
         [
             'mna:wands',
             'botania:rune_fire',
-            'mna:stone_rune_red',
+            'mna:stone_rune_orange',
             'mna:mote_fire',
             'botania:livingwood_twig',
             'botania:livingwood_twig'
@@ -607,6 +608,8 @@ ServerEvents.recipes(event => {
         [
             'mna:wands',
             'botania:rune_sloth',
+            'mna:mote_earth',
+            'mna:ritual_focus_minor',
             'botania:livingwood_twig',
             'botania:livingwood_twig'
         ],

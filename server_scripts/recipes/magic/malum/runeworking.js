@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
         'irons_spellbooks:blank_rune',
         {
             "count": 8,
-            "tag": "wind_spellbooks:wind_focus"
+            "tag": "irons_spellbooks:wind_focus"
         },
         'iss_runes/wind_from_focus'
     )
