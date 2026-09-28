@@ -40,6 +40,33 @@ ServerEvents.recipes(event => {
     }
     metalMelting('cloggrum')
     metalMelting('iesnium')
+    function gemMelting(gem){
+        event.custom({
+        "type": "embers:melting",
+        "input": [
+            {
+                "tag": `forge:gems/${gem}`
+            }
+        ],
+        "output": {
+            "amount": 90,
+            "tag": `forge:${gem}`
+        }
+        }).id(`kubejs:embers/melting/${gem}`)
+        event.custom({
+        "type": "embers:melting",
+        "input": [
+            {
+                "tag": `forge:storage_blocks/${gem}`
+            }
+        ],
+        "output": {
+            "amount": 180,
+            "tag": `forge:${gem}`
+        }
+        }).id(`kubejs:embers/melting/${gem}`)
+    }
+    gemMelting('cthonic_gold')
     //mixing
     function metalMixing(firstMetal, firstRatio, secondMetal, secondRatio, outputAlloy, alloyAmount){
         event.custom({

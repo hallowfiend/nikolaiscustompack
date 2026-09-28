@@ -37,14 +37,14 @@ ServerEvents.recipes(event => {
     
     event.recipes.gtceu.alloy_blast_smelter("kubejs:soularium")
         .itemInputs("#forge:dusts/iesnium", "#forge:dusts/gold", "16x #forge:ground/soul", "8x gtceu:raw_will_dust")
-        .outputFluids(Fluid.of("gtceu:soularium", 288))
+        .outputFluids(Fluid.of("gtceu:soularium", 180))
         .duration(112.5 * 20 * 9 * 0.75 + 12.5)
         .EUt(120)
         .blastFurnaceTemp(1200)
     
     event.recipes.gtceu.alloy_blast_smelter("kubejs:end_steel")
         .itemInputs("#forge:dusts/dark_steel", "#forge:dusts/endstone", "#forge:dusts/vibrant_alloy", "#forge:dusts/aeternium")
-        .outputFluids(Fluid.of("gtceu:end_steel", 288))
+        .outputFluids(Fluid.of("gtceu:end_steel", 180))
         .duration(112.5 * 20 * 9 * 0.75 + 12.5)
         .EUt(120)
         .blastFurnaceTemp(1200)

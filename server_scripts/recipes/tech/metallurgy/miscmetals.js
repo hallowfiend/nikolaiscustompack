@@ -2,26 +2,26 @@ ServerEvents.recipes(event => {
     // Eternal Starlight alloy recipes
     event.recipes.gtceu.alloy_blast_smelter("golem_steel_duping")
         .itemInputs("3x gtceu:deepsilver_dust", "2x gtceu:tiny_golem_steel_dust")
-        .outputFluids(Fluid.of("gtceu:golem_steel", 144))
+        .outputFluids(Fluid.of("gtceu:golem_steel", 90))
         .duration(260)
         .EUt(120)
         .blastFurnaceTemp(1400);
     event.recipes.gtceu.alloy_blast_smelter("unrealium_forging")
         .itemInputs("gtceu:deepsilver_dust", "gtceu:golem_steel_dust", "gtceu:malarite_dust", "eternal_starlight:soul_dew")
-        .outputFluids(Fluid.of("gtceu:unrealium", 144))
+        .outputFluids(Fluid.of("gtceu:unrealium", 90))
         .duration(260)
         .EUt(120)
         .blastFurnaceTemp(1400);
     // Better End alloy recipes
     event.recipes.gtceu.alloy_blast_smelter("terminite_forging")
         .itemInputs("gtceu:thallasium_dust", "#forge:dusts/ender_pearl")
-        .outputFluids(Fluid.of("gtceu:terminite", 144))
+        .outputFluids(Fluid.of("gtceu:terminite", 90))
         .duration(260)
         .EUt(120)
         .blastFurnaceTemp(1400);
     event.recipes.gtceu.alloy_blast_smelter("aeternium_forging")
         .itemInputs("gtceu:terminite_dust", "gtceu:netherite_dust")
-        .outputFluids(Fluid.of("gtceu:aeternium", 144))
+        .outputFluids(Fluid.of("gtceu:aeternium", 90))
         .duration(260)
         .EUt(120)
         .blastFurnaceTemp(1400);

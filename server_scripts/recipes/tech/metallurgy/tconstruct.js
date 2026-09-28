@@ -23,16 +23,16 @@ ServerEvents.recipes((event) => {
         "type": "tconstruct:alloy",
         inputs: [
 			{
-				amount: 144,
+				amount: 90,
 				fluid: 'gtceu:bronze'
 			},
 			{
-				amount: 144,
+				amount: 80,
 				fluid: 'tconstruct:molten_amethyst'
 			}
 		],
 		result: {
-			amount: 144,
+			amount: 90,
 			fluid: 'tconstruct:molten_amethyst_bronze'
 		},
         "temperature": 820
@@ -70,5 +70,5 @@ ServerEvents.recipes((event) => {
       "level": 1
     },
     "max_level": 1
-  })
+  }).id('tinkerslevellingaddon:tools/modifiers/ability/improvable')
 });

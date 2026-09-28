@@ -599,10 +599,138 @@ ServerEvents.recipes(event => {
             {"item": "scguns:peal"}
         ]
     )
+    //VEINMINING
+    enchant(
+        "veinmining:vein_mining",
+        50,
+        5,
+        [
+            {"item": "mna:mote_arcane"},
+            {"item": "embers:ember_shard"},
+            {"item": "occultism:iesnium_pickaxe"},
+            {"item": "malum:alchemical_calx"}
+        ]
+    )
     //ALEX'S MOBS ENCHANTS
-    //DUNGEON'S DELIGHT ENCHANTS
+    enchant(
+        "alexsmobs:straddle_jump",
+        10,
+        3,
+        [
+            {"item": "galosphere:lumiere_shard"},
+            {"item": "alexsmobs:straddlite"},
+            {"item": "mna:mote_air"}
+        ]
+    )
+    enchant(
+        "alexsmobs:lavawax",
+        10,
+        3,
+        [
+            {"item": "galosphere:lumiere_shard"},
+            {"item": "minecraft:honeycomb"},
+            {"item": "netherexp:ancient_wax"},
+            {"item": "occultism:tallow"}
+        ]
+    )
+    enchant(
+        "alexsmobs:serpentfriend",
+        25,
+        3,
+        [
+            {"item": "galosphere:lumiere_shard"},
+            {"item": "galosphere:allurite_shard"},
+            {"item": "kubejs:diabolical_vein"},
+            {"item": "minecraft:skeleton_skull"}
+        ]
+    )
+    enchant(
+        "alexsmobs:board_return",
+        25,
+        3,
+        [
+            {"item": "galosphere:lumiere_shard"},
+            {"item": "mna:mote_ender"},
+            {"item": "minecraft:copper_ingot"}
+        ]
+    )
+    //FARMERS DELIGHT & ADDONS
+    enchant(
+        "farmersdelight:backstabbing",
+        10,
+        3,
+        [
+            {"item": "cosmopolitan:source_berry_gummy"},
+            {"item": "minecraft:pointed_dripstone"},
+            {"item": "gtceu:ruby_gem"},
+            {"item": "goety:gale_fabric"}
+        ]
+    )
+    enchant(
+        "mynethersdelight:poaching",
+        25,
+        3,
+        [
+            {"item": "cosmopolitan:boil_berry_gummy"},
+            {"item": "evilcraft:spike"},
+            {"item": "evilcraft:spike"},
+            {"item": "kubejs:vengeful_node"},
+            {"item": "biomancy:toxin_gland"}
+        ]
+    )
     //BIOMANCY ENCHANTS
-    //MANA AND ARTIFICE ENCHANTS
+    enchant(
+        "biomancy:despoil",
+        25,
+        3,
+        [
+            {"item": "experienceobelisk:mending_neurogel"},
+            {"item": "biomancy:mob_gland"},
+            {"item": "biomancy:despoil_sickle"}
+        ]
+    )
+    //GALOSPHERE ENCHANTS
+    enchant(
+        "galosphere:enfeeble",
+        50,
+        5,
+        [
+            {"item": "galosphere:pink_salt_shard"},
+            {"item": "goety:enfeebling_focus"},
+            {"item": "gtceu:lead_ingot"}
+        ]
+    )
+    enchant(
+        "galosphere:sustain",
+        25,
+        3,
+        [
+            {"item": "galosphere:pink_salt_shard"},
+            {"item": "ars_nouveau:abjuration_essence"},
+            {"item": "malum:sacred_spirit"}
+        ]
+    )
+    enchant(
+        "galosphere:rupture",
+        25,
+        3,
+        [
+            {"item": "galosphere:pink_salt_shard"},
+            {"item": "create:rose_quartz"},
+            {"item": "hexalia:rabbage"}
+        ]
+    )
+    //MISC STUFF
+    enchant(
+        "supplementaries:stasis",
+        50,
+        3,
+        [
+            {"item": "botania:mana_powder"},
+            {"item": "gtceu:gravitite_block"},
+            {"item": "kubejs:token_stillness"}
+        ]
+    )
     //APOTHEOSIS ENCHANTS
     function enchantApotheosis(enchant, soulCost, xpCostPerLevel, inputs){
         var identifier = enchant.replace(":", "_")
@@ -640,7 +768,7 @@ ServerEvents.recipes(event => {
         10,
         [
             {"item": "gtceu:iron_buzzsaw_blade"},
-            {"item": "botania:terrasteel_nugget"},
+            {"item": "mna:mote_earth"},
             {"item": "apotheosis:gem_dust"}
         ]
     )

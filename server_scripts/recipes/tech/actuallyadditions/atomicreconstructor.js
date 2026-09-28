@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
         'PSR'
     ], {
         R: 'gtceu:red_alloy_plate',
-        E: 'immersiveengineering:component_electronic_adv',
+        E: 'immersiveengineering:component_electronic',
         I: 'magichem:signalite_block',
         C: 'actuallyadditions:iron_casing',
         M: 'integrateddynamics:materializer',

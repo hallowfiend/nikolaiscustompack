@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
     event.recipes.goety.ritual('biomancy:despoil_sickle', 'goety:craft', [
             'hexerei:blood_bottle',
             '#forge:bones',
+            '#forge:rods/steel',
             'malum:living_flesh'
         ])
         .activationItem('hexalia:briar_sickle')
