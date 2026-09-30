@@ -11,9 +11,9 @@ ServerEvents.recipes((event) => {
         ],
         {
             r: 'gtceu:pewter_ring',
-            f: '#forge:tools/files'
+            f: '#forge:tools/hammers'
         }
-    ).damageIngredient('#forge:tools/files').id('kubejs:shaped/pewter_inlay')
+    ).damageIngredient('#forge:tools/hammers').id('kubejs:shaped/pewter_inlay')
     event.shaped(
         Item.of('eidolon:gold_inlay', 1),
         [
@@ -23,9 +23,9 @@ ServerEvents.recipes((event) => {
         ],
         {
             r: 'gtceu:arcane_gold_ring',
-            f: '#forge:tools/files'
+            f: '#forge:tools/hammers'
         }
-    ).damageIngredient('#forge:tools/files').id('kubejs:shaped/gold_inlay')
+    ).damageIngredient('#forge:tools/hammers').id('kubejs:shaped/gold_inlay')
     //Censer
     event.remove({output: 'eidolon:censer'})
     event.shaped('eidolon:censer',[

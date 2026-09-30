@@ -1,0 +1,34 @@
+{
+  "type": "embers:alchemy",
+  "aspects": [
+    {
+      "tag": "embers:aspectus/brass"
+    },
+    {
+      "tag": "embers:aspectus/bronze"
+    },
+    {
+      "tag": "embers:aspectus/pewter"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "forge:double_plates/steel"
+    },
+    {
+      "tag": "forge:plates/compressed_iron"
+    },
+    {
+      "tag": "forge:plates/bronze"
+    },
+    {
+      "tag": "forge:springs/copper"
+    }
+  ],
+  "output": {
+    "item": "embers:blasting_core"
+  },
+  "tablet": {
+    "tag": "forge:gunpowder"
+  }
+}

@@ -195,11 +195,12 @@ ServerEvents.recipes(event => {
     manaweave(2,
         [
             'embers:glimmer_crystal',
+            'kubejs:sanctified_steam',
             'gtceu:steel_plate',
             'gtceu:steel_plate',
             'gtceu:steel_rod',
             'gtceu:steel_rod',
-            'mna:animus_dust'
+            'mna:ritual_focus_minor'
         ],
         [circle, triangle, diamond], 'embers:glimmer_lamp', 1,
         'kubejs:mna/manaweaving/glimmer_lamp'

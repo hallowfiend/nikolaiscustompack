@@ -1,0 +1,34 @@
+{
+  "type": "embers:alchemy",
+  "aspects": [
+    {
+      "tag": "embers:aspectus/dawnstone"
+    },
+    {
+      "tag": "embers:aspectus/pewter"
+    },
+    {
+      "tag": "embers:aspectus/lead"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "kubejs:eldritch_node"
+    },
+    {
+      "item": "malum:arcane_charcoal"
+    },
+    {
+      "tag": "forge:gems/dark"
+    },
+    {
+      "tag": "forge:ingots/archaic_brick"
+    }
+  ],
+  "output": {
+    "item": "embers:eldritch_insignia"
+  },
+  "tablet": {
+    "item": "embers:archaic_circuit"
+  }
+}

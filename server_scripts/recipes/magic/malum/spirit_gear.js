@@ -23,11 +23,11 @@ ServerEvents.recipes(event => {
     event.shaped('malum:ornate_necklace', [
         ' s ',
         'gbg',
-        ' nd'
+        'ngd'
     ], {
         s: 'malum:processed_soulstone',
         g: 'gtceu:soul_stained_steel_plate',
-        n: 'malum:soul_stained_steel_nugget',
+        n: 'gtceu:silver_screw',
         b: 'eidolon:basic_amulet',
         d: '#forge:tools/screwdrivers'
     }).damageIngredient('#forge:tools/screwdrivers').id('malum:ornate_necklace')

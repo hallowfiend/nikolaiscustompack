@@ -1,0 +1,26 @@
+{
+  "type": "embers:alchemy",
+  "aspects": [
+    {
+      "tag": "embers:aspectus/pewter"
+    },
+    {
+      "tag": "embers:aspectus/zinc"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "forge:dusts/calcite"
+    },
+    {
+      "tag": "forge:dusts/wheat"
+    }
+  ],
+  "output": {
+    "count": 6,
+    "item": "embers:adhesive"
+  },
+  "tablet": {
+    "item": "minecraft:clay_ball"
+  }
+}

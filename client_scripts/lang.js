@@ -2,6 +2,9 @@ ClientEvents.lang('en_us', event => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    //Tyrving, tyrfing
+    event.renameItem('embers:tyrfing', "Leaden Tyrfing")
+    event.renameItem('malum:tyrving', "Tainted Tyrving")
     //MnA
     event.renameItem('mna:vinteum_ingot', 'Vinteum Alloy Ingot')
     event.renameItem('mna:infused_silk', 'Patternfused Silk')

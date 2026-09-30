@@ -1,0 +1,34 @@
+{
+  "type": "embers:alchemy",
+  "aspects": [
+    {
+      "tag": "embers:aspectus/lead"
+    },
+    {
+      "tag": "embers:aspectus/silver"
+    },
+    {
+      "tag": "embers:aspectus/pewter"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "malum:void_salts"
+    },
+    {
+      "tag": "forge:obsidian"
+    },
+    {
+      "item": "eidolon:pewter_inlay"
+    },
+    {
+      "item": "malum:malignant_lead"
+    }
+  ],
+  "output": {
+    "item": "embers:tyrfing"
+  },
+  "tablet": {
+    "item": "malum:soul_stained_steel_sword"
+  }
+}

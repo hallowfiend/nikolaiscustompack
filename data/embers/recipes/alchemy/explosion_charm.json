@@ -1,0 +1,37 @@
+{
+  "type": "embers:alchemy",
+  "aspects": [
+    {
+      "tag": "embers:aspectus/dawnstone"
+    },
+    {
+      "tag": "embers:aspectus/silver"
+    },
+    {
+      "tag": "embers:aspectus/copper"
+    },
+    {
+      "tag": "embers:aspectus/iron"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "embers:archaic_brick"
+    },
+    {
+      "item": "kubejs:steadfast_node"
+    },
+    {
+      "item": "embers:ember_crystal_cluster"
+    },
+    {
+      "item": "kubejs:golden_thread"
+    }
+  ],
+  "output": {
+    "item": "embers:explosion_charm"
+  },
+  "tablet": {
+    "item": "malum:ornate_necklace"
+  }
+}

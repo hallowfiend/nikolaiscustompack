@@ -1,0 +1,34 @@
+{
+  "type": "embers:alchemy",
+  "aspects": [
+    {
+      "tag": "embers:aspectus/copper"
+    },
+    {
+      "tag": "embers:aspectus/iron"
+    },
+    {
+      "tag": "embers:aspectus/lead"
+    },
+    {
+      "tag": "embers:aspectus/silver"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "forge:gems/quartz"
+    },
+    {
+      "item": "magichem:alchemical_waste"
+    },
+    {
+      "tag": "forge:dusts/graphite"
+    }
+  ],
+  "output": {
+    "item": "embers:isolated_materia"
+  },
+  "tablet": {
+    "item": "malum:alchemical_calx"
+  }
+}
