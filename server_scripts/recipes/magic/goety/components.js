@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         {input: '#minecraft:saplings', output: 'goety:haunted_sapling'}
     ]
     hauntInBulk.forEach(recipe => {
-        event.recipes.create.haunting(recipe.output, recipe.input).id(`kubejs:create/haunting/${recipe.output.split(":")[1]}`)
+        event.recipes.create.haunting(Item.of(recipe.output), recipe.input).id(`kubejs:create/haunting/${recipe.output.split(":")[1]}`)
     })
     //Philo stone (citation needed)
     event.remove({id:'goety:philosophers_stone'})

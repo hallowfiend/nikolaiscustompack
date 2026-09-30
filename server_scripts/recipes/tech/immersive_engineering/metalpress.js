@@ -132,7 +132,6 @@ ServerEvents.recipes(event => {
     const fineWiresToRefine = [
         "gold",
         "copper",
-        'dawnstone',
         'electrum',
         'steel',
         'pewter',

@@ -1,0 +1,70 @@
+{
+ "eidolon:warded_mail": [
+    {
+      "attribute": "malum:soul_ward_capacity",
+      "value": 4,
+      "operation": "ADD",
+      "slot": "curio:body"
+    }
+  ],
+ "ars_elemental:anima_bangle": [
+    {
+      "attribute": "irons_spellbooks:blood_spell_power",
+      "value": 0.15,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:bracelet"
+    }
+  ],
+  "ars_elemental:water_bangle": [
+    {
+      "attribute": "irons_spellbooks:ice_spell_power",
+      "value": 0.15,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:bracelet"
+    }
+  ],
+  "ars_elemental:fire_bangle": [
+    {
+      "attribute": "irons_spellbooks:fire_spell_power",
+      "value": 0.15,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:bracelet"
+    }
+  ],
+  "ars_elemental:earth_bangle": [
+    {
+      "attribute": "irons_spellbooks:nature_spell_power",
+      "value": 0.15,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:bracelet"
+    }
+  ],
+  "ars_elemental:air_bangle": [
+    {
+      "attribute": "wind_spellbooks:wind_spell_power",
+      "value": 0.10,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:bracelet"
+    },
+    {
+      "attribute": "irons_spellbooks:lightning_spell_power",
+      "value": 0.10,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:bracelet"
+    }
+  ],
+  "ars_elemental:summon_bangle": [
+    {
+      "attribute": "irons_spellbooks:summon_damage",
+      "value": 0.15,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:bracelet"
+    },
+    {
+      "attribute": "irons_spellbooks:holy_spell_power",
+      "value": 0.15,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:bracelet"
+    }
+  ]
+}

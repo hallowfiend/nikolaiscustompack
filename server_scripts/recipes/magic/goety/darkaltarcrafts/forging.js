@@ -90,7 +90,6 @@ ServerEvents.recipes(event => {
         .soulCost(50)
         .duration(5)
         .id('kubejs:goety/dark_ritual/forging/thundercaller');
-
     //Iron's Spellbooks weaponry
     //Spellbreaker
     event.remove({ id: 'irons_spellbooks:spellbreaker' })

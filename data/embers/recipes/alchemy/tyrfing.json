@@ -8,18 +8,18 @@
       "tag": "embers:aspectus/silver"
     },
     {
-      "tag": "embers:aspectus/pewter"
+      "tag": "embers:aspectus/tin"
     }
   ],
   "inputs": [
     {
-      "item": "malum:void_salts"
-    },
-    {
       "tag": "forge:obsidian"
     },
     {
-      "item": "eidolon:pewter_inlay"
+      "item": "kubejs:wicked_node"
+    },
+    {
+      "item": "gtceu:darkened_silver_ingot"
     },
     {
       "item": "malum:malignant_lead"

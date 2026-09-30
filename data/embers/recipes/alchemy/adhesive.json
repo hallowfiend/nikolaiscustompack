@@ -2,7 +2,7 @@
   "type": "embers:alchemy",
   "aspects": [
     {
-      "tag": "embers:aspectus/pewter"
+      "tag": "embers:aspectus/invar"
     },
     {
       "tag": "embers:aspectus/zinc"

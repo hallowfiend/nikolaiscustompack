@@ -280,10 +280,10 @@
     ritualtable(
         [
             {'item': 'supplementaries:flax_seeds'},
-            {'item': 'mna:infused_silk'},
+            {'item': 'kubejs:herbal_string'},
             {'item': 'ars_nouveau:source_gem_block'},
             {'item': 'kubejs:arcane_node'},
-            {'item': 'eidolon:wicked_weave'}
+            {'item': 'kubejs:witches_stitching'}
         ],
         'ars_nouveau:magebloom_crop'
     )

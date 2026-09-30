@@ -170,13 +170,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             GTMaterialFlags.GENERATE_ROD,
             long_rod,
             GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
+            ring,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.GENERATE_SMALL_GEAR,
             no_decomp
         );
 

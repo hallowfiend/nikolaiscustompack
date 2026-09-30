@@ -119,9 +119,9 @@ ServerEvents.recipes(event => {
             time:400
         },
         {
-            input:'farmersrespite:coffee_beans',
+            input:'farmersrespite:coffee_berries',
             render:'farmersrespite:coffee_bush',
-            output:[{'item': 'farmersrespite:coffee_beans', "count": 2}],
+            output:[{'item': 'farmersrespite:coffee_berries', "count": 2}],
             soil:'mynethersdelight:resurgent_soil',
             time:800
         },

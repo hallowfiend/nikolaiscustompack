@@ -66,7 +66,7 @@ const recipes = [
     inputItem:[
         {"item": "eidolon:wicked_weave"},
         {"item": "eidolon:wicked_weave"},
-        {"item": "hexerei:mandrake_root"},
+        {"item": "malum:hex_ash"},
         {"item": "hexerei:mandrake_flowers"},
         {"item": "hexalia:dream_paste"},
         {"item": "goety:nightshade_blossom"},

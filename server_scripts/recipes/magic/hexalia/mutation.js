@@ -14,4 +14,5 @@ ServerEvents.recipes(event => {
     mutate('berry_good:sweet_berry_pips', 'hexalia:sunfire_tomato')
     mutate('windswept:lavender', 'hexalia:begonia')
     mutate('ars_nouveau:frostaya_pod', 'hexalia:chillberries')
+    mutate('netherexp:crimson_sporeshroom', 'farmersrespite:coffee_berries')
 })

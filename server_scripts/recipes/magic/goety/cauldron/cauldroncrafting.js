@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         I: 'goety:cursed_ingot',
         N: 'kubejs:wicked_node',
         H: '#forge:tools/hammers'
-    }).damageIngredient('#forge:tools/hammers').id('kubejs:shaped/cursed_cauldron')
+    }).damageIngredient('#forge:tools/hammers').id('goety:witch_cauldron')
     //the ladle
     event.remove({output: 'goety:cauldron_ladle'})
     event.shaped('goety:cauldron_ladle', [
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         t: '#forge:rods/wooden',
         w: 'kubejs:wicked_node',
         f: '#forge:tools/files'
-    }).damageIngredient('#forge:tools/files').id('kubejs:shaped/cauldron_ladle')
+    }).damageIngredient('#forge:tools/files').id('goety:cauldron_ladle')
     //cauldron crafting proper
     function cauldronCraft(soulCost, color, ingredients, takeWith, output, outputCount){
         event.custom({
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         "item": output,
         "count": outputCount
     }
-    }).id(`kubejs:goety/cauldron_crafting/${output.split(":")[1]}`)
+    }).id(`goety:cauldron/${output.split(":")[1]}`)
     }
     //UNGUENTS
     //tier 1

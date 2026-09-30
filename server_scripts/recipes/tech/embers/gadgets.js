@@ -7,7 +7,8 @@ ServerEvents.recipes(event => {
         'embers:glimmer_lamp',
         'embers:ember_ring',
         'embers:ember_belt',
-        'embers:ember_amulet'
+        'embers:ember_amulet',
+        'embers:dawnstone_mail'
     ]
     yeet.forEach(item => {
         event.remove({output: item})
@@ -52,7 +53,7 @@ ServerEvents.recipes(event => {
         {
             r: 'malum:ornate_ring',
             e: 'embers:ember_crystal_cluster',
-            d: 'embers:dawnstone_plate',
+            d: 'gtceu:dawnstone_ring',
             h: '#forge:tools/wire_cutters',
             f: '#forge:tools/screwdrivers',
             u: 'kubejs:blacksmithing_resin'
@@ -70,7 +71,7 @@ ServerEvents.recipes(event => {
         {
             r: 'malum:ornate_necklace',
             e: 'embers:ember_crystal_cluster',
-            d: 'embers:dawnstone_plate',
+            d: 'gtceu:dawnstone_ring',
             h: '#forge:tools/wire_cutters',
             f: '#forge:tools/screwdrivers',
             u: 'kubejs:blacksmithing_resin'
@@ -88,7 +89,7 @@ ServerEvents.recipes(event => {
         {
             r: 'malum:gilded_belt',
             e: 'embers:ember_crystal_cluster',
-            d: 'embers:dawnstone_plate',
+            d: 'gtceu:dawnstone_ring',
             h: '#forge:tools/wire_cutters',
             f: '#forge:tools/screwdrivers',
             u: 'kubejs:blacksmithing_resin'
@@ -96,4 +97,18 @@ ServerEvents.recipes(event => {
     ).damageIngredient('#forge:tools/wire_cutters')
     .damageIngredient('#forge:tools/screwdrivers')
     .id('kubejs:shaped/ember_belt')
+    event.shaped(
+        Item.of('embers:dawnstone_mail', 1),
+        [
+            'php',
+            'rrr',
+            'rrr'
+        ],
+        {
+            p: 'embers:dawnstone_plate',
+            h: '#forge:tools/hammers',
+            r: 'gtceu:dawnstone_ring'
+        }
+    ).damageIngredient('#forge:tools/hammers')
+    .id('kubejs:shaped/dawnstone_mail')
 })

@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
         "aspects": [zinc, invar, pewter],
         "inputs": [
             {
-                "item": "goety:cursed_ingot"
+                "item": "gtceu:invar_ingot"
             },
             {
                 "item": "sons_of_sins:ether_ashes"
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
                 "item": "malum:earthen_spirit"
             },
             {
-                "tag": "forge:dusts/jade"
+                "tag": "forge:gems/jade"
             }
         ],
         "output": {
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
                 "item": "hexerei:blood_bottle"
             },
             {
-                "item": "evilcraft:corrupted_tear"
+                "tag": "forge:gems/ruby"
             },
             {
                 "item": "malum:alchemical_calx"
