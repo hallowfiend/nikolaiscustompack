@@ -67,6 +67,8 @@ ServerEvents.recipes(event => {
     event.shapeless('4x enderio:photovoltaic_composite', [
         'experienceobelisk:cognitive_flux', 'gtceu:electrotine_dust', 'minecraft:glowstone_dust', '#forge:dusts/coal'
     ])
+    //inflictor gem resetting
+    event.shapeless('embers:inflictor_gem', [Item.of('embers:inflictor_gem').weakNBT()])
     //laserio
     /* event.remove({ output: "laserio:logic_chip" });
     event.remove({ output: "laserio:logic_chip_raw" });

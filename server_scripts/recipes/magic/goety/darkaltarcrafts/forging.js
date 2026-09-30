@@ -168,6 +168,21 @@ ServerEvents.recipes(event => {
         .soulCost(16)
         .duration(10)
         .id('kubejs:goety/dark_ritual/forging/ember_bore');
+    //Inferno Forge
+    event.recipes.goety.ritual('embers:inferno_forge', 'goety:craft', [
+            'embers:dawnstone_block',
+            'tconstruct:cinderslime_block',
+            'immersiveengineering:heavy_engineering',
+            'malum:blazing_diode',
+            'kubejs:blacksmithing_resin',
+            'irons_spellbooks:fire_rune',
+            'mna:rune_ritual_metal'
+        ])
+        .activationItem('embers:wildfire_core')
+        .craftType('forge')
+        .soulCost(32)
+        .duration(10)
+        .id('kubejs:goety/dark_ritual/forging/inferno_forge');
     //MnA stuff
     //Runeforge
     event.remove({ id: 'mna:runeforge' })

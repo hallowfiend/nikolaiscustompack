@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "embers:intelligent_apparatus"
+    },
+    "C": {
+      "item": "embers:ember_crystal"
+    },
+    "R": {
+        "tag": "forge:rods/constantan"
+    },
+    "U":{
+        "item": "mna:ritual_focus_minor"
+    }
+  },
+  "pattern": [
+    " C ",
+    "RAR",
+    "RUR"
+  ],
+  "result": {
+    "item": "embers:mnemonic_inscriber"
+  },
+  "show_notification": true
+}

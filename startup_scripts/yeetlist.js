@@ -210,7 +210,9 @@ global.removedItems = [
   //end of aa yeet section
   'cleaver_compendium:embers_silver_cleaver',
   'pneumaticcraft:solar_cell',
-  'pneumaticcraft:solar_wafer'
+  'pneumaticcraft:solar_wafer',
+  //gregtech yeets
+  /gtceu:.*boiler/
 ];
 
 global.removedRecipeIds = [

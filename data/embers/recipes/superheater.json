@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "immersiveengineering:wirecoil_copper"
+    },
+    "D": {
+      "tag": "forge:plates/dawnstone"
+    },
+    "I": {
+      "tag": "forge:ingots/dawnstone"
+    }
+  },
+  "pattern": [
+    " ID",
+    "CCI",
+    "CC "
+  ],
+  "result": {
+    "item": "embers:superheater"
+  },
+  "show_notification": true
+}

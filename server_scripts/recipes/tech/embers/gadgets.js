@@ -2,7 +2,10 @@ ServerEvents.recipes(event => {
     const yeet = [
         'embers:tinker_lens',
         'embers:smoky_tinker_lens',
-        'embers:atmospheric_gauge'
+        'embers:atmospheric_gauge',
+        'embers:tinker_hammer',
+        'embers:glimmer_lamp',
+        'embers:ember_ring'
     ]
     yeet.forEach(item => {
         event.remove({output: item})
@@ -13,15 +16,16 @@ ServerEvents.recipes(event => {
         [
             'il ',
             'lsr',
-            'il '
+            'ilh'
         ],
         {
             i: 'gtceu:pewter_plate',
             l: 'gtceu:lead_plate',
             s: 'malum:spectral_optic',
-            r: 'mna:ritual_focus_minor'
+            r: 'mna:ritual_focus_minor',
+            h: '#forge:tools/screwdrivers'
         }
-    ).id('kubejs:shaped/tinker_lens')
+    ).damageIngredient('#forge:tools/screwdrivers').id('kubejs:shaped/tinker_lens')
     event.shaped(
         Item.of('embers:smoky_tinker_lens', 1),
         [
@@ -34,4 +38,55 @@ ServerEvents.recipes(event => {
             l: 'embers:tinker_lens'
         }
     ).id('kubejs:shaped/smoky_tinker_lens')
+    //Curios
+    event.shaped(
+        Item.of('embers:ember_ring', 1),
+        [
+            'e  ',
+            'hrf',
+            '  d'
+        ],
+        {
+            r: 'malum:ornate_ring',
+            e: 'embers:ember_crystal_cluster',
+            d: 'embers:dawnstone_plate',
+            h: '#forge:tools/hammers',
+            f: '#forge:tools/screwdrivers'
+        }
+    ).damageIngredient('#forge:tools/hammers')
+    .damageIngredient('#forge:tools/screwdrivers')
+    .id('kubejs:shaped/ember_ring')
+    event.shaped(
+        Item.of('embers:ember_amulet', 1),
+        [
+            'hrf',
+            'ded'
+        ],
+        {
+            r: 'malum:ornate_necklace',
+            e: 'embers:ember_crystal_cluster',
+            d: 'embers:dawnstone_plate',
+            h: '#forge:tools/files',
+            f: '#forge:tools/screwdrivers'
+        }
+    ).damageIngredient('#forge:tools/files')
+    .damageIngredient('#forge:tools/screwdrivers')
+    .id('kubejs:shaped/ember_amulet')
+    event.shaped(
+        Item.of('embers:ember_belt', 1),
+        [
+            'df ',
+            'erh',
+            'd  '
+        ],
+        {
+            r: 'malum:gilded_belt',
+            e: 'embers:ember_crystal_cluster',
+            d: 'embers:dawnstone_plate',
+            h: '#forge:tools/hammers',
+            f: '#forge:tools/screwdrivers'
+        }
+    ).damageIngredient('#forge:tools/hammers')
+    .damageIngredient('#forge:tools/screwdrivers')
+    .id('kubejs:shaped/ember_belt')
 })

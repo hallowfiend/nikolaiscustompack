@@ -169,7 +169,17 @@ ServerEvents.recipes(event => {
         [triangle, circle], 'mna:affinity_lock_belt', 1,
         'mna:manaweaving/artifice/belt_of_locks'
     )
-    //atmo gauge
+    //embers stuff
+    manaweave(1,
+        [
+            'immersiveengineering:hammer',
+            'mna:stone_rune_brown',
+            'malum:lead_impetus',
+            'kubejs:deepbore_tar'
+        ],
+        [square, slash, circle], 'embers:tinker_hammer', 1,
+        'kubejs:mna/manaweaving/tinker_hammer'
+    )
     manaweave(2,
         [
             'create:factory_gauge',
@@ -181,6 +191,18 @@ ServerEvents.recipes(event => {
         ],
         [circle, circle, square, diamond, slash], 'embers:atmospheric_gauge', 1,
         'kubejs:mna/manaweaving/atmospheric_gauge'
+    )
+    manaweave(2,
+        [
+            'embers:glimmer_crystal',
+            'gtceu:steel_plate',
+            'gtceu:steel_plate',
+            'gtceu:steel_rod',
+            'gtceu:steel_rod',
+            'mna:animus_dust'
+        ],
+        [circle, triangle, diamond], 'embers:glimmer_lamp', 1,
+        'kubejs:mna/manaweaving/glimmer_lamp'
     )
     //infused silk
     manaweave(1,
@@ -379,7 +401,7 @@ ServerEvents.recipes(event => {
     //'tania pendants/necklaces
     manaweave(2,
         [
-            'eidolon:basic_amulet',
+            'malum:ornate_necklace',
             'botania:rune_winter',
             'botania:rune_water',
             'botania:mana_string',
@@ -391,7 +413,7 @@ ServerEvents.recipes(event => {
     )
     manaweave(2,
         [
-            'eidolon:basic_amulet',
+            'malum:ornate_necklace',
             'botania:rune_summer',
             'botania:rune_fire',
             'botania:mana_string',
@@ -415,7 +437,7 @@ ServerEvents.recipes(event => {
     )
     manaweave(2,
         [
-            'eidolon:basic_amulet',
+            'malum:ornate_necklace',
             'botania:rune_autumn',
             'botania:rune_air',
             'botania:mana_string',
@@ -439,7 +461,7 @@ ServerEvents.recipes(event => {
     )
     manaweave(2,
         [
-            'eidolon:basic_amulet',
+            'malum:ornate_necklace',
             'botania:mana_diamond',
             'kubejs:shifting_tincture',
             'kubejs:diabolical_vein',

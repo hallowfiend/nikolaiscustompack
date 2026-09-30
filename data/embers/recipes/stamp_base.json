@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "embers:fluid_vessel"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "X": {
+      "item": "embers:caminite_brick"
+    },
+    "S": {
+        "tag": "forge:plates/steel"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "I I",
+    "XBX"
+  ],
+  "result": {
+    "item": "embers:stamp_base"
+  },
+  "show_notification": true
+}

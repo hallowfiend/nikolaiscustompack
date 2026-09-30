@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     const yeeeet = [
       'naturesaura:tree_ritual/ancient_sapling',
-      'naturesaura:tree_ritual/altar',
+      'naturesaura:tree_ritual/nature_altar',
       'naturesaura:tree_ritual/conversion_catalyst',
       'naturesaura:tree_ritual/crushing_catalyst',
       'naturesaura:tree_ritual/token_joy',
@@ -63,8 +63,8 @@ ServerEvents.recipes(event => {
         {'item': 'eidolon:avennian_sprig'},
         {'item': 'embers:caminite_large_tile'},
         {'item': 'twilightforest:naga_scale'},
-        {'item': 'hexalia:mutavis'},
-        {'item': 'cosmopolitan:fiddlehead_crate'}
+        {'item': 'kubejs:aspectus_duralumin'},
+        {'item': 'hexalia:mutavis'}
       ],
       'naturesaura:nature_altar', 1,
       'minecraft:oak_sapling',

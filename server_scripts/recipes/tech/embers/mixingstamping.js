@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "amount": 90,
+            "amount": 80,
             "tag": `forge:${gem}`
         }
         }).id(`kubejs:embers/melting/${gem}`)
@@ -61,10 +61,10 @@ ServerEvents.recipes(event => {
             }
         ],
         "output": {
-            "amount": 180,
+            "amount": 720,
             "tag": `forge:${gem}`
         }
-        }).id(`kubejs:embers/melting/${gem}`)
+        }).id(`kubejs:embers/melting/${gem}_block`)
     }
     gemMelting('cthonic_gold')
     //mixing
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     metalMixing('silver', 2, 'iesnium', 2, 'crowley_silver', 4)
     event.recipes.gtceu.mixer("kubejs:gtceu/mixer/crowley_silver")
         .itemInputs("2x #forge:dusts/silver", "2x #forge:dusts/iesnium", "#forge:dusts/ember")
-        .itemOutputs("gtceu:crowley_silver_dust")
+        .itemOutputs("2x gtceu:crowley_silver_dust")
         .duration(80)
         .EUt(320)
     //dawnstone
@@ -106,12 +106,12 @@ ServerEvents.recipes(event => {
       "type": "embers:mixing",
       "inputs": [
         {
-          "amount": 90,
+          "amount": 180,
           "tag": "forge:copper"
         },
         {
-          "amount": 80,
-          "fluid": "tcompat:molten_cthonic_gold"
+          "amount": 160,
+          "tag": "forge:cthonic_gold"
         }
       ],
       "output": {
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
     }).id('kubejs:embers/mixing/dawnstone')
     event.recipes.gtceu.mixer("kubejs:gtceu/mixer/dawnstone_mixer")
         .itemInputs("2x #forge:dusts/copper", "2x #forge:dusts/cthonic_gold", "#forge:dusts/ember")
-        .itemOutputs("gtceu:dawnstone_dust")
+        .itemOutputs("2x gtceu:dawnstone_dust")
         .duration(80)
         .EUt(320)
     //livingbronze
