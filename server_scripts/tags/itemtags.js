@@ -261,6 +261,13 @@ ServerEvents.tags("item", (event) => {
     'pneumaticcraft:ingot_iron_compressed'
   ])
 
+  event.add('malum:tablets', [
+    'malum:tainted_rock_tablet',
+    'malum:void_tablet',
+    'malum:soulwood_tablet',
+    'malum:runewood_tablet'
+  ])
+
   event.add("forge:dusts/saltpeter", "scguns:niter_dust")
   event.add("forge:dusts/sulfur", "scguns:sulfur_dust")
 
@@ -348,6 +355,11 @@ ServerEvents.tags("item", (event) => {
     'spawn:heart_coral',
     'spawn:reed_coral',
     'spawn:spike_coral'
+  ])
+
+  event.add('c:fangs', [
+    'mowziesmobs:naga_fang',
+    'species:werefang'
   ])
 
   event.add('immersiveengineering:toolbox/tools', [
@@ -528,24 +540,6 @@ ServerEvents.tags("item", (event) => {
     'alexsmobs:centipede_leg',
   ])
 
-  event.remove('irons_spellbooks:lootable_focus', [/.*/])
-  event.add('irons_spellbooks:lootable_focus', [
-    'goety:magic_emerald',
-    'netherexp:wisp_bottle',
-    'hexerei:blood_bottle',
-    'irons_spellbooks:divine_pearl',
-    'galosphere:lumiere_shard',
-    'minecraft:ender_pearl',
-    'irons_spellbooks:frozen_bone',
-    'goety:henbane_flower',
-    'irons_spellbooks:lightning_bottle',
-    'alexsmobs:bone_serpent_tooth',
-    'goety:jade',
-    'minecraft:feather',
-    'hexcasting:charged_amethyst',
-    'gtceu:vacuum_tube'
-  ])
-
   event.add("mynethersdelight:powdery_logs", ["mynethersdelight:powdery_block", "mynethersdelight:stripped_powdery_block"]);
   
   event.remove('farm_and_charm:cabbage', 'farm_and_charm:lettuce');
@@ -566,5 +560,27 @@ ServerEvents.tags("item", (event) => {
 
   event.remove("minecraft:planks", ["gtceu:treated_wood_plate", "gtceu:wood_plate", "createdieselgenerators:chip_wood_block"]);
 
-  console.log('Item tags catalogued')
+  event.remove('irons_spellbooks:lootable_focus', /.*/)
+
 });
+
+ServerEvents.tags("item", event => {
+  event.add('irons_spellbooks:lootable_focus', [
+    'goety:magic_emerald',
+    'netherexp:wisp_bottle',
+    'hexerei:blood_bottle',
+    'irons_spellbooks:divine_pearl',
+    'galosphere:lumiere_shard',
+    'minecraft:ender_pearl',
+    'irons_spellbooks:frozen_bone',
+    'goety:henbane_flower',
+    'irons_spellbooks:lightning_bottle',
+    'alexsmobs:bone_serpent_tooth',
+    'goety:jade',
+    'minecraft:feather',
+    'hexcasting:charged_amethyst',
+    'gtceu:vacuum_tube'
+  ])
+
+  console.log('Item tags catalogued')
+})

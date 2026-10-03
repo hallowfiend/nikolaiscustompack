@@ -33,10 +33,10 @@ ServerEvents.recipes(event => {
     //Magichemless (thus, more 'spensive) thunderstone
     event.recipes.goety.ritual('2x magichem:thunderstone', 'goety:craft', [
         'minecraft:purple_dye',
-        'malum:soul_stained_steel_sword',
-        'minecraft:lightning_rod',
-        'minecraft:lightning_rod',
-        'minecraft:lightning_rod',
+        'malum:soul_stained_steel_ingot',
+        'gtceu:electrotine_dust',
+        'gtceu:electrotine_dust',
+        'minecraft:copper_ingot',
         'malum:alchemical_calx'
     ])
     .activationItem('minecraft:deepslate')

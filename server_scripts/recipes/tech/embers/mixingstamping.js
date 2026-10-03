@@ -40,6 +40,14 @@ ServerEvents.recipes(event => {
     }
     metalMelting('cloggrum')
     metalMelting('iesnium')
+    metalMelting('duralumin')
+    metalMelting('rose_gold')
+    metalMelting('sterling_silver')
+    metalMelting('crowley_silver')
+    metalMelting('dormant_livingbronze')
+    metalMelting('nicrosil')
+    metalMelting('bendalloy')
+    metalMelting('pewter')
     function gemMelting(gem){
         event.custom({
         "type": "embers:melting",

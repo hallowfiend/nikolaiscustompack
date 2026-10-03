@@ -1,0 +1,37 @@
+{
+  "breed": "runic",
+  "name": "slime.splendid_slimes.runic",
+  "color": "#757369",
+  "particle": {
+    "item": "minecraft:polished_andesite"
+  },
+  "hat_scale": 0,
+  "diet": "diet.splendid_slimes.runic",
+  "foods": [
+    { "item": "irons_spellbooks:cinder_essence" },
+    { "item": "irons_spellbooks:mithril_scrap" },
+    { "tag": "botania:runes" },
+    { "tag": "malum:tablets"}
+  ],
+  "favorite_food": {
+    "item": "irons_spellbooks:mithril_scrap"
+  },
+  "hostile_to_entities": [
+      "irons_spellbooks:dead_king",
+      "irons_spellbooks:apothecarist",
+      "irons_spellbooks:cryomancer",
+      "irons_spellbooks:cultist",
+      "irons_spellbooks:necromancer",
+      "irons_spellbooks:priest",
+      "irons_spellbooks:pyromancer"
+  ],
+  "traits": ["largoless"],
+  "innate_effects": [
+    {
+      "effect": "irons_spellbooks:abyssal_shroud"
+    }
+  ],
+  "attack_commands": [
+    "cast @s eldritch_blast 5"
+  ]
+}

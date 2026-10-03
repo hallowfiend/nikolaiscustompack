@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
     brewSlimeHeart(
         'earth',
         'actuallyadditions:restonia_crystal_block',
-        'create:rose_quartz',
+        'immersivengineering:component_electronic',
         'farmersrespite:black_tea',
         'splendid_slimes:bitwise'
     )
@@ -164,5 +164,33 @@ ServerEvents.recipes(event => {
         'kubejs:shifting_tincture',
         'mynethersdelight:bread_loaf',
         'splendid_slimes:weeping'
+    )
+    brewSlimeHeart(
+        'earth',
+        'malum:block_of_brilliance',
+        'experienceobelisk:mending_neurogel',
+        'dungeonsdelight:sculk_mayo',
+        'splendid_slimes:brilliant'
+    )
+    brewSlimeHeart(
+        'ender',
+        'malum:block_of_soulstone',
+        'occultism:spirit_attuned_gem',
+        'cosmopolitan:spinalberry_gummy',
+        'splendid_slimes:soul'
+    )
+    brewSlimeHeart(
+        'ender',
+        'malum:block_of_void_salts',
+        'irons_spellbooks:epic_ink',
+        'miners_delight:bowl_of_stuffed_squid',
+        'splendid_slimes:ink'
+    )
+    brewSlimeHeart(
+        'earth',
+        'bloodmagic:blankrune',
+        'botania:rune_gluttony',
+        'alexsmobsdelight:fried_centipede_meat',
+        'splendid_slimes:runic'
     )
 })

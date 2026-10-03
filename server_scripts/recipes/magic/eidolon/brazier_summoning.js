@@ -53,6 +53,14 @@ ServerEvents.recipes(event => {
     'minecraft:rotten_flesh'
   )
   brazier_summoning(
+    'minecraft:pig',
+    2,
+    'minecraft:mud',
+    'minecraft:carrot',
+    'delightful:animal_fat',
+    'minecraft:rotten_flesh'
+  )
+  brazier_summoning(
     'minecraft:sheep',
     2,
     'farmersdelight:straw_bale',
@@ -281,7 +289,47 @@ ServerEvents.recipes(event => {
     'minecraft:gold_nugget',
     'spawn:shell_fragments'
   )
+  brazier_summoning(
+    'naturalist:duck',
+    3,
+    'minecraft:egg',
+    'hexalia:ghost_powder',
+    'minecraft:green_dye',
+    'upgrade_aquatic:boiled_pickerelweed'
+  )
   //Alex's Mobs
+  brazier_summoning(
+    'alexsmobs:mungus',
+    1,
+    'minecraft:mycelium',
+    'twilightdelight:mushgloom_colony',
+    'farmersdelight:straw',
+    'goety:tall_skull'
+  )
+  brazier_summoning(
+    'alexsmobs:bunfungus',
+    1,
+    'minecraft:mycelium',
+    'collectorsreap:portobello_colony',
+    'minecraft:rabbit_foot',
+    'goety:mystic_core'
+  )
+  brazier_summoning(
+    'alexsmobs:bison',
+    1,
+    'eidolon:lesser_soul_gem',
+    'minecraft:brown_wool',
+    'farmersdelight:beef_stew',
+    'minecraft:packed_ice',
+  )
+  brazier_summoning(
+    'alexsmobs:tusklin',
+    1,
+    'eidolon:lesser_soul_gem',
+    'cold_sweat:hoglin_hide',
+    'alexsmobs:bison_fur',
+    'minecraft:blue_ice'
+  )
   brazier_summoning(
     'alexsmobs:bald_eagle',
     3,

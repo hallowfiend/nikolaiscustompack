@@ -1,0 +1,127 @@
+{
+  "eidolon:warded_mail": [
+    {
+      "attribute": "malum:soul_ward_capacity",
+      "value": 4,
+      "operation": "ADDITION",
+      "slot": "curio:cape"
+    }
+  ],
+  "eidolon:bonelord_helm": [
+    {
+      "attribute": "irons_spellbooks:max_mana",
+      "value": 50,
+      "operation": "ADDITION"
+    },
+    {
+      "attribute": "irons_spellbooks:evocation_spell_power",
+      "value": 0.10,
+      "operation": "MULTIPLY_BASE"
+    },
+    {
+      "attribute": "irons_spellbooks:blood_spell_power",
+      "value": 0.10,
+      "operation": "MULTIPLY_BASE"
+    },
+    {
+        "attribute": "goety:soul_discount",
+        "value": 0.05,
+        "operation": "MULTIPLY_BASE"
+    }
+  ],
+  "eidolon:bonelord_chestplate": [
+    {
+      "attribute": "irons_spellbooks:max_mana",
+      "value": 50,
+      "operation": "ADDITION"
+    },
+    {
+      "attribute": "irons_spellbooks:evocation_spell_power",
+      "value": 0.10,
+      "operation": "MULTIPLY_BASE"
+    },
+    {
+      "attribute": "irons_spellbooks:blood_spell_power",
+      "value": 0.10,
+      "operation": "MULTIPLY_BASE"
+    },
+    {
+        "attribute": "goety:soul_discount",
+        "value": 0.1,
+        "operation": "MULTIPLY_BASE"
+    }
+  ],
+  "eidolon:bonelord_greaves": [
+    {
+      "attribute": "irons_spellbooks:max_mana",
+      "value": 50,
+      "operation": "ADDITION"
+    },
+    {
+      "attribute": "irons_spellbooks:evocation_spell_power",
+      "value": 0.10,
+      "operation": "MULTIPLY_BASE"
+    },
+    {
+      "attribute": "irons_spellbooks:blood_spell_power",
+      "value": 0.10,
+      "operation": "MULTIPLY_BASE"
+    },
+    {
+        "attribute": "goety:soul_discount",
+        "value": 0.05,
+        "operation": "MULTIPLY_BASE"
+    }
+  ],
+  "eidolon:warlock_boots": [
+    {
+      "attribute": "irons_spellbooks:spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE"
+    },
+    {
+      "attribute": "irons_spellbooks:max_mana",
+      "value": 25,
+      "operation": "ADDITION"
+    },
+    {
+      "attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
+      "value": 1,
+      "operation": "ADDITION"
+    }
+  ],
+  "eidolon:warlock_cloak": [
+    {
+      "attribute": "irons_spellbooks:spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE"
+    },
+    {
+      "attribute": "irons_spellbooks:max_mana",
+      "value": 25,
+      "operation": "ADDITION"
+    },
+    {
+      "attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
+      "value": 1,
+      "operation": "ADDITION"
+    }
+  ],
+  "eidolon:warlock_hat": [
+    {
+      "attribute": "irons_spellbooks:spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE"
+    },
+    {
+      "attribute": "irons_spellbooks:max_mana",
+      "value": 25,
+      "operation": "ADDITION"
+    },
+    {
+      "attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
+      "value": 1,
+      "operation": "ADDITION"
+    }
+  ]
+}

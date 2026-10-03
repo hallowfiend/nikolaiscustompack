@@ -1,5 +1,48 @@
 ItemEvents.tooltip(event => {
 
+  //curios
+  event.addAdvanced('eidolon:warded_mail', (item, advanced, text) => {
+    text.add(1, Text.blue('+4 Soul Ward Capacity'))
+  })
+  event.addAdvanced('embers:dawnstone_mail', (item, advanced, text) => {
+    text.add(1, Text.blue('+2 Armor'))
+  })
+  event.addAdvanced('embers:ember_ring', (item, advanced, text) => {
+    text.add(1, Text.blue('+5% Holy Spell Power'))
+    text.add(2, Text.blue('+5% Fire Spell Power'))
+    text.add(3, Text.blue('+5% Geo Spell Power'))
+  })
+  event.addAdvanced('embers:ember_belt', (item, advanced, text) => {
+    text.add(1, Text.blue('+5% Holy Spell Power'))
+    text.add(2, Text.blue('+5% Fire Spell Power'))
+    text.add(3, Text.blue('+5% Geo Spell Power'))
+  })
+  event.addAdvanced('embers:ember_amulet', (item, advanced, text) => {
+    text.add(1, Text.blue('+5% Holy Spell Power'))
+    text.add(2, Text.blue('+5% Fire Spell Power'))
+    text.add(3, Text.blue('+5% Geo Spell Power'))
+  })
+  event.addAdvanced('ars_elemental:water_bangle', (item, advanced, text) => {
+    text.add(1, Text.blue('+15% Ice Spell Power'))
+    text.add(2, Text.blue('+15% Abyssal Spell Power'))
+  })
+  event.addAdvanced('ars_elemental:fire_bangle', (item, advanced, text) => {
+    text.add(1, Text.blue('+15% Fire Spell Power'))
+    text.add(2, Text.blue('+15% Technomancy Spell Power'))
+  })
+  event.addAdvanced('ars_elemental:earth_bangle', (item, advanced, text) => {
+    text.add(1, Text.blue('+15% Geo Spell Power'))
+    text.add(2, Text.blue('+15% Nature Spell Power'))
+  })
+  event.addAdvanced('ars_elemental:air_bangle', (item, advanced, text) => {
+    text.add(1, Text.blue('+15% Wind Spell Power'))
+    text.add(2, Text.blue('+15% Lightning Spell Power'))
+  })
+  event.addAdvanced('ars_elemental:summon_bangle', (item, advanced, text) => {
+    text.add(1, Text.blue('+15% Holy Spell Power'))
+    text.add(2, Text.blue('+15% Summon Damage'))
+  })
+
   //drop locations
   event.addAdvanced('gtceu:palladium_nugget', (item, advanced, text) => {
     text.add(1, Text.gray('Drops from Illagers'))
@@ -12,7 +55,7 @@ ItemEvents.tooltip(event => {
   event.addAdvanced(['collectorsreap:portobello'], (item, advanced, text) => {
     text.add(1, Text.gray('Found only in meadows'))
   })
-  event.addAdvanced(['hexalia:spirit_bloom'], (item, advanced, text) => {
+  event.addAdvanced(['hexalia:spirit_bloom', 'farmersrespite:tea_seeds', 'mna:tarma_root'], (item, advanced, text) => {
     text.add(1, Text.gray('Found in swamps'))
   })
   event.addAdvanced('netherexp:warped_wart', (item, advanced, text) => {

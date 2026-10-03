@@ -4,7 +4,8 @@ ServerEvents.recipes(event => {
         'botania:lens_normal',
         'botania:lens_magnet',
         'botania:phantom_ink',
-        'botania:mana_gun'
+        'botania:mana_gun',
+        'botania:spark'
     ]
     removals.forEach(item => {
         event.remove({id: item})
@@ -21,16 +22,17 @@ ServerEvents.recipes(event => {
         P: 'botania:mana_pearl',
         C: 'kubejs:aspectus_gold'
     }) */
-    //Phantom Ink
-    event.shapeless('4x botania:phantom_ink', [
-        'irons_spellbooks:greater_invisibility_elixir',
-        'irons_spellbooks:common_ink',
-        'magichem:essentia_air',
-        'magichem:essentia_air',
-        '#forge:dyes',
-        '#forge:dyes',
-        'botania:mana_pearl'
-    ]).id('botania:phantom_ink')
+    //Mana manipulation
+    //Spark
+    event.shaped('botania:spark', [
+      ' p ',
+      'ses',
+      ' p '
+    ],{
+      p: '#botania:petals',
+      s: 'malum:arcane_spirit',
+      e: 'embers:ember_shard'
+    }).id('botania:spark')
     //Mana Void
     event.shaped('botania:mana_void', [
         'LOL',
@@ -54,6 +56,17 @@ ServerEvents.recipes(event => {
         'botania:lens_magnet',
         ['botania:lens_normal', 'gtceu:magnetic_iron_rod', 'enderio:conductive_alloy_ingot', 'actuallyadditions:empowered_palis_crystal']
     ).id('botania:lens_magnet')
+    //Misc items
+    //Phantom Ink
+    event.shapeless('4x botania:phantom_ink', [
+        'irons_spellbooks:greater_invisibility_elixir',
+        'irons_spellbooks:common_ink',
+        'magichem:essentia_air',
+        'magichem:essentia_air',
+        '#forge:dyes',
+        '#forge:dyes',
+        'botania:mana_pearl'
+    ]).id('botania:phantom_ink')
     //Mana Blaster
     event.custom({
     "type": "scguns:gun_bench",

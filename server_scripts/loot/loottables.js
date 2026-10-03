@@ -188,6 +188,32 @@ LootJS.modifiers((event) => {
         ])
         //non-food
     })
+    //netherexp
+    event.addLootTableModifier(/netherexp:brazier_chest.*/)
+        .replaceLoot('minecraft:iron_ingot', 'occultism:iesnium_ingot', true)
+        .replaceLoot('minecraft:iron_block', 'occultism:raw_iesnium', true)
+        .addLoot('minecraft:ghast_tear').limitCount([1, 2]).randomChance(0.2)
+        .addLoot('goety:ectoplasm').limitCount([1, 8]).randomChance(0.5)
+        .addLoot('malum:grim_talc').limitCount([1, 8]).randomChance(0.5)
+        .apply(context => {
+            weightedReplace(context, 'netherexp:wraithing_flesh', [
+                ['netherexp:wraithing_flesh', 8],
+                ['minecraft:crying_obsidian', 4],
+                ['gtceu:phosphor_dust', 4],
+                ['goety:grave_dust', 2],
+                ['malum:rotting_essence', 2]
+            ])
+        })
+        .apply(context => {
+            weightedReplace(context, 'minecraft:iron_nugget', [
+                ['netherexp:wisp_bottle', 8],
+                ['scguns:sculk_cell', 8],
+                ['eidolon:soul_shard', 8],
+                ['goety:spirit_fabric', 4],
+                ['minecraft:netherite_scrap', 2],
+                ['irons_spellbooks:ancient_knowledge_fragment', 1]
+            ])
+        })
     //some misc stuff
     event.addLootTableModifier('aquamirae:chests/frozen_chest')
 		.pool(pool => {

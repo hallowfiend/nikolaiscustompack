@@ -35,6 +35,11 @@ LootJS.modifiers((event) => {
     	.randomChance(0.1)
 		.addLoot('aether:golden_gummy_swet')
 
+	//netherexp
+	event.addEntityLootModifier("netherexp:apparition")
+    	.addLoot("goety:ectoplasm").randomChance(0.5)
+    	.addLoot("goety:ectoplasm").randomChance(0.5)
+		.addLoot("goety:ectoplasm").randomChance(0.5);
 
 	//GENERAL BOSS LOOT - apotheotic materials, anyone?
 	//uncommon

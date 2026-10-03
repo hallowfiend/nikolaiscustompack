@@ -104,6 +104,17 @@
         ],
         'hexalia:sage_pendant'
     )
+    //moonward ring
+    ritualtable(
+        [
+            {'item': 'minecraft:leather'},
+            {'item': 'hexalia:celestial_crystal'},
+            {'item': 'hexerei:selenite_shard'},
+            {'item': 'gtceu:opal_gem'},
+            {'item': 'kubejs:steadfast_node'}
+        ],
+        'hexalia:moonward_ring'
+    )
     //bloomwrap cloth - alt crafting component for bloomwrap armor n other things
     ritualtable(
         [

@@ -1,0 +1,70 @@
+{
+"embers:dawnstone_mail": [
+    {
+      "attribute": "minecraft:generic.armor",
+      "value": 2,
+      "operation": "ADDITION",
+      "slot": "curio:cape"
+    }
+  ],
+  "embers:ember_ring": [
+    {
+      "attribute": "irons_spellbooks:fire_spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:ring"
+    },
+    {
+      "attribute": "gtbcs_geomancy_plus:geo_spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:ring"
+    },
+    {
+      "attribute": "irons_spellbooks:holy_spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:ring"
+    }
+  ],
+  "embers:ember_belt": [
+    {
+      "attribute": "irons_spellbooks:fire_spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:belt"
+    },
+    {
+      "attribute": "gtbcs_geomancy_plus:geo_spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:belt"
+    },
+    {
+      "attribute": "irons_spellbooks:holy_spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:belt"
+    }
+  ],
+  "embers:ember_amulet": [
+    {
+      "attribute": "irons_spellbooks:fire_spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:necklace"
+    },
+    {
+      "attribute": "gtbcs_geomancy_plus:geo_spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:necklace"
+    },
+    {
+      "attribute": "irons_spellbooks:holy_spell_power",
+      "value": 0.05,
+      "operation": "MULTIPLY_BASE",
+      "slot": "curio:necklace"
+    }
+  ]
+}

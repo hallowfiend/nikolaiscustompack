@@ -1,0 +1,28 @@
+{
+  "type": "splendid_slimes:plort_ripping",
+  "ingredient": {
+    "item": "splendid_slimes:plort",
+    "nbt": {
+      "plort": {
+        "id": "splendid_slimes:runic"
+      }
+    }
+  },
+  "results": [
+    {
+      "item": "irons_spellbooks:blank_rune",
+      "count": 1,
+      "weight": 60
+    },
+    {
+      "item": "irons_spellbooks:blank_rune",
+      "count": 2,
+      "weight": 40
+    },
+    {
+      "item": "irons_spellbooks:blank_rune",
+      "count": 4,
+      "weight": 20
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "breed": "ink",
+  "name": "slime.splendid_slimes.ink",
+  "color": "#073534",
+  "particle": {
+    "item": "irons_spellbooks:inscription_table"
+  },
+  "hat": {
+    "item": "minecraft:feather"
+  },
+  "diet": "diet.splendid_slimes.ink",
+  "foods": [
+    { "item": "irons_spellbooks:arcane_essence" },
+    { "item": "irons_spellbooks:lightning_bottle" },
+    { "item": "irons_spellbooks:frozen_bone" },
+    { "item": "irons_spellbooks:divine_pearl" },
+    { "item": "hexerei:blood_bottle" },
+    { "item": "eidolon:magic_ink"},
+    { "item": "minecraft:glow_ink_sac" }
+  ],
+  "favorite_food": {
+    "item": "irons_spellbooks:arcane_essence"
+  },
+  "hostile_to_entities": [
+      "irons_spellbooks:dead_king",
+      "irons_spellbooks:apothecarist",
+      "irons_spellbooks:cryomancer",
+      "irons_spellbooks:cultist",
+      "irons_spellbooks:necromancer",
+      "irons_spellbooks:priest",
+      "irons_spellbooks:pyromancer"
+  ],
+  "traits": ["floating", "foodporting"],
+  "innate_effects": [
+    {
+      "effect": "irons_spellbooks:heartstop"
+    }
+  ],
+  "attack_commands": [
+    "cast @s magic_missile 10"
+  ]
+}

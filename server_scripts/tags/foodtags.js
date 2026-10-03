@@ -1,5 +1,9 @@
 ServerEvents.tags('item', event => {
 
+event.add('forge:cake_slices', [
+  /.*cake_slice/,
+  /.*cake_slice.*/
+])
 //collector's reap
 event.add('collectorsreap:gummies', [
     /cosmopolitan:.*_gummy/
@@ -27,7 +31,6 @@ event.add('collectorsreap:gummies', [
         /.*sundae.*/,
         /.*sorbet.*/,
         /.*shaved_ice.*/,
-        'aethersdelight:aechor_ice_cream',
         'dungeonsdelight:aurora_ice_cream',
         'mapleful:maple_ice_cream',
         'cosmopolitan:spaghettieis',
@@ -173,7 +176,9 @@ event.add('diet:proteins', [
     'dungeonsdelight:ghast_tentacle',
     'dungeonsdelight:ghast_calamari',
     'mynethersdelight:ghasta',
-    'mynethersdelight:ghasmati'
+    'mynethersdelight:ghasmati',
+    '#forge:slimeballs',
+    'biomancy:gellant'
 ])
 
 event.add('diet:ingredients', [
@@ -187,11 +192,12 @@ event.add('diet:ingredients', [
     'undergarden:glitterkelp',
     '#forge:milk',
     '#forge:eggs',
-    '#forge:mushrooms'
+    '#forge:mushrooms',
+    '#forge:slimeballs',
+    'biomancy:gellant'
 ])
 
 event.add('diet:special_food', [
-
     'undergarden:mogmoss',
     'undergarden:blue_mogmoss',
     'hexerei:mandrake_root',
@@ -400,9 +406,10 @@ event.add('coldsweat:small_cooling_drinks', [
     'sob:pepper_jelly'
     ]);
 event.add('coldsweat:small_warming_drinks', [
-      /farmersrespite:.*coffee'/,
-      'cosmopolitan:dandelion_coffee',
-      'farmersdelight:apple_cider',
+    'farmersrespite:coffee',
+    /farmersrespite:.*_coffee/,
+    'cosmopolitan:dandelion_coffee',
+    'farmersdelight:apple_cider',
     'respiteful:mocha_coffee',
     'respiteful:vanilla_milk_tea',
     'respiteful:adzuki_milk_tea',
@@ -422,7 +429,7 @@ event.add('coldsweat:small_warming_drinks', [
     'cosmopolitan:tisane'
     ])
   event.add('coldsweat:large_warming_drinks', [
-    /farmersrespite:.*tea'/,
+    /farmersrespite:.*_tea/,
     'vampiresdelight:daisy_tea',
     'vampiresdelight:orchid_tea',
     'delightful:matcha_latte',
